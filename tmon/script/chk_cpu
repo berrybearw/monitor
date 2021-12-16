@@ -124,10 +124,10 @@ if [ "$mode_test" == "Y" ] ; then
       <th colspan=2 style="background-color:#FFECC9">檢查 CPU ok </th>
       </tr> 
       <tr>
-      <th colspan=2 style="background-color:#FFECC9">CPU idle 沒低於 $cpu_lim_idle  </th>
+      <th colspan=2 style="background-color:#FFECC9">CPU idle 沒低於 '$cpu_lim_idle'  </th>
       </tr>
       <tr>
-      <th colspan=2 style="background-color:#FFECC9">CPU 5 min load 沒高於 $cpu_lim_load  </th>
+      <th colspan=2 style="background-color:#FFECC9">CPU 5 min load 沒高於 '$cpu_lim_load'  </th>
       </tr>
       </table>
        ' >> $cpu_chk_html
@@ -256,8 +256,8 @@ if [ "$chk_cpu_time_go" == "Y" ] ;then
          chk_mail="Y"
          echo '<table width=100% border=1>
             <tr>
-            <th colspan=2 style="background-color:#FF3B3B">檢查 CPU idle 低於  $cpu_lim_idle </th>
-            <th colspan=2 style="background-color:#FFECC9">CPU idle  : $cpu_idle </th>
+            <th colspan=2 style="background-color:#FF3B3B">檢查 CPU idle 低於  '$cpu_lim_idle' </th>
+            <th colspan=2 style="background-color:#FFECC9">CPU idle  : '$cpu_idle' </th>
             </tr> </table> ' >> $cpu_chk_html
 
          chk_cpu_process
@@ -269,8 +269,8 @@ if [ "$chk_cpu_time_go" == "Y" ] ;then
          chk_mail="Y"
          echo '<table width=100% border=1>
             <tr>
-            <th colspan=2 style="background-color:#FF3B3B">檢查 CPU 5 min load average 高於  $cpu_lim_load </th>
-            <th colspan=2 style="background-color:#FFECC9">CPU 5min load average : $cpu_load </th>
+            <th colspan=2 style="background-color:#FF3B3B">檢查 CPU 5 min load average 高於  '$cpu_lim_load' </th>
+            <th colspan=2 style="background-color:#FFECC9">CPU 5min load average : '$cpu_load' </th>
             </tr> </table> ' >> $cpu_chk_html
          
          chk_cpu_process
@@ -299,9 +299,9 @@ if [ "$chk_cpu_time_go" == "Y" ] ;then
             echo " "
             echo '<table width=100% border=1>
             <tr>
-            <th colspan=2 style="background-color:#FF3B3B">檢查 process 執行超過 CPU total $cpu_total_lim  % </th>
-            <th colspan=2 style="background-color:#FF3B3B">process CPU total $cpu_total  % </th>
-            <th colspan=2 style="background-color:#FFECC9">process top 10 CPU total %  : $cpu_proc_total </th>
+            <th colspan=2 style="background-color:#FF3B3B">檢查 process 執行超過 CPU total '$cpu_total_lim'  % </th>
+            <th colspan=2 style="background-color:#FF3B3B">process CPU total '$cpu_total'  % </th>
+            <th colspan=2 style="background-color:#FFECC9">process top 10 CPU total %  : '$cpu_proc_total' </th>
             </tr> </table> ' >> $cpu_chk_html
             #echo "process top10 CPU total : " $cpu_proc_total
          fi
