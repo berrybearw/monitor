@@ -135,10 +135,10 @@ if [ "$DBCHK" == "Y" ] ; then
       <th colspan=7 style="background-color:#FFECC9">表空間使用率</th>
       </tr>
       <tr>
-      <td colspan=7 align="center" valign="middle" style="background-color:red" >NOW!! DB tablespace use over $tbs_lim % </td>
+      <td colspan=7 align="center" valign="middle" style="background-color:red" >NOW!! DB tablespace use over '$tbs_lim' % </td>
       </tr>
       <tr>
-      <td colspan=7 align="center" valign="middle" style="background-color:red" > DB tablespace free is lower than $tbs_lim_use MB </td>
+      <td colspan=7 align="center" valign="middle" style="background-color:red" > DB tablespace free is lower than '$tbs_lim_use' MB </td>
       </tr>
       <tr>
       <td colspan=7 align="center" valign="middle"> TABLESPACE </td>
@@ -192,70 +192,14 @@ if [ "$mode_test" == "Y" ] ; then
 
    if [ "$chk_mail" == "Y" ] ; then
    
-      title_tbs
-      echo '<table width=100% border=1>
-      <tr>
-      <th colspan=7 style="background-color:#FFECC9">表空間使用率</th>
-      </tr>
-      <tr>
-      <td colspan=7 align="center" valign="middle" style="background-color:red" >NOW!! DB tablespace use over $tbs_lim % </td>
-      </tr>
-      <tr>
-      <td colspan=7 align="center" valign="middle" style="background-color:red" > DB tablespace free is lower than $tbs_lim_use MB </td>
-      </tr>
-      <tr>
-      <td colspan=7 align="center" valign="middle"> TABLESPACE </td>
-      </tr>' >> $tbs_chk_html
-      check_log="cat $chk_logdir/q_tbs_${tmonname}.log"
-      while [ `echo "$i <= $n" | bc` -eq 1 ];
-      do
-         if [ "$i" == 0 ] ; then
-            chk_name='TABLESPACE_NAME'
-            tbs_allocat='ALLOCATED ( MB )' 
-            tbs_free='FREE ( MB )'
-            tbs_use='USE ( MB )'
-            tbs_free_per='FREE %'
-            tbs_use_per='USE %'
-            tbs_max='MAX ( MB )'
-   	      echo '<tr><td>' $chk_name '</td>' >>$tbs_chk_html
-   	      echo '<td>' $tbs_allocat '</td>' >>$tbs_chk_html
-   	      echo '<td>' $tbs_free '</td>' >>$tbs_chk_html
-   	      echo '<td>' $tbs_use '</td>' >>$tbs_chk_html
-   	      echo '<td>' $tbs_free_per '</td>' >>$tbs_chk_html
-   	      echo '<td>' $tbs_use_per '</td>' >>$tbs_chk_html
-   	      echo '<td>' $tbs_max '</td></tr>' >>$tbs_chk_html
-         else
-            chk_name=`cat $chk_logdir/q_tbs_${tmonname}.log |awk '{if($6 >= '$tbs_lim') if($3 <= '$tbs_lim_use') {print $1}}' | sed -n "${i},${i}p" `
-            tbs_allocat=`cat $chk_logdir/q_tbs_${tmonname}.log | grep $chk_name | awk '{print $2}'`
-            #tbs_allocat=`echo | awk "{ print $tbs_allocat / 1024 }" `
-            tbs_free=`cat $chk_logdir/q_tbs_${tmonname}.log | grep $chk_name | awk '{print $3}'`
-            #tbs_free=`echo | awk "{ print $tbs_free / 1024 }" `
-            tbs_use=`cat $chk_logdir/q_tbs_${tmonname}.log | grep $chk_name | awk '{print $4}'`
-            #tbs_use=`echo | awk "{ print $tbs_use / 1024 }" `
-            tbs_free_per=`cat $chk_logdir/q_tbs_${tmonname}.log |grep $chk_name | awk '{print $5}'`
-            tbs_use_per=`cat $chk_logdir/q_tbs_${tmonname}.log |grep $chk_name | awk '{print $6}'`
-            tbs_max=`cat $chk_logdir/q_tbs_${tmonname}.log |grep $chk_name | awk '{print $7}'`
-            #tbs_max=`echo | awk "{ print $tbs_max / 1024 }" `
-   	      echo '<tr><td>' $chk_name '</td>' >>$tbs_chk_html
-   	      echo '<td>' $tbs_allocat '</td>' >>$tbs_chk_html
-   	      echo '<td>' $tbs_free '</td>' >>$tbs_chk_html
-   	      echo '<td>' $tbs_use '</td>' >>$tbs_chk_html
-   	      echo '<td>' $tbs_free_per '</td>' >>$tbs_chk_html
-   	      echo '<td>' $tbs_use_per '</td>' >>$tbs_chk_html
-   	      echo '<td>' $tbs_max '</td></tr>' >>$tbs_chk_html
-         fi
-         i=`expr $i + 1 `
-      done
-      echo "</table>" >> $tbs_chk_html
    else
       
-      title_tbs
       echo '<table width=100% border=1>
       <tr>
       <th colspan=7 style="background-color:#FFECC9">表空間使用率</th>
       </tr>
       <tr>
-      <td colspan=7 align="center" valign="middle" style="background-color:red" >DB tablespace use not over $tbs_lim % </td>
+      <td colspan=7 align="center" valign="middle" style="background-color:#FFECC9" >DB tablespace use not over '$tbs_lim' % </td>
       </tr>
       ' >> $tbs_chk_html
       exit

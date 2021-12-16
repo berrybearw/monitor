@@ -20,8 +20,6 @@ fi
 
 if [ "$chk_redosw_time_go" == "Y" ] ; then
 
-   echo " start check redo 每日切換次數 "
-
    ov="48"
    #ov="10"
    #echo "ZONE="$ZONE
