@@ -112,13 +112,13 @@ if [ "$mode_test" == "Y" ] ; then
       <th colspan=2 style="background-color:#FFECC9">檢查 記憶體 ok </th> 
       </tr> 
       <tr>
-      <th colspan=2 style="background-color:#FFECC9">沒有超過上限 $mem_lim % </th>
+      <th colspan=2 style="background-color:#FFECC9">沒有超過上限 '$mem_lim' % </th>
       </tr>
       <tr>
-      <th colspan=2 style="background-color:#FFECC9"> Memory total size $mem_total GB </th>
+      <th colspan=2 style="background-color:#FFECC9"> Memory total size '$mem_total' GB </th>
       </tr>
       <tr>
-      <th colspan=2 style="background-color:#FFECC9"> Now available size "$mem_available" GB </th> 
+      <th colspan=2 style="background-color:#FFECC9"> Now available size '$mem_available' GB </th> 
       </tr>
       </table>
       ' >> $mem_chk_html
@@ -150,17 +150,17 @@ if [ "$chk_mem_time_go" == "Y" ] ; then
       echo "chk_mail : " $chk_mail
       echo '<table width=100% border=1>
       <tr>
-      <th colspan=2 style="background-color:#FF3B3B"> Memory use over $mem_lim %</th>
+      <th colspan=2 style="background-color:#FF3B3B"> Memory use over '$mem_lim' %</th>
       </tr> </table> 
        ' >> $mem_chk_html
       echo '<table width=100% border=1>
       <tr>
-      <th colspan=2 style="background-color:#FFECC9">記憶體使用率 $mem_use_per %</th> 
+      <th colspan=2 style="background-color:#FFECC9">記憶體使用率 '$mem_use_per' %</th> 
       </tr> </table> ' >> $mem_chk_html
       echo '<table width=100% border=1>
       <tr>
-      <th colspan=2 style="background-color:#FFECC9"> Memory total size $mem_total GB </th>
-      <th colspan=2 style="background-color:#FFECC9"> Now available size "$mem_available" GB </th> 
+      <th colspan=2 style="background-color:#FFECC9"> Memory total size '$mem_total' GB </th>
+      <th colspan=2 style="background-color:#FFECC9"> Now available size '$mem_available' GB </th> 
       </tr> </table> ' >> $mem_chk_html
       echo " "
 
@@ -289,7 +289,7 @@ if [ "$chk_mem_time_go" == "Y" ] ; then
 	    echo '<div class="content"> ' >> $mem_chk_html
 	    echo '<table width=100% border=1>
 	          <tr>
-		  <th colspan=7 style=background-color:#FFECC9>$time_red 沒有 process 超過 $lim kb </th>
+		  <th colspan=7 style=background-color:#FFECC9>$time_red 沒有 process 超過 '$lim' kb </th>
 		  </tr> 
 		 ' >> $mem_chk_html
 	    echo "</table></div> " >> $mem_chk_html
@@ -313,16 +313,16 @@ if [ "$chk_mem_time_go" == "Y" ] ; then
       <th colspan=2 style="background-color:#FFECC9">檢查 記憶體 ok </th> 
       </tr> 
       <tr>
-      <th colspan=2 style="background-color:#FFECC9">沒有超過上限 $mem_lim % </th>
+      <th colspan=2 style="background-color:#FFECC9">沒有超過上限 '$mem_lim' % </th>
       </tr>
       <tr>
-      <th colspan=2 style="background-color:#FFECC9"> Memory total size $mem_total GB </th>
+      <th colspan=2 style="background-color:#FFECC9"> Memory total size '$mem_total' GB </th>
       </tr>
       <tr>
-      <th colspan=2 style="background-color:#FFECC9"> Now available size "$mem_available" GB </th> 
+      <th colspan=2 style="background-color:#FFECC9"> Now available size '$mem_available' GB </th> 
       </tr>
       </table>
-      ' > $mem_chk_html
+      ' >> $mem_chk_html
 
    
    fi
