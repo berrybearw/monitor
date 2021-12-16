@@ -191,9 +191,8 @@ fi
 if [ "$mode_test" == "Y" ] ; then
 
    if [ "$chk_mail" == "Y" ] ; then
-   
-   else
-      
+      echo ''
+   else      
       echo '<table width=100% border=1>
       <tr>
       <th colspan=7 style="background-color:#FFECC9">表空間使用率</th>
