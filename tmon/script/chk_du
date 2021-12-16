@@ -38,7 +38,7 @@ lim_max=$du_lim_max  #剩餘大小是 MB
 function title_du {
    echo '<table width=100% border=1>
    <tr>
-   <th colspan=2 style=background-color:#00E3E3>項目 記憶體 </th>
+   <th colspan=2 style=background-color:#00E3E3>項目 主機磁碟空間 </th>
    </tr>
    </table>
    ' > $du_chk_html
