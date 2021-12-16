@@ -35,6 +35,15 @@ lim=$du_lim_use
 lim_warn=$du_lim_warn
 lim_max=$du_lim_max  #剩餘大小是 MB
 
+function title_du {
+   echo '<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#00E3E3>項目 記憶體 </th>
+   </tr>
+   </table>
+   ' > $du_chk_html
+}
+
 if [ "$lim" == "" ] ; then
 
    lim=50
@@ -79,8 +88,10 @@ fi
 if [ "$chk_du_time_go" == "Y" ] ;then
 
    echo "" > $du_chk_html
+   title_du
    #ut 暫存檔空間 (s)
    if [  `echo "$ut_use > $ut_max" |bc` -eq 1 ];then
+         
       chk_mail="Y"
       #chk_Warn="Y"
       #echo "chk_Warn : " $chk_Warn
