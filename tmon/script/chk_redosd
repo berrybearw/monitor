@@ -1,0 +1,57 @@
+#!/bin/ksh
+
+. /u1/etc/tmon/tmon.conf
+
+#ls_version="1.0"
+ls_version="1.2"
+
+tmonname=$TMONNAME
+mode_test=$MODE_TEST
+
+chk_redosd_html="/u1/etc/tmon/script/basement/redosd_chk_${tmonname}.html"
+chk_redosd="/u1/etc/tmon/mon_log/chk_mail.log"
+
+if [ "$mode_test" == "Y" ] ;then
+   chk_redosd_time_go="Y"
+fi
+
+chk_redosd_time_go="Y"
+if [ "$chk_redosd_time_go" == "Y" ] ;then
+
+   ov="1"
+   
+   day_ck=`sqlplus -S "du/du@$ZONE" << !
+       set feedback off
+       col DAT for a12
+       col CNT for 9999
+       SELECT TO_CHAR(FIRST_TIME, 'yyyymmdd') DAT, count(*) CNT
+       FROM V\\$LOG_HISTORY
+       WHERE TRUNC(FIRST_TIME)=TRUNC(SYSDATE)
+       GROUP BY TO_CHAR(FIRST_TIME, 'yyyymmdd');
+       exit
+!
+`
+   
+   
+   redo_ov=`echo "$day_ck"|awk '{print $2}'|grep -Eo "[0-9]+"`
+   echo $redo_ov
+   if [ "$redo_ov" -ge "$ov" ];then
+      chk_mail="Y"
+      echo "chk_redosd : " $chk_mail >> $chk_redosd
+      echo "<table width=100% border=1>
+            <tr>
+	    <th colspan=2 style="background-color:#FFECC9">redo switch by day </th>
+	    <th colspan=2 style="background-color:red">redo switch over $ov </th>
+            </tr> </table>
+	   "  >> $chk_redosd_html
+   else
+      echo "<table width=100% border=1>
+            <tr>
+	    <th colspan=2 style="background-color:#FFECC9">redo switch by day </th>
+	    <th colspan=2 style="background-color:#FFECC9">redo switch not over $ov </th>
+            </tr> </table>
+	   "  >> $chk_redosd_html
+      
+   fi
+
+fi

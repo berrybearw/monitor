@@ -1,0 +1,149 @@
+#!/bin/ksh
+
+#v1 check 順序 No.15
+#   check Warn
+
+#1.1  (s)
+#     設定執行頻率
+#     chk_aliv_time_go
+#1.1  (e)
+
+ls_version="1.1"
+
+. /u1/etc/tmon/tmon.conf
+. /u1/etc/tmon/tmon_title.conf
+
+dir_date=`date '+%Y%m%d'`
+apache_chk_log=$chk_dir"/chk_apache.log"
+apache_log="/u1/etc/tmon/basement/chk_apache.log"
+#cpu_file_chk="/u1/etc/tmon/mon_log/chk/$dir_date/pscpu.log"
+aliv_file="/u1/etc/tmon/basement/aliv.log"
+
+check_file="/u1/etc/tmon/basement/aliv_sql.log"
+
+chk_aliv="/u1/etc/tmon/mon_log/chk_mail.log"
+
+mode_test=$MODETEST
+
+if [ "$mode_test" == "Y" ]  ;then
+   chk_aliv_time_go="Y"
+fi
+
+if [ "$CHKTIME" == "Y" ] ; then
+   chk_aliv_time_go="Y"
+fi
+
+if [ "$chk_aliv_time_go" == "Y" ] ;then
+
+   # Apache 存活
+   rm $check_file
+   sql=$(
+   echo "
+   --SETTING(s)
+   SET PAGESIZE 0
+   SET FEEDBACK OFF
+   SET HEADING OFF
+   SET TRIMOUT ON
+   SET TRIMSPOOL ON
+   SET LINESIZE 100
+   SET TIMING OFF
+   SET COLSEP ',';
+   --SETTING(e)
+   --FILE(s)
+   SPOOL $check_file
+   --FILE(e)
+   --SQL(s)
+   SELECT SYS_CONTEXT('USERENV','HOST') FROM dual;
+   --SQL(e)
+   SPOOL OFF
+   EXIT
+   
+   " | sqlplus -S "du/du@$ZONE"
+   )
+   
+   ap5ip=`cat $check_file`
+   
+   echo $ap5ip
+   
+   ip=`timeout 10 cat /etc/hosts | grep $ap5ip | awk '{print $1}'`
+   #apache_chk=`wget --tries=1 "http://${ip}/" > $apache_log 2>&1`  #會產生 index.html 檔案 太多有點異常
+   apache_chk=`timeout 10 echo $(curl -s -o /dev/null -w "%{http_code}" "http://${ip}" 2>&1 ) > $apache_log  `  #改用此方法替換 wget
+   echo $apache_chk
+   chk_res_200x=`cat $apache_log`
+   chk_res_200=`cat $apache_log | grep "200" | wc -l`
+   echo "<table width=100% border=1> "
+   if [ "$chk_res_200" -gt "0" ] ; then
+        echo " 
+             <th colspan=2 style="background-color:#FFECC9">Apache 存活 </th>
+             "
+   else
+        chk_mail="Y"
+        echo "apache Y" >> $chk_aliv
+        echo "chk_aliv : " $chk_mail >> $chk_aliv
+        cat $apache_log >> $apache_chk_log
+        echo " 
+             <th colspan=2 style="background-color:red">Apache error </th>
+             "
+        echo "
+             <th colspan=2 style="background-color:#FFECC9">"請檢查 : "http://${ip}/"" 是否網路有通 </th>
+             <th colspan=2 style="background-color:#FFECC9">$chk_res_200x </th>
+             "
+   fi
+   
+   flmprg_chk=`timeout 10 $FLMDIR/bin/flmprg -a info license 2>/dev/null | wc -l`
+   if [ "$flmprg_chk" -gt "2" ] ; then
+      flmprg_chk=`ps -ef | grep -v grep | grep flmprg | wc -l `
+      if [ "$flmprg_chk" -gt "0" ] ; then
+         echo " 
+              <th colspan=2 style="background-color:#FFECC9">flmprg 存活 </th>
+              "
+      else
+         flmprg_other=`fglWrt -a info | grep -i "server name" | awk -F : '{print $2}' | sed -e 's/ //'`
+         other_chk=`timeout 10 ping -c 5 $flmprg_other > ${script_logdir}/ping.log`
+         echo $other_chk
+         other_chk=`grep packets ${script_logdir}/ping.log | awk '{if ($4 <= 0 ) print "No"; else print "Yes" }'`
+         if [ "$other_chk" == "Yes" ] ; then 
+            echo " 
+                 <th colspan=2 style="background-color:#FFECC9">flmprg 存活 </th>
+                 "
+         else
+            chk_mail="Y"
+            echo "flmprg Y" >> $chk_aliv
+            echo "chk_aliv : " $chk_mail >> $chk_aliv
+            echo " 
+                 <th colspan=2 style="background-color:red">flmprg error </th>
+                 <th colspan=2 style="background-color:#FFECC9">"指令 : "ps -ef | grep -v grep | grep flmprg" "</th>
+                 "
+         fi
+      fi
+   else
+      echo "
+           <th colspan=2 style="background-color:#FFECC9">不是 flm 安裝機  </th>
+	   "
+   fi   
+   
+   gas_chk=`ps -ef | grep -v grep | grep "fastcgidispatch -s -f /u1/genero/as-topprd.xcf" | wc -l `
+   if [ "$gas_chk" -gt "0" ] ; then
+      echo "
+           <th colspan=2 style="background-color:#FFECC9">gas fastcgi topprd 存活  </th>
+           "
+   else
+      chk_mail="Y"
+      echo "cgi Y" >> $chk_aliv
+      echo "chk_aliv : " $chk_mail >> $chk_aliv
+      echo "
+           <th colspan=2 style="background-color:#FFECC9">gas fastcgi topprd error  </th>
+           <th colspan=2 style="background-color:#FFECC9">指令 : ps -ef | grep -v grep | grep "fastcgidispatch -s -f /u1/genero/as-topprd.xcf" </th>
+           "
+   fi
+   
+   echo "</table>"
+   unset SQLPATH
+   a=3
+   time_now=`date +%M`
+
+fi
+
+#old 2021/05/20 mark  (e)
+rm -rf $apache_log
+rm -rf $aliv_file

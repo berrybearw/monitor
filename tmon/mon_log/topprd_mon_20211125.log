@@ -1,0 +1,433 @@
+Y
+排程已檢查過
+<table width=1000 border=1>
+      <tr>
+      <th colspan=16 style=background-color:#FFECC9>ORACLE LOCK檢查</th>
+      </tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DS        </td>
+<td colspan=2>        3626</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptoper       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptoper 109862      1  0 14:06 pts/41   00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzi140 IKPG064820526d</td>
+<td colspan=2 width=100>select :"SYS_B_0",                                            el.dzel001   cdf,                              ell.dzell003 cdf_desc                     from   dzel_t el
+left outer join dzell_t ell                                 on ell.dzell001 = el.dzel001                  and ell.dzell002 = :"SYS_B_1"  where el.dzel006 = :"SYS_B_2"                           and el.
+dzel003 like :"SYS_B_3"  order by el.dzel009</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>        3651</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptoper       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptoper  17845      1  0 14:03 pts/41   00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmm100 {"sessionkey":"IKPG035592716d","parent":"IKPO034425919d","parentprog":"azzi000","ancest":"IKPO034425919d","prog":"axmm200","account":"tiptoper","param":["\"2\""],"schedule_seq":0,"static_ent":99}</td>
+<td colspan=2 width=100>select gzxa010 from   gzxa_t where gzxa001 = :p1 AND gzxaent = :p2</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>        3735</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptopcn       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptopcn  59462      1  0 14:01 pts/33   00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aps/42r/apsi001 {"sessionkey":"IKPO010375652d","parent":"0","prog":"apsi001","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}</td>
+<td colspan=2 width=100>select gzzd005 from   gzzd_t where gzzd001 = :p1 AND gzzd002 = :p2 AND gzzd003 = :p3 AND gzzd004 = :"SYS_B_0" AND gzzdstus = :"SYS_B_1"</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>        4168</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptopcn       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptopcn  83602      1  0 13:57 pts/14   00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzp050 IKPN575709522d DIR D:\T100_Code\146\\ CODE</td>
+<td colspan=2 width=100>select gzze003 from   gzze_t where gzze001 = :p1 AND gzze002 = :p2</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>        4209</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptoper       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptoper  55426      1  0 13:56 pts/21   00:00:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmt510 {"sessionkey":"IKPF565291599d","parent":"IKPL213024287d","parentprog":"apmt500","ancest":"IKPL213024287d","prog":"apmt510","account":"tiptoper","param":["CNJ-0YC-211100000002","2"],"schedule_seq":0,"static_ent":99}</td>
+<td colspan=2 width=100>select gztz001 from   gztz_t where gztz002 = :p1      AND gztz001 LIKE :"SYS_B_0"</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>        4247</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptoper       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptoper  83314      1  0 13:53 pts/21   00:00:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmt510 {"sessionkey":"IKPF533154151d","parent":"IKPL213024287d","parentprog":"apmt500","ancest":"IKPL213024287d","prog":"apmt510","account":"tiptoper","param":["CNJ-0YC-211100000002","1"],"schedule_seq":0,"static_ent":99}</td>
+<td colspan=2 width=100>select gztz001 from   gztz_t where gztz002 = :p1      AND gztz001 LIKE :"SYS_B_0"</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>        4300</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptopcn       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptopcn  23699      1  0 13:55 pts/43   00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abg/42r/abgp020 {"sessionkey":"IKPF555979081d","parent":"IKPN555163779d","parentprog":"azzi000","ancest":"IKPN555163779d","prog":"abgp020","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}</td>
+<td colspan=2 width=100>select gztz001 from   gztz_t where gztz002 = :p1      AND gztz001 LIKE :"SYS_B_0"</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>        5176</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptopcn       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptopcn  56376      1  0 13:41 pts/28   00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzp050 IKPN410864388d DIR D:\TT\146\\ CODE</td>
+<td colspan=2 width=100>select gzze003 from   gzze_t where gzze001 = :p1 AND gzze002 = :p2</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>        5898</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptoper       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptoper  76636      1  0 13:25 pts/21   00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi130 {"sessionkey":"IKPN253006812d","parent":"0","prog":"aooi130","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}</td>
+<td colspan=2 width=100>update ooag_t SET ooag004 = :p1 WHERE ooagent = :p2 AND ooag001 = :p3</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>        6283</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptoper       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptoper  71765      1  0 13:21 pts/21   00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimi150 {"sessionkey":"IKPN212183455d","parent":"0","prog":"aimi150","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}</td>
+<td colspan=2 width=100>select distinct imdbstus,imdb002,(SELECT imaal003 from   imaal_t where imaal001 = imdb002 AND imaal002 = :"SYS_B_0" AND imaalent = imdbent ) imaal003,(SELECT imaal004 FROM imaal_t WHERE imaal001 = imd
+b002 AND imaal002 = :"SYS_B_1" AND imaalent = imdbent ) imaal004,imdb004,imdb005,imdb003,imdbmodid,(SELECT ooag011 FROM ooag_t WHERE ooagent = imdbent AND ooag001 = imdbmodid) t1_ooag011,imdbmoddt,imd
+bownid,(SELECT ooag011 FROM ooag_t WHERE ooagent = imdbent AND ooag001 = imdbownid) t2_ooag011,imdbowndp,(SELECT ooefl003 FROM ooefl_t WHERE ooeflent = imdbent AND ooefl001 = imdbowndp AND ooefl002 =
+:"SYS_B_2") t4_ooefl003,imdbcrtid,(SELECT ooag011 FROM ooag_t WHERE ooagent = imdbent AND ooag001 = imdbcrtid) t3_ooag011,imdbcrtdp,(SELECT ooefl003 FROM ooefl_t WHERE ooeflent = imdbent AND ooefl001
+= imdbcrtdp AND ooefl002 = :"SYS_B_3") t5_ooefl003,imdbcrtdt FROM imdb_t WHERE imdbent=:p1 AND imdb001=:p2 AND imdb002 like :"SYS_B_4" order by imdb_t.imdb002</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DS        </td>
+<td colspan=2>        6419</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptopcn       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptopcn 108433      1  0 11:24 pts/35   00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzi140 IKPD242869880d</td>
+<td colspan=2 width=100>select :"SYS_B_0",                                            el.dzel001   cdf,                              ell.dzell003 cdf_desc                     from   dzel_t el
+left outer join dzell_t ell                                 on ell.dzell001 = el.dzel001                  and ell.dzell002 = :"SYS_B_1"  where el.dzel006 = :"SYS_B_2"                           and el.
+dzel003 like :"SYS_B_3"  order by el.dzel009</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>       10947</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptoper       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptoper 100644      1  0 12:05 pts/42   00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/ain/42r/aint302 {"sessionkey":"IKPM051624682d","parent":"0","prog":"aint302","account":"tiptoper","param":["2"],"schedule_seq":0,"static_ent":99}</td>
+<td colspan=2 width=100>
+no rows selected</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>       12779</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptoper       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptoper  50803      1  0 11:34 pts/21   00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi800 {"sessionkey":"IKPL343228109d","parent":"0","prog":"azzi800","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}</td>
+<td colspan=2 width=100>select ooefl003 from   ooefl_t where ooeflent=:"SYS_B_0" AND ooefl001=:p1 AND ooefl002=:"SYS_B_1"</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>       12984</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptoper       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptoper 101225      1  0 11:28 pts/27   00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi650 {"sessionkey":"IKPD283107014d","parent":"IKPK535681642d","parentprog":"azzi902","ancest":"IKPK535681642d","prog":"azzi650","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}</td>
+<td colspan=2 width=100>select ooag011 from   ooag_t where ooagent=:"SYS_B_0" AND ooag001=:p1</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>       13144</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptoper       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptoper  96863      1  0 11:28 pts/27   00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi600 {"sessionkey":"IKPD282351599d","parent":"IKPK535681642d","parentprog":"azzi902","ancest":"IKPK535681642d","prog":"azzi600","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}</td>
+<td colspan=2 width=100>select gzcbl004,gzcbl005,gzcbl006 from   gzcbl_t where gzcbl001 = :p1 AND gzcbl002 = :p2 AND gzcbl003 = :"SYS_B_0"</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>       13156</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptoper       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptoper  53024      1  0 10:53 pts/27   00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi902 {"sessionkey":"IKPK535681642d","parent":"0","prog":"azzi902","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}</td>
+<td colspan=2 width=100>select gzxa010 from   gzxa_t where gzxa001 = :p1 AND gzxaent = :p2</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>       13399</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptopcn       </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptopcn  36202      1  0 09:46 pts/35   00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi800 {"sessionkey":"IKPJ465556634d","parent":"0","prog":"azzi800","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}</td>
+<td colspan=2 width=100>select gzxa010 from   gzxa_t where gzxa001 = :p1 AND gzxaent = :p2</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DS        </td>
+<td colspan=2>       14262</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptop         </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptop    52382  51688  0 11:10 ?        00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aws/42r/awsp920.42r awsp920</td>
+<td colspan=2 width=100>insert into wsfb_t (wsfb001,wsfb002,wsfb003,wsfb004) VALUES (:p1,:p2,:p3,:p4)</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DS        </td>
+<td colspan=2>       55676</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptop         </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptop    24710  24453  0 Nov24 ?        00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aws/42r/awsp900.42r awsp900</td>
+<td colspan=2 width=100>insert into logw_t (logwent,logw001,logw002,logw003,logw004) VALUES (:p1,:p2,:p3,:p4,:p5)</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+</table>
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=500 border=1>
+<tr>
+<th colspan=2 style=background-color:#FFECC9> hi 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+</tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+  chk_Warn :  Y
+
+<table width=800 border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>50%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/sda5 </td>
+<td> 104806400 </td>
+<td> 92169252 </td>
+<td> 12637148 </td>
+<td> 88% </td>
+<td> /u1 </td>
+<tr><td> /dev/sda2 </td>
+<td> 314419200 </td>
+<td> 297365968 </td>
+<td> 17053232 </td>
+<td> 95% </td>
+<td> /u2 </td>
+<tr><td> //10.40.41.161/T100_gr </td>
+<td> 262142972 </td>
+<td> 181672576 </td>
+<td> 80470396 </td>
+<td> 70% </td>
+<td> /T100_gr </td>
+<tr><td> //10.40.41.161/T100_fr </td>
+<td> 262142972 </td>
+<td> 181672576 </td>
+<td> 80470396 </td>
+<td> 70% </td>
+<td> /T100_fr </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u1=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+<tr><td> 84G </td>
+<td> /u1 </td></tr>
+<tr><td> 31G </td>
+<td> /u1/topprd </td></tr>
+<tr><td> 26G </td>
+<td> /u1/usr/tiptop </td></tr>
+<tr><td> 26G </td>
+<td> /u1/usr </td></tr>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u2=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+<tr><td> 8.4G </td>
+<td> /u2 </td></tr>
+<tr><td> 7.8G </td>
+<td> /u2/oracle/product </td></tr>
+<tr><td> 7.8G </td>
+<td> /u2/oracle </td></tr>
+<tr><td> 6.4G </td>
+<td> /u2/oracle/product/12.1.0/dbhome_1 </td></tr>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/T100_gr=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+<tr><td> 6.2G </td>
+<td> /T100_gr </td></tr>
+<tr><td> 2.1G </td>
+<td> /T100_gr/backup </td></tr>
+<tr><td> 1.6G </td>
+<td> /T100_gr/dmp </td></tr>
+<tr><td> 1.3G </td>
+<td> /T100_gr/topprd_bk0307 </td></tr>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/T100_fr=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+<tr><td> 27M </td>
+<td> /T100_fr </td></tr>
+<tr><td> 14M </td>
+<td> /T100_fr/topprd </td></tr>
+<tr><td> 9.0M </td>
+<td> /T100_fr/toptst </td></tr>
+<tr><td> 4.0M </td>
+<td> /T100_fr/topprd/asf </td></tr>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>===== r.h log 大於 1hr 未持續使用檔案 =====</th></tr>
+</table>
+================================================================

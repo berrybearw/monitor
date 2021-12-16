@@ -1,0 +1,122 @@
+#!/bin/ksh 
+
+chk_specdir="/u1/etc/tmon/basement"
+
+change_KG='1048576'
+
+t100_ver=`cat $TOP/t100_release`
+
+echo "T100     版本 : " $t100_ver
+
+user_genero=`fglWrt -a info Users | grep Users`
+
+echo "授權數 " $user_genero
+
+echo " "
+
+sh /u1/etc/tmon/ap_db/ap_db_with
+
+ap_db_chk=`sh /u1/etc/tmon/ap_db/ap_db_with | grep "不同" | wc -l`
+
+if [ "$ap_db_chk" -gt 0 ] ; then 
+
+   echo "-- AP , DB 不同台 請記得檢查 DB 主機相關配置"
+
+fi
+
+echo " "
+
+echo "redhat   版本 : "  `cat /etc/redhat-release`
+
+echo " "
+
+echo "實體還是虛擬  : " 
+
+cat /proc/scsi/scsi |grep -E 'Vendor|Type' |sed 's/^[ \t]*//g'
+
+echo " "
+
+echo "CPU    總數量 : " `lscpu |grep '^CPU(s):' |sed 's/^[ \t]*//g'|cut -d: -f 2` 
+
+mem=`free | grep Mem | awk '{print $2}'`
+
+mem_total=`awk -v x=$mem -v y=$change_KG 'BEGIN{printf "%.2f\n",x/y}'` 
+
+echo "Mem    總大小 : " $mem_total "G"
+
+swap=`free | grep Swap | awk '{print $2}'`
+
+swp_total=`awk -v x=$swap -v y=$change_KG 'BEGIN{printf "%.2f\n",x/y}'`
+
+echo "Swap   總大小 : " $swp_total "G"
+
+disk=`df | awk '{sum += $2} END {print sum}' | awk '{print $1}'`
+
+disk_total=`awk -v x=$disk -v y=$change_KG 'BEGIN{printf "%.2f\n",x/y}'`
+
+echo "DISK   總空間 : " $disk_total "G" 
+
+sql=$(
+echo "
+     SPOOL ${chk_specdir}/sql_spec.out;
+         set feedback off
+         set heading off
+         set linesize 200
+         set pagesize 0 
+
+         Select 
+               product,
+               version 
+         FROM
+               Product_component_version   
+         Where 
+               SUBSTR(PRODUCT,1,6)='Oracle';
+ 
+         SPOOL OFF
+         EXIT
+      " | sqlplus -S "du/du@$ORACLE_SID" 
+     )
+
+echo $sql >> /dev/null
+
+db_chk=`cat ${chk_specdir}/sql_spec.out` 
+
+echo "DB       版本 : " $db_chk
+
+sql=$(
+echo "
+     SPOOL ${chk_specdir}/sql_spec.out;
+         set feedback off
+         set heading off
+         set linesize 200
+         set pagesize 0 
+         col value format A16 
+
+         select 
+              value 
+         from
+              v\$parameter 
+         where 
+              name = 'cluster_database';
+         SPOOL OFF
+         EXIT
+      " | sqlplus -S "du/du@$ORACLE_SID" 
+     )
+
+echo $sql >> /dev/null
+
+rac_chk=`cat ${chk_specdir}/sql_spec.out` 
+
+echo "DB 是不是 RAC : " $rac_chk
+
+if [ "$rac_chk" == "TRUE" ] ; then
+   echo "-- 請檢查 $ORACLE_HOME/network/admin/tnsnames.ora "
+   echo "-- 關鍵字 FAILOVER     設定是否為 on "
+   echo "-- 關鍵字 LOAD_BALANCE 設定是否為 no "
+fi
+
+echo " " 
+
+echo "IOPS (每秒的讀寫次數)"
+
+sh /u3/bin/fio/fiotst.sh 2>/dev/null | grep "===>"

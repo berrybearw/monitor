@@ -1,0 +1,52 @@
+#!/bin/ksh 
+
+cd /u1/etc/tmon
+
+i=1
+name="mem"
+num=5
+
+while [ $i -le $num ];
+do
+   if [ "$i" -le 10 ]; then
+      arr[$i]='chk_'$name'_0'$i
+   else
+      arr[$i]='chk_'$name'_'$i
+   fi
+   i=$(($i+1))
+
+done
+
+#arr=("chk_mem_01" "chk_mem_02" "chk_mem_03" )
+arr_01=("mem" "mem_lim_use" "mem_lim_swap" "psmem" "psmem_lim_use" )
+
+i=1
+j=0
+
+while [ $i -le ${#arr[@]} ] 
+do
+
+   new=f
+   set=${arr_01[$j]}
+   set_01=${arr[$i]}
+   list=`cat tmon.conf | grep $set_01 `
+   old=`cat tmon.conf | grep -w $set | grep -v '#' | awk -F \" '{print $2}'`
+   echo " "
+   echo "$i." $list
+   echo " 原設定 : " $old
+   read new
+   
+   if [ "$new" == "" ] ; then 
+      new=$old
+   else
+      sed -i -e "s/$set=\"$old\"/$set=\"$new\"/" tmon.conf
+   fi
+   
+   new=`cat tmon.conf | grep -w $set | grep -v '#' | awk -F \" '{print $2}'`
+   echo " 新設定 : " $new
+
+   i=$(($i+1))
+   j=$(($j+1))
+
+done
+

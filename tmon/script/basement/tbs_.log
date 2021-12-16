@@ -1,0 +1,25 @@
+<table width=100% border=1>
+      <tr>
+      <th colspan=7 style=background-color:#FFECC9>表空間使用率</th>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle>NOW!! T100 DB tablespace use over <font color=red> %</font></td>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle>=== TABLESPACE ===</td>
+      </tr>
+<tr><td> TABLESPACE_NAME </td>
+<td> ALLOCATED ( MB ) </td>
+<td> FREE ( MB ) </td>
+<td> USE ( MB ) </td>
+<td> FREE % </td>
+<td> USE % </td>
+<td> MAX ( MB ) </td></tr>
+<tr><td> DSDATA </td>
+<td> 12 </td>
+<td> 3.61426 </td>
+<td> 8.38574 </td>
+<td> 30.12 </td>
+<td> 69.88 </td>
+<td> 12 </td></tr>
+</table>

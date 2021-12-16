@@ -1,0 +1,338 @@
+#!/bin/ksh
+
+#v1 check 順序 No.03
+
+#1.2 2021/12/05 by 12731 緊急時刻需要在一開始就判斷是否超過 設定值
+#                        指令需要有超時設定 ( timeout 10 ps )
+
+#ls_version="1.0"
+#ls_version="1.1"
+ls_version="1.2"
+
+
+. /u1/etc/tmon/tmon.conf
+. /u1/etc/tmon/tmon_title.conf
+
+tmonname=$TMONNAME
+
+dir_date=`date '+%Y%m%d'`
+file=`date '+%Y%m%d'`
+psmem_file="/u1/etc/tmon/script/basement/psmem.log"
+psmem_file_list="/u1/etc/tmon/script/basement/psmem_list.log"
+psmem_file_chk="/u1/etc/tmon/mon_log/chk/$dir_date/psmem.log"
+mem_file_stp="/u1/etc/tmon/mon_log/mem_stp.html"
+mem_chk_dir="/u1/etc/tmon/script/basement"
+mem_chk="/u1/etc/tmon/script/basement/mem_chk_${tmonname}.log"        #判斷設定值檔案
+mem_chk_html="/u1/etc/tmon/script/basement/mem_chk_${tmonname}.html"  #寄信用
+chk_mem="/u1/etc/tmon/mon_log/chk_mail.log"
+
+if [ ! -d "/u1/etc/tmon/mon_log/chk" ]; then
+   mkdir /u1/etc/tmon/mon_log/chk
+fi
+if [ ! -d "/u1/etc/tmon/mon_log/chk/$dir_date" ]; then
+   mkdir /u1/etc/tmon/mon_log/chk/$dir_date
+fi
+
+time_red=`date +%Y/%m/%d-%H:%M:%S`
+
+unset SQLPATH
+
+mem_lim="$mem_lim_use"
+mem_lim_swap=`echo "scale=2; $mem_lim_swap * 0.01" | bc`
+lim=$psmem_lim_use
+psmem=$psmem
+
+mem=`free |grep Mem:`
+echo $mem > $mem_chk
+mem_total=`cat $mem_chk | awk '{print $2}'`
+mem_available=`cat $mem_chk|awk '{print $6}'`
+mem_use=`expr ${mem_total} - ${mem_available}`
+mem_use_per=`echo | awk "{print $mem_use/$mem_total}"`
+mem_use_per=`echo | awk "{print $mem_use_per * 100}"`
+mem_n=`echo "scale=2; $mem_total * $mem_lim" |bc`  #警戒值 總記憶體 * 百分比
+
+if [ "$mem_lim" == "" ] ; then
+   mem_lim='5'
+   mem_lim_swap='10'
+   lim=`expr 1024 \* 1024 `
+   echo "$mem_lim"
+   mode_test='Y'
+fi
+
+function title_mem {
+   echo '<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#00E3E3>項目 記憶體 </th>
+   </tr>
+   </table>
+   ' > $mem_chk_html
+}
+
+if [ "$mode_test" == "Y" ] ;then
+   chk_mem_time_go="Y"
+fi
+
+if [ "$CHKTIME" == "Y" ] ; then
+   chk_mem_time_go="Y"
+fi
+
+if [ `echo "$mem_n < $mem_use" | bc` -eq 1 ];then
+   chk_mem_time_go="Y"
+   chk_mail="Y"
+   echo "$time_red" >> $chk_mem
+   echo "chk_mem : " $chk_mail >> $chk_mem
+   echo "mem_total : " $mem_total >> $chk_mem
+   echo "mem_use : " $mem_use >> $chk_mem
+   echo "mem_lim : " $mem_lim >> $chk_mem
+   echo "Memory use over " $mem_lim >> $chk_mem
+fi   
+
+if [ "$mode_test" == "Y" ] ; then
+
+   if [ "$chk_mail" == "Y" ] ; then
+      echo "$time_red" 
+      echo "chk_mem : " $chk_mail 
+      echo "mem_total : " $mem_total 
+      echo "mem_use : " $mem_use 
+      echo "mem_lim : " $mem_lim 
+      echo "Memory use over " $mem_lim 
+      timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%mem | head -10
+   else
+      echo "chk_mem : " $chk_mail 
+      echo "mem_total : " $mem_total 
+      echo "mem_use : " $mem_use 
+      echo "mem_lim : " $mem_lim 
+      echo "Memory use not over " $mem_lim
+      echo "前10名 Mem process "
+      timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%mem | head -10
+      echo "Mem 檢查 ok"
+      title_mem
+      echo '<table width=100% border=1>
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9">檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9">沒有超過上限 $mem_lim % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9"> Memory total size $mem_total GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9"> Now available size "$mem_available" GB </th> 
+      </tr>
+      </table>
+      ' >> $mem_chk_html
+      exit
+   fi
+fi
+
+
+
+if [ "$chk_mem_time_go" == "Y" ] ; then
+
+   
+   lim_p=`echo | awk "{print $mem_lim/100}"`
+   
+   title_mem
+
+   echo '<table width=100% border=1>
+   <tr>
+   <th colspan=2 style="background-color:#FFECC9">檢查 記憶體</th>
+   </tr> </table> ' >> $mem_chk_html
+
+   mem_total=`expr $mem_total / 1024 / 1024`
+   mem_available=`expr $mem_available / 1024 / 1024`
+   
+   
+   if [ `echo "$mem_n < $mem_use" | bc` -eq 1 ];then
+      chk_mail="Y"
+      echo "Y" >> $chk_mem
+      echo "chk_mail : " $chk_mail
+      echo '<table width=100% border=1>
+      <tr>
+      <th colspan=2 style="background-color:#FF3B3B"> Memory use over $mem_lim %</th>
+      </tr> </table> 
+       ' >> $mem_chk_html
+      echo '<table width=100% border=1>
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9">記憶體使用率 $mem_use_per %</th> 
+      </tr> </table> ' >> $mem_chk_html
+      echo '<table width=100% border=1>
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9"> Memory total size $mem_total GB </th>
+      <th colspan=2 style="background-color:#FFECC9"> Now available size "$mem_available" GB </th> 
+      </tr> </table> ' >> $mem_chk_html
+      echo " "
+
+      if [ "$psmem" == 1 ]; then
+
+         echo "開始檢查看 process 記憶體使用量"
+         echo "process 紀錄值 : " $lim "kb"
+
+         date_chk=`date '+%x %r'`
+         
+         echo "$date_chk" >> $psmem_file_chk
+         
+         #proc=`ps -eo pid,rss,cmd --sort=-rss`
+         #proc=`ps -eo pid,ppid,tt,stime,time,%mem,%cpu,cmd --sort=-%mem`
+         proc=`timeout 10 ps -eo %mem,%cpu,rss,pid,stime,cmd --sort=-rss` > $psmem_file_list
+         proc_mem_all=`timeout 10 ps -eo %mem,rss,pid,cmd --sort=-rss | sed -n '2,$p' | awk '{total += $1; } END { print total }'`
+         proc_rss_all=`timeout 10 ps -eo %mem,rss,pid,cmd --sort=-rss | sed -n '2,$p' | awk '{total += $2; } END { print total }'`
+         proc_head=`cat "$psmem_file_list"|head -n 1`
+         #proc_fgl=`echo "$proc"|grep -v grep|grep -v adzp95|grep fglrun|head|awk '{print $1}'`
+         #proc_fgl=`echo "$proc"|grep -v grep|grep -v adzp95| head -10|awk '{print $1}'`
+
+         proc_fgl=`cat "$psmem_file_list"| sed -n '2,$p' | grep -v grep|grep -v adzp95|grep -vi "ora" | head -10|awk '{print $4}'`
+
+         echo $proc_head > $psmem_file
+
+         for i in $proc_fgl
+         do
+           proc_rss=`cat "$psmem_file_list"| sed -n '2,$p' | awk '{print $3 " " $4}' | grep $i | awk '{print $1}'`
+           if [ $(echo "$proc_rss > $lim"|bc) -eq 1 ];then
+              cat "$psmem_file_list"|grep $i >> $psmem_file_chk
+              cat "$psmem_file_list"|grep $i >> $psmem_file
+           fi
+         done
+
+         for i in $proc_fgl 
+         do
+           proc_mem=`cat "$psmem_file_list" | sed -n '2,$p' | grep $i|awk '{print $1}'`
+           proc_pid=`cat "$psmem_file_list" | sed -n '2,$p' | grep $i | awk '{print $4}'`
+           if [ $(echo "$proc_mem > $lim_mem"|bc) -eq 1 ];then
+              chk_mail="Y"
+              echo "Y" >> $chk_mem
+              echo "<b>超過 <font color=red>$lim_mem  % </font> 記憶體使用量 暫停 process</b>" >> $mem_file_stp
+              echo "<b>START : kill -CONT $proc_pid </b>" >> $mem_file_stp
+              #kill -STOP $proc_pid
+              echo "$proc_head" >> $psmem_file_chk
+              cat "$psmem_file_list"|grep $i >> $psmem_file_chk
+              echo "<font color=red>" >> $mem_file_stp
+              echo " $proc"|grep $i >> $mem_file_stp
+              echo " </font> " >> $mem_file_stp
+           fi
+         done
+         
+         num=`cat $psmem_file | sed -n '2,$p' |wc -l`
+
+         echo "檢查 process 記憶體是否超過 $lim kb"
+         
+         if [ "$num" -gt "0" ];then
+            echo " "
+            echo '<table width=100% border=1>
+            <tr>
+            <th colspan=2 style="background-color:#FFECC9">檢查 process 記憶體</th>
+            </tr> </table> ' > $mem_chk_html
+
+            #存取 mem 記錄檔 (s)
+
+            echo '<div class="content"> ' >> $mem_chk_html
+            echo "<table width=100% border=1>
+                      <tr>
+                      <th colspan=7 style=background-color:#FFECC9>$time_red process記憶體使用量 RSS 顯示 $lim kb 以上 </th>
+                      </tr> 
+            " >> $mem_chk_html
+
+            swp_num=`cat $psmem_file | wc -l `
+
+            echo "開始存取紀錄檔 ,有 $swp_num 個 "
+            
+            i=1
+            
+            while [ "$i" -le "$swp_num" ] 
+            do
+               echo "No: "$i
+               if [ "$i" == 1 ] ; then
+                  mem_chk=`cat $psmem_file | sed -n '1,1p' | awk '{print $1}' `
+                  cpu_chk=`cat $psmem_file | sed -n '1,1p' | awk '{print $2}' `
+                  rss_chk=`cat $psmem_file | sed -n '1,1p' | awk '{print $3}' `
+                  pid_chk=`cat $psmem_file | sed -n '1,1p' | awk '{print $4}' `
+                  stime_chk=`cat $psmem_file | sed -n '1,1p' | awk '{print $5}' `
+                  cmd_chk=`cat $psmem_file | sed -n '1,1p' | awk '{$1=$2=$3=$4=$5="";print $0}' ` 
+                  echo "<tr> 
+                        <td> $mem_chk    </td>
+                        <td> $cpu_chk    </td>
+                        <td> $rss_chk   </td>
+                        <td> $pid_chk    </td>
+                        <td> $stime_chk  </td>
+                        <td> $cmd_chk    </td>
+                        </tr> 
+                       "  >> $mem_chk_html
+               else
+                  mem_chk=`cat $psmem_file | sed -n "$i,${i}p" | awk '{print $1}' `
+                  cpu_chk=`cat $psmem_file | sed -n "$i,${i}p" | awk '{print $2}' `
+                  rss_chk=`cat $psmem_file | sed -n "$i,${i}p" | awk '{print $3}' `
+                  pid_chk=`cat $psmem_file | sed -n "$i,${i}p" | awk '{print $4}' `
+                  stime_chk=`cat $psmem_file | sed -n "$i,${i}p" | awk '{print $5}' `
+                  cmd_chk=`cat $psmem_file | sed -n "$i,${i}p" | awk '{$1=$2=$3=$4=$5"";print $0}' ` 
+                  echo "<tr> 
+                        <td> $mem_chk    </td>
+                        <td> $cpu_chk    </td>
+                        <td> $rss_chk    </td>
+                        <td> $pid_chk   </td>
+                        <td> $stime_chk  </td>
+                        <td> $cmd_chk    </td>
+                        </tr> 
+                       "  >> $mem_chk_html
+               fi
+               i=`expr $i + 1 `
+            
+            done
+
+	    echo "</table></div> " >> $mem_chk_html
+
+            #存取 mem 記錄檔 (e)   
+            echo " "
+
+         else
+
+	    echo '<div class="content"> ' >> $mem_chk_html
+	    echo '<table width=100% border=1>
+	          <tr>
+		  <th colspan=7 style=background-color:#FFECC9>$time_red 沒有 process 超過 $lim kb </th>
+		  </tr> 
+		 ' >> $mem_chk_html
+	    echo "</table></div> " >> $mem_chk_html
+
+         fi
+
+         if [ -f $psmem_file ] ; then
+
+            rm -rf $psmem_file
+
+         fi
+
+         echo "結束檢查 process 記憶體使用量"
+       
+      fi  
+
+   else
+
+      echo '<table width=100% border=1>
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9">檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9">沒有超過上限 $mem_lim % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9"> Memory total size $mem_total GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9"> Now available size "$mem_available" GB </th> 
+      </tr>
+      </table>
+      ' > $mem_chk_html
+
+   
+   fi
+
+fi
+
+if [ -f $cpu_file ]; then
+   rm -rf $psmem_file
+fi
+
+#if [ -f $cpu_chk_dir/${file}_swptest.html ] ; then
+   #cp -p $cpu_chk_dir/${file}_swptest.html $cpu_chk_dir/../basement
+#fi

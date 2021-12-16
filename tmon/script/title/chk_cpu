@@ -1,0 +1,47 @@
+#!/bin/ksh
+. /u1/etc/tmon/tmon_title.conf
+
+dir_date=`date '+%Y%m%d'`
+ps_cputime_file="/u3/log/mon_log/ps_cputime.log"
+ps_cputime_all_file="/u3/log/mon_log/ps_cputime_all.log"
+ps_cputime_file_chk="/u3/log/mon_log/chk/$dir_date/ps_cputime.log"
+ps_cputime_file_all_chk="/u3/log/mon_log/chk/$dir_date/ps_cputime_all.log"
+
+chk_cpu="/u1/etc/tmon/mon_log/chk_mail.log"
+
+chk_cpu_Y=`cat $chk_cpu | grep "chk_cpu" | wc -l`
+
+echo " 
+   <th colspan=8 style="background-color:#00E3E3">CPU </th>
+   <tr>
+   <th colspan=8 style="background-color:#00E3E3">整體使用大約超過 CPU total 30 % 可能造成系統 load 過高 </th>
+   </tr>
+    "
+echo " 
+     <tr>
+     "
+
+if [ "$chk_cpu_Y" -gt "0" ] ; then 
+   echo "
+        <th colspan=2 rowspan=2 style="background-color:red">檢查 CPU error $chk_cpu_Y </th>
+        "
+else
+   echo "
+        <th colspan=2 rowspan=2 style="background-color:#FFECC9">檢查 CPU OK </th>
+        "
+fi
+
+cpu_num=`lscpu |grep '^CPU(s):' |sed 's/^[ \t]*//g'|cut -d: -f 2`
+cpu_total=`echo "$cpu_num * 100" | bc -l`
+cpu_proc_total=`ps -eo %cpu --sort=-%cpu  | awk '{total += $1; } END { print total }'`
+cpu_idle=`top -bn1 | grep '%Cpu(s)' | awk -F , '{print $4}' | awk '{print $1}'`
+cpu_loadaverage=`cat /proc/loadavg | awk '{print $1 ,$2 ,$3}'`
+
+echo "
+     <th colspan=3 style="background-color:#FFECC9">CPU total $cpu_total % </th>
+     <th colspan=3 style="background-color:#FFECC9">CPU now USE $cpu_proc_total %  </th>
+     <tr>
+     <th colspan=3 style="background-color:#FFECC9">CPU idle $cpu_idle </th>
+     <th colspan=3 style="background-color:#FFECC9">load average $cpu_loadaverage </th>
+     </tr>
+     "

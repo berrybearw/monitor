@@ -1,0 +1,74 @@
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU idle  :   1.65 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/13-12:44:12 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU idle  :   2.73 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/13-12:45:30 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 90.4    </td>
+                  <td> 0.1    </td>
+                  <td> 2474087    </td>
+                  <td> ?     </td>
+                  <td> 12:45  </td>
+                  <td> 00:00:24   </td>
+                  <td>       fglrun /u1/topprd/erp/azz/42r/azzi310 {"sessionkey":"ILDM450385251b","parent":"0","prog":"azzi310","account":"tiptop","param":["{\"prog\":\"test\",\"wc\":\" 1=1\"}"],"schedule_seq":0,"static_ent":99}    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>

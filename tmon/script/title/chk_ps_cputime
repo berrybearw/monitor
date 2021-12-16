@@ -1,0 +1,40 @@
+#!/bin/ksh
+
+. /u1/etc/tmon/tmon_title.conf
+
+dir_date=`date '+%Y%m%d'`
+ps_cputime_file="/u3/log/mon_log/ps_cputime.log"
+ps_cputime_all_file="/u3/log/mon_log/ps_cputime_all.log"
+ps_cputime_file_chk="/u3/log/mon_log/chk/$dir_date/ps_cputime.log"
+ps_cputime_file_all_chk="/u3/log/mon_log/chk/$dir_date/ps_cputime_all.log"
+
+chk_pstime_Y=`cat $chk_ps_cputime | grep "Y" | wc -l`
+
+chk_pstime_Warn=`cat $chk_ps_cputime | grep "Warn" | wc -l`
+
+echo " 
+     <tr>
+     "
+
+if [ "$chk_pstime_Y" -gt "0" ] ; then 
+   echo "
+        <th colspan=3 style="background-color:red">CPU 使用超过 2 hr </th>
+        "
+else
+   if [ "$chk_pstime_Warn" -gt "0" ] ; then
+      echo "
+           <th colspan=3 style="background-color:yellow">CPU 使用超过 2 hr </th>
+           "
+
+   else
+      echo "
+           <th colspan=3 style="background-color:#FFECC9">CPU 使用没有超过 2 hr </th>
+           "
+   fi 
+fi
+
+echo "
+     <th colspan=5 style="background-color:#FFECC9">系統資源占用 </th>
+     </tr>
+     "
+

@@ -1,0 +1,968 @@
+#!/bin/ksh
+
+#檢查 SQL 各種效能相關排名 
+
+#202109   add 新增 execute time , cpu use time
+#20210923 add 新增 disk_reads , buffer_gets , parse_calls 
+
+. /u1/etc/tmon/tmon.conf
+
+ls_version="1.1" 
+
+tmonname=$TMONNAME
+mode_test=$MODE_TEST
+
+umask 022
+unset SQLPATH
+unset ORACLE_PATH
+
+logfile=/u1/etc/tmon/script/basement/chk_sql.log
+chk_logfile=/u1/etc/tmon/mon_log/chk/$today/chk_sql.log
+chk_logdir=/u1/etc/tmon/script/basement
+
+sql_chk_html="/u1/etc/tmon/script/basement/sql_chk_${tmonname}.html"  #寄信用
+chk_sql="/u1/etc/tmon/mon_log/chk_mail.log"
+
+lim_sec=$sec_lim
+
+if [ "$mode_test" == "Y" ] ;then
+   chk_sql_time_go="Y"
+   lim_sec='5'
+fi
+
+DBCHK="Y"
+
+if [ "$DBCHK" == "Y" ] ; then 
+   lim_sec='5'
+   sqlplus -S "du/du@$ORACLE_SID" <<%%
+   SPOOL ${chk_logdir}/q_run_sql_${tmonname}.out;
+   set feedback off
+   set heading off
+   set linesize 200
+   set pagesize 0 
+   col osuser format A16 
+   
+   SELECT
+        sql.sql_id
+   FROM
+        v\$session se,
+        v\$process pr,
+        v\$sqlarea sql     
+   WHERE
+        LAST_CALL_ET > $lim_sec
+        AND se.program NOT LIKE 'oracle@\%'
+        AND pr.addr = se.paddr 
+        AND sql.hash_value = se.sql_hash_value
+        --AND se.status = 'ACTIVE'
+   ORDER BY se.LAST_CALL_ET;
+   SPOOL OFF ;
+%%
+   cat ${chk_logdir}/q_run_sql_${tmonname}.out
+   check_num=`cat ${chk_logdir}/q_run_sql_${tmonname}.out | wc -l`
+
+fi
+
+if [ "$chk_sql_time_go" == "Y" ] ;then
+
+   today=`date +%Y%m%d`
+   Time=`date '+%T'`
+   #echo $Time
+   
+   tdatag=`date|awk '{print $2"-"$3}'`
+   #echo $tdatag
+   
+   
+   if [ ! -f $logfile ]; then #判斷log檔是否存在，若不存在先寫入head
+   #echo "檔案不存在"
+      echo "Time      sid  sql_id        (Sec)  OSUSER CurrRun_SQL" >$logfile
+   fi
+   
+   rm ${chk_logdir}/q_run_sql.out
+   
+   sqlplus -S "du/du@$ORACLE_SID" <<%%
+   SPOOL ${chk_logdir}/q_run_sql.out;
+   set feedback off
+   set heading off
+   set linesize 200
+   set pagesize 0 
+   col osuser format A16 
+   
+   SELECT
+        sql.sql_id
+   FROM
+        v\$session se,
+        v\$process pr,
+        v\$sqlarea sql     
+   WHERE
+        LAST_CALL_ET > $lim_sec
+        AND se.program NOT LIKE 'oracle@\%'
+        AND pr.addr = se.paddr 
+        AND sql.hash_value = se.sql_hash_value
+        --AND se.status = 'ACTIVE'
+   ORDER BY se.LAST_CALL_ET;
+   SPOOL OFF ;
+%%
+   
+   check_num=`cat ${chk_logdir}/q_run_sql.out | wc -l`
+   
+   if [ `echo "$check_num < 1" | bc` -eq 1 ] ; then 
+   
+      echo '<table border="1" cellpadding="5" 
+                style="border:2px ;text-align:center;">'
+      echo '<tr><td style="background-color:#FFECC9">沒有執行過久 SQL </td></tr>'
+      echo '</table>'
+   
+   else
+   
+      for i in `cat ${chk_logdir}/q_run_sql.out`
+      do
+      #echo $i
+         #echo "@@@ ",$i
+         rm chk_sql.log
+         rm chk_sql_2.log
+         sql=$(
+         echo "
+           set colsep _link_     -- separate columns with a comma
+           set pagesize 0   -- No header rows
+           set trimspool on -- remove trailing blanks
+           set headsep off  -- this may or may not be useful...depends on your headings.
+           set linesize 180   -- X should be the sum of the column widths
+           
+           spool ${chk_logdir}/chk_sql_num.log
+           --SQL(s)
+           SELECT
+                count(gzwl002)
+           FROM
+                v\$session se,
+                v\$process pr,
+                v\$sqlarea sql,
+                ds.gzwl_t
+           WHERE
+                sql.sql_id like '$i'
+                AND se.program NOT LIKE 'oracle@\\%'
+                AND pr.addr = se.paddr 
+                AND sql.hash_value = se.sql_hash_value
+                AND se.Process = gzwl008
+           ORDER BY se.LAST_CALL_ET;
+           --SQL(e)
+           SPOOL OFF
+           EXIT
+      
+           " | sqlplus -S "du/du@$ZONE"
+           )
+         echo $sql > /dev/null
+         chk_sql_num=`cat ${chk_logdir}/chk_sql_num.log`
+         #echo "@@@ "$chk_sql_num
+         x=1
+         while [ $x -le $chk_sql_num ]
+         do
+            #echo "@@@ " $x  
+            echo '<table width=1200 border="1" cellpadding="5" 
+                   style="border:2px ;text-align:center;">'
+            sql=$(
+            echo "
+              set colsep _link_     -- separate columns with a comma
+              set pagesize 0   -- No header rows
+              set trimspool on -- remove trailing blanks
+              set headsep off  -- this may or may not be useful...depends on your headings.
+              set linesize 200   -- X should be the sum of the column widths
+              set long 9999
+              col exec_start for a25
+              col time for a10
+              col gzwl008 for a15
+              col gzwl002 for a15
+              col gzwl003 for a15
+              
+              spool ${chk_logdir}/chk_sql.log
+              --SQL(s)
+              select 
+                    exec_start,
+                    sqltime,
+                    gzwl008,
+                    gzwl002,
+                    gzwl003,
+                    sql_fulltext
+                from (
+              select 
+                     exec_start,
+                     sqltime,
+                     gzwl008,
+                     gzwl002,
+                     gzwl003,
+                     sql_fulltext,
+                     rownum rn 
+                from (
+                      SELECT
+                           to_char(sql_exec_start,'yyyy-mm-dd hh24:mi:ss') exec_start,
+                           LAST_CALL_ET sqltime,
+                           gzwl008,
+                           gzwl002,
+                           gzwl003,
+                           sql.sql_fulltext
+                      FROM
+                           v\$session se,
+                           v\$process pr,
+                           v\$sqlarea sql,
+                           ds.gzwl_t
+                      WHERE
+                           sql.sql_id like '$i'
+                           AND se.program NOT LIKE 'oracle@\\%'
+                           AND pr.addr = se.paddr 
+                           AND sql.hash_value = se.sql_hash_value
+                           AND se.Process = gzwl008
+                      ORDER BY se.LAST_CALL_ET) 
+              )k
+              where rn = $x ;
+              --SQL(e)
+              SPOOL OFF
+              EXIT
+      
+              " | sqlplus -S "du/du@$ZONE"
+              )
+            echo $sql > /dev/null
+            cat ${chk_logdir}/chk_sql.log > ${chk_logdir}/chk_sql_2.log
+            check_column=`cat ${chk_logdir}/chk_sql_2.log`
+            sql_exec_start=`echo $check_column | awk -F _link_ '{print $1}'`
+            sqltime=`echo $check_column | awk -F _link_ '{print $2}'`
+            prog_id=`echo $check_column | awk -F _link_ '{print $3}'`
+            user=`echo $check_column | awk -F _link_ '{print $4}'`
+            prog=`echo $check_column | awk -F _link_ '{print $5}'`
+            prog_sql=`echo $check_column | awk -F _link_ '{$1=$2=$3=$4=$5="" ; print $0}'`  #抓取全部跨行 SQL 
+            echo '<tr><td rowspan="7">prod id : ' $prog_id '</td></tr>'
+            echo '<tr><td>sqltime (sec)  </td> ' '<td>' $sqltime '</td></tr>'
+            echo '<tr><td>sql_exec_start  </td> ' '<td>' $sql_exec_start '</td></tr>'
+            echo '<tr>
+                  <td>prog  </td><td>' $prog '</td></tr>'
+            echo '<tr>
+                  <td>user  </td><td>' $user '</td></tr>'
+            echo '<tr>
+                  <td>prog_sql  </td><td>' $prog_sql '</td></tr>'
+            if [ -n "$sql" ];then
+               echo $Time" "$sql >> $logfile
+               echo "" >> $logfile
+            fi
+      
+            x=`expr ${x} + 1` 
+            echo '</table>'
+      
+         done
+      done
+   
+   fi
+   
+   echo "" > ${chk_logdir}/chk_sql_num.log
+   
+   sql=$(
+   echo "
+     set colsep _link_     -- separate columns with a comma
+     set pagesize 0   -- No header rows
+     set trimspool on -- remove trailing blanks
+     set headsep off  -- this may or may not be useful...depends on your headings.
+     set linesize 180   -- X should be the sum of the column widths
+     
+     spool ${chk_logdir}/chk_sql_num.log
+     --SQL(s)
+     select count(*) from (
+     select sql_id,username,module
+            ,service_name
+            ,to_char(sql_exec_start,'yyyy-mm-dd hh24:mi:ss') sql_exec_start
+            ,sql_exec_id,sum(buffer_gets) buffer_gets
+            ,sum(disk_reads) disk_reads,round(sum(cpu_time/1000000),1) cpu_secs
+            ,round(sum(elapsed_time/1000000),1) elapsed_sec
+            ,sql_text
+     from v\$sql_monitor
+     where username not in ('SYS','SYSTEM')
+     group by sql_id,username,module
+              ,service_name,sql_exec_start,sql_exec_id
+              ,sql_text
+     order by 7 desc )
+     where rownum<=10;
+     --SQL(e)
+     SPOOL OFF
+     EXIT
+   
+     " | sqlplus -S "du/du@$ZONE"
+     )
+   
+   echo $sql > /dev/null
+   chk_sql_num=`cat ${chk_logdir}/chk_sql_num.log`
+   
+   if [ "$chk_sql_num" -le 0 ] ; then 
+   
+      echo " "
+   
+   else
+      echo "" > ${chk_logdir}/chk_sql.log
+      echo "" > ${chk_logdir}/chk_sql_2.log
+      x=1
+      while [ $x -le $chk_sql_num ]
+         do
+            #echo "@@@ " $x  
+            echo '<table width=500 border="1" cellpadding="5" 
+                   style="border:2px ;text-align:center;">'
+            echo '<tr><td colspan=3 style="background-color:#FFECC9">top 10 use CPU time high SQL </td></tr>'
+            sql=$(
+            echo "
+              set colsep _link_     -- separate columns with a comma
+              set pagesize 0   -- No header rows
+              set trimspool on -- remove trailing blanks
+              set headsep off  -- this may or may not be useful...depends on your headings.
+              set linesize 999   -- X should be the sum of the column widths
+              SET WRAP OFF
+              set long 9999
+              col rn for 99
+              col DBUSER for a15
+              col module for a40
+              col service_name for a15
+              col sql_exec_start for a25
+              col cpu_secs format 999999
+              col elapsed_sec format 999999
+   
+              spool ${chk_logdir}/chk_sql.log
+              --SQL(s)
+              select rn,DBuser
+                     ,module,service_name
+                     ,sql_exec_start
+                     ,cpu_secs
+                     ,elapsed_sec
+                     ,sql_text 
+              from (
+              select rownum rn,sql_id,DBuser,module,service_name,sql_exec_start,
+              sql_exec_id,buffer_gets,
+              disk_reads,cpu_secs,
+              elapsed_sec
+              ,sql_text from (
+              select sql_id,username DBuser,module,service_name,to_char(sql_exec_start,'yyyy-mm-dd hh24:mi:ss') sql_exec_start,
+              sql_exec_id,sum(buffer_gets) buffer_gets,
+              sum(disk_reads) disk_reads,round(sum(cpu_time/1000000),1) cpu_secs,
+              round(sum(elapsed_time/1000000),1) elapsed_sec
+              ,sql_text
+              from v\$sql_monitor
+              where username not in ('SYS','SYSTEM')
+              group by sql_id,username,module,service_name,sql_exec_start,sql_exec_id,sql_text
+              order by 7 desc)
+              where rownum<=10
+              ) where rn = $x;
+              --SQL(e)
+              SPOOL OFF
+              EXIT
+      
+              " | sqlplus -S "du/du@$ZONE"
+              )
+            echo $sql > /dev/null
+            cat ${chk_logdir}/chk_sql.log > ${chk_logdir}/chk_sql_2.log
+            check_column=`cat ${chk_logdir}/chk_sql_2.log`
+            rank=`echo $check_column | awk -F _link_ '{print $1}'`
+            user=`echo $check_column | awk -F _link_ '{print $2}'`
+            module=`echo $check_column | awk -F _link_ '{print $3}'`
+            servicename=`echo $check_column | awk -F _link_ '{print $4}'`
+            sql_exec_start=`echo $check_column | awk -F _link_ '{print $5}'`
+            sqltime=`echo $check_column | awk -F _link_ '{print $7}'`
+            cputime=`echo $check_column | awk -F _link_ '{print $6}'`
+            prog_sql=`echo $check_column | awk -F _link_ '{$1=$2=$3=$4=$5=$6=$7="" ; print $0}'`  #抓取全部跨行 SQL 
+            echo '<tr><td colspan="3"> No. ' $rank '</td></tr>'
+            echo '<tr><td rowspan="7">service name : ' $servicename '</td></tr>'
+            echo '<tr><td>cputime (sec)  </td> ' '<td>' $cputime '</td></tr>'
+            echo '<tr><td>sqltime (sec)  </td> ' '<td>' $sqltime '</td></tr>'
+            echo '<tr><td>sql_exec_start  </td> ' '<td>' $sql_exec_start '</td></tr>'
+            echo '<tr>
+                  <td>module  </td><td>' $module '</td></tr>'
+            echo '<tr>
+                  <td>user  </td><td>' $user '</td></tr>'
+            echo '<tr>
+                  <td>prog_sql  </td><td>' $prog_sql '</td></tr>'
+            if [ -n "$sql" ];then
+               echo $Time" "$sql >> $logfile
+               echo "" >> $logfile
+            fi
+      
+            x=`expr ${x} + 1` 
+            echo '</table>'
+      
+         done
+   
+   fi
+
+# SQL TOP 10 Disk read (s)
+   sql=$(
+   echo "
+     set colsep _link_     -- separate columns with a comma
+     set pagesize 0   -- No header rows
+     set trimspool on -- remove trailing blanks
+     set headsep off  -- this may or may not be useful...depends on your headings.
+     set linesize 180   -- X should be the sum of the column widths
+
+     col schema_name for A20;
+     col \"elapsed (sec)\" for 99999999;
+     
+     spool ${chk_logdir}/chk_sql_num.log
+     --SQL(s)
+     select count(*) from (
+     with a as 
+     (
+     select 
+     parsing_schema_name schema_name,
+     disk_reads
+     from v\$sqlarea
+     order by disk_reads desc
+      )
+     select * from a
+     )
+     where rownum<=10;
+     --SQL(e)
+     SPOOL OFF
+     EXIT
+   
+     " | sqlplus -S "du/du@$ZONE"
+     )
+   
+   echo $sql > /dev/null
+   chk_sql_num=`cat ${chk_logdir}/chk_sql_num.log`
+
+   if [ "$chk_sql_num" -le 0 ] ; then 
+   
+      echo " "
+   
+   else
+      echo "" > ${chk_logdir}/chk_sql.log
+      echo "" > ${chk_logdir}/chk_sql_2.log
+      x=1
+      echo '<table width="100%" border="2" align="center" style="border: 2px solid rgb(0, 0, 209); border-image-source: initial; '
+      echo 'border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; '
+      echo 'width: 100%; border-collapse: collapse; line-height: 24px; font-size: 16px; font-family: 微軟正黑體;" class="resizable"'
+      echo '><caption align="TOP" style="font-size: 18px; line-height: 34px; color: white; padding: 0px; '
+      echo 'background-image: initial; background-attachment: initial; background-color: rgb(0, 0, 138); '
+      echo 'background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; '
+      echo 'background-repeat: initial;">'
+      echo 'SQL效能觀察 -- 前一日 TOP 10 SQL (依 disk read 使用) -- (依照收集時間順序顯示)'
+      echo '</caption><colgroup><col align="LEFT" valign="top"></colgroup>'
+      while [ $x -le $chk_sql_num ]
+         do
+            sql=$(
+            echo "
+              set colsep _link_     -- separate columns with a comma
+              set pagesize 0   -- No header rows
+              set trimspool on -- remove trailing blanks
+              set headsep off  -- this may or may not be useful...depends on your headings.
+              set linesize 999   -- X should be the sum of the column widths
+              SET WRAP OFF
+              set long 9999
+              col rn for 99
+              col schema_name          for A10        ;
+              col cpu                  for 999999 ;
+              col elapsed              for 999999 ;
+              col disk_reads           heading \"disk | read\" ;
+              col disk_reads           for 9999999999 ;
+              col buffer_gets          heading \"buffer | gets\" ;
+              col buffer_gets          for 9999999999 ;
+              col parse_calls          heading \"parse | calls\" ;
+              col parse_calls          for 9999999999 ;
+              col iowait               for 9999999999 ;
+              col executions           for 9999999999 ;
+              col last_load            for A20        ;
+              col rows_processed       for 9999999999 ;
+              col module for A30 ;
+              col sql_id for A20 ;
+   
+              spool ${chk_logdir}/chk_sql.log
+              --SQL(s)
+              select *
+              from (
+              with a as (
+                 select 
+                 parsing_schema_name schema_name,
+                 trunc(cpu_time/1000000,2) cpu,
+                 trunc(elapsed_time/1000000,2) elapsed,
+                 disk_reads,
+                 buffer_gets,
+                 parse_calls,
+                 trunc(user_io_wait_time/1000000,2) iowait,
+                 executions,
+                 rows_processed,
+                 sql_id,
+                 to_char(last_load_time,'YYYY/MM/DD hh:mm:ss') last_load,
+                 module,
+                 sql_text
+                 from v\$sqlarea
+                 order by disk_reads desc
+                 )
+              , b as ( select * from a where rownum <= 10 )
+              select 
+                    rownum rn,
+                    schema_name,
+                    cpu,
+                    elapsed,
+                    disk_reads,
+                    buffer_gets,
+                    parse_calls,
+                    iowait,
+                    executions,
+                    rows_processed,
+                    sql_id,
+                    last_load,
+                    module,
+                    sql_text
+                    from b
+              ) where rn = $x;
+              --SQL(e)
+              SPOOL OFF
+              EXIT
+      
+              " | sqlplus -S "du/du@$ZONE"
+              )
+            echo $sql > /dev/null
+            cat ${chk_logdir}/chk_sql.log > ${chk_logdir}/chk_sql_2.log
+            check_column=`cat ${chk_logdir}/chk_sql_2.log`
+            rank=`echo $check_column | awk -F _link_ '{print $1}'`
+            a01=`echo $check_column | awk -F _link_ '{print $2}'`
+            a02=`echo $check_column | awk -F _link_ '{print $3}'`
+            a03=`echo $check_column | awk -F _link_ '{print $4}'`
+            a04=`echo $check_column | awk -F _link_ '{print $5}'`
+            a05=`echo $check_column | awk -F _link_ '{print $6}'`
+            a06=`echo $check_column | awk -F _link_ '{print $7}'`
+            a07=`echo $check_column | awk -F _link_ '{print $8}'`
+            a08=`echo $check_column | awk -F _link_ '{print $9}'`
+            a09=`echo $check_column | awk -F _link_ '{print $10}'`
+            a10=`echo $check_column | awk -F _link_ '{print $11}'`
+            a11=`echo $check_column | awk -F _link_ '{print $12}'`
+            a12=`echo $check_column | awk -F _link_ '{print $13}'`
+            a13=`echo $check_column | awk -F _link_ '{$1=$2=$3=$4=$5=$6=$7=$8=$9=$10=$11=$12=$13="" ; print $0}'`  #抓取全部跨行 SQL 
+            echo '<tbody>'
+            echo '<tr style="border: 2px solid rgb(299, 299, 299); '
+            echo 'padding: 0px; margin: 0px; '
+            echo 'background-color: rgb(0, 0, 138); '
+            echo 'font-size: 18px; line-height: 34px; color: white;">'
+            echo '<td > No. ' $rank '</td>'
+            echo '<td >schema name   </td>'
+            echo '<td>cpu 使用 (sec)  </td> '
+            echo '<td>執行 (sec)  </td> '
+            echo '<td>disk 讀取 (次數)  </td> '
+            echo '<td>內存 使用 (次數)  </td> '
+            echo '<td>DB 解析 SQL (次數)  </td> '
+            echo '<td>用戶 I/O 等待 (sec)  </td> '
+            echo '<td>SQL 執行 (次數)  </td> '
+            echo '<td>處理多少資料  </td> '
+            echo '<td>sql id  </td> '
+            echo '<td>最後執行時間  </td> '
+            echo '<td>怎運行  </td> '
+            echo '</tr>'
+            echo '<tr style="padding: 0px; margin: 0px;">'
+            echo '<td> ' $rank '</td>'
+            echo '<td> ' $a01 '</td>'
+            echo '<td> ' $a02 '</td> '
+            echo '<td> ' $a03 '</td> '
+            echo '<td style="background-color: rgb(299, 299, 0);"> ' $a04 ' </td> '
+            echo '<td> ' $a05 ' </td> '
+            echo '<td> ' $a06 ' </td> '
+            echo '<td> ' $a07 ' </td> '
+            echo '<td> ' $a08 ' </td> '
+            echo '<td> ' $a09 ' </td> '
+            echo '<td> ' $a10 ' </td> '
+            echo '<td> ' $a11 ' </td> '
+            echo '<td> ' $a12 ' </td> '
+            echo '</tr>'
+            echo '<tr>
+                  <td> prog_sql </td> <td colspan=13> ' $a13 '</td> </tr>'
+            if [ -n "$sql" ];then
+               echo $Time" "$sql >> $logfile
+               echo "" >> $logfile
+            fi
+      
+            x=`expr ${x} + 1` 
+      
+         done
+         echo '</table>'
+
+   fi
+
+# SQL TOP 10 Disk read (e) 
+  
+# SQL TOP 10 Buffer get (s)
+   sql=$(
+   echo "
+     set colsep _link_     -- separate columns with a comma
+     set pagesize 0   -- No header rows
+     set trimspool on -- remove trailing blanks
+     set headsep off  -- this may or may not be useful...depends on your headings.
+     set linesize 180   -- X should be the sum of the column widths
+
+     col schema_name for A20;
+     col \"elapsed (sec)\" for 99999999;
+     
+     spool ${chk_logdir}/chk_sql_num.log
+     --SQL(s)
+     select count(*) from (
+     with a as 
+     (
+     select 
+     parsing_schema_name schema_name,
+     buffer_gets
+     from v\$sqlarea
+     order by buffer_gets desc
+      )
+     select * from a
+     )
+     where rownum<=10;
+     --SQL(e)
+     SPOOL OFF
+     EXIT
+   
+     " | sqlplus -S "du/du@$ZONE"
+     )
+   
+   echo $sql > /dev/null
+   chk_sql_num=`cat ${chk_logdir}/chk_sql_num.log`
+
+   if [ "$chk_sql_num" -le 0 ] ; then 
+   
+      echo " "
+   
+   else
+      echo "" > ${chk_logdir}/chk_sql.log
+      echo "" > ${chk_logdir}/chk_sql_2.log
+      x=1
+      echo '<table width="100%" border="2" align="center" style="border: 2px solid rgb(0, 0, 209); border-image-source: initial; '
+      echo 'border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; '
+      echo 'width: 100%; border-collapse: collapse; line-height: 24px; font-size: 16px; font-family: 微軟正黑體;" class="resizable"'
+      echo '><caption align="TOP" style="font-size: 18px; line-height: 34px; color: white; padding: 0px; '
+      echo 'background-image: initial; background-attachment: initial; background-color: rgb(0, 0, 138); '
+      echo 'background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; '
+      echo 'background-repeat: initial;">'
+      echo 'SQL效能觀察 -- 前一日 TOP 10 SQL (依 內存 使用) -- (依照收集時間順序顯示)'
+      echo '</caption><colgroup><col align="LEFT" valign="top"></colgroup>'
+      while [ $x -le $chk_sql_num ]
+         do
+            sql=$(
+            echo "
+              set colsep _link_     -- separate columns with a comma
+              set pagesize 0   -- No header rows
+              set trimspool on -- remove trailing blanks
+              set headsep off  -- this may or may not be useful...depends on your headings.
+              set linesize 999   -- X should be the sum of the column widths
+              SET WRAP OFF
+              set long 9999
+              col rn for 99
+              col schema_name          for A10        ;
+              col cpu                  for 999999 ;
+              col elapsed              for 999999 ;
+              col disk_reads           heading \"disk | read\" ;
+              col disk_reads           for 9999999999 ;
+              col buffer_gets          heading \"buffer | gets\" ;
+              col buffer_gets          for 9999999999 ;
+              col parse_calls          heading \"parse | calls\" ;
+              col parse_calls          for 9999999999 ;
+              col iowait               for 9999999999 ;
+              col executions           for 9999999999 ;
+              col last_load            for A20        ;
+              col rows_processed       for 9999999999 ;
+              col module for A30 ;
+              col sql_id for A20 ;
+   
+              spool ${chk_logdir}/chk_sql.log
+              --SQL(s)
+              select *
+              from (
+              with a as (
+                 select 
+                 parsing_schema_name schema_name,
+                 trunc(cpu_time/1000000,2) cpu,
+                 trunc(elapsed_time/1000000,2) elapsed,
+                 disk_reads,
+                 buffer_gets,
+                 parse_calls,
+                 trunc(user_io_wait_time/1000000,2) iowait,
+                 executions,
+                 rows_processed,
+                 sql_id,
+                 to_char(last_load_time,'YYYY/MM/DD hh:mm:ss') last_load,
+                 module,
+                 sql_text
+                 from v\$sqlarea
+                 order by buffer_gets desc
+                 )
+              , b as ( select * from a where rownum <= 10 )
+              select 
+                    rownum rn,
+                    schema_name,
+                    cpu,
+                    elapsed,
+                    disk_reads,
+                    buffer_gets,
+                    parse_calls,
+                    iowait,
+                    executions,
+                    rows_processed,
+                    sql_id,
+                    last_load,
+                    module,
+                    sql_text
+                    from b
+              ) where rn = $x;
+              --SQL(e)
+              SPOOL OFF
+              EXIT
+      
+              " | sqlplus -S "du/du@$ZONE"
+              )
+            echo $sql > /dev/null
+            cat ${chk_logdir}/chk_sql.log > ${chk_logdir}/chk_sql_2.log
+            check_column=`cat ${chk_logdir}/chk_sql_2.log`
+            rank=`echo $check_column | awk -F _link_ '{print $1}'`
+            a01=`echo $check_column | awk -F _link_ '{print $2}'`
+            a02=`echo $check_column | awk -F _link_ '{print $3}'`
+            a03=`echo $check_column | awk -F _link_ '{print $4}'`
+            a04=`echo $check_column | awk -F _link_ '{print $5}'`
+            a05=`echo $check_column | awk -F _link_ '{print $6}'`
+            a06=`echo $check_column | awk -F _link_ '{print $7}'`
+            a07=`echo $check_column | awk -F _link_ '{print $8}'`
+            a08=`echo $check_column | awk -F _link_ '{print $9}'`
+            a09=`echo $check_column | awk -F _link_ '{print $10}'`
+            a10=`echo $check_column | awk -F _link_ '{print $11}'`
+            a11=`echo $check_column | awk -F _link_ '{print $12}'`
+            a12=`echo $check_column | awk -F _link_ '{print $13}'`
+            a13=`echo $check_column | awk -F _link_ '{$1=$2=$3=$4=$5=$6=$7=$8=$9=$10=$11=$12=$13="" ; print $0}'`  #抓取全部跨行 SQL 
+            echo '<tbody>'
+            echo '<tr style="border: 2px solid rgb(299, 299, 299); '
+            echo 'padding: 0px; margin: 0px; '
+            echo 'background-color: rgb(0, 0, 138); '
+            echo 'font-size: 18px; line-height: 34px; color: white;">'
+            echo '<td > No. ' $rank '</td>'
+            echo '<td >schema name   </td>'
+            echo '<td>cpu 使用 (sec)  </td> '
+            echo '<td>執行 (sec)  </td> '
+            echo '<td>disk 讀取 (次數)  </td> '
+            echo '<td>內存 使用 (次數)  </td> '
+            echo '<td>DB 解析 SQL (次數)  </td> '
+            echo '<td>用戶 I/O 等待 (sec)  </td> '
+            echo '<td>SQL 執行 (次數)  </td> '
+            echo '<td>處理多少資料  </td> '
+            echo '<td>sql id  </td> '
+            echo '<td>最後執行時間  </td> '
+            echo '<td>怎運行  </td> '
+            echo '</tr>'
+            echo '<tr style="padding: 0px; margin: 0px;">'
+            echo '<td> ' $rank '</td>'
+            echo '<td> ' $a01 '</td>'
+            echo '<td> ' $a02 '</td> '
+            echo '<td> ' $a03 '</td> '
+            echo '<td> ' $a04 ' </td> '
+            echo '<td style="background-color: rgb(299, 299, 0);"> ' $a05 ' </td> '
+            echo '<td> ' $a06 ' </td> '
+            echo '<td> ' $a07 ' </td> '
+            echo '<td> ' $a08 ' </td> '
+            echo '<td> ' $a09 ' </td> '
+            echo '<td> ' $a10 ' </td> '
+            echo '<td> ' $a11 ' </td> '
+            echo '<td> ' $a12 ' </td> '
+            echo '</tr>'
+            echo '<tr>
+                  <td> prog_sql </td> <td colspan=13> ' $a13 '</td> </tr>'
+            if [ -n "$sql" ];then
+               echo $Time" "$sql >> $logfile
+               echo "" >> $logfile
+            fi
+      
+            x=`expr ${x} + 1` 
+      
+         done
+         echo '</table>'
+
+   fi
+
+# SQL TOP 10 Buffer get (e)
+
+# SQL TOP 10 Parse call (s)
+   sql=$(
+   echo "
+     set colsep _link_     -- separate columns with a comma
+     set pagesize 0   -- No header rows
+     set trimspool on -- remove trailing blanks
+     set headsep off  -- this may or may not be useful...depends on your headings.
+     set linesize 180   -- X should be the sum of the column widths
+
+     col schema_name for A20;
+     col \"elapsed (sec)\" for 99999999;
+     
+     spool ${chk_logdir}/chk_sql_num.log
+     --SQL(s)
+     select count(*) from (
+     with a as 
+     (
+     select 
+     parsing_schema_name schema_name,
+     parse_calls
+     from v\$sqlarea
+     order by parse_calls desc
+      )
+     select * from a
+     )
+     where rownum<=10;
+     --SQL(e)
+     SPOOL OFF
+     EXIT
+   
+     " | sqlplus -S "du/du@$ZONE"
+     )
+   
+   echo $sql > /dev/null
+   chk_sql_num=`cat ${chk_logdir}/chk_sql_num.log`
+
+   if [ "$chk_sql_num" -le 0 ] ; then 
+   
+      echo " "
+   
+   else
+      echo "" > ${chk_logdir}/chk_sql.log
+      echo "" > ${chk_logdir}/chk_sql_2.log
+      x=1
+      echo '<table width="100%" border="2" align="center" style="border: 2px solid rgb(0, 0, 209); border-image-source: initial; '
+      echo 'border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; '
+      echo 'width: 100%; border-collapse: collapse; line-height: 24px; font-size: 16px; font-family: 微軟正黑體;" class="resizable"'
+      echo '><caption align="TOP" style="font-size: 18px; line-height: 34px; color: white; padding: 0px; '
+      echo 'background-image: initial; background-attachment: initial; background-color: rgb(0, 0, 138); '
+      echo 'background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; '
+      echo 'background-repeat: initial;">'
+      echo 'SQL效能觀察 -- 前一日 TOP 10 SQL (依 DB 解析次數 ) -- (依照收集時間順序顯示)'
+      echo '</caption><colgroup><col align="LEFT" valign="top"></colgroup>'
+      while [ $x -le $chk_sql_num ]
+         do
+            sql=$(
+            echo "
+              set colsep _link_     -- separate columns with a comma
+              set pagesize 0   -- No header rows
+              set trimspool on -- remove trailing blanks
+              set headsep off  -- this may or may not be useful...depends on your headings.
+              set linesize 999   -- X should be the sum of the column widths
+              SET WRAP OFF
+              set long 9999
+              col rn for 99
+              col schema_name          for A10        ;
+              col cpu                  for 999999 ;
+              col elapsed              for 999999 ;
+              col disk_reads           heading \"disk | read\" ;
+              col disk_reads           for 9999999999 ;
+              col buffer_gets          heading \"buffer | gets\" ;
+              col buffer_gets          for 9999999999 ;
+              col parse_calls          heading \"parse | calls\" ;
+              col parse_calls          for 9999999999 ;
+              col iowait               for 9999999999 ;
+              col executions           for 9999999999 ;
+              col last_load            for A20        ;
+              col rows_processed       for 9999999999 ;
+              col module for A30 ;
+              col sql_id for A20 ;
+   
+              spool ${chk_logdir}/chk_sql.log
+              --SQL(s)
+              select *
+              from (
+              with a as (
+                 select 
+                 parsing_schema_name schema_name,
+                 trunc(cpu_time/1000000,2) cpu,
+                 trunc(elapsed_time/1000000,2) elapsed,
+                 disk_reads,
+                 buffer_gets,
+                 parse_calls,
+                 trunc(user_io_wait_time/1000000,2) iowait,
+                 executions,
+                 rows_processed,
+                 sql_id,
+                 to_char(last_load_time,'YYYY/MM/DD hh:mm:ss') last_load,
+                 module,
+                 sql_text
+                 from v\$sqlarea
+                 order by parse_calls desc
+                 )
+              , b as ( select * from a where rownum <= 10 )
+              select 
+                    rownum rn,
+                    schema_name,
+                    cpu,
+                    elapsed,
+                    disk_reads,
+                    buffer_gets,
+                    parse_calls,
+                    iowait,
+                    executions,
+                    rows_processed,
+                    sql_id,
+                    last_load,
+                    module,
+                    sql_text
+                    from b
+              ) where rn = $x;
+              --SQL(e)
+              SPOOL OFF
+              EXIT
+      
+              " | sqlplus -S "du/du@$ZONE"
+              )
+            echo $sql > /dev/null
+            cat ${chk_logdir}/chk_sql.log > ${chk_logdir}/chk_sql_2.log
+            check_column=`cat ${chk_logdir}/chk_sql_2.log`
+            rank=`echo $check_column | awk -F _link_ '{print $1}'`
+            a01=`echo $check_column | awk -F _link_ '{print $2}'`
+            a02=`echo $check_column | awk -F _link_ '{print $3}'`
+            a03=`echo $check_column | awk -F _link_ '{print $4}'`
+            a04=`echo $check_column | awk -F _link_ '{print $5}'`
+            a05=`echo $check_column | awk -F _link_ '{print $6}'`
+            a06=`echo $check_column | awk -F _link_ '{print $7}'`
+            a07=`echo $check_column | awk -F _link_ '{print $8}'`
+            a08=`echo $check_column | awk -F _link_ '{print $9}'`
+            a09=`echo $check_column | awk -F _link_ '{print $10}'`
+            a10=`echo $check_column | awk -F _link_ '{print $11}'`
+            a11=`echo $check_column | awk -F _link_ '{print $12}'`
+            a12=`echo $check_column | awk -F _link_ '{print $13}'`
+            a13=`echo $check_column | awk -F _link_ '{$1=$2=$3=$4=$5=$6=$7=$8=$9=$10=$11=$12=$13="" ; print $0}'`  #抓取全部跨行 SQL 
+            echo '<tbody>'
+            echo '<tr style="border: 2px solid rgb(299, 299, 299); '
+            echo 'padding: 0px; margin: 0px; '
+            echo 'background-color: rgb(0, 0, 138); '
+            echo 'font-size: 18px; line-height: 34px; color: white;">'
+            echo '<td > No. ' $rank '</td>'
+            echo '<td >schema name   </td>'
+            echo '<td>cpu 使用 (sec)  </td> '
+            echo '<td>執行 (sec)  </td> '
+            echo '<td>disk 讀取 (次數)  </td> '
+            echo '<td>內存 使用 (次數)  </td> '
+            echo '<td>DB 解析 SQL (次數)  </td> '
+            echo '<td>用戶 I/O 等待 (sec)  </td> '
+            echo '<td>SQL 執行 (次數)  </td> '
+            echo '<td>處理多少資料  </td> '
+            echo '<td>sql id  </td> '
+            echo '<td>最後執行時間  </td> '
+            echo '<td>怎運行  </td> '
+            echo '</tr>'
+            echo '<tr style="padding: 0px; margin: 0px;">'
+            echo '<td> ' $rank '</td>'
+            echo '<td> ' $a01 '</td>'
+            echo '<td> ' $a02 '</td> '
+            echo '<td> ' $a03 '</td> '
+            echo '<td> ' $a04 ' </td> '
+            echo '<td> ' $a05 ' </td> '
+            echo '<td style="background-color: rgb(299, 299, 0);"> ' $a06 ' </td> '
+            echo '<td> ' $a07 ' </td> '
+            echo '<td> ' $a08 ' </td> '
+            echo '<td> ' $a09 ' </td> '
+            echo '<td> ' $a10 ' </td> '
+            echo '<td> ' $a11 ' </td> '
+            echo '<td> ' $a12 ' </td> '
+            echo '</tr>'
+            echo '<tr>
+                  <td> prog_sql </td> <td colspan=13> ' $a13 '</td> </tr>'
+            if [ -n "$sql" ];then
+               echo $Time" "$sql >> $logfile
+               echo "" >> $logfile
+            fi
+      
+            x=`expr ${x} + 1` 
+      
+         done
+         echo '</table>'
+
+   fi
+
+# SQL TOP 10 Parse call (e)
+
+fi

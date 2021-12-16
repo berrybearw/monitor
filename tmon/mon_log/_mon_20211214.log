@@ -1,0 +1,6012 @@
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   3.67 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-00:01:04 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+chk_mail :  Y
+ 
+開始檢查看 process 記憶體使用量
+process 紀錄值 :  1048576 kb
+檢查 process 記憶體是否超過 1048576 kb
+沒有 process 超過 1048576 kb
+結束檢查 process 記憶體使用量
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   1.74 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-00:05:41 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.2672 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.258 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.2533 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.2485 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   1.69 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-00:25:32 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.243 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1945 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1902 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1856 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1808 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1764 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1725 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   3.24 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-01:01:03 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+chk_mail :  Y
+ 
+開始檢查看 process 記憶體使用量
+process 紀錄值 :  1048576 kb
+檢查 process 記憶體是否超過 1048576 kb
+沒有 process 超過 1048576 kb
+結束檢查 process 記憶體使用量
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   1.64 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-01:05:41 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1979 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1937 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   26.22 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-01:17:20 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.437 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   19.24 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-01:22:43 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.7506 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   2.47 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-01:25:40 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.7483 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.744 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.7371 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.7329 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.7287 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   1.74 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-01:50:41 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 22.0641 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 22.0547 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   3.05 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-02:00:50 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+chk_mail :  Y
+ 
+開始檢查看 process 記憶體使用量
+process 紀錄值 :  1048576 kb
+檢查 process 記憶體是否超過 1048576 kb
+沒有 process 超過 1048576 kb
+結束檢查 process 記憶體使用量
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 22.0425 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 22.0363 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 22.0316 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   1.63 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-02:20:42 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 22.0268 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 22.0209 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 22.0157 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 22.0116 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 22.0057 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 22.0012 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.9966 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.9913 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   2.92 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-03:00:41 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+chk_mail :  Y
+ 
+開始檢查看 process 記憶體使用量
+process 紀錄值 :  1048576 kb
+檢查 process 記憶體是否超過 1048576 kb
+沒有 process 超過 1048576 kb
+結束檢查 process 記憶體使用量
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.966 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.9604 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.9566 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   1.78 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-03:20:37 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.9525 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.9472 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.9422 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.9367 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.9314 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.9269 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   1.62 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-03:50:42 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.9218 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   1.66 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-03:55:36 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.9166 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   1.97 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-04:00:50 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+chk_mail :  Y
+ 
+開始檢查看 process 記憶體使用量
+process 紀錄值 :  1048576 kb
+檢查 process 記憶體是否超過 1048576 kb
+沒有 process 超過 1048576 kb
+結束檢查 process 記憶體使用量
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   2.10 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-04:05:35 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.9042 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.8981 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   1.79 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-04:15:36 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.8939 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   1.85 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-04:20:39 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.889 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.8838 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.8781 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.8733 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   1.73 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-04:40:34 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 21.8678 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 22 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.6781 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.6706 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.6242 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   2.24 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-05:00:43 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+chk_mail :  Y
+ 
+開始檢查看 process 記憶體使用量
+process 紀錄值 :  1048576 kb
+檢查 process 記憶體是否超過 1048576 kb
+沒有 process 超過 1048576 kb
+結束檢查 process 記憶體使用量
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.6361 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   1.79 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-05:10:33 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.6298 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 19.9681 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.0094 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 19.9946 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 19.9896 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.108 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1186 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1529 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1482 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1427 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   2.24 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-06:00:45 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+chk_mail :  Y
+ 
+開始檢查看 process 記憶體使用量
+process 紀錄值 :  1048576 kb
+檢查 process 記憶體是否超過 1048576 kb
+沒有 process 超過 1048576 kb
+結束檢查 process 記憶體使用量
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   1.68 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-06:05:37 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1462 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   1.85 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-06:10:38 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1405 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1359 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1309 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1255 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1209 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1159 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.0931 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1311 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1262 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.121 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   2.08 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-07:00:41 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+chk_mail :  Y
+ 
+開始檢查看 process 記憶體使用量
+process 紀錄值 :  1048576 kb
+檢查 process 記憶體是否超過 1048576 kb
+沒有 process 超過 1048576 kb
+結束檢查 process 記憶體使用量
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1125 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1068 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1023 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.0974 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.0922 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.0873 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.0826 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.0771 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.072 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.0674 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.063 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU 5 min load average 高於  1.60 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU 5min load average :   2.03 </th>
+            </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>2021/12/14-08:00:35 CPU 使用量 顯示 80 % 以上</th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+chk_mail :  Y
+ 
+開始檢查看 process 記憶體使用量
+process 紀錄值 :  1048576 kb
+檢查 process 記憶體是否超過 1048576 kb
+沒有 process 超過 1048576 kb
+結束檢查 process 記憶體使用量
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.0589 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.052 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.043 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.0378 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+	          <tr>
+		  <th colspan=7 style=background-color:#FFECC9>2021/12/14-08:20:39 沒有 process 超過 1048576 kb </th>
+		  </tr> 
+		 
+</table></div> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.1854 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+	          <tr>
+		  <th colspan=7 style=background-color:#FFECC9>2021/12/14-08:25:38 沒有 process 超過 1048576 kb </th>
+		  </tr> 
+		 
+</table></div> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.2102 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+	          <tr>
+		  <th colspan=7 style=background-color:#FFECC9>2021/12/14-08:30:38 沒有 process 超過 1048576 kb </th>
+		  </tr> 
+		 
+</table></div> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.2375 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+	          <tr>
+		  <th colspan=7 style=background-color:#FFECC9>2021/12/14-08:35:37 沒有 process 超過 1048576 kb </th>
+		  </tr> 
+		 
+</table></div> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.2232 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+	          <tr>
+		  <th colspan=7 style=background-color:#FFECC9>2021/12/14-08:40:37 沒有 process 超過 1048576 kb </th>
+		  </tr> 
+		 
+</table></div> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.2184 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+	          <tr>
+		  <th colspan=7 style=background-color:#FFECC9>2021/12/14-08:45:36 沒有 process 超過 1048576 kb </th>
+		  </tr> 
+		 
+</table></div> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 記憶體</th>
+   </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FF3B3B> Memory use over 50 %</th>
+      </tr> </table> 
+       
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>記憶體使用率 20.2131 %</th> 
+      </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 23 GB </th> 
+      </tr> </table> 
+<div class="content"> 
+<table width=100% border=1>
+	          <tr>
+		  <th colspan=7 style=background-color:#FFECC9>2021/12/14-08:50:38 沒有 process 超過 1048576 kb </th>
+		  </tr> 
+		 
+</table></div> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<table width=100% border=1>
+      <tr>
+      <td colspan=5 align=center style=background-color:#FFECC9> 相關排程檢查 </td>
+      </tr>
+       
+<tr>
+          <td rowspan=6 align=center>T100backup</td>
+          </tr> 
+<tr> 
+               <td> 排程  T100backup  20211213  </td>
+               <td> 沒開啟 </td>
+               </tr>
+<tr> 
+               <td> 排程  T100backup  20211212  </td>
+               <td> 沒開啟 </td>
+               </tr>
+<tr> 
+               <td> 排程  T100backup  20211211  </td>
+               <td> 沒開啟 </td>
+               </tr>
+<tr> 
+               <td> 排程  T100backup  20211210  </td>
+               <td> 沒開啟 </td>
+               </tr>
+<tr> 
+               <td> 排程  T100backup  20211209  </td>
+               <td> 沒開啟 </td>
+               </tr>
+</tr></table> 
+<table width=100% border=1>
+      <tr>
+      <td colspan=5 align=center style=background-color:#FFECC9> 排程過程檢查 </td>
+      </tr>
+       
+<tr>
+          <td colspan=5 align=center>T100backup</td>
+          </tr> 
+<tr>
+          <td colspan=5 align=center> 沒發現錯誤 </td>
+          </tr> 
+</tr></table> 
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+80
+@@@ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+80
+@@@ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+80
+
+@@@ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+80
+
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+80
+
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+80
+
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+80
+
+@  0
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+80
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+================================================================

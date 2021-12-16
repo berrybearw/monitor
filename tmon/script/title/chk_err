@@ -1,0 +1,34 @@
+#!/bin/ksh
+
+. /u1/etc/tmon/tmon_title.conf
+
+dir_date=`date '+%Y%m%d'`
+ps_cputime_file_chk="/u3/log/mon_log/chk/$dir_date/ps_cputime.log"
+ps_cputime_file_all_chk="/u3/log/mon_log/chk/$dir_date/ps_cputime_all.log"
+
+chk_err_Y=`cat $chk_err | grep "Y" | wc -l`
+
+echo " <tr> "
+
+if [ "$chk_err_Y" -gt "0" ] ; then 
+   echo "
+        <th colspan=3 style="background-color:red">webrun awsp920 log 15575 </th>
+        <th colspan=5 style="background-color:#FFECC9">接口程式拋轉上可能需檢查 </th>
+        </tr>
+        <tr>
+        <th colspan=3 style="background-color:red">webrun log 6088 </th>
+        <th colspan=5 style="background-color:#FFECC9">程式可能有機率閃退 ， 建議檢查是否有 pc 同 hostname  </th>
+        </tr>
+        "
+else
+   echo "
+        <th colspan=3 style="background-color:#FFECC9">webrun awsp920 log 15575 </th>
+        <th colspan=5 style="background-color:#FFECC9">接口程式拋轉上可能需檢查 </th>
+        </tr>
+        <tr>
+        <th colspan=3 style="background-color:#FFECC9">webrun log 6088 </th>
+        <th colspan=5 style="background-color:#FFECC9">程式可能有機率閃退 ， 建議檢查是否有 pc 同 hostname  </th>
+        </tr>
+        "
+fi
+

@@ -1,0 +1,267 @@
+#!/bin/ksh
+
+#v1 check 順序 No.10
+
+. /u1/etc/tmon/tmon.conf
+
+ls_version="1.0"
+
+if [ "$mode_test" == "Y" ] ;then
+   chk_ttbs_time_go="Y"
+fi
+
+if [ "$chk_ttbs_time_go" == "Y" ] ;then
+
+   if [ -n "$1" ];then
+      unset SQLPATH
+      unset ORACLE_PATH
+      export ZONE=$1
+   if [ -z "$sqlpass" ];then
+   if [ -z "$2" ];then
+      export sqlpass=du
+   else
+      export sqlpass=$2    	
+   fi
+   fi
+   fi
+   
+   ttbs_file="/u1/etc/tmon/mon_log/ttbs.html"
+   p_file="/u1/etc/tmon/mon_log/p.log"
+   
+   if [ -z "$tbs" ];then
+   tbs=`sqlplus -S "du/$sqlpass@$ZONE" << EOF
+             set feedback off
+             col USED% for a6
+             col "TABLESPACE NAME" for a16
+   SELECT A.tablespace_name as "TABLESPACE NAME",
+          A.total_size AS "TOTAL SIZE",
+          round(B.total_free_size, 1) AS "TOTAL FREE SIZE(MB)",
+          round((A.total_size - B.total_free_size), 2) AS "USED SIZE",
+          to_char(100-(100*B.total_free_size/A.total_size), '999') AS"USED%"
+   FROM (SELECT tablespace_name,sum(bytes)/1024/1024 AS total_size
+                FROM dba_data_files
+                GROUP BY tablespace_name) A,
+         (SELECT tablespace_name,sum(bytes/1024/1024) AS total_free_size
+                FROM dba_free_space
+                GROUP BY tablespace_name) B
+   WHERE A.tablespace_name = B.tablespace_name
+   and A.tablespace_name not in ('SYSTEM','SYSAUX')
+   ORDER BY "USED%" desc;
+             exit
+EOF
+`
+   fi
+   
+   #temptabs 空間檢查
+   temptabs_ov=`echo "$tbs"|grep "TEMPTABS"|awk '{if($5 >= '$lim') {print $5}}'|grep -Eo "[0-9]+"`
+   #判斷temptabs是否需檢查~大於lim設定值
+   if [ -n "$temptabs_ov" ];then
+   
+   temptabs=`sqlplus -S "du/$sqlpass@$ZONE" << EOF
+   col owner for a6
+   col SEGMENT_NAME for a50
+   col process for a8
+   set pagesize 30
+   set linesize 160
+   set feedback off
+   select vs.sid,vs.serial#,vs.process,c.SEGMENT_NAME,c.SEGMENT_TYPE,c.owner,c.TABLESPACE_NAME,c.MB
+   from
+   v\\$session vs,
+   (select va.sid,b.SEGMENT_NAME,b.SEGMENT_TYPE,b.owner,b.TABLESPACE_NAME,b.MB
+   from v\\$access va,
+   (select * from 
+   (SELECT owner,segment_name,segment_type,tablespace_name,SUM(bytes)/1024/1024 MB
+   FROM dba_segments
+   WHERE TABLESPACE_NAME = 'TEMPTABS'
+   and segment_type='TABLE'
+   and SEGMENT_NAME not like 'BIN%'
+   group by owner,segment_name,segment_type,tablespace_name
+   order by MB desc ) a
+   WHERE ROWNUM < 6) b
+   where va.object=b.segment_name) c
+   where c.sid=vs.sid;
+   exit
+EOF
+`
+   if [ -n "$temptabs" ];then
+      chk_Warn="Y"
+      echo "chk_Warn : " $chk_Warn
+      echo "<table width=1200 border=1>
+      <tr>
+      <th colspan=8 style="background-color:#FFECC9">ORACLE TEMPTABS表空間檢查</th>
+      </tr>
+      <tr>
+      <td colspan=8 align="center" valign="middle">===TEMPTABS表空間 over <font color=red>$lim%</font>===</td> 
+      </tr>
+      <tr>
+      <td colspan=8 align="center" valign="middle">===TEMPTABS空間最大佔用===</td>
+      </tr>" >> $ttbs_file
+      
+      temptabs_wc=`echo "$temptabs"|wc -l`
+      i=1
+      while [ "$i" -le "$temptabs_wc" ]
+      do
+         t=1
+         if [ "$i" -eq 1 ];then
+            i=`expr $i + 1`
+         elif [ "$i" -eq 3 ];then
+            i=`expr $i + 1`
+         else
+            echo "<tr>" >> $ttbs_file
+            temptabs_b=`echo "$temptabs"|sed -n ''$i','$i' p'`
+            while [ "$t" -le 8 ]
+            do
+               temptabs_a=`echo "$temptabs_b"|awk '{print $'$t'}'`
+      	 echo "<td>$temptabs_a</td>" >> $ttbs_file
+               t=`expr $t + 1`
+            done
+            echo "</tr>" >> $ttbs_file
+            i=`expr $i + 1`
+         fi
+      done
+   
+   #TEMPTABS空間佔用程式
+   
+   temptabs_p=`echo "$temptabs"|awk '{print $3}'|grep -Eo "[0-9]+"|uniq`
+   #
+   if [ -n "$temptabs_p" ];then
+   temptabs_n=`echo "$temptabs_p"|wc -l`
+   
+   case $temptabs_n in
+    1) p1=`echo $temptabs_p|awk '{print $1}'`
+     p1a=`ps -ef|grep -v grep|grep -w $p1`
+     if [ -n "$p1a" ];then
+        echo "$p1a" >> $p_file
+     fi
+    ;;
+    2) p1=`echo $temptabs_p|awk '{print $1}'`
+     p1a=`ps -ef|grep -v grep|grep -w $p1`
+     p2=`echo $temptabs_p|awk '{print $2}'`
+     p2a=`ps -ef|grep -v grep|grep -w $p2`
+     if [ -n "$p1a" ];then
+        echo "$p1a" >> $p_file
+     fi
+     if [ -n "$p2a" ];then
+        echo "$p2a" >> $p_file
+     fi
+    ;;
+    3) p1=`echo $temptabs_p|awk '{print $1}'`
+     p1a=`ps -ef|grep -v grep|grep -w $p1`
+     p2=`echo $temptabs_p|awk '{print $2}'`
+     p2a=`ps -ef|grep -v grep|grep -w $p2`
+     p3=`echo $temptabs_p|awk '{print $3}'`
+     p3a=`ps -ef|grep -v grep|grep -w $p3`
+     if [ -n "$p1a" ];then
+        echo "$p1a" >> $p_file
+     fi
+     if [ -n "$p2a" ];then
+        echo "$p2a" >> $p_file
+     fi
+     if [ -n "$p3a" ];then
+        echo "$p3a" >> $p_file
+     fi
+    ;;
+    4) p1=`echo $temptabs_p|awk '{print $1}'`
+     p1a=`ps -ef|grep -v grep|grep -w $p1`
+     p2=`echo $temptabs_p|awk '{print $2}'`
+     p2a=`ps -ef|grep -v grep|grep -w $p2`
+     p3=`echo $temptabs_p|awk '{print $3}'`
+     p3a=`ps -ef|grep -v grep|grep -w $p3`
+     p4=`echo $temptabs_p|awk '{print $4}'`
+     p4a=`ps -ef|grep -v grep|grep -w $p4`
+     if [ -n "$p1a" ];then
+        echo "$p1a" >> $p_file
+     fi
+     if [ -n "$p2a" ];then
+        echo "$p2a" >> $p_file
+     fi
+     if [ -n "$p3a" ];then
+        echo "$p3a" >> $p_file
+     fi
+     if [ -n "$p4a" ];then
+        echo "$p4a" >> $p_file
+     fi
+    ;;
+    5) p1=`echo $temptabs_p|awk '{print $1}'`
+     p1a=`ps -ef|grep -v grep|grep -w $p1`
+     p2=`echo $temptabs_p|awk '{print $2}'`
+     p2a=`ps -ef|grep -v grep|grep -w $p2`
+     p3=`echo $temptabs_p|awk '{print $3}'`
+     p3a=`ps -ef|grep -v grep|grep -w $p3`
+     p4=`echo $temptabs_p|awk '{print $4}'`
+     p4a=`ps -ef|grep -v grep|grep -w $p4`
+     p5=`echo $temptabs_p|awk '{print $5}'`
+     p5a=`ps -ef|grep -v grep|grep -w $p5`
+     if [ -n "$p1a" ];then
+        echo "$p1a" >> $p_file
+     fi
+     if [ -n "$p2a" ];then
+        echo "$p2a" >> $p_file
+     fi
+     if [ -n "$p3a" ];then
+        echo "$p3a" >> $p_file
+     fi
+     if [ -n "$p4a" ];then
+        echo "$p4a" >> $p_file
+     fi
+     if [ -n "$p5a" ];then
+        echo "$p5a" >> $p_file
+     fi
+    ;;
+    esac
+    
+    if [ -f "$p_file" ];then
+       p=`cat $p_file`
+       p_wc=`cat $p_file|wc -l`
+       p_head=`ps -ef|head -n 1`
+    fi
+   
+    if [ -n "$p_wc" ];then
+       echo "<tr><td colspan=8 align="center" valign="middle">====TEMPTABS 最大運行程式====</td></tr>" >> $ttbs_file
+       i=1
+       echo "<tr>" >> $ttbs_file
+       while [ "$i" -le 8 ]
+       do
+          p_head_b=`echo "$p_head"|awk '{print $'$i'}'`
+          if [ "$i" -eq 8 ];then
+             echo "<td>$p_head_b</td>" >> $ttbs_file
+          else
+             echo "<td>$p_head_b</td>" >> $ttbs_file
+          fi
+          i=`expr $i + 1`
+       done
+       echo "</tr>" >> $ttbs_file
+       i=1
+       while [ "$i" -le "$p_wc" ];
+       do
+          t=1
+          p_b=`echo "$p"|sed -n ''$i','$i' p'`
+          echo "<tr>" >> $ttbs_file
+          while [ "$t" -le 8 ];
+          do
+             if [ "$t" -eq 8 ];then
+                p_b_b=`echo "$p_b"|awk '{$1=$2=$3=$4=$5=$6=$7="";print $0}'`
+   	     echo "<td>$p_b_b</td>" >> $ttbs_file
+             else
+   	     p_b_b=`echo "$p_b"|awk '{print $'$t'}'`
+   	     echo "<td>$p_b_b</td>" >> $ttbs_file
+             fi
+   	  t=`expr $t + 1`
+          done
+          echo "</tr>" >> $ttbs_file
+          i=`expr $i + 1`
+       done
+    fi
+    fi
+    echo "</table>" >> $ttbs_file
+    fi
+    fi
+   
+    if [ -f "$ttbs_file" ];then
+       cat $ttbs_file
+    fi
+   
+    rm -rf /u1/etc/tmon/mon_log/p.log
+    rm -rf /u1/etc/tmon/mon_log/ttbs.html
+
+fi

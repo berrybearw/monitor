@@ -1,0 +1,3849 @@
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+===記憶體使用率==== 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 17 GB </th> 
+      </tr>
+      </table>
+      
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31105004 </td>
+<td> 2355220 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+<table width=100% border=1>
+      <tr>
+      <th colspan=7 style=background-color:#FFECC9>表空間使用率</th>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle style=background-color:red >NOW!! DB tablespace use over 5 % </td>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle style=background-color:red > DB tablespace free is lower than 1024 MB </td>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle> TABLESPACE </td>
+      </tr>
+<tr><td> TABLESPACE_NAME </td>
+<td> ALLOCATED ( MB ) </td>
+<td> FREE ( MB ) </td>
+<td> USE ( MB ) </td>
+<td> FREE % </td>
+<td> USE % </td>
+<td> MAX ( MB ) </td></tr>
+<tr><td> SYSAUX </td>
+<td> 2580 </td>
+<td> 453 </td>
+<td> 2127 </td>
+<td> 93.51 </td>
+<td> 6.49 </td>
+<td> 32768 </td></tr>
+</table>
+N
+================================================================
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+===記憶體使用率==== 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 17 GB </th> 
+      </tr>
+      </table>
+      
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31105004 </td>
+<td> 2355220 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+<table width=100% border=1>
+      <tr>
+      <th colspan=7 style=background-color:#FFECC9>表空間使用率</th>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle style=background-color:red >NOW!! DB tablespace use over 5 % </td>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle style=background-color:red > DB tablespace free is lower than 1024 MB </td>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle> TABLESPACE </td>
+      </tr>
+<tr><td> TABLESPACE_NAME </td>
+<td> ALLOCATED ( MB ) </td>
+<td> FREE ( MB ) </td>
+<td> USE ( MB ) </td>
+<td> FREE % </td>
+<td> USE % </td>
+<td> MAX ( MB ) </td></tr>
+<tr><td> SYSAUX </td>
+<td> 2580 </td>
+<td> 453 </td>
+<td> 2127 </td>
+<td> 93.51 </td>
+<td> 6.49 </td>
+<td> 32768 </td></tr>
+</table>
+N
+================================================================
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+===記憶體使用率==== 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 17 GB </th> 
+      </tr>
+      </table>
+      
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31105004 </td>
+<td> 2355220 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+<table width=100% border=1>
+      <tr>
+      <th colspan=7 style=background-color:#FFECC9>表空間使用率</th>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle style=background-color:red >NOW!! DB tablespace use over 5 % </td>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle style=background-color:red > DB tablespace free is lower than 1024 MB </td>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle> TABLESPACE </td>
+      </tr>
+<tr><td> TABLESPACE_NAME </td>
+<td> ALLOCATED ( MB ) </td>
+<td> FREE ( MB ) </td>
+<td> USE ( MB ) </td>
+<td> FREE % </td>
+<td> USE % </td>
+<td> MAX ( MB ) </td></tr>
+<tr><td> SYSAUX </td>
+<td> 2580 </td>
+<td> 453 </td>
+<td> 2127 </td>
+<td> 93.51 </td>
+<td> 6.49 </td>
+<td> 32768 </td></tr>
+</table>
+N
+================================================================
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+===記憶體使用率==== 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 17 GB </th> 
+      </tr>
+      </table>
+      
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31105004 </td>
+<td> 2355220 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+<table width=100% border=1>
+      <tr>
+      <th colspan=7 style=background-color:#FFECC9>表空間使用率</th>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle style=background-color:red >NOW!! DB tablespace use over 5 % </td>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle style=background-color:red > DB tablespace free is lower than 1024 MB </td>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle> TABLESPACE </td>
+      </tr>
+<tr><td> TABLESPACE_NAME </td>
+<td> ALLOCATED ( MB ) </td>
+<td> FREE ( MB ) </td>
+<td> USE ( MB ) </td>
+<td> FREE % </td>
+<td> USE % </td>
+<td> MAX ( MB ) </td></tr>
+<tr><td> SYSAUX </td>
+<td> 2580 </td>
+<td> 453 </td>
+<td> 2127 </td>
+<td> 93.51 </td>
+<td> 6.49 </td>
+<td> 32768 </td></tr>
+</table>
+N
+================================================================
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+===記憶體使用率==== 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 17 GB </th> 
+      </tr>
+      </table>
+      
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31105004 </td>
+<td> 2355220 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+===記憶體使用率==== 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 17 GB </th> 
+      </tr>
+      </table>
+      
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31105004 </td>
+<td> 2355220 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+N
+<table border="1" cellpadding="5" 
+                style="border:2px ;text-align:center;">
+<tr><td style="background-color:#FFECC9">沒有執行過久 SQL </td></tr>
+</table>
+ 
+<table width="100%" border="2" align="center" style="border: 2px solid rgb(0, 0, 209); border-image-source: initial; 
+border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; 
+width: 100%; border-collapse: collapse; line-height: 24px; font-size: 16px; font-family: 微軟正黑體;" class="resizable"
+><caption align="TOP" style="font-size: 18px; line-height: 34px; color: white; padding: 0px; 
+background-image: initial; background-attachment: initial; background-color: rgb(0, 0, 138); 
+background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; 
+background-repeat: initial;">
+SQL效能觀察 -- 前一日 TOP 10 SQL (依 disk read 使用) -- (依照收集時間順序顯示)
+</caption><colgroup><col align="LEFT" valign="top"></colgroup>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  1 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  1 </td>
+<td>  SYS </td>
+<td>  521 </td> 
+<td>  582 </td> 
+<td style="background-color: rgb(299, 299, 0);">  59084  </td> 
+<td>  7301817  </td> 
+<td>  1  </td> 
+<td>  86  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  b6usrg82hwsa3  </td> 
+<td>  2021/12/15 10:12:03  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  call dbms_stats.gather_database_stats_job_proc ( ) </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  2 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  2 </td>
+<td>  SYS </td>
+<td>  24 </td> 
+<td>  32 </td> 
+<td style="background-color: rgb(299, 299, 0);">  41786  </td> 
+<td>  1048380  </td> 
+<td>  25  </td> 
+<td>  13  </td> 
+<td>  25  </td> 
+<td>  25  </td> 
+<td>  bku5fwd8bhsn6  </td> 
+<td>  2021/12/16 01:12:34  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select count(*) from wri$_optstat_opr o, wri$_optstat_opr_tasks t where o.id = t.op_id(+) and o.operation = 'gather_database_stats (auto)' and ((o.notes like '%<error>%' and not regexp_like( o.notes, '<error>ORA-200[0-9][0-9]')) or (t.notes like '%<error>%' and not regexp_like( t.notes, '<error>ORA-200[0-9][0-9]'))) and rownum=1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  3 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  3 </td>
+<td>  SYS </td>
+<td>  15 </td> 
+<td>  24 </td> 
+<td style="background-color: rgb(299, 299, 0);">  24143  </td> 
+<td>  289893  </td> 
+<td>  12  </td> 
+<td>  13  </td> 
+<td>  12  </td> 
+<td>  0  </td> 
+<td>  58vwkgn79m9db  </td> 
+<td>  2021/12/15 10:12:06  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  delete from wri$_adv_objects where task_id = :task_id and type = :adv_obj_type and attr7 = -1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  4 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  4 </td>
+<td>  SYS </td>
+<td>  2 </td> 
+<td>  5 </td> 
+<td style="background-color: rgb(299, 299, 0);">  9860  </td> 
+<td>  19780  </td> 
+<td>  2  </td> 
+<td>  4  </td> 
+<td>  2  </td> 
+<td>  2  </td> 
+<td>  9cgpjs4kkb3k7  </td> 
+<td>  2021/12/15 10:12:50  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  SELECT count(*) FROM wri$_adv_objects o WHERE o.task_id = :task_id </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  5 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  5 </td>
+<td>  SYS </td>
+<td>  4 </td> 
+<td>  9 </td> 
+<td style="background-color: rgb(299, 299, 0);">  8577  </td> 
+<td>  57448  </td> 
+<td>  1  </td> 
+<td>  7  </td> 
+<td>  1  </td> 
+<td>  1  </td> 
+<td>  f6cz4n8y72xdc  </td> 
+<td>  2021/12/15 10:12:57  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  SELECT space_usage_kbytes FROM v$sysaux_occupants WHERE occupant_name = 'SQL_MANAGEMENT_BASE' </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  6 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  6 </td>
+<td>  SYS </td>
+<td>  4 </td> 
+<td>  9 </td> 
+<td style="background-color: rgb(299, 299, 0);">  8173  </td> 
+<td>  93841  </td> 
+<td>  2  </td> 
+<td>  7  </td> 
+<td>  2  </td> 
+<td>  4920  </td> 
+<td>  ct9ppzr6uuzv9  </td> 
+<td>  2021/12/15 10:12:57  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select owner, segment_name, nvl(sum(blocks), 0) from dba_segments where tablespace_name = :tsname group by owner, segment_name </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  7 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  7 </td>
+<td>  SYSTEM </td>
+<td>  1 </td> 
+<td>  1 </td> 
+<td style="background-color: rgb(299, 299, 0);">  5465  </td> 
+<td>  13747  </td> 
+<td>  1  </td> 
+<td>  1  </td> 
+<td>  1  </td> 
+<td>  400112  </td> 
+<td>  9t7k30t3hs16f  </td> 
+<td>  2021/12/15 03:12:13  </td> 
+<td>  SQL Developer  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  create table xcck_test001 tablespace TEMPTABS as select ap_db basement chk_script_time.txt download.42m download.4gl fun_result.txt infor_all.sh mon_log output.test readme.txt script set test.log tmon tmon_chk tmon_clean.sh tmon.conf tmon_install tmon_set.sh tmon_time.txt tmon_title.conf from ds.dzba_t </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  8 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  8 </td>
+<td>  SYS </td>
+<td>  8 </td> 
+<td>  10 </td> 
+<td style="background-color: rgb(299, 299, 0);">  5437  </td> 
+<td>  121013  </td> 
+<td>  1  </td> 
+<td>  5  </td> 
+<td>  1  </td> 
+<td>  8  </td> 
+<td>  dg7r6nn4huy0q  </td> 
+<td>  2021/12/15 10:12:24  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select distinct t.obj# from tab$ t where t.analyzetime > dbms_stats.get_stats_history_availability() and not exists (select null from sys.wri$_optstat_tab_history h where h.obj# = t.obj# and h.savtime >= t.analyzetime) and not exists (select null from sys.hist_head$ h where h.obj# = t.obj# and bitand(h.spare2, 512)=512) and dbms_stats_internal.check_advisor_obj_filter(:rule_id, t.obj#, :exec_mode) = 'T' </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  9 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  9 </td>
+<td>  SYS </td>
+<td>  17 </td> 
+<td>  19 </td> 
+<td style="background-color: rgb(299, 299, 0);">  4316  </td> 
+<td>  907945  </td> 
+<td>  5  </td> 
+<td>  3  </td> 
+<td>  5  </td> 
+<td>  15  </td> 
+<td>  gsasht7ckk68m  </td> 
+<td>  2021/12/16 04:12:13  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select /bin /boot /cdrom /dev /etc /home /lib /lib64 /LINUX.X64_193000_db_home.zip /media /mnt /mrp /opt /proc /root /run /sbin /srv /sys /T100_fr /T100_gr /T100.tgz /test.pcap /tmp /u1 /u2 /u3 /u5 /usr /ut /var QOSD ap_db/ basement/ mon_log/ script/ set/ tmon_chk/ exp_id, objn from exp_head$ e where ((select max(nvl(es.last_modified, es.ctime)) from exp_stat$ es where es.objn = e.objn and es.exp_id = e.exp_id) < sysdate - 367 or not exists (select 1 from sys.obj$ o where o.obj# = e.objn)) and rownum < :batch_size </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  10 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  10 </td>
+<td>  SYS </td>
+<td>  3 </td> 
+<td>  5 </td> 
+<td style="background-color: rgb(299, 299, 0);">  3981  </td> 
+<td>  4311  </td> 
+<td>  1  </td> 
+<td>  5  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  f1a6cwd1pm8x2  </td> 
+<td>  2021/12/15 10:12:06  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  UPDATE SYS.WRI$_OPTSTAT_OPR_TASKS W SET STATUS = :B2 , NOTES = 'Inconsistent status. Forced update.' WHERE OP_ID IN (SELECT ID FROM SYS.WRI$_OPTSTAT_OPR O WHERE STATUS <> :B1 ) AND STATUS = :B1 </td> </tr>
+</table>
+<table width="100%" border="2" align="center" style="border: 2px solid rgb(0, 0, 209); border-image-source: initial; 
+border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; 
+width: 100%; border-collapse: collapse; line-height: 24px; font-size: 16px; font-family: 微軟正黑體;" class="resizable"
+><caption align="TOP" style="font-size: 18px; line-height: 34px; color: white; padding: 0px; 
+background-image: initial; background-attachment: initial; background-color: rgb(0, 0, 138); 
+background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; 
+background-repeat: initial;">
+SQL效能觀察 -- 前一日 TOP 10 SQL (依 內存 使用) -- (依照收集時間順序顯示)
+</caption><colgroup><col align="LEFT" valign="top"></colgroup>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  1 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  1 </td>
+<td>  SYS </td>
+<td>  521 </td> 
+<td>  582 </td> 
+<td>  59084  </td> 
+<td style="background-color: rgb(299, 299, 0);">  7301817  </td> 
+<td>  1  </td> 
+<td>  86  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  b6usrg82hwsa3  </td> 
+<td>  2021/12/15 10:12:03  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  call dbms_stats.gather_database_stats_job_proc ( ) </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  2 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  2 </td>
+<td>  SYS </td>
+<td>  77 </td> 
+<td>  87 </td> 
+<td>  1098  </td> 
+<td style="background-color: rgb(299, 299, 0);">  6095069  </td> 
+<td>  1  </td> 
+<td>  12  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  6mcpb06rctk0x  </td> 
+<td>  2021/12/15 10:12:03  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  call dbms_space.auto_space_advisor_job_proc ( ) </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  3 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  3 </td>
+<td>  SYS </td>
+<td>  32 </td> 
+<td>  33 </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  3867748  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  30  </td> 
+<td>  2  </td> 
+<td>  3xjw1ncw5vh27  </td> 
+<td>  2021/12/15 10:12:10  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  SELECT OWNER, SEGMENT_NAME, PARTITION_NAME, SEGMENT_TYPE, TABLESPACE_NAME, TABLESPACE_ID FROM SYS.SYS_DBA_SEGS WHERE SEGMENT_OBJD = :B1 AND SEGMENT_TYPE <> 'ROLLBACK' AND SEGMENT_TYPE <> 'TYPE2 UNDO' AND SEGMENT_TYPE <> 'DEFERRED ROLLBACK' AND SEGMENT_TYPE <> 'TEMPORARY' AND SEGMENT_TYPE <> 'CACHE' AND SEGMENT_TYPE <> 'SPACE HEADER' AND SEGMENT_TYPE <> 'UNDEFINED' AND TABLESPACE_NAME NOT IN ('SYSAUX' , 'SYSTEM') </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  4 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  4 </td>
+<td>  SYSTEM </td>
+<td>  61 </td> 
+<td>  62 </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  3442942  </td> 
+<td>  6  </td> 
+<td>  0  </td> 
+<td>  5  </td> 
+<td>  1600448  </td> 
+<td>  dsm0f9663maj4  </td> 
+<td>  2021/12/15 03:12:21  </td> 
+<td>  SQL Developer  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  delete from xcck_test001 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  5 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  5 </td>
+<td>  DSCOM </td>
+<td>  30 </td> 
+<td>  32 </td> 
+<td>  1004  </td> 
+<td style="background-color: rgb(299, 299, 0);">  2751243  </td> 
+<td>  2776  </td> 
+<td>  1  </td> 
+<td>  5552  </td> 
+<td>  5746  </td> 
+<td>  a5mp7w3zg9zgt  </td> 
+<td>  2021/12/15 10:12:04  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select gzwl008,gzwl002,gzwl003,gzwl004,gzwl006,gzwl007,gzwl009,gzwl010,gzwl011,gzwl012,gzwl015 from gzwl_t where gzwl015 = :p1 and gzwl010 = :p2 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  6 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  6 </td>
+<td>  SYS </td>
+<td>  24 </td> 
+<td>  25 </td> 
+<td>  8  </td> 
+<td style="background-color: rgb(299, 299, 0);">  1761226  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  8  </td> 
+<td>  26692  </td> 
+<td>  6wrwqq7jkmv3w  </td> 
+<td>  2021/12/15 10:12:54  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  INSERT INTO WRI$_HEATMAP_TOPN_DEP2 SELECT TABLE_NAME, OWNER, 'LOBS', SUM(SEGMENT_COUNT), SUM(OBJECT_SIZE) FROM DBA_LOBS, WRI$_HEATMAP_TOPN_DEP1 WHERE WRI$_HEATMAP_TOPN_DEP1.OBJECT_NAME = DBA_LOBS.SEGMENT_NAME AND WRI$_HEATMAP_TOPN_DEP1.OBJECT_OWNER = DBA_LOBS.OWNER GROUP BY TABLE_NAME, OWNER UNION SELECT TABLE_NAME, OWNER,'INDEX', SUM(SEGMENT_COUNT), SUM(OBJECT_SIZE) FROM DBA_INDEXES , WRI$_HEATMAP_TOPN_DEP1 WHERE WRI$_HEATMAP_TOPN_DEP1.OBJECT_NAME = DBA_INDEXES.INDEX_NAME AND WRI$_HEATMAP_TOPN_DEP1.OBJECT_OWNER = DBA_INDEXES.OWNER GROUP BY TABLE_NAME, OWNER UNION SELECT OBJECT_NAME, OBJECT_OWNER, 'DATA', SUM(SEGMENT_COUNT), SUM(OBJECT_SIZE) FROM WRI$_HEATMAP_TOPN_DEP1 WHERE OBJECT_TYPE LIKE '%TABLE%' GROUP BY OBJECT_NAME, OBJECT_OWNER </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  7 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  7 </td>
+<td>  SYS </td>
+<td>  28 </td> 
+<td>  28 </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  1526497  </td> 
+<td>  161547  </td> 
+<td>  0  </td> 
+<td>  161547  </td> 
+<td>  161546  </td> 
+<td>  5t0s77hdvw8up  </td> 
+<td>  2021/12/15 10:12:59  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select owner, object_name, subobject_name, object_type from dba_objects where object_id = :1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  8 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  8 </td>
+<td>  SYSTEM </td>
+<td>  23 </td> 
+<td>  25 </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  1504453  </td> 
+<td>  13  </td> 
+<td>  0  </td> 
+<td>  13  </td> 
+<td>  5201456  </td> 
+<td>  amr2a60hcxan1  </td> 
+<td>  2021/12/15 03:12:22  </td> 
+<td>  SQL Developer  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  insert into xcck_test001 select ap_db basement chk_script_time.txt download.42m download.4gl fun_result.txt infor_all.sh mon_log output.test readme.txt script set test.log tmon tmon_chk tmon_clean.sh tmon.conf tmon_install tmon_set.sh tmon_time.txt tmon_title.conf from ds.dzba_t </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  9 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  9 </td>
+<td>  SYS </td>
+<td>  24 </td> 
+<td>  32 </td> 
+<td>  41786  </td> 
+<td style="background-color: rgb(299, 299, 0);">  1048380  </td> 
+<td>  25  </td> 
+<td>  13  </td> 
+<td>  25  </td> 
+<td>  25  </td> 
+<td>  bku5fwd8bhsn6  </td> 
+<td>  2021/12/16 01:12:34  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select count(*) from wri$_optstat_opr o, wri$_optstat_opr_tasks t where o.id = t.op_id(+) and o.operation = 'gather_database_stats (auto)' and ((o.notes like '%<error>%' and not regexp_like( o.notes, '<error>ORA-200[0-9][0-9]')) or (t.notes like '%<error>%' and not regexp_like( t.notes, '<error>ORA-200[0-9][0-9]'))) and rownum=1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  10 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  10 </td>
+<td>  SYS </td>
+<td>  17 </td> 
+<td>  19 </td> 
+<td>  4316  </td> 
+<td style="background-color: rgb(299, 299, 0);">  907945  </td> 
+<td>  5  </td> 
+<td>  3  </td> 
+<td>  5  </td> 
+<td>  15  </td> 
+<td>  gsasht7ckk68m  </td> 
+<td>  2021/12/16 04:12:13  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select /bin /boot /cdrom /dev /etc /home /lib /lib64 /LINUX.X64_193000_db_home.zip /media /mnt /mrp /opt /proc /root /run /sbin /srv /sys /T100_fr /T100_gr /T100.tgz /test.pcap /tmp /u1 /u2 /u3 /u5 /usr /ut /var QOSD ap_db/ basement/ mon_log/ script/ set/ tmon_chk/ exp_id, objn from exp_head$ e where ((select max(nvl(es.last_modified, es.ctime)) from exp_stat$ es where es.objn = e.objn and es.exp_id = e.exp_id) < sysdate - 367 or not exists (select 1 from sys.obj$ o where o.obj# = e.objn)) and rownum < :batch_size </td> </tr>
+</table>
+<table width="100%" border="2" align="center" style="border: 2px solid rgb(0, 0, 209); border-image-source: initial; 
+border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; 
+width: 100%; border-collapse: collapse; line-height: 24px; font-size: 16px; font-family: 微軟正黑體;" class="resizable"
+><caption align="TOP" style="font-size: 18px; line-height: 34px; color: white; padding: 0px; 
+background-image: initial; background-attachment: initial; background-color: rgb(0, 0, 138); 
+background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; 
+background-repeat: initial;">
+SQL效能觀察 -- 前一日 TOP 10 SQL (依 DB 解析次數 ) -- (依照收集時間順序顯示)
+</caption><colgroup><col align="LEFT" valign="top"></colgroup>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  1 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  1 </td>
+<td>  SYS </td>
+<td>  28 </td> 
+<td>  28 </td> 
+<td>  0  </td> 
+<td>  1526497  </td> 
+<td style="background-color: rgb(299, 299, 0);">  161547  </td> 
+<td>  0  </td> 
+<td>  161547  </td> 
+<td>  161546  </td> 
+<td>  5t0s77hdvw8up  </td> 
+<td>  2021/12/15 10:12:59  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select owner, object_name, subobject_name, object_type from dba_objects where object_id = :1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  2 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  2 </td>
+<td>  DS </td>
+<td>  7 </td> 
+<td>  9 </td> 
+<td>  33  </td> 
+<td>  134565  </td> 
+<td style="background-color: rgb(299, 299, 0);">  45139  </td> 
+<td>  1  </td> 
+<td>  45139  </td> 
+<td>  44145  </td> 
+<td>  gn70runph50xf  </td> 
+<td>  2021/12/15 10:12:13  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select gzsz001, gzsz003, gzsz008, gzsz017, gzsz019 from gzsz_t where gzsz002 = :p1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  3 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  3 </td>
+<td>  DS </td>
+<td>  4 </td> 
+<td>  5 </td> 
+<td>  0  </td> 
+<td>  132480  </td> 
+<td style="background-color: rgb(299, 299, 0);">  44160  </td> 
+<td>  0  </td> 
+<td>  44160  </td> 
+<td>  44160  </td> 
+<td>  16sp5hv7jyddc  </td> 
+<td>  2021/12/15 10:12:13  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select gzsz001, gzsz003 from gzsz_t where gzsz002 = :p1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  4 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  4 </td>
+<td>  DSDEMO </td>
+<td>  2 </td> 
+<td>  3 </td> 
+<td>  28  </td> 
+<td>  60872  </td> 
+<td style="background-color: rgb(299, 299, 0);">  20241  </td> 
+<td>  1  </td> 
+<td>  20241  </td> 
+<td>  20241  </td> 
+<td>  bz3ts664g7jfm  </td> 
+<td>  2021/12/15 10:12:13  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select ooaa002 from dsdemo.ooaa_t where ooaa001 = :p1 AND ooaaent = :p2 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  5 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  5 </td>
+<td>  SYS </td>
+<td>  13 </td> 
+<td>  13 </td> 
+<td>  0  </td> 
+<td>  83144  </td> 
+<td style="background-color: rgb(299, 299, 0);">  17788  </td> 
+<td>  0  </td> 
+<td>  17788  </td> 
+<td>  11992  </td> 
+<td>  0k8522rmdzg4k  </td> 
+<td>  2021/12/15 10:12:07  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select privilege# from sysauth$ where (grantee#=:1 or grantee#=1) and privilege#>0 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  6 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  6 </td>
+<td>  SYS </td>
+<td>  13 </td> 
+<td>  13 </td> 
+<td>  0  </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  17788  </td> 
+<td>  0  </td> 
+<td>  17788  </td> 
+<td>  17788  </td> 
+<td>  f0h5rpzmhju11  </td> 
+<td>  2021/12/15 11:12:34  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select SYS_CONTEXT('USERENV', 'SERVER_HOST'), SYS_CONTEXT('USERENV', 'DB_UNIQUE_NAME'), SYS_CONTEXT('USERENV', 'INSTANCE_NAME'), SYS_CONTEXT('USERENV', 'INSTANCE'), STARTUP_TIME, SYS_CONTEXT('USERENV', 'DB_DOMAIN'), SYS_CONTEXT('USERENV', 'SERVICE_NAME') from v$instance </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  7 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  7 </td>
+<td>  SYS </td>
+<td>  6 </td> 
+<td>  6 </td> 
+<td>  0  </td> 
+<td>  35522  </td> 
+<td style="background-color: rgb(299, 299, 0);">  17758  </td> 
+<td>  0  </td> 
+<td>  17758  </td> 
+<td>  17758  </td> 
+<td>  865qwpcdyggkk  </td> 
+<td>  2021/12/16 02:12:08  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select spare6 from user$ where user#=:1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  8 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  8 </td>
+<td>  SYS </td>
+<td>  6 </td> 
+<td>  6 </td> 
+<td>  0  </td> 
+<td>  35524  </td> 
+<td style="background-color: rgb(299, 299, 0);">  17759  </td> 
+<td>  0  </td> 
+<td>  17759  </td> 
+<td>  17759  </td> 
+<td>  865qwpcdyggkk  </td> 
+<td>  2021/12/16 02:12:08  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select spare6 from user$ where user#=:1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  9 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  9 </td>
+<td>  SYS </td>
+<td>  9 </td> 
+<td>  8 </td> 
+<td>  0  </td> 
+<td>  35322  </td> 
+<td style="background-color: rgb(299, 299, 0);">  17661  </td> 
+<td>  0  </td> 
+<td>  17661  </td> 
+<td>  17661  </td> 
+<td>  d9q2q82g1tuzx  </td> 
+<td>  2021/12/15 03:12:37  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select decode(upper(failover_method), NULL, 0 , 'BASIC', 1, 'PRECONNECT', 2 , 'PREPARSE', 4 , 0), decode(upper(failover_type), NULL, 1, 'NONE', 1, 'SESSION', 2, 'SELECT', 4, 'TRANSACTION', 8, 'AUTO' , 32, 1 ), failover_retries, failover_delay, flags, nvl(replay_initiation_timeout, 900), decode(upper(session_state_consistency), 'STATIC', 16, 0), failover_restore from sys.service$ where name = :1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  10 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  10 </td>
+<td>  DS </td>
+<td>  2 </td> 
+<td>  3 </td> 
+<td>  16  </td> 
+<td>  16631  </td> 
+<td style="background-color: rgb(299, 299, 0);">  16534  </td> 
+<td>  0  </td> 
+<td>  16534  </td> 
+<td>  0  </td> 
+<td>  06dfxndscbqr6  </td> 
+<td>  2021/12/15 10:12:13  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select ooaa002 from ds.ooaa_t where ooaa001 = :p1 AND ooaaent = :p2 </td> </tr>
+</table>
+ start check redo 每日切換次數 
+================================================================
+===記憶體使用率==== 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 17 GB </th> 
+      </tr>
+      </table>
+      
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31105080 </td>
+<td> 2355144 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+N
+<table border="1" cellpadding="5" 
+                style="border:2px ;text-align:center;">
+<tr><td style="background-color:#FFECC9">沒有執行過久 SQL </td></tr>
+</table>
+ 
+<table width="100%" border="2" align="center" style="border: 2px solid rgb(0, 0, 209); border-image-source: initial; 
+border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; 
+width: 100%; border-collapse: collapse; line-height: 24px; font-size: 16px; font-family: 微軟正黑體;" class="resizable"
+><caption align="TOP" style="font-size: 18px; line-height: 34px; color: white; padding: 0px; 
+background-image: initial; background-attachment: initial; background-color: rgb(0, 0, 138); 
+background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; 
+background-repeat: initial;">
+SQL效能觀察 -- 前一日 TOP 10 SQL (依 disk read 使用) -- (依照收集時間順序顯示)
+</caption><colgroup><col align="LEFT" valign="top"></colgroup>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  1 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  1 </td>
+<td>  SYS </td>
+<td>  521 </td> 
+<td>  582 </td> 
+<td style="background-color: rgb(299, 299, 0);">  59084  </td> 
+<td>  7301817  </td> 
+<td>  1  </td> 
+<td>  86  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  b6usrg82hwsa3  </td> 
+<td>  2021/12/15 10:12:03  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  call dbms_stats.gather_database_stats_job_proc ( ) </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  2 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  2 </td>
+<td>  SYS </td>
+<td>  24 </td> 
+<td>  32 </td> 
+<td style="background-color: rgb(299, 299, 0);">  41786  </td> 
+<td>  1048380  </td> 
+<td>  25  </td> 
+<td>  13  </td> 
+<td>  25  </td> 
+<td>  25  </td> 
+<td>  bku5fwd8bhsn6  </td> 
+<td>  2021/12/16 01:12:34  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select count(*) from wri$_optstat_opr o, wri$_optstat_opr_tasks t where o.id = t.op_id(+) and o.operation = 'gather_database_stats (auto)' and ((o.notes like '%<error>%' and not regexp_like( o.notes, '<error>ORA-200[0-9][0-9]')) or (t.notes like '%<error>%' and not regexp_like( t.notes, '<error>ORA-200[0-9][0-9]'))) and rownum=1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  3 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  3 </td>
+<td>  SYS </td>
+<td>  15 </td> 
+<td>  24 </td> 
+<td style="background-color: rgb(299, 299, 0);">  24143  </td> 
+<td>  289893  </td> 
+<td>  12  </td> 
+<td>  13  </td> 
+<td>  12  </td> 
+<td>  0  </td> 
+<td>  58vwkgn79m9db  </td> 
+<td>  2021/12/15 10:12:06  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  delete from wri$_adv_objects where task_id = :task_id and type = :adv_obj_type and attr7 = -1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  4 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  4 </td>
+<td>  SYS </td>
+<td>  2 </td> 
+<td>  5 </td> 
+<td style="background-color: rgb(299, 299, 0);">  9860  </td> 
+<td>  19780  </td> 
+<td>  2  </td> 
+<td>  4  </td> 
+<td>  2  </td> 
+<td>  2  </td> 
+<td>  9cgpjs4kkb3k7  </td> 
+<td>  2021/12/15 10:12:50  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  SELECT count(*) FROM wri$_adv_objects o WHERE o.task_id = :task_id </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  5 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  5 </td>
+<td>  SYS </td>
+<td>  4 </td> 
+<td>  9 </td> 
+<td style="background-color: rgb(299, 299, 0);">  8577  </td> 
+<td>  57448  </td> 
+<td>  1  </td> 
+<td>  7  </td> 
+<td>  1  </td> 
+<td>  1  </td> 
+<td>  f6cz4n8y72xdc  </td> 
+<td>  2021/12/15 10:12:57  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  SELECT space_usage_kbytes FROM v$sysaux_occupants WHERE occupant_name = 'SQL_MANAGEMENT_BASE' </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  6 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  6 </td>
+<td>  SYS </td>
+<td>  4 </td> 
+<td>  9 </td> 
+<td style="background-color: rgb(299, 299, 0);">  8173  </td> 
+<td>  93841  </td> 
+<td>  2  </td> 
+<td>  7  </td> 
+<td>  2  </td> 
+<td>  4920  </td> 
+<td>  ct9ppzr6uuzv9  </td> 
+<td>  2021/12/15 10:12:57  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select owner, segment_name, nvl(sum(blocks), 0) from dba_segments where tablespace_name = :tsname group by owner, segment_name </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  7 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  7 </td>
+<td>  SYSTEM </td>
+<td>  1 </td> 
+<td>  1 </td> 
+<td style="background-color: rgb(299, 299, 0);">  5465  </td> 
+<td>  13747  </td> 
+<td>  1  </td> 
+<td>  1  </td> 
+<td>  1  </td> 
+<td>  400112  </td> 
+<td>  9t7k30t3hs16f  </td> 
+<td>  2021/12/15 03:12:13  </td> 
+<td>  SQL Developer  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  create table xcck_test001 tablespace TEMPTABS as select ap_db basement chk_script_time.txt download.42m download.4gl fun_result.txt infor_all.sh mon_log output.test readme.txt script set test.log tmon tmon_chk tmon_clean.sh tmon.conf tmon_install tmon_set.sh tmon_time.txt tmon_title.conf from ds.dzba_t </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  8 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  8 </td>
+<td>  SYS </td>
+<td>  8 </td> 
+<td>  10 </td> 
+<td style="background-color: rgb(299, 299, 0);">  5437  </td> 
+<td>  121013  </td> 
+<td>  1  </td> 
+<td>  5  </td> 
+<td>  1  </td> 
+<td>  8  </td> 
+<td>  dg7r6nn4huy0q  </td> 
+<td>  2021/12/15 10:12:24  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select distinct t.obj# from tab$ t where t.analyzetime > dbms_stats.get_stats_history_availability() and not exists (select null from sys.wri$_optstat_tab_history h where h.obj# = t.obj# and h.savtime >= t.analyzetime) and not exists (select null from sys.hist_head$ h where h.obj# = t.obj# and bitand(h.spare2, 512)=512) and dbms_stats_internal.check_advisor_obj_filter(:rule_id, t.obj#, :exec_mode) = 'T' </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  9 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  9 </td>
+<td>  SYS </td>
+<td>  17 </td> 
+<td>  19 </td> 
+<td style="background-color: rgb(299, 299, 0);">  4316  </td> 
+<td>  907945  </td> 
+<td>  5  </td> 
+<td>  3  </td> 
+<td>  5  </td> 
+<td>  15  </td> 
+<td>  gsasht7ckk68m  </td> 
+<td>  2021/12/16 04:12:13  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select /bin /boot /cdrom /dev /etc /home /lib /lib64 /LINUX.X64_193000_db_home.zip /media /mnt /mrp /opt /proc /root /run /sbin /srv /sys /T100_fr /T100_gr /T100.tgz /test.pcap /tmp /u1 /u2 /u3 /u5 /usr /ut /var QOSD ap_db/ basement/ mon_log/ script/ set/ tmon_chk/ exp_id, objn from exp_head$ e where ((select max(nvl(es.last_modified, es.ctime)) from exp_stat$ es where es.objn = e.objn and es.exp_id = e.exp_id) < sysdate - 367 or not exists (select 1 from sys.obj$ o where o.obj# = e.objn)) and rownum < :batch_size </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  10 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  10 </td>
+<td>  SYS </td>
+<td>  3 </td> 
+<td>  5 </td> 
+<td style="background-color: rgb(299, 299, 0);">  3981  </td> 
+<td>  4311  </td> 
+<td>  1  </td> 
+<td>  5  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  f1a6cwd1pm8x2  </td> 
+<td>  2021/12/15 10:12:06  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  UPDATE SYS.WRI$_OPTSTAT_OPR_TASKS W SET STATUS = :B2 , NOTES = 'Inconsistent status. Forced update.' WHERE OP_ID IN (SELECT ID FROM SYS.WRI$_OPTSTAT_OPR O WHERE STATUS <> :B1 ) AND STATUS = :B1 </td> </tr>
+</table>
+<table width="100%" border="2" align="center" style="border: 2px solid rgb(0, 0, 209); border-image-source: initial; 
+border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; 
+width: 100%; border-collapse: collapse; line-height: 24px; font-size: 16px; font-family: 微軟正黑體;" class="resizable"
+><caption align="TOP" style="font-size: 18px; line-height: 34px; color: white; padding: 0px; 
+background-image: initial; background-attachment: initial; background-color: rgb(0, 0, 138); 
+background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; 
+background-repeat: initial;">
+SQL效能觀察 -- 前一日 TOP 10 SQL (依 內存 使用) -- (依照收集時間順序顯示)
+</caption><colgroup><col align="LEFT" valign="top"></colgroup>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  1 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  1 </td>
+<td>  SYS </td>
+<td>  521 </td> 
+<td>  582 </td> 
+<td>  59084  </td> 
+<td style="background-color: rgb(299, 299, 0);">  7301817  </td> 
+<td>  1  </td> 
+<td>  86  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  b6usrg82hwsa3  </td> 
+<td>  2021/12/15 10:12:03  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  call dbms_stats.gather_database_stats_job_proc ( ) </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  2 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  2 </td>
+<td>  SYS </td>
+<td>  77 </td> 
+<td>  87 </td> 
+<td>  1098  </td> 
+<td style="background-color: rgb(299, 299, 0);">  6095069  </td> 
+<td>  1  </td> 
+<td>  12  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  6mcpb06rctk0x  </td> 
+<td>  2021/12/15 10:12:03  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  call dbms_space.auto_space_advisor_job_proc ( ) </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  3 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  3 </td>
+<td>  SYS </td>
+<td>  32 </td> 
+<td>  33 </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  3867748  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  30  </td> 
+<td>  2  </td> 
+<td>  3xjw1ncw5vh27  </td> 
+<td>  2021/12/15 10:12:10  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  SELECT OWNER, SEGMENT_NAME, PARTITION_NAME, SEGMENT_TYPE, TABLESPACE_NAME, TABLESPACE_ID FROM SYS.SYS_DBA_SEGS WHERE SEGMENT_OBJD = :B1 AND SEGMENT_TYPE <> 'ROLLBACK' AND SEGMENT_TYPE <> 'TYPE2 UNDO' AND SEGMENT_TYPE <> 'DEFERRED ROLLBACK' AND SEGMENT_TYPE <> 'TEMPORARY' AND SEGMENT_TYPE <> 'CACHE' AND SEGMENT_TYPE <> 'SPACE HEADER' AND SEGMENT_TYPE <> 'UNDEFINED' AND TABLESPACE_NAME NOT IN ('SYSAUX' , 'SYSTEM') </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  4 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  4 </td>
+<td>  SYSTEM </td>
+<td>  61 </td> 
+<td>  62 </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  3442942  </td> 
+<td>  6  </td> 
+<td>  0  </td> 
+<td>  5  </td> 
+<td>  1600448  </td> 
+<td>  dsm0f9663maj4  </td> 
+<td>  2021/12/15 03:12:21  </td> 
+<td>  SQL Developer  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  delete from xcck_test001 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  5 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  5 </td>
+<td>  DS </td>
+<td>  30 </td> 
+<td>  32 </td> 
+<td>  1004  </td> 
+<td style="background-color: rgb(299, 299, 0);">  2757189  </td> 
+<td>  2782  </td> 
+<td>  1  </td> 
+<td>  5564  </td> 
+<td>  5758  </td> 
+<td>  a5mp7w3zg9zgt  </td> 
+<td>  2021/12/15 10:12:04  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select gzwl008,gzwl002,gzwl003,gzwl004,gzwl006,gzwl007,gzwl009,gzwl010,gzwl011,gzwl012,gzwl015 from gzwl_t where gzwl015 = :p1 and gzwl010 = :p2 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  6 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  6 </td>
+<td>  SYS </td>
+<td>  24 </td> 
+<td>  25 </td> 
+<td>  8  </td> 
+<td style="background-color: rgb(299, 299, 0);">  1761226  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  8  </td> 
+<td>  26692  </td> 
+<td>  6wrwqq7jkmv3w  </td> 
+<td>  2021/12/15 10:12:54  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  INSERT INTO WRI$_HEATMAP_TOPN_DEP2 SELECT TABLE_NAME, OWNER, 'LOBS', SUM(SEGMENT_COUNT), SUM(OBJECT_SIZE) FROM DBA_LOBS, WRI$_HEATMAP_TOPN_DEP1 WHERE WRI$_HEATMAP_TOPN_DEP1.OBJECT_NAME = DBA_LOBS.SEGMENT_NAME AND WRI$_HEATMAP_TOPN_DEP1.OBJECT_OWNER = DBA_LOBS.OWNER GROUP BY TABLE_NAME, OWNER UNION SELECT TABLE_NAME, OWNER,'INDEX', SUM(SEGMENT_COUNT), SUM(OBJECT_SIZE) FROM DBA_INDEXES , WRI$_HEATMAP_TOPN_DEP1 WHERE WRI$_HEATMAP_TOPN_DEP1.OBJECT_NAME = DBA_INDEXES.INDEX_NAME AND WRI$_HEATMAP_TOPN_DEP1.OBJECT_OWNER = DBA_INDEXES.OWNER GROUP BY TABLE_NAME, OWNER UNION SELECT OBJECT_NAME, OBJECT_OWNER, 'DATA', SUM(SEGMENT_COUNT), SUM(OBJECT_SIZE) FROM WRI$_HEATMAP_TOPN_DEP1 WHERE OBJECT_TYPE LIKE '%TABLE%' GROUP BY OBJECT_NAME, OBJECT_OWNER </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  7 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  7 </td>
+<td>  SYS </td>
+<td>  28 </td> 
+<td>  28 </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  1526497  </td> 
+<td>  161547  </td> 
+<td>  0  </td> 
+<td>  161547  </td> 
+<td>  161546  </td> 
+<td>  5t0s77hdvw8up  </td> 
+<td>  2021/12/15 10:12:59  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select owner, object_name, subobject_name, object_type from dba_objects where object_id = :1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  8 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  8 </td>
+<td>  SYSTEM </td>
+<td>  23 </td> 
+<td>  25 </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  1504453  </td> 
+<td>  13  </td> 
+<td>  0  </td> 
+<td>  13  </td> 
+<td>  5201456  </td> 
+<td>  amr2a60hcxan1  </td> 
+<td>  2021/12/15 03:12:22  </td> 
+<td>  SQL Developer  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  insert into xcck_test001 select ap_db basement chk_script_time.txt download.42m download.4gl fun_result.txt infor_all.sh mon_log output.test readme.txt script set test.log tmon tmon_chk tmon_clean.sh tmon.conf tmon_install tmon_set.sh tmon_time.txt tmon_title.conf from ds.dzba_t </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  9 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  9 </td>
+<td>  SYS </td>
+<td>  24 </td> 
+<td>  32 </td> 
+<td>  41786  </td> 
+<td style="background-color: rgb(299, 299, 0);">  1048380  </td> 
+<td>  25  </td> 
+<td>  13  </td> 
+<td>  25  </td> 
+<td>  25  </td> 
+<td>  bku5fwd8bhsn6  </td> 
+<td>  2021/12/16 01:12:34  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select count(*) from wri$_optstat_opr o, wri$_optstat_opr_tasks t where o.id = t.op_id(+) and o.operation = 'gather_database_stats (auto)' and ((o.notes like '%<error>%' and not regexp_like( o.notes, '<error>ORA-200[0-9][0-9]')) or (t.notes like '%<error>%' and not regexp_like( t.notes, '<error>ORA-200[0-9][0-9]'))) and rownum=1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  10 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  10 </td>
+<td>  SYS </td>
+<td>  17 </td> 
+<td>  19 </td> 
+<td>  4316  </td> 
+<td style="background-color: rgb(299, 299, 0);">  907945  </td> 
+<td>  5  </td> 
+<td>  3  </td> 
+<td>  5  </td> 
+<td>  15  </td> 
+<td>  gsasht7ckk68m  </td> 
+<td>  2021/12/16 04:12:13  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select /bin /boot /cdrom /dev /etc /home /lib /lib64 /LINUX.X64_193000_db_home.zip /media /mnt /mrp /opt /proc /root /run /sbin /srv /sys /T100_fr /T100_gr /T100.tgz /test.pcap /tmp /u1 /u2 /u3 /u5 /usr /ut /var QOSD ap_db/ basement/ mon_log/ script/ set/ tmon_chk/ exp_id, objn from exp_head$ e where ((select max(nvl(es.last_modified, es.ctime)) from exp_stat$ es where es.objn = e.objn and es.exp_id = e.exp_id) < sysdate - 367 or not exists (select 1 from sys.obj$ o where o.obj# = e.objn)) and rownum < :batch_size </td> </tr>
+</table>
+<table width="100%" border="2" align="center" style="border: 2px solid rgb(0, 0, 209); border-image-source: initial; 
+border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; 
+width: 100%; border-collapse: collapse; line-height: 24px; font-size: 16px; font-family: 微軟正黑體;" class="resizable"
+><caption align="TOP" style="font-size: 18px; line-height: 34px; color: white; padding: 0px; 
+background-image: initial; background-attachment: initial; background-color: rgb(0, 0, 138); 
+background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; 
+background-repeat: initial;">
+SQL效能觀察 -- 前一日 TOP 10 SQL (依 DB 解析次數 ) -- (依照收集時間順序顯示)
+</caption><colgroup><col align="LEFT" valign="top"></colgroup>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  1 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  1 </td>
+<td>  SYS </td>
+<td>  28 </td> 
+<td>  28 </td> 
+<td>  0  </td> 
+<td>  1526497  </td> 
+<td style="background-color: rgb(299, 299, 0);">  161547  </td> 
+<td>  0  </td> 
+<td>  161547  </td> 
+<td>  161546  </td> 
+<td>  5t0s77hdvw8up  </td> 
+<td>  2021/12/15 10:12:59  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select owner, object_name, subobject_name, object_type from dba_objects where object_id = :1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  2 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  2 </td>
+<td>  DS </td>
+<td>  7 </td> 
+<td>  9 </td> 
+<td>  33  </td> 
+<td>  134957  </td> 
+<td style="background-color: rgb(299, 299, 0);">  45271  </td> 
+<td>  1  </td> 
+<td>  45271  </td> 
+<td>  44273  </td> 
+<td>  gn70runph50xf  </td> 
+<td>  2021/12/15 10:12:13  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select gzsz001, gzsz003, gzsz008, gzsz017, gzsz019 from gzsz_t where gzsz002 = :p1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  3 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  3 </td>
+<td>  DS </td>
+<td>  4 </td> 
+<td>  5 </td> 
+<td>  0  </td> 
+<td>  132819  </td> 
+<td style="background-color: rgb(299, 299, 0);">  44273  </td> 
+<td>  0  </td> 
+<td>  44273  </td> 
+<td>  44273  </td> 
+<td>  16sp5hv7jyddc  </td> 
+<td>  2021/12/15 10:12:13  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select gzsz001, gzsz003 from gzsz_t where gzsz002 = :p1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  4 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  4 </td>
+<td>  DSDEMO </td>
+<td>  2 </td> 
+<td>  3 </td> 
+<td>  28  </td> 
+<td>  61061  </td> 
+<td style="background-color: rgb(299, 299, 0);">  20304  </td> 
+<td>  1  </td> 
+<td>  20304  </td> 
+<td>  20304  </td> 
+<td>  bz3ts664g7jfm  </td> 
+<td>  2021/12/15 10:12:13  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select ooaa002 from dsdemo.ooaa_t where ooaa001 = :p1 AND ooaaent = :p2 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  5 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  5 </td>
+<td>  SYS </td>
+<td>  13 </td> 
+<td>  13 </td> 
+<td>  0  </td> 
+<td>  83545  </td> 
+<td style="background-color: rgb(299, 299, 0);">  17871  </td> 
+<td>  0  </td> 
+<td>  17871  </td> 
+<td>  12061  </td> 
+<td>  0k8522rmdzg4k  </td> 
+<td>  2021/12/15 10:12:07  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select privilege# from sysauth$ where (grantee#=:1 or grantee#=1) and privilege#>0 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  6 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  6 </td>
+<td>  SYS </td>
+<td>  13 </td> 
+<td>  13 </td> 
+<td>  0  </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  17870  </td> 
+<td>  0  </td> 
+<td>  17870  </td> 
+<td>  17870  </td> 
+<td>  f0h5rpzmhju11  </td> 
+<td>  2021/12/15 11:12:34  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select SYS_CONTEXT('USERENV', 'SERVER_HOST'), SYS_CONTEXT('USERENV', 'DB_UNIQUE_NAME'), SYS_CONTEXT('USERENV', 'INSTANCE_NAME'), SYS_CONTEXT('USERENV', 'INSTANCE'), STARTUP_TIME, SYS_CONTEXT('USERENV', 'DB_DOMAIN'), SYS_CONTEXT('USERENV', 'SERVICE_NAME') from v$instance </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  7 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  7 </td>
+<td>  SYS </td>
+<td>  22 </td> 
+<td>  23 </td> 
+<td>  0  </td> 
+<td>  71849  </td> 
+<td style="background-color: rgb(299, 299, 0);">  17839  </td> 
+<td>  0  </td> 
+<td>  17839  </td> 
+<td>  17839  </td> 
+<td>  9zg9qd9bm4spu  </td> 
+<td>  2021/12/16 12:12:05  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  update user$ set spare6=DECODE(to_char(:2, 'YYYY-MM-DD'), '0000-00-00', to_date(NULL), :2) where user#=:1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  8 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  8 </td>
+<td>  SYS </td>
+<td>  6 </td> 
+<td>  6 </td> 
+<td>  0  </td> 
+<td>  35686  </td> 
+<td style="background-color: rgb(299, 299, 0);">  17840  </td> 
+<td>  0  </td> 
+<td>  17840  </td> 
+<td>  17840  </td> 
+<td>  865qwpcdyggkk  </td> 
+<td>  2021/12/16 02:12:08  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select spare6 from user$ where user#=:1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  9 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  9 </td>
+<td>  SYS </td>
+<td>  9 </td> 
+<td>  8 </td> 
+<td>  0  </td> 
+<td>  35494  </td> 
+<td style="background-color: rgb(299, 299, 0);">  17747  </td> 
+<td>  0  </td> 
+<td>  17747  </td> 
+<td>  17747  </td> 
+<td>  d9q2q82g1tuzx  </td> 
+<td>  2021/12/15 03:12:37  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select decode(upper(failover_method), NULL, 0 , 'BASIC', 1, 'PRECONNECT', 2 , 'PREPARSE', 4 , 0), decode(upper(failover_type), NULL, 1, 'NONE', 1, 'SESSION', 2, 'SELECT', 4, 'TRANSACTION', 8, 'AUTO' , 32, 1 ), failover_retries, failover_delay, flags, nvl(replay_initiation_timeout, 900), decode(upper(session_state_consistency), 'STATIC', 16, 0), failover_restore from sys.service$ where name = :1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  10 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  10 </td>
+<td>  DS </td>
+<td>  2 </td> 
+<td>  3 </td> 
+<td>  16  </td> 
+<td>  16671  </td> 
+<td style="background-color: rgb(299, 299, 0);">  16574  </td> 
+<td>  0  </td> 
+<td>  16574  </td> 
+<td>  0  </td> 
+<td>  06dfxndscbqr6  </td> 
+<td>  2021/12/15 10:12:13  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select ooaa002 from ds.ooaa_t where ooaa001 = :p1 AND ooaaent = :p2 </td> </tr>
+</table>
+ start check redo 每日切換次數 
+================================================================
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+      </tr> </table>
+       
+===記憶體使用率==== 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 17 GB </th> 
+      </tr>
+      </table>
+      
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31105008 </td>
+<td> 2355216 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+N
+<table border="1" cellpadding="5" 
+                style="border:2px ;text-align:center;">
+<tr><td style="background-color:#FFECC9">沒有執行過久 SQL </td></tr>
+</table>
+ 
+<table width="100%" border="2" align="center" style="border: 2px solid rgb(0, 0, 209); border-image-source: initial; 
+border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; 
+width: 100%; border-collapse: collapse; line-height: 24px; font-size: 16px; font-family: 微軟正黑體;" class="resizable"
+><caption align="TOP" style="font-size: 18px; line-height: 34px; color: white; padding: 0px; 
+background-image: initial; background-attachment: initial; background-color: rgb(0, 0, 138); 
+background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; 
+background-repeat: initial;">
+SQL效能觀察 -- 前一日 TOP 10 SQL (依 disk read 使用) -- (依照收集時間順序顯示)
+</caption><colgroup><col align="LEFT" valign="top"></colgroup>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  1 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  1 </td>
+<td>  SYS </td>
+<td>  521 </td> 
+<td>  582 </td> 
+<td style="background-color: rgb(299, 299, 0);">  59084  </td> 
+<td>  7301817  </td> 
+<td>  1  </td> 
+<td>  86  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  b6usrg82hwsa3  </td> 
+<td>  2021/12/15 10:12:03  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  call dbms_stats.gather_database_stats_job_proc ( ) </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  2 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  2 </td>
+<td>  SYS </td>
+<td>  24 </td> 
+<td>  32 </td> 
+<td style="background-color: rgb(299, 299, 0);">  41786  </td> 
+<td>  1048380  </td> 
+<td>  25  </td> 
+<td>  13  </td> 
+<td>  25  </td> 
+<td>  25  </td> 
+<td>  bku5fwd8bhsn6  </td> 
+<td>  2021/12/16 01:12:34  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select count(*) from wri$_optstat_opr o, wri$_optstat_opr_tasks t where o.id = t.op_id(+) and o.operation = 'gather_database_stats (auto)' and ((o.notes like '%<error>%' and not regexp_like( o.notes, '<error>ORA-200[0-9][0-9]')) or (t.notes like '%<error>%' and not regexp_like( t.notes, '<error>ORA-200[0-9][0-9]'))) and rownum=1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  3 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  3 </td>
+<td>  SYS </td>
+<td>  15 </td> 
+<td>  24 </td> 
+<td style="background-color: rgb(299, 299, 0);">  24143  </td> 
+<td>  289893  </td> 
+<td>  12  </td> 
+<td>  13  </td> 
+<td>  12  </td> 
+<td>  0  </td> 
+<td>  58vwkgn79m9db  </td> 
+<td>  2021/12/15 10:12:06  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  delete from wri$_adv_objects where task_id = :task_id and type = :adv_obj_type and attr7 = -1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  4 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  4 </td>
+<td>  SYS </td>
+<td>  2 </td> 
+<td>  5 </td> 
+<td style="background-color: rgb(299, 299, 0);">  9860  </td> 
+<td>  19780  </td> 
+<td>  2  </td> 
+<td>  4  </td> 
+<td>  2  </td> 
+<td>  2  </td> 
+<td>  9cgpjs4kkb3k7  </td> 
+<td>  2021/12/15 10:12:50  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  SELECT count(*) FROM wri$_adv_objects o WHERE o.task_id = :task_id </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  5 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  5 </td>
+<td>  SYS </td>
+<td>  4 </td> 
+<td>  9 </td> 
+<td style="background-color: rgb(299, 299, 0);">  8577  </td> 
+<td>  57448  </td> 
+<td>  1  </td> 
+<td>  7  </td> 
+<td>  1  </td> 
+<td>  1  </td> 
+<td>  f6cz4n8y72xdc  </td> 
+<td>  2021/12/15 10:12:57  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  SELECT space_usage_kbytes FROM v$sysaux_occupants WHERE occupant_name = 'SQL_MANAGEMENT_BASE' </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  6 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  6 </td>
+<td>  SYS </td>
+<td>  4 </td> 
+<td>  9 </td> 
+<td style="background-color: rgb(299, 299, 0);">  8173  </td> 
+<td>  93841  </td> 
+<td>  2  </td> 
+<td>  7  </td> 
+<td>  2  </td> 
+<td>  4920  </td> 
+<td>  ct9ppzr6uuzv9  </td> 
+<td>  2021/12/15 10:12:57  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select owner, segment_name, nvl(sum(blocks), 0) from dba_segments where tablespace_name = :tsname group by owner, segment_name </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  7 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  7 </td>
+<td>  SYSTEM </td>
+<td>  1 </td> 
+<td>  1 </td> 
+<td style="background-color: rgb(299, 299, 0);">  5465  </td> 
+<td>  13747  </td> 
+<td>  1  </td> 
+<td>  1  </td> 
+<td>  1  </td> 
+<td>  400112  </td> 
+<td>  9t7k30t3hs16f  </td> 
+<td>  2021/12/15 03:12:13  </td> 
+<td>  SQL Developer  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  create table xcck_test001 tablespace TEMPTABS as select ap_db basement chk_script_time.txt download.42m download.4gl fun_result.txt infor_all.sh mon_log output.test readme.txt script set test.log tmon tmon_chk tmon_clean.sh tmon.conf tmon_install tmon_set.sh tmon_time.txt tmon_title.conf from ds.dzba_t </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  8 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  8 </td>
+<td>  SYS </td>
+<td>  8 </td> 
+<td>  10 </td> 
+<td style="background-color: rgb(299, 299, 0);">  5437  </td> 
+<td>  121013  </td> 
+<td>  1  </td> 
+<td>  5  </td> 
+<td>  1  </td> 
+<td>  8  </td> 
+<td>  dg7r6nn4huy0q  </td> 
+<td>  2021/12/15 10:12:24  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select distinct t.obj# from tab$ t where t.analyzetime > dbms_stats.get_stats_history_availability() and not exists (select null from sys.wri$_optstat_tab_history h where h.obj# = t.obj# and h.savtime >= t.analyzetime) and not exists (select null from sys.hist_head$ h where h.obj# = t.obj# and bitand(h.spare2, 512)=512) and dbms_stats_internal.check_advisor_obj_filter(:rule_id, t.obj#, :exec_mode) = 'T' </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  9 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  9 </td>
+<td>  SYS </td>
+<td>  17 </td> 
+<td>  19 </td> 
+<td style="background-color: rgb(299, 299, 0);">  4316  </td> 
+<td>  907945  </td> 
+<td>  5  </td> 
+<td>  3  </td> 
+<td>  5  </td> 
+<td>  15  </td> 
+<td>  gsasht7ckk68m  </td> 
+<td>  2021/12/16 04:12:13  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select /bin /boot /cdrom /dev /etc /home /lib /lib64 /LINUX.X64_193000_db_home.zip /media /mnt /mrp /opt /proc /root /run /sbin /srv /sys /T100_fr /T100_gr /T100.tgz /test.pcap /tmp /u1 /u2 /u3 /u5 /usr /ut /var QOSD ap_db/ basement/ mon_log/ script/ set/ tmon_chk/ exp_id, objn from exp_head$ e where ((select max(nvl(es.last_modified, es.ctime)) from exp_stat$ es where es.objn = e.objn and es.exp_id = e.exp_id) < sysdate - 367 or not exists (select 1 from sys.obj$ o where o.obj# = e.objn)) and rownum < :batch_size </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  10 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  10 </td>
+<td>  SYS </td>
+<td>  3 </td> 
+<td>  5 </td> 
+<td style="background-color: rgb(299, 299, 0);">  3981  </td> 
+<td>  4311  </td> 
+<td>  1  </td> 
+<td>  5  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  f1a6cwd1pm8x2  </td> 
+<td>  2021/12/15 10:12:06  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  UPDATE SYS.WRI$_OPTSTAT_OPR_TASKS W SET STATUS = :B2 , NOTES = 'Inconsistent status. Forced update.' WHERE OP_ID IN (SELECT ID FROM SYS.WRI$_OPTSTAT_OPR O WHERE STATUS <> :B1 ) AND STATUS = :B1 </td> </tr>
+</table>
+<table width="100%" border="2" align="center" style="border: 2px solid rgb(0, 0, 209); border-image-source: initial; 
+border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; 
+width: 100%; border-collapse: collapse; line-height: 24px; font-size: 16px; font-family: 微軟正黑體;" class="resizable"
+><caption align="TOP" style="font-size: 18px; line-height: 34px; color: white; padding: 0px; 
+background-image: initial; background-attachment: initial; background-color: rgb(0, 0, 138); 
+background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; 
+background-repeat: initial;">
+SQL效能觀察 -- 前一日 TOP 10 SQL (依 內存 使用) -- (依照收集時間順序顯示)
+</caption><colgroup><col align="LEFT" valign="top"></colgroup>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  1 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  1 </td>
+<td>  SYS </td>
+<td>  521 </td> 
+<td>  582 </td> 
+<td>  59084  </td> 
+<td style="background-color: rgb(299, 299, 0);">  7301817  </td> 
+<td>  1  </td> 
+<td>  86  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  b6usrg82hwsa3  </td> 
+<td>  2021/12/15 10:12:03  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  call dbms_stats.gather_database_stats_job_proc ( ) </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  2 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  2 </td>
+<td>  SYS </td>
+<td>  77 </td> 
+<td>  87 </td> 
+<td>  1098  </td> 
+<td style="background-color: rgb(299, 299, 0);">  6095069  </td> 
+<td>  1  </td> 
+<td>  12  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  6mcpb06rctk0x  </td> 
+<td>  2021/12/15 10:12:03  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  call dbms_space.auto_space_advisor_job_proc ( ) </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  3 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  3 </td>
+<td>  SYS </td>
+<td>  32 </td> 
+<td>  33 </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  3867748  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  30  </td> 
+<td>  2  </td> 
+<td>  3xjw1ncw5vh27  </td> 
+<td>  2021/12/15 10:12:10  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  SELECT OWNER, SEGMENT_NAME, PARTITION_NAME, SEGMENT_TYPE, TABLESPACE_NAME, TABLESPACE_ID FROM SYS.SYS_DBA_SEGS WHERE SEGMENT_OBJD = :B1 AND SEGMENT_TYPE <> 'ROLLBACK' AND SEGMENT_TYPE <> 'TYPE2 UNDO' AND SEGMENT_TYPE <> 'DEFERRED ROLLBACK' AND SEGMENT_TYPE <> 'TEMPORARY' AND SEGMENT_TYPE <> 'CACHE' AND SEGMENT_TYPE <> 'SPACE HEADER' AND SEGMENT_TYPE <> 'UNDEFINED' AND TABLESPACE_NAME NOT IN ('SYSAUX' , 'SYSTEM') </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  4 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  4 </td>
+<td>  SYSTEM </td>
+<td>  61 </td> 
+<td>  62 </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  3442942  </td> 
+<td>  6  </td> 
+<td>  0  </td> 
+<td>  5  </td> 
+<td>  1600448  </td> 
+<td>  dsm0f9663maj4  </td> 
+<td>  2021/12/15 03:12:21  </td> 
+<td>  SQL Developer  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  delete from xcck_test001 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  5 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  5 </td>
+<td>  DSCOM </td>
+<td>  30 </td> 
+<td>  32 </td> 
+<td>  1004  </td> 
+<td style="background-color: rgb(299, 299, 0);">  2794847  </td> 
+<td>  2820  </td> 
+<td>  1  </td> 
+<td>  5640  </td> 
+<td>  5834  </td> 
+<td>  a5mp7w3zg9zgt  </td> 
+<td>  2021/12/15 10:12:04  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select gzwl008,gzwl002,gzwl003,gzwl004,gzwl006,gzwl007,gzwl009,gzwl010,gzwl011,gzwl012,gzwl015 from gzwl_t where gzwl015 = :p1 and gzwl010 = :p2 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  6 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  6 </td>
+<td>  SYS </td>
+<td>  24 </td> 
+<td>  25 </td> 
+<td>  8  </td> 
+<td style="background-color: rgb(299, 299, 0);">  1761226  </td> 
+<td>  1  </td> 
+<td>  0  </td> 
+<td>  8  </td> 
+<td>  26692  </td> 
+<td>  6wrwqq7jkmv3w  </td> 
+<td>  2021/12/15 10:12:54  </td> 
+<td>  DBMS_SCHEDULER  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  INSERT INTO WRI$_HEATMAP_TOPN_DEP2 SELECT TABLE_NAME, OWNER, 'LOBS', SUM(SEGMENT_COUNT), SUM(OBJECT_SIZE) FROM DBA_LOBS, WRI$_HEATMAP_TOPN_DEP1 WHERE WRI$_HEATMAP_TOPN_DEP1.OBJECT_NAME = DBA_LOBS.SEGMENT_NAME AND WRI$_HEATMAP_TOPN_DEP1.OBJECT_OWNER = DBA_LOBS.OWNER GROUP BY TABLE_NAME, OWNER UNION SELECT TABLE_NAME, OWNER,'INDEX', SUM(SEGMENT_COUNT), SUM(OBJECT_SIZE) FROM DBA_INDEXES , WRI$_HEATMAP_TOPN_DEP1 WHERE WRI$_HEATMAP_TOPN_DEP1.OBJECT_NAME = DBA_INDEXES.INDEX_NAME AND WRI$_HEATMAP_TOPN_DEP1.OBJECT_OWNER = DBA_INDEXES.OWNER GROUP BY TABLE_NAME, OWNER UNION SELECT OBJECT_NAME, OBJECT_OWNER, 'DATA', SUM(SEGMENT_COUNT), SUM(OBJECT_SIZE) FROM WRI$_HEATMAP_TOPN_DEP1 WHERE OBJECT_TYPE LIKE '%TABLE%' GROUP BY OBJECT_NAME, OBJECT_OWNER </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  7 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  7 </td>
+<td>  SYS </td>
+<td>  28 </td> 
+<td>  28 </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  1526497  </td> 
+<td>  161547  </td> 
+<td>  0  </td> 
+<td>  161547  </td> 
+<td>  161546  </td> 
+<td>  5t0s77hdvw8up  </td> 
+<td>  2021/12/15 10:12:59  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select owner, object_name, subobject_name, object_type from dba_objects where object_id = :1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  8 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  8 </td>
+<td>  SYSTEM </td>
+<td>  23 </td> 
+<td>  25 </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  1504453  </td> 
+<td>  13  </td> 
+<td>  0  </td> 
+<td>  13  </td> 
+<td>  5201456  </td> 
+<td>  amr2a60hcxan1  </td> 
+<td>  2021/12/15 03:12:22  </td> 
+<td>  SQL Developer  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  insert into xcck_test001 select ap_db basement chk_script_time.txt download.42m download.4gl fun_result.txt infor_all.sh mon_log output.test readme.txt script set test.log tmon tmon_chk tmon_clean.sh tmon.conf tmon_install tmon_set.sh tmon_time.txt tmon_title.conf from ds.dzba_t </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  9 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  9 </td>
+<td>  SYS </td>
+<td>  24 </td> 
+<td>  32 </td> 
+<td>  41786  </td> 
+<td style="background-color: rgb(299, 299, 0);">  1048380  </td> 
+<td>  25  </td> 
+<td>  13  </td> 
+<td>  25  </td> 
+<td>  25  </td> 
+<td>  bku5fwd8bhsn6  </td> 
+<td>  2021/12/16 01:12:34  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select count(*) from wri$_optstat_opr o, wri$_optstat_opr_tasks t where o.id = t.op_id(+) and o.operation = 'gather_database_stats (auto)' and ((o.notes like '%<error>%' and not regexp_like( o.notes, '<error>ORA-200[0-9][0-9]')) or (t.notes like '%<error>%' and not regexp_like( t.notes, '<error>ORA-200[0-9][0-9]'))) and rownum=1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  10 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  10 </td>
+<td>  SYS </td>
+<td>  17 </td> 
+<td>  19 </td> 
+<td>  4316  </td> 
+<td style="background-color: rgb(299, 299, 0);">  907945  </td> 
+<td>  5  </td> 
+<td>  3  </td> 
+<td>  5  </td> 
+<td>  15  </td> 
+<td>  gsasht7ckk68m  </td> 
+<td>  2021/12/16 04:12:13  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select /bin /boot /cdrom /dev /etc /home /lib /lib64 /LINUX.X64_193000_db_home.zip /media /mnt /mrp /opt /proc /root /run /sbin /srv /sys /T100_fr /T100_gr /T100.tgz /test.pcap /tmp /u1 /u2 /u3 /u5 /usr /ut /var QOSD ap_db/ basement/ mon_log/ script/ set/ tmon_chk/ exp_id, objn from exp_head$ e where ((select max(nvl(es.last_modified, es.ctime)) from exp_stat$ es where es.objn = e.objn and es.exp_id = e.exp_id) < sysdate - 367 or not exists (select 1 from sys.obj$ o where o.obj# = e.objn)) and rownum < :batch_size </td> </tr>
+</table>
+<table width="100%" border="2" align="center" style="border: 2px solid rgb(0, 0, 209); border-image-source: initial; 
+border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; 
+width: 100%; border-collapse: collapse; line-height: 24px; font-size: 16px; font-family: 微軟正黑體;" class="resizable"
+><caption align="TOP" style="font-size: 18px; line-height: 34px; color: white; padding: 0px; 
+background-image: initial; background-attachment: initial; background-color: rgb(0, 0, 138); 
+background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; 
+background-repeat: initial;">
+SQL效能觀察 -- 前一日 TOP 10 SQL (依 DB 解析次數 ) -- (依照收集時間順序顯示)
+</caption><colgroup><col align="LEFT" valign="top"></colgroup>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  1 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  1 </td>
+<td>  SYS </td>
+<td>  28 </td> 
+<td>  28 </td> 
+<td>  0  </td> 
+<td>  1526497  </td> 
+<td style="background-color: rgb(299, 299, 0);">  161547  </td> 
+<td>  0  </td> 
+<td>  161547  </td> 
+<td>  161546  </td> 
+<td>  5t0s77hdvw8up  </td> 
+<td>  2021/12/15 10:12:59  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select owner, object_name, subobject_name, object_type from dba_objects where object_id = :1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  2 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  2 </td>
+<td>  DS </td>
+<td>  7 </td> 
+<td>  9 </td> 
+<td>  33  </td> 
+<td>  137206  </td> 
+<td style="background-color: rgb(299, 299, 0);">  46028  </td> 
+<td>  1  </td> 
+<td>  46028  </td> 
+<td>  45008  </td> 
+<td>  gn70runph50xf  </td> 
+<td>  2021/12/15 10:12:13  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select gzsz001, gzsz003, gzsz008, gzsz017, gzsz019 from gzsz_t where gzsz002 = :p1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  3 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  3 </td>
+<td>  DS </td>
+<td>  4 </td> 
+<td>  5 </td> 
+<td>  0  </td> 
+<td>  135024  </td> 
+<td style="background-color: rgb(299, 299, 0);">  45008  </td> 
+<td>  0  </td> 
+<td>  45008  </td> 
+<td>  45008  </td> 
+<td>  16sp5hv7jyddc  </td> 
+<td>  2021/12/15 10:12:13  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select gzsz001, gzsz003 from gzsz_t where gzsz002 = :p1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  4 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  4 </td>
+<td>  DSDEMO </td>
+<td>  2 </td> 
+<td>  3 </td> 
+<td>  28  </td> 
+<td>  62195  </td> 
+<td style="background-color: rgb(299, 299, 0);">  20682  </td> 
+<td>  1  </td> 
+<td>  20682  </td> 
+<td>  20682  </td> 
+<td>  bz3ts664g7jfm  </td> 
+<td>  2021/12/15 10:12:13  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select ooaa002 from dsdemo.ooaa_t where ooaa001 = :p1 AND ooaaent = :p2 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  5 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  5 </td>
+<td>  SYS </td>
+<td>  13 </td> 
+<td>  13 </td> 
+<td>  0  </td> 
+<td>  85016  </td> 
+<td style="background-color: rgb(299, 299, 0);">  18185  </td> 
+<td>  0  </td> 
+<td>  18185  </td> 
+<td>  12276  </td> 
+<td>  0k8522rmdzg4k  </td> 
+<td>  2021/12/15 10:12:07  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select privilege# from sysauth$ where (grantee#=:1 or grantee#=1) and privilege#>0 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  6 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  6 </td>
+<td>  SYS </td>
+<td>  13 </td> 
+<td>  13 </td> 
+<td>  0  </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  18184  </td> 
+<td>  0  </td> 
+<td>  18184  </td> 
+<td>  18184  </td> 
+<td>  f0h5rpzmhju11  </td> 
+<td>  2021/12/15 11:12:34  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select SYS_CONTEXT('USERENV', 'SERVER_HOST'), SYS_CONTEXT('USERENV', 'DB_UNIQUE_NAME'), SYS_CONTEXT('USERENV', 'INSTANCE_NAME'), SYS_CONTEXT('USERENV', 'INSTANCE'), STARTUP_TIME, SYS_CONTEXT('USERENV', 'DB_DOMAIN'), SYS_CONTEXT('USERENV', 'SERVICE_NAME') from v$instance </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  7 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  7 </td>
+<td>  SYS </td>
+<td>  23 </td> 
+<td>  23 </td> 
+<td>  0  </td> 
+<td>  73115  </td> 
+<td style="background-color: rgb(299, 299, 0);">  18153  </td> 
+<td>  0  </td> 
+<td>  18153  </td> 
+<td>  18153  </td> 
+<td>  9zg9qd9bm4spu  </td> 
+<td>  2021/12/16 12:12:05  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  update user$ set spare6=DECODE(to_char(:2, 'YYYY-MM-DD'), '0000-00-00', to_date(NULL), :2) where user#=:1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  8 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  8 </td>
+<td>  SYS </td>
+<td>  6 </td> 
+<td>  6 </td> 
+<td>  0  </td> 
+<td>  36314  </td> 
+<td style="background-color: rgb(299, 299, 0);">  18154  </td> 
+<td>  0  </td> 
+<td>  18154  </td> 
+<td>  18154  </td> 
+<td>  865qwpcdyggkk  </td> 
+<td>  2021/12/16 02:12:08  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select spare6 from user$ where user#=:1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  9 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  9 </td>
+<td>  SYS </td>
+<td>  9 </td> 
+<td>  9 </td> 
+<td>  0  </td> 
+<td>  36112  </td> 
+<td style="background-color: rgb(299, 299, 0);">  18056  </td> 
+<td>  0  </td> 
+<td>  18056  </td> 
+<td>  18056  </td> 
+<td>  d9q2q82g1tuzx  </td> 
+<td>  2021/12/15 03:12:37  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select decode(upper(failover_method), NULL, 0 , 'BASIC', 1, 'PRECONNECT', 2 , 'PREPARSE', 4 , 0), decode(upper(failover_type), NULL, 1, 'NONE', 1, 'SESSION', 2, 'SELECT', 4, 'TRANSACTION', 8, 'AUTO' , 32, 1 ), failover_retries, failover_delay, flags, nvl(replay_initiation_timeout, 900), decode(upper(session_state_consistency), 'STATIC', 16, 0), failover_restore from sys.service$ where name = :1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  10 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  10 </td>
+<td>  DS </td>
+<td>  2 </td> 
+<td>  3 </td> 
+<td>  16  </td> 
+<td>  16907  </td> 
+<td style="background-color: rgb(299, 299, 0);">  16810  </td> 
+<td>  0  </td> 
+<td>  16810  </td> 
+<td>  0  </td> 
+<td>  06dfxndscbqr6  </td> 
+<td>  2021/12/15 10:12:13  </td> 
+<td>  fglrun@TOP200 (TNS V1-V3)  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select ooaa002 from ds.ooaa_t where ooaa001 = :p1 AND ooaaent = :p2 </td> </tr>
+</table>
+ start check redo 每日切換次數 
+================================================================

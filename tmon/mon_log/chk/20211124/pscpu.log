@@ -1,0 +1,1204 @@
+14.0  0.0  91509 ?        08:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.3  0.0 123689 ?        08:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0 125233 ?        08:01 00:00:00 sh /u1/etc/tmon/script/chk_ps
+16.6  0.0  34085 ?        08:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0  68555 ?        08:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.7  0.0 104880 ?        08:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0  11366 ?        08:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.7  0.0  45545 ?        08:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0  81834 ?        08:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0 116000 ?        08:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.7  0.0  22226 ?        08:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.7  0.0  64585 ?        08:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.7  0.0  98676 ?        08:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0   4345 ?        08:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  39051 ?        08:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.6  0.0  75294 ?        08:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0 111593 ?        08:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.7  0.0  17761 ?        08:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0  54040 ?        08:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.0  0.0  90275 ?        08:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.7  0.0 126647 ?        08:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.7  0.0  39314 ?        08:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+18.3  0.0  73422 ?        08:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0 109660 ?        08:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.7  0.0  13800 ?        08:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0  50017 ?        08:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.0  0.0  86328 ?        08:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.0  0.0 122552 ?        08:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.7  0.0  28763 ?        08:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  65042 ?        08:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0 101306 ?        08:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+25.0  0.0  15405 ?        08:30 00:00:00 oracletopprd (LOCAL=NO)
+13.7  0.0  13627 ?        08:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.0  0.0  47745 ?        08:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.2  0.0  83957 ?        08:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.0  0.0 120128 ?        08:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.3  0.0  24294 ?        08:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0  60841 ?        08:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0  95288 ?        08:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0 129439 ?        08:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0  33821 ?        08:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.7  0.0  67976 ?        08:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.0  0.0 108166 ?        08:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  14319 ?        08:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0  48445 ?        08:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0  82823 ?        08:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0 117281 ?        08:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.6  0.0  21295 ?        08:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0  57513 ?        08:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.3  0.0  91630 ?        08:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0 127945 ?        08:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0  31970 ?        08:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  74790 ?        08:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.0  0.0 111027 ?        08:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0  17229 ?        08:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0  51858 ?        08:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0  88445 ?        08:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0 122530 ?        08:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0  28860 ?        08:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0  65181 ?        08:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0 101523 ?        08:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0   5119 ?        08:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.6  0.0  49064 ?        09:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0  84009 ?        09:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0 120392 ?        09:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.0  0.0  24526 ?        09:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0  60908 ?        09:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  98056 ?        09:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0   1841 ?        09:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.7  0.0  17854 ?        09:06 00:00:04 oracletopprd (LOCAL=NO)
+13.5  0.0  21369 ?        09:06 00:00:03 oracletopprd (LOCAL=NO)
+12.5  0.0  39055 ?        09:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0  75786 ?        09:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0 110309 ?        09:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.2  0.0  21619 ?        09:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  56090 ?        09:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0  92685 ?        09:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.7  0.0 127254 ?        09:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+18.0  0.0  33571 ?        09:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.3  0.0  69938 ?        09:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+65.0  0.0 107905 ?        09:16 00:00:00 oracletopprd (LOCAL=NO)
+15.3  0.0 106722 ?        09:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0  12997 ?        09:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.3  0.0  47172 ?        09:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.0  0.0  83538 ?        09:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+78.0  0.0 125811 ?        09:20 00:00:00 oracletopprd (LOCAL=NO)
+15.6  0.0 124448 ?        09:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0  30695 ?        09:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  65300 ?        09:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0 102050 ?        09:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0   5606 ?        09:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.3  0.0  40252 ?        09:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.7  0.0  76813 ?        09:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0 111414 ?        09:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  16056 ?        09:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0  52783 ?        09:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  95670 ?        09:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0   3240 pts/16   09:31 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzp110 IKOB311939692d aint330_02 ain 22   S s
+12.2  0.0   1757 ?        09:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+18.0  0.0  38749 ?        09:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.3  0.0  75347 ?        09:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.7  0.0 111839 ?        09:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  16375 ?        09:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0  52649 ?        09:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.0  0.0  89398 ?        09:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0 123943 ?        09:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0  30666 ?        09:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.0  0.0  73176 ?        09:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+32.0  0.0 108177 pts/19   09:41 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apj/42r/apjm200 {"sessionkey":"IKOB411993216d","parent":"IKOJ390504332d","parentprog":"azzi000","ancest":"IKOJ390504332d","prog":"apjm200","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+16.0  0.0 107381 ?        09:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0 108885 ?        09:41 00:00:00 oracletopprd (LOCAL=NO)
+13.0  0.0  14008 ?        09:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  50643 ?        09:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0  85167 ?        09:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0 121619 ?        09:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0  25725 ?        09:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+82.1  0.0  49340 ?        09:47 00:00:10 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aiv/42r/aivp200 {"sessionkey":"IKOB470449622d","parent":"0","parentprog":"azzp953","background":"Y","prog":"aivp200","account":"tiptop","param":["{\"ivab001\":\"DSCTC\",\"l_prog\":\"2\",\"l_classify\":\"3\",\"wc\":\" 1=1\"}"],"schedule_id":"aivp200-00000-E6IA","schedule_seq":1,"static_ent":99}
+14.0  0.0  62529 ?        09:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0 100995 ?        09:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0 102376 pts/22   09:48 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/asf/42r/asft300 {"sessionkey":"IKOB481967079d","parent":"IKOJ474104286d","parentprog":"aooi200","ancest":"IKOJ474104286d","prog":"asft300","account":"tiptopcn","param":["\"1\""],"schedule_seq":0,"static_ent":99}
+16.0  0.0   6944 ?        09:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.5  0.0  52945 pts/19   09:50 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimm205 {"sessionkey":"IKOB501540574d","parent":"IKOB472118304d","parentprog":"aimm200","ancest":"IKOJ390504332d","prog":"aimm205","account":"tiptopcn","param":["ALL","FJ001"],"schedule_seq":0,"static_ent":99}
+15.3  0.0  52340 ?        09:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0  53661 ?        09:50 00:00:00 oracletopprd (LOCAL=NO)
+11.7  0.0  89409 ?        09:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.3  0.0  89775 ?        09:51 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmm200 {"sessionkey":"IKOB511661873d","parent":"IKOJ510953382d","parentprog":"aimm210","ancest":"IKOJ501045680d","prog":"abmm200","account":"13622","param":[],"schedule_seq":0,"static_ent":99}
+13.5  0.0 125753 ?        09:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0  34592 ?        09:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0  71212 ?        09:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.3  0.0  93115 ?        09:54 00:00:04 oracletopprd (LOCAL=NO)
+11.5  0.0 108883 ?        09:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+34.0  0.0  33004 ?        09:56 00:00:00 oracletopprd (LOCAL=NO)
+18.0  0.0  31843 ?        09:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  25400 ?        09:56 00:00:02 oracletopprd (LOCAL=NO)
+15.2  0.0  21530 ?        09:56 00:00:02 oracletopprd (LOCAL=NO)
+14.3  0.0  24721 ?        09:56 00:00:01 oracletopprd (LOCAL=NO)
+13.9  0.0  25123 ?        09:56 00:00:01 oracletopprd (LOCAL=NO)
+12.9  0.0  21796 ?        09:56 00:00:02 oracletopprd (LOCAL=NO)
+12.1  0.0  25769 ?        09:56 00:00:01 oracletopprd (LOCAL=NO)
+12.0  0.0  20828 ?        09:55 00:00:02 oracletopprd (LOCAL=NO)
+11.4  0.0  25538 ?        09:56 00:00:01 oracletopprd (LOCAL=NO)
+20.1  0.0  25400 ?        09:56 00:00:14 oracletopprd (LOCAL=NO)
+19.1  0.0  20828 ?        09:55 00:00:15 oracletopprd (LOCAL=NO)
+13.2  0.0  70522 ?        09:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.1  0.0  25400 ?        09:56 00:00:22 oracletopprd (LOCAL=NO)
+12.2  0.0 108880 pts/29   09:58 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrt400 {"sessionkey":"IKOB581601575d","parent":"IKOB555235722d","parentprog":"anmt540","ancest":"IKOJ552768687d","prog":"axrt400","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+12.0  0.0 109549 ?        09:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.7  0.0  20828 ?        09:55 00:00:15 oracletopprd (LOCAL=NO)
+17.2  0.0  25400 ?        09:56 00:00:33 oracletopprd (LOCAL=NO)
+12.5  0.0  18982 ?        09:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+38.0  0.0  62491 ?        10:00 00:00:00 oracletopprd (LOCAL=NO)
+26.3  0.0  61705 pts/20   10:00 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/ais/42r/aist310 {"sessionkey":"IKOK001406381d","parent":"0","prog":"aist310","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+16.0  0.0  63380 ?        10:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0  65461 pts/33   10:00 00:00:00 -ksh
+23.0  0.0 106314 ?        10:01 00:00:00 oracletopprd (LOCAL=NO)
+14.3  0.0 104368 ?        10:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.5  0.0  20828 ?        09:55 00:00:37 oracletopprd (LOCAL=NO)
+11.5  0.0 105364 pts/30   10:01 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzp460 IKOC011955199d
+16.3  0.0  13753 ?        10:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.5  0.0  64553 ?        10:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.0  0.0 101848 ?        10:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.6  0.0  10421 ?        10:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.7  0.0  45649 pts/19   10:06 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi301 {"sessionkey":"IKOC061279360d","parent":"IKOJ390504332d","parentprog":"azzi000","ancest":"IKOJ390504332d","prog":"aimi001","account":"tiptopcn","param":["\"200\""],"schedule_seq":0,"static_ent":99}
+14.6  0.0  49035 ?        10:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.4  0.0  46683 ?        10:06 00:00:00 oracletopprd (LOCAL=NO)
+18.3  0.1  45649 pts/19   10:06 00:00:12 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi301 {"sessionkey":"IKOC061279360d","parent":"IKOJ390504332d","parentprog":"azzi000","ancest":"IKOJ390504332d","prog":"aimi001","account":"tiptopcn","param":["\"200\""],"schedule_seq":0,"static_ent":99}
+14.0  0.0  88362 ?        10:07 00:00:00 oracletopprd (LOCAL=NO)
+12.0  0.0  86419 ?        10:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.4  0.0  46683 ?        10:06 00:00:07 oracletopprd (LOCAL=NO)
+14.0  0.0 124273 ?        10:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0  34256 ?        10:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+31.0  0.0  78502 pts/3    10:10 00:00:00 /bin/ksh chk_psmem
+14.0  0.0  78598 ?        10:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0 119129 ?        10:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.6  0.0 114087 pts/16   10:11 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aap/42r/aapt330 {"sessionkey":"IKOC110944471d","parent":"IKOC102700398d","parentprog":"anmp410","ancest":"IKOK095958924d","prog":"aapt330","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+15.0  0.0  29794 ?        10:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  68697 ?        10:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.7  0.0 105358 ?        10:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.3  0.0  11010 ?        10:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.0  0.0  46644 ?        10:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  82497 ?        10:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+57.0  0.0 124115 ?        10:18 00:00:00 oracletopprd (LOCAL=NO)
+13.0  0.0 122392 ?        10:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0 123856 pts/19   10:18 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimi100 {"sessionkey":"IKOC182007560d","parent":"IKOJ390504332d","parentprog":"azzi000","ancest":"IKOJ390504332d","prog":"aimi100","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+12.7  0.0  27899 ?        10:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.7  0.0  71699 ?        10:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0 108912 ?        10:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.0  0.0  14246 ?        10:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0  52428 ?        10:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0  87653 ?        10:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0 124374 ?        10:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.7  0.0  31567 ?        10:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+18.0  0.0  69969 pts/13   10:27 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/afa/42r/afai100 {"sessionkey":"IKOC271846787d","parent":"IKOC204005585d","parentprog":"afat510","ancest":"IKOJ274404834d","prog":"afai100","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+16.6  0.0  68768 ?        10:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+18.0  0.0 106027 ?        10:28 00:00:00 oracletopprd (LOCAL=NO)
+16.0  0.0 105066 ?        10:28 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmt410 {"sessionkey":"IKOC281719829d","parent":"IKOK180420980d","parentprog":"azzi000","ancest":"IKOK180420980d","prog":"apmt410","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+13.6  0.0 104415 ?        10:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.6  0.0  15845 ?        10:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0  61028 ?        10:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  62939 pts/19   10:30 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi100 {"sessionkey":"IKOC301985916d","parent":"IKOJ390504332d","parentprog":"azzi000","ancest":"IKOJ390504332d","prog":"aooi100","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+20.0  0.0 102721 ?        10:31 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adb/42r/adbi200 {"sessionkey":"IKOC311708623d","parent":"IKOK302407193d","parentprog":"azzi000","ancest":"IKOK302407193d","prog":"adbi200","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+16.6  0.0 101530 ?        10:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.6  0.0  11983 ?        10:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.4  0.0 118574 ?        10:31 00:00:05 oracletopprd (LOCAL=NO)
+16.6  0.0  50494 ?        10:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+31.0  0.0  87496 ?        10:34 00:00:00 oracletopprd (LOCAL=NO)
+13.3  0.0  85521 ?        10:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  87204 pts/23   10:34 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimm205 {"sessionkey":"IKOK341732061d","parent":"0","prog":"aimm205","account":"tiptopcn","param":["ALL"],"schedule_seq":0,"static_ent":99}
+11.6  0.0  38481 ?        10:29 00:00:31 oracletopprd (LOCAL=NO)
+23.4  0.0  38481 ?        10:29 00:01:17 oracletopprd (LOCAL=NO)
+16.0  0.0 123388 ?        10:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+25.7  0.0  38481 ?        10:29 00:01:40 oracletopprd (LOCAL=NO)
+13.3  0.0  31147 ?        10:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+22.4  0.0  38481 ?        10:29 00:01:40 oracletopprd (LOCAL=NO)
+14.6  0.0  68614 ?        10:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+63.0  0.0 107161 ?        10:38 00:00:00 oracletopprd (LOCAL=NO)
+19.6  0.0  38481 ?        10:29 00:01:40 oracletopprd (LOCAL=NO)
+15.6  0.0 105923 ?        10:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0 107748 ?        10:38 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKOK382087383d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+12.0  0.0 107645 ?        10:38 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzp953 {"sessionkey":"IKOK382077709d","parent":"0","prog":"azzp953","account":"tiptop","param":["1007","test","axcr511-2108101715"],"schedule_seq":0,"static_ent":99}
+26.0  0.0  13632 ?        10:39 00:00:00 oracletopprd (LOCAL=NO)
+17.6  0.0  38481 ?        10:29 00:01:40 oracletopprd (LOCAL=NO)
+16.3  0.0  12763 ?        10:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.8  0.0   6668 ?        10:39 00:00:01 oracletopprd (LOCAL=NO)
+11.0  0.0  12821 ?        10:39 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/asf/42r/asft330 {"sessionkey":"IKOC391784225d","parent":"IKOK385787611d","parentprog":"azzi000","ancest":"IKOK385787611d","prog":"asft330","account":"tiptop","param":["\"0\""],"schedule_seq":0,"static_ent":1002}
+44.5  0.0  52355 ?        10:40 00:00:02 oracletopprd (LOCAL=NO)
+23.8  0.0  51800 pts/33   10:40 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/agl/42r/agli180 {"sessionkey":"IKOK401376881d","parent":"0","prog":"agli180","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+15.9  0.0  38481 ?        10:29 00:01:40 oracletopprd (LOCAL=NO)
+14.3  0.0  53974 ?        10:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.5  0.0  38481 ?        10:29 00:01:40 oracletopprd (LOCAL=NO)
+13.5  0.0  91528 ?        10:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0 130456 ?        10:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.3  0.0  38481 ?        10:29 00:01:40 oracletopprd (LOCAL=NO)
+18.0  0.0  35393 ?        10:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.3  0.0  38481 ?        10:29 00:01:40 oracletopprd (LOCAL=NO)
+13.5  0.0  72818 ?        10:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.5  0.0  38481 ?        10:29 00:01:40 oracletopprd (LOCAL=NO)
+13.5  0.0 107567 ?        10:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.7  0.0  38481 ?        10:29 00:01:40 oracletopprd (LOCAL=NO)
+13.0  0.0  12450 ?        10:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.1  0.0  38481 ?        10:29 00:01:40 oracletopprd (LOCAL=NO)
+17.6  0.0  49730 ?        10:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0  84774 ?        10:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0 120066 ?        10:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  33951 ?        10:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.3  0.0  72099 ?        10:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0  67416 ?        10:51 00:00:01 oracletopprd (LOCAL=NO)
+14.0  0.0 109404 ?        10:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  16329 ?        10:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  51044 ?        10:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+56.0  0.0  87474 ?        10:55 00:00:00 oracletopprd (LOCAL=NO)
+16.6  0.0  85913 ?        10:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0 122804 ?        10:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0  27629 ?        10:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0  64399 ?        10:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0  99447 ?        10:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0  13028 ?        11:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0  51407 ?        11:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.0  0.0  53206 pts/54   11:01 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzp000.42r aglp53
+12.7  0.0  88457 ?        11:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0 123262 ?        11:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.0  0.0  30070 ?        11:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+26.0  0.0  68455 pts/55   11:05 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzi180 IKOL051695883d
+19.5  0.0  67936 ?        11:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.0  0.0 105121 ?        11:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.2  0.0  12028 ?        11:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.0  0.0  49012 ?        11:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0  86681 ?        11:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.0  0.0 129801 ?        11:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.3  0.0  36582 ?        11:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.5  0.0  74116 ?        11:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.3  0.0 111562 ?        11:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.3  0.0  18432 ?        11:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.0  0.0  56394 ?        11:15 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aap/42r/aapp131 {"sessionkey":"IKOD151795648d","parent":"0","parentprog":"azzp953","background":"Y","prog":"aapp131","account":"tiptop","param":["{\"apcasite\":\"DSCTC\",\"apcald\":\"10\",\"apca011\":\"01\",\"rate1\":2,\"sel2\":\"1\",\"slip1\":\"U24\",\"apcadocdt\":\"2021-08-19\",\"wc\":\" 1=1 AND  1=1\"}"],"schedule_id":"aapp131_01","schedule_seq":1,"static_ent":99}
+16.0  0.0  56512 ?        11:15 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKOL151806593d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+13.6  0.0  55189 ?        11:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.3  0.0  92334 ?        11:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0 129883 ?        11:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0  37226 ?        11:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.6  0.0  72200 ?        11:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.6  0.0 116253 ?        11:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0  23484 ?        11:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  75738 pts/10   09:22 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmm200 {"sessionkey":"IKOJ223484589d","parent":"0","prog":"abmm200","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+ 0.0  0.0  92834 pts/10   10:20 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/asf/42r/asft300 {"sessionkey":"IKOC205222460d","parent":"IKOJ223484589d","parentprog":"abmm200","ancest":"IKOJ223484589d","prog":"asft300","account":"tiptoper","param":["\"1\""],"schedule_seq":0,"static_ent":99}
+18.6  0.0  60595 ?        11:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.0  0.0  95698 ?        11:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.0  0.0  97062 ?        11:23 00:00:00 oracletopprd (LOCAL=NO)
+15.0  0.0  96045 ?        11:23 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aic/42r/aicp100 {"sessionkey":"IKOD231921499d","parent":"IKOL220941565d","parentprog":"azzi000","ancest":"IKOL220941565d","prog":"aicp100","account":"tiptop","param":[],"schedule_seq":0,"static_ent":99}
+12.0  0.0   2454 ?        11:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.7  0.0  40475 ?        11:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0  76053 ?        11:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0 111709 ?        11:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0  19090 ?        11:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  54329 ?        11:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  97700 ?        11:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0   4615 ?        11:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  40233 ?        11:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0  77255 ?        11:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0 112193 ?        11:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.6  0.0  19778 ?        11:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0  57256 ?        11:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+25.5  0.0  79695 pts/27   11:37 00:00:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrq932 {"sessionkey":"IKOD370204589d","parent":"IKOJ542930877d","parentprog":"azzi000","ancest":"IKOJ542930877d","prog":"axrq930","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+23.2  0.0  81420 ?        11:37 00:00:03 oracletopprd (LOCAL=NO)
+20.0  0.0  92159 ?        11:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+43.5  0.0  79695 pts/27   11:37 00:00:33 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrq932 {"sessionkey":"IKOD370204589d","parent":"IKOJ542930877d","parentprog":"azzi000","ancest":"IKOJ542930877d","prog":"axrq930","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+19.3  0.0  81420 ?        11:37 00:00:14 oracletopprd (LOCAL=NO)
+15.0  0.0 129575 ?        11:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.0  0.0  41640 ?        11:35 00:00:16 oracletopprd (LOCAL=NO)
+24.1  0.0  79695 pts/27   11:37 00:00:33 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrq932 {"sessionkey":"IKOD370204589d","parent":"IKOJ542930877d","parentprog":"azzi000","ancest":"IKOJ542930877d","prog":"axrq930","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+16.0  0.0  37060 ?        11:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.7  0.0  81420 ?        11:37 00:00:14 oracletopprd (LOCAL=NO)
+90.0  0.0  81361 ?        11:40 00:00:00 oracletopprd (LOCAL=NO)
+17.0  0.0  79695 pts/27   11:37 00:00:33 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrq932 {"sessionkey":"IKOD370204589d","parent":"IKOJ542930877d","parentprog":"azzi000","ancest":"IKOJ542930877d","prog":"axrq930","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.0  0.0  80124 ?        11:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.2  0.2  41587 pts/38   11:35 00:00:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+27.1  0.2  41587 pts/38   11:35 00:01:28 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.6  0.0 117475 ?        11:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.9  0.0  79695 pts/27   11:37 00:00:33 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrq932 {"sessionkey":"IKOD370204589d","parent":"IKOJ542930877d","parentprog":"azzi000","ancest":"IKOJ542930877d","prog":"axrq930","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+81.0  0.0  25904 ?        11:42 00:00:00 oracletopprd (LOCAL=NO)
+38.5  0.2  41587 pts/38   11:35 00:02:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+21.0  0.0  24478 ?        11:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.5  0.0  79695 pts/27   11:37 00:00:33 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrq932 {"sessionkey":"IKOD370204589d","parent":"IKOJ542930877d","parentprog":"azzi000","ancest":"IKOJ542930877d","prog":"axrq930","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+46.7  0.2  41587 pts/38   11:35 00:03:28 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.3  0.0  61903 ?        11:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+52.9  0.2  41587 pts/38   11:35 00:04:28 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.3  0.0  99366 ?        11:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+57.8  0.2  41587 pts/38   11:35 00:05:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+19.0  0.0 103780 ?        11:44 00:00:10 oracletopprd (LOCAL=NO)
+61.8  0.2  41587 pts/38   11:35 00:06:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.6  0.0  43724 ?        11:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+65.1  0.2  41587 pts/38   11:35 00:07:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.0  0.0  80955 ?        11:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+67.9  0.2  41587 pts/38   11:35 00:08:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.0  0.0 117916 ?        11:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+70.3  0.2  41587 pts/38   11:35 00:09:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+20.5  0.0  25198 ?        11:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+72.3  0.2  41587 pts/38   11:35 00:10:25 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.3  0.0  69008 ?        11:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+74.1  0.2  41587 pts/38   11:35 00:11:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+21.0  0.0 106351 ?        11:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+75.7  0.2  41587 pts/38   11:35 00:12:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.0  0.0  13478 ?        11:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+77.0  0.2  41587 pts/38   11:35 00:13:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.3  0.0  50530 ?        11:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+78.3  0.2  41587 pts/38   11:35 00:14:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+20.5  0.0  87702 ?        11:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.4  0.2  78584 pts/13   11:54 00:00:01 /u1/genero/fglgws/lib/fglrun-bin -d /u1/topprd/erp/afa/42r/afat517.42r
+79.4  0.2  41587 pts/38   11:35 00:15:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.0  0.0 124789 ?        11:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+80.5  0.2  41587 pts/38   11:35 00:16:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.0  0.0  32882 ?        11:56 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKOL561759898d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+13.0  0.0  31547 ?        11:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+81.3  0.2  41587 pts/38   11:35 00:17:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.3  0.0  68453 ?        11:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+82.2  0.2  41587 pts/38   11:35 00:18:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.3  0.0 105399 ?        11:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+82.9  0.2  41587 pts/38   11:35 00:19:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.3  0.0  13306 ?        11:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+83.6  0.2  41587 pts/38   11:35 00:20:24 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+17.0  0.0  62065 ?        12:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+84.3  0.2  41587 pts/38   11:35 00:21:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.3  0.0 101164 ?        12:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+84.9  0.2  41587 pts/38   11:35 00:22:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.0  0.0   7799 ?        12:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+85.4  0.2  41587 pts/38   11:35 00:23:28 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+21.0  0.0  45446 ?        12:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+85.9  0.2  41587 pts/38   11:35 00:24:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.3  0.0  82375 ?        12:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+86.4  0.2  41587 pts/38   11:35 00:25:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.0  0.0 119697 ?        12:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+86.9  0.2  41587 pts/38   11:35 00:26:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+21.5  0.0  26546 ?        12:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+87.3  0.2  41587 pts/38   11:35 00:27:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+20.5  0.0  63438 ?        12:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+87.6  0.2  41587 pts/38   11:35 00:28:28 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.3  0.0 100439 ?        12:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+88.0  0.2  41587 pts/38   11:35 00:29:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.3  0.0   6970 ?        12:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+88.4  0.2  41587 pts/38   11:35 00:30:25 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.3  0.0  50455 ?        12:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+85.7  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.6  0.0  87432 ?        12:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+83.4  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.0  0.0 122152 ?        12:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+81.2  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.6  0.0  29075 ?        12:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+79.0  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.6  0.0  63739 ?        12:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+77.0  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.2  0.0  98415 ?        12:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+75.1  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.2  0.0   2562 ?        12:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+73.3  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.3  0.0  37765 ?        12:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+71.6  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.5  0.0  72471 ?        12:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+69.9  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.5  0.0 107623 ?        12:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+68.5  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.6  0.0  21304 ?        12:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.6  0.0  21163 ?        12:20 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi100 {"sessionkey":"IKOE201438552d","parent":"IKOE200124297d","parentprog":"aooi200","ancest":"IKOM190356748d","prog":"aooi100","account":"tiptop","param":[],"schedule_seq":0,"static_ent":99}
+66.8  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.2  0.0  56228 ?        12:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+65.5  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+15.0  0.0  93183 ?        12:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+64.0  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.7  0.0 128344 ?        12:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+62.7  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.2  0.0  35225 ?        12:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+61.5  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.2  0.0  72000 ?        12:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+60.2  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.2  0.0 108944 ?        12:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+59.1  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.6  0.0  15773 ?        12:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+58.0  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.0  0.0  53033 ?        12:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+56.8  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.7  0.0  88145 ?        12:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+55.9  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+54.8  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+17.0  0.0  35800 ?        12:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+53.9  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+15.6  0.0  72647 ?        12:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+52.9  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.0  0.0 109633 ?        12:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+52.0  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.0  0.0  14333 ?        12:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+51.1  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.5  0.0  51446 ?        12:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+50.3  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0  86273 ?        12:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+49.5  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+49.0  0.0 124330 ?        12:37 00:00:00 oracletopprd (LOCAL=NO)
+15.3  0.0 122965 ?        12:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+48.7  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.6  0.0  29942 ?        12:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+80.0  0.0  66228 ?        12:39 00:00:00 oracletopprd (LOCAL=NO)
+72.0  0.0  66303 ?        12:39 00:00:00 oracletopprd (LOCAL=NO)
+47.9  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+15.0  0.0  64651 ?        12:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  66164 ?        12:39 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKOM392033995d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+47.2  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+18.3  0.0 107806 ?        12:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+46.4  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.0  0.0  12467 ?        12:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+45.7  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.6  0.0  49329 ?        12:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+45.1  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.3  0.0  86215 ?        12:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+44.4  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.7  0.0 123188 ?        12:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+43.8  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.0  0.0  29998 ?        12:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+43.1  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.2  0.0  64730 ?        12:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+42.5  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.2  0.0 101627 ?        12:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+41.9  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.0  0.0   5782 ?        12:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+41.4  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0  43243 ?        12:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+40.8  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0  86604 ?        12:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+40.3  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.7  0.0 121560 ?        12:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+39.7  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.6  0.0  28383 ?        12:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+39.2  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0  65294 ?        12:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+38.7  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0 100070 ?        12:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+38.2  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0   6343 ?        12:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+37.8  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.7  0.0  41545 ?        12:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+37.3  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+18.0  0.0  78355 ?        12:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+36.8  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0 113112 ?        12:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+36.4  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0  19976 ?        12:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+36.0  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+15.6  0.0  63447 ?        13:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+35.6  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+17.6  0.0  98485 ?        13:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+35.2  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.6  0.0   4857 ?        13:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+34.7  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.5  0.0  40552 ?        13:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+34.4  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0  77516 ?        13:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+34.0  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0 113149 ?        13:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+33.6  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.0  0.0  19970 ?        13:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+33.2  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0  56802 ?        13:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+32.9  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0  93683 ?        13:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+32.5  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0 128559 ?        13:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+32.2  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.7  0.0  41493 ?        13:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+31.8  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0  76145 ?        13:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+31.5  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+17.6  0.0 113080 ?        13:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+31.2  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.0  0.0  19959 ?        13:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+30.9  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.7  0.0  54697 ?        13:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+30.6  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.7  0.0  91529 ?        13:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+30.2  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.7  0.0 126295 ?        13:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+29.9  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.0  0.0  32936 ?        13:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+29.7  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+21.5  0.0  67663 ?        13:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+29.4  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+11.7  0.0 104542 ?        13:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+29.1  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+28.0  0.0  17758 ?        13:20 00:00:00 oracletopprd (LOCAL=NO)
+13.0  0.0  16328 ?        13:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+28.8  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.2  0.0  53105 ?        13:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+28.5  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.6  0.0  88049 ?        13:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.7  0.0  64296 ?        13:21 00:00:06 oracletopprd (LOCAL=NO)
+77.0  0.0 126479 ?        13:23 00:00:00 oracletopprd (LOCAL=NO)
+28.3  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.5  0.0 125039 ?        13:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+62.0  0.0  31584 ?        13:24 00:00:00 oracletopprd (LOCAL=NO)
+28.0  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.7  0.0  30030 ?        13:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+27.8  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.2  0.0  66973 ?        13:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+27.5  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0 103861 ?        13:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+27.2  0.2  41587 pts/38   11:35 00:30:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+18.0  0.0   8321 ?        13:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+27.1  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.7  0.0  45673 ?        13:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+26.8  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+11.2  0.0  82700 ?        13:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+26.6  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0 126123 ?        13:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+26.3  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+17.0  0.0  30881 ?        13:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+26.1  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.0  0.0  67745 ?        13:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+25.9  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0 104753 ?        13:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+25.7  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0   9730 ?        13:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+25.5  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.6  0.0  47238 ?        13:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+25.3  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+23.0  0.0  84386 ?        13:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+25.1  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.0  0.0 123460 pts/0    13:37 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aap/42r/aapt300 {"sessionkey":"IKOF371617100d","parent":"IKON363085997d","parentprog":"aapt110","ancest":"IKON363085997d","prog":"aapt300","account":"tiptop","param":["\"0\"","\"\"","CTC-A03-211123000002"],"schedule_seq":0,"static_ent":99}
+13.0  0.0 122335 ?        13:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.6  0.0 121664 pts/8    13:37 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmm101 {"sessionkey":"IKOF371433788d","parent":"IKOD084826807d","parentprog":"axmt500","ancest":"IKOL081924169d","prog":"axmm202","account":"tiptoper","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+24.8  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+19.0  0.0  32219 pts/3    13:38 00:00:00 /bin/ksh chk_psmem
+11.5  0.0  30621 ?        13:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+24.7  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+20.0  0.0  70621 ?        13:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+24.5  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+15.6  0.0 113738 ?        13:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.5  0.0 114438 pts/37   13:40 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzi140 IKON401514747d
+24.2  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.0  0.0  21772 ?        13:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+24.1  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+24.0  0.0  57947 pts/41   13:42 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzp110 IKOF421713813d cl_ap_code lib 29   B s
+15.3  0.0  56836 ?        13:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+23.9  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.3  0.0  93842 ?        13:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+37.1  0.0 113000 ?        13:43 00:00:12 oracletopprd (LOCAL=NO)
+23.7  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+23.5  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.3  0.0  38691 ?        13:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.0  0.0 113000 ?        13:43 00:00:13 oracletopprd (LOCAL=NO)
+23.3  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.6  0.0  75583 ?        13:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+23.1  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.0  0.0 110340 ?        13:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+23.0  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.2  0.0  17141 ?        13:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+22.8  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+18.0  0.0  52077 ?        13:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+22.6  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.5  0.0  95466 ?        13:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+22.5  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.2  0.0 130249 ?        13:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+22.3  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+17.3  0.0  37100 ?        13:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+22.1  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.7  0.0  74528 ?        13:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+22.0  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+17.6  0.0 109819 ?        13:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+21.8  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.6  0.0  17269 ?        13:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+21.7  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.0  0.0  54302 ?        13:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+21.5  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.5  0.0  91428 ?        13:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+21.3  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.0  0.0 126454 ?        13:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+41.0  0.1  32092 ?        13:59 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aiv/42r/aivp020 {"sessionkey":"IKOF591780976d","parent":"0","parentprog":"azzp953","background":"Y","prog":"aivp020","account":"tiptop","param":["{\"l_sche\":\"2\"}"],"schedule_id":"aivp020-00000-DGQO","schedule_seq":1,"static_ent":99}
+21.2  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+11.3  0.0  31973 ?        13:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+26.0  0.0  77186 ?        14:00 00:00:00 oracletopprd (LOCAL=NO)
+21.1  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.2  0.0  75042 ?        14:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+20.9  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.2  0.0 110516 ?        14:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+20.8  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+12.5  0.0  17491 ?        14:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+20.6  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+20.5  0.0  55781 ?        14:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.1  0.0  91018 ?        14:00 00:00:15 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+20.5  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.3  0.0  93199 ?        14:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0  91018 ?        14:00 00:00:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+10.3  0.0  91746 ?        14:00 00:00:22 oracletopprd (LOCAL=NO)
+20.4  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+13.4  0.0  91018 ?        14:00 00:00:37 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+11.2  0.0  91746 ?        14:00 00:00:31 oracletopprd (LOCAL=NO)
+20.2  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+15.0  0.0  40001 ?        14:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.1  0.0  91018 ?        14:00 00:00:48 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+11.8  0.0  91746 ?        14:00 00:00:40 oracletopprd (LOCAL=NO)
+20.1  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+16.3  0.0  78607 ?        14:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.7  0.0  91018 ?        14:00 00:00:58 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+12.2  0.0  91746 ?        14:00 00:00:48 oracletopprd (LOCAL=NO)
+19.9  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+15.1  0.0  91018 ?        14:00 00:01:09 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+12.5  0.0  91746 ?        14:00 00:00:57 oracletopprd (LOCAL=NO)
+12.0  0.0 116269 ?        14:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+22.4  0.0  97899 ?        14:07 00:00:21 oracletopprd (LOCAL=NO)
+19.8  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+15.3  0.0  91018 ?        14:00 00:01:19 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+13.6  0.0  23457 ?        14:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.7  0.0  91746 ?        14:00 00:01:05 oracletopprd (LOCAL=NO)
+60.0  0.0  62608 ?        14:10 00:00:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+44.5  0.0  97899 ?        14:07 00:01:07 oracletopprd (LOCAL=NO)
+19.7  0.2  41587 pts/38   11:35 00:30:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKOL355138684d","parent":"0","prog":"abmr011","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+19.5  0.0  67616 ?        14:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.5  0.0  91018 ?        14:00 00:01:29 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+12.9  0.0  91746 ?        14:00 00:01:14 oracletopprd (LOCAL=NO)
+12.9  0.0  96911 ?        14:07 00:00:19 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimm200 {"sessionkey":"IKOG074297122d","parent":"IKOL220941565d","parentprog":"azzi000","ancest":"IKOL220941565d","prog":"aimm200","account":"tiptop","param":[],"schedule_seq":0,"static_ent":99}
+94.5  0.0  62608 ?        14:10 00:01:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+48.7  0.0  82776 ?        14:10 00:00:21 oracletopprd (LOCAL=NO)
+17.8  0.0  81829 ?        14:10 00:00:08 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimm200 {"sessionkey":"IKOG103152923d","parent":"IKOL220941565d","parentprog":"azzi000","ancest":"IKOL220941565d","prog":"aimm200","account":"tiptop","param":[],"schedule_seq":0,"static_ent":99}
+15.7  0.0  91018 ?        14:00 00:01:39 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+13.1  0.0  91746 ?        14:00 00:01:23 oracletopprd (LOCAL=NO)
+12.6  0.0 105611 ?        14:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+97.5  0.0  62608 ?        14:10 00:02:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+20.5  0.0  13304 ?        14:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.9  0.0  91018 ?        14:00 00:01:50 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+13.2  0.0  91746 ?        14:00 00:01:32 oracletopprd (LOCAL=NO)
+98.0  0.0  62608 ?        14:10 00:03:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+50.4  0.0  12924 ?        14:12 00:00:31 oracletopprd (LOCAL=NO)
+17.1  0.0  11796 ?        14:12 00:00:10 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimm200 {"sessionkey":"IKOG121351900d","parent":"IKOL220941565d","parentprog":"azzi000","ancest":"IKOL220941565d","prog":"aimm200","account":"tiptop","param":[],"schedule_seq":0,"static_ent":99}
+16.0  0.0  91018 ?        14:00 00:02:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+13.3  0.0  91746 ?        14:00 00:01:40 oracletopprd (LOCAL=NO)
+13.0  0.0  52266 ?        14:13 00:00:00 oracletopprd (LOCAL=NO)
+11.6  0.0  50819 ?        14:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+98.4  0.0  62608 ?        14:10 00:04:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+44.3  0.0  81409 ?        14:14 00:00:04 oracletopprd (LOCAL=NO)
+16.2  0.0  91018 ?        14:00 00:02:12 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.0  0.0  88303 ?        14:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0  91746 ?        14:00 00:01:50 oracletopprd (LOCAL=NO)
+98.8  0.0  62608 ?        14:10 00:05:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+16.3  0.0  91018 ?        14:00 00:02:23 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.0  0.0 126083 ?        14:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.6  0.0  91746 ?        14:00 00:01:59 oracletopprd (LOCAL=NO)
+99.1  0.0  62608 ?        14:10 00:06:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+16.4  0.0  91018 ?        14:00 00:02:33 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.0  0.0  33116 ?        14:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.6  0.0  91746 ?        14:00 00:02:07 oracletopprd (LOCAL=NO)
+99.2  0.0  62608 ?        14:10 00:07:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+16.4  0.0  91018 ?        14:00 00:02:44 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+13.8  0.1  43125 ?        14:16 00:00:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi199 {"sessionkey":"IKOG162799586d","parent":"IKOL220941565d","parentprog":"azzi000","ancest":"IKOL220941565d","prog":"aooi199","account":"tiptop","param":[],"schedule_seq":0,"static_ent":99}
+13.7  0.0  91746 ?        14:00 00:02:16 oracletopprd (LOCAL=NO)
+13.6  0.0  70663 ?        14:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.3  0.0  62608 ?        14:10 00:08:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+21.0  0.0 107737 ?        14:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.5  0.0  91018 ?        14:00 00:02:55 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+13.8  0.0  91746 ?        14:00 00:02:25 oracletopprd (LOCAL=NO)
+99.4  0.0  62608 ?        14:10 00:09:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+20.5  0.0  14749 ?        14:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  91018 ?        14:00 00:03:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+13.8  0.0  91746 ?        14:00 00:02:34 oracletopprd (LOCAL=NO)
+99.3  0.0  62608 ?        14:10 00:10:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+16.6  0.0  91018 ?        14:00 00:03:16 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.3  0.0  59169 ?        14:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.9  0.0  91746 ?        14:00 00:02:43 oracletopprd (LOCAL=NO)
+10.2  0.0  23233 pts/52   14:19 00:00:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrp910 {"sessionkey":"IKOG192651516d","parent":"IKON551293517d","parentprog":"axrp970","ancest":"IKON551293517d","prog":"axrp910","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+99.4  0.0  62608 ?        14:10 00:11:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+16.7  0.0  91018 ?        14:00 00:03:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.3  0.0  96408 ?        14:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.9  0.0  91746 ?        14:00 00:02:52 oracletopprd (LOCAL=NO)
+99.5  0.0  62608 ?        14:10 00:12:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+16.8  0.0  91018 ?        14:00 00:03:38 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.0  0.0   2729 ?        14:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.0  0.0  91746 ?        14:00 00:03:01 oracletopprd (LOCAL=NO)
+99.5  0.0  62608 ?        14:10 00:13:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+16.8  0.0  91018 ?        14:00 00:03:49 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.3  0.0  40950 ?        14:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.0  0.0  91746 ?        14:00 00:03:10 oracletopprd (LOCAL=NO)
+99.5  0.0  62608 ?        14:10 00:14:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+16.9  0.0  91018 ?        14:00 00:03:59 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.3  0.0  78286 ?        14:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.0  0.0  91746 ?        14:00 00:03:19 oracletopprd (LOCAL=NO)
+99.5  0.0  62608 ?        14:10 00:15:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+16.9  0.0  91018 ?        14:00 00:04:10 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.1  0.0  91746 ?        14:00 00:03:28 oracletopprd (LOCAL=NO)
+14.0  0.0 112517 pts/58   14:25 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG250957539d","parent":"IKOO233523325d","parentprog":"axrt341","ancest":"IKOO233523325d","prog":"azzi931","account":"tiptoper","param":["2","AXR","axrt341","[]"],"schedule_seq":0,"static_ent":99}
+14.0  0.0 116832 ?        14:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.2  0.0 113229 ?        14:25 00:00:00 oracletopprd (LOCAL=NO)
+99.6  0.0  62608 ?        14:10 00:16:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.0  0.0  91018 ?        14:00 00:04:21 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.3  0.0  24356 ?        14:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.1  0.0  91746 ?        14:00 00:03:37 oracletopprd (LOCAL=NO)
+99.6  0.0  62608 ?        14:10 00:17:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+20.0  0.0  61803 ?        14:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+18.0  0.0  62966 ?        14:27 00:00:00 oracletopprd (LOCAL=NO)
+17.5  0.0  61815 pts/47   14:27 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmt520 {"sessionkey":"IKOO271407499d","parent":"IKOO140592770d","parentprog":"axmt540","ancest":"IKOO140592770d","prog":"axmt520","account":"tiptopcn","param":["\"1\""],"schedule_seq":0,"static_ent":99}
+17.0  0.0  91018 ?        14:00 00:04:31 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.1  0.0  91746 ?        14:00 00:03:46 oracletopprd (LOCAL=NO)
+99.6  0.0  62608 ?        14:10 00:18:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.0  0.0  91018 ?        14:00 00:04:42 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.3  0.0  99323 ?        14:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.1  0.0  91746 ?        14:00 00:03:55 oracletopprd (LOCAL=NO)
+99.6  0.0  62608 ?        14:10 00:19:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.1  0.0  91018 ?        14:00 00:04:53 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.2  0.0  91746 ?        14:00 00:04:03 oracletopprd (LOCAL=NO)
+13.6  0.0   6087 ?        14:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.6  0.0  62608 ?        14:10 00:20:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.1  0.0  91018 ?        14:00 00:05:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+17.0  0.0  50284 ?        14:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.2  0.0  91746 ?        14:00 00:04:12 oracletopprd (LOCAL=NO)
+99.6  0.0  62608 ?        14:10 00:21:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.1  0.0  91018 ?        14:00 00:05:15 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.2  0.0  91746 ?        14:00 00:04:22 oracletopprd (LOCAL=NO)
+14.0  0.0  88308 ?        14:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.7  0.0  62608 ?        14:10 00:22:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.2  0.0  91018 ?        14:00 00:05:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.3  0.0  91746 ?        14:00 00:04:31 oracletopprd (LOCAL=NO)
+13.6  0.0 126174 ?        14:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.7  0.0  62608 ?        14:10 00:23:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.2  0.0  91018 ?        14:00 00:05:37 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.3  0.0  91746 ?        14:00 00:04:40 oracletopprd (LOCAL=NO)
+14.0  0.0  33584 ?        14:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.7  0.0  62608 ?        14:10 00:24:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+21.5  0.0  71253 ?        14:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.2  0.0  91018 ?        14:00 00:05:48 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.3  0.0  91746 ?        14:00 00:04:49 oracletopprd (LOCAL=NO)
+99.7  0.0  62608 ?        14:10 00:25:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.3  0.0  91018 ?        14:00 00:05:59 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.3  0.0  91746 ?        14:00 00:04:58 oracletopprd (LOCAL=NO)
+14.0  0.0 109258 ?        14:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.7  0.0  62608 ?        14:10 00:26:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.3  0.0  91018 ?        14:00 00:06:10 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.3  0.0  91746 ?        14:00 00:05:07 oracletopprd (LOCAL=NO)
+13.6  0.0  16454 ?        14:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.7  0.0  62608 ?        14:10 00:27:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+30.0  0.2  24392 ?        14:36 00:00:15 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aws/42r/awsq200 {"sessionkey":"IKOG362545779d","parent":"IKON545765847d","parentprog":"azzi000","ancest":"IKON545765847d","prog":"awsq200","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+22.5  0.0  25179 ?        14:36 00:00:11 oracletopprd (LOCAL=NO)
+17.3  0.0  91018 ?        14:00 00:06:20 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+16.5  0.0  54550 ?        14:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.3  0.0  91746 ?        14:00 00:05:15 oracletopprd (LOCAL=NO)
+12.5  0.0  55514 ?        14:37 00:00:00 /u1/genero/fglgws/lib/fglrun-bin --java-option=-Xmx512M --java-option=-Xms256M /u1/topprd/erp/azz/42r/azzi000 {"sessionkey":"IKOO371365030d","parent":"0","prog":"azzi000","param":["99"],"schedule_seq":0,"static_ent":99}
+99.8  0.0  62608 ?        14:10 00:28:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+19.0  0.0  93359 ?        14:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.3  0.0  91018 ?        14:00 00:06:31 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.3  0.0  91746 ?        14:00 00:05:24 oracletopprd (LOCAL=NO)
+13.5  0.2  24392 ?        14:36 00:00:15 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aws/42r/awsq200 {"sessionkey":"IKOG362545779d","parent":"IKON545765847d","parentprog":"azzi000","ancest":"IKON545765847d","prog":"awsq200","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+99.7  0.0  62608 ?        14:10 00:29:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.3  0.0  91018 ?        14:00 00:06:42 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.4  0.0  91746 ?        14:00 00:05:33 oracletopprd (LOCAL=NO)
+13.0  0.0   2021 ?        14:39 00:00:00 oracletopprd (LOCAL=NO)
+ 0.0  0.0   8815 ?        Nov23 00:00:02 /u3/bin/nmon -frd -s 60 -c 1440 -m /ut/nmon/20211123
+99.7  0.0  62608 ?        14:10 00:30:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.3  0.0  91018 ?        14:00 00:06:53 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.4  0.0  91746 ?        14:00 00:05:42 oracletopprd (LOCAL=NO)
+13.3  0.0  45171 ?        14:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0  46357 pts/24   14:40 00:00:00 /u1/genero/fglgws/lib/fglrun-bin --java-option=-Xmx512M --java-option=-Xms256M /u1/topprd/erp/azz/42r/azzi000 {"sessionkey":"IKOO401501379d","parent":"0","prog":"azzi000","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+99.8  0.0  62608 ?        14:10 00:31:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+19.5  0.0  83305 ?        14:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.4  0.0  91018 ?        14:00 00:07:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.4  0.0  91746 ?        14:00 00:05:51 oracletopprd (LOCAL=NO)
+99.8  0.0  62608 ?        14:10 00:32:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.4  0.0  91018 ?        14:00 00:07:14 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.4  0.0  91746 ?        14:00 00:06:00 oracletopprd (LOCAL=NO)
+13.3  0.0 121393 ?        14:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:33:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+19.5  0.0  29134 ?        14:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.4  0.0  91018 ?        14:00 00:07:25 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+15.0  0.0  30406 pts/27   14:43 00:00:00 -ksh
+14.4  0.0  91746 ?        14:00 00:06:09 oracletopprd (LOCAL=NO)
+11.0  0.0  29741 pts/24   14:43 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/agl/42r/agli040 {"sessionkey":"IKOG431582294d","parent":"IKOG403968722d","parentprog":"aapt420","ancest":"IKOO401501379d","prog":"agli040","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+99.8  0.0  62608 ?        14:10 00:34:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.4  0.0  91018 ?        14:00 00:07:36 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.4  0.0  91746 ?        14:00 00:06:18 oracletopprd (LOCAL=NO)
+13.6  0.0  67189 ?        14:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:35:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.4  0.0  91018 ?        14:00 00:07:47 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.5  0.0  91746 ?        14:00 00:06:28 oracletopprd (LOCAL=NO)
+14.0  0.0 104902 ?        14:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:36:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.5  0.0  91018 ?        14:00 00:07:58 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.5  0.0  91746 ?        14:00 00:06:37 oracletopprd (LOCAL=NO)
+99.8  0.0  62608 ?        14:10 00:37:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.5  0.0  91018 ?        14:00 00:08:09 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.5  0.0  91746 ?        14:00 00:06:46 oracletopprd (LOCAL=NO)
+14.0  0.0  50144 ?        14:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.2  0.1  34275 ?        14:46 00:00:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi199 {"sessionkey":"IKOG464640517d","parent":"IKOO371365030d","parentprog":"azzi000","ancest":"IKOO371365030d","prog":"aooi199","account":"tiptop","param":[],"schedule_seq":0,"static_ent":99}
+99.8  0.0  62608 ?        14:10 00:38:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.5  0.0  91018 ?        14:00 00:08:20 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.5  0.0  91746 ?        14:00 00:06:55 oracletopprd (LOCAL=NO)
+13.3  0.0  88308 ?        14:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:39:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.5  0.0  91018 ?        14:00 00:08:30 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.5  0.0  91746 ?        14:00 00:07:04 oracletopprd (LOCAL=NO)
+14.0  0.0 126423 ?        14:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:40:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+19.6  0.0  40324 ?        14:50 00:00:00 oracletopprd (LOCAL=NO)
+17.5  0.0  91018 ?        14:00 00:08:41 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+17.2  0.0  39076 pts/15   14:50 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axct701 {"sessionkey":"IKOO501263303d","parent":"0","prog":"axct702","account":"tiptopcn","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+14.5  0.0  91746 ?        14:00 00:07:13 oracletopprd (LOCAL=NO)
+14.3  0.0  40426 ?        14:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:41:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.5  0.0  91018 ?        14:00 00:08:52 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.5  0.0  91746 ?        14:00 00:07:23 oracletopprd (LOCAL=NO)
+14.0  0.0  78100 ?        14:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:42:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.5  0.0  91018 ?        14:00 00:09:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.6  0.0  91746 ?        14:00 00:07:31 oracletopprd (LOCAL=NO)
+13.6  0.0 116034 ?        14:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0 117889 pts/47   14:52 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/ain/42r/ainp001 {"sessionkey":"IKOG521665190d","parent":"IKOO394145826d","parentprog":"axmt600","ancest":"IKOO140592770d","background":"Y","prog":"ainp001","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+99.8  0.0  62608 ?        14:10 00:43:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+19.5  0.0  23557 ?        14:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.5  0.0  91018 ?        14:00 00:09:14 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.6  0.0  91746 ?        14:00 00:07:40 oracletopprd (LOCAL=NO)
+99.8  0.0  62608 ?        14:10 00:44:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.5  0.0  91018 ?        14:00 00:09:25 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.6  0.0  91746 ?        14:00 00:07:50 oracletopprd (LOCAL=NO)
+14.0  0.0  61261 ?        14:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:45:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.6  0.0  91018 ?        14:00 00:09:36 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.6  0.0  91746 ?        14:00 00:07:59 oracletopprd (LOCAL=NO)
+14.3  0.0  98419 ?        14:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:46:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+21.0  0.0   5142 ?        14:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.6  0.0  91018 ?        14:00 00:09:47 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.6  0.0  91746 ?        14:00 00:08:08 oracletopprd (LOCAL=NO)
+99.8  0.0  62608 ?        14:10 00:47:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.6  0.0  91018 ?        14:00 00:09:58 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.6  0.0  91746 ?        14:00 00:08:18 oracletopprd (LOCAL=NO)
+13.6  0.0  43035 ?        14:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:48:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.6  0.0  91018 ?        14:00 00:10:09 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.6  0.0  91746 ?        14:00 00:08:27 oracletopprd (LOCAL=NO)
+13.0  0.0  80530 ?        14:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:49:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+20.5  0.0 118453 ?        14:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.6  0.0  91018 ?        14:00 00:10:21 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.6  0.0  91746 ?        14:00 00:08:36 oracletopprd (LOCAL=NO)
+99.8  0.0  62608 ?        14:10 00:50:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.6  0.0  91018 ?        14:00 00:10:32 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.6  0.0  91746 ?        14:00 00:08:45 oracletopprd (LOCAL=NO)
+11.6  0.0  32624 ?        15:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:51:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.6  0.0  91018 ?        14:00 00:10:43 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.7  0.0  91746 ?        14:00 00:08:54 oracletopprd (LOCAL=NO)
+14.0  0.0  70682 ?        15:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:52:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+20.5  0.0 108357 ?        15:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.7  0.0  91018 ?        14:00 00:10:54 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.7  0.0  91746 ?        14:00 00:09:03 oracletopprd (LOCAL=NO)
+99.8  0.0  62608 ?        14:10 00:53:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.7  0.0  91018 ?        14:00 00:11:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.7  0.0  91746 ?        14:00 00:09:12 oracletopprd (LOCAL=NO)
+14.3  0.0  15781 ?        15:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:54:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.7  0.0  91018 ?        14:00 00:11:15 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.7  0.0  91746 ?        14:00 00:09:21 oracletopprd (LOCAL=NO)
+14.3  0.0  53712 ?        15:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:55:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.7  0.0  91018 ?        14:00 00:11:26 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.7  0.0  91746 ?        14:00 00:09:30 oracletopprd (LOCAL=NO)
+13.6  0.0  91159 ?        15:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:56:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.7  0.0  91018 ?        14:00 00:11:37 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.7  0.0  91746 ?        14:00 00:09:39 oracletopprd (LOCAL=NO)
+13.6  0.0 128450 ?        15:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 00:57:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+20.0  0.0  36123 ?        15:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.7  0.0  91018 ?        14:00 00:11:48 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.7  0.0  91746 ?        14:00 00:09:48 oracletopprd (LOCAL=NO)
+99.8  0.0  62608 ?        14:10 00:58:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.7  0.0  91018 ?        14:00 00:11:59 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.7  0.0  91746 ?        14:00 00:09:57 oracletopprd (LOCAL=NO)
+13.6  0.0  73306 ?        15:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 00:59:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.7  0.0  91018 ?        14:00 00:12:10 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+17.0  0.0 111767 pts/29   15:09 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmm101 {"sessionkey":"IKOH091621491d","parent":"IKOH081971872d","parentprog":"apmm200","ancest":"IKOO483669176d","prog":"apmm201","account":"tiptopcn","param":["\"1\"","\"ALL\"","FJ001"],"schedule_seq":0,"static_ent":99}
+14.7  0.0  91746 ?        14:00 00:10:06 oracletopprd (LOCAL=NO)
+12.3  0.0 110645 ?        15:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 01:00:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.7  0.0  91018 ?        14:00 00:12:20 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.7  0.0  91746 ?        14:00 00:10:15 oracletopprd (LOCAL=NO)
+14.0  0.0  24492 ?        15:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 01:01:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.7  0.0  91018 ?        14:00 00:12:31 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.7  0.0  91746 ?        14:00 00:10:24 oracletopprd (LOCAL=NO)
+14.0  0.0  62351 ?        15:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:02:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+21.0  0.0  99889 ?        15:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.7  0.0  91018 ?        14:00 00:12:42 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.7  0.0  91746 ?        14:00 00:10:33 oracletopprd (LOCAL=NO)
+99.9  0.0  62608 ?        14:10 01:03:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.7  0.0  91018 ?        14:00 00:12:53 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.7  0.0  91746 ?        14:00 00:10:42 oracletopprd (LOCAL=NO)
+13.6  0.0   6958 ?        15:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 01:04:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+19.0  0.0  46465 ?        15:14 00:00:00 oracletopprd (LOCAL=NO)
+17.7  0.0  91018 ?        14:00 00:13:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axc/42r/axci413 {"sessionkey":"IKOG004171182d","parent":"IKON595514339d","parentprog":"azzi000","ancest":"IKON595514339d","prog":"axci413","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.7  0.0  91746 ?        14:00 00:10:51 oracletopprd (LOCAL=NO)
+13.6  0.0  45090 ?        15:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:05:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+15.5  0.0  83557 ?        15:15 00:00:00 oracletopprd (LOCAL=NO)
+13.6  0.0  82983 ?        15:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.6  0.0  82796 pts/47   15:15 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrp132 {"sessionkey":"IKOH151536414d","parent":"IKOH032181479d","parentprog":"aist310","ancest":"IKOO140592770d","prog":"axrp132","account":"tiptopcn","param":["DSCNJ","CNJ-CU6-211124000001","1","N"],"schedule_seq":0,"static_ent":99}
+99.9  0.0  62608 ?        14:10 01:06:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+13.3  0.0 120635 ?        15:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:07:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.6  0.0  27897 ?        15:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:08:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+52.0  0.0  66688 ?        15:18 00:00:00 oracletopprd (LOCAL=NO)
+21.6  0.0  65699 pts/47   15:18 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrt300 {"sessionkey":"IKOH181489550d","parent":"IKOH173588871d","parentprog":"axrp132","ancest":"IKOO140592770d","prog":"axrt300","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99,"default_wc":"xrcadocno BETWEEN &apos;CNJ-TL6-211100000002&apos;  AND &apos;CNJ-TL6-211100000002&apos; "}
+21.0  0.0  65885 ?        15:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:09:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.0  0.0 103402 ?        15:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:10:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+13.0  0.0  17187 ?        15:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:11:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.0  0.0  56049 ?        15:21 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKOP211717196d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+13.6  0.0  54603 ?        15:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:12:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+20.0  0.0  92004 ?        15:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:13:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+21.5  0.0 130245 pts/29   15:23 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/ain/42r/aini001 {"sessionkey":"IKOH231578920d","parent":"IKOH224625642d","parentprog":"aini005","ancest":"IKOO483669176d","prog":"aini001","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+19.5  0.0 129774 ?        15:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.0  0.0 131024 pts/25   15:23 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzp110 IKOH231671566d aapp330_01 aap 10   S s
+12.0  0.1 123896 pts/49   15:23 00:00:01 /u1/genero/fglgws/lib/fglrun-bin -d /u1/topprd/erp/aic/42r/aicp500.42r
+99.9  0.0  62608 ?        14:10 01:14:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+29.1  0.8  18486 pts/51   15:23 00:00:11 /opt/java/bin/java -Djava.awt.headless=true -Dapple.awt.UIElement=true -Xss10M -Djava.net.useSystemProxies=true -client -cp /u2/oracle/product/12.1.0/dbhome_1/sqldeveloper/sqlcl/lib/extensions/*:/u2/oracle/product/12.1.0/dbhome_1/jdbc/lib/ojdbc8.jar:/u2/oracle/product/12.1.0/dbhome_1/ojdbc8.jar:/u2/oracle/product/12.1.0/dbhome_1/jdbc/lib/ojdbc7.jar:/u2/oracle/product/12.1.0/dbhome_1/ojdbc7.jar:/u2/oracle/product/12.1.0/dbhome_1/jdbc/lib/ojdbc6.jar:/u2/oracle/product/12.1.0/dbhome_1/ojdbc6.jar:/u2/oracle/product/12.1.0/dbhome_1/sqldeveloper/sqlcl/lib/oracle.sqldeveloper.sqlcl.jar:/u2/oracle/product/12.1.0/dbhome_1/jdbc/lib/ojdbc6.jar:/u1/topprd/utl/java/jar/trustAllCerts:/u1/topprd/utl/java/jar/utilitytools.jar:/u1/topprd/utl/java/jar/javaenc/jejar/pdfenc.jar:/u1/topprd/utl/java/jar/jcaptcha/*::/u1/topprd/utl/java/jar/bpm/jar/commons-beanutils.jar:/u1/topprd/utl/java/jar/bpm/jar/commons-logging.jar:/u1/topprd/utl/java/jar/bpm/jar/nana-server-delegate.jar:/u1/topprd/utl/java/jar/bpm/jar/commons-io.jar:/u1/topprd/utl/java/jar/bpm/jar/j2ee.jar:/u1/topprd/utl/java/jar/bpm/jar/nana-services-client.jar:/u1/topprd/utl/java/jar/bpm/jar/log4j.jar:/u1/topprd/utl/java/jar/bpm/jar/jbossall-client.jar:/u1/topprd/utl/java/jar/bpm/conf:/u1/topprd/utl/java/jar/javaenc/jejar/pdfenc.jar:/u1/topprd/utl/java/jar/javasso/sok.jar:/u1/topprd/utl/java/bin:/u1/topprd/utl/java/jar/javaexrate/jar/javaexrate.jar:/u1/topprd/utl/java/jar/javamail/jmjar/ttopmail.jar::/u1/topprd/apse/java/jar/RunAPS.jar oracle.dbtools.raptor.scriptrunner.cmdline.SqlCli system/tiptop100@toptst
+14.3  0.0  37283 ?        15:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.2  0.0 130245 pts/29   15:23 00:00:08 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/ain/42r/aini001 {"sessionkey":"IKOH231578920d","parent":"IKOH224625642d","parentprog":"aini005","ancest":"IKOO483669176d","prog":"aini001","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+99.9  0.0  62608 ?        14:10 01:15:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.0  0.0  74375 ?        15:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.9  0.8  18486 pts/51   15:23 00:00:11 /opt/java/bin/java -Djava.awt.headless=true -Dapple.awt.UIElement=true -Xss10M -Djava.net.useSystemProxies=true -client -cp /u2/oracle/product/12.1.0/dbhome_1/sqldeveloper/sqlcl/lib/extensions/*:/u2/oracle/product/12.1.0/dbhome_1/jdbc/lib/ojdbc8.jar:/u2/oracle/product/12.1.0/dbhome_1/ojdbc8.jar:/u2/oracle/product/12.1.0/dbhome_1/jdbc/lib/ojdbc7.jar:/u2/oracle/product/12.1.0/dbhome_1/ojdbc7.jar:/u2/oracle/product/12.1.0/dbhome_1/jdbc/lib/ojdbc6.jar:/u2/oracle/product/12.1.0/dbhome_1/ojdbc6.jar:/u2/oracle/product/12.1.0/dbhome_1/sqldeveloper/sqlcl/lib/oracle.sqldeveloper.sqlcl.jar:/u2/oracle/product/12.1.0/dbhome_1/jdbc/lib/ojdbc6.jar:/u1/topprd/utl/java/jar/trustAllCerts:/u1/topprd/utl/java/jar/utilitytools.jar:/u1/topprd/utl/java/jar/javaenc/jejar/pdfenc.jar:/u1/topprd/utl/java/jar/jcaptcha/*::/u1/topprd/utl/java/jar/bpm/jar/commons-beanutils.jar:/u1/topprd/utl/java/jar/bpm/jar/commons-logging.jar:/u1/topprd/utl/java/jar/bpm/jar/nana-server-delegate.jar:/u1/topprd/utl/java/jar/bpm/jar/commons-io.jar:/u1/topprd/utl/java/jar/bpm/jar/j2ee.jar:/u1/topprd/utl/java/jar/bpm/jar/nana-services-client.jar:/u1/topprd/utl/java/jar/bpm/jar/log4j.jar:/u1/topprd/utl/java/jar/bpm/jar/jbossall-client.jar:/u1/topprd/utl/java/jar/bpm/conf:/u1/topprd/utl/java/jar/javaenc/jejar/pdfenc.jar:/u1/topprd/utl/java/jar/javasso/sok.jar:/u1/topprd/utl/java/bin:/u1/topprd/utl/java/jar/javaexrate/jar/javaexrate.jar:/u1/topprd/utl/java/jar/javamail/jmjar/ttopmail.jar::/u1/topprd/apse/java/jar/RunAPS.jar oracle.dbtools.raptor.scriptrunner.cmdline.SqlCli system/tiptop100@toptst
+99.9  0.0  62608 ?        14:10 01:16:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.3  0.0 111297 ?        15:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:17:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.3  0.0  18675 ?        15:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:18:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+13.6  0.0  55855 ?        15:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:19:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.3  0.0  93424 ?        15:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:20:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.3  0.0   6480 ?        15:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:21:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+13.6  0.0  44751 ?        15:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:22:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+13.6  0.0  81648 ?        15:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:23:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.6  0.0 119407 ?        15:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:24:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.0  0.0  30629 ?        15:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:25:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.0  0.0  68090 ?        15:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:26:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.3  0.0 105013 ?        15:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 100  0.6 126976 ?        15:36 00:00:21 ora_m001_toptst
+99.9  0.0  62608 ?        14:10 01:27:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+12.0  0.0  12323 ?        15:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:28:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+32.0  0.0  51135 ?        15:38 00:00:00 oracletopprd (LOCAL=NO)
+19.0  0.0  50474 pts/35   15:38 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi200 {"sessionkey":"IKOH381615014d","parent":"IKOH374130981d","parentprog":"apmt400","ancest":"IKOP372731303d","prog":"aooi200","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+13.0  0.0  49830 ?        15:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:29:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.3  0.0  87579 ?        15:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:30:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.6  0.0 131008 ?        15:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:31:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.6  0.0  38073 ?        15:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:32:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+31.1  0.0  62270 pts/35   15:41 00:00:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmp490 {"sessionkey":"IKOH415749393d","parent":"IKOH374130981d","parentprog":"apmt400","ancest":"IKOP372731303d","prog":"apmp490","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+25.1  0.0  62908 ?        15:41 00:00:04 oracletopprd (LOCAL=NO)
+14.3  0.0  75856 ?        15:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:33:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.3  0.0 113275 ?        15:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:34:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.3  0.0  20988 ?        15:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  19886 ?        15:44 00:00:00 oracletopprd (LOCAL=NO)
+99.9  0.0  62608 ?        14:10 01:35:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.3  0.0  58554 ?        15:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:36:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.0  0.0 102015 ?        15:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0  92953 pts/35   15:46 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmt520 {"sessionkey":"IKOP460385856d","parent":"IKOH440267748d","parentprog":"apmt520","ancest":"IKOP372731303d","prog":"apmt570","account":"tiptoper","param":["\"6\""],"schedule_seq":0,"static_ent":99}
+99.9  0.0  62608 ?        14:10 01:37:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.3  0.0   9258 ?        15:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:38:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+48.0  0.0  48639 ?        15:48 00:00:00 oracletopprd (LOCAL=NO)
+13.6  0.0  47453 ?        15:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 7.1  0.0  31309 pts/43   15:47 00:00:02 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/ais/42r/aist310 {"sessionkey":"IKOP474532085d","parent":"0","prog":"aist310","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+99.8  0.0  62608 ?        14:10 01:39:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.3  0.0  85813 ?        15:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 01:40:02 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+33.3  0.0  67183 ?        15:48 00:00:31 oracletopprd (LOCAL=NO)
+14.3  0.0 129931 ?        15:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.8  0.0  62608 ?        14:10 01:41:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+26.9  0.0  10796 ?        15:50 00:00:12 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aps/42r/apsr002 {"sessionkey":"IKOH503011131d","parent":"IKOP140758549d","parentprog":"azzi000","ancest":"IKOP140758549d","prog":"apsr002","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002}
+16.3  0.0  11857 ?        15:50 00:00:07 oracletopprd (LOCAL=NO)
+14.0  0.0  37281 ?        15:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:42:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+13.3  0.0  75145 ?        15:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  73073 ?        15:52 00:00:00 oracletopprd (LOCAL=NO)
+11.9  0.0  10796 ?        15:50 00:00:12 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aps/42r/apsr002 {"sessionkey":"IKOH503011131d","parent":"IKOP140758549d","parentprog":"azzi000","ancest":"IKOP140758549d","prog":"apsr002","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002}
+99.9  0.0  62608 ?        14:10 01:43:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+20.0  0.0 112709 ?        15:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0 113890 ?        15:53 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aps/42r/apsr004 {"sessionkey":"IKOH531660012d","parent":"IKOP140758549d","parentprog":"azzi000","ancest":"IKOP140758549d","prog":"apsr004","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002}
+99.9  0.0  62608 ?        14:10 01:44:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+13.6  0.0  20167 ?        15:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.8  0.1  14228 pts/6    15:54 00:00:01 /u1/genero/fglgws/lib/fglrun-bin -d /u1/topprd/erp/afm/42r/afmt532.42r
+99.8  0.0  62608 ?        14:10 01:45:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+67.8  0.0  55857 pts/7    15:55 00:00:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/utl/fbin/42m/gen42r.42r s_aapp131
+14.0  0.0  57580 ?        15:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:46:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.0  0.0  95229 ?        15:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.4  0.0  93249 ?        15:56 00:00:00 oracletopprd (LOCAL=NO)
+10.6  0.0  92403 pts/28   15:56 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aap/42r/aapt430 {"sessionkey":"IKOP561170450d","parent":"0","prog":"aapt430","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+99.9  0.0  62608 ?        14:10 01:47:02 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.3  0.0   2647 ?        15:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:48:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+35.0  0.0  42286 ?        15:58 00:00:00 oracletopprd (LOCAL=NO)
+19.0  0.0  40837 ?        15:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.0  0.0  41222 pts/7    15:58 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aap/42r/aapt300 {"sessionkey":"IKOH581548310d","parent":"IKOH574496151d","parentprog":"aapp132","ancest":"IKOP560085579d","prog":"aapt301","account":"tiptop","param":["\"1\""],"schedule_seq":0,"static_ent":99,"default_wc":"apcadocno BETWEEN &apos;CTC-A29-211119000001&apos;  AND &apos;CTC-A29-211119000001&apos; "}
+99.9  0.0  62608 ?        14:10 01:49:02 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+13.3  0.0  78604 ?        15:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:50:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+11.3  0.0 122451 ?        16:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:51:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+20.0  0.0  31097 ?        16:01 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKOQ011613168d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+18.0  0.0  30147 ?        16:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:52:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+20.0  0.0  67685 ?        16:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:53:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+13.6  0.0 106061 ?        16:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:54:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+21.0  0.0  13701 ?        16:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:55:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+22.5  0.1  51213 pts/31   16:05 00:00:00 /u1/genero/fglgws/lib/fglrun-bin -d /u1/topprd/erp/ade/42r/adet400.42r
+13.3  0.0  51982 ?        16:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:56:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+14.0  0.0  90487 ?        16:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:57:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+19.5  0.0 128542 ?        16:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.9  0.0  62608 ?        14:10 01:58:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+62.0  0.0  38172 ?        16:08 00:00:00 ora_m002_topprd
+13.4  0.0   9957 ?        16:07 00:00:06 oracletopprd (LOCAL=NO)
+13.3  0.0  36534 ?        16:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.3  0.0  20283 ?        16:07 00:00:03 oracletopprd (LOCAL=NO)
+99.9  0.0  62608 ?        14:10 01:59:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+12.6  0.0  75421 ?        16:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  77314 pts/49   16:09 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aic/42r/aicp300 {"sessionkey":"IKOI091767314d","parent":"IKOI084281365d","parentprog":"axmt520","ancest":"IKOQ072928946d","prog":"aicp300","account":"tiptoper","param":["CTC-29W-211124000001","IKOI084281365d"],"schedule_seq":0,"static_ent":99}
+11.0  0.0  77510 ?        16:09 00:00:00 oracletopprd (LOCAL=NO)
+99.9  0.0  62608 ?        14:10 02:00:02 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKOG100856424d","parent":"IKOF552789682d","parentprog":"azzi200","ancest":"IKON545765847d","prog":"azzi931","account":"tiptoper","param":["2","AZZ","azzi200","[]"],"schedule_seq":0,"static_ent":99}
+17.6  0.0 118754 pts/35   16:10 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimi012 {"sessionkey":"IKOI101301345d","parent":"IKOI095920233d","parentprog":"abmt310","ancest":"IKOQ055903036d","prog":"aimi012","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+17.5  0.0 120358 ?        16:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.0  0.0 119868 ?        16:10 00:00:00 oracletopprd (LOCAL=NO)
+20.5  0.0  28607 ?        16:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.3  0.0  67969 ?        16:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0 105950 ?        16:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.6  0.0  14858 ?        16:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.6  0.0  14808 pts/35   16:14 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimm201 {"sessionkey":"IKOI141576740d","parent":"IKOI074174990d","parentprog":"aimm200","ancest":"IKOQ055903036d","prog":"aimm211","account":"tiptoper","param":[" ","FE99-1X011"],"schedule_seq":0,"static_ent":99}
+14.3  0.0  52819 ?        16:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.6  0.0  52514 pts/49   16:15 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimm202 {"sessionkey":"IKOI151623192d","parent":"IKOI140322075d","parentprog":"aint302","ancest":"IKOQ072928946d","prog":"aimm202","account":"tiptoper","param":["ALL"],"schedule_seq":0,"static_ent":99}
+13.6  0.0  90802 ?        16:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+20.5  0.0 129001 ?        16:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+20.0  0.0  38931 ?        16:18 00:00:00 oracletopprd (LOCAL=NO)
+15.1  0.0  20960 pts/28   16:17 00:00:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/afa/42r/afai100 {"sessionkey":"IKOI174906589d","parent":"IKOP561170450d","parentprog":"aapt430","ancest":"IKOP561170450d","prog":"afai100","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+13.7  0.0  35250 pts/13   16:18 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/agl/42r/aglt310 {"sessionkey":"IKOI181314371d","parent":"IKON534599654d","parentprog":"afat517","ancest":"IKOJ274404834d","prog":"aglt310","account":"tiptopcn","param":["1","10","CTC-CU4-211130000001"],"schedule_seq":0,"static_ent":99}
+12.3  0.0  36926 ?        16:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+19.0  0.0  74698 ?        16:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.8  0.0  20283 ?        16:07 00:01:42 oracletopprd (LOCAL=NO)
+14.5  0.0  74410 ?        16:19 00:00:00 oracletopprd (LOCAL=NO)
+13.6  0.0  73262 pts/64   16:19 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimm200 {"sessionkey":"IKOQ191311396d","parent":"0","prog":"aimm200","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+15.2  0.0  20283 ?        16:07 00:01:55 oracletopprd (LOCAL=NO)
+14.0  0.0 119000 ?        16:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.6  0.0  26083 ?        16:21 00:00:00 oracletopprd (LOCAL=NO)
+14.3  0.0  26637 ?        16:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.2  0.0  25279 pts/60   16:21 00:00:00 /u1/genero/fglgws/lib/fglrun-bin -M /u1/topprd/erp/aap/42r/aapt415 {"sessionkey":"IKOI211497205d","parent":"IKOH474776538d","parentprog":"aapt301","ancest":"IKOP434649438d","prog":"aapt415","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+14.1  0.0  20283 ?        16:07 00:01:55 oracletopprd (LOCAL=NO)
+13.6  0.0  64654 ?        16:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.1  0.0  20283 ?        16:07 00:01:55 oracletopprd (LOCAL=NO)
+11.0  0.0  64850 pts/31   16:22 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi600 {"sessionkey":"IKOQ221635433d","parent":"0","prog":"azzi600","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+65.0  0.0 103858 ?        16:23 00:00:00 ora_m002_topprd
+13.3  0.0 102370 ?        16:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.3  0.0  20283 ?        16:07 00:01:55 oracletopprd (LOCAL=NO)
+11.0  0.0 103708 pts/6    16:23 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/afm/42r/afmt035 {"sessionkey":"IKOI231874847d","parent":"IKOQ225641448d","parentprog":"afmt140","ancest":"IKOQ225641448d","prog":"afmt035","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.0  0.0  10101 ?        16:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.5  0.0  20283 ?        16:07 00:01:55 oracletopprd (LOCAL=NO)
+20.0  0.0  46247 ?        16:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.9  0.0  20283 ?        16:07 00:01:55 oracletopprd (LOCAL=NO)
+12.2  0.0  83970 ?        16:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.3  0.0  20283 ?        16:07 00:01:55 oracletopprd (LOCAL=NO)
+14.6  0.0 120046 ?        16:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.0  0.0 120320 ?        16:27 00:00:00 oracletopprd (LOCAL=NO)
+13.0  0.0 121783 pts/16   16:27 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aps/42r/apst350 {"sessionkey":"IKOI271883204d","parent":"IKOO250736094d","parentprog":"azzi000","ancest":"IKOO250736094d","prog":"apst350","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+12.6  0.0 119683 pts/35   16:27 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmm200 {"sessionkey":"IKOI271595766d","parent":"IKOQ055903036d","parentprog":"abmm210","ancest":"IKOQ055903036d","prog":"abmm200","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+16.0  0.0  26062 pts/29   16:28 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi714 {"sessionkey":"IKOI281870302d","parent":"IKOI185734769d","parentprog":"axmt500","ancest":"IKOO483669176d","prog":"aooi714","account":"tiptopcn","param":["2"],"schedule_seq":0,"static_ent":99}
+ 0.1  0.0 118359 pts/36   16:10 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi200 {"sessionkey":"IKOQ101260626d","parent":"IKOH513313370d","parentprog":"azzi950","ancest":"IKOP110391264d","prog":"aooi200","account":"tiptoper","param":[],"notify":"[{\"gzpe011\":1,\"gzpe003\":\"F\",\"gzpe007\":\"1\",\"gzpe012\":\"2\",\"gzpe004\":\"00000\",\"gzpe008\":\"tiptop\",\"l_dataonly\":\"N\",\"l_HF\":\"N\"},{\"gzpe011\":2,\"gzpe003\":\"E\",\"gzpe007\":\"1\",\"l_dataonly\":\"N\",\"l_HF\":\"N\"}]","schedule_seq":0,"static_ent":99}
+14.3  0.0  25326 ?        16:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0  26826 ?        16:28 00:00:00 oracletopprd (LOCAL=NO)
+14.3  0.0  63377 ?        16:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.6  0.0 106612 ?        16:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  20283 ?        16:07 00:02:42 oracletopprd (LOCAL=NO)
+15.1  0.0  20283 ?        16:07 00:03:34 oracletopprd (LOCAL=NO)
+14.0  0.0  13585 ?        16:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0  20283 ?        16:07 00:03:42 oracletopprd (LOCAL=NO)
+15.0  0.0  48807 ?        16:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  48105 pts/29   16:32 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi301 {"sessionkey":"IKOI321659569d","parent":"IKOO483669176d","parentprog":"azzi000","ancest":"IKOO483669176d","prog":"apmi012","account":"tiptopcn","param":["\"238\""],"schedule_seq":0,"static_ent":99}
+14.4  0.0  20283 ?        16:07 00:03:42 oracletopprd (LOCAL=NO)
+12.2  0.0  86257 ?        16:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.3  0.0 121438 ?        16:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.9  0.0  20283 ?        16:07 00:03:42 oracletopprd (LOCAL=NO)
+62.0  0.0  30630 ?        16:35 00:00:00 oracletopprd (LOCAL=NO)
+13.4  0.0  20283 ?        16:07 00:03:42 oracletopprd (LOCAL=NO)
+12.5  0.0  29088 ?        16:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.0  0.0  65928 pts/29   16:36 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi002 {"sessionkey":"IKOI361961624d","parent":"IKOO483669176d","parentprog":"azzi000","ancest":"IKOO483669176d","prog":"azzi002","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+14.0  0.0  64629 ?        16:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.9  0.0  20283 ?        16:07 00:03:42 oracletopprd (LOCAL=NO)
+98.3  0.6  86186 ?        16:36 00:00:17 ora_m001_toptst
+84.3  0.1  85073 ?        16:36 00:00:19 ora_m001_topprd
+17.0  0.0 101549 ?        16:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0  20283 ?        16:07 00:03:42 oracletopprd (LOCAL=NO)
+12.5  0.0   9024 ?        16:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.1  0.0  20283 ?        16:07 00:03:42 oracletopprd (LOCAL=NO)
+17.0  0.0  46478 ?        16:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.7  0.0  20283 ?        16:07 00:03:42 oracletopprd (LOCAL=NO)
+14.6  0.0  89570 ?        16:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.3  0.0  20283 ?        16:07 00:03:42 oracletopprd (LOCAL=NO)
+33.3  0.0 125378 ?        16:41 00:00:01 oracletopprd (LOCAL=NO)
+13.3  0.0 125073 ?        16:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.0  0.0  20283 ?        16:07 00:03:42 oracletopprd (LOCAL=NO)
+14.3  0.0  30255 ?        16:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.7  0.0  20283 ?        16:07 00:03:42 oracletopprd (LOCAL=NO)
+16.6  0.0  67553 ?        16:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.4  0.0  20283 ?        16:07 00:03:42 oracletopprd (LOCAL=NO)
+21.0  0.0 104137 ?        16:44 00:00:00 oracletopprd (LOCAL=NO)
+12.2  0.0 102613 ?        16:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.1  0.0  20283 ?        16:07 00:03:42 oracletopprd (LOCAL=NO)
+17.6  0.0  10201 ?        16:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.3  0.0  45612 ?        16:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.3  0.0  81169 ?        16:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+21.0  0.0 117287 pts/35   16:48 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmt301 {"sessionkey":"IKOI482011078d","parent":"IKOI074174990d","parentprog":"aimm200","ancest":"IKOQ055903036d","prog":"abmt301","account":"tiptoper","param":["\"ALL\"","\"\"","089-Z01-202102230001"],"schedule_seq":0,"static_ent":99}
+16.0  0.0 116109 ?        16:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0  21827 ?        16:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0 123006 ?        16:48 00:00:17 oracletopprd (LOCAL=NO)
+13.2  0.0  66251 ?        16:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0 101426 ?        16:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+10.7  0.0 123006 ?        16:48 00:00:18 oracletopprd (LOCAL=NO)
+19.0  0.1  41053 pts/48   16:53 00:00:00 /u1/genero/fglgws/lib/fglrun-bin -d /u1/topprd/erp/ade/42r/adet400.42r
+16.6  0.0  42497 ?        16:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.0  0.0  78738 ?        16:54 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aws/42r/awsi100 {"sessionkey":"IKOI541797420d","parent":"IKOQ445463606d","parentprog":"azzi000","ancest":"IKOQ445463606d","prog":"awsi100","account":"tiptop","param":[],"schedule_seq":0,"static_ent":99}
+16.3  0.0  77682 ?        16:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+18.0  0.0 116959 pts/18   16:55 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmp500 {"sessionkey":"IKOI551978787d","parent":"IKOI430836215d","parentprog":"apmt500","ancest":"IKOQ212901743d","prog":"apmp500","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+17.0  0.0 115591 ?        16:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+18.0  0.0  22160 pts/57   16:56 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmr500 {"sessionkey":"IKOI562006206d","parent":"IKOQ482731193d","parentprog":"apmt500","ancest":"IKOQ482731193d","background":"Y","prog":"apmr500","account":"tiptoper","param":[null,"pmdlent =     99 AND pmdldocno = &apos;CNJ-BP1-211100000001&apos;,&apos;&apos;"],"schedule_seq":0,"static_ent":99}
+15.1  0.1  19223 pts/48   16:56 00:00:00 /u1/genero/fglgws/lib/fglrun-bin -d /u1/topprd/erp/art/42r/arti305.42r
+12.2  0.0  20919 ?        16:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+18.3  0.0  58523 ?        16:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.6  0.0  95843 ?        16:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0 130990 ?        16:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.6  0.0  45035 ?        17:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0  82547 ?        17:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0 119638 ?        17:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  24957 ?        17:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.5  0.0  60358 ?        17:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+73.0  0.0  69124 ?        18:00 00:00:00 oracletopprd (LOCAL=NO)
+16.0  0.0  65992 ?        18:00 00:00:00 xargs -0 -l1 -t rm -rf
+14.0  0.0  66340 ?        18:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.0  0.0  68826 ?        18:00 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKOS001440254d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+18.5  0.0  20343 ?        19:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0  21523 ?        19:01 00:00:00 sh /u1/etc/tmon/script/chk_sql
+16.6  0.0  18508 ?        20:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu

@@ -1,0 +1,1020 @@
+N
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 9 GB </th> 
+      </tr>
+      </table>
+      
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>==========</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+================================================================
+N
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 9 GB </th> 
+      </tr>
+      </table>
+      
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31104904 </td>
+<td> 2355320 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+================================================================
+N
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 9 GB </th> 
+      </tr>
+      </table>
+      
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31104904 </td>
+<td> 2355320 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+================================================================
+N
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 9 GB </th> 
+      </tr>
+      </table>
+      
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31104904 </td>
+<td> 2355320 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+================================================================
+N
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 9 GB </th> 
+      </tr>
+      </table>
+      
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31104904 </td>
+<td> 2355320 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+================================================================
+N
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 9 GB </th> 
+      </tr>
+      </table>
+      
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31104904 </td>
+<td> 2355320 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+================================================================
+N
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 9 GB </th> 
+      </tr>
+      </table>
+      
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31104904 </td>
+<td> 2355320 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+================================================================
+N
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 9 GB </th> 
+      </tr>
+      </table>
+      
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31104908 </td>
+<td> 2355316 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+================================================================
+N
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 9 GB </th> 
+      </tr>
+      </table>
+      
+<table width=100% border=1>
+      <tr>
+      <th colspan=7 style=background-color:#FFECC9>表空間使用率</th>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle style=background-color:red >NOW!! T100 DB tablespace use over 5 % </td>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle>=== TABLESPACE ===</td>
+      </tr>
+<tr><td> TABLESPACE_NAME </td>
+<td> ALLOCATED ( MB ) </td>
+<td> FREE ( MB ) </td>
+<td> USE ( MB ) </td>
+<td> FREE % </td>
+<td> USE % </td>
+<td> MAX ( MB ) </td></tr>
+<tr><td> DSBLOB </td>
+<td> 8 </td>
+<td> 5.70117 </td>
+<td> 2.29883 </td>
+<td> 71.26 </td>
+<td> 28.74 </td>
+<td> 8 </td></tr>
+<tr><td> SYSAUX </td>
+<td> 2.51953 </td>
+<td> 0.439453 </td>
+<td> 2.08008 </td>
+<td> 93.5 </td>
+<td> 6.5 </td>
+<td> 32 </td></tr>
+<tr><td> PERFSTAT </td>
+<td> 2 </td>
+<td> 1.84863 </td>
+<td> 0.151367 </td>
+<td> 92.43 </td>
+<td> 7.57 </td>
+<td> 2 </td></tr>
+<tr><td> DSAWS </td>
+<td> 4 </td>
+<td> 2.79883 </td>
+<td> 1.20117 </td>
+<td> 84.99 </td>
+<td> 15.01 </td>
+<td> 8 </td></tr>
+<tr><td> DSDATA </td>
+<td> 12 </td>
+<td> 3.61426 </td>
+<td> 8.38574 </td>
+<td> 30.12 </td>
+<td> 69.88 </td>
+<td> 12 </td></tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td></tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td></tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td></tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td></tr>
+</table>
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31104908 </td>
+<td> 2355316 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+================================================================
+N
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 9 GB </th> 
+      </tr>
+      </table>
+      
+<table width=100% border=1>
+      <tr>
+      <th colspan=7 style=background-color:#FFECC9>表空間使用率</th>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle style=background-color:red >NOW!! T100 DB tablespace use over 5 % </td>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle>=== TABLESPACE ===</td>
+      </tr>
+<tr><td> TABLESPACE_NAME </td>
+<td> ALLOCATED ( MB ) </td>
+<td> FREE ( MB ) </td>
+<td> USE ( MB ) </td>
+<td> FREE % </td>
+<td> USE % </td>
+<td> MAX ( MB ) </td></tr>
+<tr><td> DSBLOB </td>
+<td> 8 </td>
+<td> 5.70117 </td>
+<td> 2.29883 </td>
+<td> 71.26 </td>
+<td> 28.74 </td>
+<td> 8 </td></tr>
+<tr><td> SYSAUX </td>
+<td> 2.51953 </td>
+<td> 0.439453 </td>
+<td> 2.08008 </td>
+<td> 93.5 </td>
+<td> 6.5 </td>
+<td> 32 </td></tr>
+<tr><td> PERFSTAT </td>
+<td> 2 </td>
+<td> 1.84863 </td>
+<td> 0.151367 </td>
+<td> 92.43 </td>
+<td> 7.57 </td>
+<td> 2 </td></tr>
+<tr><td> DSAWS </td>
+<td> 4 </td>
+<td> 2.79883 </td>
+<td> 1.20117 </td>
+<td> 84.99 </td>
+<td> 15.01 </td>
+<td> 8 </td></tr>
+<tr><td> DSDATA </td>
+<td> 12 </td>
+<td> 3.61426 </td>
+<td> 8.38574 </td>
+<td> 30.12 </td>
+<td> 69.88 </td>
+<td> 12 </td></tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td></tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td></tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td></tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td></tr>
+</table>
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31106940 </td>
+<td> 2353284 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+================================================================
+N
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 9 GB </th> 
+      </tr>
+      </table>
+      
+<table width=100% border=1>
+      <tr>
+      <th colspan=7 style=background-color:#FFECC9>表空間使用率</th>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle style=background-color:red >NOW!! T100 DB tablespace use over 5 % </td>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle>=== TABLESPACE ===</td>
+      </tr>
+<tr><td> TABLESPACE_NAME </td>
+<td> ALLOCATED ( MB ) </td>
+<td> FREE ( MB ) </td>
+<td> USE ( MB ) </td>
+<td> FREE % </td>
+<td> USE % </td>
+<td> MAX ( MB ) </td></tr>
+<tr><td> DSBLOB </td>
+<td> 8192 </td>
+<td> 5838 </td>
+<td> 2354 </td>
+<td> 71.26 </td>
+<td> 28.74 </td>
+<td> 8192 </td></tr>
+<tr><td> SYSAUX </td>
+<td> 2580 </td>
+<td> 450 </td>
+<td> 2130 </td>
+<td> 93.5 </td>
+<td> 6.5 </td>
+<td> 32768 </td></tr>
+<tr><td> PERFSTAT </td>
+<td> 2048 </td>
+<td> 1893 </td>
+<td> 155 </td>
+<td> 92.43 </td>
+<td> 7.57 </td>
+<td> 2048 </td></tr>
+<tr><td> DSAWS </td>
+<td> 4096 </td>
+<td> 2866 </td>
+<td> 1230 </td>
+<td> 84.99 </td>
+<td> 15.01 </td>
+<td> 8192 </td></tr>
+<tr><td> DSDATA </td>
+<td> 12288 </td>
+<td> 3701 </td>
+<td> 8587 </td>
+<td> 30.12 </td>
+<td> 69.88 </td>
+<td> 12288 </td></tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td></tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td></tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td></tr>
+<tr><td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td> </td></tr>
+</table>
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31106940 </td>
+<td> 2353284 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+================================================================
+N
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 9 GB </th> 
+      </tr>
+      </table>
+      
+<table width=100% border=1>
+      <tr>
+      <th colspan=7 style=background-color:#FFECC9>表空間使用率</th>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle style=background-color:red >NOW!! T100 DB tablespace use over 5 % </td>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle>=== TABLESPACE ===</td>
+      </tr>
+<tr><td> TABLESPACE_NAME </td>
+<td> ALLOCATED ( MB ) </td>
+<td> FREE ( MB ) </td>
+<td> USE ( MB ) </td>
+<td> FREE % </td>
+<td> USE % </td>
+<td> MAX ( MB ) </td></tr>
+<tr><td> DSBLOB </td>
+<td> 8192 </td>
+<td> 5838 </td>
+<td> 2354 </td>
+<td> 71.26 </td>
+<td> 28.74 </td>
+<td> 8192 </td></tr>
+<tr><td> SYSAUX </td>
+<td> 2580 </td>
+<td> 450 </td>
+<td> 2130 </td>
+<td> 93.5 </td>
+<td> 6.5 </td>
+<td> 32768 </td></tr>
+<tr><td> PERFSTAT </td>
+<td> 2048 </td>
+<td> 1893 </td>
+<td> 155 </td>
+<td> 92.43 </td>
+<td> 7.57 </td>
+<td> 2048 </td></tr>
+<tr><td> DSAWS </td>
+<td> 4096 </td>
+<td> 2866 </td>
+<td> 1230 </td>
+<td> 84.99 </td>
+<td> 15.01 </td>
+<td> 8192 </td></tr>
+</table>
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31104912 </td>
+<td> 2355312 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+================================================================
+N
+cnnfdtq9hyjdz
+cnnfdtq9hyjdz                                                                                                                                                                                           
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FFECC9>CPU 檢查 ok </th>
+            </tr> </table>
+             
+<font color=blue> ====記憶體使用率==== </font>
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>檢查 記憶體 ok </th> 
+      </tr> 
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>沒有超過上限 50 % </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Memory total size 29 GB </th>
+      </tr>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9> Now available size 13 GB </th> 
+      </tr>
+      </table>
+      
+<table width=100% border=1>
+      <tr>
+      <th colspan=7 style=background-color:#FFECC9>表空間使用率</th>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle style=background-color:red >NOW!! T100 DB tablespace use over 5 % </td>
+      </tr>
+      <tr>
+      <td colspan=7 align=center valign=middle>=== TABLESPACE ===</td>
+      </tr>
+<tr><td> TABLESPACE_NAME </td>
+<td> ALLOCATED ( MB ) </td>
+<td> FREE ( MB ) </td>
+<td> USE ( MB ) </td>
+<td> FREE % </td>
+<td> USE % </td>
+<td> MAX ( MB ) </td></tr>
+<tr><td> DSBLOB </td>
+<td> 8192 </td>
+<td> 5838 </td>
+<td> 2354 </td>
+<td> 71.26 </td>
+<td> 28.74 </td>
+<td> 8192 </td></tr>
+<tr><td> SYSAUX </td>
+<td> 2580 </td>
+<td> 450 </td>
+<td> 2130 </td>
+<td> 93.5 </td>
+<td> 6.5 </td>
+<td> 32768 </td></tr>
+<tr><td> TEMPTABS </td>
+<td> 4096 </td>
+<td> 3767 </td>
+<td> 329 </td>
+<td> 91.97 </td>
+<td> 8.03 </td>
+<td> 4096 </td></tr>
+<tr><td> PERFSTAT </td>
+<td> 2048 </td>
+<td> 1893 </td>
+<td> 155 </td>
+<td> 92.43 </td>
+<td> 7.57 </td>
+<td> 2048 </td></tr>
+<tr><td> DSAWS </td>
+<td> 4096 </td>
+<td> 2866 </td>
+<td> 1230 </td>
+<td> 84.99 </td>
+<td> 15.01 </td>
+<td> 8192 </td></tr>
+</table>
+
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/mapper/rhel-u3 </td>
+<td> 33460224 </td>
+<td> 31104912 </td>
+<td> 2355312 </td>
+<td> 93% </td>
+<td> /u3 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u3=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>
+</table>
+================================================================

@@ -1,0 +1,2 @@
+ 10_link_DS        _link_      2_link_      3_link_         16_link_        16907_link_        16810_link_          0_link_      16810_link_             0_link_06dfxndscbqr6       _link_2021/12/15 10:12:13 _link_fglrun@TOP200 (TNS V1-V3)     _link_select ooaa002 from   ds.ooaa_t where ooaa001 = :p1  AND ooaaent = :p2
+

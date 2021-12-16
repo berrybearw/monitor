@@ -1,0 +1,388 @@
+#!/bin/ksh
+
+#v1 check 順序 No.11
+
+. /u1/etc/tmon/tmon.conf
+
+ls_version="1.0"
+
+if [ "$mode_test" == "Y" ] ;then
+   chk_undo_time_go="Y"
+fi
+
+if [ "$chk_undo_time_go" == "Y" ] ;then
+
+   if [ -n "$1" ];then
+      unset SQLPATH
+      unset ORACLE_PATH
+      export ZONE=$1
+   if [ -z "$sqlpass" ];then
+   if [ -z "$2" ];then
+      export sqlpass=du
+   else
+      export sqlpass=$2    	
+   fi
+   fi
+   fi
+   undo_file="/u1/etc/tmon/mon_log/undo.html"
+   p_file="/u1/etc/tmon/mon_log/p.log"
+   if [ -z "$tbs" ];then
+   tbs=`sqlplus -S "du/$sqlpass@$ZONE" << EOF
+   set feedback off
+   col USED% for a6
+   col "TABLESPACE NAME" for a16
+   SELECT A.tablespace_name as "TABLESPACE NAME",
+          A.total_size AS "TOTAL SIZE",
+          round(B.total_free_size, 1) AS "TOTAL FREE SIZE(MB)",
+          round((A.total_size - B.total_free_size), 2) AS "USED SIZE",
+          to_char(100-(100*B.total_free_size/A.total_size), '999') AS"USED%"
+   FROM (SELECT tablespace_name,sum(bytes)/1024/1024 AS total_size
+                FROM dba_data_files
+                GROUP BY tablespace_name) A,
+         (SELECT tablespace_name,sum(bytes/1024/1024) AS total_free_size
+                FROM dba_free_space
+                GROUP BY tablespace_name) B
+   WHERE A.tablespace_name = B.tablespace_name
+   and A.tablespace_name not in ('SYSTEM','SYSAUX')
+   ORDER BY "USED%" desc;
+             exit
+EOF
+`
+   fi
+   
+   #undo 空間檢查
+   ckundo=`echo "$tbs"|grep UNDO`
+   #檢查undo是否存在
+   if [ -n "$ckundo" ];then
+   undo_ov=`echo "$tbs"|grep "UNDO"|awk '{if($5 >= '$lim') {print $5}}'|grep -Eo "[0-9]+"`
+   fi
+   
+   if [ -n "$undo_ov" ];then
+   o_undo=`sqlplus -S "du/$sqlpass@$ZONE" << !
+   set feedback off
+   set linesize 150
+   col SID for 99999
+   col serial# for 9999999
+   col status for a10
+   col process for a7
+   col sql_text for a150
+   select a.sid,a.serial#,a.process,a.sql_id,a.segment_name,a.status,a.mb from
+   (select s.sid sid,
+   s.serial# serial#,
+   s.process process,
+   s.sql_id sql_id,
+   r.segment_name segment_name,
+   r.status status,
+   v.rssize/1024/1024 mb
+      From dba_rollback_segs r,
+           v\\$rollstat v,
+           v\\$transaction t,
+           v\\$session s
+      Where r.segment_id = v.usn and v.usn=t.xidusn and t.addr=s.taddr
+      order by segment_name) a,
+      v\\$sql st
+     where a.sql_id=st.sql_id and ROWNUM < 6 ;
+   exit
+!
+`
+   
+   o_undomb=`echo "$o_undo"|awk '{print $7}'|grep -Eo "[0-9]+"`
+   over2g=`echo $o_undomb|awk '{print $1}'`
+   if [ -n "$over2g" ];then
+   if [ "$over2g" -ge "$oto" ];then
+   echo "<table width=1200 border=1>
+   <tr>
+   <th colspan=8 style="background-color:#FFECC9">ORACLE UNDO表空間檢查</th>
+   </tr>
+   <tr>
+   <td colspan=8 align="center" valign="middle">===UNDO表空間 over <font color=red>$lim%</font>===</td> 
+   </tr>
+   <tr>
+   <td colspan=8 align="center" valign="middle">===UNDO 最大占用===</td>
+   </tr>" >> $undo_file
+   
+   o_undo_wc=`echo "$o_undo"|wc -l`
+   i=1
+   while [ "$i" -le "$o_undo_wc" ];
+   do
+      t=1
+      if [ "$i" -eq "1" ];then
+         i=`expr $i + 1`
+      elif [ "$i" -eq "3" ];then
+         i=`expr $i + 1`
+      else
+         echo "<tr>" >> $undo_file
+         o_undo_b=`echo "$o_undo"|sed -n ''$i','$i' p'`
+         while [ "$t" -le 8 ]
+         do
+            o_undo_a=`echo "$o_undo_b"|awk '{print $'$t'}'`
+   	 echo "<td>$o_undo_a</td>" >> $undo_file
+   	 t=`expr $t + 1`
+         done
+         echo "</tr>" >> $undo_file
+         i=`expr $i + 1`
+      fi
+   done
+   fi
+   #fi
+   
+   #sql語句顯示
+   
+   
+   o_undo_id=`echo "$o_undo"|awk '{print $4}'`
+   o_undo_idn=`echo "$o_undo_id"|wc -l`
+   let o_undo_idn=$o_undo_idn-3
+   
+   if [ -n "$o_undo_idn" ] && [ "$o_undo_idn" -gt "0" ];then
+   echo "<tr>
+   <td colspan=8 align="center" valign="middle">===UNDO TOP SQL===</td> 
+   </tr>
+   <tr><td>SQL_ID</td><td colspan=7>SQL_TEXT</td></tr>" >> $undo_file
+   
+   case $o_undo_idn in
+     1)
+      idn1=`echo $o_undo_id|awk '{print "\047"$3"\047"}'`
+      st1=`sqlplus -S "du/$sqlpass@$ZONE" << EOF
+         set heading off
+         set pagesize 100
+         set feedback off
+         col sql_text for a50
+         select '<tr><td>'||sql_id||'</td><td colspan=7>'||sql_text||'</td></tr>'
+         from(
+         select distinct sql_id,sql_text from v\\$sql
+         where sql_id in($idn1));
+         exit
+EOF
+`
+         echo "$st1" >> $undo_file
+     ;;
+   
+     2)
+      idn2=`echo $o_undo_id|awk '{print "\047"$3"\047"",""\047"$4"\047"}'`
+      st2=`sqlplus -S "du/$sqlpass@$ZONE" << EOF
+         set heading off
+         set pagesize 100
+         set feedback off
+         col sql_text for a50
+         select '<tr><td>'||sql_id||'</td><td colspan=7>'||sql_text||'</td></tr>'
+         from(
+         select distinct sql_id,sql_text from v\\$sql
+         where sql_id in($idn2));
+         exit
+EOF
+`
+         echo "$st2" >> $undo_file
+     ;;
+   
+     3)
+      idn3=`echo $o_undo_id|awk '{print "\047"$3"\047"",""\047"$4"\047"",""\047"$5"\047"}'`
+      st3=`sqlplus -S "du/$sqlpass@$ZONE" << EOF
+         set heading off
+         set pagesize 100
+         set feedback off
+         col sql_text for a50
+         select '<tr><td>'||sql_id||'</td><td colspan=7>'||sql_text||'</td></tr>'
+         from(
+         select distinct sql_id,sql_text from v\\$sql
+         where sql_id in($idn3));
+         exit
+EOF
+`
+         echo "$st3" >> $undo_file
+     ;;
+   
+     4)
+      idn4=`echo $o_undo_id|awk '{print "\047"$3"\047"",""\047"$4"\047"",""\047"$5"\047"",""\047"$6"\047"}'`
+      st4=`sqlplus -S "du/$sqlpass@$ZONE" << EOF
+         set heading off
+         set pagesize 100
+         set feedback off
+         col sql_text for a50
+         select '<tr><td>'||sql_id||'</td><td colspan=7>'||sql_text||'</td></tr>'
+         from(
+         select distinct sql_id,sql_text from v\\$sql
+         where sql_id in ($idn4));
+         exit
+EOF
+`
+         echo "$st4" >> $undo_file
+     ;;
+   	        
+     5) 
+      idn5=`echo $o_undo_id|awk '{print "\047"$3"\047"",""\047"$4"\047"",""\047"$5"\047"",""\047"$6"\047"",""\047"$7"\047"}'`
+      t5=`sqlplus -S "du/$sqlpass@$ZONE" << EOF
+        set heading off
+        set pagesize 100
+        set feedback off
+        col sql_text for a50
+        select '<tr><td>'||sql_id||'</td><td colspan=7>'||sql_text||'</td></tr>'
+        from(
+        select distinct sql_id,sql_text from v\\$sql
+        where sql_id in($idn5));
+        exit
+EOF
+`
+         echo "$st5" >> $undo_file
+   esac
+   fi
+   
+   #檢查undo佔用process
+   
+   o_undo_p=`echo "$o_undo"|awk '{print $3}'|grep -Eo "[0-9]+"`
+   #echo $o_undo_p
+   
+   
+   
+   if [ -n "$o_undo_p" ];then
+   
+   #echo "<b>=====UNDO 最大運行程式=====</b>"
+   
+   o_undo_head=`ps -ef|head -n 1`
+   o_undo_n=`echo "$o_undo_p"|wc -l`
+   
+   #echo $o_undo_n
+   
+   case $o_undo_n in
+    1) p1=`echo $o_undo_p|awk '{print $1}'`
+     p1a=`ps -ef|grep -v grep|grep -w $p1`
+     if [ -n "$p1a" ];then
+        echo "$p1a" >> $p_file
+     fi
+   			      
+    ;;
+    2) p1=`echo $o_undo_p|awk '{print $1}'`
+     p1a=`ps -ef|grep -v grep|grep -w $p1`
+     p2=`echo $o_undo_p|awk '{print $2}'`
+     p2a=`ps -ef|grep -v grep|grep -w $p2`
+     if [ -n "$p1a" ];then
+        echo "$p1a" >> $p_file
+     fi
+     if [ -n "$p2a" ];then
+        echo "$p2a" >> $p_file
+     fi
+   
+    ;;
+    3) p1=`echo $o_undo_p|awk '{print $1}'`
+     p1a=`ps -ef|grep -v grep|grep -w $p1`
+     p2=`echo $o_undo_p|awk '{print $2}'`
+     p2a=`ps -ef|grep -v grep|grep -w $p2`
+     p3=`echo $o_undo_p|awk '{print $3}'`
+     p3a=`ps -ef|grep -v grep|grep -w $p3`
+     if [ -n "$p1a" ];then
+        echo "$p1a" >> $p_file
+     fi
+     if [ -n "$p2a" ];then
+        echo "$p2a" >> $p_file
+     fi
+     if [ -n "$p3a" ];then
+        echo "$p3a" >> $p_file
+     fi
+   	        
+    ;;
+    4) p1=`echo $o_undo_p|awk '{print $1}'`
+     p1a=`ps -ef|grep -v grep|grep -w $p1`
+     p2=`echo $o_undo_p|awk '{print $2}'`
+     p2a=`ps -ef|grep -v grep|grep -w $p2`
+     p3=`echo $o_undo_p|awk '{print $3}'`
+     p3a=`ps -ef|grep -v grep|grep -w $p3`
+     p4=`echo $o_undo_p|awk '{print $4}'`
+     p4a=`ps -ef|grep -v grep|grep -w $p4`
+     if [ -n "$p1a" ];then
+        echo "$p1a" >> $p_file
+     fi
+     if [ -n "$p2a" ];then
+        echo "$p2a" >> $p_file
+     fi
+     if [ -n "$p3a" ];then
+        echo "$p3a" >> $p_file
+     fi
+     if [ -n "$p4a" ];then
+        echo "$p4a" >> $p_file
+     fi
+   									
+    ;;
+    5) p1=`echo $o_undo_p|awk '{print $1}'`
+     p1a=`ps -ef|grep -v grep|grep -w $p1`
+     p2=`echo $o_undo_p|awk '{print $2}'`
+     p2a=`ps -ef|grep -v grep|grep -w $p2`
+     p3=`echo $o_undo_p|awk '{print $3}'`
+     p3a=`ps -ef|grep -v grep|grep -w $p3`
+     p4=`echo $o_undo_p|awk '{print $4}'`
+     p4a=`ps -ef|grep -v grep|grep -w $p4`
+     p5=`echo $o_undo_p|awk '{print $5}'`
+     p5a=`ps -ef|grep -v grep|grep -w $p5`
+     if [ -n "$p1a" ];then
+        echo "$p1a" >> $p_file
+     fi
+     if [ -n "$p2a" ];then
+        echo "$p2a" >> $p_file
+     fi
+     if [ -n "$p3a" ];then
+        echo "$p3a" >> $p_file
+     fi
+     if [ -n "$p4a" ];then
+        echo "$p4a" >> $p_file
+     fi
+     if [ -n "$p5a" ];then
+        echo "$p5a" >> $p_file
+     fi
+   
+    ;;
+   esac
+   
+   if [ -f "$p_file" ];then
+      p=`cat $p_file`
+      p_wc=`cat $p_file|wc -l`
+      p_head=`ps -ef|head -n 1`
+   fi
+   if [ -n "$p_wc" ];then
+      echo "<tr><td colspan=8 align="center" valign="middle">====UNDO 最大運行程式====</td></tr>" >> $undo_file
+      i=1
+      echo "<tr>" >> $undo_file
+      while [ "$i" -le 8 ];
+      do
+         p_head_b=`echo "$p_head"|awk '{print $'$i'}'`
+         echo "<td>$p_head_b</td>" >> $undo_file
+         i=`expr $i + 1`
+      done
+      echo "</tr>" >> $undo_file
+      i=1
+      while [ "$i" -le "$p_wc" ];
+      do
+         t=1
+         p_b=`echo "$p"|sed -n ''$i','$i' p'`
+         echo "<tr>" >> $undo_file
+         while [ "$t" -le 8 ];
+         do
+            if [ "$t" -eq 8 ];then
+               p_b_b=`echo "$p_b"|awk '{$1=$2=$3=$4=$5=$6=$7="";print $0}'`
+   	    echo "<td>$p_b_b</td>" >> $undo_file
+            else
+               p_b_b=`echo "$p_b"|awk '{print $'$t'}'`
+   	    echo "<td>$p_b_b</td>" >> $undo_file
+            fi
+   	 t=`expr $t + 1`
+         done
+         echo "</tr>" >> $undo_file
+         i=`expr $i + 1`
+      done
+   fi
+   #
+   #echo ""
+   #echo ""
+   #echo ""  
+   #
+   fi
+   echo "</table>" >> $undo_file
+   fi
+   fi
+   
+   if [ -f "$undo_file" ];then
+      cat $undo_file
+   fi
+   
+   rm -rf /u1/etc/tmon/mon_log/p.log
+   rm -rf /u1/etc/tmon/mon_log/undo.html
+
+fi
+

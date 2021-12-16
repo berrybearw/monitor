@@ -1,0 +1,318 @@
+#!/bin/ksh
+
+#v1 check 順序 No.02
+
+#1.1  2021/10/01 by 12731 設定執行頻率
+#                         變數 : chk_cpu_time_go
+#1.2  2021/12/05 by 12731 緊急時刻需要在一開始就判斷是否超過 設定值
+#                         指令需要有超時設定 ( timeout 10 ps )
+
+#ls_version="1.0"
+#ls_version="1.1"
+ls_version="1.2"
+
+# mail title
+
+. /u1/etc/tmon/tmon.conf
+. /u1/etc/tmon/tmon_title.conf
+
+#default value
+
+if [ ! -d /u1/etc/tmon/mon_log/chk/$dir_date ] ; then
+   mkdir /u1/etc/tmon/mon_log/chk/$dir_date
+fi   
+
+tmonname=$TMONNAME
+mode_test=$MODE_TEST
+
+dir_date=`date '+%Y%m%d'`
+file=`date '+%Y%m%d'`
+psmem_file_chk="/u1/etc/tmon/mon_log/chk/$dir_date/psmem.log"
+cpu_file_chk="/u1/etc/tmon/mon_log/chk/$dir_date/pscpu.log"
+cpu_file="/u1/etc/tmon/mon_log/cpu.log"
+cpu_chk_dir="/u1/etc/tmon/script/basement"
+cpu_file2="$cpu_chk_dir/chk_cpu.log"
+cpu_chk="/u1/etc/tmon/script/basement/cpu_chk_${tmonname}.log"        #判斷設定值檔案
+cpu_chk_html="/u1/etc/tmon/script/basement/cpu_chk_${tmonname}.html"  #寄信用
+chk_cpu="/u1/etc/tmon/mon_log/chk_mail.log"
+
+unset SQLPATH
+a=3
+time_now=`date +%M`
+time_red=`date +%Y/%m/%d-%H:%M:%S`
+lim="$cpu_lim_use"  #CPU 使用率
+cpu_num=`lscpu |grep '^CPU(s):' |sed 's/^[ \t]*//g'|cut -d: -f 2`  #CPU 顆數
+cpu_lim_idle=$cpu_lim_idle  #最大值 100
+cpu_lim_load=`echo "scale=2;$cpu_lim_load * 0.01" |bc ` #轉為 %
+cpu_lim_load=`echo "scale=2;$cpu_num * $cpu_lim_load" |bc `
+echo "cpu_lim : "$lim
+
+cpu_idle=`top -bn1 | grep '%Cpu(s)' | awk -F , '{print $4}' | awk '{print $1}'`
+echo "cpu_idle : " $cpu_idle > $cpu_chk
+cpu_load=`top -bn1 | grep 'load' | awk -F : '{print $5}' | awk -F , '{print $1}'`
+echo "cpu_load : " $cpu_load >> $cpu_chk
+cpu_idle=`cat $cpu_chk | grep 'cpu_idle' | awk -F : '{print $2}'`
+cpu_load=`cat $cpu_chk | grep 'cpu_load' | awk -F : '{print $2}'`
+
+if [ "$lim" == "" ]; then
+
+   lim=10
+   cpu_lim_idle=20
+   cpu_lim_load=8  #16 顆 cpu 的一半
+   mode_test="Y"
+
+fi
+
+function title_cpu {
+   echo '<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#00E3E3>項目 CPU </th>
+   </tr>
+   </table>
+   ' > $cpu_chk_html
+}
+
+if [ "$mode_test" == "Y" ] ;then
+   chk_cpu_time_go="Y"
+fi
+
+if [ "$CHKTIME" == "Y" ] ; then
+   chk_cpu_time_go="Y"
+fi
+
+#判斷 start (s)
+if [ $(echo "$cpu_lim_idle > $cpu_idle"|bc) -eq 1 ] ; then
+   chk_cpu_time_go="Y"
+   chk_mail="Y"
+   echo $time_red >> $chk_cpu
+   echo "chk_cpu_cpu : " $chk_mail >> $chk_cpu
+   echo "cpu_idle : " $cpu_idle >> $chk_cpu
+   echo "cpu_lim_idle : " $cpu_lim_idle >> $chk_cpu
+   echo "檢查 CPU idle 低於 " $cpu_lim_idle >> $chk_cpu
+else
+   if [ $(echo "$cpu_lim_load < $cpu_load"|bc) -eq 1 ] ; then
+      chk_cpu_time_go="Y"
+      chk_mail="Y"
+      echo $time_red >> $chk_cpu
+      echo "chk_cpu_cpu : " $chk_mail >> $chk_cpu
+      echo "cpu_load : " $cpu_load >> $chk_cpu
+      echo "cpu_lim_load : " $cpu_lim_load >> $chk_cpu
+      echo "檢查 CPU 5 min load average 高於 " $cpu_lim_load >> $chk_cpu
+   fi
+fi
+
+if [ "$mode_test" == "Y" ] ; then
+
+   if [ "$chk_mail" == "Y" ] ; then
+      echo "cpu_idle : " $cpu_idle
+      echo "cpu idle 不可低於 " $cpu_lim_idle
+      echo "cpu_load : " $cpu_load
+      echo "CPU 5 min load average 不可高於 " $cpu_lim_load
+      echo "前10名 CPU process "
+      timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu | head -10
+   else
+      echo "cpu_idle : " $cpu_idle
+      echo "cpu idle 沒低於 " $cpu_lim_idle
+      echo "cpu_load : " $cpu_load
+      echo "CPU 5 min load average 沒高於 " $cpu_lim_load
+      echo "前10名 CPU process "
+      timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu | head -10
+      echo "CPU 檢查 ok"
+      title_cpu
+      echo '<table width=100% border=1>
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9">檢查 CPU ok </th>
+      </tr> 
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9">CPU idle 沒低於 $cpu_lim_idle  </th>
+      </tr>
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9">CPU 5 min load 沒高於 $cpu_lim_load  </th>
+      </tr>
+      </table>
+       ' >> $cpu_chk_html
+      exit
+   fi
+fi
+
+#判斷 start (e)
+
+if [ "$chk_cpu_time_go" == "Y" ] ;then
+   cpu_n=`cat /proc/cpuinfo |grep "processor"|wc -l`
+   wa=`echo "scale=5; 1/$cpu_n" |bc`
+   wa2=`echo "$wa*100" |bc`
+   cpu_total=`echo "$cpu_num * 100" | bc -l`
+   cpu_total_lim=`echo "$cpu_num * 50"  | bc -l`
+   
+   #start
+   echo "CPU數量:" $cpu_num #`lscpu |grep '^CPU(s):' |sed 's/^[ \t]*//g'|cut -d: -f 2`
+   echo "CPU型號:" `lscpu |grep '^Model name:' |sed 's/^[ \t]*//g'|cut -d: -f 2` 
+   echo "CPU MHz:" `lscpu |grep '^CPU MHz:' |sed 's/^[ \t]*//g'|cut -d: -f 2`
+   echo "wa上限 :" $wa2"%"
+   timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu  > $cpu_chk_dir/chk_cpu_list.log
+   cpu_proc_total=`timeout 10 ps -eo %cpu --sort=-%cpu | head -11 | awk '{total += $1; } END { print total }'`
+   proc_head=`cat $cpu_chk_dir/chk_cpu_list.log |head -n 1`
+   #proc_fgl=`echo "$proc"|grep -v grep|grep -v adzp95|grep fglrun|head|awk '{print $1}'`
+   #proc_fgl=`echo "$proc"|grep -v grep|grep -v adzp95| head -10|awk '{print $1}'`
+   
+   proc_fgl=`cat $cpu_chk_dir/chk_cpu_list.log | sed -n '2,$p' |grep -v grep| head -10|awk '{print $3}'`
+   #echo $proc_fgl
+
+   echo $proc_head > $cpu_file   
+
+   for i in $proc_fgl
+   do
+     proc_cpu=`cat $cpu_chk_dir/chk_cpu_list.log | sed -n '2,$p' | awk '{ if ($3 == '$i') {print $1 } }' `
+     if [ $(echo "$proc_cpu > $lim"|bc) -eq 1 ];then
+        cat $cpu_chk_dir/chk_cpu_list.log | grep $i >> $cpu_file_chk
+        #echo "@@@ "$i  #debug 檢查 pid
+        #cat $cpu_chk_dir/chk_cpu_list.log | grep $i
+        cat $cpu_chk_dir/chk_cpu_list.log | grep $i >> $cpu_file
+     fi
+   done
+   
+   num=`cat $cpu_file|wc -l`
+
+   function chk_cpu_process { 
+      #存取 cpu 記錄檔 (s)
+
+      echo '<div class="content"> ' >> $cpu_chk_html
+      echo "<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>$time_red CPU 使用量 顯示 $lim % 以上</th>
+                </tr> 
+      " >> $cpu_chk_html
+      
+      
+      cpu_num=`cat $cpu_file | wc -l `
+      
+      i=1
+      echo "開始存取紀錄檔 ,有 $cpu_num 個 "
+      while [ "$i" -le "$cpu_num" ] 
+      do
+         echo "No: "$i
+         if [ "$i" == 1 ] ; then
+            cpu_chk=`cat $cpu_file | sed -n '1,1p' | awk '{print $1}' `
+            mem_chk=`cat $cpu_file | sed -n '1,1p' | awk '{print $2}' `
+            pid_chk=`cat $cpu_file | sed -n '1,1p' | awk '{print $3}' `
+            tt_chk=`cat $cpu_file | sed -n '1,1p' | awk '{print $4}' `
+            stime_chk=`cat $cpu_file | sed -n '1,1p' | awk '{print $5}' `
+            time_chk=`cat $cpu_file | sed -n '1,1p' | awk '{print $6}' `
+            cmd_chk=`cat $cpu_file | sed -n '1,1p' | awk '{$1=$2=$3=$4=$5=$6="";print $0}' ` 
+            echo "<tr> 
+                  <td> $cpu_chk    </td>
+                  <td> $mem_chk    </td>
+                  <td> $pid_chk    </td>
+                  <td> $tt_chk     </td>
+                  <td> $stime_chk  </td>
+                  <td> $time_chk   </td>
+                  <td> $cmd_chk    </td>
+                  </tr> 
+                 "  >> $cpu_chk_html
+         else
+            cpu_chk=`cat $cpu_file | sed -n "$i,${i}p" | awk '{print $1}' `
+            mem_chk=`cat $cpu_file | sed -n "$i,${i}p" | awk '{print $2}' `
+            pid_chk=`cat $cpu_file | sed -n "$i,${i}p" | awk '{print $3}' `
+            tt_chk=`cat $cpu_file | sed -n "$i,${i}p" | awk '{print $4}' `
+            stime_chk=`cat $cpu_file | sed -n "$i,${i}p" | awk '{print $5}' `
+            time_chk=`cat $cpu_file | sed -n "$i,${i}p" | awk '{print $6}' `
+            cmd_chk=`cat $cpu_file | sed -n "$i,${i}p" | awk '{$1=$2=$3=$4=$5=$6="";print $0}' ` 
+            echo "<tr> 
+                  <td> $cpu_chk    </td>
+                  <td> $mem_chk    </td>
+                  <td> $pid_chk    </td>
+                  <td> $tt_chk     </td>
+                  <td> $stime_chk  </td>
+                  <td> $time_chk   </td>
+                  <td> $cmd_chk    </td>
+                  </tr> 
+                 "  >> $cpu_chk_html
+         fi
+         i=`expr $i + 1 `
+      
+      done
+
+      #存取 cpu 記錄檔 (e)
+      
+      echo "
+           </table> 
+           </div>
+           "  >> $cpu_chk_html
+      echo " "
+
+   }
+
+   title_cpu
+
+   echo '<table width=100% border=1>
+   <tr>
+   <th colspan=2 style="background-color:#FFECC9">檢查 CPU </th>
+   </tr> </table>
+    ' >> $cpu_chk_html
+
+   echo "" > $cpu_file2
+
+   function chk_cpu_idle {
+         chk_mail="Y"
+         echo '<table width=100% border=1>
+            <tr>
+            <th colspan=2 style="background-color:#FF3B3B">檢查 CPU idle 低於  $cpu_lim_idle </th>
+            <th colspan=2 style="background-color:#FFECC9">CPU idle  : $cpu_idle </th>
+            </tr> </table> ' >> $cpu_chk_html
+
+         chk_cpu_process
+
+
+   }
+
+   function chk_cpu_load {
+         chk_mail="Y"
+         echo '<table width=100% border=1>
+            <tr>
+            <th colspan=2 style="background-color:#FF3B3B">檢查 CPU 5 min load average 高於  $cpu_lim_load </th>
+            <th colspan=2 style="background-color:#FFECC9">CPU 5min load average : $cpu_load </th>
+            </tr> </table> ' >> $cpu_chk_html
+         
+         chk_cpu_process
+
+   }
+
+
+   if [ "$num" -gt "0" ];then
+      if [ $(echo "$cpu_lim_idle > $cpu_idle"|bc) -eq 1 ] ; then
+         chk_cpu_idle
+      else
+         if [ $(echo "$cpu_lim_load < $cpu_load"|bc) -eq 1 ] ; then
+            chk_cpu_load
+         else
+            echo '<table width=100% border=1>
+            <tr>
+            <th colspan=2 style="background-color:#FFECC9">CPU 檢查 ok </th>
+            </tr> </table>
+             ' >> $cpu_chk_html
+            
+         fi
+      fi
+         if [ $(echo "$cpu_proc_total > $cpu_total_lim"|bc) -eq 1 ] ; then 
+            chk_mail="Y"
+            echo "Y" >> $chk_cpu
+            echo " "
+            echo '<table width=100% border=1>
+            <tr>
+            <th colspan=2 style="background-color:#FF3B3B">檢查 process 執行超過 CPU total $cpu_total_lim  % </th>
+            <th colspan=2 style="background-color:#FF3B3B">process CPU total $cpu_total  % </th>
+            <th colspan=2 style="background-color:#FFECC9">process top 10 CPU total %  : $cpu_proc_total </th>
+            </tr> </table> ' >> $cpu_chk_html
+            #echo "process top10 CPU total : " $cpu_proc_total
+         fi
+
+   fi
+fi
+
+if [ -f $cpu_file ]; then
+   rm -rf $cpu_file
+fi
+
+#if [ -f $cpu_chk_html ] ; then
+   #cp -p $cpu_chk_html $cpu_chk_dir/../../basement 
+#fi

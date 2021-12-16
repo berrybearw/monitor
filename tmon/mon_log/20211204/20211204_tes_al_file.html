@@ -1,0 +1,582 @@
+<pre>*******************************
+<table width=500 border=1>
+<tr>
+<th colspan=2 style=background-color:#FFECC9><font color=blue>Sat Dec  4 22:53:45 CST 2021</font></th>
+</tr> </table> 
+<table width=100% border=1> 
+<th>   mail can change from /u1/etc/tmon/tmon.conf   </th>
+</table> 
+<table width=100% border=1> 
+ 
+     <th colspan=3 style=background-color:#00E3E3>important </th>
+     <th colspan=5 style=background-color:#00E3E3>異常可能會有那些問題 </th>
+     
+
+     <tr> 
+     
+
+        <th colspan=3 style=background-color:#FFECC9>DB Oracle 可連線 </th>
+        
+ 
+     <th colspan=5 style=background-color:#FFECC9>程式不能開或閃退 </th>
+     
+ </tr> 
+ <tr> 
+ 
+          <th colspan=3 style=background-color:#FFECC9>網路 Apache 存活 </th>
+          
+ 
+     <th colspan=5 style=background-color:#FFECC9>T100 首頁無法開啟 </th>
+     </tr>
+     
+ <tr> 
+ 
+        <th colspan=3 style=background-color:#FFECC9>授權 flmprg 存活 </th>
+        
+ 
+     <th colspan=5 style=background-color:#FFECC9>程式不能開或閃退 </th>
+     </tr>
+     
+ <tr> 
+
+        <th colspan=3 style=background-color:#FFECC9>整合 gas fastcgi topprd 存活  </th>
+        
+ 
+     <th colspan=5 style=background-color:#FFECC9>接口程式異常 </th>
+     </tr>
+     
+
+     <tr> 
+     
+
+<tr>
+         <th colspan=3 style=background-color:#FFECC9>User </th>
+         <th colspan=5 style=background-color:#FEECC9> </th>
+         </tr> 
+ 
+   <th colspan=8 style=background-color:#00E3E3>CPU </th>
+   <tr>
+   <th colspan=8 style=background-color:#00E3E3>整體使用大約超過 CPU total 30 % 可能造成系統 load 過高 </th>
+   </tr>
+    
+ 
+     <tr>
+     
+
+        <th colspan=2 rowspan=2 style=background-color:#FFECC9>檢查 CPU OK </th>
+        
+
+     <th colspan=3 style=background-color:#FFECC9>CPU total 1600 % </th>
+     <th colspan=3 style=background-color:#FFECC9>CPU now USE 1332.5 %  </th>
+     <tr>
+     <th colspan=3 style=background-color:#FFECC9>CPU idle 16.6 </th>
+     <th colspan=3 style=background-color:#FFECC9>load average 14.02 13.34 13.01 </th>
+     </tr>
+     
+ 
+   <th colspan=8 style=background-color:#00E3E3>Mem </th>
+   <tr>
+   <th colspan=8 style=background-color:#00E3E3>內存 ( Mem ) 使用大約超過 70 % 會造成系統異常  </th>
+   </tr>
+     
+
+     <tr>
+     
+
+        <th colspan=2 rowspan=2 style=background-color:#FFECC9>檢查 Mem OK </th>
+        
+
+     <th colspan=3 style=background-color:#FFECC9>Mem total 46G  </th>
+     <th colspan=3 style=background-color:#FFECC9>Mem USE 21G   </th>
+     </tr>
+     <tr>
+     <th colspan=3 style=background-color:#FFECC9>Swap total 9G </th>
+     <th colspan=3 style=background-color:#FFECC9>Swap USE 8.5M </th>
+     </tr>
+     
+ 
+   <tr>
+   <th colspan=3 style=background-color:#00E3E3>程序與磁碟空間存取 </th>
+   <th colspan=5 style=background-color:#00E3E3>異常可能會有那些問題 </th>
+   </tr>
+     
+ 
+     <tr>
+     
+
+           <th colspan=3 style=background-color:#FFECC9>CPU 使用没有超过 2 hr </th>
+           
+
+     <th colspan=5 style=background-color:#FFECC9>系統資源占用 </th>
+     </tr>
+     
+
+   <tr>
+   <th colspan=3 style=background-color:#FFECC9>磁碟空間 </th>
+   <th colspan=5 style=background-color:#FFECC9>大約超過 80 % 需注意 ， 100 % 系統會異常 </th>
+   </tr>
+     
+
+   <tr>
+   <th colspan=3 style=background-color:#FFECC9>ut 使用量 </th>
+   <th colspan=5 style=background-color:#FFECC9>大約超過 80 % 需注意 ， 100 % 程式會異常 </th>
+   </tr>
+     
+ 
+     </tr> 
+
+   <th colspan=3 style=background-color:#00E3E3>DB </th>
+   <th colspan=5 style=background-color:#00E3E3>異常可能會有那些問題 </th>
+     
+ <tr> 
+ 
+          <th colspan=3 style=background-color:#FFECC9>整體 表空間 </th>
+          
+ 
+     <th colspan=5 style=background-color:#FFECC9>大約超過 80 % 需注意 ， 100 % 程式會異常 </th>
+     </tr>
+     
+ <tr> 
+
+   <tr>
+   <th colspan=3 style=background-color:#FFECC9>lock table </th>
+   <th colspan=5 style=background-color:#FFECC9>lock table 過久要檢查 ， 預防系統資源占用 </th>
+   </tr>
+   <tr>
+   <th colspan=3 style=background-color:#FFECC9>redo 每日切換頻率 </th>
+   <th colspan=5 style=background-color:#FFECC9>建議 30 min 切換 1 次 </th>
+   </tr>
+   <tr>
+   <th colspan=3 style=background-color:#FFECC9>undo 表空間 </th>
+   <th colspan=5 style=background-color:#FFECC9>大約超過 80 % 需注意 ， 100% 程式會異常 </th>
+   </tr>
+   <tr>
+   <th colspan=3 style=background-color:#FFECC9>temp 表空間 </th>
+   <th colspan=5 style=background-color:#FFECC9>大約超過 80 % 需注意 ， 100% 程式會異常 </th>
+   </tr>
+   <tr>
+   <th colspan=3 style=background-color:#FFECC9>temptabs 表空間 </th> 
+   <th colspan=5 style=background-color:#FFECC9>大約超過 80 % 需注意 ， 100% 程式會異常 </th>
+   </tr>
+     
+
+     <th colspan=3 style=background-color:#00E3E3>例行性檢查 </th>
+     <th colspan=5 style=background-color:#00E3E3>異常可能會有那些問題 </th>
+     
+ <tr> 
+
+        <th colspan=3 style=background-color:#FFECC9>webrun awsp920 log 15575 </th>
+        <th colspan=5 style=background-color:#FFECC9>接口程式拋轉上可能需檢查 </th>
+        </tr>
+        <tr>
+        <th colspan=3 style=background-color:#FFECC9>webrun log 6088 </th>
+        <th colspan=5 style=background-color:#FFECC9>程式可能有機率閃退 ， 建議檢查是否有 pc 同 hostname  </th>
+        </tr>
+        
+</table> 
+
+Y
+t100demo
+
+<table width=500 border=1> 
+ 
+             <th colspan=2 style=background-color:#FFECC9>Apache 存活 </th>
+             
+
+           <th colspan=2 style=background-color:#FFECC9>gas fastcgi topprd 存活  </th>
+           
+</table>
+
+Y
+<table width=500 border=1>
+      <tr>
+      <td colspan=5 align=center style=background-color:#FFECC9> 相關排程檢查 </td>
+      </tr>
+       
+<tr>
+          <td rowspan=6 align=center>T100backup</td>
+          </tr> 
+<tr> 
+               <td> 排程  T100backup  20211203  </td>
+               <td> 沒開啟 </td>
+               </tr>
+<tr> 
+               <td> 排程  T100backup  20211202  </td>
+               <td> 沒開啟 </td>
+               </tr>
+<tr> 
+               <td> 排程  T100backup  20211201  </td>
+               <td> 沒開啟 </td>
+               </tr>
+<tr> 
+               <td> 排程  T100backup  20211130  </td>
+               <td> 沒開啟 </td>
+               </tr>
+<tr> 
+               <td> 排程  T100backup  20211129  </td>
+               <td> 沒開啟 </td>
+               </tr>
+</tr></table> 
+<table width=500 border=1>
+      <tr>
+      <td colspan=5 align=center style=background-color:#FFECC9> 排程過程檢查 </td>
+      </tr>
+       
+<tr>
+          <td colspan=5 align=center>T100backup</td>
+          </tr> 
+<tr>
+          <td colspan=5 align=center> 沒發現錯誤 </td>
+          </tr> 
+</tr></table> 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU idle 低於  30 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU idle  :   17.1 </th>
+            </tr> </table> 
+<div class="content"><table width=100% border=1><tr><th colspan=1 style=background-color:#FFECC9>
+20211204 CPU 使用量 顯示 80 % 以上</div> </th></tr></table> </div>
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>CPU 20211204 </th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.9    </td>
+                  <td> 0.3    </td>
+                  <td> 65250    </td>
+                  <td> ?     </td>
+                  <td> 10:13  </td>
+                  <td> 12:38:47   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.9    </td>
+                  <td> 0.3    </td>
+                  <td> 118625    </td>
+                  <td> ?     </td>
+                  <td> 10:19  </td>
+                  <td> 12:33:17   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 4090    </td>
+                  <td> ?     </td>
+                  <td> 11:32  </td>
+                  <td> 11:20:22   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 0.2    </td>
+                  <td> 1.0    </td>
+                  <td> 19259    </td>
+                  <td> ?     </td>
+                  <td> Dec03  </td>
+                  <td> 00:03:00   </td>
+                  <td>       /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/bin/java -Xmx1000m -Xmn512m -Djetty.home=/u1/topjetty -cp /u1/topjetty/lib/jetty-xml-8.1.16.v20140903.jar:/u1/topjetty/lib/servlet-api-3.0.jar:/u1/topjetty/lib/jetty-http-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-continuation-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-server-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-security-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-servlet-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-webapp-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-deploy-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-servlets-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-annotations-8.1.16.v20140903.jar:/u1/topjetty/lib/annotations/javax.annotation-1.1.0.v201108011116.jar:/u1/topjetty/lib/annotations/org.objectweb.asm-3.1.0.v200803061910.jar:/u1/topjetty/lib/jetty-jmx-8.1.16.v20140903.jar:/u1/topjetty/lib/jsp/com.sun.el-2.2.0.v201108011116.jar:/u1/topjetty/lib/jsp/javax.el-2.2.0.v201108011116.jar:/u1/topjetty/lib/jsp/javax.servlet.jsp.jstl-1.2.0.v201105211821.jar:/u1/topjetty/lib/jsp/javax.servlet.jsp-2.2.0.v201112011158.jar:/u1/topjetty/lib/jsp/org.apache.jasper.glassfish-2.2.2.v201112011158.jar:/u1/topjetty/lib/jsp/org.apache.taglibs.standard.glassfish-1.2.0.v201112081803.jar:/u1/topjetty/lib/jsp/org.eclipse.jdt.core-3.7.1.jar:/u1/topjetty/lib/jetty-jndi-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-plus-8.1.16.v20140903.jar:/u1/topjetty/lib/jndi/javax.activation-1.1.0.v201105071233.jar:/u1/topjetty/lib/jndi/javax.mail.glassfish-1.4.1.v201005082020.jar:/u1/topjetty/resources:/u1/topjetty/lib/jetty-websocket-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-util-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-io-8.1.16.v20140903.jar org.eclipse.jetty.xml.XmlConfiguration /tmp/start5489787104586144176.properties /u1/topjetty/etc/jetty.xml /u1/topjetty/etc/jetty-annotations.xml /u1/topjetty/etc/jetty-deploy.xml /u1/topjetty/etc/jetty-webapps.xml /u1/topjetty/etc/jetty-contexts.xml /u1/topjetty/etc/jetty-logging.xml /u1/topjetty/etc/jetty-started.xml    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 12413    </td>
+                  <td> ?     </td>
+                  <td> 16:26  </td>
+                  <td> 06:26:33   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 17042    </td>
+                  <td> ?     </td>
+                  <td> 13:49  </td>
+                  <td> 09:02:52   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 26133    </td>
+                  <td> ?     </td>
+                  <td> 15:44  </td>
+                  <td> 07:08:19   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 49987    </td>
+                  <td> ?     </td>
+                  <td> 10:40  </td>
+                  <td> 12:12:31   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 62228    </td>
+                  <td> ?     </td>
+                  <td> 00:06  </td>
+                  <td> 22:44:54   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 82735    </td>
+                  <td> ?     </td>
+                  <td> 09:59  </td>
+                  <td> 12:53:06   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 100721    </td>
+                  <td> ?     </td>
+                  <td> 10:34  </td>
+                  <td> 12:18:22   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 process 執行超過 CPU total 800  % </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU has total %  : 998.2 </th>
+            </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>CPU has total             : 1600 % </th>
+      <th colspan=2 style=background-color:#FFECC9>process top10 CPU total   : 998.2 % </th>
+      </tr> </table>
+       
+
+ start check webrun log genero 15575  
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 webrun awsp920 log genero err 15575</th>
+   </tr> </table> 
+檢查 webrun awsp920 log genero err 15575 start 
+2021-12-04 sum code 15575 :  0
+2021-12-04 01 hour :  0
+2021-12-04 02 hour :  0
+2021-12-04 03 hour :  0
+2021-12-04 04 hour :  0
+2021-12-04 05 hour :  0
+2021-12-04 06 hour :  0
+2021-12-04 07 hour :  0
+2021-12-04 08 hour :  0
+2021-12-04 09 hour :  0
+2021-12-04 10 hour :  0
+2021-12-04 11 hour :  0
+2021-12-04 12 hour :  0
+2021-12-04 13 hour :  0
+2021-12-04 14 hour :  0
+2021-12-04 15 hour :  0
+2021-12-04 16 hour :  0
+2021-12-04 17 hour :  0
+2021-12-04 18 hour :  0
+2021-12-04 19 hour :  0
+2021-12-04 20 hour :  0
+2021-12-04 21 hour :  0
+2021-12-04 22 hour :  0
+檢查 webrun awsp920 log genero err 15575 end
+
+ start check redo 每日切換次數 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>Redo log 切換次數檢查</th>
+   </tr>
+<tr>
+<td>DAT</td>
+<td>CNT</td>
+</tr>
+<tr>
+<td>20211204</td>
+<td>3</td>
+</tr>
+<tr>
+<td>20211203</td>
+<td>6</td>
+</tr>
+<tr>
+<td>20211202</td>
+<td>7</td>
+</tr>
+<tr>
+<td>20211201</td>
+<td>73</td>
+</tr>
+<tr>
+<td>20211130</td>
+<td>16</td>
+</tr>
+<tr>
+<td>20211129</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211128</td>
+<td>10</td>
+</tr>
+<tr><td colspan=2 align=center valign=middle>====Redo log切換次數最大日期====</td></tr>
+   <tr><td>DAT</td><td>CNT</td></tr>
+<tr>
+<td>20211201</td>
+<td>73</td>
+</tr>
+<tr><td colspan=2 align=center valign=middle>====當日切換次數分析====</td></tr>
+<tr>
+<td>DATETIME_HH24</td>
+<td>CNT</td>
+</tr>
+<tr>
+<td>20211201_23</td>
+<td>3</td>
+</tr>
+<tr>
+<td>20211201_22</td>
+<td>6</td>
+</tr>
+<tr>
+<td>20211201_21</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_20</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_19</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_18</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_17</td>
+<td>6</td>
+</tr>
+<tr>
+<td>20211201_16</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_15</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_14</td>
+<td>8</td>
+</tr>
+<tr>
+<td>20211201_13</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_12</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_11</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_10</td>
+<td>2</td>
+</tr>
+<tr>
+<td>20211201_09</td>
+<td>1</td>
+</tr>
+<tr>
+<td>20211201_01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>20211201_00</td>
+<td>1</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+chk_Warn :  Y
+
+<table width=800 border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/sda5 </td>
+<td> 104806400 </td>
+<td> 92445044 </td>
+<td> 12361356 </td>
+<td> 89% </td>
+<td> /u1 </td>
+<tr><td> /dev/sda2 </td>
+<td> 314419200 </td>
+<td> 297972200 </td>
+<td> 16447000 </td>
+<td> 95% </td>
+<td> /u2 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u1=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+<tr><td> 31G </td>
+<td> /u1/topprd </td></tr>
+<tr><td> 26G </td>
+<td> /u1/usr/tiptop </td></tr>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u2=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+<tr><td> 8.8G </td>
+<td> /u2 </td></tr>
+<tr><td> 8.3G </td>
+<td> /u2/oracle </td></tr>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>===== r.h log 大於 1hr 未持續使用檔案 =====</th></tr>
+</table>

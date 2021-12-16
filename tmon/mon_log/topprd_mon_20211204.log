@@ -1,0 +1,1798 @@
+
+Y
+<table width=500 border=1>
+      <tr>
+      <td colspan=5 align=center style=background-color:#FFECC9> 相關排程檢查 </td>
+      </tr>
+       
+<tr>
+          <td rowspan=6 align=center>T100backup</td>
+          </tr> 
+<tr> 
+               <td> 排程  T100backup  20211203  </td>
+               <td> 沒開啟 </td>
+               </tr>
+<tr> 
+               <td> 排程  T100backup  20211202  </td>
+               <td> 沒開啟 </td>
+               </tr>
+<tr> 
+               <td> 排程  T100backup  20211201  </td>
+               <td> 沒開啟 </td>
+               </tr>
+<tr> 
+               <td> 排程  T100backup  20211130  </td>
+               <td> 沒開啟 </td>
+               </tr>
+<tr> 
+               <td> 排程  T100backup  20211129  </td>
+               <td> 沒開啟 </td>
+               </tr>
+</tr></table> 
+<table width=500 border=1>
+      <tr>
+      <td colspan=5 align=center style=background-color:#FFECC9> 排程過程檢查 </td>
+      </tr>
+       
+<tr>
+          <td colspan=5 align=center>T100backup</td>
+          </tr> 
+<tr>
+          <td colspan=5 align=center> 沒發現錯誤 </td>
+          </tr> 
+</tr></table> 
+
+<table width=100% border=1>
+      <tr>
+      <th colspan=16 style=background-color:#FFECC9>ORACLE LOCK檢查</th>
+      </tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>          14</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptop         </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptop    95396      1  0 22:47 ?        00:00:01 /u1/genero/fglgws/lib/fglrun-bin --java-option=-Xmx512M --java-option=-Xms256M /u1/topprd/erp/azz/42r/azzi000 {"sessionkey":"IL4W475823772d","parent":"0","prog":"azzi000","param":["99"],"schedule_seq":0,"static_ent":99}</td>
+<td colspan=2 width=100>select ooag011 from   ooag_t where ooagent = :p1 AND ooag001 = :p2</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>         101</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptop         </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptop   103720      1  0 22:51 ?        00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aoos020 {"sessionkey":"IL4O511623621d","parent":"IL4W475823772d","parentprog":"azzi000","ancest":"IL4W475823772d","prog":"aoos020","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}</td>
+<td colspan=2 width=100>select gzswl004 from   gzswl_t where gzswl001 = :"SYS_B_0" AND gzswl002 = :"SYS_B_1" AND gzswl003 = :"SYS_B_2"</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>         171</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptop         </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptop   103223      1  0 22:50 ?        00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmt500 {"sessionkey":"IL4O501917276d","parent":"IL4W475823772d","parentprog":"azzi000","ancest":"IL4W475823772d","prog":"apmt500","account":"tiptoper","param":["\"3\""],"schedule_seq":0,"static_ent":99}</td>
+<td colspan=2 width=100>select icab003 from   icab_t where icabent = :p1 AND icab001 = :p2 AND icab002 = ( SELECT MAX(icab002) FROM icab_t WHERE icabent = :p3 AND icab001 = :p4)</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DSDEMO    </td>
+<td colspan=2>         286</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptop         </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptop    95707      1  0 22:48 ?        00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aps/42r/apsp501 {"sessionkey":"IL4O482446738d","parent":"IL4O481512244d","parentprog":"apsp500","ancest":"IL4W475823772d","prog":"apsp501","account":"tiptoper","param":["/ut/topprd/tmp/T100-20211204224816.xml"],"schedule_seq":0,"static_ent":99}
+tiptop    95841  95707  4 22:48 ?        00:00:12 java -Xss256k -Xms64M -Xmx2048M -Duser.timezone=Asia/Taipei -jar /u1/topprd/apse/std/engine/console.jar <?xml version="1.0" encoding="UTF-8" standalone="no"?><Message>   <Header>     <From>T100</From>     <To>APS</To>     <SerialNumber>10006</SerialNumber>   </Header>   <Body>     <Request>       <Method>         <Name>sim_mp</Name>         <DBServerId>10.40.41.146</DBServerId>         <ServerPort>1521</ServerPort>         <DBType>ORACLE</DBType>         <DBAccount>dsaps</DBAccount>         <DBPassword/>         <DBId>topprd</DBId>         <UserId>dsdemo</UserId>         <CommandSource>ERP</CommandSource>         <CompanyCode>99</CompanyCode>         <OrgCode>DSCTC</OrgCode>         <APSCode>2021103000</APSCode>         <Version>20211204224816</Version>         <sfaa048>          </sfaa048>         <sfaa045>          </sfaa045>         <Executor>00000</Executor>         <TrustedConnection>N</TrustedConnection>       </Method>     </Request>   </Body> </Message></td>
+<td colspan=2 width=100>select gzsz001, gzsz003 from   gzsz_t where gzsz002 = :p1</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DS        </td>
+<td colspan=2>        3375</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptop         </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptop    35509      1  0 21:56 pts/3    00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzi140 IL4V564990039d</td>
+<td colspan=2 width=100>select :"SYS_B_0",                                            el.dzel001   cdf,                              ell.dzell003 cdf_desc                     from   dzel_t el
+left outer join dzell_t ell                                 on ell.dzell001 = el.dzel001                  and ell.dzell002 = :"SYS_B_1"  where el.dzel006 = :"SYS_B_2"                           and el.
+dzel003 like :"SYS_B_3"  order by el.dzel009</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+<tr><td width=100 colspan=2>DB user</td>
+<td width=100 colspan=2>等待大約秒數</td>
+<td width=100 colspan=2>hostname</td>
+<td width=100 colspan=2>帳號</td>
+<td width=100 colspan=2>執行作業方式</td>
+<td width=100 colspan=2>等待LOCK作業</td>
+<td width=100 colspan=2>等待LOCK語句</td>
+<td width=100 colspan=2>LOCK物件</td></tr> 
+<tr><td colspan=2>DS        </td>
+<td colspan=2>       39281</td>
+<td width=100 colspan=2>t100demo       </td>
+<td width=100 colspan=2>tiptop         </td>
+<td width=100 colspan=2>fglrun-bin@t100demo (TNS V1-V3)</td>
+<td colspan=2 width=100>tiptop    76147  75381  0 11:57 ?        00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aws/42r/awsp920.42r awsp920</td>
+<td colspan=2 width=100>insert into wsfb_t (wsfb001,wsfb002,wsfb003,wsfb004) VALUES (:p1,:p2,:p3,:p4)</td>
+<td colspan=2></td></tr> 
+<tr><td height=10 style=background-color:#FFECC9 colspan=16></td></tr>
+</table>
+
+2cb5jmv03jpsh
+2cb5jmv03jpsh
+0tmumc5nnp0v4
+9x7c0gt47x18y
+2cb5jmv03jpsh
+2cb5jmv03jpsh
+2cb5jmv03jpsh
+2cb5jmv03jpsh
+2cb5jmv03jpsh
+2cb5jmv03jpsh
+2cb5jmv03jpsh
+2cb5jmv03jpsh
+25m95ka8k6knm
+<table border="1" cellpadding="5" 
+                style="border:2px ;text-align:center;">
+<tr><td style="background-color:#FFECC9">沒有執行過久 SQL </td></tr>
+</table>
+<table width=500 border="1" cellpadding="5" 
+                   style="border:2px ;text-align:center;">
+<tr><td colspan=3 style="background-color:#FFECC9">top 10 use CPU time high SQL </td></tr>
+<tr><td colspan="3"> No.  1 </td></tr>
+<tr><td rowspan="7">service name :  topprd </td></tr>
+<tr><td>cputime (sec)  </td>  <td> 55 </td></tr>
+<tr><td>sqltime (sec)  </td>  <td> 171 </td></tr>
+<tr><td>sql_exec_start  </td>  <td> 2021-12-04 04:04:41 </td></tr>
+<tr>
+                  <td>module  </td><td> SQL*Plus </td></tr>
+<tr>
+                  <td>user  </td><td> DSBACK </td></tr>
+<tr>
+                  <td>prog_sql  </td><td> BEGIN dbms_utility.analyze_schema('DSDATA7','ESTIMATE'); END; </td></tr>
+</table>
+<table width=500 border="1" cellpadding="5" 
+                   style="border:2px ;text-align:center;">
+<tr><td colspan=3 style="background-color:#FFECC9">top 10 use CPU time high SQL </td></tr>
+<tr><td colspan="3"> No.  2 </td></tr>
+<tr><td rowspan="7">service name :  topprd </td></tr>
+<tr><td>cputime (sec)  </td>  <td> 47 </td></tr>
+<tr><td>sqltime (sec)  </td>  <td> 122 </td></tr>
+<tr><td>sql_exec_start  </td>  <td> 2021-12-04 04:02:38 </td></tr>
+<tr>
+                  <td>module  </td><td> SQL*Plus </td></tr>
+<tr>
+                  <td>user  </td><td> DSBACK </td></tr>
+<tr>
+                  <td>prog_sql  </td><td> BEGIN dbms_utility.analyze_schema('DSDATA2','ESTIMATE'); END; </td></tr>
+</table>
+<table width=500 border="1" cellpadding="5" 
+                   style="border:2px ;text-align:center;">
+<tr><td colspan=3 style="background-color:#FFECC9">top 10 use CPU time high SQL </td></tr>
+<tr><td colspan="3"> No.  3 </td></tr>
+<tr><td rowspan="7">service name :  topprd </td></tr>
+<tr><td>cputime (sec)  </td>  <td> 45 </td></tr>
+<tr><td>sqltime (sec)  </td>  <td> 108 </td></tr>
+<tr><td>sql_exec_start  </td>  <td> 2021-12-04 04:12:15 </td></tr>
+<tr>
+                  <td>module  </td><td> SQL*Plus </td></tr>
+<tr>
+                  <td>user  </td><td> DSBACK </td></tr>
+<tr>
+                  <td>prog_sql  </td><td> BEGIN dbms_utility.analyze_schema('DSDATA4','ESTIMATE'); END; </td></tr>
+</table>
+<table width=500 border="1" cellpadding="5" 
+                   style="border:2px ;text-align:center;">
+<tr><td colspan=3 style="background-color:#FFECC9">top 10 use CPU time high SQL </td></tr>
+<tr><td colspan="3"> No.  4 </td></tr>
+<tr><td rowspan="7">service name :  topprd </td></tr>
+<tr><td>cputime (sec)  </td>  <td> 65 </td></tr>
+<tr><td>sqltime (sec)  </td>  <td> 209 </td></tr>
+<tr><td>sql_exec_start  </td>  <td> 2021-12-04 04:07:32 </td></tr>
+<tr>
+                  <td>module  </td><td> SQL*Plus </td></tr>
+<tr>
+                  <td>user  </td><td> DSBACK </td></tr>
+<tr>
+                  <td>prog_sql  </td><td> BEGIN dbms_utility.analyze_schema('DSDEMO','ESTIMATE'); END; </td></tr>
+</table>
+<table width=500 border="1" cellpadding="5" 
+                   style="border:2px ;text-align:center;">
+<tr><td colspan=3 style="background-color:#FFECC9">top 10 use CPU time high SQL </td></tr>
+<tr><td colspan="3"> No.  5 </td></tr>
+<tr><td rowspan="7">service name :  topprd </td></tr>
+<tr><td>cputime (sec)  </td>  <td> 48 </td></tr>
+<tr><td>sqltime (sec)  </td>  <td> 139 </td></tr>
+<tr><td>sql_exec_start  </td>  <td> 2021-12-04 03:54:12 </td></tr>
+<tr>
+                  <td>module  </td><td> SQL*Plus </td></tr>
+<tr>
+                  <td>user  </td><td> DSBACK </td></tr>
+<tr>
+                  <td>prog_sql  </td><td> BEGIN dbms_utility.analyze_schema('DSDATA3','ESTIMATE'); END; </td></tr>
+</table>
+<table width=500 border="1" cellpadding="5" 
+                   style="border:2px ;text-align:center;">
+<tr><td colspan=3 style="background-color:#FFECC9">top 10 use CPU time high SQL </td></tr>
+<tr><td colspan="3"> No.  6 </td></tr>
+<tr><td rowspan="7">service name :  topprd </td></tr>
+<tr><td>cputime (sec)  </td>  <td> 42 </td></tr>
+<tr><td>sqltime (sec)  </td>  <td> 119 </td></tr>
+<tr><td>sql_exec_start  </td>  <td> 2021-12-04 03:56:32 </td></tr>
+<tr>
+                  <td>module  </td><td> SQL*Plus </td></tr>
+<tr>
+                  <td>user  </td><td> DSBACK </td></tr>
+<tr>
+                  <td>prog_sql  </td><td> BEGIN dbms_utility.analyze_schema('DS','ESTIMATE'); END; </td></tr>
+</table>
+<table width=500 border="1" cellpadding="5" 
+                   style="border:2px ;text-align:center;">
+<tr><td colspan=3 style="background-color:#FFECC9">top 10 use CPU time high SQL </td></tr>
+<tr><td colspan="3"> No.  7 </td></tr>
+<tr><td rowspan="7">service name :  topprd </td></tr>
+<tr><td>cputime (sec)  </td>  <td> 42 </td></tr>
+<tr><td>sqltime (sec)  </td>  <td> 112 </td></tr>
+<tr><td>sql_exec_start  </td>  <td> 2021-12-04 04:00:46 </td></tr>
+<tr>
+                  <td>module  </td><td> SQL*Plus </td></tr>
+<tr>
+                  <td>user  </td><td> DSBACK </td></tr>
+<tr>
+                  <td>prog_sql  </td><td> BEGIN dbms_utility.analyze_schema('DSDATA1','ESTIMATE'); END; </td></tr>
+</table>
+<table width=500 border="1" cellpadding="5" 
+                   style="border:2px ;text-align:center;">
+<tr><td colspan=3 style="background-color:#FFECC9">top 10 use CPU time high SQL </td></tr>
+<tr><td colspan="3"> No.  8 </td></tr>
+<tr><td rowspan="7">service name :  topprd </td></tr>
+<tr><td>cputime (sec)  </td>  <td> 34 </td></tr>
+<tr><td>sqltime (sec)  </td>  <td> 79 </td></tr>
+<tr><td>sql_exec_start  </td>  <td> 2021-12-04 03:58:30 </td></tr>
+<tr>
+                  <td>module  </td><td> SQL*Plus </td></tr>
+<tr>
+                  <td>user  </td><td> DSBACK </td></tr>
+<tr>
+                  <td>prog_sql  </td><td> BEGIN dbms_utility.analyze_schema('DSDATA5','ESTIMATE'); END; </td></tr>
+</table>
+<table width=500 border="1" cellpadding="5" 
+                   style="border:2px ;text-align:center;">
+<tr><td colspan=3 style="background-color:#FFECC9">top 10 use CPU time high SQL </td></tr>
+<tr><td colspan="3"> No.  9 </td></tr>
+<tr><td rowspan="7">service name :  topprd </td></tr>
+<tr><td>cputime (sec)  </td>  <td> 24 </td></tr>
+<tr><td>sqltime (sec)  </td>  <td> 37 </td></tr>
+<tr><td>sql_exec_start  </td>  <td> 2021-12-04 04:11:01 </td></tr>
+<tr>
+                  <td>module  </td><td> SQL*Plus </td></tr>
+<tr>
+                  <td>user  </td><td> DSBACK </td></tr>
+<tr>
+                  <td>prog_sql  </td><td> BEGIN dbms_utility.analyze_schema('DSDATA','ESTIMATE'); END; </td></tr>
+</table>
+<table width=500 border="1" cellpadding="5" 
+                   style="border:2px ;text-align:center;">
+<tr><td colspan=3 style="background-color:#FFECC9">top 10 use CPU time high SQL </td></tr>
+<tr><td colspan="3"> No.  10 </td></tr>
+<tr><td rowspan="7">service name :  topprd </td></tr>
+<tr><td>cputime (sec)  </td>  <td> 27 </td></tr>
+<tr><td>sqltime (sec)  </td>  <td> 53 </td></tr>
+<tr><td>sql_exec_start  </td>  <td> 2021-12-04 03:59:49 </td></tr>
+<tr>
+                  <td>module  </td><td> SQL*Plus </td></tr>
+<tr>
+                  <td>user  </td><td> DSBACK </td></tr>
+<tr>
+                  <td>prog_sql  </td><td> BEGIN dbms_utility.analyze_schema('DSDATA6','ESTIMATE'); END; </td></tr>
+</table>
+<table width="100%" border="2" align="center" style="border: 2px solid rgb(0, 0, 209); border-image-source: initial; 
+border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; 
+width: 100%; border-collapse: collapse; line-height: 24px; font-size: 16px; font-family: 微軟正黑體;" class="resizable"
+><caption align="TOP" style="font-size: 18px; line-height: 34px; color: white; padding: 0px; 
+background-image: initial; background-attachment: initial; background-color: rgb(0, 0, 138); 
+background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; 
+background-repeat: initial;">
+SQL效能觀察 -- 前一日 TOP 10 SQL (依 disk read 使用) -- (依照收集時間順序顯示)
+</caption><colgroup><col align="LEFT" valign="top"></colgroup>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  1 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  1 </td>
+<td>  DSDEMO </td>
+<td>  368043 </td> 
+<td>  368469 </td> 
+<td style="background-color: rgb(299, 299, 0);">  1874946870  </td> 
+<td>  2317598  </td> 
+<td>  10  </td> 
+<td>  4344  </td> 
+<td>  0  </td> 
+<td>  0  </td> 
+<td>  2cb5jmv03jpsh  </td> 
+<td>  2021/12/04 10:12:32  </td> 
+<td>  JDBC Thin Client  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  with v_mo as ( select x_ent,x_site ,x_mo ,sfaa010 as x_part,x_sfac001, sfaa012 ap_db basement chk_script_time.txt download.42m download.4gl fun_result.txt infor_all.sh mon_log output.test readme.txt script set tmon tmon_chk tmon_clean.sh tmon.conf tmon_install tmon_set.sh tmon_time.txt tmon_title.conf dsaps.unit_conver(imaaent,imaa001,unit_id,imaa006) as mo_demand_qty, NVL(produced_qty,:"SYS_B_00") ap_db basement chk_script_time.txt download.42m download.4gl fun_result.txt infor_all.sh mon_log output.test readme.txt script set tmon tmon_chk tmon_clean.sh tmon.conf tmon_install tmon_set.sh tmon_time.txt tmon_title.conf dsaps.unit_conver(imaaent,imaa001,unit_id,imaa006) as mo_produced_qty from sfaa_t join imaa_t on sfaaent=imaaent and sfaa010=imaa001 left join (select sfacent as x_ent,sfacsite as x_site,sfacdocno as x_mo,sfac001 as x_sfac001,sfac004 as unit_id,sum(sfac005) as produced_qty from sfac_t where sfac002 in (:"SYS_B_01",:"SYS_B_02",:"SYS_B_03",:"SYS_B_04",:"SYS_B_05") group by sfacent, sfacsite, sfacdocno, sfac001, sfac004 ) x_sfac_t on sfaaent=x_ent and sfaasite=x_site and sfaadocno=x_mo ) , v_mo_joint as ( select sfa </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  2 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  2 </td>
+<td>  DSDEMO </td>
+<td>  361303 </td> 
+<td>  361665 </td> 
+<td style="background-color: rgb(299, 299, 0);">  1812542364  </td> 
+<td>  2318062  </td> 
+<td>  10  </td> 
+<td>  4166  </td> 
+<td>  0  </td> 
+<td>  0  </td> 
+<td>  0g2wd1pp18gj0  </td> 
+<td>  2021/12/04 09:12:22  </td> 
+<td>  JDBC Thin Client  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  /123.txt /2 /20211004 /al_file.html /aliv_sql.log /bin /boot /cdrom /chk_sql_log.html /_cputest.html /dev /etc /home /lib /lib64 /lock.html /m01 /media /mnt /opt /orafixv1.tar /oswarp /oswcpuinfo /oswifconfig /oswiostat /oswmeminfo /oswmpstat /oswnetstat /oswnfsiostat /oswpidstat /oswpidstatd /oswprvtnet /oswps /oswslabinfo /oswtop /oswvmstat /oswxentop /proc /q_lock2.log /q_lock.log /q_run_sql.out /root /run /sbin /srv /sys /T100_fr /T100_gr /tbs.html /tmon_t100back.xml /tmp /TSD-6-200807-200807-1.1.24.tgz /u1 /u2 /u3 /usr /ut /var Version:202111261430 when update to SVN, must also update version.**/ /123.txt /2 /20211004 /al_file.html /aliv_sql.log /bin /boot /cdrom /chk_sql_log.html /_cputest.html /dev /etc /home /lib /lib64 /lock.html /m01 /media /mnt /opt /orafixv1.tar /oswarp /oswcpuinfo /oswifconfig /oswiostat /oswmeminfo /oswmpstat /oswnetstat /oswnfsiostat /oswpidstat /oswpidstatd /oswprvtnet /oswps /oswslabinfo /oswtop /oswvmstat /oswxentop /proc /q_lock2.log /q_lock.log /q_run_sql.out /root /run /sbin /srv /sys /T100_fr /T100_gr /tbs.html /tmon_t100back.xml /tmp /TSD-6-200807-200807-1.1.24.tgz /u1 /u2 /u3 /usr /ut /var module: MP **/ /** 2016.4.27 修正為轉換為基礎單位imaa006 2016.11.09 修正工單聯產品檔sfac_t出現重覆資料 2017.08.23 #39946 納入BOM相關語法未考慮是否生效、效能調整 2017.09.19 #40921 MP載入語法效率調整 (zoey 資料範圍重整) 2017.09.27 #41097 中國電器-AMRP測試區規劃結果無資料 2017.09.29 #41072 富鈦-AMRP計算結果異常 (scrap_qty 值改成0) 2018.11.27 #51830 僑雲-庫存沒有輸出到psoz_t (調整工單要存在才可以納入工單聯副產品資訊) 2019.02.20 #54359 5區-拆件工單生產量錯誤 (調整拆件工單join條件導致出現重複資料) 2019.03.27 #55935 拆件工單規劃結果異常 (調整沒有主產品的拆件、多產出資料，語法產生的主產品預計生產數量需為0) 2019.09.27 #62526 ETL、函式的變數字串 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  3 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  3 </td>
+<td>  DSDEMO </td>
+<td>  81885 </td> 
+<td>  82008 </td> 
+<td style="background-color: rgb(299, 299, 0);">  419880707  </td> 
+<td>  231946  </td> 
+<td>  1  </td> 
+<td>  795  </td> 
+<td>  0  </td> 
+<td>  0  </td> 
+<td>  25m95ka8k6knm  </td> 
+<td>  2021/12/04 12:12:28  </td> 
+<td>  JDBC Thin Client  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  with v_mo as ( select x_ent,x_site ,x_mo ,sfaa010 as x_part,x_sfac001, sfaa012 ap_db basement chk_script_time.txt download.42m download.4gl fun_result.txt infor_all.sh mon_log output.test readme.txt script set tmon tmon_chk tmon_clean.sh tmon.conf tmon_install tmon_set.sh tmon_time.txt tmon_title.conf dsaps.unit_conver(imaaent,imaa001,unit_id,imaa006) as mo_demand_qty, NVL(produced_qty,:"SYS_B_00") ap_db basement chk_script_time.txt download.42m download.4gl fun_result.txt infor_all.sh mon_log output.test readme.txt script set tmon tmon_chk tmon_clean.sh tmon.conf tmon_install tmon_set.sh tmon_time.txt tmon_title.conf dsaps.unit_conver(imaaent,imaa001,unit_id,imaa006) as mo_produced_qty from sfaa_t join imaa_t on sfaaent=imaaent and sfaa010=imaa001 left join (select sfacent as x_ent,sfacsite as x_site,sfacdocno as x_mo,sfac001 as x_sfac001,sfac004 as unit_id,sum(sfac005) as produced_qty from sfac_t where sfac002 in (:"SYS_B_01",:"SYS_B_02",:"SYS_B_03",:"SYS_B_04",:"SYS_B_05") group by sfacent, sfacsite, sfacdocno, sfac001, sfac004 ) x_sfac_t on sfaaent=x_ent and sfaasite=x_site and sfaadocno=x_mo ) , v_mo_joint as ( select sfa </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  4 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  4 </td>
+<td>  DSDEMO </td>
+<td>  81885 </td> 
+<td>  82008 </td> 
+<td style="background-color: rgb(299, 299, 0);">  419880707  </td> 
+<td>  231946  </td> 
+<td>  1  </td> 
+<td>  795  </td> 
+<td>  0  </td> 
+<td>  0  </td> 
+<td>  25m95ka8k6knm  </td> 
+<td>  2021/12/04 12:12:28  </td> 
+<td>  JDBC Thin Client  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  with v_mo as ( select x_ent,x_site ,x_mo ,sfaa010 as x_part,x_sfac001, sfaa012 ap_db basement chk_script_time.txt download.42m download.4gl fun_result.txt infor_all.sh mon_log output.test readme.txt script set tmon tmon_chk tmon_clean.sh tmon.conf tmon_install tmon_set.sh tmon_time.txt tmon_title.conf dsaps.unit_conver(imaaent,imaa001,unit_id,imaa006) as mo_demand_qty, NVL(produced_qty,:"SYS_B_00") ap_db basement chk_script_time.txt download.42m download.4gl fun_result.txt infor_all.sh mon_log output.test readme.txt script set tmon tmon_chk tmon_clean.sh tmon.conf tmon_install tmon_set.sh tmon_time.txt tmon_title.conf dsaps.unit_conver(imaaent,imaa001,unit_id,imaa006) as mo_produced_qty from sfaa_t join imaa_t on sfaaent=imaaent and sfaa010=imaa001 left join (select sfacent as x_ent,sfacsite as x_site,sfacdocno as x_mo,sfac001 as x_sfac001,sfac004 as unit_id,sum(sfac005) as produced_qty from sfac_t where sfac002 in (:"SYS_B_01",:"SYS_B_02",:"SYS_B_03",:"SYS_B_04",:"SYS_B_05") group by sfacent, sfacsite, sfacdocno, sfac001, sfac004 ) x_sfac_t on sfaaent=x_ent and sfaasite=x_site and sfaadocno=x_mo ) , v_mo_joint as ( select sfa </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  5 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  5 </td>
+<td>  DS </td>
+<td>  2649 </td> 
+<td>  2672 </td> 
+<td style="background-color: rgb(299, 299, 0);">  352257060  </td> 
+<td>  353961903  </td> 
+<td>  3371  </td> 
+<td>  554  </td> 
+<td>  3372  </td> 
+<td>  3372  </td> 
+<td>  d44jc9p0zbvhy  </td> 
+<td>  2021/12/04 10:12:32  </td> 
+<td>  fglrun-bin@t100demo (TNS V1-V3  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select COUNT(:"SYS_B_0") from logd_t where logdent = :p1 AND logd001 = :p2 AND logd002 = :p3 AND logd003 = :p4 AND logd004 = :p5 AND logd005 = :p6 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  6 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  6 </td>
+<td>  DSDEMO </td>
+<td>  25693 </td> 
+<td>  25728 </td> 
+<td style="background-color: rgb(299, 299, 0);">  130506012  </td> 
+<td>  231696  </td> 
+<td>  1  </td> 
+<td>  289  </td> 
+<td>  0  </td> 
+<td>  0  </td> 
+<td>  9x7c0gt47x18y  </td> 
+<td>  2021/12/04 03:12:27  </td> 
+<td>  JDBC Thin Client  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  with v_mo as ( select x_ent,x_site ,x_mo ,sfaa010 as x_part,x_sfac001, sfaa012 ap_db basement chk_script_time.txt download.42m download.4gl fun_result.txt infor_all.sh mon_log output.test readme.txt script set tmon tmon_chk tmon_clean.sh tmon.conf tmon_install tmon_set.sh tmon_time.txt tmon_title.conf dsaps.unit_conver(imaaent,imaa001,unit_id,imaa006) as mo_demand_qty, NVL(produced_qty,:"SYS_B_00") ap_db basement chk_script_time.txt download.42m download.4gl fun_result.txt infor_all.sh mon_log output.test readme.txt script set tmon tmon_chk tmon_clean.sh tmon.conf tmon_install tmon_set.sh tmon_time.txt tmon_title.conf dsaps.unit_conver(imaaent,imaa001,unit_id,imaa006) as mo_produced_qty from sfaa_t join imaa_t on sfaaent=imaaent and sfaa010=imaa001 left join (select sfacent as x_ent,sfacsite as x_site,sfacdocno as x_mo,sfac001 as x_sfac001,sfac004 as unit_id,sum(sfac005) as produced_qty from sfac_t where sfac002 in (:"SYS_B_01",:"SYS_B_02",:"SYS_B_03",:"SYS_B_04",:"SYS_B_05") group by sfacent, sfacsite, sfacdocno, sfac001, sfac004 ) x_sfac_t on sfaaent=x_ent and sfaasite=x_site and sfaadocno=x_mo ) , v_mo_joint as ( select sfa </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  7 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  7 </td>
+<td>  DSDEMO </td>
+<td>  25693 </td> 
+<td>  25728 </td> 
+<td style="background-color: rgb(299, 299, 0);">  130506012  </td> 
+<td>  231722  </td> 
+<td>  1  </td> 
+<td>  289  </td> 
+<td>  0  </td> 
+<td>  0  </td> 
+<td>  83u8b92v593db  </td> 
+<td>  2021/12/04 03:12:27  </td> 
+<td>  JDBC Thin Client  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  /123.txt /2 /20211004 /al_file.html /aliv_sql.log /bin /boot /cdrom /chk_sql_log.html /_cputest.html /dev /etc /home /lib /lib64 /lock.html /m01 /media /mnt /opt /orafixv1.tar /oswarp /oswcpuinfo /oswifconfig /oswiostat /oswmeminfo /oswmpstat /oswnetstat /oswnfsiostat /oswpidstat /oswpidstatd /oswprvtnet /oswps /oswslabinfo /oswtop /oswvmstat /oswxentop /proc /q_lock2.log /q_lock.log /q_run_sql.out /root /run /sbin /srv /sys /T100_fr /T100_gr /tbs.html /tmon_t100back.xml /tmp /TSD-6-200807-200807-1.1.24.tgz /u1 /u2 /u3 /usr /ut /var Version:202111261430 when update to SVN, must also update version.**/ /123.txt /2 /20211004 /al_file.html /aliv_sql.log /bin /boot /cdrom /chk_sql_log.html /_cputest.html /dev /etc /home /lib /lib64 /lock.html /m01 /media /mnt /opt /orafixv1.tar /oswarp /oswcpuinfo /oswifconfig /oswiostat /oswmeminfo /oswmpstat /oswnetstat /oswnfsiostat /oswpidstat /oswpidstatd /oswprvtnet /oswps /oswslabinfo /oswtop /oswvmstat /oswxentop /proc /q_lock2.log /q_lock.log /q_run_sql.out /root /run /sbin /srv /sys /T100_fr /T100_gr /tbs.html /tmon_t100back.xml /tmp /TSD-6-200807-200807-1.1.24.tgz /u1 /u2 /u3 /usr /ut /var module: MP **/ /** 2016.4.27 修正為轉換為基礎單位imaa006 2016.11.09 修正工單聯產品檔sfac_t出現重覆資料 2017.08.23 #39946 納入BOM相關語法未考慮是否生效、效能調整 2017.09.19 #40921 MP載入語法效率調整 (zoey 資料範圍重整) 2017.09.27 #41097 中國電器-AMRP測試區規劃結果無資料 2017.09.29 #41072 富鈦-AMRP計算結果異常 (scrap_qty 值改成0) 2018.11.27 #51830 僑雲-庫存沒有輸出到psoz_t (調整工單要存在才可以納入工單聯副產品資訊) 2019.02.20 #54359 5區-拆件工單生產量錯誤 (調整拆件工單join條件導致出現重複資料) 2019.03.27 #55935 拆件工單規劃結果異常 (調整沒有主產品的拆件、多產出資料，語法產生的主產品預計生產數量需為0) 2019.09.27 #62526 ETL、函式的變數字串 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  8 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  8 </td>
+<td>  DSDEMO </td>
+<td>  25064 </td> 
+<td>  25099 </td> 
+<td style="background-color: rgb(299, 299, 0);">  126484535  </td> 
+<td>  231698  </td> 
+<td>  1  </td> 
+<td>  265  </td> 
+<td>  0  </td> 
+<td>  0  </td> 
+<td>  0tmumc5nnp0v4  </td> 
+<td>  2021/12/04 03:12:56  </td> 
+<td>  JDBC Thin Client  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  with v_mo as ( select x_ent,x_site ,x_mo ,sfaa010 as x_part,x_sfac001, sfaa012 ap_db basement chk_script_time.txt download.42m download.4gl fun_result.txt infor_all.sh mon_log output.test readme.txt script set tmon tmon_chk tmon_clean.sh tmon.conf tmon_install tmon_set.sh tmon_time.txt tmon_title.conf dsaps.unit_conver(imaaent,imaa001,unit_id,imaa006) as mo_demand_qty, NVL(produced_qty,:"SYS_B_00") ap_db basement chk_script_time.txt download.42m download.4gl fun_result.txt infor_all.sh mon_log output.test readme.txt script set tmon tmon_chk tmon_clean.sh tmon.conf tmon_install tmon_set.sh tmon_time.txt tmon_title.conf dsaps.unit_conver(imaaent,imaa001,unit_id,imaa006) as mo_produced_qty from sfaa_t join imaa_t on sfaaent=imaaent and sfaa010=imaa001 left join (select sfacent as x_ent,sfacsite as x_site,sfacdocno as x_mo,sfac001 as x_sfac001,sfac004 as unit_id,sum(sfac005) as produced_qty from sfac_t where sfac002 in (:"SYS_B_01",:"SYS_B_02",:"SYS_B_03",:"SYS_B_04",:"SYS_B_05") group by sfacent, sfacsite, sfacdocno, sfac001, sfac004 ) x_sfac_t on sfaaent=x_ent and sfaasite=x_site and sfaadocno=x_mo ) , v_mo_joint as ( select sfa </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  9 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  9 </td>
+<td>  DSDEMO </td>
+<td>  25064 </td> 
+<td>  25099 </td> 
+<td style="background-color: rgb(299, 299, 0);">  126484535  </td> 
+<td>  231728  </td> 
+<td>  1  </td> 
+<td>  265  </td> 
+<td>  0  </td> 
+<td>  0  </td> 
+<td>  07yh11dd3a64w  </td> 
+<td>  2021/12/04 03:12:56  </td> 
+<td>  JDBC Thin Client  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  /123.txt /2 /20211004 /al_file.html /aliv_sql.log /bin /boot /cdrom /chk_sql_log.html /_cputest.html /dev /etc /home /lib /lib64 /lock.html /m01 /media /mnt /opt /orafixv1.tar /oswarp /oswcpuinfo /oswifconfig /oswiostat /oswmeminfo /oswmpstat /oswnetstat /oswnfsiostat /oswpidstat /oswpidstatd /oswprvtnet /oswps /oswslabinfo /oswtop /oswvmstat /oswxentop /proc /q_lock2.log /q_lock.log /q_run_sql.out /root /run /sbin /srv /sys /T100_fr /T100_gr /tbs.html /tmon_t100back.xml /tmp /TSD-6-200807-200807-1.1.24.tgz /u1 /u2 /u3 /usr /ut /var Version:202111261430 when update to SVN, must also update version.**/ /123.txt /2 /20211004 /al_file.html /aliv_sql.log /bin /boot /cdrom /chk_sql_log.html /_cputest.html /dev /etc /home /lib /lib64 /lock.html /m01 /media /mnt /opt /orafixv1.tar /oswarp /oswcpuinfo /oswifconfig /oswiostat /oswmeminfo /oswmpstat /oswnetstat /oswnfsiostat /oswpidstat /oswpidstatd /oswprvtnet /oswps /oswslabinfo /oswtop /oswvmstat /oswxentop /proc /q_lock2.log /q_lock.log /q_run_sql.out /root /run /sbin /srv /sys /T100_fr /T100_gr /tbs.html /tmon_t100back.xml /tmp /TSD-6-200807-200807-1.1.24.tgz /u1 /u2 /u3 /usr /ut /var module: MP **/ /** 2016.4.27 修正為轉換為基礎單位imaa006 2016.11.09 修正工單聯產品檔sfac_t出現重覆資料 2017.08.23 #39946 納入BOM相關語法未考慮是否生效、效能調整 2017.09.19 #40921 MP載入語法效率調整 (zoey 資料範圍重整) 2017.09.27 #41097 中國電器-AMRP測試區規劃結果無資料 2017.09.29 #41072 富鈦-AMRP計算結果異常 (scrap_qty 值改成0) 2018.11.27 #51830 僑雲-庫存沒有輸出到psoz_t (調整工單要存在才可以納入工單聯副產品資訊) 2019.02.20 #54359 5區-拆件工單生產量錯誤 (調整拆件工單join條件導致出現重複資料) 2019.03.27 #55935 拆件工單規劃結果異常 (調整沒有主產品的拆件、多產出資料，語法產生的主產品預計生產數量需為0) 2019.09.27 #62526 ETL、函式的變數字串 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  10 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  10 </td>
+<td>  DSDEMO </td>
+<td>  2 </td> 
+<td>  3 </td> 
+<td style="background-color: rgb(299, 299, 0);">  41483  </td> 
+<td>  247037  </td> 
+<td>  12  </td> 
+<td>  2  </td> 
+<td>  12  </td> 
+<td>  120  </td> 
+<td>  g31gr0mxnwuj9  </td> 
+<td>  2021/12/04 09:12:16  </td> 
+<td>  fglrun-bin@t100demo (TNS V1-V3  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select loga002, count(loga002) as cnt from loga_t where logaent = :"SYS_B_0" AND loga001 = :"SYS_B_1" AND loga006 >= :p1 AND loga010 IN (SELECT gzza001 FROM gzza_t WHERE gzza002=:"SYS_B_2") group by loga002 order by cnt desc </td> </tr>
+</table>
+<table width="100%" border="2" align="center" style="border: 2px solid rgb(0, 0, 209); border-image-source: initial; 
+border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; 
+width: 100%; border-collapse: collapse; line-height: 24px; font-size: 16px; font-family: 微軟正黑體;" class="resizable"
+><caption align="TOP" style="font-size: 18px; line-height: 34px; color: white; padding: 0px; 
+background-image: initial; background-attachment: initial; background-color: rgb(0, 0, 138); 
+background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; 
+background-repeat: initial;">
+SQL效能觀察 -- 前一日 TOP 10 SQL (依 內存 使用) -- (依照收集時間順序顯示)
+</caption><colgroup><col align="LEFT" valign="top"></colgroup>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  1 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  1 </td>
+<td>  DS </td>
+<td>  2649 </td> 
+<td>  2672 </td> 
+<td>  352257060  </td> 
+<td style="background-color: rgb(299, 299, 0);">  353961903  </td> 
+<td>  3371  </td> 
+<td>  554  </td> 
+<td>  3372  </td> 
+<td>  3372  </td> 
+<td>  d44jc9p0zbvhy  </td> 
+<td>  2021/12/04 10:12:32  </td> 
+<td>  fglrun-bin@t100demo (TNS V1-V3  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select COUNT(:"SYS_B_0") from logd_t where logdent = :p1 AND logd001 = :p2 AND logd002 = :p3 AND logd003 = :p4 AND logd004 = :p5 AND logd005 = :p6 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  2 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  2 </td>
+<td>  DSDEMO </td>
+<td>  82 </td> 
+<td>  84 </td> 
+<td>  37803  </td> 
+<td style="background-color: rgb(299, 299, 0);">  36289685  </td> 
+<td>  1997  </td> 
+<td>  0  </td> 
+<td>  1997  </td> 
+<td>  237643  </td> 
+<td>  a7nu1dzqp1jbm  </td> 
+<td>  2021/12/04 09:12:18  </td> 
+<td>  fglrun-bin@t100demo (TNS V1-V3  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select DISTINCT lokg014,lokg013,lokg019,lokg009,lokg015,lokg020, lokg012,lokg016,:"SYS_B_0",lokg004,:"SYS_B_1",lokg006,lokg001 from lokg_t where lokgent = :"SYS_B_2" AND lokg021 = :"SYS_B_3" AND lokg003=:"SYS_B_4" AND lokg024 = :"SYS_B_5" order by lokg015 desc </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  3 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  3 </td>
+<td>  DSDEMO </td>
+<td>  57 </td> 
+<td>  60 </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  14855151  </td> 
+<td>  65  </td> 
+<td>  0  </td> 
+<td>  1157413  </td> 
+<td>  1155011  </td> 
+<td>  gqgs0ffpm7ksr  </td> 
+<td>  2021/12/04 09:12:19  </td> 
+<td>  JDBC Thin Client  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  SELECT COUNT(*) FROM OOCC_T WHERE OOCCSTUS='Y' AND OOCC001=:B2 AND OOCC003=:B1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  4 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  4 </td>
+<td>  SYS </td>
+<td>  16 </td> 
+<td>  17 </td> 
+<td>  38212  </td> 
+<td style="background-color: rgb(299, 299, 0);">  11258585  </td> 
+<td>  2  </td> 
+<td>  2  </td> 
+<td>  2  </td> 
+<td>  2221  </td> 
+<td>  gsasht7ckk68m  </td> 
+<td>  2021/12/04 05:12:24  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select /123.txt /2 /20211004 /al_file.html /aliv_sql.log /bin /boot /cdrom /chk_sql_log.html /_cputest.html /dev /etc /home /lib /lib64 /lock.html /m01 /media /mnt /opt /orafixv1.tar /oswarp /oswcpuinfo /oswifconfig /oswiostat /oswmeminfo /oswmpstat /oswnetstat /oswnfsiostat /oswpidstat /oswpidstatd /oswprvtnet /oswps /oswslabinfo /oswtop /oswvmstat /oswxentop /proc /q_lock2.log /q_lock.log /q_run_sql.out /root /run /sbin /srv /sys /T100_fr /T100_gr /tbs.html /tmon_t100back.xml /tmp /TSD-6-200807-200807-1.1.24.tgz /u1 /u2 /u3 /usr /ut /var QOSD ap_db/ basement/ mon_log/ script/ set/ tmon_chk/ exp_id, objn from exp_head$ e where ((select max(nvl(es.last_modified, es.ctime)) from exp_stat$ es where es.objn = e.objn and es.exp_id = e.exp_id) < sysdate - 367 or not exists (select 1 from sys.obj$ o where o.obj# = e.objn)) and rownum < :batch_size </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  5 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  5 </td>
+<td>  SYS </td>
+<td>  28 </td> 
+<td>  53 </td> 
+<td>  24543  </td> 
+<td style="background-color: rgb(299, 299, 0);">  8606363  </td> 
+<td>  1503  </td> 
+<td>  24  </td> 
+<td>  2149639  </td> 
+<td>  2120841  </td> 
+<td>  0sbbcuruzd66f  </td> 
+<td>  2021/12/04 10:12:26  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select /*+ rule ap_db/ basement/ mon_log/ script/ set/ tmon_chk/ bucket_cnt, row_cnt, cache_cnt, null_cnt, timestamp#, sample_size, minimum, maximum, distcnt, lowval, hival, density, col#, spare1, spare2, avgcln, minimum_enc, maximum_enc from hist_head$ where obj#=:1 and intcol#=:2 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  6 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  6 </td>
+<td>  DSDEMO </td>
+<td>  38 </td> 
+<td>  39 </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  7772503  </td> 
+<td>  1423  </td> 
+<td>  0  </td> 
+<td>  1423  </td> 
+<td>  1423  </td> 
+<td>  5phhqh5yyhhmt  </td> 
+<td>  2021/12/04 10:12:30  </td> 
+<td>  fglrun-bin@t100demo (TNS V1-V3  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select COUNT(:"SYS_B_0") from gzwl_t where gzwl005 = :"SYS_B_1" AND gzwl014 != :"SYS_B_2" </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  7 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  7 </td>
+<td>  DS </td>
+<td>  20 </td> 
+<td>  23 </td> 
+<td>  0  </td> 
+<td style="background-color: rgb(299, 299, 0);">  4959537  </td> 
+<td>  6766  </td> 
+<td>  0  </td> 
+<td>  6766  </td> 
+<td>  67660  </td> 
+<td>  7qm5nxfxc9acd  </td> 
+<td>  2021/12/04 03:12:12  </td> 
+<td>  fglrun-bin@t100demo (TNS V1-V3  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select gzpc001, gzpc002 from gzpc_t where gzpcent = :p1 AND gzpc001 = :p2 order by gzpc002 DESC </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  8 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  8 </td>
+<td>  DSDEMO </td>
+<td>  20 </td> 
+<td>  21 </td> 
+<td>  1  </td> 
+<td style="background-color: rgb(299, 299, 0);">  4780388  </td> 
+<td>  2407  </td> 
+<td>  0  </td> 
+<td>  2407  </td> 
+<td>  2407  </td> 
+<td>  7dp3ffw3gp577  </td> 
+<td>  2021/12/04 10:12:34  </td> 
+<td>  fglrun-bin@t100demo (TNS V1-V3  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select COUNT(:"SYS_B_0") from gzpd_t where gzpdent = :p1 AND gzpd004 = :p2 AND gzpd012 = :p3 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  9 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  9 </td>
+<td>  DSDEMO </td>
+<td>  3 </td> 
+<td>  42 </td> 
+<td>  1431  </td> 
+<td style="background-color: rgb(299, 299, 0);">  4525528  </td> 
+<td>  5  </td> 
+<td>  0  </td> 
+<td>  644724  </td> 
+<td>  644724  </td> 
+<td>  718923hfy4rnj  </td> 
+<td>  2021/12/04 10:12:22  </td> 
+<td>  JDBC Thin Client  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  DECLARE l_count PLS_INTEGER;BEGIN SELECT COUNT(*) INTO l_count FROM imac_t WHERE imacent = 99 AND imac001 = :1 ; IF( l_count = 1 ) THEN UPDATE imac_t SET imac003 = :2 /*level_code*/ where imacent = 99 AND imac001 = :3 /*part_id*/; ELSE INSERT into imac_t (imacent, imac001 , imac003) VALUES (99, :4 , :5 ); END IF;END; </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  10 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  10 </td>
+<td>  SYS </td>
+<td>  12 </td> 
+<td>  45 </td> 
+<td>  20936  </td> 
+<td style="background-color: rgb(299, 299, 0);">  2429826  </td> 
+<td>  726  </td> 
+<td>  36  </td> 
+<td>  610296  </td> 
+<td>  598602  </td> 
+<td>  10gywwmwk6xfy  </td> 
+<td>  2021/12/04 10:12:27  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select /123.txt /2 /20211004 /al_file.html /aliv_sql.log /bin /boot /cdrom /chk_sql_log.html /_cputest.html /dev /etc /home /lib /lib64 /lock.html /m01 /media /mnt /opt /orafixv1.tar /oswarp /oswcpuinfo /oswifconfig /oswiostat /oswmeminfo /oswmpstat /oswnetstat /oswnfsiostat /oswpidstat /oswpidstatd /oswprvtnet /oswps /oswslabinfo /oswtop /oswvmstat /oswxentop /proc /q_lock2.log /q_lock.log /q_run_sql.out /root /run /sbin /srv /sys /T100_fr /T100_gr /tbs.html /tmon_t100back.xml /tmp /TSD-6-200807-200807-1.1.24.tgz /u1 /u2 /u3 /usr /ut /var QOSD ap_db/ basement/ mon_log/ script/ set/ tmon_chk/ /*+ index(eh)*/ objn, sub_id, fixed_cost, text, col_list, flags, ctime from exp_head$ eh where exp_id = :1 </td> </tr>
+</table>
+<table width="100%" border="2" align="center" style="border: 2px solid rgb(0, 0, 209); border-image-source: initial; 
+border-image-slice: initial; border-image-width: initial; border-image-outset: initial; border-image-repeat: initial; 
+width: 100%; border-collapse: collapse; line-height: 24px; font-size: 16px; font-family: 微軟正黑體;" class="resizable"
+><caption align="TOP" style="font-size: 18px; line-height: 34px; color: white; padding: 0px; 
+background-image: initial; background-attachment: initial; background-color: rgb(0, 0, 138); 
+background-size: initial; background-origin: initial; background-clip: initial; background-position: initial; 
+background-repeat: initial;">
+SQL效能觀察 -- 前一日 TOP 10 SQL (依 DB 解析次數 ) -- (依照收集時間順序顯示)
+</caption><colgroup><col align="LEFT" valign="top"></colgroup>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  1 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  1 </td>
+<td>  DSDEMO </td>
+<td>  1 </td> 
+<td>  7 </td> 
+<td>  0  </td> 
+<td>  712948  </td> 
+<td style="background-color: rgb(299, 299, 0);">  237643  </td> 
+<td>  0  </td> 
+<td>  237643  </td> 
+<td>  237643  </td> 
+<td>  5vc41wty2thpr  </td> 
+<td>  2021/12/04 09:12:19  </td> 
+<td>  fglrun-bin@t100demo (TNS V1-V3  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select gzxa002, gzxa003 from gzxa_t where gzxaent = :p1 AND gzxa001 = :p2 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  2 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  2 </td>
+<td>  DSDEMO </td>
+<td>  0 </td> 
+<td>  6 </td> 
+<td>  0  </td> 
+<td>  638625  </td> 
+<td style="background-color: rgb(299, 299, 0);">  212888  </td> 
+<td>  0  </td> 
+<td>  212889  </td> 
+<td>  212792  </td> 
+<td>  auy6036ug6cuu  </td> 
+<td>  2021/12/04 06:12:27  </td> 
+<td>  fglrun-bin@t100demo (TNS V1-V3  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select ooag011 from ooag_t where ooagent = :p1 AND ooag001 = :p2 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  3 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  3 </td>
+<td>  DS </td>
+<td>  1 </td> 
+<td>  7 </td> 
+<td>  3  </td> 
+<td>  567015  </td> 
+<td style="background-color: rgb(299, 299, 0);">  189005  </td> 
+<td>  0  </td> 
+<td>  189005  </td> 
+<td>  189004  </td> 
+<td>  16sp5hv7jyddc  </td> 
+<td>  2021/12/04 10:12:34  </td> 
+<td>  fglrun-bin@t100demo (TNS V1-V3  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select gzsz001, gzsz003 from gzsz_t where gzsz002 = :p1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  4 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  4 </td>
+<td>  DS </td>
+<td>  1 </td> 
+<td>  8 </td> 
+<td>  5  </td> 
+<td>  486840  </td> 
+<td style="background-color: rgb(299, 299, 0);">  162188  </td> 
+<td>  0  </td> 
+<td>  162188  </td> 
+<td>  162186  </td> 
+<td>  gn70runph50xf  </td> 
+<td>  2021/12/04 10:12:34  </td> 
+<td>  fglrun-bin@t100demo (TNS V1-V3  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select gzsz001, gzsz003, gzsz008, gzsz017, gzsz019 from gzsz_t where gzsz002 = :p1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  5 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  5 </td>
+<td>  DS </td>
+<td>  1 </td> 
+<td>  8 </td> 
+<td>  0  </td> 
+<td>  142733  </td> 
+<td style="background-color: rgb(299, 299, 0);">  142720  </td> 
+<td>  0  </td> 
+<td>  142720  </td> 
+<td>  142720  </td> 
+<td>  f6nbrhu8nk03z  </td> 
+<td>  2021/12/04 03:12:11  </td> 
+<td>  fglrun-bin@t100demo (TNS V1-V3  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select COUNT(*) from gzpf_t where gzpfent = :p1 AND gzpf001 = :"SYS_B_0" </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  6 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  6 </td>
+<td>  SYS </td>
+<td>  1 </td> 
+<td>  6 </td> 
+<td>  15  </td> 
+<td>  1111232  </td> 
+<td style="background-color: rgb(299, 299, 0);">  139206  </td> 
+<td>  0  </td> 
+<td>  139206  </td> 
+<td>  138796  </td> 
+<td>  2jfqzrxhrm93b  </td> 
+<td>  2021/12/03 11:12:04  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select /*+ rule ap_db/ basement/ mon_log/ script/ set/ tmon_chk/ c.name, u.name from con$ c, cdef$ cd, user$ u where c.con# = cd.con# and cd.enabled = :1 and c.owner# = u.user# </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  7 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  7 </td>
+<td>  SYS </td>
+<td>  4 </td> 
+<td>  5 </td> 
+<td>  1  </td> 
+<td>  342218  </td> 
+<td style="background-color: rgb(299, 299, 0);">  114070  </td> 
+<td>  0  </td> 
+<td>  114070  </td> 
+<td>  114070  </td> 
+<td>  c8h20n1d0k95m  </td> 
+<td>  2021/12/04 07:12:02  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select /*+ no_parallel ap_db/ basement/ mon_log/ script/ set/ tmon_chk/ spare4 from sys.optstat_hist_control$ where sname=:1 </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  8 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  8 </td>
+<td>  DS </td>
+<td>  1 </td> 
+<td>  8 </td> 
+<td>  0  </td> 
+<td>  389016  </td> 
+<td style="background-color: rgb(299, 299, 0);">  97131  </td> 
+<td>  0  </td> 
+<td>  97131  </td> 
+<td>  97131  </td> 
+<td>  gwszqv8aj7004  </td> 
+<td>  2021/12/04 10:12:51  </td> 
+<td>  fglrun-bin@t100demo (TNS V1-V3  </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  update gzpf_t SET gzpf002 = :p1 WHERE gzpfent = :p2 AND gzpf001 = :"SYS_B_0" </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  9 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  9 </td>
+<td>  SYS </td>
+<td>  28 </td> 
+<td>  31 </td> 
+<td>  1  </td> 
+<td>  123  </td> 
+<td style="background-color: rgb(299, 299, 0);">  77911  </td> 
+<td>  0  </td> 
+<td>  77911  </td> 
+<td>  77910  </td> 
+<td>  f0h5rpzmhju11  </td> 
+<td>  2021/12/04 10:12:20  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select SYS_CONTEXT('USERENV', 'SERVER_HOST'), SYS_CONTEXT('USERENV', 'DB_UNIQUE_NAME'), SYS_CONTEXT('USERENV', 'INSTANCE_NAME'), SYS_CONTEXT('USERENV', 'INSTANCE'), STARTUP_TIME, SYS_CONTEXT('USERENV', 'DB_DOMAIN'), SYS_CONTEXT('USERENV', 'SERVICE_NAME') from v$instance </td> </tr>
+<tbody>
+<tr style="border: 2px solid rgb(299, 299, 299); 
+padding: 0px; margin: 0px; 
+background-color: rgb(0, 0, 138); 
+font-size: 18px; line-height: 34px; color: white;">
+<td > No.  10 </td>
+<td >schema name   </td>
+<td>cpu 使用 (sec)  </td> 
+<td>執行 (sec)  </td> 
+<td>disk 讀取 (次數)  </td> 
+<td>內存 使用 (次數)  </td> 
+<td>DB 解析 SQL (次數)  </td> 
+<td>用戶 I/O 等待 (sec)  </td> 
+<td>SQL 執行 (次數)  </td> 
+<td>處理多少資料  </td> 
+<td>sql id  </td> 
+<td>最後執行時間  </td> 
+<td>怎運行  </td> 
+</tr>
+<tr style="padding: 0px; margin: 0px;">
+<td>  10 </td>
+<td>  SYS </td>
+<td>  13 </td> 
+<td>  14 </td> 
+<td>  0  </td> 
+<td>  233798  </td> 
+<td style="background-color: rgb(299, 299, 0);">  77911  </td> 
+<td>  0  </td> 
+<td>  77910  </td> 
+<td>  77912  </td> 
+<td>  7n9pz49qw4f39  </td> 
+<td>  2021/12/04 10:12:20  </td> 
+<td>   </td> 
+</tr>
+<tr>
+                  <td> prog_sql </td> <td colspan=13>  select decode(upper(failover_method), NULL, 0 , 'BASIC', 1, 'PRECONNECT', 2 , 'PREPARSE', 4 , 0), decode(upper(failover_type), NULL, 1, 'NONE', 1, 'SESSION', 2, 'SELECT', 4, 'TRANSACTION', 8, 1), failover_retries, failover_delay, flags, nvl(replay_initiation_timeout, 300), decode(upper(session_state_consistency), 'STATIC', 16, 0), failover_restore from sys.service$ where name = :1 </td> </tr>
+</table>
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU idle 低於  30 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU idle  :   17.1 </th>
+            </tr> </table> 
+<div class="content"><table width=100% border=1><tr><th colspan=1 style=background-color:#FFECC9>
+20211204 CPU 使用量 顯示 80 % 以上</div> </th></tr></table> </div>
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>CPU 20211204 </th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.9    </td>
+                  <td> 0.3    </td>
+                  <td> 65250    </td>
+                  <td> ?     </td>
+                  <td> 10:13  </td>
+                  <td> 12:38:47   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.9    </td>
+                  <td> 0.3    </td>
+                  <td> 118625    </td>
+                  <td> ?     </td>
+                  <td> 10:19  </td>
+                  <td> 12:33:17   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 4090    </td>
+                  <td> ?     </td>
+                  <td> 11:32  </td>
+                  <td> 11:20:22   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 0.2    </td>
+                  <td> 1.0    </td>
+                  <td> 19259    </td>
+                  <td> ?     </td>
+                  <td> Dec03  </td>
+                  <td> 00:03:00   </td>
+                  <td>       /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/bin/java -Xmx1000m -Xmn512m -Djetty.home=/u1/topjetty -cp /u1/topjetty/lib/jetty-xml-8.1.16.v20140903.jar:/u1/topjetty/lib/servlet-api-3.0.jar:/u1/topjetty/lib/jetty-http-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-continuation-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-server-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-security-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-servlet-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-webapp-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-deploy-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-servlets-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-annotations-8.1.16.v20140903.jar:/u1/topjetty/lib/annotations/javax.annotation-1.1.0.v201108011116.jar:/u1/topjetty/lib/annotations/org.objectweb.asm-3.1.0.v200803061910.jar:/u1/topjetty/lib/jetty-jmx-8.1.16.v20140903.jar:/u1/topjetty/lib/jsp/com.sun.el-2.2.0.v201108011116.jar:/u1/topjetty/lib/jsp/javax.el-2.2.0.v201108011116.jar:/u1/topjetty/lib/jsp/javax.servlet.jsp.jstl-1.2.0.v201105211821.jar:/u1/topjetty/lib/jsp/javax.servlet.jsp-2.2.0.v201112011158.jar:/u1/topjetty/lib/jsp/org.apache.jasper.glassfish-2.2.2.v201112011158.jar:/u1/topjetty/lib/jsp/org.apache.taglibs.standard.glassfish-1.2.0.v201112081803.jar:/u1/topjetty/lib/jsp/org.eclipse.jdt.core-3.7.1.jar:/u1/topjetty/lib/jetty-jndi-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-plus-8.1.16.v20140903.jar:/u1/topjetty/lib/jndi/javax.activation-1.1.0.v201105071233.jar:/u1/topjetty/lib/jndi/javax.mail.glassfish-1.4.1.v201005082020.jar:/u1/topjetty/resources:/u1/topjetty/lib/jetty-websocket-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-util-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-io-8.1.16.v20140903.jar org.eclipse.jetty.xml.XmlConfiguration /tmp/start5489787104586144176.properties /u1/topjetty/etc/jetty.xml /u1/topjetty/etc/jetty-annotations.xml /u1/topjetty/etc/jetty-deploy.xml /u1/topjetty/etc/jetty-webapps.xml /u1/topjetty/etc/jetty-contexts.xml /u1/topjetty/etc/jetty-logging.xml /u1/topjetty/etc/jetty-started.xml    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 12413    </td>
+                  <td> ?     </td>
+                  <td> 16:26  </td>
+                  <td> 06:26:33   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 17042    </td>
+                  <td> ?     </td>
+                  <td> 13:49  </td>
+                  <td> 09:02:52   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 26133    </td>
+                  <td> ?     </td>
+                  <td> 15:44  </td>
+                  <td> 07:08:19   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 49987    </td>
+                  <td> ?     </td>
+                  <td> 10:40  </td>
+                  <td> 12:12:31   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 62228    </td>
+                  <td> ?     </td>
+                  <td> 00:06  </td>
+                  <td> 22:44:54   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 82735    </td>
+                  <td> ?     </td>
+                  <td> 09:59  </td>
+                  <td> 12:53:06   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 100721    </td>
+                  <td> ?     </td>
+                  <td> 10:34  </td>
+                  <td> 12:18:22   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 process 執行超過 CPU total 800  % </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU has total %  : 998.2 </th>
+            </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>CPU has total             : 1600 % </th>
+      <th colspan=2 style=background-color:#FFECC9>process top10 CPU total   : 998.2 % </th>
+      </tr> </table>
+       
+<font color=blue> ====記憶體使用率==== </font>
+
+ start check webrun log genero 15575  
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 webrun awsp920 log genero err 15575</th>
+   </tr> </table> 
+檢查 webrun awsp920 log genero err 15575 start 
+2021-12-04 sum code 15575 :  0
+2021-12-04 01 hour :  0
+2021-12-04 02 hour :  0
+2021-12-04 03 hour :  0
+2021-12-04 04 hour :  0
+2021-12-04 05 hour :  0
+2021-12-04 06 hour :  0
+2021-12-04 07 hour :  0
+2021-12-04 08 hour :  0
+2021-12-04 09 hour :  0
+2021-12-04 10 hour :  0
+2021-12-04 11 hour :  0
+2021-12-04 12 hour :  0
+2021-12-04 13 hour :  0
+2021-12-04 14 hour :  0
+2021-12-04 15 hour :  0
+2021-12-04 16 hour :  0
+2021-12-04 17 hour :  0
+2021-12-04 18 hour :  0
+2021-12-04 19 hour :  0
+2021-12-04 20 hour :  0
+2021-12-04 21 hour :  0
+2021-12-04 22 hour :  0
+檢查 webrun awsp920 log genero err 15575 end
+
+ start check redo 每日切換次數 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>Redo log 切換次數檢查</th>
+   </tr>
+<tr>
+<td>DAT</td>
+<td>CNT</td>
+</tr>
+<tr>
+<td>20211204</td>
+<td>3</td>
+</tr>
+<tr>
+<td>20211203</td>
+<td>6</td>
+</tr>
+<tr>
+<td>20211202</td>
+<td>7</td>
+</tr>
+<tr>
+<td>20211201</td>
+<td>73</td>
+</tr>
+<tr>
+<td>20211130</td>
+<td>16</td>
+</tr>
+<tr>
+<td>20211129</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211128</td>
+<td>10</td>
+</tr>
+<tr><td colspan=2 align=center valign=middle>====Redo log切換次數最大日期====</td></tr>
+   <tr><td>DAT</td><td>CNT</td></tr>
+<tr>
+<td>20211201</td>
+<td>73</td>
+</tr>
+<tr><td colspan=2 align=center valign=middle>====當日切換次數分析====</td></tr>
+<tr>
+<td>DATETIME_HH24</td>
+<td>CNT</td>
+</tr>
+<tr>
+<td>20211201_23</td>
+<td>3</td>
+</tr>
+<tr>
+<td>20211201_22</td>
+<td>6</td>
+</tr>
+<tr>
+<td>20211201_21</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_20</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_19</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_18</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_17</td>
+<td>6</td>
+</tr>
+<tr>
+<td>20211201_16</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_15</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_14</td>
+<td>8</td>
+</tr>
+<tr>
+<td>20211201_13</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_12</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_11</td>
+<td>5</td>
+</tr>
+<tr>
+<td>20211201_10</td>
+<td>2</td>
+</tr>
+<tr>
+<td>20211201_09</td>
+<td>1</td>
+</tr>
+<tr>
+<td>20211201_01</td>
+<td>1</td>
+</tr>
+<tr>
+<td>20211201_00</td>
+<td>1</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+chk_Warn :  Y
+
+<table width=800 border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====主機磁碟空間=====</th></tr>
+<tr><th colspan=7 >磁碟空間大於<font color=red>80%</font></th></tr> 
+<tr><td> Filesystem </td>
+<td> Size </td>
+<td> Used </td>
+<td> Avail </td>
+<td> Use% </td>
+<td> Mounted on </td>
+<tr><td> /dev/sda5 </td>
+<td> 104806400 </td>
+<td> 92445044 </td>
+<td> 12361356 </td>
+<td> 89% </td>
+<td> /u1 </td>
+<tr><td> /dev/sda2 </td>
+<td> 314419200 </td>
+<td> 297972200 </td>
+<td> 16447000 </td>
+<td> 95% </td>
+<td> /u2 </td>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u1=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+<tr><td> 31G </td>
+<td> /u1/topprd </td></tr>
+<tr><td> 26G </td>
+<td> /u1/usr/tiptop </td></tr>
+<tr><th colspan=7 style=background-color:#FFECC9>=====/u2=====</th></tr>
+<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> 
+<tr><td> 8.8G </td>
+<td> /u2 </td></tr>
+<tr><td> 8.3G </td>
+<td> /u2/oracle </td></tr>
+</table>
+<table width=100% border=1>
+<tr><th colspan=7 style=background-color:#FFECC9>===== r.h log 大於 1hr 未持續使用檔案 =====</th></tr>
+</table>
+
+ now is  check over 1 day program 
+0
+<table width=100% border=1>
+       <tr>
+       <th colspan=3 style=background-color:#FFECC9>Process 沒執行時間大於1天</th>
+       </tr> 
+</table>
+<table width=100% border=1>
+          <tr>
+          <th colspan=3 style=background-color:#FFECC9>Process 沒執行時間大於 2 hr </th>
+          </tr> 
+ </table> 
+================================================================

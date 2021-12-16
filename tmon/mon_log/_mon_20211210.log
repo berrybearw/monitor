@@ -1,0 +1,804 @@
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9>檢查 CPU </th>
+   </tr> </table>
+    
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 CPU idle 低於  30 </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU idle  :   23.1 </th>
+            </tr> </table> 
+<div class="content"><table width=100% border=1><tr><th colspan=1 style=background-color:#FFECC9>
+20211206 CPU 使用量 顯示 80 % 以上</div> </th></tr></table> </div>
+<div class="content"> 
+<table width=100% border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>CPU 20211206 </th>
+                </tr> 
+      
+<tr> 
+                  <td> %CPU    </td>
+                  <td> %MEM    </td>
+                  <td> PID    </td>
+                  <td> TT     </td>
+                  <td> STIME  </td>
+                  <td> TIME   </td>
+                  <td>       CMD    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.9    </td>
+                  <td> 0.3    </td>
+                  <td> 5807    </td>
+                  <td> ?     </td>
+                  <td> 11:37  </td>
+                  <td> 01:08:52   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 0.0    </td>
+                  <td> 0.0    </td>
+                  <td> 55411    </td>
+                  <td> pts/70     </td>
+                  <td> 11:49  </td>
+                  <td> 00:00:01   </td>
+                  <td>       /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrt330 {"sessionkey":"IL6D494580755d","parent":"IL6L473132071d","parentprog":"azzi000","ancest":"IL6L473132071d","prog":"axrt330","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 0.0    </td>
+                  <td> 0.0    </td>
+                  <td> 69161    </td>
+                  <td> pts/70     </td>
+                  <td> 11:53  </td>
+                  <td> 00:00:01   </td>
+                  <td>       /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrt400 {"sessionkey":"IL6D533906838d","parent":"IL6D494580755d","parentprog":"axrt330","ancest":"IL6L473132071d","prog":"axrt400","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.9    </td>
+                  <td> 0.3    </td>
+                  <td> 10758    </td>
+                  <td> ?     </td>
+                  <td> 10:38  </td>
+                  <td> 02:07:14   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.9    </td>
+                  <td> 0.3    </td>
+                  <td> 11046    </td>
+                  <td> ?     </td>
+                  <td> 11:19  </td>
+                  <td> 01:26:55   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.9    </td>
+                  <td> 0.3    </td>
+                  <td> 54753    </td>
+                  <td> ?     </td>
+                  <td> 10:55  </td>
+                  <td> 01:51:02   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.9    </td>
+                  <td> 0.3    </td>
+                  <td> 60559    </td>
+                  <td> ?     </td>
+                  <td> 00:06  </td>
+                  <td> 12:39:26   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.9    </td>
+                  <td> 0.3    </td>
+                  <td> 66219    </td>
+                  <td> ?     </td>
+                  <td> 10:25  </td>
+                  <td> 02:20:44   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.9    </td>
+                  <td> 0.3    </td>
+                  <td> 87389    </td>
+                  <td> ?     </td>
+                  <td> 10:29  </td>
+                  <td> 02:16:16   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 48755    </td>
+                  <td> ?     </td>
+                  <td> 12:07  </td>
+                  <td> 00:38:54   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 56237    </td>
+                  <td> ?     </td>
+                  <td> 11:09  </td>
+                  <td> 01:36:24   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+<tr> 
+                  <td> 99.8    </td>
+                  <td> 0.3    </td>
+                  <td> 92115    </td>
+                  <td> ?     </td>
+                  <td> 10:14  </td>
+                  <td> 02:31:22   </td>
+                  <td>       oracletopprd (LOCAL=NO)    </td>
+                  </tr> 
+                 
+
+           </table> 
+           </div>
+           
+<table width=100% border=1>
+            <tr>
+            <th colspan=2 style=background-color:#FF3B3B>檢查 process 執行超過 CPU total 800  % </th>
+            <th colspan=2 style=background-color:#FFECC9>CPU has total %  : 998.7 </th>
+            </tr> </table> 
+<table width=100% border=1>
+      <tr>
+      <th colspan=2 style=background-color:#FFECC9>CPU has total             : 1600 % </th>
+      <th colspan=2 style=background-color:#FFECC9>process top10 CPU total   : 998.7 % </th>
+      </tr> </table>
+       
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================
+
+<font color=blue> ====記憶體使用率==== </font>
+ 
+<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> 
+ 
+ 
+<table width=500 border=1>
+   <tr>
+   <th colspan=2 style=background-color:#FFECC9> hi 每天 08,12,17 才 檢查 redo 切換次數頻率 </th>
+   </tr> 
+================================================================

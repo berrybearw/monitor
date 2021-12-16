@@ -1,0 +1,534 @@
+%CPU %MEM     PID TT       STIME     TIME CMD
+12.7  0.0 1042569 pts/0    09:13 00:00:01 /bin/ksh tmon manu tes
+ 2.0  0.0 1043997 pts/0    09:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.9  0.1    1175 ?        Dec15 00:12:34 /usr/local/aiopskit/aiopskit_v1.2.33/aiopskit -f /usr/local/aiopskit/aiopskit_v1.2.33/aiopskit.conf > /usr/local/aiopskit/aiopskit_v1.2.33/run/aiopskit.log 2>&1 &
+ 0.7  0.1    1128 ?        Dec15 00:10:55 /usr/lib/polkit-1/polkitd --no-debug
+ 0.6  0.1   18950 ?        Dec15 00:09:18 ora_vktm_topprd
+ 0.6  0.2   19001 ?        Dec15 00:09:23 ora_vkrm_topprd
+ 0.5  0.0    1125 ?        Dec15 00:07:05 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ 0.4  0.3   18998 ?        Dec15 00:05:57 ora_dbrm_topprd
+ 0.3  0.0    1124 ?        Dec15 00:04:31 avahi-daemon: running [TOP200.local]
+ 0.3  1.2   17590 ?        Dec15 00:04:45 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-4.el8.x86_64/jre/bin/java -Xmx512m -Xms256m -Xmn512m -Djetty.home=/u1/topjetty -cp /u1/topjetty/lib/jetty-xml-8.1.16.v20140903.jar:/u1/topjetty/lib/servlet-api-3.0.jar:/u1/topjetty/lib/jetty-http-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-continuation-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-server-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-security-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-servlet-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-webapp-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-deploy-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-servlets-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-annotations-8.1.16.v20140903.jar:/u1/topjetty/lib/annotations/javax.annotation-1.1.0.v201108011116.jar:/u1/topjetty/lib/annotations/org.objectweb.asm-3.1.0.v200803061910.jar:/u1/topjetty/lib/jetty-jmx-8.1.16.v20140903.jar:/u1/topjetty/lib/jsp/com.sun.el-2.2.0.v201108011116.jar:/u1/topjetty/lib/jsp/javax.el-2.2.0.v201108011116.jar:/u1/topjetty/lib/jsp/javax.servlet.jsp.jstl-1.2.0.v201105211821.jar:/u1/topjetty/lib/jsp/javax.servlet.jsp-2.2.0.v201112011158.jar:/u1/topjetty/lib/jsp/org.apache.jasper.glassfish-2.2.2.v201112011158.jar:/u1/topjetty/lib/jsp/org.apache.taglibs.standard.glassfish-1.2.0.v201112081803.jar:/u1/topjetty/lib/jsp/org.eclipse.jdt.core-3.7.1.jar:/u1/topjetty/lib/jetty-jndi-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-plus-8.1.16.v20140903.jar:/u1/topjetty/lib/jndi/javax.activation-1.1.0.v201105071233.jar:/u1/topjetty/lib/jndi/javax.mail.glassfish-1.4.1.v201005082020.jar:/u1/topjetty/resources:/u1/topjetty/lib/jetty-websocket-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-util-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-io-8.1.16.v20140903.jar org.eclipse.jetty.xml.XmlConfiguration /ut/topprd/tmp/start4082750293824855432.properties /u1/topjetty/etc/jetty.xml /u1/topjetty/etc/jetty-annotations.xml /u1/topjetty/etc/jetty-deploy.xml /u1/topjetty/etc/jetty-webapps.xml /u1/topjetty/etc/jetty-contexts.xml /u1/topjetty/etc/jetty-logging.xml /u1/topjetty/etc/jetty-started.xml
+ 0.3  0.3   19011 ?        Dec15 00:04:19 ora_dia0_topprd
+ 0.3  0.7   19074 tty1     Dec15 00:04:12 /usr/bin/gnome-shell
+ 0.2  0.0       1 ?        Dec15 00:03:12 /usr/lib/systemd/systemd --switched-root --system --deserialize 18
+ 0.2  0.0     681 ?        Dec15 00:04:06 [xfsaild/sda5]
+ 0.2  0.0    1017 ?        Dec15 00:03:13 [xfsaild/sda3]
+ 0.2  0.0    1126 ?        Dec15 00:03:45 /usr/sbin/NetworkManager --no-daemon
+ 0.1  0.0      11 ?        Dec15 00:01:58 [rcu_sched]
+ 0.1  0.0     426 ?        Dec15 00:01:33 [kworker/12:1H-kblockd]
+ 0.1  0.0     520 ?        Dec15 00:01:25 [kworker/7:1H-kblockd]
+ 0.1  0.0     522 ?        Dec15 00:01:37 [kworker/6:1H-kblockd]
+ 0.1  0.0     558 ?        Dec15 00:01:25 [kworker/8:1H-kblockd]
+ 0.1  0.0    1016 ?        Dec15 00:02:07 [xfsaild/sda6]
+ 0.1  0.0    1021 ?        Dec15 00:02:25 [xfsaild/sda2]
+ 0.1  0.0    1133 ?        Dec15 00:02:29 /usr/bin/vmtoolsd
+ 0.1  0.4   17410 ?        Dec15 00:01:23 /opt/java/bin/java -Djetty.state=/u1/topjetty/jetty.state -Djetty.home=/u1/topjetty -Djava.io.tmpdir=/tmp -jar /u1/topjetty/start.jar etc/jetty-logging.xml etc/jetty-started.xml
+ 0.1  0.9   18798 ?        Dec15 00:01:54 java -server -jar restheart.jar etc/restheart.yml
+ 0.1  0.3   18983 ?        Dec15 00:01:45 ora_gen1_topprd
+ 0.1  0.4   19484 ?        Dec15 00:01:56 ora_cjq0_topprd
+ 0.1  1.6   19869 ?        Dec15 00:02:15 ora_m001_topprd
+ 0.1  0.8   19871 ?        Dec15 00:01:53 ora_m002_topprd
+ 0.1  0.0  907912 ?        08:47 00:00:02 sshd: root@pts/0
+ 0.1  0.6  918106 ?        08:50 00:00:02 ora_m005_topprd
+ 0.1  0.2 1034357 ?        09:10 00:00:00 ora_m003_topprd
+ 0.1  0.8 1227119 ?        Dec15 00:01:34 ora_m004_topprd
+ 0.1  0.7 3225654 ?        00:00 00:00:51 ora_m000_topprd
+ 0.0  0.0       2 ?        Dec15 00:00:00 [kthreadd]
+ 0.0  0.0       3 ?        Dec15 00:00:00 [rcu_gp]
+ 0.0  0.0       4 ?        Dec15 00:00:00 [rcu_par_gp]
+ 0.0  0.0       6 ?        Dec15 00:00:00 [kworker/0:0H-events_highpri]
+ 0.0  0.0       9 ?        Dec15 00:00:00 [mm_percpu_wq]
+ 0.0  0.0      10 ?        Dec15 00:00:04 [ksoftirqd/0]
+ 0.0  0.0      12 ?        Dec15 00:00:00 [migration/0]
+ 0.0  0.0      13 ?        Dec15 00:00:00 [watchdog/0]
+ 0.0  0.0      14 ?        Dec15 00:00:00 [cpuhp/0]
+ 0.0  0.0      15 ?        Dec15 00:00:00 [cpuhp/1]
+ 0.0  0.0      16 ?        Dec15 00:00:00 [watchdog/1]
+ 0.0  0.0      17 ?        Dec15 00:00:00 [migration/1]
+ 0.0  0.0      18 ?        Dec15 00:00:05 [ksoftirqd/1]
+ 0.0  0.0      20 ?        Dec15 00:00:00 [kworker/1:0H-events_highpri]
+ 0.0  0.0      21 ?        Dec15 00:00:00 [cpuhp/2]
+ 0.0  0.0      22 ?        Dec15 00:00:00 [watchdog/2]
+ 0.0  0.0      23 ?        Dec15 00:00:00 [migration/2]
+ 0.0  0.0      24 ?        Dec15 00:00:04 [ksoftirqd/2]
+ 0.0  0.0      26 ?        Dec15 00:00:00 [kworker/2:0H-events_highpri]
+ 0.0  0.0      27 ?        Dec15 00:00:00 [cpuhp/3]
+ 0.0  0.0      28 ?        Dec15 00:00:00 [watchdog/3]
+ 0.0  0.0      29 ?        Dec15 00:00:01 [migration/3]
+ 0.0  0.0      30 ?        Dec15 00:00:07 [ksoftirqd/3]
+ 0.0  0.0      32 ?        Dec15 00:00:00 [kworker/3:0H-events_highpri]
+ 0.0  0.0      33 ?        Dec15 00:00:00 [cpuhp/4]
+ 0.0  0.0      34 ?        Dec15 00:00:00 [watchdog/4]
+ 0.0  0.0      35 ?        Dec15 00:00:00 [migration/4]
+ 0.0  0.0      36 ?        Dec15 00:00:04 [ksoftirqd/4]
+ 0.0  0.0      38 ?        Dec15 00:00:00 [kworker/4:0H-events_highpri]
+ 0.0  0.0      40 ?        Dec15 00:00:00 [cpuhp/5]
+ 0.0  0.0      41 ?        Dec15 00:00:00 [watchdog/5]
+ 0.0  0.0      42 ?        Dec15 00:00:00 [migration/5]
+ 0.0  0.0      43 ?        Dec15 00:00:08 [ksoftirqd/5]
+ 0.0  0.0      45 ?        Dec15 00:00:00 [kworker/5:0H-events_highpri]
+ 0.0  0.0      46 ?        Dec15 00:00:00 [cpuhp/6]
+ 0.0  0.0      47 ?        Dec15 00:00:00 [watchdog/6]
+ 0.0  0.0      48 ?        Dec15 00:00:00 [migration/6]
+ 0.0  0.0      49 ?        Dec15 00:00:04 [ksoftirqd/6]
+ 0.0  0.0      51 ?        Dec15 00:00:00 [kworker/6:0H-events_highpri]
+ 0.0  0.0      52 ?        Dec15 00:00:00 [cpuhp/7]
+ 0.0  0.0      53 ?        Dec15 00:00:00 [watchdog/7]
+ 0.0  0.0      54 ?        Dec15 00:00:00 [migration/7]
+ 0.0  0.0      55 ?        Dec15 00:00:05 [ksoftirqd/7]
+ 0.0  0.0      57 ?        Dec15 00:00:00 [kworker/7:0H-events_highpri]
+ 0.0  0.0      58 ?        Dec15 00:00:00 [cpuhp/8]
+ 0.0  0.0      59 ?        Dec15 00:00:00 [watchdog/8]
+ 0.0  0.0      60 ?        Dec15 00:00:00 [migration/8]
+ 0.0  0.0      61 ?        Dec15 00:00:04 [ksoftirqd/8]
+ 0.0  0.0      63 ?        Dec15 00:00:00 [kworker/8:0H-events_highpri]
+ 0.0  0.0      65 ?        Dec15 00:00:00 [cpuhp/9]
+ 0.0  0.0      66 ?        Dec15 00:00:00 [watchdog/9]
+ 0.0  0.0      67 ?        Dec15 00:00:00 [migration/9]
+ 0.0  0.0      68 ?        Dec15 00:00:05 [ksoftirqd/9]
+ 0.0  0.0      70 ?        Dec15 00:00:00 [kworker/9:0H-events_highpri]
+ 0.0  0.0      71 ?        Dec15 00:00:00 [cpuhp/10]
+ 0.0  0.0      72 ?        Dec15 00:00:00 [watchdog/10]
+ 0.0  0.0      73 ?        Dec15 00:00:00 [migration/10]
+ 0.0  0.0      74 ?        Dec15 00:00:07 [ksoftirqd/10]
+ 0.0  0.0      76 ?        Dec15 00:00:00 [kworker/10:0H-events_highpri]
+ 0.0  0.0      77 ?        Dec15 00:00:00 [cpuhp/11]
+ 0.0  0.0      78 ?        Dec15 00:00:00 [watchdog/11]
+ 0.0  0.0      79 ?        Dec15 00:00:00 [migration/11]
+ 0.0  0.0      80 ?        Dec15 00:00:03 [ksoftirqd/11]
+ 0.0  0.0      82 ?        Dec15 00:00:00 [kworker/11:0H-events_highpri]
+ 0.0  0.0      83 ?        Dec15 00:00:00 [cpuhp/12]
+ 0.0  0.0      84 ?        Dec15 00:00:00 [watchdog/12]
+ 0.0  0.0      85 ?        Dec15 00:00:01 [migration/12]
+ 0.0  0.0      86 ?        Dec15 00:00:07 [ksoftirqd/12]
+ 0.0  0.0      88 ?        Dec15 00:00:00 [kworker/12:0H-events_highpri]
+ 0.0  0.0      90 ?        Dec15 00:00:00 [cpuhp/13]
+ 0.0  0.0      91 ?        Dec15 00:00:00 [watchdog/13]
+ 0.0  0.0      92 ?        Dec15 00:00:00 [migration/13]
+ 0.0  0.0      93 ?        Dec15 00:00:05 [ksoftirqd/13]
+ 0.0  0.0      95 ?        Dec15 00:00:00 [kworker/13:0H-events_highpri]
+ 0.0  0.0      96 ?        Dec15 00:00:00 [cpuhp/14]
+ 0.0  0.0      97 ?        Dec15 00:00:00 [watchdog/14]
+ 0.0  0.0      98 ?        Dec15 00:00:01 [migration/14]
+ 0.0  0.0      99 ?        Dec15 00:00:05 [ksoftirqd/14]
+ 0.0  0.0     101 ?        Dec15 00:00:00 [kworker/14:0H-events_highpri]
+ 0.0  0.0     102 ?        Dec15 00:00:00 [cpuhp/15]
+ 0.0  0.0     103 ?        Dec15 00:00:00 [watchdog/15]
+ 0.0  0.0     104 ?        Dec15 00:00:01 [migration/15]
+ 0.0  0.0     105 ?        Dec15 00:00:05 [ksoftirqd/15]
+ 0.0  0.0     107 ?        Dec15 00:00:00 [kworker/15:0H-events_highpri]
+ 0.0  0.0     124 ?        Dec15 00:00:00 [kdevtmpfs]
+ 0.0  0.0     125 ?        Dec15 00:00:00 [netns]
+ 0.0  0.0     126 ?        Dec15 00:00:03 [kauditd]
+ 0.0  0.0     129 ?        Dec15 00:00:00 [khungtaskd]
+ 0.0  0.0     130 ?        Dec15 00:00:00 [oom_reaper]
+ 0.0  0.0     131 ?        Dec15 00:00:00 [writeback]
+ 0.0  0.0     132 ?        Dec15 00:00:00 [kcompactd0]
+ 0.0  0.0     133 ?        Dec15 00:00:00 [kcompactd1]
+ 0.0  0.0     134 ?        Dec15 00:00:00 [kcompactd2]
+ 0.0  0.0     135 ?        Dec15 00:00:00 [kcompactd3]
+ 0.0  0.0     136 ?        Dec15 00:00:00 [ksmd]
+ 0.0  0.0     137 ?        Dec15 00:00:03 [khugepaged]
+ 0.0  0.0     138 ?        Dec15 00:00:00 [crypto]
+ 0.0  0.0     139 ?        Dec15 00:00:00 [kintegrityd]
+ 0.0  0.0     140 ?        Dec15 00:00:00 [kblockd]
+ 0.0  0.0     141 ?        Dec15 00:00:00 [blkcg_punt_bio]
+ 0.0  0.0     142 ?        Dec15 00:00:00 [tpm_dev_wq]
+ 0.0  0.0     143 ?        Dec15 00:00:00 [md]
+ 0.0  0.0     144 ?        Dec15 00:00:00 [edac-poller]
+ 0.0  0.0     145 ?        Dec15 00:00:00 [watchdogd]
+ 0.0  0.0     146 ?        Dec15 00:01:02 [kworker/5:1H-kblockd]
+ 0.0  0.0     156 ?        Dec15 00:00:00 [kswapd0]
+ 0.0  0.0     157 ?        Dec15 00:00:00 [kswapd1]
+ 0.0  0.0     158 ?        Dec15 00:00:00 [kswapd2]
+ 0.0  0.0     159 ?        Dec15 00:00:00 [kswapd3]
+ 0.0  0.0     265 ?        Dec15 00:00:00 [kthrotld]
+ 0.0  0.0     266 ?        Dec15 00:00:00 [irq/24-pciehp]
+ 0.0  0.0     267 ?        Dec15 00:00:00 [irq/25-pciehp]
+ 0.0  0.0     268 ?        Dec15 00:00:00 [irq/26-pciehp]
+ 0.0  0.0     269 ?        Dec15 00:00:00 [irq/27-pciehp]
+ 0.0  0.0     270 ?        Dec15 00:00:00 [irq/28-pciehp]
+ 0.0  0.0     271 ?        Dec15 00:00:00 [irq/29-pciehp]
+ 0.0  0.0     272 ?        Dec15 00:00:00 [irq/30-pciehp]
+ 0.0  0.0     273 ?        Dec15 00:00:00 [irq/31-pciehp]
+ 0.0  0.0     274 ?        Dec15 00:00:00 [irq/32-pciehp]
+ 0.0  0.0     275 ?        Dec15 00:00:00 [irq/33-pciehp]
+ 0.0  0.0     276 ?        Dec15 00:00:00 [irq/34-pciehp]
+ 0.0  0.0     277 ?        Dec15 00:00:00 [irq/35-pciehp]
+ 0.0  0.0     278 ?        Dec15 00:00:00 [irq/36-pciehp]
+ 0.0  0.0     279 ?        Dec15 00:00:00 [irq/37-pciehp]
+ 0.0  0.0     280 ?        Dec15 00:00:00 [irq/38-pciehp]
+ 0.0  0.0     281 ?        Dec15 00:00:00 [irq/39-pciehp]
+ 0.0  0.0     282 ?        Dec15 00:00:00 [irq/40-pciehp]
+ 0.0  0.0     283 ?        Dec15 00:00:00 [irq/41-pciehp]
+ 0.0  0.0     284 ?        Dec15 00:00:00 [irq/42-pciehp]
+ 0.0  0.0     285 ?        Dec15 00:00:00 [irq/43-pciehp]
+ 0.0  0.0     286 ?        Dec15 00:00:00 [irq/44-pciehp]
+ 0.0  0.0     287 ?        Dec15 00:00:00 [irq/45-pciehp]
+ 0.0  0.0     288 ?        Dec15 00:00:00 [irq/46-pciehp]
+ 0.0  0.0     289 ?        Dec15 00:00:00 [irq/47-pciehp]
+ 0.0  0.0     290 ?        Dec15 00:00:00 [irq/48-pciehp]
+ 0.0  0.0     291 ?        Dec15 00:00:00 [irq/49-pciehp]
+ 0.0  0.0     292 ?        Dec15 00:00:00 [irq/50-pciehp]
+ 0.0  0.0     293 ?        Dec15 00:00:00 [irq/51-pciehp]
+ 0.0  0.0     294 ?        Dec15 00:00:00 [irq/52-pciehp]
+ 0.0  0.0     295 ?        Dec15 00:00:00 [irq/53-pciehp]
+ 0.0  0.0     296 ?        Dec15 00:00:00 [irq/54-pciehp]
+ 0.0  0.0     297 ?        Dec15 00:00:00 [irq/55-pciehp]
+ 0.0  0.0     298 ?        Dec15 00:00:00 [acpi_thermal_pm]
+ 0.0  0.0     299 ?        Dec15 00:00:00 [kmpath_rdacd]
+ 0.0  0.0     300 ?        Dec15 00:00:00 [kaluad]
+ 0.0  0.0     302 ?        Dec15 00:00:47 [kworker/3:1H-xfs-log/dm-4]
+ 0.0  0.0     303 ?        Dec15 00:00:00 [ipv6_addrconf]
+ 0.0  0.0     304 ?        Dec15 00:00:00 [kstrp]
+ 0.0  0.0     389 ?        Dec15 00:00:41 [kworker/0:1H-kblockd]
+ 0.0  0.0     418 ?        Dec15 00:00:52 [kworker/1:1H-kblockd]
+ 0.0  0.0     419 ?        Dec15 00:00:53 [kworker/2:1H-kblockd]
+ 0.0  0.0     424 ?        Dec15 00:00:47 [kworker/11:1H-kblockd]
+ 0.0  0.0     425 ?        Dec15 00:01:12 [kworker/15:1H-kblockd]
+ 0.0  0.0     432 ?        Dec15 00:00:57 [kworker/13:1H-kblockd]
+ 0.0  0.0     548 ?        Dec15 00:01:10 [kworker/4:1H-kblockd]
+ 0.0  0.0     554 ?        Dec15 00:00:49 [kworker/9:1H-kblockd]
+ 0.0  0.0     556 ?        Dec15 00:01:04 [kworker/14:1H-kblockd]
+ 0.0  0.0     557 ?        Dec15 00:00:43 [kworker/10:1H-kblockd]
+ 0.0  0.0     613 ?        Dec15 00:00:00 [scsi_eh_0]
+ 0.0  0.0     614 ?        Dec15 00:00:00 [scsi_tmf_0]
+ 0.0  0.0     615 ?        Dec15 00:00:00 [vmw_pvscsi_wq_0]
+ 0.0  0.0     617 ?        Dec15 00:00:00 [ata_sff]
+ 0.0  0.0     620 ?        Dec15 00:00:00 [scsi_eh_1]
+ 0.0  0.0     621 ?        Dec15 00:00:00 [scsi_tmf_1]
+ 0.0  0.0     622 ?        Dec15 00:00:00 [scsi_eh_2]
+ 0.0  0.0     623 ?        Dec15 00:00:00 [scsi_tmf_2]
+ 0.0  0.0     631 ?        Dec15 00:00:00 [irq/16-vmwgfx]
+ 0.0  0.0     632 ?        Dec15 00:00:00 [ttm_swap]
+ 0.0  0.0     633 ?        Dec15 00:00:00 [card0-crtc0]
+ 0.0  0.0     634 ?        Dec15 00:00:00 [card0-crtc1]
+ 0.0  0.0     635 ?        Dec15 00:00:00 [card0-crtc2]
+ 0.0  0.0     636 ?        Dec15 00:00:00 [card0-crtc3]
+ 0.0  0.0     637 ?        Dec15 00:00:00 [card0-crtc4]
+ 0.0  0.0     638 ?        Dec15 00:00:00 [card0-crtc5]
+ 0.0  0.0     639 ?        Dec15 00:00:00 [card0-crtc6]
+ 0.0  0.0     640 ?        Dec15 00:00:00 [card0-crtc7]
+ 0.0  0.0     647 ?        Dec15 00:00:27 [kworker/u32:1-dm-thin]
+ 0.0  0.0     673 ?        Dec15 00:00:00 [xfsalloc]
+ 0.0  0.0     674 ?        Dec15 00:00:00 [xfs_mru_cache]
+ 0.0  0.0     675 ?        Dec15 00:00:00 [xfs-buf/sda5]
+ 0.0  0.0     676 ?        Dec15 00:00:00 [xfs-conv/sda5]
+ 0.0  0.0     677 ?        Dec15 00:00:00 [xfs-cil/sda5]
+ 0.0  0.0     678 ?        Dec15 00:00:00 [xfs-reclaim/sda]
+ 0.0  0.0     679 ?        Dec15 00:00:00 [xfs-eofblocks/s]
+ 0.0  0.0     680 ?        Dec15 00:00:00 [xfs-log/sda5]
+ 0.0  0.3     785 ?        Dec15 00:00:39 /usr/lib/systemd/systemd-journald
+ 0.0  0.0     826 ?        Dec15 00:00:00 [rpciod]
+ 0.0  0.0     827 ?        Dec15 00:00:00 [kworker/u37:0]
+ 0.0  0.0     828 ?        Dec15 00:00:00 [kworker/u38:0]
+ 0.0  0.0     829 ?        Dec15 00:00:00 [kworker/u39:0]
+ 0.0  0.0     830 ?        Dec15 00:00:00 [kworker/u40:0-xprtiod]
+ 0.0  0.0     831 ?        Dec15 00:00:00 [kworker/u41:0]
+ 0.0  0.0     832 ?        Dec15 00:00:00 [xprtiod]
+ 0.0  0.0     845 ?        Dec15 00:00:01 /usr/lib/systemd/systemd-udevd
+ 0.0  0.0     930 ?        Dec15 00:00:00 [dm_bufio_cache]
+ 0.0  0.0     941 ?        Dec15 00:00:00 [kdmflush]
+ 0.0  0.0     942 ?        Dec15 00:00:00 [kdmflush]
+ 0.0  0.0     977 ?        Dec15 00:00:00 [xfs-buf/sda1]
+ 0.0  0.0     978 ?        Dec15 00:00:00 [xfs-conv/sda1]
+ 0.0  0.0     979 ?        Dec15 00:00:00 [xfs-cil/sda1]
+ 0.0  0.0     980 ?        Dec15 00:00:00 [xfs-reclaim/sda]
+ 0.0  0.0     981 ?        Dec15 00:00:00 [xfs-eofblocks/s]
+ 0.0  0.0     984 ?        Dec15 00:00:00 [xfs-buf/sda8]
+ 0.0  0.0     985 ?        Dec15 00:00:00 [xfs-buf/sda3]
+ 0.0  0.0     986 ?        Dec15 00:00:00 [xfs-conv/sda8]
+ 0.0  0.0     987 ?        Dec15 00:00:00 [xfs-conv/sda3]
+ 0.0  0.0     988 ?        Dec15 00:00:00 [xfs-cil/sda8]
+ 0.0  0.0     989 ?        Dec15 00:00:00 [xfs-cil/sda3]
+ 0.0  0.0     990 ?        Dec15 00:00:00 [xfs-reclaim/sda]
+ 0.0  0.0     991 ?        Dec15 00:00:00 [xfs-reclaim/sda]
+ 0.0  0.0     992 ?        Dec15 00:00:00 [xfs-eofblocks/s]
+ 0.0  0.0     993 ?        Dec15 00:00:00 [xfs-eofblocks/s]
+ 0.0  0.0     995 ?        Dec15 00:00:00 [xfs-buf/sda9]
+ 0.0  0.0     996 ?        Dec15 00:00:00 [xfs-conv/sda9]
+ 0.0  0.0     997 ?        Dec15 00:00:00 [xfs-cil/sda9]
+ 0.0  0.0     998 ?        Dec15 00:00:00 [xfs-reclaim/sda]
+ 0.0  0.0     999 ?        Dec15 00:00:00 [xfs-eofblocks/s]
+ 0.0  0.0    1000 ?        Dec15 00:00:00 [xfs-buf/sda2]
+ 0.0  0.0    1001 ?        Dec15 00:00:00 [xfs-conv/sda2]
+ 0.0  0.0    1002 ?        Dec15 00:00:00 [xfs-cil/sda2]
+ 0.0  0.0    1003 ?        Dec15 00:00:00 [xfs-buf/sda6]
+ 0.0  0.0    1004 ?        Dec15 00:00:00 [xfs-reclaim/sda]
+ 0.0  0.0    1005 ?        Dec15 00:00:00 [xfs-conv/sda6]
+ 0.0  0.0    1006 ?        Dec15 00:00:00 [xfs-cil/sda6]
+ 0.0  0.0    1007 ?        Dec15 00:00:00 [xfs-eofblocks/s]
+ 0.0  0.0    1008 ?        Dec15 00:00:00 [xfs-reclaim/sda]
+ 0.0  0.0    1009 ?        Dec15 00:00:00 [xfs-eofblocks/s]
+ 0.0  0.0    1010 ?        Dec15 00:00:00 [xfs-log/sda1]
+ 0.0  0.0    1011 ?        Dec15 00:00:00 [xfs-log/sda9]
+ 0.0  0.0    1012 ?        Dec15 00:00:00 [xfs-log/sda3]
+ 0.0  0.0    1013 ?        Dec15 00:00:00 [xfs-log/sda6]
+ 0.0  0.0    1014 ?        Dec15 00:00:00 [xfs-log/sda8]
+ 0.0  0.0    1015 ?        Dec15 00:00:00 [xfsaild/sda9]
+ 0.0  0.0    1018 ?        Dec15 00:00:00 [xfsaild/sda1]
+ 0.0  0.0    1019 ?        Dec15 00:00:00 [xfsaild/sda8]
+ 0.0  0.0    1020 ?        Dec15 00:00:00 [xfs-log/sda2]
+ 0.0  0.0    1027 ?        Dec15 00:00:00 [kdmflush]
+ 0.0  0.0    1030 ?        Dec15 00:00:00 [kcopyd]
+ 0.0  0.0    1031 ?        Dec15 00:00:00 [dm-thin]
+ 0.0  0.0    1033 ?        Dec15 00:00:00 [kdmflush]
+ 0.0  0.1    1037 ?        Dec15 00:00:05 /usr/sbin/dmeventd -f
+ 0.0  0.0    1045 ?        Dec15 00:00:00 [kdmflush]
+ 0.0  0.0    1056 ?        Dec15 00:00:00 [xfs-buf/dm-4]
+ 0.0  0.0    1057 ?        Dec15 00:00:00 [xfs-conv/dm-4]
+ 0.0  0.0    1058 ?        Dec15 00:00:00 [xfs-cil/dm-4]
+ 0.0  0.0    1059 ?        Dec15 00:00:00 [xfs-reclaim/dm-]
+ 0.0  0.0    1060 ?        Dec15 00:00:00 [xfs-eofblocks/d]
+ 0.0  0.0    1061 ?        Dec15 00:00:00 [xfs-log/dm-4]
+ 0.0  0.0    1062 ?        Dec15 00:00:25 [xfsaild/dm-4]
+ 0.0  0.0    1083 ?        Dec15 00:00:00 /usr/bin/rpcbind -w -f
+ 0.0  0.0    1086 ?        Dec15 00:00:00 /usr/sbin/rpc.idmapd
+ 0.0  0.0    1087 ?        Dec15 00:00:17 /sbin/auditd
+ 0.0  0.0    1089 ?        Dec15 00:00:00 /usr/sbin/nfsdcld
+ 0.0  0.0    1090 ?        Dec15 00:00:05 /usr/sbin/sedispatch
+ 0.0  0.0    1113 ?        Dec15 00:00:02 /u1/genero/gas/bin/fastcgidispatch -s -f /u1/genero/as-toptst.xcf
+ 0.0  0.0    1114 ?        Dec15 00:00:02 /u1/genero/gas/bin/fastcgidispatch -s -f /u1/genero/as-toppth.xcf
+ 0.0  0.0    1116 ?        Dec15 00:00:01 /usr/bin/lsmd -d
+ 0.0  0.0    1117 ?        Dec15 00:00:14 /usr/libexec/udisks2/udisksd
+ 0.0  0.0    1118 ?        Dec15 00:00:00 /usr/sbin/sssd -i --logger=files
+ 0.0  0.0    1119 ?        Dec15 00:00:06 /usr/sbin/ModemManager
+ 0.0  0.0    1122 ?        Dec15 00:00:12 /usr/sbin/irqbalance --foreground
+ 0.0  0.0    1123 ?        Dec15 00:00:04 /u1/genero/gas/bin/fastcgidispatch -s -f /u1/genero/as-topprd-ws.xcf
+ 0.0  0.0    1127 ?        Dec15 00:00:01 /u1/genero/gas/bin/fastcgidispatch -s -f /u1/genero/as-topstd.xcf
+ 0.0  0.0    1129 ?        Dec15 00:00:15 /usr/lib/systemd/systemd-machined
+ 0.0  0.0    1130 ?        Dec15 00:00:00 /usr/sbin/smartd -n -q never
+ 0.0  0.0    1131 ?        Dec15 00:00:01 /usr/libexec/rtkit-daemon
+ 0.0  0.0    1132 ?        Dec15 00:00:00 /usr/bin/VGAuthService -s
+ 0.0  0.0    1134 ?        Dec15 00:00:00 /usr/sbin/mcelog --ignorenodev --daemon --foreground
+ 0.0  0.0    1135 ?        Dec15 00:00:45 /u1/genero/gas/bin/fastcgidispatch -s -f /u1/genero/as-topprd.xcf
+ 0.0  0.0    1140 ?        Dec15 00:00:03 /bin/bash /usr/sbin/ksmtuned
+ 0.0  0.0    1164 ?        Dec15 00:00:00 avahi-daemon: chroot helper
+ 0.0  0.0    1166 ?        Dec15 00:00:01 /usr/libexec/sssd/sssd_be --domain implicit_files --uid 0 --gid 0 --logger=files
+ 0.0  0.0    1171 ?        Dec15 00:00:00 /usr/sbin/sshd -D -oCiphers=aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes256-ctr,aes256-cbc,aes128-gcm@openssh.com,aes128-ctr,aes128-cbc -oMACs=hmac-sha2-256-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha2-256,hmac-sha1,umac-128@openssh.com,hmac-sha2-512 -oGSSAPIKexAlgorithms=gss-curve25519-sha256-,gss-nistp256-sha256-,gss-group14-sha256-,gss-group16-sha512-,gss-gex-sha1-,gss-group14-sha1- -oKexAlgorithms=curve25519-sha256,curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group14-sha256,diffie-hellman-group16-sha512,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1 -oHostKeyAlgorithms=ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,rsa-sha2-256,rsa-sha2-256-cert-v01@openssh.com,rsa-sha2-512,rsa-sha2-512-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oPubkeyAcceptedKeyTypes=ecdsa-sha2-nistp256,ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521,ecdsa-sha2-nistp521-cert-v01@openssh.com,ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,rsa-sha2-256,rsa-sha2-256-cert-v01@openssh.com,rsa-sha2-512,rsa-sha2-512-cert-v01@openssh.com,ssh-rsa,ssh-rsa-cert-v01@openssh.com -oCASignatureAlgorithms=ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519,rsa-sha2-256,rsa-sha2-512,ssh-rsa
+ 0.0  0.0    1174 ?        Dec15 00:00:15 /usr/libexec/platform-python -Es /usr/sbin/tuned -l -P
+ 0.0  0.0    1178 ?        Dec15 00:00:00 /usr/sbin/cupsd -l
+ 0.0  0.0    1190 ?        Dec15 00:00:00 /usr/bin/rhsmcertd
+ 0.0  0.0    1209 ?        Dec15 00:00:03 /u1/genero/flm/bin/flmprg -r
+ 0.0  0.1    1212 ?        Dec15 00:00:26 /usr/libexec/sssd/sssd_nss --uid 0 --gid 0 --logger=files
+ 0.0  0.0    1224 ?        Dec15 00:00:00 /usr/sbin/gssproxy -D
+ 0.0  0.0    1253 ?        Dec15 00:00:00 [ib-comp-wq]
+ 0.0  0.0    1254 ?        Dec15 00:00:00 [ib-comp-unb-wq]
+ 0.0  0.0    1256 ?        Dec15 00:00:00 [ib_mcast]
+ 0.0  0.0    1257 ?        Dec15 00:00:00 [ib_nl_sa_wq]
+ 0.0  0.0    1281 ?        Dec15 00:00:00 [rdma_cm]
+ 0.0  0.0    1286 ?        Dec15 00:00:50 /usr/lib/systemd/systemd-logind
+ 0.0  0.0    1287 ?        Dec15 00:00:14 /usr/libexec/accounts-daemon
+ 0.0  0.0    1294 ?        Dec15 00:00:00 [cifsiod]
+ 0.0  0.0    1295 ?        Dec15 00:00:00 [smb3decryptd]
+ 0.0  0.0    1297 ?        Dec15 00:00:00 [cifsfileinfoput]
+ 0.0  0.0    1298 ?        Dec15 00:00:00 [cifsoplockd]
+ 0.0  0.0    1299 ?        Dec15 00:00:00 [cifs-dfscache]
+ 0.0  0.0    1527 ?        Dec15 00:00:07 /usr/sbin/httpd -DFOREGROUND
+ 0.0  0.2    1548 ?        Dec15 00:00:22 /usr/sbin/rsyslogd -n
+ 0.0  0.0    1562 ?        Dec15 00:00:00 /usr/sbin/atd -f
+ 0.0  0.0    1569 ?        Dec15 00:00:03 /usr/sbin/crond -n
+ 0.0  0.0    1570 ?        Dec15 00:00:00 /usr/sbin/vsftpd /etc/vsftpd/vsftpd.conf
+ 0.0  0.0    1575 ?        Dec15 00:00:00 /usr/sbin/rpc.statd
+ 0.0  0.0    1607 ?        Dec15 00:00:00 /usr/sbin/rpc.mountd
+ 0.0  0.0    1634 ?        Dec15 00:00:00 [kworker/u40:1-xprtiod]
+ 0.0  0.0    1637 ?        Dec15 00:00:00 [lockd]
+ 0.0  0.0    1647 ?        Dec15 00:00:20 /usr/lib/systemd/systemd --user
+ 0.0  0.0    1653 ?        Dec15 00:00:00 [nfsd]
+ 0.0  0.0    1654 ?        Dec15 00:00:00 [nfsd]
+ 0.0  0.0    1659 ?        Dec15 00:00:00 [nfsd]
+ 0.0  0.0    1661 ?        Dec15 00:00:00 [nfsd]
+ 0.0  0.0    1662 ?        Dec15 00:00:00 [nfsd]
+ 0.0  0.0    1663 ?        Dec15 00:00:00 [nfsd]
+ 0.0  0.0    1664 ?        Dec15 00:00:00 [nfsd]
+ 0.0  0.0    1665 ?        Dec15 00:00:00 [nfsd]
+ 0.0  0.0    1681 ?        Dec15 00:00:00 (sd-pam)
+ 0.0  0.1    6799 ?        Dec15 00:01:09 /u2/oracle/product/19.0.0/dbhome_1/bin/tnslsnr LISTENER -inherit
+ 0.0  0.0    9835 ?        Dec15 00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ 0.0  0.0   15568 ?        Dec15 00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/libexec/libvirt_leaseshelper
+ 0.0  0.0   15571 ?        Dec15 00:00:00 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/libexec/libvirt_leaseshelper
+ 0.0  0.0   18854 ?        Dec15 00:00:00 /usr/sbin/gdm
+ 0.0  0.2   18874 ?        Dec15 00:00:11 ora_pmon_topprd
+ 0.0  0.0   18879 ?        Dec15 00:00:00 gdm-session-worker [pam/gdm-launch-environment]
+ 0.0  0.1   18881 ?        Dec15 00:00:03 ora_clmn_topprd
+ 0.0  0.1   18883 ?        Dec15 00:00:15 ora_psp0_topprd
+ 0.0  0.0   18888 ?        Dec15 00:00:20 /usr/lib/systemd/systemd --user
+ 0.0  0.0   18890 ?        Dec15 00:00:00 (sd-pam)
+ 0.0  0.0   18908 tty1     Dec15 00:00:00 /usr/libexec/gdm-wayland-session --register-session gnome-session --autostart /usr/share/gdm/greeter/autostart
+ 0.0  0.2   18963 ?        Dec15 00:00:06 ora_gen0_topprd
+ 0.0  0.0   18969 ?        Dec15 00:00:34 [kworker/u32:2-dm-thin]
+ 0.0  0.8   18975 ?        Dec15 00:00:06 ora_mman_topprd
+ 0.0  0.1   18990 ?        Dec15 00:00:05 ora_diag_topprd
+ 0.0  0.2   18993 ?        Dec15 00:00:02 ora_ofsd_topprd
+ 0.0  0.1   19004 ?        Dec15 00:00:05 ora_svcb_topprd
+ 0.0  0.1   19007 ?        Dec15 00:00:14 ora_pman_topprd
+ 0.0  3.2   19014 ?        Dec15 00:00:27 ora_dbw0_topprd
+ 0.0  0.0   19016 ?        Dec15 00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ 0.0  3.2   19018 ?        Dec15 00:00:26 ora_dbw1_topprd
+ 0.0  0.0   19020 tty1     Dec15 00:00:13 /usr/libexec/gnome-session-binary --autostart /usr/share/gdm/greeter/autostart
+ 0.0  0.2   19022 ?        Dec15 00:00:31 ora_lgwr_topprd
+ 0.0  0.2   19024 ?        Dec15 00:00:26 ora_lg00_topprd
+ 0.0  0.5   19027 ?        Dec15 00:00:40 ora_ckpt_topprd
+ 0.0  0.2   19030 ?        Dec15 00:00:07 ora_lg01_topprd
+ 0.0  0.3   19034 ?        Dec15 00:00:03 ora_smon_topprd
+ 0.0  0.2   19036 ?        Dec15 00:00:12 ora_smco_topprd
+ 0.0  0.2   19040 ?        Dec15 00:00:01 ora_reco_topprd
+ 0.0  0.6   19044 ?        Dec15 00:00:03 ora_w000_topprd
+ 0.0  0.2   19048 ?        Dec15 00:00:04 ora_lreg_topprd
+ 0.0  0.6   19052 ?        Dec15 00:00:03 ora_w001_topprd
+ 0.0  0.1   19056 ?        Dec15 00:00:02 ora_pxmn_topprd
+ 0.0  0.7   19060 ?        Dec15 00:00:42 ora_mmon_topprd
+ 0.0  0.2   19064 ?        Dec15 00:00:02 ora_mmnl_topprd
+ 0.0  0.1   19066 ?        Dec15 00:00:01 ora_d000_topprd
+ 0.0  0.1   19070 ?        Dec15 00:00:01 ora_s000_topprd
+ 0.0  0.1   19072 ?        Dec15 00:00:01 ora_tmon_topprd
+ 0.0  0.1   19125 tty1     Dec15 00:00:01 /usr/bin/Xwayland :1024 -rootless -terminate -accessx -core -listen 4 -listen 5 -displayfd 6
+ 0.0  0.0   19164 ?        Dec15 00:00:00 /usr/libexec/at-spi-bus-launcher
+ 0.0  0.0   19169 ?        Dec15 00:00:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3
+ 0.0  0.0   19171 ?        Dec15 00:00:00 /usr/libexec/at-spi2-registryd --use-gnome-session
+ 0.0  0.2   19184 ?        Dec15 00:00:01 ora_tt00_topprd
+ 0.0  0.1   19186 ?        Dec15 00:00:01 ora_tt01_topprd
+ 0.0  0.1   19188 ?        Dec15 00:00:04 ora_tt02_topprd
+ 0.0  0.0   19190 tty1     Dec15 00:00:01 ibus-daemon --xim --panel disable
+ 0.0  0.0   19193 tty1     Dec15 00:00:00 /usr/libexec/ibus-dconf
+ 0.0  0.2   19196 tty1     Dec15 00:00:00 /usr/libexec/ibus-x11 --kill-daemon
+ 0.0  0.0   19200 ?        Dec15 00:00:00 /usr/libexec/ibus-portal
+ 0.0  0.0   19244 ?        Dec15 00:00:00 /usr/libexec/xdg-permission-store
+ 0.0  0.6   19249 ?        Dec15 00:00:03 ora_w002_topprd
+ 0.0  0.0   19251 ?        Dec15 00:00:06 /usr/libexec/upowerd
+ 0.0  0.0   19252 ?        Dec15 00:00:00 /usr/bin/pulseaudio --daemonize=no --log-target=journal
+ 0.0  0.0   19269 ?        Dec15 00:00:21 /usr/libexec/packagekitd
+ 0.0  0.0   19272 tty1     Dec15 00:00:00 /usr/libexec/gsd-xsettings
+ 0.0  0.0   19274 tty1     Dec15 00:00:00 /usr/libexec/gsd-a11y-settings
+ 0.0  0.0   19277 tty1     Dec15 00:00:00 /usr/libexec/gsd-clipboard
+ 0.0  0.0   19281 tty1     Dec15 00:00:01 /usr/libexec/gsd-color
+ 0.0  0.0   19282 tty1     Dec15 00:00:00 /usr/libexec/gsd-datetime
+ 0.0  0.0   19283 tty1     Dec15 00:00:00 /usr/libexec/gsd-housekeeping
+ 0.0  0.0   19290 tty1     Dec15 00:00:00 /usr/libexec/gsd-keyboard
+ 0.0  0.2   19293 ?        Dec15 00:00:02 ora_w003_topprd
+ 0.0  0.0   19294 tty1     Dec15 00:00:07 /usr/libexec/gsd-media-keys
+ 0.0  0.0   19302 tty1     Dec15 00:00:00 /usr/libexec/gsd-mouse
+ 0.0  0.0   19303 tty1     Dec15 00:00:09 /usr/libexec/gsd-power
+ 0.0  0.0   19307 tty1     Dec15 00:00:00 /usr/libexec/gsd-print-notifications
+ 0.0  0.0   19310 ?        Dec15 00:00:00 /usr/sbin/wpa_supplicant -c /etc/wpa_supplicant/wpa_supplicant.conf -u -s
+ 0.0  0.0   19313 tty1     Dec15 00:00:00 /usr/libexec/gsd-rfkill
+ 0.0  0.0   19316 tty1     Dec15 00:00:00 /usr/libexec/gsd-screensaver-proxy
+ 0.0  0.0   19317 tty1     Dec15 00:00:00 /usr/libexec/gsd-sharing
+ 0.0  0.0   19320 tty1     Dec15 00:00:12 /usr/libexec/gsd-smartcard
+ 0.0  0.0   19324 tty1     Dec15 00:00:00 /usr/libexec/gsd-sound
+ 0.0  0.0   19327 tty1     Dec15 00:00:00 /usr/libexec/gsd-wacom
+ 0.0  0.0   19360 ?        Dec15 00:00:00 /usr/libexec/colord
+ 0.0  0.0   19423 tty1     Dec15 00:00:00 /usr/libexec/ibus-engine-simple
+ 0.0  0.2   19482 ?        Dec15 00:00:01 ora_aqpc_topprd
+ 0.0  0.2   19637 ?        Dec15 00:00:01 ora_qm02_topprd
+ 0.0  0.2   19649 ?        Dec15 00:00:01 ora_q003_topprd
+ 0.0  0.2   22812 ?        Dec15 00:00:02 ora_q00h_topprd
+ 0.0  0.5   50774 ?        Dec15 00:00:03 ora_w006_topprd
+ 0.0  0.2   50784 ?        Dec15 00:00:02 ora_w007_topprd
+ 0.0  0.5   50786 ?        Dec15 00:00:03 ora_w008_topprd
+ 0.0  0.6   50788 ?        Dec15 00:00:03 ora_w009_topprd
+ 0.0  0.5   50790 ?        Dec15 00:00:03 ora_w00a_topprd
+ 0.0  0.5   50792 ?        Dec15 00:00:02 ora_w00b_topprd
+ 0.0  0.2   50794 ?        Dec15 00:00:02 ora_w00c_topprd
+ 0.0  0.2   50796 ?        Dec15 00:00:02 ora_w00d_topprd
+ 0.0  0.2   50798 ?        Dec15 00:00:03 ora_w00e_topprd
+ 0.0  0.2   50800 ?        Dec15 00:00:02 ora_w00f_topprd
+ 0.0  0.2   51957 ?        Dec15 00:00:02 ora_w00g_topprd
+ 0.0  0.5   53582 ?        Dec15 00:00:03 ora_w00i_topprd
+ 0.0  0.5   54409 ?        Dec15 00:00:02 ora_w00j_topprd
+ 0.0  0.5   54573 ?        Dec15 00:00:02 ora_w00k_topprd
+ 0.0  0.5   54575 ?        Dec15 00:00:03 ora_w00l_topprd
+ 0.0  0.5   54835 ?        Dec15 00:00:03 ora_w00m_topprd
+ 0.0  0.2   54837 ?        Dec15 00:00:02 ora_w00n_topprd
+ 0.0  0.2   54839 ?        Dec15 00:00:02 ora_w00o_topprd
+ 0.0  0.2   54841 ?        Dec15 00:00:02 ora_w00p_topprd
+ 0.0  0.5   54853 ?        Dec15 00:00:03 ora_w00q_topprd
+ 0.0  0.6   54855 ?        Dec15 00:00:03 ora_w00r_topprd
+ 0.0  0.2   54857 ?        Dec15 00:00:02 ora_w00s_topprd
+ 0.0  0.2   54859 ?        Dec15 00:00:02 ora_w00t_topprd
+ 0.0  0.5   54861 ?        Dec15 00:00:02 ora_w00u_topprd
+ 0.0  0.0  201314 ?        Dec15 00:00:00 /usr/libexec/gvfsd
+ 0.0  0.0  201319 ?        Dec15 00:00:02 /usr/libexec/gvfsd-fuse /run/user/1002/gvfs -f -o big_writes
+ 0.0  0.0  509508 ?        06:59 00:00:00 [kworker/u35:0-events_unbound]
+ 0.0  0.0  650628 ?        07:32 00:00:00 [kworker/u36:3-xfs-cil/sda6]
+ 0.0  0.0  690750 ?        07:47 00:00:00 [kworker/u35:2-xfs-cil/sda2]
+ 0.0  0.0  721855 ?        07:59 00:00:01 [kworker/u33:0-events_unbound]
+ 0.0  0.0  801159 ?        08:08 00:00:01 [kworker/u34:3-events_unbound]
+ 0.0  0.5  849266 ?        Dec15 00:00:02 ora_w00v_topprd
+ 0.0  0.0  859473 ?        08:30 00:00:00 [kworker/u36:1-events_unbound]
+ 0.0  0.0  869337 ?        08:33 00:00:00 [kworker/11:2-cgroup_pidlist_destroy]
+ 0.0  0.0  870382 ?        08:34 00:00:00 [kworker/u36:2-events_unbound]
+ 0.0  0.0  877021 ?        08:36 00:00:00 [kworker/1:1-cgroup_pidlist_destroy]
+ 0.0  0.0  880813 ?        08:37 00:00:00 [kworker/8:3-xfs-sync/sda8]
+ 0.0  0.0  882086 ?        08:38 00:00:00 [kworker/5:1-cgroup_destroy]
+ 0.0  0.0  891739 ?        08:41 00:00:00 [kworker/7:1-cgroup_pidlist_destroy]
+ 0.0  0.0  901640 ?        08:45 00:00:00 [kworker/3:1-mm_percpu_wq]
+ 0.0  0.0  907887 ?        08:47 00:00:00 sshd: root [priv]
+ 0.0  0.0  907891 ?        08:47 00:00:00 /usr/lib/systemd/systemd --user
+ 0.0  0.0  907893 ?        08:47 00:00:00 (sd-pam)
+ 0.0  0.0  907917 pts/0    08:47 00:00:00 -bash
+ 0.0  0.0  907940 ?        08:47 00:00:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+ 0.0  0.0  907942 ?        08:47 00:00:00 /usr/libexec/gvfsd
+ 0.0  0.0  907947 ?        08:47 00:00:00 /usr/libexec/gvfsd-fuse /run/user/0/gvfs -f -o big_writes
+ 0.0  0.0  907958 pts/0    08:47 00:00:00 su - tiptop
+ 0.0  0.0  907959 pts/0    08:47 00:00:00 -ksh
+ 0.0  0.0  918290 ?        08:50 00:00:00 [kworker/13:1-events]
+ 0.0  0.0  918295 ?        08:50 00:00:00 [kworker/14:1-events]
+ 0.0  0.0  924225 ?        08:54 00:00:00 [kworker/12:0-cgroup_destroy]
+ 0.0  0.0  928457 ?        08:55 00:00:00 [kworker/9:0-events_freezable]
+ 0.0  0.0  929669 ?        08:55 00:00:00 [kworker/u33:2-events_unbound]
+ 0.0  0.0  929771 ?        08:55 00:00:00 [kworker/10:1-cgroup_pidlist_destroy]
+ 0.0  0.0  929918 ?        08:55 00:00:00 [kworker/0:0-events]
+ 0.0  0.0  933973 ?        08:57 00:00:00 [kworker/15:1-events]
+ 0.0  0.0  935098 ?        08:58 00:00:00 [kworker/4:1-cgroup_pidlist_destroy]
+ 0.0  0.0  938585 ?        08:58 00:00:00 [kworker/6:1-cgroup_pidlist_destroy]
+ 0.0  0.0  939653 ?        09:00 00:00:00 [kworker/2:2-mm_percpu_wq]
+ 0.0  0.0  940061 ?        09:00 00:00:00 [kworker/u34:0-flush-8:0]
+ 0.0  0.0  940252 ?        09:00 00:00:00 [kworker/7:0-events]
+ 0.0  0.0  961581 ?        09:00 00:00:00 [kworker/5:3-cgroup_pidlist_destroy]
+ 0.0  0.0  961799 ?        09:00 00:00:00 [kworker/11:1-cgroup_pidlist_destroy]
+ 0.0  0.0  961835 ?        09:00 00:00:00 [kworker/10:2-cgroup_pidlist_destroy]
+ 0.0  0.0  961863 ?        09:00 00:00:00 [kworker/12:3-events]
+ 0.0  0.0  967888 ?        09:01 00:00:00 [kworker/9:1-events]
+ 0.0  0.0 1008933 ?        09:03 00:00:00 [kworker/8:1-xfs-sync/sda8]
+ 0.0  0.0 1009708 ?        09:03 00:00:00 [kworker/1:0-events]
+ 0.0  0.0 1010161 ?        09:04 00:00:00 [kworker/6:2-cgroup_pidlist_destroy]
+ 0.0  0.0 1017968 ?        09:06 00:00:00 [kworker/14:0-events]
+ 0.0  0.0 1018745 ?        09:06 00:00:00 [kworker/7:2-cgroup_destroy]
+ 0.0  0.0 1018764 ?        09:06 00:00:00 [kworker/13:0-events]
+ 0.0  0.0 1019402 ?        09:06 00:00:00 [kworker/12:1-events]
+ 0.0  0.0 1021835 ?        09:06 00:00:00 [kworker/2:1-mm_percpu_wq]
+ 0.0  0.0 1021952 ?        09:06 00:00:00 [kworker/0:1-ata_sff]
+ 0.0  0.0 1022807 ?        09:07 00:00:00 [kworker/4:0-events]
+ 0.0  0.0 1023222 ?        09:08 00:00:00 [kworker/3:0-events]
+ 0.0  0.0 1023279 ?        09:08 00:00:00 [kworker/u35:1-events_unbound]
+ 0.0  0.0 1023992 ?        09:08 00:00:00 [kworker/5:0-cgroup_pidlist_destroy]
+ 0.0  0.0 1024625 ?        09:08 00:00:00 [kworker/15:2-events]
+ 0.0  0.0 1026741 ?        09:08 00:00:00 [kworker/u34:1]
+ 0.0  0.0 1026745 ?        09:08 00:00:00 [kworker/8:0-mm_percpu_wq]
+ 0.0  0.0 1027001 ?        09:09 00:00:00 [kworker/11:0-mm_percpu_wq]
+ 0.0  0.0 1027691 ?        09:09 00:00:00 [kworker/9:2-cgroup_pidlist_destroy]
+ 0.0  0.0 1029705 ?        09:10 00:00:00 [kworker/7:3-events]
+ 0.0  0.0 1029749 ?        09:10 00:00:00 [kworker/6:0-mm_percpu_wq]
+ 0.0  0.0 1032246 ?        09:10 00:00:00 [kworker/u36:0]
+ 0.0  0.0 1035876 ?        09:10 00:00:00 [kworker/11:3-cgroup_destroy]
+ 0.0  0.0 1035965 ?        09:10 00:00:00 [kworker/10:0-events]
+ 0.0  0.0 1035977 ?        09:10 00:00:00 [kworker/1:2-mm_percpu_wq]
+ 0.0  0.0 1035980 ?        09:10 00:00:00 [kworker/5:2-events]
+ 0.0  0.0 1041424 ?        09:12 00:00:00 [kworker/0:2-ata_sff]
+ 0.0  0.0 1041522 ?        09:12 00:00:00 [kworker/2:0-mm_percpu_wq]
+ 0.0  0.0 1041554 ?        09:12 00:00:00 /usr/local/aiopskit/escli -web
+ 0.0  0.0 1041763 ?        09:13 00:00:00 [kworker/4:2-events]
+ 0.0  0.0 1042472 ?        09:13 00:00:00 sleep 60
+ 0.0  0.0 1044065 pts/0    09:13 00:00:00 timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu
+ 0.0  0.0 1044066 pts/0    09:13 00:00:00 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu
+ 0.0  0.2 2257641 ?        Dec15 00:00:01 ora_w00h_topprd
+ 0.0  0.2 2907986 ?        Dec15 00:00:01 ora_w004_topprd
+ 0.0  0.0 3290902 ?        00:05 00:00:00 /bin/sh -c export FGLRESOURCEPATH=/u1/topprd/erp/azz/42s/zh_TW;export DBDATE=Y4MD/;export NLS_DATE_FORMAT='RRRR/MM/DD';fglrun /u1/topprd/erp/azz/42r/azzp951 '{"sessionkey":"ILGA050543421b","parent":"0","prog":"azzp951","account":"tiptop","param":[],"schedule_seq":0,"static_ent":99}'
+ 0.0  0.1 3290905 ?        00:05 00:00:20 fglrun /u1/topprd/erp/azz/42r/azzp951 {"sessionkey":"ILGA050543421b","parent":"0","prog":"azzp951","account":"tiptop","param":[],"schedule_seq":0,"static_ent":99}
+ 0.0  0.2 3539363 ?        01:19 00:00:00 ora_w005_topprd
+ 0.0  0.0 4031419 ?        03:46 00:00:00 /usr/sbin/httpd -DFOREGROUND
+ 0.0  0.0 4031421 ?        03:46 00:00:07 /usr/sbin/httpd -DFOREGROUND
+ 0.0  0.0 4031422 ?        03:46 00:00:06 /usr/sbin/httpd -DFOREGROUND
+ 0.0  0.0 4032482 ?        03:46 00:00:07 /usr/sbin/httpd -DFOREGROUND

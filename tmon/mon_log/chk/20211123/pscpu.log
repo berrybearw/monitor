@@ -1,0 +1,1695 @@
+16.3  63134  46299 ?        08:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  65295  63134 ?        08:00 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+20.5  96004  84885 ?        08:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 100032  96004 ?        08:01 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0   5368 121210 ?        08:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   7502   5368 ?        08:02 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5  42178  27431 ?        08:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  44279  42178 ?        08:03 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5  76305  63644 ?        08:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  78385  76305 ?        08:04 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.2 112910  97751 ?        08:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 114987 112910 ?        08:05 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+18.0  16291   3729 ?        08:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  18472  16291 ?        08:06 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+18.0  53061  38268 ?        08:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  55146  53061 ?        08:07 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5  87149  74528 ?        08:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  89236  87149 ?        08:08 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.2 123383 108588 ?        08:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 125462 123383 ?        08:09 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0  35602  14225 ?        08:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  37685  35602 ?        08:10 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5  69622  57102 ?        08:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  71726  69622 ?        08:11 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.0 105880  91052 ?        08:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 107980 105880 ?        08:12 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0   9321 127346 ?        08:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  11411   9321 ?        08:13 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5  46098  31289 ?        08:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  48162  46098 ?        08:14 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5  80140  67563 ?        08:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  82227  80140 ?        08:15 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.7 116284 101524 ?        08:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 118348 116284 ?        08:16 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5  22298   7074 ?        08:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  24473  22298 ?        08:17 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.7  56487  43848 ?        08:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  58575  56487 ?        08:18 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.2  92719  77918 ?        08:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  94799  92719 ?        08:19 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5   4816 114193 ?        08:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   6884   4816 ?        08:20 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.2  41491  26793 ?        08:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  43571  41491 ?        08:21 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.7  77789  62990 ?        08:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  79887  77789 ?        08:22 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2 113970  99263 ?        08:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 116089 113970 ?        08:23 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.7  19820   4823 ?        08:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  22123  19820 ?        08:24 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5  56368  41642 ?        08:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  58432  56368 ?        08:25 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.2  92516  77662 ?        08:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  94581  92516 ?        08:26 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5 127252 114174 ?        08:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 129336 127252 ?        08:27 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.6  33480  18042 ?        08:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  35560  33480 ?        08:28 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  69684  54734 ?        08:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  71825  69684 ?        08:29 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+45.0 111525      1 ?        08:30 00:00:00 oracletopprd (LOCAL=NO)
+11.7 109923  91103 ?        08:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 111990 109923 ?        08:30 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6  15591   1620 ?        08:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  17721  15591 ?        08:31 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  52392  37624 ?        08:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  54456  52392 ?        08:32 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  88758  74433 ?        08:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  90820  88758 ?        08:33 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0 125154 110587 ?        08:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 127215 125154 ?        08:34 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  31707  16554 ?        08:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  33840  31707 ?        08:35 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  68022  54517 ?        08:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  70123  68022 ?        08:36 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0 104089  90907 ?        08:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 106361 104089 ?        08:37 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+74.0  11260      1 ?        08:38 00:00:00 oracletopprd (LOCAL=NO)
+14.0  11119  11116 ?        08:38 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNI381861248d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+13.6   9708 126147 ?        08:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  11893   9708 ?        08:38 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6  46509  32070 ?        08:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  48624  46509 ?        08:39 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  88838  69124 ?        08:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  90902  88838 ?        08:40 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2 125006 110583 ?        08:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 127069 125006 ?        08:41 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  31210  16411 ?        08:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  33274  31210 ?        08:42 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.7  65262  52704 ?        08:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  67355  65262 ?        08:43 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.7 101507  86641 ?        08:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 103571 101507 ?        08:44 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.2   4912 122958 ?        08:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   7003   4912 ?        08:45 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.7  41587  26881 ?        08:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  43650  41587 ?        08:46 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.3  75661  63017 ?        08:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  77742  75661 ?        08:47 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3 111826  97119 ?        08:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 113960 111826 ?        08:48 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5  15385   2721 ?        08:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  17537  15385 ?        08:49 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  58654  37387 ?        08:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  60718  58654 ?        08:50 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.2  92645  80127 ?        08:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  94762  92645 ?        08:51 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6 128902 114124 ?        08:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 131000 128902 ?        08:52 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  32896  19947 ?        08:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  34976  32896 ?        08:53 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.6  69064  54341 ?        08:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  71217  69064 ?        08:54 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+24.6 104986      1 ?        08:55 00:00:01 oracletopprd (LOCAL=NO)
+10.5 106155  90770 ?        08:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 108223 106155 ?        08:55 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5   9854 127643 ?        08:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  11934   9854 ?        08:56 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  45116  32072 ?        08:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  47180  45116 ?        08:57 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  79686  66812 ?        08:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  81750  79686 ?        08:58 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.7 114163 101453 ?        08:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 116243 114163 ?        08:59 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  25730   5580 ?        09:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  27792  25730 ?        09:00 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0  60522  47615 ?        09:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  62602  60522 ?        09:01 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5  96867  81965 ?        09:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  98966  96867 ?        09:02 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.2  39653  24808 ?        09:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  41717  39653 ?        09:04 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  76333  61116 ?        09:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  78395  76333 ?        09:05 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0 112623  97770 ?        09:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 114703 112623 ?        09:06 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0  18371   3368 ?        09:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  20605  18371 ?        09:07 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.2  55374  40223 ?        09:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  57471  55374 ?        09:08 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.2  91699  76662 ?        09:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  93767  91699 ?        09:09 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0   3475 113012 ?        09:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   5556   3475 ?        09:10 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0  38064  25258 ?        09:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  40148  38064 ?        09:11 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.7  74552  59489 ?        09:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  76616  74552 ?        09:12 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0 111107  95815 ?        09:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 113220 111107 ?        09:13 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.7  15816   2626 ?        09:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  17961  15816 ?        09:14 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  53409  38174 ?        09:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  55530  53409 ?        09:15 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  87633  74793 ?        09:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  89765  87633 ?        09:16 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6 123917 108983 ?        09:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 126100 123917 ?        09:17 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  28395  14916 ?        09:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  30549  28395 ?        09:18 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  66133  66127 ?        09:19 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNJ191852911d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+13.3  64806  49772 ?        09:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  67095  64806 ?        09:19 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+63.0 109764      1 ?        09:20 00:00:00 oracletopprd (LOCAL=NO)
+21.0 109376 109372 ?        09:20 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNJ201996015d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+15.0 108253  88192 ?        09:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 110472 108253 ?        09:20 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.3  13928 129713 ?        09:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  16030  13928 ?        09:21 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+18.0  50888  36023 ?        09:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  52954  50888 ?        09:22 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+20.0  86134  85979 pts/15   09:23 00:00:00 -ksh
+16.3  85004  72357 ?        09:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  87376  85004 ?        09:23 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+53.0 118417      1 ?        09:24 00:00:02 oracletopprd (LOCAL=NO)
+15.3 119947 107217 ?        09:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 122027 119947 ?        09:24 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.0  26115  10771 ?        09:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  28177  26115 ?        09:25 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+20.7  48017      1 ?        09:26 00:00:03 oracletopprd (LOCAL=NO)
+12.5  62835  48019 ?        09:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  64901  62835 ?        09:26 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.2  97093  84379 ?        09:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  99216  97093 ?        09:27 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.7   1145 119006 ?        09:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   3238   1145 ?        09:28 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5  38398  23291 ?        09:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  40463  38398 ?        09:29 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0  78770  60067 ?        09:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  80850  78770 ?        09:30 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5 116070 101048 ?        09:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 118135 116070 ?        09:31 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  22943   9728 ?        09:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  25095  22943 ?        09:32 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7   5594      1 pts/0    09:31 00:00:10 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmt500 {"sessionkey":"IKNB314701929d","parent":"IKNB305683658d","parentprog":"apmp490","ancest":"IKNJ303134819d","prog":"apmt500","account":"tiptopcn","param":["\"3\""],"schedule_seq":0,"static_ent":99}
+11.7  59814  47770 ?        09:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  61877  59814 ?        09:33 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+18.6  72894      1 ?        09:33 00:00:07 oracletopprd (LOCAL=NO)
+17.0  96621      1 ?        09:34 00:00:00 oracletopprd (LOCAL=NO)
+15.6  95865      1 pts/21   09:34 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/ais/42r/aist310 {"sessionkey":"IKNB341388206d","parent":"IKNJ333531668d","parentprog":"axmt540","ancest":"IKNJ333531668d","prog":"aist310","account":"topapp","param":[],"schedule_seq":0,"static_ent":99}
+14.0  97037  84937 ?        09:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  99160  97037 ?        09:34 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6   3436 122077 ?        09:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 1.3 110277      1 pts/21   09:34 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrt300 {"sessionkey":"IKNB343620770d","parent":"IKNB342796188d","parentprog":"axrp132","ancest":"IKNJ333531668d","prog":"axrt300","account":"topapp","param":[],"schedule_seq":0,"static_ent":99}
+ 0.0   5521   3436 ?        09:35 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  40403  25981 ?        09:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  42482  40403 ?        09:36 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.6  77265  65965 ?        09:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  79327  77265 ?        09:37 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.3 113765 100470 ?        09:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 115849 113765 ?        09:38 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0  19604   7829 ?        09:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  21954  19604 ?        09:39 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+10.6  14261      1 ?        09:35 00:00:23 oracletopprd (LOCAL=NO)
+15.6  62375  42862 ?        09:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  64458  62375 ?        09:40 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+21.0  91037      1 pts/18   09:41 00:00:02 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/asf/42r/asfp400 {"sessionkey":"IKNJ410467500d","parent":"0","prog":"asfp400","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+16.7  91775      1 ?        09:41 00:00:02 oracletopprd (LOCAL=NO)
+15.6  99925  86677 ?        09:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 102047  99925 ?        09:41 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6   6853 124622 ?        09:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   8991   6853 ?        09:42 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+18.0  45886      1 pts/24   09:43 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/ais/42r/aisi020 {"sessionkey":"IKNB432034407d","parent":"IKNB424382856d","parentprog":"axrt330","ancest":"IKNJ411247669d","prog":"aisi020","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+ 0.0  46660  45886 pts/24   09:43 00:00:00 sh -c $FGLDIR/bin/fglWrt -a info license|grep '^License *:'|cut -d: -f2|tr -d ' ' 2>&1
+15.3  44569  33762 ?        09:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  46683  44569 ?        09:43 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+19.0  78809  66196 ?        09:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  80889  78809 ?        09:44 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.2 116088 101069 ?        09:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 118151 116088 ?        09:45 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0  19883   7083 ?        09:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  22207  19883 ?        09:46 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6  55427  42717 ?        09:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  57506  55427 ?        09:47 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+92.9  76987  76985 ?        09:47 00:00:14 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aiv/42r/aivp200 {"sessionkey":"IKNB480018281d","parent":"0","parentprog":"azzp953","background":"Y","prog":"aivp200","account":"tiptop","param":["{\"ivab001\":\"DSCTC\",\"l_prog\":\"2\",\"l_classify\":\"3\",\"wc\":\" 1=1\"}"],"schedule_id":"aivp200-00000-E6IA","schedule_seq":1,"static_ent":99}
+21.0  91978  77061 ?        09:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  94106  91978 ?        09:48 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.2 128720 117954 ?        09:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 130824 128720 ?        09:49 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.3  42608  20129 ?        09:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  44729  42608 ?        09:50 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.2  79769  67759 ?        09:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  81849  79769 ?        09:51 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0 114805 101749 ?        09:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 116873 114805 ?        09:52 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.6  21470   7161 ?        09:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  23754  21470 ?        09:53 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.0  57112  43955 ?        09:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  59192  57112 ?        09:54 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  94386  79078 ?        09:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  96557  94386 ?        09:55 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  95373      1 pts/33   09:55 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi200 {"sessionkey":"IKNB551693560d","parent":"IKNJ542879950d","parentprog":"anmt460","ancest":"IKNJ542879950d","prog":"aooi200","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+13.5  36333  23185 ?        09:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  38398  36333 ?        09:57 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.2  71303  58164 ?        09:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  73367  71303 ?        09:58 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+67.5 106764 106758 ?        09:59 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aiv/42r/aivp020 {"sessionkey":"IKNB591665048d","parent":"0","parentprog":"azzp953","background":"Y","prog":"aivp020","account":"tiptop","param":["{\"l_sche\":\"2\"}"],"schedule_id":"aivp020-00000-DGQO","schedule_seq":1,"static_ent":99}
+22.0 107757      1 ?        09:59 00:00:00 oracletopprd (LOCAL=NO)
+16.0 106761  93172 ?        09:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 109240 106761 ?        09:59 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.0 107952      1 ?        09:59 00:00:00 oracletopprd (LOCAL=NO)
+15.0  17498 128751 ?        10:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  19917  17498 ?        10:00 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.0  55088  41145 ?        10:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  57254  55088 ?        10:01 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+21.0  90001      1 ?        10:02 00:00:00 oracletopprd (LOCAL=NO)
+14.5  89391      1 pts/24   10:02 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrt330 {"sessionkey":"IKNC021789024d","parent":"IKNJ411247669d","parentprog":"aisi055","ancest":"IKNJ411247669d","prog":"axrt330","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.3  89498  76730 ?        10:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  91660  89498 ?        10:02 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.2 124414 111608 ?        10:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 126504 124414 ?        10:03 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+24.0  31389      1 ?        10:04 00:00:00 oracletopprd (LOCAL=NO)
+14.0  29852  16043 ?        10:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  32017  29852 ?        10:04 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  67720  56653 ?        10:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  69805  67720 ?        10:05 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+24.2  37535      1 ?        10:04 00:00:26 oracletopprd (LOCAL=NO)
+20.5 102217  89237 ?        10:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 104395 102217 ?        10:06 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+10.5 102715      1 pts/41   10:06 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzp460 IKNC061669407d
+43.0  37535      1 ?        10:04 00:01:14 oracletopprd (LOCAL=NO)
+15.3   8330 128472 ?        10:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  10418   8330 ?        10:07 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.3  35907      1 ?        10:04 00:00:21 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimm200 {"sessionkey":"IKNC042579007d","parent":"IKNK040368838d","parentprog":"azzi000","ancest":"IKNK040368838d","prog":"aimm200","account":"tiptop","param":[],"schedule_seq":0,"static_ent":99}
+55.0  47548      1 ?        10:08 00:00:00 oracletopprd (LOCAL=NO)
+15.0  46017  33428 ?        10:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  48156  46017 ?        10:08 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.1  78028      1 ?        10:09 00:00:01 oracletopprd (LOCAL=NO)
+15.6  81128  68301 ?        10:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  83453  81128 ?        10:09 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.8  77278      1 pts/43   10:09 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/ais/42r/aist310 {"sessionkey":"IKNC091160956d","parent":"IKNC085412537d","parentprog":"axmt500","ancest":"IKNK084570752d","prog":"aist310","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+12.7 124859 103589 ?        10:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 126924 124859 ?        10:10 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.7  31504  16156 ?        10:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  33621  31504 ?        10:11 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0  67099      1 pts/25   10:12 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi310 {"sessionkey":"IKNC121773695d","parent":"IKNJ415386881d","parentprog":"azzi000","ancest":"IKNJ415386881d","prog":"aimr910","account":"tiptopcn","param":["\"aimr910\""],"schedule_seq":0,"static_ent":99}
+11.7  66563  53728 ?        10:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  68746  66563 ?        10:12 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.3 101016  88281 ?        10:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 103378 101016 ?        10:13 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5   5053 122966 ?        10:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   7137   5053 ?        10:14 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0  39911  27259 ?        10:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  41993  39911 ?        10:15 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5  76451  61610 ?        10:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  78526  76451 ?        10:16 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.3 111220  98432 ?        10:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 113305 111220 ?        10:17 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0  15020   2181 ?        10:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  17154  15020 ?        10:18 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  52028  37100 ?        10:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  54126  52028 ?        10:19 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.7  94988  73632 ?        10:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  97061  94988 ?        10:20 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5 129771 117159 ?        10:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   1214 129771 ?        10:21 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5  36160  21005 ?        10:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  38232  36160 ?        10:22 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5  70344  57656 ?        10:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  72423  70344 ?        10:23 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5 106834  91837 ?        10:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 108910 106834 ?        10:24 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+18.0  12080  11941 pts/35   10:25 00:00:00 -ksh
+12.7  10705 128583 ?        10:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  13053  10705 ?        10:25 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.6  46195  33366 ?        10:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  48294  46195 ?        10:26 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  82912  67952 ?        10:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  85056  82912 ?        10:27 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0 117639 104645 ?        10:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 119727 117639 ?        10:28 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  22075   8771 ?        10:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  24381  22075 ?        10:29 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.6  64965  43650 ?        10:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  67047  64965 ?        10:30 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0  99301  86396 ?        10:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 101407  99301 ?        10:31 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+18.0   5351 120766 ?        10:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   7418   5351 ?        10:32 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  41480      1 ?        10:33 00:00:00 oracletopprd (LOCAL=NO)
+15.3  40270  27291 ?        10:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  42449  40270 ?        10:33 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  40825      1 pts/17   10:33 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi310 {"sessionkey":"IKNK331764415d","parent":"0","prog":"azzi310","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+29.7  76887  76880 pts/0    10:34 00:00:01 /u1/genero/fglgws/lib/fglrun-bin -d /u1/topprd/erp/apm/42r/apmt500.42r
+17.0  77099  62027 ?        10:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  79163  77099 ?        10:34 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5 114282  98861 ?        10:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 116356 114282 ?        10:35 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  20460   5907 ?        10:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  22776  20460 ?        10:36 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  57085  43094 ?        10:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  59233  57085 ?        10:37 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  93558  80019 ?        10:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  95632  93558 ?        10:38 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+20.0 128263 115366 ?        10:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 130517 128263 ?        10:39 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0 129781      1 ?        10:39 00:00:00 oracletopprd (LOCAL=NO)
+13.5 129102      1 pts/47   10:39 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi125 {"sessionkey":"IKNC391793689d","parent":"IKNK385543758d","parentprog":"azzi000","ancest":"IKNK385543758d","prog":"aooi125","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":100}
+57.0  38686      1 ?        10:40 00:00:01 oracletopprd (LOCAL=NO)
+18.0  39370      1 pts/17   10:40 00:00:00 /u1/genero/fglgws/lib/fglrun-bin --java-option=-Xmx512M --java-option=-Xms256M /u1/topprd/erp/azz/42r/azzi000 {"sessionkey":"IKNK401803536d","parent":"0","prog":"azzi000","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+17.5  38541  19335 ?        10:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  41043  38541 ?        10:40 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  39442  39437 ?        10:40 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aoop160 {"sessionkey":"IKNC401809134d","parent":"0","parentprog":"azzp953","background":"Y","prog":"aoop160","account":"tiptop","param":["{\"ooam001\":\"TW\",\"ooam003\":\"TWD\",\"ooam005\":1,\"ooam004\":\"TODAY\",\"ooam007\":\"N\",\"type\":\"A\",\"ratetype\":\"1\"}"],"schedule_id":"TEST","schedule_seq":1,"static_ent":99}
+16.0  39709  39704 ?        10:40 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi310 {"sessionkey":"IKNC401832787d","parent":"0","parentprog":"azzp953","background":"Y","prog":"azzi310","account":"tiptop","param":["{\"prog\":\"aimr908\",\"wc\":\" 1=1\"}"],"schedule_id":"aimr908-00000-HQNN","schedule_seq":1,"static_ent":1002}
+ 0.0  40990  39709 ?        10:40 00:00:00 sh -c $FGLDIR/bin/fglWrt -a info license|grep '^License *:'|cut -d: -f2|tr -d ' ' 2>&1
+14.0  39838  39829 ?        10:40 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNK401841813d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+ 0.0  40998  39838 ?        10:40 00:00:00 sh -c $FGLDIR/bin/fglWrt -a info license|grep '^License *:'|cut -d: -f2|tr -d ' ' 2>&1
+13.0  39446  39440 ?        10:40 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzp953 {"sessionkey":"IKNK401808887d","parent":"0","prog":"azzp953","account":"tiptop","param":["1002","aimr908-00000-HQNN-2111231040"],"schedule_seq":0,"static_ent":99}
+ 0.0  39704  39446 ?        10:40 00:00:00 sh -c export FGL_LENGTH_SEMANTICS=CHAR;export FGLRESOURCEPATH=/u1/topprd/erp/azz/42s/zh_TW/azzi310;export DBDATE=Y4MD/;export NLS_DATE_FORMAT='RRRR/MM/DD';$FGLRUN $AZZi/azzi310 '{"sessionkey":"IKNC401832787d","parent":"0","parentprog":"azzp953","background":"Y","prog":"azzi310","account":"tiptop","param":["{\"prog\":\"aimr908\",\"wc\":\" 1=1\"}"],"schedule_id":"aimr908-00000-HQNN","schedule_seq":1,"static_ent":1002}'  1>>/ut/topprd/log/SCHEDULE_azzi310_2111230240_IKNC401832787d.log 2>&1
+80.0  77113      1 ?        10:41 00:00:00 oracletopprd (LOCAL=NO)
+71.0  77162      1 ?        10:41 00:00:00 oracletopprd (LOCAL=NO)
+48.5  76464      1 ?        10:41 00:00:00 oracletopprd (LOCAL=NO)
+12.0  76948  76943 ?        10:41 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzp953 {"sessionkey":"IKNK412008483d","parent":"0","prog":"azzp953","account":"tiptop","param":["1007","test","axcr511-2108101715"],"schedule_seq":0,"static_ent":99}
+11.5  75489  62260 ?        10:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  77682  75489 ?        10:41 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.0  77030  77026 ?        10:41 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNK412017460d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+16.3 109866  97145 ?        10:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 112029 109866 ?        10:42 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.6  13585    952 ?        10:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  15685  13585 ?        10:43 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  48434  35724 ?        10:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  50524  48434 ?        10:44 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.6  95015  80664 ?        10:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  97154  95015 ?        10:45 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.5   1616 119404 ?        10:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   3700   1616 ?        10:46 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  38879  24328 ?        10:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  40952  38879 ?        10:47 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  75697  63289 ?        10:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  77760  75697 ?        10:48 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+36.3 112376 112373 pts/28   10:49 00:00:01 /u1/genero/fglgws/lib/fglrun-bin -d /u1/topprd/erp/agl/4gl/../42r/aglr310.42r
+14.6 112255  98703 ?        10:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 114371 112255 ?        10:49 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3  25812   5313 ?        10:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  27905  25812 ?        10:50 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  62917  52128 ?        10:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  65000  62917 ?        10:51 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+19.0  99802  86893 ?        10:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 102018  99802 ?        10:52 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+19.0 101095      1 ?        10:52 00:00:00 oracletopprd (LOCAL=NO)
+13.3  99560      1 pts/17   10:52 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aoos010 {"sessionkey":"IKNC521669551d","parent":"IKNC472975679d","parentprog":"aist310","ancest":"IKNK401803536d","prog":"aoos010","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+11.0   7095 125396 ?        10:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   9184   7095 ?        10:53 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+20.6  43380      1 pts/50   10:54 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmt520 {"sessionkey":"IKNC541482455d","parent":"IKNC533638865d","parentprog":"apmt570","ancest":"IKNK531310672d","prog":"apmt532","account":"tiptopcn","param":["\"4\""],"schedule_seq":0,"static_ent":99}
+14.6  44492  32233 ?        10:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  46594  44492 ?        10:54 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.8  40141      1 pts/17   10:54 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/ais/42r/aist310 {"sessionkey":"IKNC541099466d","parent":"IKNK401803536d","parentprog":"azzi000","ancest":"IKNK401803536d","prog":"aist310","account":"tiptopcn","param":["\"\"","CNJ-CU6-210914000001"],"schedule_seq":0,"static_ent":99}
+11.2  81086  68135 ?        10:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  83159  81086 ?        10:55 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0 117990 104458 ?        10:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 120062 117990 ?        10:56 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.2  24613  10396 ?        10:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  26678  24613 ?        10:57 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  61161  47760 ?        10:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  63279  61161 ?        10:58 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+25.6  98145      1 ?        10:59 00:00:00 oracletopprd (LOCAL=NO)
+16.7  97444      1 pts/1    10:59 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aap/42r/aapt310 {"sessionkey":"IKNC591563051d","parent":"IKNK565927632d","parentprog":"aapq342","ancest":"IKNK565927632d","prog":"aapt310","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.0  98461  86051 ?        10:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 100544  98461 ?        10:59 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3  11246 122064 ?        11:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  13403  11246 ?        11:00 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+29.7  27956      1 ?        11:00 00:00:12 oracletopprd (LOCAL=NO)
+12.0  50525  37455 ?        11:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  52592  50525 ?        11:01 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  87663  73891 ?        11:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  89761  87663 ?        11:02 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.6  27956      1 ?        11:00 00:00:13 oracletopprd (LOCAL=NO)
+15.6 121987 109341 ?        11:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 124150 121987 ?        11:03 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+38.0  44245      1 ?        11:04 00:00:00 oracletopprd (LOCAL=NO)
+13.3  42427  29543 ?        11:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  44585  42427 ?        11:04 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  79573  66132 ?        11:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  81639  79573 ?        11:05 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0 116566 102066 ?        11:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 118634 116566 ?        11:06 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2 112716      1 pts/1    11:06 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aap/42r/aapt300 {"sessionkey":"IKND061074794d","parent":"IKND055280533d","parentprog":"aapp132","ancest":"IKNK565927632d","prog":"aapt300","account":"tiptoper","param":["\"0\""],"schedule_seq":0,"static_ent":99,"default_wc":"apcadocno BETWEEN &apos;CTC-A03-211123000002&apos;  AND &apos;CTC-A03-211123000002&apos; "}
+17.0  17685  17681 pts/1    11:07 00:00:01 /u1/genero/fglgws/lib/fglrun-bin -d /u1/topprd/erp/aap/42r/aapp132.42r
+15.0  20549   7383 ?        11:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  22907  20549 ?        11:07 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.6  57479  42626 ?        11:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  59546  57479 ?        11:08 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  94055  79588 ?        11:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  96252  94055 ?        11:09 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0   7046 116633 ?        11:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   9141   7046 ?        11:10 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  44382  30300 ?        11:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  46466  44382 ?        11:11 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  82355  68758 ?        11:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  84461  82355 ?        11:12 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6 118971 105446 ?        11:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 121067 118971 ?        11:13 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  25630  10494 ?        11:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  27703  25630 ?        11:14 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  62243  47893 ?        11:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  64327  62243 ?        11:15 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+29.6  69611      1 ?        11:15 00:00:14 oracletopprd (LOCAL=NO)
+21.9  68877      1 pts/37   11:15 00:00:10 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmr001 {"sessionkey":"IKNL152712526d","parent":"0","prog":"abmr001","account":"tiptopcn","param":["1"],"schedule_seq":0,"static_ent":99}
+19.5  99164  85466 ?        11:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 101341  99164 ?        11:16 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.3   5235 125006 ?        11:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 1.0   7453   5235 ?        11:17 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+20.0  42161  27357 ?        11:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  44440  42161 ?        11:18 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+55.0  77724      1 ?        11:19 00:00:00 oracletopprd (LOCAL=NO)
+14.8  69489      1 ?        11:19 00:00:01 oracletopprd (LOCAL=NO)
+14.6  76503  63738 ?        11:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  78704  76503 ?        11:19 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0 117475  98246 ?        11:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 119604 117475 ?        11:20 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  24264   9306 ?        11:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  26346  24264 ?        11:21 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  58923  46074 ?        11:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  61024  58923 ?        11:22 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  96517  82309 ?        11:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  98933  96517 ?        11:23 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  40522  25928 ?        11:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  42642  40522 ?        11:25 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  75234  62485 ?        11:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  77303  75234 ?        11:26 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.3 109732  96984 ?        11:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 111818 109732 ?        11:27 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  13614    904 ?        11:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  15701  13614 ?        11:28 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  48803  35956 ?        11:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  50887  48803 ?        11:29 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.6  91452  70813 ?        11:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  93528  91452 ?        11:30 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6 125820 113145 ?        11:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 128168 125820 ?        11:31 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+10.5 126545 126412 pts/30   11:31 00:00:00 -ksh
+14.3  32902  18401 ?        11:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  35031  32902 ?        11:32 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  70268  57844 ?        11:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  72367  70268 ?        11:33 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.3 107177  93540 ?        11:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 109465 107177 ?        11:34 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.6  14002 130447 ?        11:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  16093  14002 ?        11:35 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.9 109155      1 ?        11:34 00:00:15 oracletopprd (LOCAL=NO)
+12.2  51291  38407 ?        11:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  53392  51291 ?        11:36 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  88813  75769 ?        11:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  90894  88813 ?        11:37 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3 125704 112211 ?        11:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 127845 125704 ?        11:38 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.3  32427  17643 ?        11:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  34523  32427 ?        11:39 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  75505  55508 ?        11:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  77590  75505 ?        11:40 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3 112608  97763 ?        11:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 114703 112608 ?        11:41 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  16663   3859 ?        11:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  18842  16663 ?        11:42 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+41.0  55867      1 ?        11:43 00:00:00 oracletopprd (LOCAL=NO)
+11.5  54295  39697 ?        11:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  56379  54295 ?        11:43 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  89570      1 ?        11:44 00:00:00 oracletopprd (LOCAL=NO)
+14.3  92020  78264 ?        11:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  94148  92020 ?        11:44 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0 129397 116578 ?        11:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0    954 129397 ?        11:45 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.3  98349      1 pts/9    11:44 00:00:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aap/42r/aapt430 {"sessionkey":"IKND442632623d","parent":"IKNL441448886d","parentprog":"aapp450","ancest":"IKNL441448886d","prog":"aapt430","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+11.5  99210      1 ?        11:44 00:00:06 oracletopprd (LOCAL=NO)
+14.0  36965  22790 ?        11:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  39110  36965 ?        11:46 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  73889  59668 ?        11:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  75979  73889 ?        11:47 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.6 110827  96279 ?        11:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 112949 110827 ?        11:48 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  14890   1878 ?        11:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  16989  14890 ?        11:49 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  56753  37005 ?        11:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  58833  56753 ?        11:50 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  93561  79768 ?        11:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  95649  93561 ?        11:51 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5 130543 116155 ?        11:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   1999 130543 ?        11:52 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  37238  22477 ?        11:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  39325  37238 ?        11:53 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  74230  59756 ?        11:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  76313  74230 ?        11:54 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0 111131  96182 ?        11:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 113249 111131 ?        11:55 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  17537   2625 ?        11:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  19750  17537 ?        11:56 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  19416      1 pts/1    11:56 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi850 {"sessionkey":"IKND561887098d","parent":"IKNL560319261d","parentprog":"azzi800","ancest":"IKNL560319261d","prog":"azzi850","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+12.2  54943  40881 ?        11:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  57032  54943 ?        11:57 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+20.0  92413  92406 ?        11:58 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNL581606618d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+17.0  91647  77392 ?        11:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  93943  91647 ?        11:58 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.3 128930 116977 ?        11:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0    755 128930 ?        11:59 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.0 130996 130987 ?        11:59 00:00:00 /bin/ksh /u1/etc/webrun azzi000 99
+12.6  50789  24673 ?        12:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  53276  50789 ?        12:00 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3  89894  79332 ?        12:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  91981  89894 ?        12:01 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.5 126898 114178 ?        12:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 128982 126898 ?        12:02 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0  33547  20133 ?        12:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  35688  33547 ?        12:03 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  70529  58410 ?        12:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  72596  70529 ?        12:04 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6 107653  92870 ?        12:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 109723 107653 ?        12:05 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6  13512 130787 ?        12:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  15578  13512 ?        12:06 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.2  50368  36535 ?        12:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  52472  50368 ?        12:07 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  86856  73541 ?        12:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  88954  86856 ?        12:08 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0 123420 109576 ?        12:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 125517 123420 ?        12:09 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.7  35874  15140 ?        12:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  37941  35874 ?        12:10 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  70060  57451 ?        12:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  72138  70060 ?        12:11 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0 104414  91714 ?        12:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 106526 104414 ?        12:12 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.0   8171 126067 ?        12:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  10246   8171 ?        12:13 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.3  42867  30220 ?        12:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  44944  42867 ?        12:14 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  77064  64437 ?        12:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  79149  77064 ?        12:15 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0 112124  99422 ?        12:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 114343 112124 ?        12:16 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  16028   3271 ?        12:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  18156  16028 ?        12:17 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  50869  38246 ?        12:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  52947  50869 ?        12:18 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  85172  72436 ?        12:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  87280  85172 ?        12:19 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0 126503 107285 ?        12:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 128606 126503 ?        12:20 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.5 102059      1 pts/19   12:19 00:00:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrq410 {"sessionkey":"IKNM194490601d","parent":"0","prog":"axrq410","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+12.5  32781  18815 ?        12:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  34868  32781 ?        12:21 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  67002  54339 ?        12:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  69090  67002 ?        12:22 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0 101327  88563 ?        12:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 103401 101327 ?        12:23 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2   5070 122990 ?        12:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   7185   5070 ?        12:24 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  39749  27123 ?        12:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  41823  39749 ?        12:25 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.3  73857  61241 ?        12:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  75940  73857 ?        12:26 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.6 110359  95400 ?        12:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 112430 110359 ?        12:27 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3  14436   1771 ?        12:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  16586  14436 ?        12:28 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  49238  36502 ?        12:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  51318  49238 ?        12:29 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3  91700  70550 ?        12:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  93792  91700 ?        12:30 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0 128213 114050 ?        12:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 130283 128213 ?        12:31 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+ 231  33822 102059 pts/19   12:32 00:00:02 [proExcel] <defunct>
+13.0  32415  19108 ?        12:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  34515  32415 ?        12:32 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+72.0  68008      1 ?        12:33 00:00:00 oracletopprd (LOCAL=NO)
+11.7  66595  53723 ?        12:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  68678  66595 ?        12:33 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6 100905  87996 ?        12:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 103058 100905 ?        12:34 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5   7194 122988 ?        12:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   9266   7194 ?        12:35 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  41808  29059 ?        12:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  43891  41808 ?        12:36 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  78176  63781 ?        12:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  80310  78176 ?        12:37 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.3 114742 100792 ?        12:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 116828 114742 ?        12:38 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  18434   5564 ?        12:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  20790  18434 ?        12:39 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+22.0  59710  59707 ?        12:40 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNM401723304d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+ 0.0  61295  59710 ?        12:40 00:00:00 sh -c ps -ef | grep fglrun-bin | grep 'parent":"IKNM401723304d"'|grep 'parentprog":"axmp500"'|grep 'background":"T'|grep 'account":"tiptop"'|grep -v ' sh '
+19.5  58983  40314 ?        12:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  61299  58983 ?        12:40 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.6  95345  81109 ?        12:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  97644  95345 ?        12:41 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.0  96326  96323 ?        12:41 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNM411870712d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+80.0 130942      1 ?        12:42 00:00:00 oracletopprd (LOCAL=NO)
+14.0 129880 117170 ?        12:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   1454 129880 ?        12:42 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  34009  21111 ?        12:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  36114  34009 ?        12:43 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  68188  55520 ?        12:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  70285  68188 ?        12:44 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2 102449  89796 ?        12:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 104540 102449 ?        12:45 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0   6024 124046 ?        12:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   8155   6024 ?        12:46 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.6  40786  28139 ?        12:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  42870  40786 ?        12:47 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.3  74918  62261 ?        12:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  77032  74918 ?        12:48 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5 109254  96562 ?        12:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 111326 109254 ?        12:49 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.3  19517 130904 ?        12:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  21888  19517 ?        12:50 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  56392  41951 ?        12:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  58454  56392 ?        12:51 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  92833  78065 ?        12:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  94917  92833 ?        12:52 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0 127186 114579 ?        12:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 129271 127186 ?        12:53 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  31305  18197 ?        12:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  33402  31305 ?        12:54 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  65361  52781 ?        12:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  67470  65361 ?        12:55 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  99580  86894 ?        12:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 101683  99580 ?        12:56 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6   5349 121248 ?        12:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   7503   5349 ?        12:57 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+ 0.0  13422      1 pts/0    09:35 00:00:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmt400 {"sessionkey":"IKNB353498075d","parent":"IKNB314701929d","parentprog":"apmt500","ancest":"IKNJ303134819d","prog":"apmt400","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+15.3  42285  29024 ?        12:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  44353  42285 ?        12:58 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0  78605  65096 ?        12:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  80708  78605 ?        12:59 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.2 121791 101821 ?        13:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 123932 121791 ?        13:00 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.5  28291  14646 ?        13:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  30372  28291 ?        13:01 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  64673  50660 ?        13:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  66748  64673 ?        13:02 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.5 101141  86609 ?        13:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 103212 101141 ?        13:03 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3   7464 123443 ?        13:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   9535   7464 ?        13:04 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.5  45120  30806 ?        13:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  47191  45120 ?        13:05 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  81506  66973 ?        13:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  83570  81506 ?        13:06 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6 118001 104157 ?        13:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 120066 118001 ?        13:07 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  24401   9447 ?        13:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  26468  24401 ?        13:08 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  60748  46401 ?        13:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  62837  60748 ?        13:09 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0 103386  83420 ?        13:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 105460 103386 ?        13:10 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.2   9194 125745 ?        13:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  11274   9194 ?        13:11 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.6  44710  31696 ?        13:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  46774  44710 ?        13:12 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  78901  65963 ?        13:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  80967  78901 ?        13:13 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2 113211 100233 ?        13:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 115285 113211 ?        13:14 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  16884   3972 ?        13:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  19038  16884 ?        13:15 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  51541  38700 ?        13:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  53608  51541 ?        13:16 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  85874  72808 ?        13:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  87946  85874 ?        13:17 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3 120196 107228 ?        13:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 122376 120196 ?        13:18 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  24493  11072 ?        13:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 3.0  26561  24493 ?        13:19 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.0  64708      1 ?        13:20 00:00:00 oracletopprd (LOCAL=NO)
+15.0  65513  45881 ?        13:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  67680  65513 ?        13:20 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  63767      1 pts/26   13:20 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/ais/42r/aist310 {"sessionkey":"IKNN201473079d","parent":"0","prog":"aist310","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+15.0  99731  86958 ?        13:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 101893  99731 ?        13:21 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+ 100   5349      1 ?        13:22 00:00:01 oracletopprd (LOCAL=NO)
+63.0   5842      1 ?        13:22 00:00:00 oracletopprd (LOCAL=NO)
+40.0   5170      1 ?        13:22 00:00:00 oracletopprd (LOCAL=NO)
+13.0   5771   5766 ?        13:22 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNN221843995d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+12.6   4150 121511 ?        13:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   6426   4150 ?        13:22 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0   5679   5676 ?        13:22 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzp953 {"sessionkey":"IKNN221835163d","parent":"0","prog":"azzp953","account":"tiptop","param":["1007","test","axcr511-2108101715"],"schedule_seq":0,"static_ent":99}
+14.3  41348  27076 ?        13:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  43523  41348 ?        13:23 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  77812  63672 ?        13:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  79957  77812 ?        13:24 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2 112095  99487 ?        13:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 114213 112095 ?        13:25 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  15907   3116 ?        13:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  18049  15907 ?        13:26 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.3  50896  38067 ?        13:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  52963  50896 ?        13:27 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  85495  72811 ?        13:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  87565  85495 ?        13:28 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7 121998 107300 ?        13:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 124141 121998 ?        13:29 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  34511  13421 ?        13:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  36583  34511 ?        13:30 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  71308  56489 ?        13:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  73376  71308 ?        13:31 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5 107858  93046 ?        13:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 109924 107858 ?        13:32 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  14578    524 ?        13:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  16650  14578 ?        13:33 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  51884  37075 ?        13:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  53950  51884 ?        13:34 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  86571  73444 ?        13:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  88639  86571 ?        13:35 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.7 123152 108242 ?        13:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 125341 123152 ?        13:36 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.2  29875  15466 ?        13:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  31960  29875 ?        13:37 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  67008  52979 ?        13:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  69084  67008 ?        13:38 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5 103642  89860 ?        13:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 105721 103642 ?        13:39 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.3  13520 125303 ?        13:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  15603  13520 ?        13:40 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.3  50367  36576 ?        13:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  52442  50367 ?        13:41 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6  86952  72155 ?        13:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  89059  86952 ?        13:42 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6 123622 109539 ?        13:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 125748 123622 ?        13:43 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  30354  16499 ?        13:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  32431  30354 ?        13:44 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  64875  51973 ?        13:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  66966  64875 ?        13:45 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  99483      1 pts/40   13:46 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi250 {"sessionkey":"IKNN461748629d","parent":"0","prog":"aooi250","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+15.5 100224      1 ?        13:46 00:00:00 oracletopprd (LOCAL=NO)
+14.0  99258  86455 ?        13:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 101446  99258 ?        13:46 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6   3342 121235 ?        13:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   5473   3342 ?        13:47 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  38662  25975 ?        13:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  40739  38662 ?        13:48 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.5  73185  60443 ?        13:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  75302  73185 ?        13:49 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7 114778  95416 ?        13:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 116843 114778 ?        13:50 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0  18807   5790 ?        13:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  21167  18807 ?        13:51 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  53940  41127 ?        13:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  56016  53940 ?        13:52 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  88725  75430 ?        13:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  90792  88725 ?        13:53 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.3 126657 111250 ?        13:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 128741 126657 ?        13:54 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  33664  19091 ?        13:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  35738  33664 ?        13:55 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.3  70569  56289 ?        13:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  72638  70569 ?        13:56 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3 108612  96365 ?        13:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 110815 108612 ?        13:57 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0 109128      1 pts/40   13:57 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimm205 {"sessionkey":"IKNN571748160d","parent":"IKNN361741424d","parentprog":"aimm215","ancest":"IKNN361741424d","prog":"aimm205","account":"tiptopcn","param":["ALL"],"schedule_seq":0,"static_ent":99}
+12.0 109817      1 ?        13:57 00:00:00 oracletopprd (LOCAL=NO)
+16.3  14912 130696 ?        13:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  16983  14912 ?        13:58 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  53224  38451 ?        13:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  55344  53224 ?        13:59 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.5  96855  78145 ?        14:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  99030  96855 ?        14:00 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6   3480 119740 ?        14:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   5618   3480 ?        14:01 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.6  38526  25628 ?        14:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  40724  38526 ?        14:02 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.3  75158  61629 ?        14:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  77357  75158 ?        14:03 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6 112063  97862 ?        14:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 114170 112063 ?        14:04 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3  19078   6882 ?        14:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  21443  19078 ?        14:05 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3  56325  44000 ?        14:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  58490  56325 ?        14:06 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  93097  80266 ?        14:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  95187  93097 ?        14:07 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0 130980 116756 ?        14:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   2422 130980 ?        14:08 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  38010  26461 ?        14:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  40119  38010 ?        14:09 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0  80904  61889 ?        14:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  82972  80904 ?        14:10 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3 117785 104579 ?        14:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 119853 117785 ?        14:11 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.0  25994      1 pts/69   14:12 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimm201 {"sessionkey":"IKNG121877103d","parent":"IKNO114409978d","parentprog":"aimm200","ancest":"IKNO114409978d","prog":"aimm211","account":"tiptoper","param":[" ","DKX00001"],"schedule_seq":0,"static_ent":99}
+ 0.0  26895  25994 pts/69   14:12 00:00:00 sh -c $FGLDIR/bin/fglWrt -a info license|grep -e 'Users\|CPU'|cut -d: -f1|tr -d ' ' 2>&1
+13.6  24747  10619 ?        14:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  26920  24747 ?        14:12 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+19.5  73018  57339 ?        14:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  76025  73018 ?        14:13 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0 113936      1 pts/69   14:14 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimm201 {"sessionkey":"IKNG141805558d","parent":"IKNG121877103d","parentprog":"aimm211","ancest":"IKNO114409978d","prog":"aimm211","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+ 0.0 114766 113936 pts/69   14:14 00:00:00 sh -c $FGLDIR/bin/fglWrt -a info license|grep '^License *:'|cut -d: -f2|tr -d ' ' 2>&1
+13.6 112630 101902 ?        14:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 114774 112630 ?        14:14 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.5 112074      1 ?        14:14 00:00:00 oracletopprd (LOCAL=NO)
+13.3  19541   7067 ?        14:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  22015  19541 ?        14:15 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  21732      1 pts/67   14:15 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi100 {"sessionkey":"IKNG151866233d","parent":"IKNG142447420d","parentprog":"aooi200","ancest":"IKNO104480786d","prog":"aooi100","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.6  57043  44018 ?        14:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  59133  57043 ?        14:16 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+31.0  92167      1 pts/11   14:17 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aap/42r/aapt300 {"sessionkey":"IKNG171330326d","parent":"IKNG161814754d","parentprog":"aapt430","ancest":"IKNO160611181d","prog":"aapt300","account":"tiptopcn","param":["\"0\"","\"\"","CTC-03Q-210900000001"],"schedule_seq":0,"static_ent":99}
+27.6  93151      1 ?        14:17 00:00:00 oracletopprd (LOCAL=NO)
+17.0  93981  82416 ?        14:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  96090  93981 ?        14:17 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.1  67123      1 ?        14:16 00:00:05 oracletopprd (LOCAL=NO)
+13.0   2363   6677 ?        14:18 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/com/wss/42r/wssp309 {"sessionkey":"IKNO181678276d","default_dbs":"dsdemo","default_pass":"mbshxJMnDZA1","background":"Y","prog":"wssp309","account":"tiptoper","param":["/ut/topprd/tmp/20211123/ws_req_14:18:16.779_8CC80059-0AC8-48E4-A0A1-449252392C82.xml","/ut/topprd/tmp/20211123/ws_res_14:18:16.779_8CC80059-0AC8-48E4-A0A1-449252392C82.xml"],"schedule_seq":0,"static_ent":99}
+12.3 131053 116273 ?        14:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   2532 131053 ?        14:18 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+18.5  44321  32073 ?        14:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  46509  44321 ?        14:43 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+19.0  79757  67094 ?        14:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  81856  79757 ?        14:44 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0 115253 102390 ?        14:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 117330 115253 ?        14:45 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.2  22495   7276 ?        14:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  24655  22495 ?        14:46 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  60079  45651 ?        14:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  62200  60079 ?        14:47 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0  61656      1 ?        14:47 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aap/42r/aapt300 {"sessionkey":"IKNG471885869d","parent":"IKNG433108588d","parentprog":"aapt420","ancest":"IKNN592961190d","prog":"aapt301","account":"tiptop","param":["\"1\"","\"\"","CTC-JP5-211123000001"],"schedule_seq":0,"static_ent":99}
+16.3  97832  83086 ?        14:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  99933  97832 ?        14:48 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+32.0   6251      1 ?        14:49 00:00:00 oracletopprd (LOCAL=NO)
+13.6   4985 120966 ?        14:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   7214   4985 ?        14:49 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.7  27901      1 ?        14:49 00:00:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimm218 {"sessionkey":"IKNG495799456d","parent":"IKNO140002741d","parentprog":"azzi000","ancest":"IKNO140002741d","prog":"aimm218","account":"tiptop","param":[],"schedule_seq":0,"static_ent":99}
+14.0  47457  28097 ?        14:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  49525  47457 ?        14:50 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+87.1  82146      1 ?        14:51 00:00:05 oracletopprd (LOCAL=NO)
+21.0  84904  71229 ?        14:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  86974  84904 ?        14:51 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.5 122624 109177 ?        14:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 124715 122624 ?        14:52 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.6  30373  15757 ?        14:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  32532  30373 ?        14:53 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  68275  54542 ?        14:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  70350  68275 ?        14:54 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.4  87738      1 ?        14:54 00:00:05 oracletopprd (LOCAL=NO)
+15.3 106037  92304 ?        14:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 108108 106037 ?        14:55 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+21.0  13003 129942 ?        14:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  15347  13003 ?        14:56 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+20.2 119350      1 ?        14:55 00:00:08 oracletopprd (LOCAL=NO)
+42.0  50025      1 ?        14:57 00:00:00 oracletopprd (LOCAL=NO)
+20.0  49262  36359 ?        14:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  51442  49262 ?        14:57 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.2 119350      1 ?        14:55 00:00:15 oracletopprd (LOCAL=NO)
+11.2  87154  72972 ?        14:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  89238  87154 ?        14:58 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+51.0 125176      1 ?        14:59 00:00:01 oracletopprd (LOCAL=NO)
+11.7 123912 110472 ?        14:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 126036 123912 ?        14:59 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  36359  16052 ?        15:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  38512  36359 ?        15:00 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6  74694  61279 ?        15:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  76761  74694 ?        15:01 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+21.1  90520      1 ?        15:01 00:00:08 oracletopprd (LOCAL=NO)
+11.7 112460  99100 ?        15:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 114561 112460 ?        15:02 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.6  19264   4743 ?        15:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  21609  19264 ?        15:03 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+ 118  58696      1 ?        15:04 00:00:01 oracletopprd (LOCAL=NO)
+19.0  57397  46529 ?        15:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  59922  57397 ?        15:04 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  96447  81937 ?        15:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  98623  96447 ?        15:05 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.5  97616      1 pts/61   15:05 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzi170 IKNP051869813d
+14.6   2855 120012 ?        15:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   5013   2855 ?        15:06 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.0   4357      1 ?        15:06 00:00:00 oracletopprd (LOCAL=NO)
+27.5  26586      1 pts/18   15:07 00:00:04 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrq932 {"sessionkey":"IKNH070118564d","parent":"IKNH060231503d","parentprog":"axrt320","ancest":"IKNP043409537d","prog":"axrq930","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+20.0  28179      1 ?        15:07 00:00:03 oracletopprd (LOCAL=NO)
+14.3  41687  26872 ?        15:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  43805  41687 ?        15:07 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+10.5  78806  66124 ?        15:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  80960  78806 ?        15:08 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7 115754 101572 ?        15:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 117832 115754 ?        15:09 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+23.0  27462      1 pts/61   15:10 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi070 {"sessionkey":"IKNH101830009d","parent":"IKNN541178326d","parentprog":"azzi000","ancest":"IKNN541178326d","prog":"aooi085","account":"tiptopcn","param":["\"15\""],"schedule_seq":0,"static_ent":99}
+14.3  26676   7287 ?        15:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  28854  26676 ?        15:10 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3  61452  48636 ?        15:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  63574  61452 ?        15:11 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.7   7227      1 pts/54   15:09 00:00:10 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimt300 {"sessionkey":"IKNP100092737d","parent":"0","prog":"aimt300","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+11.4   8324      1 ?        15:10 00:00:08 oracletopprd (LOCAL=NO)
+18.3   8324      1 ?        15:10 00:00:25 oracletopprd (LOCAL=NO)
+14.8   7227      1 pts/54   15:09 00:00:20 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aim/42r/aimt300 {"sessionkey":"IKNP100092737d","parent":"0","prog":"aimt300","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.3  98583  87037 ?        15:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 100706  98583 ?        15:12 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0   4792 120668 ?        15:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   6884   4792 ?        15:13 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+35.0  41059      1 ?        15:14 00:00:00 oracletopprd (LOCAL=NO)
+27.5  40141      1 pts/62   15:14 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmt500 {"sessionkey":"IKNH141709911d","parent":"BBDL512840855a","parentprog":"apmp490","prog":"apmt500","account":"tiptopcn","param":["\"3\""],"schedule_seq":0,"static_ent":99,"default_wc":" pmdldocno IN ( &apos;CTC-255-211100000003&apos; )"}
+13.3  39795  26738 ?        15:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  42052  39795 ?        15:14 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  77593  63608 ?        15:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  79688  77593 ?        15:15 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3 111965  99091 ?        15:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 114033 111965 ?        15:16 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  18438   3491 ?        15:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  20711  18438 ?        15:17 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  55648  40796 ?        15:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  57783  55648 ?        15:18 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+ 0.0  63056      1 pts/47   14:06 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/abm/42r/abmm200 {"sessionkey":"IKNO062556488d","parent":"0","prog":"abmm200","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+12.2  92265  77740 ?        15:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  94337  92265 ?        15:19 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0   4781 114109 ?        15:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   6976   4781 ?        15:20 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+27.5  42191  42186 pts/49   15:21 00:00:01 /u1/genero/fglgws/lib/fglrun-bin -d /u1/topprd/erp/aic/42r/aicp510.42r
+11.2  42555  29751 ?        15:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  44670  42555 ?        15:21 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+18.0  77029  64239 ?        15:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  79328  77029 ?        15:22 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+57.0 115168      1 ?        15:23 00:00:00 oracletopprd (LOCAL=NO)
+43.0 115814      1 ?        15:23 00:00:00 oracletopprd (LOCAL=NO)
+32.0 115899      1 ?        15:23 00:00:00 oracletopprd (LOCAL=NO)
+14.6 113977 100077 ?        15:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 116173 113977 ?        15:23 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0 115640 115633 ?        15:23 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzp953 {"sessionkey":"IKNP231858102d","parent":"0","prog":"azzp953","account":"tiptop","param":["1007","test","axcr511-2108101715"],"schedule_seq":0,"static_ent":99}
+11.0 115747 115741 ?        15:23 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNP231868167d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+10.6  93280      1 pts/61   15:22 00:00:03 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi199 {"sessionkey":"IKNP224237755d","parent":"IKNF584976898d","parentprog":"axmm200","ancest":"IKNN541178326d","prog":"aooi199","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+16.3  20356   5594 ?        15:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  22727  20356 ?        15:24 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  57680  43217 ?        15:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  59759  57680 ?        15:25 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6  94583  80041 ?        15:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  96695  94583 ?        15:26 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  38427  24391 ?        15:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  40518  38427 ?        15:28 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+33.0  77619      1 ?        15:29 00:00:00 oracletopprd (LOCAL=NO)
+13.5  76793  76787 pts/49   15:29 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aic/42r/aicp500 {"sessionkey":"IKNH291625046d","parent":"IKNO553742488d","parentprog":"axmt540","ancest":"IKNO553742488d","prog":"aicp500","account":"tiptoper","param":["CNJ-282-211100000001","IKNO553742488d"],"schedule_seq":0,"static_ent":99}
+12.6  76298  63727 ?        15:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  78649  76298 ?        15:29 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0 120825 104113 ?        15:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 122963 120825 ?        15:30 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  27343  14683 ?        15:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  29427  27343 ?        15:31 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3  64377  50885 ?        15:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  66524  64377 ?        15:32 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6 101018  88406 ?        15:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 103181 101018 ?        15:33 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0   7080 123952 ?        15:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   9177   7080 ?        15:34 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  44617  32469 ?        15:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  46723  44617 ?        15:35 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  81251  68355 ?        15:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  83338  81251 ?        15:36 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+96.7 102942      1 ?        15:36 00:00:20 ora_m001_toptst
+21.0 119737      1 ?        15:37 00:00:00 ora_m000_topprd
+12.3 117784 103318 ?        15:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 119869 117784 ?        15:37 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0  24553  13443 ?        15:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  26643  24553 ?        15:38 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.4 128610      1 pts/36   15:37 00:00:06 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/asf/42r/asfp400 {"sessionkey":"IKNP372929052d","parent":"0","prog":"asfp400","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+17.2  43016      1 ?        15:38 00:00:05 oracletopprd (LOCAL=NO)
+16.5  42218      1 ?        15:38 00:00:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aqc/42r/aqct300 {"sessionkey":"IKNH384433072d","parent":"IKNI550507233d","parentprog":"azzi000","ancest":"IKNI550507233d","prog":"aqct300","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.3  62060  48410 ?        15:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  64247  62060 ?        15:39 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3 105285  87201 ?        15:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 107397 105285 ?        15:40 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  11913 129002 ?        15:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  14043  11913 ?        15:41 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  13243  13240 pts/1    15:41 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/ain/42r/aint302 {"sessionkey":"IKNP411936651d","parent":"0","prog":"aint301","account":"10773","param":["1"],"schedule_seq":0,"static_ent":99}
+13.0  51691  51686 pts/1    15:42 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/ain/42r/aint302 {"sessionkey":"IKNH421876678d","parent":"IKNH415638771d","parentprog":"aoos020","ancest":"IKNP413618960d","prog":"aint301","account":"10773","param":["1"],"schedule_seq":0,"static_ent":99}
+12.0  49878  34962 ?        15:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  52033  49878 ?        15:42 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  87225  72746 ?        15:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  89416  87225 ?        15:43 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.1  52172      1 ?        15:42 00:00:06 oracletopprd (LOCAL=NO)
+15.0 124982 111169 ?        15:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 127132 124982 ?        15:44 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  32599  18942 ?        15:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  34729  32599 ?        15:45 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3  67620  54827 ?        15:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  69739  67620 ?        15:46 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+33.0 107081      1 ?        15:47 00:00:00 oracletopprd (LOCAL=NO)
+19.5 105541 105536 pts/1    15:47 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/ain/42r/aint302 {"sessionkey":"IKNH471697533d","parent":"IKNH415638771d","parentprog":"aoos020","ancest":"IKNP413618960d","prog":"aint301","account":"10773","param":["1"],"schedule_seq":0,"static_ent":99}
+14.3 105191  90018 ?        15:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 107412 105191 ?        15:47 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  12387 129413 ?        15:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  14781  12387 ?        15:48 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0 106228      1 ?        15:47 00:00:07 oracletopprd (LOCAL=NO)
+82.0  52537      1 ?        15:49 00:00:00 oracletopprd (LOCAL=NO)
+19.2  42042      1 ?        15:49 00:00:02 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aqc/42r/aqct300 {"sessionkey":"IKNH490389562d","parent":"IKNI550507233d","parentprog":"azzi000","ancest":"IKNI550507233d","prog":"aqct300","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+16.2  42760      1 ?        15:49 00:00:02 oracletopprd (LOCAL=NO)
+13.3  50961  37897 ?        15:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  53103  50961 ?        15:49 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  95240  74252 ?        15:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  97375  95240 ?        15:50 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3   2044 120120 ?        15:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   4266   2044 ?        15:51 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  39706  24718 ?        15:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  41811  39706 ?        15:52 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3  76874  61471 ?        15:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  79033  76874 ?        15:53 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0  78376      1 pts/71   15:53 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/anm/42r/anmi251 {"sessionkey":"IKNP531765869d","parent":"0","prog":"anmi251","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.6 114447 101286 ?        15:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 116557 114447 ?        15:54 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  20768   6017 ?        15:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  23101  20768 ?        15:55 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.5  57674  42789 ?        15:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  59767  57674 ?        15:56 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  94418  80858 ?        15:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  96591  94418 ?        15:57 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0 129112 116104 ?        15:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0    458 129112 ?        15:58 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  35892  21636 ?        15:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  38016  35892 ?        15:59 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.5  79496  58705 ?        16:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  81844  79496 ?        16:00 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.3  78545      1 pts/42   16:00 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apj/42r/apjm200 {"sessionkey":"IKNI001326939d","parent":"IKNP432510866d","parentprog":"azzi000","ancest":"IKNP432510866d","prog":"apjm200","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+11.5 117688 104752 ?        16:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 119812 117688 ?        16:01 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.0  25304      1 ?        16:02 00:00:00 oracletopprd (LOCAL=NO)
+10.6  24421   9296 ?        16:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  26838  24421 ?        16:02 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+23.0  62528  62524 ?        16:03 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNQ031820782d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+13.6  61578  47385 ?        16:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  63869  61578 ?        16:03 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.6  96439  83251 ?        16:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  98722  96439 ?        16:04 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3  38303  24022 ?        16:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  40503  38303 ?        16:06 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  39274      1 pts/5    16:06 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/ain/42r/aint302 {"sessionkey":"IKNQ061882338d","parent":"0","prog":"aint301","account":"tiptoper","param":["1"],"schedule_seq":0,"static_ent":99}
+11.7  75843  60896 ?        16:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  77935  75843 ?        16:07 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3 112814 100162 ?        16:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 114977 112814 ?        16:08 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3  19116   4289 ?        16:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  21426  19116 ?        16:09 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0  62879  42943 ?        16:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  64961  62879 ?        16:10 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+10.7  99486  84974 ?        16:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 101586  99486 ?        16:11 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0   5519 121644 ?        16:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   7664   5519 ?        16:12 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.0  42636  28064 ?        16:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  44717  42636 ?        16:13 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.6  79254  64520 ?        16:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  81421  79254 ?        16:14 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.6 116679 103788 ?        16:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 118769 116679 ?        16:15 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.0  23228   8759 ?        16:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  25336  23228 ?        16:16 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.3  57723  44956 ?        16:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  60253  57723 ?        16:17 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6  95105  80775 ?        16:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  97245  95105 ?        16:18 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0   1409 117668 ?        16:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.2  19646  18061 ?        Nov22 00:02:34 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/bin/java -Xmx1000m -Xmn512m -Djetty.home=/u1/topjetty -cp /u1/topjetty/lib/jetty-xml-8.1.16.v20140903.jar:/u1/topjetty/lib/servlet-api-3.0.jar:/u1/topjetty/lib/jetty-http-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-continuation-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-server-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-security-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-servlet-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-webapp-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-deploy-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-servlets-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-annotations-8.1.16.v20140903.jar:/u1/topjetty/lib/annotations/javax.annotation-1.1.0.v201108011116.jar:/u1/topjetty/lib/annotations/org.objectweb.asm-3.1.0.v200803061910.jar:/u1/topjetty/lib/jetty-jmx-8.1.16.v20140903.jar:/u1/topjetty/lib/jsp/com.sun.el-2.2.0.v201108011116.jar:/u1/topjetty/lib/jsp/javax.el-2.2.0.v201108011116.jar:/u1/topjetty/lib/jsp/javax.servlet.jsp.jstl-1.2.0.v201105211821.jar:/u1/topjetty/lib/jsp/javax.servlet.jsp-2.2.0.v201112011158.jar:/u1/topjetty/lib/jsp/org.apache.jasper.glassfish-2.2.2.v201112011158.jar:/u1/topjetty/lib/jsp/org.apache.taglibs.standard.glassfish-1.2.0.v201112081803.jar:/u1/topjetty/lib/jsp/org.eclipse.jdt.core-3.7.1.jar:/u1/topjetty/lib/jetty-jndi-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-plus-8.1.16.v20140903.jar:/u1/topjetty/lib/jndi/javax.activation-1.1.0.v201105071233.jar:/u1/topjetty/lib/jndi/javax.mail.glassfish-1.4.1.v201005082020.jar:/u1/topjetty/resources:/u1/topjetty/lib/jetty-websocket-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-util-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-io-8.1.16.v20140903.jar org.eclipse.jetty.xml.XmlConfiguration /tmp/start8824995570811069051.properties /u1/topjetty/etc/jetty.xml /u1/topjetty/etc/jetty-annotations.xml /u1/topjetty/etc/jetty-deploy.xml /u1/topjetty/etc/jetty-webapps.xml /u1/topjetty/etc/jetty-contexts.xml /u1/topjetty/etc/jetty-logging.xml /u1/topjetty/etc/jetty-started.xml
+ 0.0   3495   1409 ?        16:19 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  45424  26037 ?        16:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  47511  45424 ?        16:20 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+87.3  58533      1 pts/4    16:20 00:00:34 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKNI203779492d","parent":"IKNI181057594d","parentprog":"abmt302","ancest":"IKNQ154786180d","prog":"azzi931","account":"tiptoper","param":["2","ABM","abmt302","[]"],"schedule_seq":0,"static_ent":99}
+13.3  82692  70195 ?        16:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  84770  82692 ?        16:21 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+94.8  58533      1 pts/4    16:20 00:01:34 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKNI203779492d","parent":"IKNI181057594d","parentprog":"abmt302","ancest":"IKNQ154786180d","prog":"azzi931","account":"tiptoper","param":["2","ABM","abmt302","[]"],"schedule_seq":0,"static_ent":99}
+13.3 119798 109184 ?        16:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 121912 119798 ?        16:22 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0  27060  15897 ?        16:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  29145  27060 ?        16:23 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  64103  49595 ?        16:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  66174  64103 ?        16:24 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3 100981  86229 ?        16:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 103093 100981 ?        16:25 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3   4726 122724 ?        16:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   6840   4726 ?        16:26 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  39921  27045 ?        16:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  42014  39921 ?        16:27 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  77269  62654 ?        16:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  79357  77269 ?        16:28 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+21.5 114391  99352 ?        16:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 116489 114391 ?        16:29 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  28300      1 pts/42   16:30 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi301 {"sessionkey":"IKNI301580261d","parent":"IKNP432510866d","parentprog":"azzi000","ancest":"IKNP432510866d","prog":"apji060","account":"tiptopcn","param":["\"8005\""],"schedule_seq":0,"static_ent":99}
+14.6  28171   7897 ?        16:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  30351  28171 ?        16:30 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  65972  53445 ?        16:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  68100  65972 ?        16:31 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6 103019  87831 ?        16:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 105092 103019 ?        16:32 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  46893  34509 ?        16:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  48968  46893 ?        16:34 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  84316  70691 ?        16:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  86408  84316 ?        16:35 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0 121237 108308 ?        16:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 123353 121237 ?        16:36 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+ 101  12131      1 ?        16:36 00:00:18 ora_m001_toptst
+19.5  27851  13922 ?        16:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  29920  27851 ?        16:37 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  65302  54236 ?        16:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  67401  65302 ?        16:38 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3 102184  89132 ?        16:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 104339 102184 ?        16:39 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0  14729 125256 ?        16:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  16912  14729 ?        16:40 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+21.0  53961      1 ?        16:41 00:00:00 oracletopprd (LOCAL=NO)
+20.5  52456  39248 ?        16:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  54791  52456 ?        16:41 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  52812  52807 ?        16:41 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNQ411557282d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+11.0  52713  52706 ?        16:41 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmr510 {"sessionkey":"IKNI411547460d","parent":"0","parentprog":"azzp953","background":"Y","prog":"axmr510","account":"tiptop","param":["{\"xmee902\":\"1899-12-31\",\"xmee001\":0,\"xmee900\":0,\"xmeestus\":\"0\",\"xmeechk\":\"N\",\"wc\":\"xmee902<=TO_DATE(&apos;2020-05-25 00:00:00&apos;,&apos;YYYY-MM-DD HH24:MI:SS&apos;)\"}"],"schedule_id":"axmr510-TOPAPP-EFPJ","schedule_seq":1,"static_ent":99}
+15.6  89505  77124 ?        16:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  91825  89505 ?        16:42 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+80.0 128218      1 ?        16:43 00:00:00 oracletopprd (LOCAL=NO)
+73.0 128299      1 ?        16:43 00:00:00 oracletopprd (LOCAL=NO)
+15.0 126493 114102 ?        16:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 128830 126493 ?        16:43 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0 128018 128014 ?        16:43 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aoop160 {"sessionkey":"IKNI431859084d","parent":"0","parentprog":"azzp953","background":"Y","prog":"aoop160","account":"tiptop","param":["{\"ooam001\":\"TW\",\"ooam003\":\"TWD\",\"ooam005\":1,\"ooam004\":\"2020-02-13\",\"ooam007\":\"N\",\"type\":\"A\",\"ratetype\":\"1\"}"],"schedule_id":"aoop160-05961-BEPA","schedule_seq":1,"static_ent":99}
+12.0 127819 127816 ?        16:43 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzp953 {"sessionkey":"IKNQ431835782d","parent":"0","prog":"azzp953","account":"tiptop","param":["99","aoop160-05961-BEPA-2111231643"],"schedule_seq":0,"static_ent":99}
+ 0.0 128014 127819 ?        16:43 00:00:00 sh -c export FGLRESOURCEPATH=/u1/topprd/erp/aoo/42s/zh_CN/aoop160;export DBDATE=Y4MD/;export NLS_DATE_FORMAT='RRRR/MM/DD';$FGLRUN $AOOi/aoop160 '{"sessionkey":"IKNI431859084d","parent":"0","parentprog":"azzp953","background":"Y","prog":"aoop160","account":"tiptop","param":["{\"ooam001\":\"TW\",\"ooam003\":\"TWD\",\"ooam005\":1,\"ooam004\":\"2020-02-13\",\"ooam007\":\"N\",\"type\":\"A\",\"ratetype\":\"1\"}"],"schedule_id":"aoop160-05961-BEPA","schedule_seq":1,"static_ent":99}'  1>>/ut/topprd/log/SCHEDULE_aoop160_2111230843_IKNI431859084d.log 2>&1
+12.0 128019 128013 ?        16:43 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzp953 {"sessionkey":"IKNQ431859038d","parent":"0","prog":"azzp953","account":"tiptop","param":["1007","test","axcr511-2108101715"],"schedule_seq":0,"static_ent":99}
+13.6  33308      1 pts/20   16:44 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aoos010 {"sessionkey":"IKNQ441603013d","parent":"0","prog":"aoos010","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+13.6  33631  19785 ?        16:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  35787  33631 ?        16:44 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  34087      1 ?        16:44 00:00:00 oracletopprd (LOCAL=NO)
+15.0  70464  57507 ?        16:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  72543  70464 ?        16:45 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.6 106984  92534 ?        16:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 109060 106984 ?        16:46 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  12864 129004 ?        16:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  14958  12864 ?        16:47 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+20.0  61272  43164 ?        16:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  64338  61272 ?        16:48 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0 101147  90242 ?        16:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 103220 101147 ?        16:49 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  14477 124886 ?        16:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  16584  14477 ?        16:50 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  52053  37525 ?        16:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  54126  52053 ?        16:51 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  89361  76376 ?        16:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  91502  89361 ?        16:52 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0 126551 114257 ?        16:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 128652 126551 ?        16:53 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  34096  19613 ?        16:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  36185  34096 ?        16:54 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.2  29445  29433 pts/62   16:54 00:00:01 /u1/genero/fglgws/lib/fglrun-bin -d /u1/topprd/erp/asf/42r/asft300.42r
+12.2  71753  58227 ?        16:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  73822  71753 ?        16:55 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6 108752  95206 ?        16:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 110893 108752 ?        16:56 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.3  14852 131024 ?        16:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  16937  14852 ?        16:57 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  50361  37162 ?        16:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  52528  50361 ?        16:58 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0  52069      1 pts/6    16:58 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzp110 IKNI581886328d aapt420 aap 253   M s
+75.2  82072      1 pts/4    16:59 00:00:08 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKNQ590890489d","parent":"IKNQ372520221d","parentprog":"abmt302","ancest":"IKNQ372520221d","prog":"azzi931","account":"tiptoper","param":["2","ABM","abmt302","[]"],"schedule_seq":0,"static_ent":99}
+14.0  87529  73922 ?        16:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  89608  87529 ?        16:59 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+96.6  82072      1 pts/4    16:59 00:01:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKNQ590890489d","parent":"IKNQ372520221d","parentprog":"abmt302","ancest":"IKNQ372520221d","prog":"azzi931","account":"tiptoper","param":["2","ABM","abmt302","[]"],"schedule_seq":0,"static_ent":99}
+14.0 130931 113899 ?        17:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   2455 130931 ?        17:00 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+98.1  82072      1 pts/4    16:59 00:02:07 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKNQ590890489d","parent":"IKNQ372520221d","parentprog":"abmt302","ancest":"IKNQ372520221d","prog":"azzi931","account":"tiptoper","param":["2","ABM","abmt302","[]"],"schedule_seq":0,"static_ent":99}
+13.6  37854  27126 ?        17:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  40031  37854 ?        17:01 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5  38141      1 pts/81   17:01 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aiv/42r/aivt210 {"sessionkey":"IKNJ011611693d","parent":"IKNJ010851028d","parentprog":"adzp009","prog":"aivt210","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+11.1  27473      1 pts/36   17:01 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmt520 {"sessionkey":"IKNJ010212675d","parent":"IKNI585410227d","parentprog":"aooi200","ancest":"IKNQ524335489d","prog":"apmt570","account":"tiptopcn","param":["\"6\"","CNJ-1K1-211000000001"],"schedule_seq":0,"static_ent":99}
+98.7  82072      1 pts/4    16:59 00:03:07 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKNQ590890489d","parent":"IKNQ372520221d","parentprog":"abmt302","ancest":"IKNQ372520221d","prog":"azzi931","account":"tiptoper","param":["2","ABM","abmt302","[]"],"schedule_seq":0,"static_ent":99}
+14.3  75621  64857 ?        17:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  77728  75621 ?        17:02 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.6  65545      1 pts/69   17:02 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/apm/42r/apmt520 {"sessionkey":"IKNR020216292d","parent":"0","prog":"apmt570","account":"tiptoper","param":["\"6\""],"schedule_seq":0,"static_ent":99}
+16.6 113351 102544 ?        17:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 115426 113351 ?        17:03 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.7  19629   4655 ?        17:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  21991  19629 ?        17:04 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.3  57406  43685 ?        17:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  59526  57406 ?        17:05 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.8  29509      1 ?        17:04 00:00:07 oracletopprd (LOCAL=NO)
+13.3  91988  79377 ?        17:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  94085  91988 ?        17:06 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3 129084 118329 ?        17:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0    522 129084 ?        17:07 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.5 129874      1 pts/7    17:07 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmt420 {"sessionkey":"IKNJ071943267d","parent":"IKNO464894531d","parentprog":"azzi000","ancest":"IKNO464894531d","prog":"axmt420","account":"tiptopcn","param":["&apos;1&apos;"],"schedule_seq":0,"static_ent":99}
+14.0 130594      1 ?        17:07 00:00:00 oracletopprd (LOCAL=NO)
+14.3  36396  22161 ?        17:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  38565  36396 ?        17:08 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.9   9639      1 ?        17:07 00:00:05 oracletopprd (LOCAL=NO)
+53.0  74970      1 ?        17:09 00:00:00 oracletopprd (LOCAL=NO)
+12.2  73261  58457 ?        17:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  75365  73261 ?        17:09 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  74715      1 ?        17:09 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmt580 {"sessionkey":"IKNJ091928302d","parent":"IKNI550507233d","parentprog":"azzi000","ancest":"IKNI550507233d","prog":"axmt580","account":"tiptoper","param":["\"\""],"schedule_seq":0,"static_ent":99}
+14.3 118458  98653 ?        17:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 120646 118458 ?        17:10 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  26149  13180 ?        17:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  28302  26149 ?        17:11 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  27562      1 pts/40   17:11 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aps/42r/apsq500 {"sessionkey":"IKNR112059938d","parent":"0","prog":"apsq500","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+11.5  61251  48229 ?        17:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  63368  61251 ?        17:12 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+18.0  99684  99599 pts/59   17:13 00:00:00 -ksh
+16.0  98832  84015 ?        17:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 101193  98832 ?        17:13 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.0   5734 120928 ?        17:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   7892   5734 ?        17:14 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0  44706  29679 ?        17:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  46809  44706 ?        17:15 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  82453      1 pts/64   17:16 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi070 {"sessionkey":"IKNJ161665573d","parent":"IKNJ150915533d","parentprog":"aisi030","ancest":"IKNR094653963d","prog":"aooi072","account":"tiptoper","param":["\"2\""],"schedule_seq":0,"static_ent":99}
+15.0  81923  68845 ?        17:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  84109  81923 ?        17:16 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0  83109      1 ?        17:16 00:00:00 oracletopprd (LOCAL=NO)
+16.0 119520 105318 ?        17:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 121602 119520 ?        17:17 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3  26288  10624 ?        17:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  28518  26288 ?        17:18 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.0  27334      1 pts/15   17:18 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzp460 IKNJ181677645d
+16.3  63975  50685 ?        17:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  66055  63975 ?        17:19 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0 108206  87114 ?        17:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 110384 108206 ?        17:20 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+39.5 118218  58449 pts/52   17:20 00:00:00 /bin/ksh chk_cpu
+ 0.0 121766 118218 pts/52   17:20 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.5 119252  87114 ?        17:20 00:00:00 sh /u1/etc/tmon/script/chk_tbs
+15.0  15983   5122 ?        17:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  18211  15983 ?        17:21 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+39.5  26555  58449 pts/52   17:21 00:00:00 /bin/ksh chk_cpu
+ 0.0  30076  26555 pts/52   17:21 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+21.0  28116   5122 ?        17:21 00:00:00 sh /u1/etc/tmon/script/chk_tbs
+14.6  55462  42503 ?        17:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  57699  55462 ?        17:22 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0  57006      1 pts/59   17:22 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/agl/42r/agli010 {"sessionkey":"IKNR221909455d","parent":"IKNR152843355d","parentprog":"axrt320","ancest":"IKNR152843355d","prog":"agli010","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+19.0  94387      1 ?        17:23 00:00:00 oracletopprd (LOCAL=NO)
+17.0  94106  94101 ?        17:23 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNR231795191d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+ 0.0  95141  94106 ?        17:23 00:00:00 sh -c $FGLDIR/bin/fglWrt -a info license|grep '^License *:'|cut -d: -f2|tr -d ' ' 2>&1
+13.3  92793  78229 ?        17:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  95164  92793 ?        17:23 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+10.5  93276      1 pts/90   17:23 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzp990 IKNJ231705742d exp wssp1083 bak
+ 0.0  95165  93276 pts/90   17:23 00:00:00 sh -c exp ds/frank100 FILE=1-dzbd_t.dmp LOG=1-dzbd_t.dmp.explog PARFILE=1-dzbd_t.dat 2>&1
+22.5 116228  58449 pts/52   17:23 00:00:00 /bin/ksh chk_cpu
+ 0.0 117642 116228 pts/52   17:23 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+19.5 116910 116906 ?        17:23 00:00:00 du -h /T100_gr
+40.0   4231   4207 ?        17:24 00:00:00 java -DTOP=/u1/topkey -DTOOL=guard -classpath /u1/topkey/guard/commons-codec-1.4.jar:/u2/oracle/product/12.1.0/dbhome_1/jdbc/lib/ojdbc6.jar:/u1/topprd/utl/java/jar/trustAllCerts:/u1/topprd/utl/java/jar/utilitytools.jar:/u1/topprd/utl/java/jar/javaenc/jejar/pdfenc.jar:/u1/topprd/utl/java/jar/jcaptcha/*::/u1/topprd/utl/java/jar/bpm/jar/commons-beanutils.jar:/u1/topprd/utl/java/jar/bpm/jar/commons-logging.jar:/u1/topprd/utl/java/jar/bpm/jar/nana-server-delegate.jar:/u1/topprd/utl/java/jar/bpm/jar/commons-io.jar:/u1/topprd/utl/java/jar/bpm/jar/j2ee.jar:/u1/topprd/utl/java/jar/bpm/jar/nana-services-client.jar:/u1/topprd/utl/java/jar/bpm/jar/log4j.jar:/u1/topprd/utl/java/jar/bpm/jar/jbossall-client.jar:/u1/topprd/utl/java/jar/bpm/conf:/u1/topprd/utl/java/jar/javaenc/jejar/pdfenc.jar:/u1/topprd/utl/java/jar/javasso/sok.jar:/u1/topprd/utl/java/bin:/u1/topprd/utl/java/jar/javaexrate/jar/javaexrate.jar:/u1/topprd/utl/java/jar/javamail/jmjar/ttopmail.jar::/u1/topprd/apse/java/jar/RunAPS.jar:/u1/topkey/guard/guardS.jar CertMan
+14.3  40536  25299 ?        17:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  42813  40536 ?        17:25 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+29.0  62620  58449 pts/52   17:25 00:00:00 /bin/ksh chk_cpu
+ 0.0  64522  62620 pts/52   17:25 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  79107  68502 ?        17:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  81201  79107 ?        17:26 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+36.6  92656      1 ?        17:26 00:00:10 oracletopprd (LOCAL=NO)
+28.0 107228  58449 pts/52   17:27 00:00:00 /bin/ksh chk_cpu
+ 0.0 112032 107228 pts/52   17:27 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+53.2  92656      1 ?        17:26 00:00:21 oracletopprd (LOCAL=NO)
+13.6 118216 102640 ?        17:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 120311 118216 ?        17:27 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+99.0   9962   9958 ?        17:27 00:00:00 du -h /u1
+71.8  92656      1 ?        17:26 00:00:46 oracletopprd (LOCAL=NO)
+36.0   8019  58449 pts/52   17:27 00:00:00 /bin/ksh chk_cpu
+ 0.0  10586   8019 pts/52   17:27 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+81.7  92656      1 ?        17:26 00:01:22 oracletopprd (LOCAL=NO)
+22.8  25405  25401 pts/61   17:28 00:00:01 /u1/genero/fglgws/lib/fglrun-bin -d /u1/topprd/erp/axm/42r/axmt500.42r
+14.0  27094  15228 ?        17:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  29183  27094 ?        17:28 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+10.6  15589      1 pts/59   17:28 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrq932 {"sessionkey":"IKNJ280169875d","parent":"IKNJ184186213d","parentprog":"axmt600","ancest":"IKNR152843355d","prog":"axrq930","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+86.6  92656      1 ?        17:26 00:01:59 oracletopprd (LOCAL=NO)
+33.5  50115  58449 pts/52   17:28 00:00:00 /bin/ksh chk_cpu
+ 0.0  53855  50115 pts/52   17:28 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+10.5  49932      1 pts/95   17:28 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzp178 IKNJ285206234d 7 cwssp1083
+24.0  67930      1 pts/33   17:29 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzp050 IKNR291706089d DIR F:\T100\146\\ CODE
+21.5  66881  56096 ?        17:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  69317  66881 ?        17:29 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+10.5  66927  66242 pts/33   17:29 00:00:00 -ksh
+12.0 110158  90945 ?        17:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0 112280 110158 ?        17:30 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+32.3   1466      1 ?        17:30 00:00:06 oracletopprd (LOCAL=NO)
+16.0  14259   1551 ?        17:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  16347  14259 ?        17:31 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+ 121  38257  38254 ?        17:31 00:00:01 du -h /u1
+40.5  36613  58449 pts/52   17:31 00:00:00 /bin/ksh chk_cpu
+ 0.0  38952  36613 pts/52   17:31 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+37.0  38255  35216 ?        17:31 00:00:00 sort -h -r
+17.0  38270      1 ?        17:31 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axr/42r/axrt300 {"sessionkey":"IKNJ314763928d","parent":"IKNP443677909d","parentprog":"aglt310","ancest":"IKNP443677909d","prog":"axrt300","account":"topapp","param":[],"schedule_seq":0,"static_ent":88}
+ 0.0  38951  38270 ?        17:31 00:00:00 /bin/ksh ./gs.sh CertMan
+13.9   1466      1 ?        17:30 00:00:06 oracletopprd (LOCAL=NO)
+12.2  54973  42810 ?        17:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  57096  54973 ?        17:32 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  92823  78700 ?        17:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  94910  92823 ?        17:33 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2 130236 117833 ?        17:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0   1676 130236 ?        17:34 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+30.6  38673      1 ?        17:35 00:00:00 oracletopprd (LOCAL=NO)
+14.6  38474  24154 ?        17:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  40563  38474 ?        17:35 00:00:00 ps -eo %cpu,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+26.0  0.0  50621  58449 pts/52   17:38 00:00:00 /bin/ksh chk_cpu
+ 0.0  0.0  53304  50621 pts/52   17:39 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0  0.0  62801  51229 ?        17:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  64993  62801 ?        17:39 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+19.0  0.0 106002  87685 ?        17:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0 108075 106002 ?        17:40 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.6  0.0  35027      1 ?        17:21 00:02:41 oracletopprd (LOCAL=NO)
+13.3  0.0  12285   1687 ?        17:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  14361  12285 ?        17:41 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.9  0.0  35027      1 ?        17:21 00:03:17 oracletopprd (LOCAL=NO)
+11.2  0.0  49899  39232 ?        17:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  52000  49899 ?        17:42 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+24.3  0.0  81467  58449 pts/52   17:43 00:00:00 /bin/ksh chk_cpu
+ 0.0  0.0  84988  81467 pts/52   17:43 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.2  0.0  35027      1 ?        17:21 00:03:17 oracletopprd (LOCAL=NO)
+11.5  0.0  82742  72573 ?        17:43 00:00:00 sh /u1/etc/tmon/script/chk_lock
+15.2  0.0  35027      1 ?        17:21 00:03:17 oracletopprd (LOCAL=NO)
+14.6  0.0  88047  72573 ?        17:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  90217  88047 ?        17:43 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.5  0.0  35027      1 ?        17:21 00:03:18 oracletopprd (LOCAL=NO)
+12.0  0.0 125173 112925 ?        17:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0 127273 125173 ?        17:44 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+32.0  0.0  14200  58449 pts/52   17:44 00:00:00 /bin/ksh chk_cpu
+ 0.0  0.0  17664  14200 pts/52   17:44 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+26.7  0.0  13316      1 ?        17:44 00:00:01 oracletopprd (LOCAL=NO)
+22.1  0.0  11976      1 ?        17:44 00:00:01 oracletopprd (LOCAL=NO)
+14.2  0.0  35027      1 ?        17:21 00:03:18 oracletopprd (LOCAL=NO)
+14.0  0.0  15673  15668 ?        17:44 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNR444913269d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+ 0.0  0.0  17547  15673 ?        17:44 00:00:00 /bin/ksh ./gs.sh CertMan
+10.6  0.0  13781 112925 ?        17:44 00:00:00 sh /u1/etc/tmon/script/chk_du
+ 0.0  0.0  17577  13781 ?        17:44 00:00:00 timeout 10 du -h /u1
+ 0.0  0.0  17578  13781 ?        17:44 00:00:00 sort -h -r
+ 0.0  0.0  17579  13781 ?        17:44 00:00:00 sed -n 1,11p
+25.6  0.0  18198  58449 pts/52   17:44 00:00:00 /bin/ksh chk_cpu
+ 0.0  0.0  19904  18198 pts/52   17:44 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+20.0  0.0  19208  19204 ?        17:44 00:00:00 du -h /T100_fr
+17.6  0.0  13316      1 ?        17:44 00:00:02 oracletopprd (LOCAL=NO)
+14.8  0.0  11976      1 ?        17:44 00:00:02 oracletopprd (LOCAL=NO)
+14.1  0.0  35027      1 ?        17:21 00:03:18 oracletopprd (LOCAL=NO)
+11.5  0.0  18383      1 pts/95   17:44 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzp050 IKNR445715211d DIR D:\TT\146\\ CODE
+10.3  0.0  18185      1 pts/64   17:44 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi100 {"sessionkey":"IKNR445672598d","parent":"IKNJ150915533d","parentprog":"aisi030","ancest":"IKNR094653963d","prog":"aooi100","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+14.6  0.0  35543  21714 ?        17:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  37710  35543 ?        17:45 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.9  0.0  35027      1 ?        17:21 00:03:18 oracletopprd (LOCAL=NO)
+15.0  0.0  72910  59662 ?        17:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  74985  72910 ?        17:46 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.4  0.0  35027      1 ?        17:21 00:03:18 oracletopprd (LOCAL=NO)
+27.3  0.0  95078  58449 pts/52   17:46 00:00:00 /bin/ksh chk_cpu
+ 0.0  0.0  96586  95078 pts/52   17:46 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+21.3  0.0  95025  95022 ?        17:46 00:00:00 du -h /T100_gr
+13.1  0.0  35027      1 ?        17:21 00:03:18 oracletopprd (LOCAL=NO)
+13.1  0.0 108764      1 pts/64   17:47 00:00:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aap/42r/aapt300 {"sessionkey":"IKNJ471077189d","parent":"IKNR432058454d","parentprog":"apmt500","ancest":"IKNR432058454d","prog":"aapt301","account":"tiptoper","param":["\"1\""],"schedule_seq":0,"static_ent":99}
+12.9  0.0  35027      1 ?        17:21 00:03:18 oracletopprd (LOCAL=NO)
+12.6  0.0 112315  99963 ?        17:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0 114500 112315 ?        17:47 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  0.0 109497      1 ?        17:47 00:00:00 oracletopprd (LOCAL=NO)
+23.0  0.0  18767   6537 ?        17:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  21068  18767 ?        17:48 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.5  0.0  35027      1 ?        17:21 00:03:35 oracletopprd (LOCAL=NO)
+39.5  0.0  54190  58449 pts/52   17:49 00:00:00 /bin/ksh chk_cpu
+ 0.0  0.0  57772  54190 pts/52   17:49 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.8  0.0  35027      1 ?        17:21 00:04:22 oracletopprd (LOCAL=NO)
+12.7  0.0  52737      1 ?        17:49 00:00:00 oracletopprd (LOCAL=NO)
+15.9  0.0  35027      1 ?        17:21 00:04:24 oracletopprd (LOCAL=NO)
+14.0  0.0  57497  45635 ?        17:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  60035  57497 ?        17:49 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+23.0  0.0  85044  58449 pts/52   17:49 00:00:00 /bin/ksh chk_cpu
+ 0.0  0.0  93625  85044 pts/52   17:50 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.7  0.0  35027      1 ?        17:21 00:05:01 oracletopprd (LOCAL=NO)
+10.5  0.0  85345  85313 ?        17:50 00:00:00 sh /u1/etc/tmon/tmon manu
+10.4  0.0  49778      1 pts/14   17:45 00:00:27 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmt510 {"sessionkey":"IKNR453776335d","parent":"0","prog":"axmt510","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+17.5  0.0  35027      1 ?        17:21 00:05:01 oracletopprd (LOCAL=NO)
+15.3  0.0 104398  85345 ?        17:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0 106613 104398 ?        17:50 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.0  0.0 104712      1 pts/64   17:50 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aoo/42r/aooi610 {"sessionkey":"IKNJ501601936d","parent":"IKNJ493127712d","parentprog":"aisi030","ancest":"IKNR432058454d","prog":"aooi610","account":"tiptoper","param":[],"schedule_seq":0,"static_ent":99}
+12.1  0.0  49778      1 pts/14   17:45 00:00:34 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmt510 {"sessionkey":"IKNR453776335d","parent":"0","prog":"axmt510","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+36.0  0.0 115154  58449 pts/52   17:50 00:00:00 /bin/ksh chk_cpu
+ 0.0  0.0 118680 115154 pts/52   17:50 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.3  0.0  35027      1 ?        17:21 00:05:01 oracletopprd (LOCAL=NO)
+15.5  0.0 115525  85345 ?        17:50 00:00:00 sh /u1/etc/tmon/script/chk_tbs
+12.3  0.0  49778      1 pts/14   17:45 00:00:36 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmt510 {"sessionkey":"IKNR453776335d","parent":"0","prog":"axmt510","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+16.9  0.0  35027      1 ?        17:21 00:05:01 oracletopprd (LOCAL=NO)
+12.2  0.0  12579 130849 ?        17:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  14675  12579 ?        17:51 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  0.0  49778      1 pts/14   17:45 00:00:40 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmt510 {"sessionkey":"IKNR453776335d","parent":"0","prog":"axmt510","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+26.0  0.0  43100  58449 pts/52   17:52 00:00:00 /bin/ksh chk_cpu
+ 0.0  0.0  46647  43100 pts/52   17:52 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+21.0  0.0  44729  35375 ?        17:52 00:00:00 sh /u1/etc/tmon/script/chk_lock
+16.4  0.0  35027      1 ?        17:21 00:05:01 oracletopprd (LOCAL=NO)
+12.4  0.0  49778      1 pts/14   17:45 00:00:48 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmt510 {"sessionkey":"IKNR453776335d","parent":"0","prog":"axmt510","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+16.6  0.0  49897  35375 ?        17:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  51978  49897 ?        17:52 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.4  0.0  35027      1 ?        17:21 00:05:01 oracletopprd (LOCAL=NO)
+12.1  0.0  49778      1 pts/14   17:45 00:00:48 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmt510 {"sessionkey":"IKNR453776335d","parent":"0","prog":"axmt510","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+15.8  0.0  35027      1 ?        17:21 00:05:01 oracletopprd (LOCAL=NO)
+15.3  0.0  86993  73569 ?        17:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  89090  86993 ?        17:53 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.3  0.0  49778      1 pts/14   17:45 00:01:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmt510 {"sessionkey":"IKNR453776335d","parent":"0","prog":"axmt510","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+15.3  0.0  35027      1 ?        17:21 00:05:01 oracletopprd (LOCAL=NO)
+12.5  0.0 124166 110054 ?        17:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0 126267 124166 ?        17:54 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  0.0  49778      1 pts/14   17:45 00:01:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmt510 {"sessionkey":"IKNR453776335d","parent":"0","prog":"axmt510","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+11.7  0.0  31953  16199 ?        17:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  34064  31953 ?        17:55 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+10.5  0.0  49778      1 pts/14   17:45 00:01:01 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmt510 {"sessionkey":"IKNR453776335d","parent":"0","prog":"axmt510","account":"tiptopcn","param":[],"schedule_seq":0,"static_ent":99}
+15.6  0.0  68760  54700 ?        17:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  70840  68760 ?        17:56 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.6  0.0  26936      1 ?        17:55 00:00:08 oracletopprd (LOCAL=NO)
+15.6  0.0 106475  91907 ?        17:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0 108586 106475 ?        17:57 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+26.0  0.0 125669  58449 pts/52   17:57 00:00:00 /bin/ksh chk_cpu
+ 0.0  0.0 129220 125669 pts/52   17:57 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+18.5  0.0 125928  91907 ?        17:57 00:00:00 sh /u1/etc/tmon/script/chk_du
+ 0.0  0.0 129254 125928 ?        17:57 00:00:00 sh /u1/etc/tmon/script/chk_du
+16.3  0.0  14392    596 ?        17:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  16510  14392 ?        17:58 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+32.5  0.0  47467  58449 pts/52   17:59 00:00:00 /bin/ksh chk_cpu
+ 0.0  0.0  51214  47467 pts/52   17:59 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.2  0.0  51183  36609 ?        17:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  53449  51183 ?        17:59 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0  0.0 101298  75273 ?        18:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0 103758 101298 ?        18:00 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  0.0   8911 128791 ?        18:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  10991   8911 ?        18:01 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.0  0.0  44082  31109 ?        18:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  46195  44082 ?        18:02 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.0  0.0  80724  65824 ?        18:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  83005  80724 ?        18:03 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.0  0.0 119107 119104 ?        18:04 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNS041815549d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+ 0.0  0.0 120137 119107 ?        18:04 00:00:00 /bin/ksh ./gs.sh CertMan
+14.6  0.0 117895 104596 ?        18:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0 120230 117895 ?        18:04 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+13.0  0.0 119425      1 pts/65   18:04 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/adz/42r/adzp110 IKNK041856051d s_asft335 sub 177   B s
+68.0  0.0  24520      1 ?        18:05 00:00:00 oracletopprd (LOCAL=NO)
+15.0  0.0  22778   9184 ?        18:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  25068  22778 ?        18:05 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.0  0.0  24355  24352 ?        18:05 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNS051960741d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+16.0  0.0  57421  44752 ?        18:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  59550  57421 ?        18:06 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  0.0  91927  79146 ?        18:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  94027  91927 ?        18:07 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  0.0 126430 113809 ?        18:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0 128570 126430 ?        18:08 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  0.0  33257  17903 ?        18:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  35359  33257 ?        18:09 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.3  0.0  76172  56134 ?        18:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  78276  76172 ?        18:10 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  0.0 113059  99213 ?        18:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0 115129 113059 ?        18:11 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+22.0  0.0  19687      1 ?        18:12 00:00:00 oracletopprd (LOCAL=NO)
+17.5  0.0  18888      1 pts/0    18:12 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aap/42r/aapt300 {"sessionkey":"IKNS121465934d","parent":"0","prog":"aapt301","account":"tiptoper","param":["\"1\""],"schedule_seq":0,"static_ent":99}
+13.3  0.0  19587   4878 ?        18:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  22085  19587 ?        18:12 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+16.3  0.0  56803  43154 ?        18:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  58877  56803 ?        18:13 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  0.0  93402  79031 ?        18:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  95499  93402 ?        18:14 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+14.6  0.0 130213 115455 ?        18:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0   1656 130213 ?        18:15 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.3  0.0  36732  22953 ?        18:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  38807  36732 ?        18:16 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+33.0  0.0  73279      1 ?        18:17 00:00:00 oracletopprd (LOCAL=NO)
+15.0  0.0  71525  58429 ?        18:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  73650  71525 ?        18:17 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.2  0.0 108341  94674 ?        18:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0 110422 108341 ?        18:18 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+15.6  0.0  12184 130019 ?        18:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  14251  12184 ?        18:19 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+12.5  0.0  53636  34442 ?        18:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  55706  53636 ?        18:20 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+11.7  0.0  90271  75658 ?        18:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0  92341  90271 ?        18:21 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+17.0  0.0 126988 112505 ?        18:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0 129055 126988 ?        18:22 00:00:00 ps -eo %cpu,%mem,pid,ppid,tt,stime,time,cmd --sort=-%cpu
+27.6  0.0  30344 pts/52   18:23 00:00:00 /bin/ksh chk_cpu
+11.0  0.0  31891 ?        18:23 00:00:00 sh /u1/etc/tmon/script/chk_sql
+12.5  0.0  34873 ?        18:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0  71447 ?        18:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+38.0  0.0  87477 pts/52   18:24 00:00:00 /bin/ksh chk_cpu
+17.0  0.0  89276 ?        18:24 00:00:00 sh /u1/etc/tmon/script/chk_temp
+10.3  0.0  74286 pts/68   18:24 00:00:02 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aap/42r/aapt300 {"sessionkey":"IKNS242278249d","parent":"0","prog":"aapt300","account":"tiptopcn","param":["\"0\""],"schedule_seq":0,"static_ent":99}
+12.0  0.0 109707 ?        18:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+40.0  0.0 116471 pts/52   18:25 00:00:00 /bin/ksh chk_cpu
+40.5  0.0 125998 pts/52   18:25 00:00:00 /bin/ksh chk_cpu
+18.5  0.0 126273 ?        18:25 00:00:00 sh /u1/etc/tmon/script/chk_undo
+16.6  0.0  18623 ?        18:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.3  0.0  55624 ?        18:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  90256 ?        18:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0 124839 ?        18:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  35416 ?        18:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0  71943 ?        18:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.0  0.0 129874 pts/7    17:07 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmt420 {"sessionkey":"IKNJ071943267d","parent":"IKNO464894531d","parentprog":"azzi000","ancest":"IKNO464894531d","prog":"axmt420","account":"tiptopcn","param":["&apos;1&apos;"],"schedule_seq":0,"static_ent":99}
+16.0  0.0 106313 ?        18:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.5  0.0   9935 ?        18:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.0  0.0  44988 ?        18:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0  79777 ?        18:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0 116492 ?        18:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 102  0.5  12155 ?        18:37 00:00:12 ora_m001_toptst
+19.0  0.0  20584 ?        18:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.7  0.0  57560 ?        18:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0  92246 ?        18:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.5  0.0   4376 ?        18:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.7  0.0  41757 ?        18:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.2  0.0  78240 ?        18:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0 114668 ?        18:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+19.5  0.0  20687 ?        18:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.6  0.0  57373 ?        18:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.0  0.0  58139 ?        18:45 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNS451754059d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+11.0  0.0  59024 ?        18:45 00:00:00 oracletopprd (LOCAL=NO)
+14.0  0.0  93767 ?        18:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.0  0.0  95157 ?        18:46 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzp953 {"sessionkey":"IKNS461888803d","parent":"0","prog":"azzp953","account":"tiptop","param":["1007","test","axcr511-2108101715"],"schedule_seq":0,"static_ent":99}
+15.3  0.0 130380 ?        18:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  34529 ?        18:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0  71070 ?        18:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.3  0.0 113959 ?        18:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  19919 ?        18:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0  54647 ?        18:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.5  0.0  91363 ?        18:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0 125762 ?        18:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.3  0.0  32070 ?        18:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  33436 ?        18:55 00:00:00 oracletopprd (LOCAL=NO)
+12.5  0.0  68590 ?        18:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0 102933 ?        18:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.3  0.0   8654 ?        18:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  43553 ?        18:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.6  0.0  90807 ?        19:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 126  0.0 123845 ?        19:02 00:00:01 du -h /u1
+28.0  0.0 123843 ?        19:02 00:00:00 sort -h -r
+12.6  0.0 121807 ?        19:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.7  0.0  33565 ?        19:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.3  0.0  67843 ?        19:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.7  0.0 105088 ?        19:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0   8756 ?        19:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0  43556 ?        19:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.7  0.0  77810 ?        19:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0 112081 ?        19:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 0.2  1.0  19646 ?        Nov22 00:02:57 /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.171-8.b10.el7_5.x86_64/jre/bin/java -Xmx1000m -Xmn512m -Djetty.home=/u1/topjetty -cp /u1/topjetty/lib/jetty-xml-8.1.16.v20140903.jar:/u1/topjetty/lib/servlet-api-3.0.jar:/u1/topjetty/lib/jetty-http-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-continuation-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-server-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-security-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-servlet-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-webapp-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-deploy-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-servlets-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-annotations-8.1.16.v20140903.jar:/u1/topjetty/lib/annotations/javax.annotation-1.1.0.v201108011116.jar:/u1/topjetty/lib/annotations/org.objectweb.asm-3.1.0.v200803061910.jar:/u1/topjetty/lib/jetty-jmx-8.1.16.v20140903.jar:/u1/topjetty/lib/jsp/com.sun.el-2.2.0.v201108011116.jar:/u1/topjetty/lib/jsp/javax.el-2.2.0.v201108011116.jar:/u1/topjetty/lib/jsp/javax.servlet.jsp.jstl-1.2.0.v201105211821.jar:/u1/topjetty/lib/jsp/javax.servlet.jsp-2.2.0.v201112011158.jar:/u1/topjetty/lib/jsp/org.apache.jasper.glassfish-2.2.2.v201112011158.jar:/u1/topjetty/lib/jsp/org.apache.taglibs.standard.glassfish-1.2.0.v201112081803.jar:/u1/topjetty/lib/jsp/org.eclipse.jdt.core-3.7.1.jar:/u1/topjetty/lib/jetty-jndi-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-plus-8.1.16.v20140903.jar:/u1/topjetty/lib/jndi/javax.activation-1.1.0.v201105071233.jar:/u1/topjetty/lib/jndi/javax.mail.glassfish-1.4.1.v201005082020.jar:/u1/topjetty/resources:/u1/topjetty/lib/jetty-websocket-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-util-8.1.16.v20140903.jar:/u1/topjetty/lib/jetty-io-8.1.16.v20140903.jar org.eclipse.jetty.xml.XmlConfiguration /tmp/start8824995570811069051.properties /u1/topjetty/etc/jetty.xml /u1/topjetty/etc/jetty-annotations.xml /u1/topjetty/etc/jetty-deploy.xml /u1/topjetty/etc/jetty-webapps.xml /u1/topjetty/etc/jetty-contexts.xml /u1/topjetty/etc/jetty-logging.xml /u1/topjetty/etc/jetty-started.xml
+12.2  0.0  22278 ?        19:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  56577 ?        19:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.7  0.0  90870 ?        19:12 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0 125070 ?        19:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0  29245 ?        19:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0  63481 ?        19:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  97634 ?        19:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  35979 ?        19:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.0  0.0  70230 ?        19:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0 110953 ?        19:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  14522 ?        19:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.6  0.0  49242 ?        19:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.3  0.0  83409 ?        19:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+62.0  0.0 121477 ?        19:24 00:00:00 oracletopprd (LOCAL=NO)
+61.0  0.0 121484 ?        19:24 00:00:00 oracletopprd (LOCAL=NO)
+42.0  0.0 120790 ?        19:24 00:00:00 oracletopprd (LOCAL=NO)
+12.0  0.0 121263 ?        19:24 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzp953 {"sessionkey":"IKNT241924500d","parent":"0","prog":"azzp953","account":"tiptop","param":["1007","test","axcr511-2108101715"],"schedule_seq":0,"static_ent":99}
+11.2  0.0 119748 ?        19:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.0  0.0 121350 ?        19:24 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNT241932793d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+79.0  0.0  25169 ?        19:25 00:00:00 oracletopprd (LOCAL=NO)
+64.0  0.0  25779 ?        19:25 00:00:00 oracletopprd (LOCAL=NO)
+53.0  0.0  25865 ?        19:25 00:00:00 oracletopprd (LOCAL=NO)
+15.3  0.0  24072 ?        19:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  25642 ?        19:25 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzp953 {"sessionkey":"IKNT252071817d","parent":"0","prog":"azzp953","account":"tiptop","param":["1007","test","axcr511-2108101715"],"schedule_seq":0,"static_ent":99}
+12.0  0.0  25726 ?        19:25 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNT252080032d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+12.5  0.0  58401 ?        19:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0  92840 ?        19:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0 127393 ?        19:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0  31550 ?        19:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.0  0.0  71942 ?        19:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.7  0.0 106059 ?        19:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  10369 ?        19:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0  47216 ?        19:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0  83677 ?        19:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0 118247 ?        19:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  24504 ?        19:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+ 105  0.5  52297 ?        19:37 00:00:10 ora_m001_toptst
+20.0  0.0  58657 ?        19:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  95126 ?        19:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.7  0.0 129388 ?        19:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.0  0.0  41794 ?        19:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.0  0.0  78225 ?        19:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0 112490 ?        19:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0  16097 ?        19:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+24.0  0.0  54876 ?        19:44 00:00:00 oracletopprd (LOCAL=NO)
+12.5  0.0  53099 ?        19:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0  87683 ?        19:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0 124195 ?        19:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  28366 ?        19:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0  62550 ?        19:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  96833 ?        19:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0   6943 ?        19:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0  41610 ?        19:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0  75897 ?        19:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0 110117 ?        19:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.3  0.0  13702 ?        19:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0  48497 ?        19:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  82660 ?        19:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0 116910 ?        19:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.3  0.0  23135 ?        19:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0  60066 ?        19:59 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.7  0.0 102978 ?        20:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0   8850 ?        20:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0  43597 ?        20:02 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.7  0.0  79945 ?        20:03 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.6  0.0 114149 ?        20:04 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.6  0.0  18187 ?        20:05 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0  18921 ?        20:05 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNU051822223d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+12.0  0.0  19910 ?        20:05 00:00:00 oracletopprd (LOCAL=NO)
+17.0  0.0  54170 ?        20:06 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/axm/42r/axmp500 {"sessionkey":"IKNU061969179d","parent":"0","parentprog":"azzp951","background":"Y","prog":"axmp500","account":"tiptop","param":[],"schedule_seq":0,"static_ent":1002,"schedule_id":null}
+14.3  0.0  52839 ?        20:06 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+32.0  0.0  88476 ?        20:07 00:00:00 oracletopprd (LOCAL=NO)
+15.0  0.0  87088 ?        20:07 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0 121285 ?        20:08 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0  27614 ?        20:09 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.5  0.0  70049 ?        20:10 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.0  0.0 106348 ?        20:11 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.7  0.0  48965 ?        20:13 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  83199 ?        20:14 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0 119500 ?        20:15 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  25713 ?        20:16 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  59918 ?        20:17 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  94097 ?        20:18 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0 128333 ?        20:19 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0  41066 ?        20:20 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.7  0.0  77380 ?        20:21 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0 111640 ?        20:22 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.0  0.0  15164 ?        20:23 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  52116 ?        20:24 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  88198 ?        20:25 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0 122309 ?        20:26 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0  28575 ?        20:27 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+94.3  0.0  49028 ?        20:27 00:00:24 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/aiv/42r/aivp200 {"sessionkey":"IKNM275015592d","parent":"0","parentprog":"azzp953","background":"Y","prog":"aivp200","account":"tiptop","param":["{\"ivab001\":\"DSCTC\",\"l_year\":2021,\"l_s\":3,\"l_e\":4,\"l_prog\":\"2\",\"l_classify\":\"3\",\"wc\":\" 1=1\"}"],"schedule_id":"aivp200-00000-E5TD","schedule_seq":1,"static_ent":99}
+19.5  0.0  65068 ?        20:28 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0 101567 ?        20:29 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0  13411 ?        20:30 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.0  0.0  50236 ?        20:31 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.0  0.0  84457 ?        20:32 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.3  0.0 118681 ?        20:33 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+86.0  0.0  24164 ?        20:34 00:00:00 oracletopprd (LOCAL=NO)
+11.7  0.0  22772 ?        20:34 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  57420 ?        20:35 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0  91545 ?        20:36 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+90.8  0.5 121240 ?        20:37 00:00:08 ora_m001_toptst
+13.0  0.0 125740 ?        20:37 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0  32062 ?        20:38 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.0  0.0  66286 ?        20:39 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0 106588 ?        20:40 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0  12277 ?        20:41 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.6  0.0  49179 ?        20:42 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  85531 ?        20:43 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.3  0.0 121855 ?        20:44 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+11.2  0.0  28129 ?        20:45 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.3  0.0  64295 ?        20:46 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.6  0.0  98392 ?        20:47 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.0  0.0   3585 ?        20:48 00:00:00 oracletopprd (LOCAL=NO)
+12.6  0.0   1909 ?        20:48 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  36773 ?        20:49 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0  77455 ?        20:50 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.2  0.0 111585 ?        20:51 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.0  0.0  15169 ?        20:52 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.6  0.0  49916 ?        20:53 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.6  0.0  86230 ?        20:54 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+17.0  0.0 122631 ?        20:55 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0  26703 ?        20:56 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.7  0.0  60913 ?        20:57 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+12.5  0.0  97256 ?        20:58 00:00:00 sh /u1/etc/tmon/script/chk_cpu

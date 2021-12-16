@@ -1,0 +1,134 @@
+#!/bin/ksh
+
+#v1 check 順序 No.06
+
+#1.1  (s)
+#     設定執行頻率
+#     chk_err_time_go
+#     chk_err_2time_go
+#1.1  (e)
+
+ls_version="1.1"
+
+. /u1/etc/tmon/tmon.conf
+. /u1/etc/tmon/tmon_title.conf
+
+unset SQLPATH
+
+#[ 檢查 webrun awsp920 log genero err 15575 ] (s)
+
+time_chk=`date '+%M'`
+
+
+if [ "$mode_test" == "Y" ] ;then
+   chk_err_time_go="Y"
+fi
+
+if [ "$chk_err_time_go" == "N" ] ;then
+
+   echo " "
+   #echo "hi 每天 08,12,17 才 檢查 redo 切換次數頻率"
+   echo "<table width=100% border=1>
+   <tr>
+   <th colspan=2 style="background-color:#FFECC9"> 每天 整點 才 檢查 webrun awsp920 log genero 15575 </th>
+   </tr> "
+   echo " "
+#   exit
+elif [ "$chk_err_time_go" == "Y" ] ; then
+
+   echo " start check webrun log genero 15575  "
+   echo " "
+   echo "<table width=500 border=1>
+   <tr>
+   <th colspan=2 style="background-color:#FFECC9">檢查 webrun awsp920 log genero err 15575</th>
+   </tr> </table> "
+   
+   echo "檢查 webrun awsp920 log genero err 15575 start "
+   time_chkhour=`date -d '+1 hour' '+%H' `
+   time_now=`date '+%Y%m%d'`
+   #測試 time_now="20210517"
+   time_chk=`date '+%Y-%m-%d'`
+   #測試 time_chk="2021-05-17"
+   awsp920_path="$LOGDIR/"
+   awsp920_weblog="webrun_${time_now}_awsp920.log"
+   if [ -f ${awsp920_path}${awsp920_weblog} ] ; then
+      check=`grep 'code:     -15575'  ${awsp920_path}${awsp920_weblog} | wc -l `
+      echo $time_chk "sum code 15575 : " $check
+      i=1
+      n=$time_chkhour
+      while [ "$i" -lt $n ] ; do
+        #測試  echo “Please input strings … `expr $i 1`”
+        #測試  read array[$i]
+        if [ "$i" -lt 10 ] ; then
+           io="0${i}"
+           array[$i]=$io
+        elif [ "$i" -ge 10 ] ; then
+           array[$i]=$i
+        fi
+        hour=${array[$i]}
+        check_hour=`grep 'code:     -15575'  ${awsp920_path}${awsp920_weblog} | grep "${time_chk} ${hour}" | wc -l `
+        echo ${time_chk} ${hour} hour" : " "$check_hour"
+        i=`expr $i + 1`
+      done
+   else
+
+      echo "沒找到" ${awsp920_path}${awsp920_weblog}
+   
+   fi
+
+   echo "檢查 webrun awsp920 log genero err 15575 end"
+
+fi
+
+#[ 檢查 webrun awsp920 log genero err 15575 ] (e)
+
+if [ "$chk_err_2time_go" == "Y" ] ; then
+
+
+   time_chkhour=`date -d '+1 hour' '+%H' `
+   time_now=`date '+%Y%m%d'`
+   #測試 time_now="20210517"
+   time_chk=`date '+%Y-%m-%d'`
+   #測試 time_chk="2021-05-17"
+   webrun_path="$LOGDIR/"
+   webrunlog="webrun_${time_now}*.log"
+   check=`grep 'ERROR(-6088)'  ${webrun_path}${webrunlog} | wc -l `
+
+   if [ "$check" -gt "0" ] ; then
+      echo " "
+      echo "<table width=500 border=1>
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9">檢查 webrun log genero 6088 </th>
+      </tr> </table> "
+      echo "檢查 webrun log genero 6088 start "
+      echo $time_chk "sum code 6088 : " $check
+      i=1
+      n=$time_chkhour
+      while [ "$i" -lt $n ] ; do
+        #測試  echo “Please input strings … `expr $i 1`”
+        #測試  read array[$i]
+        if [ "$i" -lt 10 ] ; then
+           io="0${i}"
+           array[$i]=$io
+        elif [ "$i" -ge 10 ] ; then
+           array[$i]=$i
+        fi
+        hour=${array[$i]}
+        check_hour=`grep 'ERROR(-6088)'  ${webrun_path}${webrunlog} | grep "${time_chk} ${hour}" | wc -l `
+        echo ${time_chk} ${hour} hour" : " "$check_hour"
+        i=`expr $i + 1`
+      done
+
+      echo "檢查 webrun log genero 6088 end"
+
+   else 
+
+      echo " "
+      echo "<table width=500 border=1>
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9">檢查 webrun log 没有 genero 6088 </th>
+      </tr> </table> "
+
+   fi
+
+fi

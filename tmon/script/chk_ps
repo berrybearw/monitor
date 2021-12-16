@@ -1,0 +1,161 @@
+#!/bin/ksh
+#Modify:06400_v1.1.19_add 排除awsp9開頭的process
+
+#v1 check 順序 No.14
+
+ls_version="1.0"
+ls_version="1.1"
+
+. /u1/etc/tmon/tmon.conf
+. /u1/etc/tmon/tmon_title.conf
+
+process_file="/u1/etc/tmon/mon_log/process.html"
+unset SQLPATH
+
+chk_ps_time=$chk_hour
+chk_ps_2time=$chk_min
+
+#預設 每天  檢查一次 超過 1 天程序
+#預設 每小時檢查一次 快超過 1 天程序
+
+lim=$ps_lim
+lim_2=$ps_lim_2
+
+if [ "$lim" == "" ] ;then
+
+   lim=86400
+   lim_2=7200
+
+fi
+
+if [ "$mode_test" == "Y" ] ;then
+   chk_ps_time_go="Y"
+   chk_ps_2time_go="Y"
+fi
+
+
+if [ "$chk_ps_time_go" == "Y" ] ;then
+   echo " now is  check over 1 day program "
+   proc=`ps -eo etime,pid,cmd | grep -v grep |grep -v azzp95 | grep -v awsp9 | grep fglrun | awk '{print $1,$2}'`
+   #echo "================================="
+   pid_count=`echo "${proc}" | 
+	      awk -v MAX=$lim '{split($0, a, ":"); if (length(a)==2) sec=a[1]*60+a[2]; 
+              else if (length(a)==3) sec=a[1]*3600+a[2]*60+a[3]; 
+              if (sec>MAX) print $1 }' | wc -l`
+   echo $pid_count		      
+   
+   if [ "$pid_count" -gt "0" ];then
+      echo "<table width=1200 border=1>
+      <tr>
+      <th colspan=3 style="background-color:#FFECC9">Process執行時間大於1天</th>
+      </tr>
+      <tr><td>TIME</td><td>PID</td><td>COMMAND</td>" >> $process_file
+      #  echo ""
+      #  echo "<b>=====Process執行時間大於1天=====</b>"
+      #  echo ""
+      #
+      #  #echo "" >> $log_dir/"$today".log
+      #  #echo "=====Process執行時間大於1天=====" >> $log_dir/"$today".log
+      #  #echo "" >> $log_dir/"$today".log
+      #
+        for l_pid in `echo "${proc}" | 
+		      awk -v MAX=$lim '{split($0, a, ":"); if (length(a)==2) sec=a[1]*60+a[2]; 
+	              else if (length(a)==3) sec=a[1]*3600+a[2]*60+a[3]; 
+                      if (sec>MAX) print $2 }'`
+      
+        do
+        # echo $l_pid
+          i=1
+          record=`ps -eo stime,pid,cmd | grep " ${l_pid} " | grep -v grep`
+          if [ -n "$record" ];then
+             echo "<tr>" >> $process_file
+             while [ "$i" -le 3 ];
+             do
+                if [ "$i" -eq 3 ];then
+                  record_p=`echo "$record"|awk '{$1=$2="";print $0}'`
+                  echo "<td>$record_p</td>" >> $process_file
+                else
+                  record_p=`echo "$record"|awk '{print $'$i'}'`
+                  echo "<td>$record_p</td>" >> $process_file
+      #           #echo ${record} >> $log_dir/"$today".log
+                fi
+                i=`expr $i + 1`
+             done
+             echo "</tr>" >> $process_file
+          fi
+        done
+      echo "</table>" >> $process_file
+   else 
+      echo "<table width=100% border=1>
+       <tr>
+       <th colspan=3 style="background-color:#FFECC9">Process 沒執行時間大於1天</th>
+       </tr> "
+      echo "</table>"
+   fi
+fi
+
+if [ "$chk_ps_2time_go" == "Y" ] ;then
+
+     if [ -f "$process_file" ];then
+        cat $process_file
+        rm -rf /u1/etc/tmon/mon_log/process.html
+     fi
+
+     pid_count=`echo "${proc}" |
+	        awk -v MAX=$lim_2 '{split($0, a, ":"); if (length(a)==2) sec=a[1]*60+a[2]; 
+                else if (length(a)==3) sec=a[1]*3600+a[2]*60+a[3]; 
+                if (sec>MAX) print $2 }' | head -10 `
+  
+     #echo "@@@ " $pid_count
+     if [ "$pid_count" == "" ] ; then 
+        echo "<table width=100% border=1>
+          <tr>
+          <th colspan=3 style="background-color:#FFECC9">Process 沒執行時間大於 2 hr </th>
+          </tr> "
+        echo " </table> "
+        exit
+     else
+        echo "<table width=100% border=1>
+          <tr>
+          <th colspan=3 style="background-color:#FFECC9">Process 執行時間大於 2 hr </th>
+          </tr> "
+     fi
+     for i in $pid_count
+     do
+        proc_time=`echo "$proc"|grep $i | awk '{print $1}'`
+        proc_hour=`echo "$proc_time" | awk -F : '{print $1}' | awk '{print int($0)}'`
+        #echo $proc_hour
+        proc_mim=`echo "$proc_time" | awk -F : '{print $2}' | awk '{print int($0)}'`
+        #echo $proc_min
+        proc_sec=`echo "$proc_time" | awk -F : '{print $3}' | awk '{print int($0)}'`
+        if [ $(echo "$proc_hour" != "00" | bc) -eq 1 ] ; then
+           proc_hour=`expr $proc_hour \* 3600`
+        fi
+        if [ $(echo "$proc_mim" != "00" | bc) -eq 1 ] ; then
+           proc_mim=`expr $proc_mim \* 60`
+        fi
+        proc_time=`expr $proc_hour + $proc_mim + $proc_sec `
+        proc_time=`expr 79200 - $proc_time `
+        if [ `echo "$proc_time > 3600" | bc` -eq 1 ] ; then
+           proc_hour=`expr $proc_time / 3600`
+           proc_min=`expr $proc_hour \* 3600 `
+           proc_min=`expr $proc_time - $proc_min `
+           #echo "@@@@" $proc_min
+           if [ `echo "$proc_min > 0" | bc` -eq 1 ] ; then
+              proc_min=`expr $proc_min / 60`
+           fi
+        fi
+        proc=`ps -eo pid,user,cmd | grep -v grep | grep $i `
+        proc_pid=`echo $proc | awk '{print $1}' `
+        proc_user=`echo $proc | awk '{print $2}' `
+        proc_cmd=`echo $proc | awk '{$1=$2="" ;print $0}' `
+        echo '<tr><td>在多久 1 天  </td>  '"<td> $proc_hour "hr :" $proc_min "min" </td></tr>"
+        echo '<tr><td> pid ' "<td> $proc_pid </td></tr>"
+        echo '<tr><td> user ' "<td> $proc_user </td></tr>"
+        echo '<tr><td> cmd ' "<td> $proc_cmd </td></tr>"
+        echo $proc_hour "hr :" $proc_min "min"
+    done
+    
+    echo "</table>"
+
+fi

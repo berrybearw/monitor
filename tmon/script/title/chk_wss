@@ -1,0 +1,18 @@
+#!/bin/ksh
+
+. /u1/etc/tmon/tmon_title.conf
+
+dir_date=`date '+%Y%m%d'`
+
+chk_wss_Y=`cat $chk_wss | grep "Y" | wc -l`
+
+if [ "$chk_wss_Y" -gt "0" ] ; then 
+   echo "
+        <th colspan=3 style="background-color:red">awsq990 cwssp335 avg time </th>
+        "
+else
+   echo "
+        <th colspan=3 style="background-color:#FFECC9">awsq990 cwssp335 avg time </th>
+        "
+fi
+

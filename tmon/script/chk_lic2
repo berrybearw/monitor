@@ -1,0 +1,26 @@
+#!/bin/ksh
+
+#1.1  (s)
+#     設定執行頻率
+#1.1  (e)
+
+ls_version="1.1"
+
+. /u1/etc/tmon/tmon.conf
+. /u1/etc/tmon/tmon_title.conf
+
+unset SQLPATH
+
+if [ "$mode_test" == "Y" ] ;then
+   chk_lic2_time_go="Y"
+fi
+
+if [ "$chk_lic2_time_go" == "Y" ] ;then
+   chk_license=`timeout 10 cat /u1/etc/tmon/lic2.log | tail -1 | awk '{print $4}'`
+   
+   echo "<tr>
+         <th colspan=3 style="background-color:#FFECC9">User </th>
+         <th colspan=5 style="background-color:#FEECC9">$chk_license </th>
+         </tr> "
+
+fi

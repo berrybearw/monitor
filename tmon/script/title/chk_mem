@@ -1,0 +1,61 @@
+#!/bin/ksh
+
+. /u1/etc/tmon/tmon_title.conf
+
+dir_date=`date '+%Y%m%d'`
+ps_cputime_file="/u3/log/mon_log/ps_cputime.log"
+ps_cputime_all_file="/u3/log/mon_log/ps_cputime_all.log"
+ps_cputime_file_chk="/u3/log/mon_log/chk/$dir_date/ps_cputime.log"
+ps_cputime_file_all_chk="/u3/log/mon_log/chk/$dir_date/ps_cputime_all.log"
+
+chk_mem="/u1/etc/tmon/mon_log/chk_mail.log"
+chk_mem_warn="/u1/etc/tmon/mon_log/chk_mail_warn.log"
+
+chk_mem_Y=`timeout 10 cat $chk_mem | grep "chk_mem" | wc -l`
+chk_mem_warn_Y=`timeout 10 cat $chk_mem_warn | grep "chk_mem" | wc -l`
+
+echo " 
+   <th colspan=8 style="background-color:#00E3E3">Mem </th>
+   <tr>
+   <th colspan=8 style="background-color:#00E3E3">內存 ( Mem ) 使用大約超過 70 % 會造成系統異常  </th>
+   </tr>
+     "
+echo "
+     <tr>
+     "
+
+if [ "$chk_mem_Y" -gt "0" ] ; then 
+   echo "
+        <th colspan=2 rowspan=2 style="background-color:red">檢查 Mem error $chk_mem_Y </th>
+        "
+else
+   if [ "$chk_mem_warn_Y" -gt "0" ] ; then
+      echo "
+           <th colspan=2 rowspan=2 style="background-color:yellow">檢查 Mem warn $chk_mem_warn_Y </th>
+	   "
+   else	   
+      echo "
+           <th colspan=2 rowspan=2 style="background-color:#FFECC9">檢查 Mem OK </th>
+           "
+   fi
+fi
+
+mem=`timeout 10 free -h |grep Mem:`
+mem_swap=`timeout 10 free -h |grep Swap:`
+
+mem_total=`echo "$mem"|awk '{print $2}'`
+mem_use=`echo "$mem"|awk '{print $3}'`
+
+mem_swap_toa=`echo "$mem_swap" |awk '{print $2}'`
+mem_swap_use=`echo "$mem_swap" |awk '{print $3}'`
+
+echo "
+     <th colspan=3 style="background-color:#FFECC9">Mem total $mem_total  </th>
+     <th colspan=3 style="background-color:#FFECC9">Mem USE $mem_use   </th>
+     </tr>
+     <tr>
+     <th colspan=3 style="background-color:#FFECC9">Swap total $mem_swap_toa </th>
+     <th colspan=3 style="background-color:#FFECC9">Swap USE $mem_swap_use </th>
+     </tr>
+     "
+

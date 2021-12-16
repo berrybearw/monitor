@@ -1,0 +1,228 @@
+#!/bin/ksh
+
+#v1 check 順序 No.15
+#   check Warn
+
+#1.1  (s)
+#     設定執行頻率
+#     chk_cron_time_go 
+#1.1  (e)
+
+#2021/11/02 add T100 備份寄信通知
+
+ls_version="1.1"
+
+. /u1/etc/tmon/tmon.conf
+. /u1/etc/tmon/tmon_title.conf
+
+#20211102 add (s)
+back_filename=`date '+%Y%m%d'`
+attach_file="/u3/backup/log/$back_filename.log"
+
+mail_xml="
+<?xml version=\"1.0\" encoding='utf-8'?>
+<Mail>
+<Protocol>smtp</Protocol>
+<CheckAuth>Y</CheckAuth>
+<MailServer>$mail_ser</MailServer>
+<EncryptType>$ptc</EncryptType>
+<MailServerPort>$smtp_port</MailServerPort>
+<MailServerUser>$mail_from</MailServerUser>
+<MailServerUserPassword>$mail_pass</MailServerUserPassword>
+<Subject>T100 backup 備份完成</Subject>
+<MessageBody>詳細請查看 log</MessageBody>
+<Attach>$attach_file</Attach>
+<Recipient>$mail_to</Recipient>
+<From>$mail_who</From>
+</Mail>
+"
+
+mail_send=`echo $mail_xml > $TEMPDIR/tmon_t100back.xml`
+
+#20211102 add (e)
+
+echo $mode_test
+
+if [ "$mode_test" == "Y" ] ;then
+   chk_cron_time_go="Y"
+fi
+
+if [ "$chk_cron_time_go" == "Y" ] ;then
+   
+   #T100 備份執行歷程檔 /u3/backup 每次備份會有日期 20210715 可用此來判斷排程有啟動
+   cd /u3/backup
+   ora_dir=`date '+%a'`
+   dir_date=`date '+%Y%m%d'`
+ 
+   if [ ! -d "/u1/etc/tmon/mon_log/chk/$dir_date" ] ; then
+      mkdir /u1/etc/tmon/mon_log/chk/$dir_date
+   fi
+
+   t100backup_log="/u1/etc/tmon/mon_log/chk/$dir_date/t100backup.log"
+   #cpu_file_chk="/u1/etc/tmon/mon_log/chk/$dir_date/pscpu.log"
+   cron_file="/u1/etc/tmon/mon_log/cron.log"
+   cron_file2="/u1/etc/tmon/mon_log/cron_ora.log"
+   
+   # T100 備份
+   ora_name="exp_"
+
+   case $ora_dir in 
+     "Mon")
+           chk_01=$ora_dir
+           chk_02="Sun"
+           ;;
+     "Tue")
+           chk_01=$ora_dir
+           chk_02="Mon"
+           ;;
+     "Wed")
+           chk_01=$ora_dir
+           chk_02="Tue"
+           ;;
+     "Thu")
+           chk_01=$ora_dir
+           chk_02="Wed"
+           ;;
+     "Fri")
+           chk_01=$ora_dir
+           chk_02="Thu"
+           ;;
+     "Sat")
+           chk_01=$ora_dir
+           chk_02="Fri"
+           ;;
+     "Sun")
+           chk_01=$ora_dir
+           chk_02="Sat"
+           ;;
+   esac
+
+   cron_name="T100backup"
+   
+   chk_backup_file="/u3/backup/backup.html"
+   
+   backup_chkstat=`cat $t100backup_log | grep "check : Y" | wc -l`
+   
+   check_day_lim=5
+
+   check_backup_ok=`grep "END" $attach_file | wc -l`  #20211102 add 檢查 log 是否有特殊字詞
+   
+   if [ "$1" != "tes" ] ; then
+
+      #20211102 add (s)
+      if [ "$check_backup_ok" -ge 1 ] ; then
+
+         send_mail=`cat $t100backup_log | grep "send mail : Y" | wc -l`
+
+         if [ "$send_mail" -ge 1 ] ; then
+
+            echo "today is send mail about t100backup"
+         elif [ "$send_mail" -lt 1 ] ; then
+
+            sh /u3/bin/javamail/UnixMailSender.bat $TEMPDIR/tmon_t100back.xml true
+            echo "send mail : Y" > $t100backup_log
+
+         fi
+
+      fi
+      #20211102 add (e)
+   
+      if [ `echo "$backup_chkstat > 0" | bc` -eq 1 ]; then 
+   
+         echo "排程已檢查過"
+         exit
+   
+      fi
+   
+   fi
+   
+   yesterday_date=`date '+%Y%m%d' --date="-1 day"`
+   
+   #echo "yesterday " $yesterday_date
+   
+   backup_today=`cat $chk_backup_file | grep $yesterday_date |wc -l `
+   
+   #echo "chk " $backup_today
+   
+   i=1
+    echo "<table width=100% border=1>
+      <tr>
+      <td colspan=5 align="center" style="background-color:#FFECC9"> 相關排程檢查 </td>
+      </tr>
+       "
+    echo "<tr>
+          <td rowspan="6" align="center">T100backup</td>
+          </tr> "
+   while [ $i -le $check_day_lim ]; 
+   
+   do
+   
+      check_date=`date '+%Y%m%d' --date="-${i} day"`
+      
+      echo "check_date " $check_date  >> $t100backup_log
+      
+      backup_chk=`cat $chk_backup_file | grep $check_date |wc -l `
+   
+      if [ `echo "$backup_chk > 0" | bc` -eq 1 ];then 
+         echo "check : Y" >> $t100backup_log
+         echo "<tr>
+               <td> 排程  " $cron_name " $check_date   </td>
+               <td> ok </td>
+               </tr>"
+      else
+         echo "check : Y" >> $t100backup_log
+         echo "<tr> 
+               <td> 排程 " $cron_name " $check_date  </td>
+               <td> 沒開啟 </td>
+               </tr>"
+   
+      fi
+   
+      i=`expr $i + 1 `
+   
+   done
+   
+   echo "</tr></table> "
+
+   i=1
+    echo "<table width=100% border=1>
+      <tr>
+      <td colspan=5 align="center" style="background-color:#FFECC9"> 排程過程檢查 </td>
+      </tr>
+       "
+    echo "<tr>
+          <td colspan=5 align="center">T100backup</td>
+          </tr> "
+   n=`grep -i "ora-" /u3/backup/$chk_02/exp_*.log | wc -l` 
+   if [ "$n" == 0 ] ; then
+
+      echo "<tr>
+          <td colspan=5 align="center"> 沒發現錯誤 </td>
+          </tr> "
+
+   else
+      echo "<tr>
+          <td colspan=5 align="center">發現有錯誤 " $n " 個 </td>
+          </tr> "
+      grep -i "ora-" /u3/backup/$chk_02/exp_*.log > $cron_file2
+      while [ $i -le $n ]; 
+      do
+         filename=`cat /u1/etc/tmon/mon_log/cron_ora.log | awk '{print $1}' | sed -n "$i,${i}p"`
+         ora_chk=`cat /u1/etc/tmon/mon_log/cron_ora.log | awk '{$1="";print $0}' | sed -n "$i,${i}p"`
+         echo "<tr>
+                  <td> " $chk_01 " 檔案  " $filename "   </td>
+                  <td> " $ora_chk " </td>
+               </tr>"
+
+         i=`expr $i + 1`
+
+      done
+
+   fi
+
+   echo "</tr></table> "
+       
+fi
+
+rm -rf $cron_file
+rm -rf $cron_file2

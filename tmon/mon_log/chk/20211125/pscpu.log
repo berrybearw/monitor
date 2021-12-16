@@ -1,0 +1,17 @@
+12.0  0.0 115413 ?        08:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0   9261 ?        09:00 00:00:00 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/com/wss/42r/wssp309 {"sessionkey":"IKPJ001764593d","default_dbs":"dsdemo","default_pass":"mbshxJMnDZA1","background":"Y","prog":"wssp309","account":"tiptoper","param":["/ut/topprd/tmp/20211125/ws_req_09:00:17.639_1A0B4425-1EBE-4712-AD4A-338C465A1DA1.xml","/ut/topprd/tmp/20211125/ws_res_09:00:17.639_1A0B4425-1EBE-4712-AD4A-338C465A1DA1.xml"],"schedule_seq":0,"static_ent":99}
+11.2  0.0   7331 ?        09:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+16.3  0.0  71283 ?        10:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+15.4  0.0   7758 ?        09:29 00:04:46 oracletopprd (LOCAL=NO)
+12.3  0.0  70807 ?        09:52 00:01:01 oracletopprd (LOCAL=NO)
+10.1  0.0  41086 ?        09:51 00:00:56 oracletopprd (LOCAL=NO)
+12.5  0.0 130756 ?        11:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+13.0  0.0  70122 ?        12:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+21.0  0.0  35375 ?        13:01 00:00:00 sh /u1/etc/tmon/script/chk_cron
+15.0  0.0  34086 ?        13:01 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+14.1  0.0  11282 pts/14   12:59 00:00:09 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzp191 {"sessionkey":"IKPF000037252d","parent":"0","prog":"azzp191","account":"tiptop","param":["apji050","zh_TW,zh_CN,ko_KR,ja_JP,en_US","tiptop"],"schedule_seq":0,"static_ent":99}
+13.9  0.0  13692 pts/14   13:00 00:00:09 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzp191 {"sessionkey":"IKPF000233874d","parent":"0","prog":"azzp191","account":"tiptop","param":["aooi705","zh_TW,zh_CN,ko_KR,ja_JP,en_US","tiptop"],"schedule_seq":0,"static_ent":99}
+13.5  0.0  34483 ?        14:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
+99.7  0.0  43333 pts/63   14:38 00:22:05 /u1/genero/fglgws/lib/fglrun-bin /u1/topprd/erp/azz/42r/azzi931 {"sessionkey":"IKPG380825697d","parent":"IKPO371778371d","parentprog":"axci004","ancest":"IKPO371778371d","prog":"azzi931","account":"tiptoper","param":["2","AXC","axci004","[]"],"schedule_seq":0,"static_ent":99}
+15.0  0.0 100831 pts/72   15:00 00:00:00 -ksh
+12.3  0.0  99584 ?        15:00 00:00:00 sh /u1/etc/tmon/script/chk_cpu
