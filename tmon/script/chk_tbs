@@ -184,6 +184,16 @@ if [ "$DBCHK" == "Y" ] ; then
          i=`expr $i + 1 `
       done
       echo "</table>" >> $tbs_chk_html
+   else
+      echo '<table width=100% border=1>
+      <tr>
+      <th colspan=7 style="background-color:#FFECC9">表空間使用率</th>
+      </tr>
+      <tr>
+      <td colspan=7 align="center" valign="middle" style="background-color:#FFECC9" >DB tablespace use not over '$tbs_lim' % </td>
+      </tr>
+      </table>
+      ' >> $tbs_chk_html
    fi
 
 fi
@@ -200,6 +210,7 @@ if [ "$mode_test" == "Y" ] ; then
       <tr>
       <td colspan=7 align="center" valign="middle" style="background-color:#FFECC9" >DB tablespace use not over '$tbs_lim' % </td>
       </tr>
+      </table>
       ' >> $tbs_chk_html
       exit
    fi
@@ -221,87 +232,6 @@ if [ "$chk_tbs_time_go" == "Y" ] ;then
    fi
    
    #echo "=====表格空間使用率====="
-   if [ "$tbs" == "1" ];then
-
-      sql=$(
-            echo "
-              set colsep ' '     
-              set pagesize 0   
-              set trimspool on 
-              set headsep off  
-              set linesize 200  
-              
-              spool ${chk_logdir}/q_out_${tmonname}.log
-
-                 with tbs as (
-                 select 
-                 a.tablespace_name as namea,
-                 round(a.bytes_alloc/1048576) alloc,
-                 round(nvl(b.bytes_free, 0)/1048576) freea,
-                 round((a.bytes_alloc - nvl(b.bytes_free, 0)) /1048576 ) usea,
-                 round((nvl(b. bytes_free,0)/ a.bytes_alloc) *100) \"% Free\",
-                 100 - round((nvl(b.bytes_free, 0) / a.bytes_alloc) *100) \"% Used\",
-                 round(maxbytes /1048576) maxa,
-                 round(c.e1/1048576,2) as re
-                 from (select f.tablespace_name,
-                 sum(f.bytes) bytes_alloc,
-                 sum(decode(f.autoextensible, 'YES',f.maxbytes,'NO',f.bytes)) maxbytes
-              from dba_data_files f
-              group by tablespace_name) a,
-              (select f.tablespace_name,
-              sum(f.bytes) bytes_free
-              from dba_free_space f
-              group by tablespace_name) b,
-              (SELECT TS_NAME, SUM(SPACE * 8192) e1  FROM DBA_RECYCLEBIN GROUP BY TS_NAME) c
-              where a.tablespace_name = b.tablespace_name (+)
-              and a.tablespace_name = c.ts_name (+) 
-              union all
-              select
-                 h.tablespace_name as \"Tablespace)Name\",
-                 round(sum(h.bytes_free + h.bytes_used) /1048576 ) megs_alloc,
-                 round(sum((h.bytes_free + h.bytes_used) - nvl(p.bytes_used,0)) /1048576 ) megs_free,
-                 round(sum(nvl(p.bytes_used, 0)) /1048576) megs_used,
-                 round((sum((h.bytes_free + h.bytes_used) -
-                 nvl(p.bytes_used, 0))/ sum(h.bytes_used + h.bytes_free)) * 100) Pct_Free,
-                 100 -round((sum((h.bytes_free + h.bytes_used) -
-                 nvl(p.bytes_used, 0))/ sum(h.bytes_used + h.bytes_free)) * 100) pct_used,
-                 round(sum(f.maxbytes) /1048576 ) max,
-                 0
-              from sys.v_\$TEMP_SPACE_HEADER h,
-              sys.v_\$temp_extent_pool p,
-              dba_temp_files f
-              where p.file_id(+)= h.file_id
-              and p.tablespace_name(+)=h.tablespace_name
-              and f.file_id = h.file_id
-              and f.tablespace_name = h.tablespace_name
-              group by h.tablespace_name 
-              ) , 
-              y as (select namea
-                           ,alloc
-                           ,freea
-                           ,usea
-                           ,maxa
-                           ,case when maxa > alloc then maxa else alloc end as x
-                           ,re 
-                     from tbs) 
-             select namea as \"TABLESPACE_NAME\"
-                    ,alloc as \"ALLOCATE(MB)\"
-                    ,freea as \"FREE(MB)\"
-                    ,usea as \"USED(MB)\"
-                    ,round(((x-usea)/x)*100,2) as \"free %\"
-                    ,round((usea/x)*100,2) as \"use %\" 
-                    ,maxa as \"MAX(MB)\"
-                    ,re as \"RECYCLE(MB)\"
-               from y ;                
-              SPOOL OFF
-              EXIT
-      
-              " | sqlplus -S "du/du@$ZONE"
-              )
-   else
-      exit
-
-   fi
 
    i=0
    if [ -n "$ttbs_ov" ] ; then
