@@ -20,6 +20,8 @@ tmonname=$TMONNAME
 
 unset SQLPATH
 
+time_red=`date +%Y/%m/%d-%H:%M:%S`
+
 check_log="/u1/etc/tmon/script/basement/du.log"
 check_log2="/u1/etc/tmon/script/basement/du2.log"
 check_dufile="/u1/etc/tmon/script/basement/du_file.log"
@@ -87,14 +89,14 @@ fi
 
 if [ "$chk_du_time_go" == "Y" ] ;then
 
-   echo "" > $du_chk_html
-   title_du
+
+   title_du  # title function
+
    #ut 暫存檔空間 (s)
    if [  `echo "$ut_use > $ut_max" |bc` -eq 1 ];then
          
       chk_mail="Y"
-      #chk_Warn="Y"
-      #echo "chk_Warn : " $chk_Warn
+      echo "chk_du : " $chk_mail >> $chk_du
       echo "<table width=800 border=1>" >> $du_chk_html 
       echo "<tr><th colspan=7 style=background-color:#FFECC9>LOG磁碟空間 (/ut) </th></tr>" >> $du_chk_html
       echo ""
@@ -295,7 +297,7 @@ if [ "$chk_du_time_go" == "Y" ] ;then
       echo "chk_du : Y" >> $chk_du
       echo ""
       echo "<table width=100% border=1>" >> $du_chk_html 
-      echo "<tr><th colspan=7 style=background-color:#FFECC9>主機磁碟空間</th></tr>" >> $du_chk_html
+      echo "<tr><th colspan=7 style=background-color:#FFECC9>$time_red 主機磁碟空間</th></tr>" >> $du_chk_html
       echo "<tr><th colspan=7 >磁碟空間大於<font color=red>$lim%</font></th></tr> " >> $du_chk_html 
       echo "<tr><th colspan=7 >磁碟空間量小於<font color=red>$lim_max MB</font></th></tr> " >> $du_chk_html 
       echo ""
@@ -309,13 +311,13 @@ if [ "$chk_du_time_go" == "Y" ] ;then
          echo "chk_du : Y" >> $chk_du_warn
 	      echo ""
 	      echo "<table width=100% border=1>" >> $du_chk_html
-         echo "<tr><th colspan=7 style=background-color:#FFECC9>主機磁碟空間</th></tr>" >> $du_chk_html
+         echo "<tr><th colspan=7 style=background-color:#FFECC9>$time_red 主機磁碟空間</th></tr>" >> $du_chk_html
          echo "<tr><th colspan=7 style=background-color:yellow>磁碟空間大於<font color=red>$lim%</font></th></tr> " >> $du_chk_html
 	      echo ""
          chk_du_space $check_log2 "style=background-color:yellow"
       else
 	      echo "<table width=100% border=1>" >> $du_chk_html
-         echo "<tr><th colspan=7 style=background-color:#FFECC9>主機磁碟空間</th></tr>" >> $du_chk_html
+         echo "<tr><th colspan=7 style=background-color:#FFECC9>$time_red 主機磁碟空間</th></tr>" >> $du_chk_html
          echo "<tr><th colspan=7 >磁碟空間沒有大於<font color=red>$lim%</font></th></tr> " >> $du_chk_html
 	      echo "</table> " >> $du_chk_html
 
