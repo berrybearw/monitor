@@ -9,11 +9,16 @@ ls_version="1.1"
 . /u1/etc/tmon/tmon.conf
 . /u1/etc/tmon/tmon_title.conf
 
-process_file="/u1/etc/tmon/mon_log/process.html"
+tmonname=$TMONNAME
+mode_test=$MODE_TEST
+
+ps_chk_html="/u1/etc/tmon/mon_log/process_${tmonname}.html"
+ps_chk_html="/u1/etc/tmon/script/basement/ps_chk_${tmonname}.html"
+chk_ps="/u1/etc/tmon/mon_log/chk_mail.log"
+
 unset SQLPATH
 
-chk_ps_time=$chk_hour
-chk_ps_2time=$chk_min
+time_red=`date +%Y/%m/%d-%H:%M:%S`
 
 #預設 每天  檢查一次 超過 1 天程序
 #預設 每小時檢查一次 快超過 1 天程序
@@ -45,11 +50,11 @@ if [ "$chk_ps_time_go" == "Y" ] ;then
    echo $pid_count		      
    
    if [ "$pid_count" -gt "0" ];then
-      echo "<table width=1200 border=1>
+      echo '<table width=1200 border=1>
       <tr>
-      <th colspan=3 style="background-color:#FFECC9">Process執行時間大於1天</th>
+      <th colspan=3 style="background-color:#FFECC9">Process執行時間大於 '$lim' sec</th>
       </tr>
-      <tr><td>TIME</td><td>PID</td><td>COMMAND</td>" >> $process_file
+      <tr><td>TIME</td><td>PID</td><td>COMMAND</td>' >> $ps_chk_html
       #  echo ""
       #  echo "<b>=====Process執行時間大於1天=====</b>"
       #  echo ""
@@ -68,38 +73,33 @@ if [ "$chk_ps_time_go" == "Y" ] ;then
           i=1
           record=`ps -eo stime,pid,cmd | grep " ${l_pid} " | grep -v grep`
           if [ -n "$record" ];then
-             echo "<tr>" >> $process_file
+             echo "<tr>" >> $ps_chk_html
              while [ "$i" -le 3 ];
              do
                 if [ "$i" -eq 3 ];then
                   record_p=`echo "$record"|awk '{$1=$2="";print $0}'`
-                  echo "<td>$record_p</td>" >> $process_file
+                  echo "<td>$record_p</td>" >> $ps_chk_html
                 else
                   record_p=`echo "$record"|awk '{print $'$i'}'`
-                  echo "<td>$record_p</td>" >> $process_file
+                  echo "<td>$record_p</td>" >> $ps_chk_html
       #           #echo ${record} >> $log_dir/"$today".log
                 fi
                 i=`expr $i + 1`
              done
-             echo "</tr>" >> $process_file
+             echo "</tr>" >> $ps_chk_html
           fi
         done
-      echo "</table>" >> $process_file
+      echo "</table>" >> $ps_chk_html
    else 
-      echo "<table width=100% border=1>
+      echo '<table width=100% border=1>
        <tr>
        <th colspan=3 style="background-color:#FFECC9">Process 沒執行時間大於1天</th>
-       </tr> "
-      echo "</table>"
+       </tr> ' >> $ps_chk_html
+      echo "</table>" >> $ps_chk_html
    fi
 fi
 
 if [ "$chk_ps_2time_go" == "Y" ] ;then
-
-     if [ -f "$process_file" ];then
-        cat $process_file
-        rm -rf /u1/etc/tmon/mon_log/process.html
-     fi
 
      pid_count=`echo "${proc}" |
 	        awk -v MAX=$lim_2 '{split($0, a, ":"); if (length(a)==2) sec=a[1]*60+a[2]; 
@@ -108,17 +108,17 @@ if [ "$chk_ps_2time_go" == "Y" ] ;then
   
      #echo "@@@ " $pid_count
      if [ "$pid_count" == "" ] ; then 
-        echo "<table width=100% border=1>
+        echo '<table width=100% border=1>
           <tr>
           <th colspan=3 style="background-color:#FFECC9">Process 沒執行時間大於 2 hr </th>
-          </tr> "
-        echo " </table> "
+          </tr> ' >> $ps_chk_html
+        echo " </table> " >> ps_chk_html
         exit
      else
-        echo "<table width=100% border=1>
+        echo '<table width=100% border=1>
           <tr>
           <th colspan=3 style="background-color:#FFECC9">Process 執行時間大於 2 hr </th>
-          </tr> "
+          </tr> ' >> $ps_chk_html
      fi
      for i in $pid_count
      do
@@ -149,13 +149,13 @@ if [ "$chk_ps_2time_go" == "Y" ] ;then
         proc_pid=`echo $proc | awk '{print $1}' `
         proc_user=`echo $proc | awk '{print $2}' `
         proc_cmd=`echo $proc | awk '{$1=$2="" ;print $0}' `
-        echo '<tr><td>在多久 1 天  </td>  '"<td> $proc_hour "hr :" $proc_min "min" </td></tr>"
-        echo '<tr><td> pid ' "<td> $proc_pid </td></tr>"
-        echo '<tr><td> user ' "<td> $proc_user </td></tr>"
-        echo '<tr><td> cmd ' "<td> $proc_cmd </td></tr>"
+        echo '<tr><td>在多久 1 天  </td>  '"<td> $proc_hour "hr :" $proc_min "min" </td></tr>" >> $ps_chk_html
+        echo '<tr><td> pid ' "<td> $proc_pid </td></tr>" >> $ps_chk_html
+        echo '<tr><td> user ' "<td> $proc_user </td></tr>" >> $ps_chk_html
+        echo '<tr><td> cmd ' "<td> $proc_cmd </td></tr>" >> $ps_chk_html
         echo $proc_hour "hr :" $proc_min "min"
     done
     
-    echo "</table>"
+    echo "</table>" >> $ps_chk_html
 
 fi
