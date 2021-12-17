@@ -2,39 +2,44 @@
 
 . /u1/etc/tmon/tmon_title.conf
 
+tmonname=$TMONNAME
+
 dir_date=`date '+%Y%m%d'`
 ps_cputime_file="/u3/log/mon_log/ps_cputime.log"
 ps_cputime_all_file="/u3/log/mon_log/ps_cputime_all.log"
 ps_cputime_file_chk="/u3/log/mon_log/chk/$dir_date/ps_cputime.log"
 ps_cputime_file_all_chk="/u3/log/mon_log/chk/$dir_date/ps_cputime_all.log"
 
-chk_pstime_Y=`cat $chk_ps_cputime | grep "Y" | wc -l`
+chk_ps="/u1/etc/tmon/mon_log/chk_mail.log"
+chk_ps_warn="/u1/etc/tmon/mon_log/chk_mail_warn.log"
 
-chk_pstime_Warn=`cat $chk_ps_cputime | grep "Warn" | wc -l`
+chk_ps_Y=`cat $chk_ps | grep "chk_ps :" | wc -l`
+
+chk_ps_Warn=`cat $chk_ps_warn | grep "chk_ps :" | wc -l`
 
 echo " 
      <tr>
      "
 
 if [ "$chk_pstime_Y" -gt "0" ] ; then 
-   echo "
-        <th colspan=3 style="background-color:red">CPU 使用超过 2 hr </th>
-        "
+   echo '
+        <th colspan=3 style="background-color:red">CPU 使用超过指定時間 error '$chk_ps_Y'</th>
+        '
 else
    if [ "$chk_pstime_Warn" -gt "0" ] ; then
-      echo "
-           <th colspan=3 style="background-color:yellow">CPU 使用超过 2 hr </th>
-           "
+      echo '
+           <th colspan=3 style="background-color:yellow">CPU 使用超过指定時間 warn '$chk_ps_Warn'</th>
+           '
 
    else
-      echo "
-           <th colspan=3 style="background-color:#FFECC9">CPU 使用没有超过 2 hr </th>
-           "
+      echo '
+           <th colspan=3 style="background-color:#FFECC9">CPU 使用没有超过指定時間 </th>
+           '
    fi 
 fi
 
-echo "
+echo '
      <th colspan=5 style="background-color:#FFECC9">系統資源占用 </th>
      </tr>
-     "
+     '
 
