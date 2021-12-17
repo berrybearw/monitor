@@ -289,19 +289,7 @@ if [ "$chk_cpu_time_go" == "Y" ] ;then
          if [ $(echo "$cpu_lim_load < $cpu_load"|bc) -eq 1 ] ; then
             chk_cpu_load
          else
-            echo '<table width=100% border=1>
-            <tr>
-            <tr>
-            <th colspan=2 style="background-color:#FFECC9">'$timered' 檢查 CPU ok </th>
-            </tr> 
-            <tr>
-            <th colspan=2 style="background-color:#FFECC9">CPU idle 沒低於 '$cpu_lim_idle'  </th>
-            </tr>
-            <tr>
-            <th colspan=2 style="background-color:#FFECC9">CPU 5 min load 沒高於 '$cpu_lim_load'  </th>
-            </tr>
-             </table>
-             ' >> $cpu_chk_html
+            chk_cpu_ok  # OK function
             
          fi
       fi
