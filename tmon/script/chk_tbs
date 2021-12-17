@@ -16,6 +16,8 @@ tbs_chk_html="/u1/etc/tmon/script/basement/tbs_chk_${tmonname}.html"
 
 chk_tbs="/u1/etc/tmon/mon_log/chk_mail.log"
 
+time_red=`date +%Y/%m/%d-%H:%M:%S`
+
 if [ "$mode_test" == "Y" ] ;then
    chk_tbs_time_go="Y"
    tbs_lim="50"
@@ -30,6 +32,62 @@ function title_tbs {
    </tr>
    </table>
    ' > $tbs_chk_html
+}
+
+function chk_tbs_ok {
+      echo '<table width=100% border=1>
+      <tr>
+      <th colspan=7 style="background-color:#FFECC9">'$time_red' 表空間使用率</th>
+      </tr>
+      <tr>
+      <td colspan=7 align="center" valign="middle" style="background-color:#FFECC9" >DB tablespace use not over '$tbs_lim' % </td>
+      </tr>
+      </table>
+      ' >> $tbs_chk_html
+}
+
+function chk_tbs_space {
+   i=0
+   while [ `echo "$i <= $n" | bc` -eq 1 ];
+      do
+         if [ "$i" == 0 ] ; then
+            chk_name='TABLESPACE_NAME'
+            tbs_allocat='ALLOCATED ( MB )' 
+            tbs_free='FREE ( MB )'
+            tbs_use='USE ( MB )'
+            tbs_free_per='FREE %'
+            tbs_use_per='USE %'
+            tbs_max='MAX ( MB )'
+   	      echo '<tr><td>' $chk_name '</td>' >>$tbs_chk_html
+   	      echo '<td>' $tbs_allocat '</td>' >>$tbs_chk_html
+   	      echo '<td>' $tbs_free '</td>' >>$tbs_chk_html
+   	      echo '<td>' $tbs_use '</td>' >>$tbs_chk_html
+   	      echo '<td>' $tbs_free_per '</td>' >>$tbs_chk_html
+   	      echo '<td>' $tbs_use_per '</td>' >>$tbs_chk_html
+   	      echo '<td>' $tbs_max '</td></tr>' >>$tbs_chk_html
+         else
+            chk_name=`cat $chk_logdir/q_tbs_${tmonname}.log |awk '{if($6 >= '$tbs_lim') if($3 <= '$tbs_lim_use') {print $1}}' | sed -n "${i},${i}p" `
+            tbs_allocat=`cat $chk_logdir/q_tbs_${tmonname}.log | grep $chk_name | awk '{print $2}'`
+            #tbs_allocat=`echo | awk "{ print $tbs_allocat / 1024 }" `
+            tbs_free=`cat $chk_logdir/q_tbs_${tmonname}.log | grep $chk_name | awk '{print $3}'`
+            #tbs_free=`echo | awk "{ print $tbs_free / 1024 }" `
+            tbs_use=`cat $chk_logdir/q_tbs_${tmonname}.log | grep $chk_name | awk '{print $4}'`
+            #tbs_use=`echo | awk "{ print $tbs_use / 1024 }" `
+            tbs_free_per=`cat $chk_logdir/q_tbs_${tmonname}.log |grep $chk_name | awk '{print $5}'`
+            tbs_use_per=`cat $chk_logdir/q_tbs_${tmonname}.log |grep $chk_name | awk '{print $6}'`
+            tbs_max=`cat $chk_logdir/q_tbs_${tmonname}.log |grep $chk_name | awk '{print $7}'`
+            #tbs_max=`echo | awk "{ print $tbs_max / 1024 }" `
+   	      echo '<tr><td>' $chk_name '</td>' >>$tbs_chk_html
+   	      echo '<td>' $tbs_allocat '</td>' >>$tbs_chk_html
+   	      echo '<td>' $tbs_free '</td>' >>$tbs_chk_html
+   	      echo '<td>' $tbs_use '</td>' >>$tbs_chk_html
+   	      echo '<td>' $tbs_free_per '</td>' >>$tbs_chk_html
+   	      echo '<td>' $tbs_use_per '</td>' >>$tbs_chk_html
+   	      echo '<td>' $tbs_max '</td></tr>' >>$tbs_chk_html
+         fi
+         i=`expr $i + 1 `
+      done
+      echo "</table>" >> $tbs_chk_html
 }
 
 if [ "$CHKTIME" == "Y" ] ; then
@@ -114,7 +172,7 @@ if [ "$DBCHK" == "Y" ] ; then
       
               " | sqlplus -S "du/du@$ZONE"
               )
-   i=0
+   
    #判斷是否大於lim設定值
    tbs_ov=`cat $chk_logdir/q_tbs_${tmonname}.log |awk '{if($6 >= '$tbs_lim') if($3 <= '$tbs_lim_use') {print $6}}'`
    tbs_ov_warn=`cat $chk_logdir/q_tbs_${tmonname}.log |awk '{if($6 >= '$tbs_lim') {print $6}}'`
@@ -123,7 +181,7 @@ if [ "$DBCHK" == "Y" ] ; then
    ttspov=`cat $chk_logdir/q_tbs_${tmonname}.log | grep "TEMP" |awk '{if($6 >= '$tbs_lim') if($3 <= '$tbs_lim_use') {print $6}}'`
    n=`cat $chk_logdir/q_tbs_${tmonname}.log |awk '{if($6 >= '$tbs_lim') if($3 <= '$tbs_lim_use') {print $6}}'| wc -l`
 
-   title_tbs
+   title_tbs  # title function
 
    if [ -n "$tbs_ov"  ];then
       chk_tbs_time_go="Y"
@@ -132,7 +190,7 @@ if [ "$DBCHK" == "Y" ] ; then
       echo "tbs_lim : " $tbs_lim >> $chk_tbs
       echo '<table width=100% border=1>
       <tr>
-      <th colspan=7 style="background-color:#FFECC9">表空間使用率</th>
+      <th colspan=7 style="background-color:#FFECC9">'$time_red' 表空間使用率</th>
       </tr>
       <tr>
       <td colspan=7 align="center" valign="middle" style="background-color:red" >NOW!! DB tablespace use over '$tbs_lim' % </td>
@@ -144,56 +202,10 @@ if [ "$DBCHK" == "Y" ] ; then
       <td colspan=7 align="center" valign="middle"> TABLESPACE </td>
       </tr>' >> $tbs_chk_html
       check_log="cat $chk_logdir/q_tbs_${tmonname}.log"
-      while [ `echo "$i <= $n" | bc` -eq 1 ];
-      do
-         if [ "$i" == 0 ] ; then
-            chk_name='TABLESPACE_NAME'
-            tbs_allocat='ALLOCATED ( MB )' 
-            tbs_free='FREE ( MB )'
-            tbs_use='USE ( MB )'
-            tbs_free_per='FREE %'
-            tbs_use_per='USE %'
-            tbs_max='MAX ( MB )'
-   	    echo '<tr><td>' $chk_name '</td>' >>$tbs_chk_html
-   	    echo '<td>' $tbs_allocat '</td>' >>$tbs_chk_html
-   	    echo '<td>' $tbs_free '</td>' >>$tbs_chk_html
-   	    echo '<td>' $tbs_use '</td>' >>$tbs_chk_html
-   	    echo '<td>' $tbs_free_per '</td>' >>$tbs_chk_html
-   	    echo '<td>' $tbs_use_per '</td>' >>$tbs_chk_html
-   	    echo '<td>' $tbs_max '</td></tr>' >>$tbs_chk_html
-         else
-            chk_name=`cat $chk_logdir/q_tbs_${tmonname}.log |awk '{if($6 >= '$tbs_lim') if($3 <= '$tbs_lim_use') {print $1}}' | sed -n "${i},${i}p" `
-            tbs_allocat=`cat $chk_logdir/q_tbs_${tmonname}.log | grep $chk_name | awk '{print $2}'`
-            #tbs_allocat=`echo | awk "{ print $tbs_allocat / 1024 }" `
-            tbs_free=`cat $chk_logdir/q_tbs_${tmonname}.log | grep $chk_name | awk '{print $3}'`
-            #tbs_free=`echo | awk "{ print $tbs_free / 1024 }" `
-            tbs_use=`cat $chk_logdir/q_tbs_${tmonname}.log | grep $chk_name | awk '{print $4}'`
-            #tbs_use=`echo | awk "{ print $tbs_use / 1024 }" `
-            tbs_free_per=`cat $chk_logdir/q_tbs_${tmonname}.log |grep $chk_name | awk '{print $5}'`
-            tbs_use_per=`cat $chk_logdir/q_tbs_${tmonname}.log |grep $chk_name | awk '{print $6}'`
-            tbs_max=`cat $chk_logdir/q_tbs_${tmonname}.log |grep $chk_name | awk '{print $7}'`
-            #tbs_max=`echo | awk "{ print $tbs_max / 1024 }" `
-   	    echo '<tr><td>' $chk_name '</td>' >>$tbs_chk_html
-   	    echo '<td>' $tbs_allocat '</td>' >>$tbs_chk_html
-   	    echo '<td>' $tbs_free '</td>' >>$tbs_chk_html
-   	    echo '<td>' $tbs_use '</td>' >>$tbs_chk_html
-   	    echo '<td>' $tbs_free_per '</td>' >>$tbs_chk_html
-   	    echo '<td>' $tbs_use_per '</td>' >>$tbs_chk_html
-   	    echo '<td>' $tbs_max '</td></tr>' >>$tbs_chk_html
-         fi
-         i=`expr $i + 1 `
-      done
-      echo "</table>" >> $tbs_chk_html
+      chk_tbs_space  # space function
+
    else
-      echo '<table width=100% border=1>
-      <tr>
-      <th colspan=7 style="background-color:#FFECC9">表空間使用率</th>
-      </tr>
-      <tr>
-      <td colspan=7 align="center" valign="middle" style="background-color:#FFECC9" >DB tablespace use not over '$tbs_lim' % </td>
-      </tr>
-      </table>
-      ' >> $tbs_chk_html
+      chk_tbs_ok  # OK function
    fi
 
 fi
@@ -224,7 +236,185 @@ if [ "$chk_tbs_time_go" == "Y" ] ;then
    
    #echo "=====表格空間使用率====="
 
-   i=0
+   function chk_tbs_temptabs {
+      i=0
+      while [ "$i" -le "$temptabs_wc" ]
+      do
+         t=1
+         if [ "$i" == 0 ] ; then
+            a='SID'
+            b='serial' 
+            c='process'
+            d='SEGMENT_NAME'
+            e='SEGMENT_TYPE'
+            f='owner'
+            g='TABLESPACE_NAME'
+            h='use (MB)'
+          echo '<tr><td>' $a '</td>' >>$tbs_chk_html
+          echo '<td>' $b '</td>' >>$tbs_chk_html
+          echo '<td>' $c '</td>' >>$tbs_chk_html
+          echo '<td>' $d '</td>' >>$tbs_chk_html
+          echo '<td>' $e '</td>' >>$tbs_chk_html
+          echo '<td>' $f '</td>' >>$tbs_chk_html
+          echo '<td>' $g '</td>' >>$tbs_chk_html
+          echo '<td>' $h '</td></tr>' >>$tbs_chk_html
+            i=`expr $i + 1`
+         else
+            if [ "$i" -eq 1 ];then
+               i=`expr $i + 1`
+            elif [ "$i" -eq 3 ];then
+               i=`expr $i + 1`
+            else
+               echo "<tr>" >> $tbs_chk_html
+               temptabs_b=`cat ${chk_logdir}/q_out_${tmonname}.log |sed -n ''$i','$i' p'`
+               while [ "$t" -le 8 ]
+               do
+                  temptabs_a=`cat ${chk_logdir}/q_out_${tmonname}.log |awk '{print $'$t'}'`
+      	          echo "<td>$temptabs_a</td>" >> $tbs_chk_html
+                  t=`expr $t + 1`
+               done
+               echo "</tr>" >> $tbs_chk_html
+               i=`expr $i + 1`
+            fi
+         fi
+      done
+   
+      #TEMPTABS空間佔用程式
+      
+      temptabs_p=`cat ${chk_logdir}/q_out_${tmonname}.log |awk '{print $3}'|grep -Eo "[0-9]+"|uniq`
+      #
+      if [ -n "$temptabs_p" ];then
+         temptabs_n=`echo "$temptabs_p"|wc -l`
+         
+         case $temptabs_n in
+          1) p1=`echo $temptabs_p|awk '{print $1}'`
+           p1a=`ps -ef|grep -v grep|grep -w $p1`
+           if [ -n "$p1a" ];then
+              echo "$p1a" >> $p_file
+           fi
+          ;;
+          2) p1=`echo $temptabs_p|awk '{print $1}'`
+           p1a=`ps -ef|grep -v grep|grep -w $p1`
+           p2=`echo $temptabs_p|awk '{print $2}'`
+           p2a=`ps -ef|grep -v grep|grep -w $p2`
+           if [ -n "$p1a" ];then
+              echo "$p1a" >> $p_file
+           fi
+           if [ -n "$p2a" ];then
+              echo "$p2a" >> $p_file
+           fi
+          ;;
+          3) p1=`echo $temptabs_p|awk '{print $1}'`
+           p1a=`ps -ef|grep -v grep|grep -w $p1`
+           p2=`echo $temptabs_p|awk '{print $2}'`
+           p2a=`ps -ef|grep -v grep|grep -w $p2`
+           p3=`echo $temptabs_p|awk '{print $3}'`
+           p3a=`ps -ef|grep -v grep|grep -w $p3`
+           if [ -n "$p1a" ];then
+              echo "$p1a" >> $p_file
+           fi
+           if [ -n "$p2a" ];then
+              echo "$p2a" >> $p_file
+           fi
+           if [ -n "$p3a" ];then
+              echo "$p3a" >> $p_file
+           fi
+          ;;
+          4) p1=`echo $temptabs_p|awk '{print $1}'`
+           p1a=`ps -ef|grep -v grep|grep -w $p1`
+           p2=`echo $temptabs_p|awk '{print $2}'`
+           p2a=`ps -ef|grep -v grep|grep -w $p2`
+           p3=`echo $temptabs_p|awk '{print $3}'`
+           p3a=`ps -ef|grep -v grep|grep -w $p3`
+           p4=`echo $temptabs_p|awk '{print $4}'`
+           p4a=`ps -ef|grep -v grep|grep -w $p4`
+           if [ -n "$p1a" ];then
+              echo "$p1a" >> $p_file
+           fi
+           if [ -n "$p2a" ];then
+              echo "$p2a" >> $p_file
+           fi
+           if [ -n "$p3a" ];then
+              echo "$p3a" >> $p_file
+           fi
+           if [ -n "$p4a" ];then
+              echo "$p4a" >> $p_file
+           fi
+          ;;
+          5) p1=`echo $temptabs_p|awk '{print $1}'`
+           p1a=`ps -ef|grep -v grep|grep -w $p1`
+           p2=`echo $temptabs_p|awk '{print $2}'`
+           p2a=`ps -ef|grep -v grep|grep -w $p2`
+           p3=`echo $temptabs_p|awk '{print $3}'`
+           p3a=`ps -ef|grep -v grep|grep -w $p3`
+           p4=`echo $temptabs_p|awk '{print $4}'`
+           p4a=`ps -ef|grep -v grep|grep -w $p4`
+           p5=`echo $temptabs_p|awk '{print $5}'`
+           p5a=`ps -ef|grep -v grep|grep -w $p5`
+           if [ -n "$p1a" ];then
+              echo "$p1a" >> $p_file
+           fi
+           if [ -n "$p2a" ];then
+              echo "$p2a" >> $p_file
+           fi
+           if [ -n "$p3a" ];then
+              echo "$p3a" >> $p_file
+           fi
+           if [ -n "$p4a" ];then
+              echo "$p4a" >> $p_file
+           fi
+           if [ -n "$p5a" ];then
+              echo "$p5a" >> $p_file
+           fi
+          ;;
+          esac
+          
+          if [ -f "$p_file" ];then
+             p=`cat $p_file`
+             p_wc=`cat $p_file|wc -l`
+             p_head=`ps -ef|head -n 1`
+          fi
+         
+          if [ -n "$p_wc" ];then
+             echo "<tr><td colspan=8 align="center" valign="middle">====TEMPTABS 最大運行程式====</td></tr>" >> $tbs_chk_html
+             i=1
+             echo "<tr>" >> $tbs_chk_html
+             while [ "$i" -le 8 ]
+             do
+                p_head_b=`echo "$p_head"|awk '{print $'$i'}'`
+                if [ "$i" -eq 8 ];then
+                   echo "<td>$p_head_b</td>" >> $tbs_chk_html
+                else
+                   echo "<td>$p_head_b</td>" >> $tbs_chk_html
+                fi
+                i=`expr $i + 1`
+             done
+             echo "</tr>" >> $tbs_chk_html
+             i=1
+             while [ "$i" -le "$p_wc" ];
+             do
+                t=1
+                p_b=`echo "$p"|sed -n ''$i','$i' p'`
+                echo "<tr>" >> $tbs_chk_html
+                while [ "$t" -le 8 ];
+                do
+                   if [ "$t" -eq 8 ];then
+                      p_b_b=`echo "$p_b"|awk '{$1=$2=$3=$4=$5=$6=$7="";print $0}'`
+         	           echo "<td>$p_b_b</td>" >> $tbs_chk_html
+                   else
+         	           p_b_b=`echo "$p_b"|awk '{print $'$t'}'`
+         	           echo "<td>$p_b_b</td>" >> $tbs_chk_html
+                   fi
+         	        t=`expr $t + 1`
+                done
+                echo "</tr>" >> $tbs_chk_html
+                i=`expr $i + 1`
+             done
+          fi
+      fi
+      echo "</table>" >> $tbs_chk_html
+   }
+
    if [ -n "$ttbs_ov" ] ; then
       chk_mail="Y"
       echo "chk_tbs : " $chk_mail >> $chk_tbs
@@ -266,194 +456,19 @@ if [ "$chk_tbs_time_go" == "Y" ] ;then
       if [ -n "$temptabs" ];then
          chk_Warn="Y"
          echo "chk_Warn : " $chk_Warn
-         echo "<table width=100% border=1>
+         echo '<table width=100% border=1>
          <tr>
          <th colspan=8 style="background-color:#FFECC9">ORACLE TEMPTABS表空間檢查</th>
          </tr>
          <tr>
-         <td colspan=8 align="center" valign="middle">===TEMPTABS表空間 over <font color=red>$tbs_lim %</font>===</td> 
+         <td colspan=8 align="center" valign="middle">===TEMPTABS表空間 over <font color=red>'$tbs_lim' %</font>===</td> 
          </tr>
          <tr>
          <td colspan=8 align="center" valign="middle">===TEMPTABS空間最大佔用===</td>
-         </tr>" >> $tbs_chk_html
+         </tr>' >> $tbs_chk_html
          
          temptabs_wc=`cat ${chk_logdir}/q_out_${tmonname}.log |wc -l`
-         i=0
-         while [ "$i" -le "$temptabs_wc" ]
-         do
-            t=1
-            if [ "$i" == 0 ] ; then
-               a='SID'
-               b='serial' 
-               c='process'
-               d='SEGMENT_NAME'
-               e='SEGMENT_TYPE'
-               f='owner'
-               g='TABLESPACE_NAME'
-               h='use (MB)'
-      	    echo '<tr><td>' $a '</td>' >>$tbs_chk_html
-      	    echo '<td>' $b '</td>' >>$tbs_chk_html
-      	    echo '<td>' $c '</td>' >>$tbs_chk_html
-      	    echo '<td>' $d '</td>' >>$tbs_chk_html
-      	    echo '<td>' $e '</td>' >>$tbs_chk_html
-      	    echo '<td>' $f '</td>' >>$tbs_chk_html
-      	    echo '<td>' $g '</td>' >>$tbs_chk_html
-      	    echo '<td>' $h '</td></tr>' >>$tbs_chk_html
-               i=`expr $i + 1`
-            else
-               if [ "$i" -eq 1 ];then
-                  i=`expr $i + 1`
-               elif [ "$i" -eq 3 ];then
-                  i=`expr $i + 1`
-               else
-                  echo "<tr>" >> $tbs_chk_html
-                  temptabs_b=`cat ${chk_logdir}/q_out_${tmonname}.log |sed -n ''$i','$i' p'`
-                  while [ "$t" -le 8 ]
-                  do
-                     temptabs_a=`cat ${chk_logdir}/q_out_${tmonname}.log |awk '{print $'$t'}'`
-         	          echo "<td>$temptabs_a</td>" >> $tbs_chk_html
-                     t=`expr $t + 1`
-                  done
-                  echo "</tr>" >> $tbs_chk_html
-                  i=`expr $i + 1`
-               fi
-            fi
-         done
-      
-         #TEMPTABS空間佔用程式
-         
-         temptabs_p=`cat ${chk_logdir}/q_out_${tmonname}.log |awk '{print $3}'|grep -Eo "[0-9]+"|uniq`
-         #
-         if [ -n "$temptabs_p" ];then
-            temptabs_n=`echo "$temptabs_p"|wc -l`
-            
-            case $temptabs_n in
-             1) p1=`echo $temptabs_p|awk '{print $1}'`
-              p1a=`ps -ef|grep -v grep|grep -w $p1`
-              if [ -n "$p1a" ];then
-                 echo "$p1a" >> $p_file
-              fi
-             ;;
-             2) p1=`echo $temptabs_p|awk '{print $1}'`
-              p1a=`ps -ef|grep -v grep|grep -w $p1`
-              p2=`echo $temptabs_p|awk '{print $2}'`
-              p2a=`ps -ef|grep -v grep|grep -w $p2`
-              if [ -n "$p1a" ];then
-                 echo "$p1a" >> $p_file
-              fi
-              if [ -n "$p2a" ];then
-                 echo "$p2a" >> $p_file
-              fi
-             ;;
-             3) p1=`echo $temptabs_p|awk '{print $1}'`
-              p1a=`ps -ef|grep -v grep|grep -w $p1`
-              p2=`echo $temptabs_p|awk '{print $2}'`
-              p2a=`ps -ef|grep -v grep|grep -w $p2`
-              p3=`echo $temptabs_p|awk '{print $3}'`
-              p3a=`ps -ef|grep -v grep|grep -w $p3`
-              if [ -n "$p1a" ];then
-                 echo "$p1a" >> $p_file
-              fi
-              if [ -n "$p2a" ];then
-                 echo "$p2a" >> $p_file
-              fi
-              if [ -n "$p3a" ];then
-                 echo "$p3a" >> $p_file
-              fi
-             ;;
-             4) p1=`echo $temptabs_p|awk '{print $1}'`
-              p1a=`ps -ef|grep -v grep|grep -w $p1`
-              p2=`echo $temptabs_p|awk '{print $2}'`
-              p2a=`ps -ef|grep -v grep|grep -w $p2`
-              p3=`echo $temptabs_p|awk '{print $3}'`
-              p3a=`ps -ef|grep -v grep|grep -w $p3`
-              p4=`echo $temptabs_p|awk '{print $4}'`
-              p4a=`ps -ef|grep -v grep|grep -w $p4`
-              if [ -n "$p1a" ];then
-                 echo "$p1a" >> $p_file
-              fi
-              if [ -n "$p2a" ];then
-                 echo "$p2a" >> $p_file
-              fi
-              if [ -n "$p3a" ];then
-                 echo "$p3a" >> $p_file
-              fi
-              if [ -n "$p4a" ];then
-                 echo "$p4a" >> $p_file
-              fi
-             ;;
-             5) p1=`echo $temptabs_p|awk '{print $1}'`
-              p1a=`ps -ef|grep -v grep|grep -w $p1`
-              p2=`echo $temptabs_p|awk '{print $2}'`
-              p2a=`ps -ef|grep -v grep|grep -w $p2`
-              p3=`echo $temptabs_p|awk '{print $3}'`
-              p3a=`ps -ef|grep -v grep|grep -w $p3`
-              p4=`echo $temptabs_p|awk '{print $4}'`
-              p4a=`ps -ef|grep -v grep|grep -w $p4`
-              p5=`echo $temptabs_p|awk '{print $5}'`
-              p5a=`ps -ef|grep -v grep|grep -w $p5`
-              if [ -n "$p1a" ];then
-                 echo "$p1a" >> $p_file
-              fi
-              if [ -n "$p2a" ];then
-                 echo "$p2a" >> $p_file
-              fi
-              if [ -n "$p3a" ];then
-                 echo "$p3a" >> $p_file
-              fi
-              if [ -n "$p4a" ];then
-                 echo "$p4a" >> $p_file
-              fi
-              if [ -n "$p5a" ];then
-                 echo "$p5a" >> $p_file
-              fi
-             ;;
-             esac
-             
-             if [ -f "$p_file" ];then
-                p=`cat $p_file`
-                p_wc=`cat $p_file|wc -l`
-                p_head=`ps -ef|head -n 1`
-             fi
-            
-             if [ -n "$p_wc" ];then
-                echo "<tr><td colspan=8 align="center" valign="middle">====TEMPTABS 最大運行程式====</td></tr>" >> $tbs_chk_html
-                i=1
-                echo "<tr>" >> $tbs_chk_html
-                while [ "$i" -le 8 ]
-                do
-                   p_head_b=`echo "$p_head"|awk '{print $'$i'}'`
-                   if [ "$i" -eq 8 ];then
-                      echo "<td>$p_head_b</td>" >> $tbs_chk_html
-                   else
-                      echo "<td>$p_head_b</td>" >> $tbs_chk_html
-                   fi
-                   i=`expr $i + 1`
-                done
-                echo "</tr>" >> $tbs_chk_html
-                i=1
-                while [ "$i" -le "$p_wc" ];
-                do
-                   t=1
-                   p_b=`echo "$p"|sed -n ''$i','$i' p'`
-                   echo "<tr>" >> $tbs_chk_html
-                   while [ "$t" -le 8 ];
-                   do
-                      if [ "$t" -eq 8 ];then
-                         p_b_b=`echo "$p_b"|awk '{$1=$2=$3=$4=$5=$6=$7="";print $0}'`
-            	           echo "<td>$p_b_b</td>" >> $tbs_chk_html
-                      else
-            	           p_b_b=`echo "$p_b"|awk '{print $'$t'}'`
-            	           echo "<td>$p_b_b</td>" >> $tbs_chk_html
-                      fi
-            	        t=`expr $t + 1`
-                   done
-                   echo "</tr>" >> $tbs_chk_html
-                   i=`expr $i + 1`
-                done
-             fi
-         fi
-         echo "</table>" >> $tbs_chk_html
+         chk_tbs_temptab  # process function
       fi
 
    fi
@@ -462,72 +477,14 @@ if [ "$chk_tbs_time_go" == "Y" ] ;then
    tbs_ov=`cat $chk_logdir/q_out.log |awk '{if($6 >= '$tbs_lim') {print $6}}'|grep -Eo "[0-9]+"`
    n=`cat $chk_logdir/q_out.log |awk '{if($6 >= '$tbs_lim') {print $6}}'|grep -Eo "[0-9]+" | wc -l`
 
-#   if [ -n "$tbs_ov" ];then
-#      chk_Warn="Y"
-#      echo "chk_Warn : " $chk_Warn
-#      echo "<table width=800 border=1>
-#      <tr>
-#      <th colspan=7 style="background-color:#FFECC9">表空間使用率</th>
-#      </tr>
-#      <tr>
-#      <td colspan=7 align="center" valign="middle">NOW!! T100 DB tablespace use over <font color=red>$lim %</font></td>
-#      </tr>
-#      <tr>
-#      <td colspan=7 align="center" valign="middle">=== TABLESPACE ===</td>
-#      </tr>" > $tbs_file
-#      check_log="cat $chk_logdir/q_out.log"
-#      while [ "$i" -le "$n" ];
-#      do
-#         if [ "$i" == 0 ] ; then
-#            chk_name='TABLESPACE_NAME'
-#            tbs_allocat='ALLOCATED ( MB )' 
-#            tbs_free='FREE ( MB )'
-#            tbs_use='USE ( MB )'
-#            tbs_free_per='FREE %'
-#            tbs_use_per='USE %'
-#            tbs_max='MAX ( MB )'
-#   	    echo '<tr><td>' $chk_name '</td>' >>$tbs_file
-#   	    echo '<td>' $tbs_allocat '</td>' >>$tbs_file
-#   	    echo '<td>' $tbs_free '</td>' >>$tbs_file
-#   	    echo '<td>' $tbs_use '</td>' >>$tbs_file
-#   	    echo '<td>' $tbs_free_per '</td>' >>$tbs_file
-#   	    echo '<td>' $tbs_use_per '</td>' >>$tbs_file
-#   	    echo '<td>' $tbs_max '</td></tr>' >>$tbs_file
-#         else
-#            chk_name=`$check_log |awk '{if($6 >= '$tbs_lim') {print $1}}' | sed -n "${i},${i}p" `
-#            tbs_allocat=`$check_log | grep $chk_name | awk '{print $2}'`
-#            tbs_allocat=`expr $tbs_allocat / 1024 `
-#            tbs_free=`$check_log | grep $chk_name | awk '{print $3}'`
-#            tbs_free=`expr $tbs_free / 1024 `
-#            tbs_use=`$check_log | grep $chk_name | awk '{print $4}'`
-#            tbs_use=`expr $tbs_use / 1024 `
-#            tbs_free_per=`$check_log |grep $chk_name | awk '{print $5}'`
-#            tbs_use_per=`$check_log |grep $chk_name | awk '{print $6}'`
-#            tbs_max=`$check_log |grep $chk_name | awk '{print $7}'`
-#            tbs_max=`expr $tbs_max / 1024 `
-#   	    echo '<tr><td>' $chk_name '</td>' >>$tbs_file
-#   	    echo '<td>' $tbs_allocat '</td>' >>$tbs_file
-#   	    echo '<td>' $tbs_free '</td>' >>$tbs_file
-#   	    echo '<td>' $tbs_use '</td>' >>$tbs_file
-#   	    echo '<td>' $tbs_free_per '</td>' >>$tbs_file
-#   	    echo '<td>' $tbs_use_per '</td>' >>$tbs_file
-#   	    echo '<td>' $tbs_max '</td></tr>' >>$tbs_file
-#         fi
-#         i=`expr $i + 1 `
-#      done
-#      echo "</table>" >> $tbs_file
-#      cp -p $tbs_file $TEMPDIR/tbs.html
-#      cat $tbs_file
-#      rm -rf /u1/etc/tmon/mon_log/tbs.log
-#   fi
    if [ -n "$ttspov" ];then
-      echo "<table width=1200 border=1>
+      echo '<table width=1200 border=1>
       <tr>
       <th colspan=8 style="background-color:#FFECC9">ORACLE TEMP表空間檢查</th>
       </tr>
       <tr>
-      <td colspan=8 align="center" valign="middle">===TEMP表空間 over <font color=red>$lim%</font>===</td> 
-      </tr>" >> $tbs_chk_html
+      <td colspan=8 align="center" valign="middle">===TEMP表空間 over <font color=red>'$lim' %</font>===</td> 
+      </tr>' >> $tbs_chk_html
    
       ttsp_wc=`echo "$ttsp"|wc -l`
       i=1
@@ -575,8 +532,7 @@ if [ "$chk_tbs_time_go" == "Y" ] ;then
       exit
 EOF
 `
-   
-   
+      
       #echo $o_temp
       if [ -n "$o_temp" ];then
          echo "<tr> <td colspan=8 align="center" valign="middle">====TEMP 最大佔用====</td> 
