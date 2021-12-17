@@ -75,7 +75,7 @@ function title_cpu {
 function chk_cpu_ok {
       echo '<table width=100% border=1>
       <tr>
-      <th colspan=2 style="background-color:#FFECC9">'$timered' 檢查 CPU ok </th>
+      <th colspan=2 style="background-color:#FFECC9">'$time_red' 檢查 CPU ok </th>
       </tr> 
       <tr>
       <th colspan=2 style="background-color:#FFECC9">CPU idle 沒低於 '$cpu_lim_idle'  </th>
