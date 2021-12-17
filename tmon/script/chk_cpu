@@ -72,6 +72,21 @@ function title_cpu {
    ' > $cpu_chk_html
 }
 
+function chk_cpu_ok {
+      echo '<table width=100% border=1>
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9">'$timered' 檢查 CPU ok </th>
+      </tr> 
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9">CPU idle 沒低於 '$cpu_lim_idle'  </th>
+      </tr>
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9">CPU 5 min load 沒高於 '$cpu_lim_load'  </th>
+      </tr>
+      </table>
+       ' >> $cpu_chk_html
+}
+
 if [ "$mode_test" == "Y" ] ;then
    chk_cpu_time_go="Y"
 fi
@@ -118,19 +133,8 @@ if [ "$mode_test" == "Y" ] ; then
       echo "前10名 CPU process "
       timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu | head -10
       echo "CPU 檢查 ok"
-      title_cpu
-      echo '<table width=100% border=1>
-      <tr>
-      <th colspan=2 style="background-color:#FFECC9">檢查 CPU ok </th>
-      </tr> 
-      <tr>
-      <th colspan=2 style="background-color:#FFECC9">CPU idle 沒低於 '$cpu_lim_idle'  </th>
-      </tr>
-      <tr>
-      <th colspan=2 style="background-color:#FFECC9">CPU 5 min load 沒高於 '$cpu_lim_load'  </th>
-      </tr>
-      </table>
-       ' >> $cpu_chk_html
+      title_cpu  # title function
+      chk_cpu_ok  # OK function
       exit
    fi
 fi
@@ -242,7 +246,7 @@ if [ "$chk_cpu_time_go" == "Y" ] ;then
 
    }
 
-   title_cpu
+   title_cpu  # title function
 
    echo '<table width=100% border=1>
    <tr>
@@ -287,8 +291,16 @@ if [ "$chk_cpu_time_go" == "Y" ] ;then
          else
             echo '<table width=100% border=1>
             <tr>
-            <th colspan=2 style="background-color:#FFECC9">CPU 檢查 ok </th>
-            </tr> </table>
+            <tr>
+            <th colspan=2 style="background-color:#FFECC9">'$timered' 檢查 CPU ok </th>
+            </tr> 
+            <tr>
+            <th colspan=2 style="background-color:#FFECC9">CPU idle 沒低於 '$cpu_lim_idle'  </th>
+            </tr>
+            <tr>
+            <th colspan=2 style="background-color:#FFECC9">CPU 5 min load 沒高於 '$cpu_lim_load'  </th>
+            </tr>
+             </table>
              ' >> $cpu_chk_html
             
          fi
@@ -297,12 +309,7 @@ if [ "$chk_cpu_time_go" == "Y" ] ;then
             chk_mail="Y"
             echo "Y" >> $chk_cpu
             echo " "
-            echo '<table width=100% border=1>
-            <tr>
-            <th colspan=2 style="background-color:#FF3B3B">檢查 process 執行超過 CPU total '$cpu_total_lim'  % </th>
-            <th colspan=2 style="background-color:#FF3B3B">process CPU total '$cpu_total'  % </th>
-            <th colspan=2 style="background-color:#FFECC9">process top 10 CPU total %  : '$cpu_proc_total' </th>
-            </tr> </table> ' >> $cpu_chk_html
+            chk_cpu_ok  # OK function
             #echo "process top10 CPU total : " $cpu_proc_total
          fi
 
