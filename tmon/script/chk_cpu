@@ -260,7 +260,7 @@ if [ "$chk_cpu_time_go" == "Y" ] ;then
          chk_mail="Y"
          echo '<table width=100% border=1>
             <tr>
-            <th colspan=2 style="background-color:#FF3B3B">檢查 CPU idle 低於  '$cpu_lim_idle' </th>
+            <th colspan=2 style="background-color:#FF3B3B">'$time_red' 檢查 CPU idle 低於  '$cpu_lim_idle' </th>
             <th colspan=2 style="background-color:#FFECC9">CPU idle  : '$cpu_idle' </th>
             </tr> </table> ' >> $cpu_chk_html
 
@@ -273,7 +273,7 @@ if [ "$chk_cpu_time_go" == "Y" ] ;then
          chk_mail="Y"
          echo '<table width=100% border=1>
             <tr>
-            <th colspan=2 style="background-color:#FF3B3B">檢查 CPU 5 min load average 高於  '$cpu_lim_load' </th>
+            <th colspan=2 style="background-color:#FF3B3B">'$time_red' 檢查 CPU 5 min load average 高於  '$cpu_lim_load' </th>
             <th colspan=2 style="background-color:#FFECC9">CPU 5min load average : '$cpu_load' </th>
             </tr> </table> ' >> $cpu_chk_html
          
