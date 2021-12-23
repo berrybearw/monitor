@@ -47,7 +47,8 @@ cpu_lim_load=`echo "scale=2;$cpu_lim_load * 0.01" |bc ` #轉為 %
 cpu_lim_load=`echo "scale=2;$cpu_num * $cpu_lim_load" |bc `
 echo "cpu_lim : "$lim
 
-cpu_idle=`top -bn1 | grep '%Cpu(s)' | awk -F , '{print $4}' | awk '{print $1}'`
+#cpu_idle=`top -bn1 | grep '%Cpu(s)' | awk -F , '{print $4}' | awk '{print $1}'`
+cpu_idle=`mpstat 1 5 | egrep -v '^Linux|^$' |  awk -v c="%idle" 'NR==1 {for (i=1; i<=NF; i++) if ($i==c) break}''{print $(i-1)}' | tail -1 `
 echo "cpu_idle : " $cpu_idle > $cpu_chk
 cpu_load=`top -bn1 | grep 'load' | awk -F : '{print $5}' | awk -F , '{print $1}'`
 echo "cpu_load : " $cpu_load >> $cpu_chk
@@ -149,10 +150,10 @@ if [ "$chk_cpu_time_go" == "Y" ] ;then
    cpu_total_lim=`echo "$cpu_num * 50"  | bc -l`
    
    #start
-   echo "CPU數量:" $cpu_num #`lscpu |grep '^CPU(s):' |sed 's/^[ \t]*//g'|cut -d: -f 2`
-   echo "CPU型號:" `lscpu |grep '^Model name:' |sed 's/^[ \t]*//g'|cut -d: -f 2` 
-   echo "CPU MHz:" `lscpu |grep '^CPU MHz:' |sed 's/^[ \t]*//g'|cut -d: -f 2`
-   echo "wa上限 :" $wa2"%"
+   #echo "CPU數量:" $cpu_num #`lscpu |grep '^CPU(s):' |sed 's/^[ \t]*//g'|cut -d: -f 2`
+   #echo "CPU型號:" `lscpu |grep '^Model name:' |sed 's/^[ \t]*//g'|cut -d: -f 2` 
+   #echo "CPU MHz:" `lscpu |grep '^CPU MHz:' |sed 's/^[ \t]*//g'|cut -d: -f 2`
+   #echo "wa上限 :" $wa2"%"
    timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu  > $cpu_chk_dir/chk_cpu_list.log
    cpu_proc_total=`timeout 10 ps -eo %cpu --sort=-%cpu | head -11 | awk '{total += $1; } END { print total }'`
    proc_head=`cat $cpu_chk_dir/chk_cpu_list.log |head -n 1`

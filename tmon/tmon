@@ -41,7 +41,7 @@ mode_test="N"
 
 #同一時間只能有一個 tmon 執行 (s)
 ps -ef | grep -Ev "(grep|tes)" | grep "tmon manu" > /u1/etc/tmon/mon_log/tmon.log
-tmon_chk_num=`ps -ef | grep -Ev "(grep|tes)" | grep "tmon manu" | wc -l`
+tmon_chk_num=`cat /u1/etc/tmon/mon_log/tmon.log | grep "tmon manu" | wc -l`
 echo " "
 #echo "DEBUG : " $tmon_chk_num
 
@@ -217,6 +217,27 @@ else
    
    
    if [ "$chk_time_hr" == "Y" ] ; then
+
+      #n=0  #@@
+      #while [[ $n -le 59 ]] ; do
+      #   if [ `expr $n % 5 ` -eq 0 ] ; then
+      #      if [ "$n" -lt "10" ] ; then
+      #         num_0="0"$n
+      #         if [ "$time_chk_min" == "$num_0" ] ; then
+      #            time_chk_min="00"
+      #            break
+      #         fi
+      #      else
+      #         if [ "$time_chk_min" == "$n" ] ; then
+      #            time_chk_min="00"
+      #            break
+      #         fi
+
+      #      fi
+      #   fi
+      #   n=$(expr $n + 1 )
+      #done
+
       if [ "$time_chk_min" == "00" ] ; then
          chk_time="Y"
          export CHKTIME="Y"
@@ -578,31 +599,31 @@ echo "檢查REDOLOG切換次數 e"
 #temptabs 空間檢查 20180528 10227 
 
 echo "temptabs 空間使用檢查 s"
-if [ "$ttbk" == 1 ];then
-   export sqlpass=$sqlpass
-   export lim=$lim
-   if [ "$week_of_month" == "$w_of_m_ttbk_set" ] && [ "$on_week" == "$on_ttbk_set" ];then
-      sh /u1/etc/tmon/script/chk_ttbs $ZONE |tee $tmp_file > /dev/null
-      cat "$tmp_file" >> $alert_file
-      cat "$tmp_file" >> $log_dir/"$today".log
-   elif [ "$w_of_m_ttbk_set" == "0" ] && [ "$on_week" == "$on_ttbk_set" ];then
-      sh /u1/etc/tmon/script/chk_ttbs $ZONE |tee $tmp_file > /dev/null
-      cat "$tmp_file" >> $alert_file
-      cat "$tmp_file" >> $log_dir/"$today".log
-   elif [ "$w_of_m_ttbk_set" == "0" ] && [ "$on_day" == "$on_ttbk_set" ];then
-      sh /u1/etc/tmon/script/chk_ttbs $ZONE |tee $tmp_file > /dev/null
-      cat "$tmp_file" >> $alert_file
-      cat "$tmp_file" >> $log_dir/"$today".log
-   elif [ "$w_of_m_ttbk_set" == "0" ] && [ "$on_hour" == "$on_ttbk_set" ];then
-      sh /u1/etc/tmon/script/chk_ttbs $ZONE |tee $tmp_file > /dev/null
-      cat "$tmp_file" >> $alert_file
-      cat "$tmp_file" >> $log_dir/"$today".log
-   elif [ "$1" == "manu" ];then
-      sh /u1/etc/tmon/script/chk_ttbs $ZONE |tee $tmp_file > /dev/null
-      cat "$tmp_file" >> $alert_file
-      cat "$tmp_file" >> $log_dir/"$today".log
-   fi
-fi
+#if [ "$ttbk" == 1 ];then
+#   export sqlpass=$sqlpass
+#   export lim=$lim
+#   if [ "$week_of_month" == "$w_of_m_ttbk_set" ] && [ "$on_week" == "$on_ttbk_set" ];then
+#      sh /u1/etc/tmon/script/chk_ttbs $ZONE |tee $tmp_file > /dev/null
+#      cat "$tmp_file" >> $alert_file
+#      cat "$tmp_file" >> $log_dir/"$today".log
+#   elif [ "$w_of_m_ttbk_set" == "0" ] && [ "$on_week" == "$on_ttbk_set" ];then
+#      sh /u1/etc/tmon/script/chk_ttbs $ZONE |tee $tmp_file > /dev/null
+#      cat "$tmp_file" >> $alert_file
+#      cat "$tmp_file" >> $log_dir/"$today".log
+#   elif [ "$w_of_m_ttbk_set" == "0" ] && [ "$on_day" == "$on_ttbk_set" ];then
+#      sh /u1/etc/tmon/script/chk_ttbs $ZONE |tee $tmp_file > /dev/null
+#      cat "$tmp_file" >> $alert_file
+#      cat "$tmp_file" >> $log_dir/"$today".log
+#   elif [ "$w_of_m_ttbk_set" == "0" ] && [ "$on_hour" == "$on_ttbk_set" ];then
+#      sh /u1/etc/tmon/script/chk_ttbs $ZONE |tee $tmp_file > /dev/null
+#      cat "$tmp_file" >> $alert_file
+#      cat "$tmp_file" >> $log_dir/"$today".log
+#   elif [ "$1" == "manu" ];then
+#      sh /u1/etc/tmon/script/chk_ttbs $ZONE |tee $tmp_file > /dev/null
+#      cat "$tmp_file" >> $alert_file
+#      cat "$tmp_file" >> $log_dir/"$today".log
+#   fi
+#fi
 
 echo "temptabs 空間使用檢查 e"
 
@@ -686,10 +707,9 @@ if [ "$psk" == 1 ];then
       cat "$tmp_file" >> $alert_file
       cat "$tmp_file" >> $log_dir/"$today".log
    elif [ "$1" == "manu" ];then
-      sh /u1/etc/tmon/script/chk_ps |tee $tmp_file > /dev/null
-      #cat "$tmp_file" >> $alert_file
-      cat "$tmp_file" >> $TEMPDIR/$lon_file
-      cat "$tmp_file" >> $log_dir/"$today".log
+      sh /u1/etc/tmon/script/chk_ps >/dev/null
+      cat $tmon_chk_dir2/ps_chk_${tmonname}.html >> $alert_file
+      cat $tmon_chk_dir2/ps_chk_${tmonname}.html >> $log_dir/"$today".log
    fi
 fi
 
@@ -721,15 +741,18 @@ fi
 #cat /etc/hosts >> $TEMPDIR/sunward_host.log
 if [ "$MODE_TEST" == "Y" ] ;then
    sh /u1/etc/tmon/infor_all.sh > $TEMPDIR/${mail_file}
-   check_file=`check tmon 2>/dev/null | grep "請下載檔案" | awk -F cpu_ '{print $2}' | sed -n '1,1p'`
+   #check_file=`check tmon 2>/dev/null | grep "請下載檔案" | awk -F cpu_ '{print $2}' | sed -n '1,1p'`
 else
    if [ "$time_chk_min" == "00" ] ;then
       sh /u1/etc/tmon/infor_all.sh > $TEMPDIR/${mail_file}
-      check_file=`check tmon 2>/dev/null | grep "請下載檔案" | awk -F cpu_ '{print $2}' | sed -n '1,1p'`
-      tar zcvf $TEMPDIR/cpu_mem_${check_file}.tar.gz $TEMPDIR/cpu_${check_file} $TEMPDIR/mem_${check_file} 2>/dev/null
+      #check_file=`check tmon 2>/dev/null | grep "請下載檔案" | awk -F cpu_ '{print $2}' | sed -n '1,1p'`
+      #tar zcvf $TEMPDIR/cpu_mem_${check_file}.tar.gz $TEMPDIR/cpu_${check_file} $TEMPDIR/mem_${check_file} 2>/dev/null
    fi
 fi
-attach_file="$TEMPDIR/${mail_file};$TEMPDIR/cpu_mem_${check_file}.tar.gz"
+attach_file="$TEMPDIR/${mail_file};$alert_file"
+attach_file=$attach_file"$tmon_chk_dir2/cpu_chk_${tmonname}.html;$tmon_chk_dir2/chk_cpu_list.log;"
+attach_file=$attach_file"$tmon_chk_dir2/mem_chk_${tmonname}.html;$tmon_chk_dir2/psmem_list.log;"
+attach_file=$attach_file"$tmon_chk_dir2/du_chk_${tmonname}.html;$tmon_chk_dir2/tbs_chk_${tmonname}.html"
 echo "attach_file : " $attach_file
 
 if [ "$chk_mail" == "N" ] ; then 
@@ -756,6 +779,7 @@ elif [ "$chk_Warn_num" -ge 1 ] ; then
 
    if [ "$time_chk_min" == "00" ] ; then
       chk_time="Y"
+      chk_Warn="Y"
    else
       chk_time="N"
    fi
@@ -857,7 +881,7 @@ echo "*******************************" >> $alert_file
 #date >> $alert_file
 #日期信件最上方 (s)
 chk_date=`date`
-echo "<table width=500 border=1>
+echo "<table width=100% border=1>
 <tr>
 <th colspan=2 style="background-color:#FFECC9"><font color=blue>$chk_date</font></th>
 </tr> </table> " >> $alert_file
@@ -1017,11 +1041,39 @@ cp $alert_file $TEMPDIR/  #@@ test
          if [ "$chk_time" == "Y" ] ; then
             echo "Now" $time_chk "hr" $time_chk_min "min"
             echo " start check "
-            cp -p "$log_dir"/al_file.xml $log_dir/
-            sh /u3/bin/javamail/UnixMailSender.bat $xml true
-            rm -f "$log_dir"/al_file.html
-            rm -f "$log_dir"/al_file.xml
-            rm -f /u1/etc/tmon/mon_log/title/*.log
+            if [ "$chk_Warn" == "Y" ] ; then
+               #有檔案需確認是不是 舊檔案 (s)
+               find $tmon_chk_dir/al_file_warn.xml -mmin +$chk_sent -print0 | xargs -0 -l1 -t rm -rf
+               #有檔案需確認是不是 舊檔案 (e)
+               if [ -f "$tmon_chk_dir/al_file_warn.xml" ]; then
+                  sent_chk_hr=`ls -l $tmon_chk_dir/al_file_warn.xml | awk '{print $8}' | awk -F : '{print $1}'`
+                  sent_chk_min=`ls -l $tmon_chk_dir/al_file_warn.xml | awk '{print $8}' | awk -F : '{print $2}'`
+                  sent_chk_min=`echo "${sent_chk_min}+ $chk_sent" |bc `
+                  if [ $(echo "$sent_chk_min > 60"|bc) -eq 1 ] ; then
+                     sent_chk_hr=`echo "${sent_chk_hr}+ 1" |bc `
+                     sent_chk_min=`echo "${sent_chk_min}- 60"|bc `
+                  fi
+                  if [ $(echo "$sent_chk_hr > $time_chk"|bc) -eq 1 ] ; then 
+                     echo "有寄信通知， 預計 "$sent_chk_hr "hr" $sent_chk_min "min 後還有 ERR 會再通知一次 "
+                  else
+                     if [ "$sent_chk_hr" == "$time_chk" ] ; then 
+                        if [ "$sent_chk_min" == "$time_chk_min" ] ; then
+                           sh /u3/bin/javamail/UnixMailSender.bat $xml true
+                        else
+                           echo "有寄信通知， 預計 " $chk_sent "min 後還有 ERR 會再通知一次 "
+                        fi 
+                     fi
+               else
+                  cp -p $tmon_chk_dir/al_file.xml  $tmon_chk_dir/al_file_warn.xml
+                  sh /u3/bin/javamail/UnixMailSender.bat $xml true
+               fi
+            else
+               cp -p "$log_dir"/al_file.xml $log_dir/
+               sh /u3/bin/javamail/UnixMailSender.bat $xml true
+               rm -f "$log_dir"/al_file.html
+               rm -f "$log_dir"/al_file.xml
+               rm -f /u1/etc/tmon/mon_log/title/*.log
+            fi
          elif [ "$chk_time" == "N" ] ; then
             echo "Now" $time_chk "hr" $time_chk_min "min"
             echo " 每 $chk_send_mail_time hr 00 min check "
