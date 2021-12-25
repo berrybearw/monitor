@@ -18,7 +18,7 @@ tmonname=$TMONNAME
 dir_date=`date '+%Y%m%d'`
 file=`date '+%Y%m%d'`
 psmem_file="/u1/etc/tmon/script/basement/psmem.log"
-psmem_file_list="/u1/etc/tmon/script/basement/psmem_list.log"
+psmem_file_list="/u1/etc/tmon/script/basement/psmem_list_${tmonname}.log"
 psmem_file_chk="/u1/etc/tmon/mon_log/chk/$dir_date/psmem.log"
 mem_file_stp="/u1/etc/tmon/mon_log/mem_stp.html"
 mem_chk_dir="/u1/etc/tmon/script/basement"
@@ -105,6 +105,7 @@ if [ `echo "$mem_n < $mem_use" | bc` -eq 1 ];then
    echo "mem_use : " $mem_use >> $chk_mem
    echo "mem_lim : " $mem_lim >> $chk_mem
    echo "Memory use over " $mem_lim >> $chk_mem
+   timeout 10 ps -eo %mem,%cpu,rss,pid,stime,cmd --sort=-rss > $psmem_file_list
 fi   
 
 if [ "$mode_test" == "Y" ] ; then
@@ -150,7 +151,7 @@ if [ "$chk_mem_time_go" == "Y" ] ; then
    
    #proc=`ps -eo pid,rss,cmd --sort=-rss`
    #proc=`ps -eo pid,ppid,tt,stime,time,%mem,%cpu,cmd --sort=-%mem`
-   proc=`timeout 10 ps -eo %mem,%cpu,rss,pid,stime,cmd --sort=-rss` > $psmem_file_list
+   
    proc_mem_all=`timeout 10 ps -eo %mem,rss,pid,cmd --sort=-rss | sed -n '2,$p' | awk '{total += $1; } END { print total }'`
    proc_rss_all=`timeout 10 ps -eo %mem,rss,pid,cmd --sort=-rss | sed -n '2,$p' | awk '{total += $2; } END { print total }'`
    proc_head=`cat "$psmem_file_list"|head -n 1`
