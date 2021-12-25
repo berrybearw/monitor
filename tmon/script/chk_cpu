@@ -32,6 +32,7 @@ cpu_file_chk="/u1/etc/tmon/mon_log/chk/$dir_date/pscpu.log"
 cpu_file="/u1/etc/tmon/mon_log/cpu.log"
 cpu_chk_dir="/u1/etc/tmon/script/basement"
 cpu_file2="$cpu_chk_dir/chk_cpu.log"
+cpu_chk_list="/u1/etc/tmon/script/basement/cpu_chk_list_${tmonname}.log"
 cpu_chk="/u1/etc/tmon/script/basement/cpu_chk_${tmonname}.log"        #判斷設定值檔案
 cpu_chk_html="/u1/etc/tmon/script/basement/cpu_chk_${tmonname}.html"  #寄信用
 chk_cpu="/u1/etc/tmon/mon_log/chk_mail.log"
@@ -48,9 +49,10 @@ cpu_lim_load=`echo "scale=2;$cpu_num * $cpu_lim_load" |bc `
 echo "cpu_lim : "$lim
 
 #cpu_idle=`top -bn1 | grep '%Cpu(s)' | awk -F , '{print $4}' | awk '{print $1}'`
-cpu_idle=`mpstat 1 5 | egrep -v '^Linux|^$' |  awk -v c="%idle" 'NR==1 {for (i=1; i<=NF; i++) if ($i==c) break}''{print $(i-1)}' | tail -1 `
+cpu_idle=`sar 1 5 | egrep -v '^Linux|^$' |  awk -v c="%idle" 'NR==1 {for (i=1; i<=NF; i++) if ($i==c) break}''{print $(i-1)}' | tail -1 `
 echo "cpu_idle : " $cpu_idle > $cpu_chk
-cpu_load=`top -bn1 | grep 'load' | awk -F : '{print $5}' | awk -F , '{print $1}'`
+#cpu_load=`top -bn1 | grep 'load' | awk -F : '{print $5}' | awk -F , '{print $1}'`
+cpu_load=`cat /proc/loadavg | awk '{print $1}'`
 echo "cpu_load : " $cpu_load >> $cpu_chk
 cpu_idle=`cat $cpu_chk | grep 'cpu_idle' | awk -F : '{print $2}'`
 cpu_load=`cat $cpu_chk | grep 'cpu_load' | awk -F : '{print $2}'`
@@ -105,6 +107,7 @@ if [ $(echo "$cpu_lim_idle > $cpu_idle"|bc) -eq 1 ] ; then
    echo "cpu_idle : " $cpu_idle >> $chk_cpu
    echo "cpu_lim_idle : " $cpu_lim_idle >> $chk_cpu
    echo "檢查 CPU idle 低於 " $cpu_lim_idle >> $chk_cpu
+   timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu  > $cpu_chk_list
 else
    if [ $(echo "$cpu_lim_load < $cpu_load"|bc) -eq 1 ] ; then
       chk_cpu_time_go="Y"
@@ -114,6 +117,7 @@ else
       echo "cpu_load : " $cpu_load >> $chk_cpu
       echo "cpu_lim_load : " $cpu_lim_load >> $chk_cpu
       echo "檢查 CPU 5 min load average 高於 " $cpu_lim_load >> $chk_cpu
+      timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu  > $cpu_chk_list
    fi
 fi
 
@@ -154,25 +158,25 @@ if [ "$chk_cpu_time_go" == "Y" ] ;then
    #echo "CPU型號:" `lscpu |grep '^Model name:' |sed 's/^[ \t]*//g'|cut -d: -f 2` 
    #echo "CPU MHz:" `lscpu |grep '^CPU MHz:' |sed 's/^[ \t]*//g'|cut -d: -f 2`
    #echo "wa上限 :" $wa2"%"
-   timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu  > $cpu_chk_dir/chk_cpu_list.log
+   
    cpu_proc_total=`timeout 10 ps -eo %cpu --sort=-%cpu | head -11 | awk '{total += $1; } END { print total }'`
-   proc_head=`cat $cpu_chk_dir/chk_cpu_list.log |head -n 1`
+   proc_head=`cat $cpu_chk_list |head -n 1`
    #proc_fgl=`echo "$proc"|grep -v grep|grep -v adzp95|grep fglrun|head|awk '{print $1}'`
    #proc_fgl=`echo "$proc"|grep -v grep|grep -v adzp95| head -10|awk '{print $1}'`
    
-   proc_fgl=`cat $cpu_chk_dir/chk_cpu_list.log | sed -n '2,$p' |grep -v grep| head -10|awk '{print $3}'`
+   proc_fgl=`cat $cpu_chk_list | sed -n '2,$p' |grep -v grep| head -10|awk '{print $3}'`
    #echo $proc_fgl
 
    echo $proc_head > $cpu_file   
 
    for i in $proc_fgl
    do
-     proc_cpu=`cat $cpu_chk_dir/chk_cpu_list.log | sed -n '2,$p' | awk '{ if ($3 == '$i') {print $1 } }' `
+     proc_cpu=`cat $cpu_chk_list | sed -n '2,$p' | awk '{ if ($3 == '$i') {print $1 } }' `
      if [ $(echo "$proc_cpu > $lim"|bc) -eq 1 ];then
-        cat $cpu_chk_dir/chk_cpu_list.log | grep $i >> $cpu_file_chk
+        cat $cpu_chk_list | grep $i >> $cpu_file_chk
         #echo "@@@ "$i  #debug 檢查 pid
-        #cat $cpu_chk_dir/chk_cpu_list.log | grep $i
-        cat $cpu_chk_dir/chk_cpu_list.log | grep $i >> $cpu_file
+        #cat $cpu_chk_list | grep $i
+        cat $cpu_chk_list | grep $i >> $cpu_file
      fi
    done
    
