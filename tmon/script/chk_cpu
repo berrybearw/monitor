@@ -52,10 +52,10 @@ echo "cpu_lim : "$lim
 cpu_idle=`sar 1 5 | egrep -v '^Linux|^$' |  awk -v c="%idle" 'NR==1 {for (i=1; i<=NF; i++) if ($i==c) break}''{print $(i-1)}' | tail -1 `
 echo "cpu_idle : " $cpu_idle > $cpu_chk
 #cpu_load=`top -bn1 | grep 'load' | awk -F : '{print $5}' | awk -F , '{print $1}'`
-cpu_load=`cat /proc/loadavg | awk '{print $1}'`
+cpu_load=`cat /proc/loadavg | awk '{print $1 " " $2 " " $3 }'`
 echo "cpu_load : " $cpu_load >> $cpu_chk
 cpu_idle=`cat $cpu_chk | grep 'cpu_idle' | awk -F : '{print $2}'`
-cpu_load=`cat $cpu_chk | grep 'cpu_load' | awk -F : '{print $2}'`
+cpu_load=`cat $cpu_chk | grep 'cpu_load' | awk -F : '{print $2}' | awk '{print $1}'`
 
 if [ "$lim" == "" ]; then
 
