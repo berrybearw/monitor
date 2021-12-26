@@ -14,12 +14,13 @@ chk_mem_warn="/u1/etc/tmon/mon_log/chk_mail_warn.log"
 chk_mem_Y=`timeout 10 cat $chk_mem | grep "chk_mem" | wc -l`
 chk_mem_warn_Y=`timeout 10 cat $chk_mem_warn | grep "chk_mem" | wc -l`
 
-echo " 
+echo '
    <th colspan=8 style="background-color:#00E3E3">Mem </th>
-   <tr>
-   <th colspan=8 style="background-color:#00E3E3">內存 ( Mem ) 使用大約超過 70 % 會造成系統異常  </th>
-   </tr>
-     "
+   '
+#   <tr>
+#   <th colspan=8 style="background-color:#00E3E3">內存 ( Mem ) 使用大約超過 70 % 會造成系統異常  </th>
+#   </tr>
+#     "
 echo "
      <tr>
      "
