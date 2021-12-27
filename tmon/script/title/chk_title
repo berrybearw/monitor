@@ -1,0 +1,249 @@
+#!/bin/ksh
+
+tmonname=$TMONNAME
+
+chk_title_log="/u1/etc/tmon/script/basement/chk_title_${tmonname}.log"
+chk_title_log2="/u1/etc/tmon/script/basement/chk_title2_${tmonname}.log"
+title_chk_html="/u1/etc/tmon/script/basement/title_chk_${tmonname}.html"
+
+arr_01=("important" "程序與磁碟空間存取" "DB" "例行性檢查")
+arr_02=("DB Oracle link" "WEB Apache aliv" "授權 flmprg" "整合 gas fastcgi topprd aliv")
+arr_02_01=("oracle" "apache" "flmprg" "cgi")  #chk_aliv 變數用
+arr_03=("長時間程序" "磁碟空間" )
+arr_03_01=("ps" "du")
+arr_04=("整體 表空間" "lock table" "redo 每日切換頻率" )
+arr_04_01=("tbs" "lock" "redo")
+arr_05=("webrun log 6088")
+arr_05_01=("webrun")
+
+arr_0=("oracle" "apache" "flmprg" "cgi" "ps" "du" "tbs" "lock" "redo" "webrun")
+
+chk_mail="/u1/etc/tmon/mon_log/chk_mail.log"
+chk_mail_warn="/u1/etc/tmon/mon_log/chk_mail_warn.log"
+
+i=0
+while [ $(echo "$i < ${#arr_0[@]}"|bc) -eq 1 ]
+do
+   eval chk_${arr_0[$i]}_Y=`cat $chk_mail | grep "chk_${arr_0[$i]}" | wc -l`
+   eval chk_${arr_0[$i]}_Warn=`cat $chk_mail_warn | grep "chk_${arr_0[$i]}" | wc -l`
+   i=$(($i + 1))
+done
+
+
+echo "<table width=100% border=1> " > $title_chk_html
+
+#cpu_chk="/u1/etc/tmon/script/basement/cpu_chk_${tmonname}.log"
+#cpu_num=`lscpu |grep '^CPU(s):' |sed 's/^[ \t]*//g'|cut -d: -f 2`
+#cpu_total=`echo "$cpu_num * 100" | bc -l`
+##cpu_proc_total=`ps -eo %cpu --sort=-%cpu  | awk '{total += $1; } END { print total }'`
+#cpu_idle=`cat $cpu_chk | grep 'cpu_idle' | awk -F : '{print $2}'`
+#cpu_loadaverage=`cat $cpu_chk | grep 'cpu_load' | awk -F : '{print $2}'`
+#chk_cpu_Y=`timeout 10 cat $chk_cpu | grep "chk_cpu" | wc -l`
+#chk_cpu_warn_Y=`timeout 10 cat $chk_cpu_warn | grep "chk_cpu" | wc -l`
+#
+#echo '
+#   <th colspan=8 style="background-color:#00E3E3">CPU </th>
+#     ' >> $title_chk_html
+#
+#if [ "$chk_cpu_Y" -gt "0" ] ; then 
+#   echo '
+#        <th colspan=8 rowspan=2 style="background-color:red">檢查 CPU error '$chk_mem_Y' </th>
+#        ' >> $title_chk_html
+#else
+#   if [ "$chk_cpu_warn_Y" -gt "0" ] ; then
+#      echo '
+#           <th colspan=8 rowspan=2 style="background-color:yellow">檢查 CPU warn '$chk_mem_warn_Y' </th>
+#	       ' >> $title_chk_html
+#   else	   
+#      echo '
+#           <th colspan=8 rowspan=2 style="background-color:#FFECC9">檢查 CPU OK </th>
+#           ' >> $title_chk_html
+#   fi
+#fi
+#
+#echo '
+#     <th colspan=3 style="background-color:#FFECC9">CPU total '$cpu_total' % </th>
+#     '
+#     #<th colspan=3 style="background-color:#FFECC9">CPU now USE '$cpu_proc_total' %  </th>
+#     '
+#     <tr>
+#     <th colspan=3 style="background-color:#FFECC9">CPU idle '$cpu_idle' </th>
+#     <th colspan=3 style="background-color:#FFECC9">load average '$cpu_loadaverage' </th>
+#     </tr>
+#     ' >> $title_chk_html
+#
+#
+#mem_chk="/u1/etc/tmon/script/basement/mem_chk_${tmonname}.log"
+#mem=`timeout 10 free -h |grep Mem:`
+#mem_swap=`timeout 10 free -h |grep Swap:`
+#
+#mem_total=`echo "$mem"|awk '{print $2}'`
+#mem_use=`echo "$mem"|awk '{print $3}'`
+#
+#mem_swap_toa=`echo "$mem_swap" |awk '{print $2}'`
+#mem_swap_use=`echo "$mem_swap" |awk '{print $3}'`
+#
+#chk_mem_Y=`timeout 10 cat $chk_mem | grep "chk_mem" | wc -l`
+#chk_mem_warn_Y=`timeout 10 cat $chk_mem_warn | grep "chk_mem" | wc -l`
+#
+#echo '
+#   <th colspan=8 style="background-color:#00E3E3">Mem </th>
+#     ' >> $title_chk_html
+#
+#if [ "$chk_mem_Y" -gt "0" ] ; then 
+#   echo '
+#        <th colspan=8 rowspan=2 style="background-color:red">檢查 Mem error '$chk_mem_Y' </th>
+#        ' >> $title_chk_html
+#else
+#   if [ "$chk_mem_warn_Y" -gt "0" ] ; then
+#      echo '
+#           <th colspan=8 rowspan=2 style="background-color:yellow">檢查 Mem warn '$chk_mem_warn_Y' </th>
+#	       ' >> $title_chk_html
+#   else	   
+#      echo '
+#           <th colspan=8 rowspan=2 style="background-color:#FFECC9">檢查 Mem OK </th>
+#           ' >> $title_chk_html
+#   fi
+#fi
+#
+#echo '
+#     <th colspan=3 style="background-color:#FFECC9">Mem total '$mem_total'  </th>
+#     <th colspan=3 style="background-color:#FFECC9">Mem USE '$mem_use'   </th>
+#     </tr>
+#     <tr>
+#     <th colspan=3 style="background-color:#FFECC9">Swap total '$mem_swap_toa' </th>
+#     <th colspan=3 style="background-color:#FFECC9">Swap USE '$mem_swap_use' </th>
+#     </tr>
+#     ' >> $title_chk_html
+
+i=0
+k=1
+while [ $(echo "$i < ${#arr_01[@]}"|bc) -eq 1 ] 
+do
+   echo "<th colspan=10 style=background-color:#00E3E3>"${arr_01[$i]}" </th>" >> $title_chk_html
+   j=0
+   a=1
+   if [ "$i" == 0 ]; then 
+      while [ $(echo "$a <= ${#arr_02[@]}"|bc) -eq 1 ] 
+      do
+         echo "<tr> " >> $title_chk_html
+         w=`echo chk_${arr_02_01[$j]}_Y`
+         w2=`echo chk_${arr_02_01[$j]}_Warn`
+         echo "@@@ " $w
+         eval "echo \${$w} " > $chk_title_log
+         eval "echo \${$w2} " > $chk_title_log2
+         eval "echo \${$w} "
+         w=`cat $chk_title_log`
+         w2=`cat $chk_title_log2`
+         html="<th colspan=3 style=background-color:#FFECC9>"$k" </th>"
+         if [ "$w" -gt "0" ] ; then
+            echo $w
+            html="<th colspan=3 style=background-color:red>"$k" </th>"
+         else
+            if [ "$w2" -gt "0" ] ; then
+               html="<th colspan=3 style=background-color:yellow>"$k" </th>"
+            fi
+         fi
+         echo $html >> $title_chk_html
+         echo "<th colspan=5 style=background-color:#FFECC9>"${arr_02[$j]}" </th>                 
+               </tr> " >> $title_chk_html
+   
+         a=$(($a+1))
+         j=$(($j+1))
+         k=$(($k+1))
+   
+      done
+   fi
+   if [ "$i" == 1 ]; then 
+      while [ $(echo "$a <= ${#arr_03[@]}"|bc) -eq 1 ] 
+      do
+         echo "<tr> " >> $title_chk_html
+         w=`echo chk_${arr_03_01[$j]}_Y`
+         w2=`echo chk_${arr_03_01[$j]}_Warn`
+         eval "echo \${$w} " > $chk_title_log
+         eval "echo \${$w2} " > $chk_title_log2
+         w=`cat $chk_title_log`
+         w2=`cat $chk_title_log2`
+         html="<th colspan=3 style=background-color:#FFECC9>"$k" </th>"
+         if [ "$w" -gt "0" ] ; then
+            echo $w
+            html="<th colspan=3 style=background-color:red>"$k" </th>"
+         else
+            if [ "$w2" -gt "0" ] ; then
+               html="<th colspan=3 style=background-color:yellow>"$k" </th>"
+            fi
+         fi
+         echo $html >> $title_chk_html
+         echo "<th colspan=5 style=background-color:#FFECC9>"${arr_03[$j]}" </th>                 
+               </tr> " >> $title_chk_html
+   
+         a=$(($a+1))
+         j=$(($j+1))
+         k=$(($k+1))
+   
+      done
+   fi
+   if [ "$i" == 2 ]; then 
+      while [ $(echo "$a <= ${#arr_04[@]}"|bc) -eq 1 ] 
+      do
+         echo "<tr> " >> $title_chk_html
+         w=`echo chk_${arr_04_01[$j]}_Y`
+         w2=`echo chk_${arr_04_01[$j]}_Warn`
+         eval "echo \${$w} " > $chk_title_log
+         eval "echo \${$w2} " > $chk_title_log2
+         w=`cat $chk_title_log`
+         w2=`cat $chk_title_log2`
+         html="<th colspan=3 style=background-color:#FFECC9>"$k" </th>"
+         if [ "$w" -gt "0" ] ; then
+            echo $w
+            html="<th colspan=3 style=background-color:red>"$k" </th>"
+         else
+            if [ "$w2" -gt "0" ] ; then
+               html="<th colspan=3 style=background-color:yellow>"$k" </th>"
+            fi
+         fi
+         echo $html >> $title_chk_html
+         echo "<th colspan=5 style=background-color:#FFECC9>"${arr_04[$j]}" </th>                 
+               </tr> " >> $title_chk_html
+   
+         a=$(($a+1))
+         j=$(($j+1))
+         k=$(($k+1))
+   
+      done
+   fi
+   if [ "$i" == 3 ]; then 
+      while [ $(echo "$a <= ${#arr_05[@]}"|bc) -eq 1 ] 
+      do
+         echo "<tr> " >> $title_chk_html
+         w=`echo chk_${arr_05_01[$j]}_Y`
+         w2=`echo chk_${arr_05_01[$j]}_Warn`
+         eval "echo \${$w} " > $chk_title_log
+         eval "echo \${$w2} " > $chk_title_log2
+         w=`cat $chk_title_log`
+         w2=`cat $chk_title_log2`
+         html="<th colspan=3 style=background-color:#FFECC9>"$k" </th>"
+         if [ "$w" -gt "0" ] ; then
+            echo $w
+            html="<th colspan=3 style=background-color:red>"$k" </th>"
+         else
+            if [ "$w2" -gt "0" ] ; then
+               html="<th colspan=3 style=background-color:yellow>"$k" </th>"
+            fi
+         fi
+         echo $html >> $title_chk_html
+         echo "<th colspan=5 style=background-color:#FFECC9>"${arr_05[$j]}" </th>                 
+               </tr> " >> $title_chk_html
+   
+         a=$(($a+1))
+         j=$(($j+1))
+         k=$(($k+1))
+   
+      done
+   fi   
+
+   i=$(($i+1))       
+
+done
+
+echo "</table>" >> $title_chk_html

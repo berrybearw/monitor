@@ -270,19 +270,19 @@ echo "$ck"
 
 if [ -n "$ck1" ];then
    chk_mail="Y"
-   echo "chk_mail : " $chk_mail >> $chk_mail_file
+   echo "chk_oracle : " $chk_mail >> $chk_mail_file
    oracle_chk="Y"
    echo "DB ERROR:The database is down" >> $log_dir/"$today".log
    echo "DB ERROR:The database is down" >> $alert_file
 elif [ -n "$ck2" ];then
    chk_mail="Y"
-   echo "chk_mail : " $chk_mail >> $chk_mail_file
+   echo "chk_oracle : " $chk_mail >> $chk_mail_file
    oracle_chk="Y"
    echo "DB ERROR:no listener" >> $log_dir/"$today".log
    echo "DB ERROR:no listener" >> $alert_file
 elif [ -n "$ck3" ];then
    chk_mail="Y"
-   echo "chk_mail : " $chk_mail >> $chk_mail_file
+   echo "chk_oracle : " $chk_mail >> $chk_mail_file
    oracle_chk="Y"
    echo "DB ERROR:invalid username/password" >> $log_dir/"$today".log
    echo "DB ERROR:invalid username/password" >> $alert_file
@@ -891,97 +891,7 @@ echo "<table width=100% border=1> " >> $alert_file
 echo "<th>   mail can change from /u1/etc/tmon/tmon.conf   </th>" >> $alert_file
 echo "</table> "  >> $alert_file
 
-
-echo "<table width=100% border=1> " >> $alert_file
-#important  (s)
-echo " 
-     <th colspan=3 style="background-color:#00E3E3">important </th>
-     <th colspan=5 style="background-color:#00E3E3">異常可能會有那些問題 </th>
-     "  >> $alert_file
-echo "
-     <tr> 
-     "  >> $alert_file
-if [ "$oracle_chk" == "N" ] ; then
-   echo "
-        <th colspan=3 style="background-color:#FFECC9">DB Oracle 可連線 </th>
-        "  >> $alert_file
-else
-
-   echo "
-        <th colspan=3 style="background-color:red">DB Oracle error </th>
-        "  >> $alert_file
-
-fi
-echo " 
-     <th colspan=5 style="background-color:#FFECC9">程式不能開或閃退 </th>
-     "  >> $alert_file
-echo " </tr> "  >> $alert_file
-
-sh /u1/etc/tmon/script/title/chk_aliv  >> $alert_file
-
-echo "
-     <tr> 
-     "  >> $alert_file
-sh /u1/etc/tmon/script/chk_lic2 >> $alert_file
-#important  (e)
-
-#system  (s)
-sh /u1/etc/tmon/script/title/chk_cpu >> $alert_file
-sh /u1/etc/tmon/script/title/chk_mem >> $alert_file
-echo " 
-   <tr>
-   <th colspan=3 style="background-color:#00E3E3">程序與磁碟空間存取 </th>
-   <th colspan=5 style="background-color:#00E3E3">異常可能會有那些問題 </th>
-   </tr>
-     "  >> $alert_file
-sh /u1/etc/tmon/script/title/chk_ps_cputime >> $alert_file
-sh /u1/etc/tmon/script/title/chk_du >> $alert_file
-echo " 
-     </tr> " >> $alert_file
-#system  (e)
-
-#DB  (s)
-echo "
-   <th colspan=3 style="background-color:#00E3E3">DB </th>
-   <th colspan=5 style="background-color:#00E3E3">異常可能會有那些問題 </th>
-     "  >> $alert_file
-sh /u1/etc/tmon/script/title/chk_tbs >> $alert_file
-echo "
-   <tr>
-   <th colspan=3 style="background-color:#FFECC9">lock table </th>
-   <th colspan=5 style="background-color:#FFECC9">lock table 過久要檢查 ， 預防系統資源占用 </th>
-   </tr>
-   <tr>
-   <th colspan=3 style="background-color:#FFECC9">redo 每日切換頻率 </th>
-   <th colspan=5 style="background-color:#FFECC9">建議 30 min 切換 1 次 </th>
-   </tr>
-   <tr>
-   <th colspan=3 style="background-color:#FFECC9">undo 表空間 </th>
-   <th colspan=5 style="background-color:#FFECC9">大約超過 80 % 需注意 ， 100% 程式會異常 </th>
-   </tr>
-   <tr>
-   <th colspan=3 style="background-color:#FFECC9">temp 表空間 </th>
-   <th colspan=5 style="background-color:#FFECC9">大約超過 80 % 需注意 ， 100% 程式會異常 </th>
-   </tr>
-   <tr>
-   <th colspan=3 style="background-color:#FFECC9">temptabs 表空間 </th> 
-   <th colspan=5 style="background-color:#FFECC9">大約超過 80 % 需注意 ， 100% 程式會異常 </th>
-   </tr>
-     "  >> $alert_file
-#DB  (e)
-
-echo "
-     <th colspan=3 style="background-color:#00E3E3">例行性檢查 </th>
-     <th colspan=5 style="background-color:#00E3E3">異常可能會有那些問題 </th>
-     "  >> $alert_file
-
-#sh /u1/etc/tmon/script/title/chk_cwssp  >> $alert_file
-
-sh /u1/etc/tmon/script/title/chk_err >> $alert_file
-
-#sh /u1/etc/tmon/script/title/chk_wss >> $alert_file
-
-echo "</table> "  >> $alert_file
+sh /u1/etc/tmon/script/title/chk_title >> $alert_file
 
 echo "$n_mail" >> $alert_file
 
