@@ -1,4 +1,4 @@
-#/bin/ksh
+#!/bin/ksh
 #ls version
 #ls_version：1.0
 #ls_version=1.0
@@ -27,7 +27,10 @@ exit ;;
     echo "調整檢查項設定 -set " 
 exit ;;  
 
-"manu" ) ;;
+"manu" ) 
+    export CHK_MODE="manu"
+
+;;
 
 *) 
    echo "tmon -v : 可查看 tmon 版本"
@@ -36,6 +39,10 @@ exit ;;
 exit ;;
 
 esac
+
+if [ "$TEMPDIR" == "" ] ;  then
+   export TEMPDIR="/u1/etc/tmon/tmp"
+fi
 
 mode_test="N"
 
@@ -218,26 +225,6 @@ else
    
    if [ "$chk_time_hr" == "Y" ] ; then
 
-      #n=0  #@@
-      #while [[ $n -le 59 ]] ; do
-      #   if [ `expr $n % 5 ` -eq 0 ] ; then
-      #      if [ "$n" -lt "10" ] ; then
-      #         num_0="0"$n
-      #         if [ "$time_chk_min" == "$num_0" ] ; then
-      #            time_chk_min="00"
-      #            break
-      #         fi
-      #      else
-      #         if [ "$time_chk_min" == "$n" ] ; then
-      #            time_chk_min="00"
-      #            break
-      #         fi
-
-      #      fi
-      #   fi
-      #   n=$(expr $n + 1 )
-      #done
-
       if [ "$time_chk_min" == "00" ] ; then
          chk_time="Y"
          export CHKTIME="Y"
@@ -251,10 +238,6 @@ else
 fi
 
 #確認 test mode 執行可忽略指定時間執行 (e)
-
-#@@
-chk_time="Y"
-export CHKTIME="Y"
 
 #資料庫存活檢查
 VALUE1=`sqlplus -S "du/$sqlpass@$ZONE" << !
@@ -270,19 +253,19 @@ echo "$ck"
 
 if [ -n "$ck1" ];then
    chk_mail="Y"
-   echo "chk_oracle : " $chk_mail >> $chk_mail_file
+   echo "chk_mail : " $chk_mail >> $chk_mail_file
    oracle_chk="Y"
    echo "DB ERROR:The database is down" >> $log_dir/"$today".log
    echo "DB ERROR:The database is down" >> $alert_file
 elif [ -n "$ck2" ];then
    chk_mail="Y"
-   echo "chk_oracle : " $chk_mail >> $chk_mail_file
+   echo "chk_mail : " $chk_mail >> $chk_mail_file
    oracle_chk="Y"
    echo "DB ERROR:no listener" >> $log_dir/"$today".log
    echo "DB ERROR:no listener" >> $alert_file
 elif [ -n "$ck3" ];then
    chk_mail="Y"
-   echo "chk_oracle : " $chk_mail >> $chk_mail_file
+   echo "chk_mail : " $chk_mail >> $chk_mail_file
    oracle_chk="Y"
    echo "DB ERROR:invalid username/password" >> $log_dir/"$today".log
    echo "DB ERROR:invalid username/password" >> $alert_file
@@ -371,7 +354,7 @@ echo "檢查cpu 負載 e"
 
 echo "檢查內存記憶體 s" 
 if [ "$mem" == 1 ];then
-   if [ "$1" == "manu" ];then
+   if [ "$CHK_MODE" == "manu" ];then
       sh /u1/etc/tmon/script/chk_mem
       echo "===記憶體使用率==== " >> $log_dir/"$today".log 
       cat $tmon_chk_dir2/mem_chk_${tmonname}.html >> $alert_file
@@ -385,23 +368,7 @@ echo "檢查內存記憶體 e"
 if [ "$du" == 1 ];then
    echo "磁碟空間使用檢查 s"
    export lim=$lim
-   if [ "$week_of_month" == "$w_of_m_du_set" ] && [ "$on_week" == "$on_du_set" ];then
-      sh /u1/etc/tmon/script/chk_du |tee $tmp_file > /dev/null
-      cat "$tmp_file" >> $alert_file
-      cat "$tmp_file" >> $log_dir/"$today".log
-   elif [ "$w_of_m_du_set" == "0" ] && [ "$on_week" == "$on_du_set" ];then
-      sh /u1/etc/tmon/script/chk_du |tee $tmp_file > /dev/null
-      cat "$tmp_file" >> $alert_file
-      cat "$tmp_file" >> $log_dir/"$today".log
-   elif [ "$w_of_m_du_set" == "0" ] && [ "$on_day" == "$on_du_set" ];then
-      sh /u1/etc/tmon/script/chk_du |tee $tmp_file > /dev/null
-      cat "$tmp_file" >> $alert_file
-      cat "$tmp_file" >> $log_dir/"$today".log
-   elif [ "$w_of_m_du_set" == "0" ] && [ "$on_hour" == "$on_du_set" ];then
-      sh /u1/etc/tmon/script/chk_du |tee $tmp_file > /dev/null
-      cat "$tmp_file" >> $alert_file
-      cat "$tmp_file" >> $log_dir/"$today".log
-   elif [ "$1" == "manu" ];then
+   if [ "$CHK_MODE" == "manu" ];then
       sh /u1/etc/tmon/script/chk_du >/dev/null
       cat $tmon_chk_dir2/du_chk_${tmonname}.html >> $alert_file
       cat $tmon_chk_dir2/du_chk_${tmonname}.html >> $log_dir/"$today".log
@@ -414,24 +381,7 @@ fi
 echo "表空間檢查 s"
 if [ "$tbk" == 1 ];then
    export sqlpass=$sqlpass
-   export lim=$lim
-   if [ "$week_of_month" == "$w_of_m_tbk_set" ] && [ "$on_week" == "$on_tbk_set" ];then
-     sh /u1/etc/tmon/script/chk_tbs $ZONE |tee $tmp_file > /dev/null
-     cat "$tmp_file" >> $alert_file
-     cat "$tmp_file" >> $log_dir/"$today".log
-   elif [ "$w_of_m_tbk_set" == "0" ] && [ "$on_week" == "$on_tbk_set" ];then
-     sh /u1/etc/tmon/script/chk_tbs $ZONE |tee $tmp_file > /dev/null
-     cat "$tmp_file" >> $alert_file
-     cat "$tmp_file" >> $log_dir/"$today".log
-   elif [ "$w_of_m_tbk_set" == "0" ] && [ "$on_day" == "$on_tbk_set" ];then
-     sh /u1/etc/tmon/script/chk_tbs $ZONE |tee $tmp_file > /dev/null
-     cat "$tmp_file" >> $alert_file
-     cat "$tmp_file" >> $log_dir/"$today".log
-   elif [ "$w_of_m_tbk_set" == "0" ] && [ "$on_hour" == "$on_tbk_set" ];then
-     sh /u1/etc/tmon/script/chk_tbs $ZONE |tee $tmp_file > /dev/null
-     cat "$tmp_file" >> $alert_file
-     cat "$tmp_file" >> $log_dir/"$today".log
-   elif [ "$1" == "manu" ];then
+   if [ "$CHK_MODE" == "manu" ];then
       sh /u1/etc/tmon/script/chk_tbs >/dev/null
       cat $tmon_chk_dir2/tbs_chk_${tmonname}.html >> $alert_file
       cat $tmon_chk_dir2/tbs_chk_${tmonname}.html >> $log_dir/"$today".log
@@ -749,9 +699,9 @@ else
       #tar zcvf $TEMPDIR/cpu_mem_${check_file}.tar.gz $TEMPDIR/cpu_${check_file} $TEMPDIR/mem_${check_file} 2>/dev/null
    fi
 fi
-attach_file="$TEMPDIR/${mail_file};$alert_file"
+attach_file="$TEMPDIR/${mail_file};$alert_file;"
 attach_file=$attach_file"$tmon_chk_dir2/cpu_chk_${tmonname}.html;$tmon_chk_dir2/chk_cpu_list.log;"
-attach_file=$attach_file"$tmon_chk_dir2/mem_chk_${tmonname}.html;$tmon_chk_dir2/psmem_list.log;"
+attach_file=$attach_file"$tmon_chk_dir2/mem_chk_${tmonname}.html;$tmon_chk_dir2/psmem_list.log"
 attach_file=$attach_file"$tmon_chk_dir2/du_chk_${tmonname}.html;$tmon_chk_dir2/tbs_chk_${tmonname}.html"
 echo "attach_file : " $attach_file
 
@@ -881,17 +831,18 @@ echo "*******************************" >> $alert_file
 #date >> $alert_file
 #日期信件最上方 (s)
 chk_date=`date`
-echo "<table width=100% border=1>
+echo '<table width=100% border=1>
 <tr>
-<th colspan=2 style="background-color:#FFECC9"><font color=blue>$chk_date</font></th>
-</tr> </table> " >> $alert_file
+<th colspan=2 style="background-color:#FFECC9"><font color=blue>'$chk_date'</font></th>
+</tr> </table> ' >> $alert_file
 #日期信件最上方 (e)
 
 echo "<table width=100% border=1> " >> $alert_file
 echo "<th>   mail can change from /u1/etc/tmon/tmon.conf   </th>" >> $alert_file
 echo "</table> "  >> $alert_file
 
-sh /u1/etc/tmon/script/title/chk_title >> $alert_file
+sh /u1/etc/tmon/script/title/chk_title 
+cat $tmon_chk_dir2/title_chk_${tmonname}.html >> $alert_file
 
 echo "$n_mail" >> $alert_file
 
