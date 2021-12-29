@@ -128,9 +128,12 @@ if [ "$mode_test" == "Y" ] ; then
       echo "mem_use % : " $mem_use_per
       echo "mem_lim % : " $mem_lim 
       echo "Memory use not over " $mem_lim "%"
+      echo ""
       echo "前10名 Mem process " >> $mem_chk
       timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%mem | head -10 >> $mem_chk
+      echo "|----------|"
       echo "Mem 檢查 ok"
+      echo "|----------|"
       title_mem  # title function
       chk_mem_ok  # OK function
       echo "請下載 : " $mem_chk_html
