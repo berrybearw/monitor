@@ -39,6 +39,13 @@ exit ;;
      sh /u1/etc/tmon/script/chk_cpu
 exit ;;
 
+"mem" )
+     echo "檢查 mem"
+     mode_test="Y"
+     export MODE_TEST=$mode_test
+     sh /u1/etc/tmon/script/chk_mem
+exit ;;
+
 *) 
    echo "tmon -v : 可查看 tmon 版本"
    echo "tmon manu : 日常檢查執行 "
