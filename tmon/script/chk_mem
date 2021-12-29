@@ -14,6 +14,7 @@ ls_version="1.2"
 . /u1/etc/tmon/tmon_title.conf
 
 tmonname=$TMONNAME
+mode_test=$MODE_TEST
 
 dir_date=`date '+%Y%m%d'`
 file=`date '+%Y%m%d'`
@@ -38,6 +39,7 @@ time_red=`date +%Y/%m/%d-%H:%M:%S`
 unset SQLPATH
 
 mem_lim="$mem_lim_use"
+mem_lim_math="0.$mem_lim_use"
 mem_lim_swap=`echo "scale=2; $mem_lim_swap * 0.01" | bc`
 lim=$psmem_lim_use
 psmem=$psmem
@@ -45,11 +47,11 @@ psmem=$psmem
 mem=`free |grep Mem:`
 echo $mem > $mem_chk
 mem_total=`cat $mem_chk | awk '{print $2}'`
-mem_available=`cat $mem_chk|awk '{print $6}'`
+mem_available=`cat $mem_chk|awk '{print $7}'`
 mem_use=`expr ${mem_total} - ${mem_available}`
 mem_use_per=`echo | awk "{print $mem_use/$mem_total}"`
 mem_use_per=`echo | awk "{print $mem_use_per * 100}"`
-mem_n=`echo "scale=2; $mem_total * $mem_lim" |bc`  #警戒值 總記憶體 * 百分比
+mem_n=`echo "scale=2; $mem_total * $mem_lim_math" |bc`  #警戒值 總記憶體 * 百分比
 
 if [ "$mem_lim" == "" ] ; then
    mem_lim='5'
@@ -102,9 +104,9 @@ if [ `echo "$mem_n < $mem_use" | bc` -eq 1 ];then
    echo "$time_red" >> $chk_mem
    echo "chk_mem : " $chk_mail >> $chk_mem
    echo "mem_total : " $mem_total >> $chk_mem
-   echo "mem_use : " $mem_use >> $chk_mem
-   echo "mem_lim : " $mem_lim >> $chk_mem
-   echo "Memory use over " $mem_lim >> $chk_mem
+   echo "mem_use   : " $mem_use >> $chk_mem
+   echo "mem_lim % : " $mem_lim "%" >> $chk_mem
+   echo "Memory use over " $mem_lim "%" >> $chk_mem
    timeout 10 ps -eo %mem,%cpu,rss,pid,stime,cmd --sort=-rss > $psmem_file_list
 fi   
 
@@ -114,18 +116,19 @@ if [ "$mode_test" == "Y" ] ; then
       echo "$time_red" 
       echo "chk_mem : " $chk_mail 
       echo "mem_total : " $mem_total 
-      echo "mem_use : " $mem_use 
-      echo "mem_lim : " $mem_lim 
-      echo "Memory use over " $mem_lim 
+      echo "mem_use   : " $mem_use 
+      echo "mem_lim % : " $mem_lim 
+      echo "Memory use over " $mem_lim "%" 
       echo "請下載 : " $psmem_file_list
       exit
    else
       echo "chk_mem : " $chk_mail 
       echo "mem_total : " $mem_total 
-      echo "mem_use : " $mem_use 
-      echo "mem_lim : " $mem_lim 
-      echo "Memory use not over " $mem_lim
-      echo "前10名 Mem process "
+      echo "mem_use   : " $mem_use 
+      echo "mem_use % : " $mem_use_per
+      echo "mem_lim % : " $mem_lim 
+      echo "Memory use not over " $mem_lim "%"
+      echo "前10名 Mem process " >> $mem_chk
       timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%mem | head -10 >> $mem_chk
       echo "Mem 檢查 ok"
       title_mem  # title function
