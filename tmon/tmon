@@ -846,6 +846,8 @@ cat $tmon_chk_dir2/title_chk_${tmonname}.html >> $alert_file
 
 echo "$n_mail" >> $alert_file
 
+find /u1/etc/tmon/tmp/* -mmin +60 -print0 | xargs -0 -l1 -t rm -rf  #清理 tmon tmp 目錄 超過 1 hr 檔案
+
 cp $alert_file $TEMPDIR/  #@@ test
 
 
