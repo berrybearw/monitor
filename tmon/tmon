@@ -32,6 +32,13 @@ exit ;;
 
 ;;
 
+"cpu" )
+     echo "檢查 cpu"
+     mode_test="Y"
+     export MODE_TEST=$mode_test
+     sh /u1/etc/tmon/script/chk_cpu
+exit ;;
+
 *) 
    echo "tmon -v : 可查看 tmon 版本"
    echo "tmon manu : 日常檢查執行 "
