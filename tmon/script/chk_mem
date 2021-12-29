@@ -119,6 +119,10 @@ if [ "$mode_test" == "Y" ] ; then
       echo "mem_use   : " $mem_use 
       echo "mem_lim % : " $mem_lim 
       echo "Memory use over " $mem_lim "%" 
+      echo "|----------|"
+      echo "Mem 檢查 發現高於預警值"
+      echo "請查看 Mem 高使用率程序"
+      echo "|----------|"
       echo "請下載 : " $psmem_file_list
       exit
    else
