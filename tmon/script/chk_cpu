@@ -128,18 +128,20 @@ if [ "$mode_test" == "Y" ] ; then
       echo "cpu idle 不可低於 " $cpu_lim_idle
       echo "cpu_load : " $cpu_load
       echo "CPU 5 min load average 不可高於 " $cpu_lim_load
-      echo "前10名 CPU process "
-      timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu | head -10
+      echo "前10名 CPU process " >> $cpu_chk
+      timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu | head -10 >> $cpu_chk
    else
       echo "cpu_idle : " $cpu_idle
       echo "cpu idle 沒低於 " $cpu_lim_idle
       echo "cpu_load : " $cpu_load
       echo "CPU 5 min load average 沒高於 " $cpu_lim_load
-      echo "前10名 CPU process "
-      timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu | head -10
+      echo "前10名 CPU process " >> $cpu_chk
+      timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu | head -10 >> $cpu_chk
       echo "CPU 檢查 ok"
       title_cpu  # title function
       chk_cpu_ok  # OK function
+      echo "請下載 : " $cpu_chk_html
+      echo "請下載 : " $cpu_chk
       exit
    fi
 fi
