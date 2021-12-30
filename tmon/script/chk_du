@@ -65,7 +65,7 @@ if [ "$CHKTIME" == "Y" ] ; then
 fi
 
 timeout 10 df -lh|grep "/ut" > $du_chk
-ut_use=`cat $du_chk | awk '{print $5}'|grep -Eo "[5-9]+" | awk -F % '{print $1}'`
+ut_use=`cat $du_chk | awk '{print $5}'| awk -F % '{print $1}'`
 ut_max="$lim"
 
 if [ `echo "$ut_use >= $ut_max" |bc ` -eq 1 ];then
@@ -80,7 +80,7 @@ fi
 timeout 10 df -l | awk '{if(($3/$2)*100 >= '$lim')if($4 <= ('$lim_max'*1024)) {print $1","$2","$3","$4","$5","$6}}' >> $du_chk2
 
 num=`cat $du_chk2 | wc -l`
-
+i=1
 if [ "$num" -gt "0" ] ; then 
    chk_du_time_go="Y"
    chk_mail="Y"
@@ -90,10 +90,28 @@ if [ "$num" -gt "0" ] ; then
 fi
 
 if [ "$mode_test" == "Y" ] ; then
+   if [ "$APCHK" == "Y" ]; then
+      if [ ! -f "$TEMPDIR" ] || [ ! -f "$LOGDIR" ]; then
+         echo "TEMPDIR or LOGDIR not found please check"
+         echo "TEMPDIR : " $TEMPDIR
+         echo "LOGDIR : " $LOGDIR
+
+      fi
+   fi
    if [ "$chk_mail" == "Y" ] ; then
       echo "chk_du     : " $chk_mail
       echo "du_lim %   : " $lim
       echo "du_lim_max : " $lim_max
+     while [ "$i" -le "$num" ];
+     do
+        name=`cat $du_chk2 | awk -F , '{print $6}' | sed -n "${i},${i}p" `
+        space_use=`cat $du_chk2 | awk -F , '{print $5}' | sed -n "${i},${i}p"`
+        space_avail=`cat $du_chk2 |awk -F , '{print $4}' | sed -n "${i},${i}p"`
+        echo "$name space over " $lim " % " " and lower than " $lim_max " MB "
+        echo "$name space_use % : " $space_use "%"
+        echo "$name space_avail : " $space_avail "kb"
+        i=$(($i + 1))
+     done      
       echo "|----------|"
       echo "磁碟使用空間 檢查 發現高於預警值 "
       echo "請查看 磁碟內 高使用率檔案 "
@@ -105,14 +123,12 @@ if [ "$mode_test" == "Y" ] ; then
       echo "du_lim %   : " $lim 
       echo "du_lim_max : " $lim_max
       echo ""
-      echo "no space over " $du_lim
+      echo "no space over " $lim " % " " and lower than " $lim_max " MB "
       echo "|----------|"
       echo "磁碟使用空間 檢查 ok"
       echo "|----------|"
       title_du  # title function
-      chk_cpu_ok  # OK function
       echo "請下載 : " $du_chk_html
-      echo "請下載 : " $cpu_chk
       exit
    fi
 fi
