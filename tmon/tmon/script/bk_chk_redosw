@@ -1,0 +1,39 @@
+#!/bin/ksh
+
+
+ov="12"
+echo "ZONE="$ZONE
+
+if [ -n "$1" ];then
+    unset SQLPATH
+    unset ORACLE_PATH
+    export ZONE=$1
+    export sqlpass=$2
+	
+fi
+
+
+daily_ck=`sqlplus -S "du/$sqlpass@$ZONE" << !
+          set feedback off
+          col DAT for a12
+          SELECT TO_CHAR(FIRST_TIME, 'yyyymmdd') DAT , COUNT(*) CNT
+          FROM V\\$LOG_HISTORY
+          WHERE TRUNC(FIRST_TIME) BETWEEN TRUNC(SYSDATE) - 6 and TRUNC(SYSDATE)
+          GROUP BY TO_CHAR(FIRST_TIME, 'yyyymmdd')
+          ORDER BY TO_CHAR(FIRST_TIME, 'yyyymmdd') DESC;
+          exit
+!
+`
+echo "$daily_ck"
+
+sw_ov=`echo "$daily_ck"|awk '{if($2 >= '$ov') {print $2}}'|grep -Eo "[0-9]+"`
+#echo "$sw_ov"
+
+sw_max=`echo "$sw_ov"|sort -n -r|head -n 1`
+
+
+
+
+
+
+

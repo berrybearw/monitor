@@ -1,0 +1,119 @@
+#!/bin/ksh
+
+. /u1/etc/tmon/tmon.conf
+
+#ls_version="1.0"
+ls_version="1.2"
+
+tmonname=$TMONNAME
+mode_test=$MODE_TEST
+
+time_red=`date +%Y/%m/%d-%H:%M:%S`
+
+chk_redosd_html="/u1/etc/tmon/script/basement/redosd_chk_${tmonname}.html"
+chk_redosd="/u1/etc/tmon/mon_log/chk_mail.log"
+
+function chk_redo_ok {
+      if [ "$1" != "log" ] ; then
+         echo '<table width=100% border=1>
+         <tr>
+         <th colspan=2 >'$time_red' 檢查 redo switch ok </th>
+         </tr> 
+         <tr>
+         <th colspan=2 style="background-color:#FFECC9">redo switch by day </th>   
+         </tr>
+         <tr>
+         <th colspan=2 style="background-color:#FFECC9">redo switch not over '$ov' </th>
+         </tr>
+         </table>
+          ' >> $chk_redosd_html
+      else
+         echo '<table width=100% border=1>
+         <tr>
+         <th colspan=2 >'$time_red' 檢查 redo log ok </th>
+         </tr> 
+         <tr>
+         <th colspan=2 style="background-color:#FFECC9">redo log 切換 not over '$ov' </th>
+         </tr>
+         </table>
+          ' >> $chk_redosd_html
+      fi   
+}
+
+function test_mode_show {
+   if [ "$chk_mail" == "Y" ] ; then
+      if [ "$1" != "log" ] ; then
+         echo "|-----is NOT ok-----|"
+         echo "please check DB redo switch"
+         echo "redo switch over " $ov
+         echo "|----------|"
+      else
+         echo "|-----is NOT ok-----|"
+         echo "please check DB redo log 切換"
+         echo "redo log 切換 over " $ov
+         echo "請下載 : " $chk_redosd_html
+      fi
+   else
+      echo "|-----OK-----|"
+      if [ "$1" != "log" ] ; then
+         echo "redo switch not over " $ov
+      else
+         echo "redo log 切換 not over " $ov         
+      fi
+      echo "|----------|"
+   fi
+   echo "請下載 : " $chk_redosd_html
+
+}
+
+
+if [ "$mode_test" == "Y" ] ;then
+   chk_redosd_time_go="Y"
+fi
+
+if [ "$chk_redosd_time_go" == "Y" ] ;then
+
+   #redosd (s)
+   ov="1"
+   
+   day_ck="/u1/etc/tmon/script/basement/chk_redo1_${tmonname}.log"
+echo $day_ck
+   sql=$(
+         echo "
+           set colsep _link_     -- separate columns with a comma
+           set pagesize 0   -- No header rows
+           set trimspool on -- remove trailing blanks
+           set headsep off  -- this may or may not be useful...depends on your headings.
+           set linesize 180   -- X should be the sum of the column widths
+           col group# for a12
+           col status for a20
+           
+           spool $day_ck
+           --SQL(s)           
+           select group#,status from v\$log;
+	   --SQL(e)
+           SPOOL OFF
+           EXIT
+      
+           " | sqlplus -S "du/du@$ZONE"
+           )
+         echo $sql > /dev/null
+   
+   redo_chk=`cat "$day_ck" | grep "INACTIVE" | wc -l `
+   if [ `echo "$redo_chk < 3" |bc ` -eq 1 ] ; then
+      redo_ov=`cat "$day_ck"|awk '{print $2}'|grep -Eo "[0-9]+"`
+      if [ "$redo_ov" -ge "$ov" ];then
+         chk_mail="Y"
+         echo "chk_redosd : " $chk_mail >> $chk_redosd
+         echo '<table width=100% border=1>
+               <tr>
+	       <th colspan=2 style="background-color:#FFECC9">redo switch by day </th>
+	       <th colspan=2 style="background-color:red">redo switch over '$ov' </th>
+               </tr> </table>
+	      '  >> $chk_redosd_html
+      else
+         
+         chk_redo_ok
+	fi 
+ fi
+fi

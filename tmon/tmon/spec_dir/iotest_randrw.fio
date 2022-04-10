@@ -1,0 +1,15 @@
+[global]
+bs=4K
+iodepth=128
+size=5G
+direct=1
+ioengine=libaio
+group_reporting
+time_based
+runtime=100
+numjobs=1
+name=raw-randreadwrite
+rw=randrw
+							
+[job1]
+filename=/u1/etc/tmon/spec_dir/iotest_randrw

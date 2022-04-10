@@ -1,0 +1,279 @@
+#!/bin/ksh
+
+. /u1/etc/tmon/tmon.conf
+
+#ls_version="1.0"
+ls_version="1.2"
+
+tmonname=$TMONNAME
+mode_test=$MODE_TEST
+
+time_red=`date +%Y/%m/%d-%H:%M:%S`
+
+chk_redosd_html="/u1/etc/tmon/script/basement/redosd_chk_${tmonname}.html"
+chk_redosd="/u1/etc/tmon/mon_log/chk_mail.log"
+
+function chk_redo_ok {
+      if [ "$1" != "log" ] ; then
+         echo '<table width=100% border=1>
+         <tr>
+         <th colspan=2 >'$time_red' 檢查 redo switch ok </th>
+         </tr> 
+         <tr>
+         <th colspan=2 style="background-color:#FFECC9">redo switch by day </th>   
+         </tr>
+         <tr>
+         <th colspan=2 style="background-color:#FFECC9">redo switch not over '$ov' </th>
+         </tr>
+         </table>
+          ' >> $chk_redosd_html
+      else
+         echo '<table width=100% border=1>
+         <tr>
+         <th colspan=2 >'$time_red' 檢查 redo log ok </th>
+         </tr> 
+         <tr>
+         <th colspan=2 style="background-color:#FFECC9">redo log 切換 not over '$ov' </th>
+         </tr>
+         </table>
+          ' >> $chk_redosd_html
+      fi   
+}
+
+function test_mode_show {
+   if [ "$chk_mail" == "Y" ] ; then
+      if [ "$1" != "log" ] ; then
+         echo "|-----is NOT ok-----|"
+         echo "please check DB redo switch"
+         echo "redo switch over " $ov
+         echo "|----------|"
+      else
+         echo "|-----is NOT ok-----|"
+         echo "please check DB redo log 切換"
+         echo "redo log 切換 over " $ov
+         echo "請下載 : " $chk_redosd_html
+      fi
+   else
+      echo "|-----OK-----|"
+      if [ "$1" != "log" ] ; then
+         echo "redo switch not over " $ov
+      else
+         echo "redo log 切換 not over " $ov         
+      fi
+      echo "|----------|"
+   fi
+   echo "請下載 : " $chk_redosd_html
+
+}
+
+
+if [ "$mode_test" == "Y" ] ;then
+   chk_redosd_time_go="Y"
+fi
+
+if [ "$chk_redosd_time_go" == "Y" ] ;then
+
+   #redosd (s)
+   ov="1"
+   
+   day_ck="/u1/etc/tmon/script/basement/chk_redo_${tmonname}.log"
+   sql=$(
+         echo "
+           set colsep _link_     -- separate columns with a comma
+           set pagesize 0   -- No header rows
+           set trimspool on -- remove trailing blanks
+           set headsep off  -- this may or may not be useful...depends on your headings.
+           set linesize 180   -- X should be the sum of the column widths
+           col DAT for a12
+           col CNT for 9999
+           
+           spool $day_ck
+           --SQL(s)           
+           SELECT TO_CHAR(FIRST_TIME, 'yyyymmdd') DAT, count(*) CNT
+           FROM V\$LOG_HISTORY
+           WHERE TRUNC(FIRST_TIME)=TRUNC(SYSDATE)
+           GROUP BY TO_CHAR(FIRST_TIME, 'yyyymmdd');
+           --SQL(e)
+           SPOOL OFF
+           EXIT
+      
+           " | sqlplus -S "du/du@$ZONE"
+           )
+         echo $sql > /dev/null
+   
+   redo_chk=`cat "$day_ck" | grep "no row" | wc -l `
+   if [ `echo "$redo_chk < 1" |bc ` -eq 1 ] ; then
+      redo_ov=`cat "$day_ck"|awk '{print $2}'|grep -Eo "[0-9]+"`
+      if [ "$redo_ov" -ge "$ov" ];then
+         chk_mail="Y"
+         echo "chk_redosd : " $chk_mail >> $chk_redosd
+         echo '<table width=100% border=1>
+               <tr>
+	       <th colspan=2 style="background-color:#FFECC9">redo switch by day </th>
+	       <th colspan=2 style="background-color:red">redo switch over '$ov' </th>
+               </tr> </table>
+	      '  >> $chk_redosd_html
+      else
+         
+         chk_redo_ok
+      fi
+   else
+      chk_redo_ok
+   fi
+
+   if [ "$mode_test" == "Y" ] ; then
+      test_mode_show
+   fi
+   
+   #redosd (e)
+
+   #redosw (s)
+   ov="48"
+   #ov="10"
+   #echo "ZONE="$ZONE
+   if [ -n "$1" ];then
+       unset SQLPATH
+       unset ORACLE_PATH
+       export ZONE=$1
+   fi
+   
+   if [ -z "$1" ];then
+       echo "Usage: /u1/etc/tmon/script/chk_redosw [\$ORACLE_SID]"
+       echo "Ex   : /u1/etc/tmon/script/chk_redosw topprd"
+       exit 
+   fi
+   
+   #echo "ZONE="$ZONE
+   
+   daily_ck="/u1/etc/tmon/script/basement/chk_redo_${tmonname}.log"
+
+   sql=$(
+         echo "
+           set colsep _link_     -- separate columns with a comma
+           set pagesize 0   -- No header rows
+           set trimspool on -- remove trailing blanks
+           set headsep off  -- this may or may not be useful...depends on your headings.
+           set linesize 180   -- X should be the sum of the column widths
+           col DAT for a12
+           col CNT for 9999
+           
+           spool $daily_ck
+           --SQL(s)           
+           SELECT TO_CHAR(FIRST_TIME, 'yyyymmdd') DAT , COUNT(*) CNT
+           FROM V\$LOG_HISTORY
+           WHERE TRUNC(FIRST_TIME) BETWEEN TRUNC(SYSDATE) - 6 and TRUNC(SYSDATE)
+           GROUP BY TO_CHAR(FIRST_TIME, 'yyyymmdd')
+           ORDER BY TO_CHAR(FIRST_TIME, 'yyyymmdd') DESC;
+           --SQL(e)
+           SPOOL OFF
+           EXIT
+      
+           " | sqlplus -S "du/du@$ZONE"
+           )
+         echo $sql > /dev/null
+
+   sw_ov=`cat "$daily_ck"|awk '{if($2 >= '$ov') {print $2}}'|grep -Eo "[0-9]+"`
+
+   if [ -z "$sw_ov" ];then
+      chk_redo_ok "log"
+   else
+      echo '<table width=100% border=1>
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9">Redo log 切換次數檢查</th>
+      </tr>' >> $chk_redosd_html
+      daily_ck_wc=`cat "$daily_ck"|wc -l`
+      i=1
+      while [ "$i" -le "$daily_ck_wc" ];
+      do
+         t=1
+         if [ "$i" -eq "1" ];then
+            i=`expr $i + 1`
+         elif [ "$i" -eq "3" ];then
+            i=`expr $i + 1`
+         else
+            echo "<tr>" >> $chk_redosd_html
+            daily_ck_b=`cat "$daily_ck"|sed -n ''$i','$i' p'`
+            while [ "$t" -le 2 ];
+            do
+               daily_ck_a=`echo "$daily_ck_b"|awk '{print $'$t'}'`
+      	 echo "<td>$daily_ck_a</td>" >> $chk_redosd_html
+               t=`expr $t + 1`
+            done
+            echo "</tr>" >> $chk_redosd_html
+            i=`expr $i + 1`
+         fi
+      done
+      sw_max=`echo "$sw_ov"|sort -n -r|head -n 1`
+      echo '<tr><td colspan=2 align="center" valign="middle">====Redo log切換次數最大日期====</td></tr>
+      <tr><td>DAT</td><td>CNT</td></tr>' >> $chk_redosd_html
+      i=1
+      echo "<tr>" >> $chk_redosd_html
+      while [ "$i" -le 2 ];
+      do
+         sw_max_b=`cat "$daily_ck"|grep "$sw_max"$|awk '{print $'$i'}'`
+         echo "<td>$sw_max_b</td>" >> $chk_redosd_html
+         i=`expr $i + 1`
+      done
+      echo "</tr>" >> $chk_redosd_html
+      maxd=`cat "$daily_ck"|grep "$sw_max"$|awk '{print $1}'`
+      maxd00=`echo "$maxd""_00"`
+      maxd23=`echo "$maxd""_23"`
+      maxd_ck="/u1/etc/tmon/script/basement/chk_redo_${tmonname}.log"   
+      sql=$(
+         echo "
+           set colsep _link_     -- separate columns with a comma
+           set pagesize 0   -- No header rows
+           set trimspool on -- remove trailing blanks
+           set headsep off  -- this may or may not be useful...depends on your headings.
+           set linesize 180   -- X should be the sum of the column widths
+           col DATETIME_HH24 for a14
+           col CNT for 9999
+           
+           spool $maxd_ck
+           --SQL(s)           
+           SELECT TO_CHAR(FIRST_TIME, 'yyyymmdd_hh24') DATETIME_HH24, COUNT(*) CNT
+           FROM V\$LOG_HISTORY
+           WHERE --FIRST_TIME BETWEEN sysdate - 6 and sysdate
+           TO_CHAR(FIRST_TIME, 'yyyymmdd_hh24') BETWEEN '$maxd00' and '$maxd23'
+           GROUP BY TO_CHAR(FIRST_TIME, 'yyyymmdd_hh24')
+           ORDER BY TO_CHAR(FIRST_TIME, 'yyyymmdd_hh24') DESC;
+           --SQL(e)
+           SPOOL OFF
+           EXIT
+      
+           " | sqlplus -S "du/du@$ZONE"
+           )
+         echo $sql > /dev/null
+         
+      maxd_ck_wc=`cat "$maxd_ck"|wc -l`
+      echo '<tr><td colspan=2 align="center" valign="middle">====當日切換次數分析====</td></tr>' >> $chk_redosd_html
+      i=1
+      while [ "$i" -le "$maxd_ck_wc" ];
+      do
+         t=1
+         if [ "$i" -eq "1" ];then
+            i=`expr $i + 1`
+         elif [ "$i" -eq "3" ];then
+            i=`expr $i + 1`
+         else
+            echo "<tr>" >> $chk_redosd_html
+            maxd_ck_b=`cat "$maxd_ck"|sed -n ''$i','$i' p'`
+            while [ "$t" -le 2 ];
+            do
+               maxd_ck_a=`echo "$maxd_ck_b"|awk '{print $'$t'}'`
+      	 echo "<td>$maxd_ck_a</td>" >> $chk_redosd_html
+      	 t=`expr $t + 1`
+            done
+            echo "</tr>" >> $chk_redosd_html
+            i=`expr $i + 1`
+         fi
+      done
+      echo "</table>" >> $chk_redosd_html
+   fi
+
+   if [ "$mode_test" == "Y" ] ; then
+      test_mode_show "log"
+   fi
+   #redosw (e)
+   
+fi

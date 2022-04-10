@@ -1,0 +1,7 @@
+FIO測試
+測試開始時間  Thu Mar 3 13:41:55 CST 2022
+測試結束時間  Thu Mar 3 13:43:28 CST 2022
+測試目錄    ===>  /u1/etc/tmon/spec_dir/fio/log
+隨機讀      ===>  read: IOPS=415, BW=1662KiB/s (1702kB/s)(16.4MiB/10087msec)
+隨機寫      ===>  write: IOPS=239, BW=959KiB/s (982kB/s)(9.95MiB/10620msec); 0 zone resets
+混合隨機讀寫===>  read: IOPS=1283, BW=5136KiB/s (5259kB/s)(50.4MiB/10043msec) write: IOPS=545, BW=2181KiB/s (2233kB/s)(21.4MiB/10043msec); 0 zone resets

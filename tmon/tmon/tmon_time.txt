@@ -1,0 +1,58 @@
+
+   
+   #tmon 清理
+   tmon_clean_time : 30 12 x x x
+   
+   #重要程序存活
+   chk_aliv_time : x/1 x x x x
+   
+   #超過一天程序
+   chk_ps_time   : 00 14 x x x
+   chk_ps_2time  : 00 x/1 x x x
+   
+   #記憶體頻率
+   chk_mem_time  : x/10 x x x x
+   chk_mem_2time : x/10 x x x x
+   
+   #CPU 頻率
+   chk_cpu_time  : x/10 x x x x
+   
+   #主機磁碟空間
+   chk_du_time   : x/30 x x x x 
+   
+   #檢查 error log 
+   #genero 15575
+   chk_err_time  : x x x x x
+   #genero 6088
+   chk_err_2time : x/10 x x x x
+   
+   #檢查排程狀態
+   chk_cron_time : 00 12 x x x 
+   
+   #檢查授權狀態
+   chk_lic2_time : x/1 x x x x
+   
+   #檢查 table lock 
+   chk_lock_time : x/10 x x x x
+   
+   #檢查程序使用 cpu 
+   chk_ps_cputime_time : x/10 x x x x 
+   
+   #檢查程序使用 mem 
+   chk_psmem_time : x/10 x x x x 
+   
+   #檢查 redo 
+   chk_redosd_time : x/30 x x x x 
+   chk_redosw_time : x/30 x x x x 
+   
+   #檢查 sql 執行時間 
+   chk_sql_time  : x/30 x x x x
+   
+   #檢查 table space
+   chk_tbs_time  : x/30 x x x x
+   chk_temp_time : x/30 x x x x 
+   chk_ttbs_time : x/30 x x x x
+   chk_undo_time : x/30 x x x x
+   
+   
+   

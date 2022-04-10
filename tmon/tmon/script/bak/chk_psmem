@@ -1,0 +1,175 @@
+#!/bin/ksh
+
+#v1 cehck 順序 No.04
+
+. /u1/etc/tmon/tmon.conf
+
+ls_version="1.1"
+
+dir_date=`date '+%Y%m%d'`
+file=`date '+%Y%m%d'`
+psmem_file="/u1/etc/tmon/script/basement/psmem.log"
+psmem_file_list="/u1/etc/tmon/script/basement/psmem_list.log"
+psmem_file_chk="/u1/etc/tmon/mon_log/chk/$dir_date/psmem.log"
+mem_file_stp="/u1/etc/tmon/mon_log/mem_stp.html"
+mem_chk_dir="/u1/etc/tmon/script/basement"
+chk_mem="/u1/etc/tmon/mon_log/chk_mail.log"
+
+   if [ ! -d "/u1/etc/tmon/mon_log/chk" ]; then
+      mkdir /u1/etc/tmon/mon_log/chk
+   fi
+   if [ ! -d "/u1/etc/tmon/mon_log/chk/$dir_date" ]; then
+      mkdir /u1/etc/tmon/mon_log/chk/$dir_date
+   fi
+
+unset SQLPATH
+unset ORACLE_PATH
+
+lim=$psmem_lim_use
+mode_test="Y"
+
+if [ "$lim" == "" ]; then
+   lim=`expr 1024 \* 1024 `
+   mode_test="Y"
+fi
+
+if [ "$mode_test" == "Y" ] ;then
+   chk_psmem_time_go="Y"
+fi
+
+if [ "$chk_psmem_time_go" == "Y" ] ;then
+
+
+   echo "開始檢查看 process 記憶體使用量"
+   echo "process 紀錄值 : " $lim "kb"
+
+   date_chk=`date '+%x %r'`
+   
+   echo "$date_chk" >> $psmem_file_chk
+   
+   #proc=`ps -eo pid,rss,cmd --sort=-rss`
+   #proc=`ps -eo pid,ppid,tt,stime,time,%mem,%cpu,cmd --sort=-%mem`
+   proc=`ps -eo %mem,%cpu,rss,pid,stime,cmd --sort=-rss` > $psmem_file_list
+   proc_mem_all=`ps -eo %mem,rss,pid,cmd --sort=-rss | sed -n '2,$p' | awk '{total += $1; } END { print total }'`
+   proc_rss_all=`ps -eo %mem,rss,pid,cmd --sort=-rss | sed -n '2,$p' | awk '{total += $2; } END { print total }'`
+   proc_head=`cat "$psmem_file_list"|head -n 1`
+   #proc_fgl=`echo "$proc"|grep -v grep|grep -v adzp95|grep fglrun|head|awk '{print $1}'`
+   #proc_fgl=`echo "$proc"|grep -v grep|grep -v adzp95| head -10|awk '{print $1}'`
+
+   proc_fgl=`cat "$psmem_file_list"| sed -n '2,$p' | grep -v grep|grep -v adzp95|grep -vi "ora" | head -10|awk '{print $4}'`
+
+   echo $proc_head > $psmem_file
+
+   for i in $proc_fgl
+   do
+     proc_rss=`cat "$psmem_file_list"| sed -n '2,$p' | awk '{print $3 " " $4}' | grep $i | awk '{print $1}'`
+     if [ $(echo "$proc_rss > $lim"|bc) -eq 1 ];then
+        cat "$psmem_file_list"|grep $i >> $psmem_file_chk
+        cat "$psmem_file_list"|grep $i >> $psmem_file
+     fi
+   done
+
+   for i in $proc_fgl 
+   do
+     proc_mem=`cat "$psmem_file_list" | sed -n '2,$p' | grep $i|awk '{print $1}'`
+     proc_pid=`cat "$psmem_file_list" | sed -n '2,$p' | grep $i | awk '{print $4}'`
+     if [ $(echo "$proc_mem > $lim_mem"|bc) -eq 1 ];then
+        chk_mail="Y"
+        echo "Y" >> $chk_mem
+        echo "<b>超過 <font color=red>$lim_mem  % </font> 記憶體使用量 暫停 process</b>" >> $mem_file_stp
+        echo "<b>START : kill -CONT $proc_pid </b>" >> $mem_file_stp
+        #kill -STOP $proc_pid
+        echo "$proc_head" >> $psmem_file_chk
+        cat "$psmem_file_list"|grep $i >> $psmem_file_chk
+        echo "<font color=red>" >> $mem_file_stp
+        echo " $proc"|grep $i >> $mem_file_stp
+        echo " </font> " >> $mem_file_stp
+     fi
+   done
+   
+   num=`cat $psmem_file | sed -n '2,$p' |wc -l`
+
+   echo "檢查 process 記憶體是否超過 $lim kb"
+   
+   if [ "$num" -gt "0" ];then
+      echo " "
+      echo "<table width=500 border=1>
+      <tr>
+      <th colspan=2 style="background-color:#FFECC9">檢查 process 記憶體</th>
+      </tr> </table> " > $mem_chk_dir/${file}_swptest.html
+
+      #存取 mem 記錄檔 (s)
+
+      echo '<div class="content"><table width=500 border=1><tr><th colspan=1 style=background-color:#FFECC9>' >> $mem_chk_dir/${file}_swptest.html 
+      echo "$dir_date process記憶體使用量 RSS 顯示 1G 以上</div> </th></tr></table> </div>" >> $mem_chk_dir/${file}_swptest.html
+      echo '<div class="content"> ' >> $mem_chk_dir/${file}_swptest.html
+      echo "<table width=500 border=1>
+                <tr>
+                <th colspan=7 style=background-color:#FFECC9>Mem $dir_date </th>
+                </tr> 
+      " >> $mem_chk_dir/${file}_swptest.html
+
+      swp_num=`cat $psmem_file | wc -l `
+
+      echo "開始存取紀錄檔 ,有 $swp_num 個 "
+      
+      i=1
+      
+      while [ "$i" -le "$swp_num" ] 
+      do
+         echo "No: "$i
+         if [ "$i" == 1 ] ; then
+            mem_chk=`cat $psmem_file | sed -n '1,1p' | awk '{print $1}' `
+            cpu_chk=`cat $psmem_file | sed -n '1,1p' | awk '{print $2}' `
+            rss_chk=`cat $psmem_file | sed -n '1,1p' | awk '{print $3}' `
+            pid_chk=`cat $psmem_file | sed -n '1,1p' | awk '{print $4}' `
+            stime_chk=`cat $psmem_file | sed -n '1,1p' | awk '{print $5}' `
+            cmd_chk=`cat $psmem_file | sed -n '1,1p' | awk '{$1=$2=$3=$4=$5="";print $0}' ` 
+            echo "<tr> 
+                  <td> $mem_chk    </td>
+                  <td> $cpu_chk    </td>
+                  <td> $rss_chk   </td>
+                  <td> $pid_chk    </td>
+                  <td> $stime_chk  </td>
+                  <td> $cmd_chk    </td>
+                  </tr> 
+                 "  >> $mem_chk_dir/${file}_swptest.html
+         else
+            mem_chk=`cat $psmem_file | sed -n "$i,${i}p" | awk '{print $1}' `
+            cpu_chk=`cat $psmem_file | sed -n "$i,${i}p" | awk '{print $2}' `
+            rss_chk=`cat $psmem_file | sed -n "$i,${i}p" | awk '{print $3}' `
+            pid_chk=`cat $psmem_file | sed -n "$i,${i}p" | awk '{print $4}' `
+            stime_chk=`cat $psmem_file | sed -n "$i,${i}p" | awk '{print $5}' `
+            cmd_chk=`cat $psmem_file | sed -n "$i,${i}p" | awk '{$1=$2=$3=$4=$5"";print $0}' ` 
+            echo "<tr> 
+                  <td> $mem_chk    </td>
+                  <td> $cpu_chk    </td>
+                  <td> $rss_chk    </td>
+                  <td> $pid_chk   </td>
+                  <td> $stime_chk  </td>
+                  <td> $cmd_chk    </td>
+                  </tr> 
+                 "  >> $mem_chk_dir/${file}_swptest.html
+         fi
+         i=`expr $i + 1 `
+      
+      done
+
+      #存取 mem 記錄檔 (e)   
+      echo " "
+
+   else
+
+      echo "沒有 process 超過 $lim kb"
+
+   fi
+
+   if [ -f $psmem_file ] ; then
+
+      rm -rf $psmem_file
+
+   fi
+
+   echo "結束檢查 process 記憶體使用量"
+
+fi

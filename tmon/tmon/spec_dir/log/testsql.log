@@ -1,0 +1,7 @@
+        drop table test_xcck_05
+                   *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+drop Elapsed: 00:00:00.00

@@ -1,0 +1,84 @@
+#!/bin/ksh
+
+#v1 check 順序 No.15
+#   check Warn
+
+. /u1/etc/tmon/tmon_title.conf
+
+dir_date=`date '+%Y%m%d'`
+apache_log="/u3/log/mon_log/chk/$dir_date/chk_apache.log"
+#cpu_file_chk="/u3/log/mon_log/chk/$dir_date/pscpu.log"
+
+chk_aliv="/u1/etc/tmon/mon_log/chk_mail.log"
+
+chk_aliv_apache_Y=`cat $chk_aliv | grep "apache Y" | wc -l`
+
+chk_aliv_apache_Warn=`cat $chk_aliv | grep "apache Warn" | wc -l`
+
+
+chk_aliv_flmprg_Y=`cat $chk_aliv | grep "flmprg Y" | wc -l`
+
+chk_aliv_flmprg_Warn=`cat $chk_aliv | grep "flmprg Warn" | wc -l`
+
+chk_aliv_cgi_Y=`cat $chk_aliv | grep "cgi Y" | wc -l`
+
+chk_aliv_cgi_Warn=`cat $chk_aliv | grep "cgi Warn" | wc -l`
+
+
+# Apache 存活
+echo " <tr> "
+if [ "$chk_aliv_apache_Y" -gt "0" ] ; then
+
+     echo ' 
+          <th colspan=3 style="background-color:red">網路 Apache error </th>
+          '
+else
+     echo ' 
+          <th colspan=3 style="background-color:#FFECC9">網路 Apache 存活 </th>
+          '
+fi
+
+#echo ' 
+#     <th colspan=5 style="background-color:#FFECC9">T100 首頁無法開啟 </th>
+echo '
+     </tr>
+     '
+echo " <tr> "
+
+if [ "$chk_aliv_flmprg_Y" -gt "0" ] ; then
+   echo ' 
+        <th colspan=3 style="background-color:red">授權 flmprg error </th>
+        '
+else
+   echo ' 
+        <th colspan=3 style="background-color:#FFECC9">授權 flmprg 存活 </th>
+        '
+fi
+
+#echo ' 
+#     <th colspan=5 style="background-color:#FFECC9">程式不能開或閃退 </th>
+echo '
+     </tr>
+     '
+echo " <tr> "
+
+if [ "$chk_aliv_cgi_Y" -gt "0" ] ; then
+   echo '
+        <th colspan=3 style="background-color:red">整合 gas fastcgi topprd error  </th>
+        '
+else
+   echo '
+        <th colspan=3 style="background-color:#FFECC9">整合 gas fastcgi topprd 存活  </th>
+        '
+fi
+
+#echo ' 
+#     <th colspan=5 style="background-color:#FFECC9">接口程式異常 </th>
+echo '
+     </tr>
+     '
+
+
+#old 2021/05/20 mark  (e)
+
+rm -rf /u3/log/mon_log/aliv.log

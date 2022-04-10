@@ -1,0 +1,18 @@
+#!/bin/ksh
+
+date=`date '+%Y%m%d'`
+
+iowait_avg=`iostat -x 1 6 | grep -A 1 'iowait' | sed -n '4,$p' | grep -v 'iowait' | awk '{sum += $4} END {print sum/5}'`
+
+alert_iowait='15'
+
+if [ `echo "$iowait_avg > $alert_iowait" | bc ` -eq 1 ] ; then
+
+   pid=`pidstat -ld 1 1 | grep 'Average' | sed -n '2,$p' | sort -r -k5 -n |awk '{if ($5>1000){print $3}}'`
+   date '+%H:%M:%S' >> /u1/etc/tmon/mon_log/${date}_chk_iolog.txt
+   for i in $pid
+   do
+      ps -ef | grep $i |grep -v grep >> /u1/etc/tmon/mon_log/${date}_chk_iolog.txt
+   done
+fi
+

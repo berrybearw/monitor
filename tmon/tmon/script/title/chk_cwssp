@@ -1,0 +1,24 @@
+#!/bin/ksh
+
+. /u1/etc/tmon/tmon_title.conf
+
+dir_date=`date '+%Y%m%d'`
+
+chk_cwssp_Y=`cat $chk_cwssp | grep "Y" | wc -l`
+
+echo " <tr> "
+
+if [ "$chk_cwssp_Y" -gt "0" ] ; then 
+   echo "
+        <th colspan=3 style="background-color:red">cwssp33* 處理時間 </th>
+        "
+else
+   echo "
+        <th colspan=3 style="background-color:#FFECC9">cwssp33* 處理時間 </th>
+        "
+fi
+
+echo " 
+     <th colspan=5 style="background-color:#FFECC9">超過 2 min 可能處理過久 會占用資源 </th>
+     </tr>
+     "

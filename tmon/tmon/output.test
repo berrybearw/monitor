@@ -1,0 +1,11 @@
+ls_version :  1.2 -s
+2022 版本
+新增 規格檢查
+     chk_spec
+新增 簡單設定
+     set      tmon set
+優化 監控預警
+     chk_cpu  load_average , idle 檢查
+     chk_mem
+
+ls_version :  1.2 -e

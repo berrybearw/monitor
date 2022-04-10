@@ -1,0 +1,214 @@
+#!/bin/ksh
+
+#v1 check 順序 No.05
+#   check Warn
+
+ls_version="1.1"
+
+. /u1/etc/tmon/tmon.conf
+. /u1/etc/tmon/tmon_title.conf
+
+
+dir_date=`date '+%Y%m%d'`
+ps_cputime_file="/u1/etc/tmon/mon_log/ps_cputime.log"
+ps_cputime_all_file="/u1/etc/tmon/mon_log/ps_cputime_all.log"
+ps_cputime_all_file_over="/u1/etc/tmon/mon_log/ps_cputime_all_over.log"
+ps_cputime_file_chk="/u1/etc/tmon/mon_log/chk/$dir_date/ps_cputime.log"
+ps_cputime_file_all_chk="/u1/etc/tmon/mon_log/chk/$dir_date/ps_cputime_all.log"
+ps_cputime_file_all_chk_lim="/u1/etc/tmon/mon_log/chk/$dir_date/ps_cputime_all_over.log"
+#chk_cpu="/u1/etc/tmon/mon_log/chk_cpu.log"
+
+   if [ ! -d "/u1/etc/tmon/mon_log/chk" ]; then
+      mkdir /u1/etc/tmon/mon_log/chk
+   fi
+   if [ ! -d "/u1/etc/tmon/mon_log/chk/$dir_date" ]; then
+      mkdir /u1/etc/tmon/mon_log/chk/$dir_date
+   fi
+
+unset SQLPATH
+unset ORACLE_PATH
+
+lim=$ps_cpu_lim
+lim_ps_cpu=$ps_cpu_lim2
+lim_ps=$ps_cpu_lim3
+lim_ps_over_day=$ps_cpu_over_lim
+
+if [ "$lim" == "" ] ;then
+
+   lim=120                # 2 minute
+   lim_ps_cpu=90
+   lim_ps=7200            # 2 hour
+   lim_ps_over_day=86400  # 1 day   #v1 add
+
+fi
+
+if [ "$mode_test" == "Y" ] ;then
+   chk_ps_cputime_time_go="Y"
+fi
+
+
+if [ "$chk_ps_cputime_time_go" == "Y" ] ;then
+
+   date_chk=`date '+%x %r'`
+   
+   echo "$date_chk" >> $ps_cputime_file_chk
+   
+   
+   
+   #proc=`ps -eo pid,rss,cmd --sort=-rss`
+   #proc=`ps -eo pid,ppid,tt,stime,time,%mem,%cpu,cmd --sort=-%mem`
+   #proc=`ps -eo %mem,rss,pid,cmd --sort=-rss`
+   proc=`ps -eo %mem,%cpu,pid,stime,time,cmd --sort=-time `
+   proc_head=`echo "$proc"|head -n 1`
+   #proc_fgl=`echo "$proc"|grep -v grep|grep -v adzp95|grep fglrun|head|awk '{print $1}'`
+   #proc_fgl=`echo "$proc"|grep -v grep|grep -v adzp95| head -10|awk '{print $1}'`
+   
+   proc_fgl=`echo "$proc"|grep -v grep| grep -i 'cwssp33'  |awk '{print $3}'`
+   #mongod,apache,gas,flmprg,oracle,adzp95
+   #rngd,YunAgent
+   proc_not_to="|mongod|apache|gas|flmprg|oracle|adzp95"
+   proc_not_c="rngd|YunAgent"
+   proc_all=`echo "$proc"|grep -Ev "(grep|${proc_not_c}${proc_not_to})" |awk '{print $3}' | head -10`
+   
+   #echo $proc_fgl
+   
+   for i in $proc_fgl
+   do
+     proc_time=`echo "$proc"|grep $i|awk '{print $5}'`
+     #echo $proc_time
+     proc_hour=`echo "$proc_time" | awk -F : '{print $1}' | awk '{print int($0)}'`
+     #echo $proc_hour
+     proc_mim=`echo "$proc_time" | awk -F : '{print $2}' | awk '{print int($0)}'`
+     #echo $proc_min
+     proc_sec=`echo "$proc_time" | awk -F : '{print $3}' | awk '{print int($0)}'`
+     if [ $(echo "$proc_hour" != "00" | bc) -eq 1 ] ; then
+        proc_hour=`expr $proc_hour \* 3600`
+     fi
+     if [ $(echo "$proc_mim" != "00" | bc) -eq 1 ] ; then
+        proc_mim=`expr $proc_mim \* 60`
+     fi
+     proc_time=`expr $proc_hour + $proc_mim + $proc_sec `
+     #echo $proc_time
+     if [ $(echo "$proc_time > $lim"|bc) -eq 1 ];then
+        echo "$proc"|grep $i >> $ps_cputime_file_chk
+        echo "$proc"|grep $i >> $ps_cputime_file
+     fi
+     #echo "@@@"
+   done
+   
+   for i in $proc_all
+   do
+     proc_time=`echo "$proc"|grep $i|awk '{print $5}'`
+     #echo $proc_time
+     proc_hour=`echo "$proc_time" | awk -F : '{print $1}' | awk '{print int($0)}'`
+     #echo $proc_hour
+     proc_mim=`echo "$proc_time" | awk -F : '{print $2}' | awk '{print int($0)}'`
+     #echo $proc_min
+     proc_sec=`echo "$proc_time" | awk -F : '{print $3}' | awk '{print int($0)}'`
+     if [ $(echo "$proc_hour" != "00" | bc) -eq 1 ] ; then
+        proc_hour=`expr $proc_hour \* 3600`
+     fi
+     if [ $(echo "$proc_mim" != "00" | bc) -eq 1 ] ; then
+        proc_mim=`expr $proc_mim \* 60`
+     fi
+     proc_time=`expr $proc_hour + $proc_mim + $proc_sec `
+     #echo $proc_time
+     if [ $(echo "$proc_time > $lim_ps_over_day" | bc) -eq 1 ] ; then
+        echo "over 1 day " >> $ps_cputime_file_all_chk_lim
+        echo "$proc"|grep $i >> $ps_cputime_file_all_chk_lim
+        echo "$proc"|grep $i >> $ps_cputime_all_file_over
+     elif [ $(echo "$proc_time > $lim_ps"|bc) -eq 1 ];then
+        echo "$proc"|grep $i >> $ps_cputime_file_all_chk
+        echo "$proc"|grep $i >> $ps_cputime_all_file
+     
+     fi
+     #echo "@@@"
+   done
+   #
+   #for i in $proc_fgl 
+   #do
+   #  proc_mem=`echo "$proc"|grep $i|awk '{print $1}'`
+   #  proc_pid=`echo "$proc" | grep $i | awk '{print $3}'`
+   #  if [ $(echo "$proc_mem > $lim_mem"|bc) -eq 1 ];then
+   #     echo "<b>超過 <font color=red>$lim_mem  % </font> 記憶體使用量 暫停 process</b>" >> $psmem_file
+   #     echo "<b>START : kill -CONT $proc_pid </b>" >> $psmem_file
+   #     kill -STOP $proc_pid
+   #     echo "$proc_head" >> $psmem_file_chk
+   #     echo "$proc"|grep $i >> $psmem_file_chk
+   #     echo "<font color=red>" >> $psmem_file
+   #     echo " $proc"|grep $i >> $psmem_file
+   #     echo " </font> " >> $psmem_file
+   #  fi
+   #done
+   #
+   num=`cat $ps_cputime_file|wc -l`
+   if [ "$num" -gt "0" ];then
+      chk_mail="Y"
+      echo "Y" >> $chk_ps_cputime
+      echo "chk_mail : " $chk_mail
+      echo " "
+      echo "<table width=500 border=1>
+      <tr>
+      <th colspan=2 style="background-color:#FF3B3B">檢查 cwssp335 執行超過時間 $lim sec </th>
+      </tr> "
+      echo "<b>====cwssp335 執行超過時間 $lim sec ====</b>"
+      echo "<b>====%MEM 使用百分比 , RSS 使用量 簡介====</b>"
+      echo "$proc_head"
+      cat "$ps_cputime_file"
+      echo " "
+   fi
+   
+   num=`cat $ps_cputime_all_file|wc -l`
+   if [ "$num" -gt "0" ];then
+      #v1 add (s)
+      chk_Warn="Y" 
+      echo "Warn" >> $chk_ps_cputime
+      echo "chk_Warn : " $chk_Warn
+      #v1 add (e)
+      echo " "
+      echo "<table width=500 border=1>
+      <tr>
+      <th colspan=2 style="background-color:yellow">檢查 process 使用 CPU 超過時間 $lim_ps sec </th>
+      </tr> 
+      <tr>
+      <th colspan=2 style="background-color:yellow">not check ${proc_not_to} </th>
+      </tr>
+      <tr>
+      <th colspan=2 style="background-color:yellow">not check ${proc_not_c} </th>
+      </tr>
+      </table> "
+      echo "<b>====process 執行超過時間 $lim_ps sec ====</b>"
+      echo "<b>====%MEM 使用百分比 , RSS 使用量 簡介====</b>"
+      echo "$proc_head"
+      cat "$ps_cputime_all_file"
+      echo " "
+   fi
+   
+   num=`cat $ps_cputime_all_file_over|wc -l`
+   if [ "$num" -gt "0" ];then
+      chk_mail="Y" 
+      echo "Y" >> $chk_ps_cputime
+      echo "chk_mail : " $chk_Warn
+      echo " "
+      echo "<table width=500 border=1>
+      <tr>
+      <th colspan=2 style="background-color:yellow">檢查 process 使用 CPU 超過時間 $lim_ps_over_day sec </th>
+      </tr> 
+      <tr>
+      <th colspan=2 style="background-color:yellow">not check ${proc_not_to} </th>
+      </tr>
+      <th colspan=2 style="background-color:yellow">not check ${proc_not_c} </th>
+      </tr>
+      </table> "
+      echo "<b>====process 執行超過時間 $lim_ps sec ====</b>"
+      echo "<b>====%MEM 使用百分比 , RSS 使用量 簡介====</b>"
+      echo "$proc_head"
+      cat "$ps_cputime_all_file_over"
+      echo " "
+   fi
+   
+   rm -rf /u1/etc/tmon/mon_log/ps_cputime.log
+   rm -rf /u1/etc/tmon/mon_log/ps_cputime_all.log
+   rm -rf /u1/etc/tmon/mon_log/ps_cputime_all_over.log
+
+fi

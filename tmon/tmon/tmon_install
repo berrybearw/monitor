@@ -1,0 +1,30 @@
+#!/bin/ksh 
+
+cd /u1
+
+if [ -d "/u1/etc" ] ;then 
+
+   mkdir /u1/etc
+   chmod 775 /u1/etc
+
+fi
+
+if [ -d "/u1/etc/tmon" ] ;then 
+
+   mkdir /u1/etc/tmon
+   chmod 777 /u1/etc/tmon
+
+fi
+cd /u1/etc
+if [ -f "/u1/src/tmon.tar.gz" ] ;then
+
+   echo "tmon.tar.gz 請把安裝檔放到 /u1/src "
+
+else
+
+   tar zxvf /u1/src/tmon.tar.gz 
+
+   cd /u1/etc/tmon
+   r.cs download
+
+fi

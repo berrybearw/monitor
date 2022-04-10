@@ -1,0 +1,11 @@
+
+create table test_xcck_01 as select ping_ap.log ping_db.log ping_test.log testsql2.log testsql.log from xcck_t where 1=2 ping_ap.log ping_db.log ping_test.log testsql2.log testsql.log ERROR at line 1: ORA-00942: table or view does not exist create Elapsed: 00:00:00.00
+drop table test_xcck_01 ping_ap.log ping_db.log ping_test.log testsql2.log testsql.log ERROR at line 1: ORA-00942: table or view does not exist drop Elapsed: 00:00:00.00
+create table test_xcck_02 as select ping_ap.log ping_db.log ping_test.log testsql2.log testsql.log from xcck_t where 1=2 ping_ap.log ping_db.log ping_test.log testsql2.log testsql.log ERROR at line 1: ORA-00942: table or view does not exist create Elapsed: 00:00:00.01
+drop table test_xcck_02 ping_ap.log ping_db.log ping_test.log testsql2.log testsql.log ERROR at line 1: ORA-00942: table or view does not exist drop Elapsed: 00:00:00.00
+create table test_xcck_03 as select ping_ap.log ping_db.log ping_test.log testsql2.log testsql.log from xcck_t where 1=2 ping_ap.log ping_db.log ping_test.log testsql2.log testsql.log ERROR at line 1: ORA-00942: table or view does not exist create Elapsed: 00:00:00.00
+drop table test_xcck_03 ping_ap.log ping_db.log ping_test.log testsql2.log testsql.log ERROR at line 1: ORA-00942: table or view does not exist drop Elapsed: 00:00:00.00
+create table test_xcck_04 as select ping_ap.log ping_db.log ping_test.log testsql2.log testsql.log from xcck_t where 1=2 ping_ap.log ping_db.log ping_test.log testsql2.log testsql.log ERROR at line 1: ORA-00942: table or view does not exist create Elapsed: 00:00:00.00
+drop table test_xcck_04 ping_ap.log ping_db.log ping_test.log testsql2.log testsql.log ERROR at line 1: ORA-00942: table or view does not exist drop Elapsed: 00:00:00.00
+create table test_xcck_05 as select ping_ap.log ping_db.log ping_test.log testsql2.log testsql.log from xcck_t where 1=2 ping_ap.log ping_db.log ping_test.log testsql2.log testsql.log ERROR at line 1: ORA-00942: table or view does not exist create Elapsed: 00:00:00.00
+drop table test_xcck_05 ping_ap.log ping_db.log ping_test.log testsql2.log testsql.log ERROR at line 1: ORA-00942: table or view does not exist drop Elapsed: 00:00:00.00

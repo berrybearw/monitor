@@ -1,0 +1,6 @@
+SQL> [A
+SP2-0042: unknown command "[A" - rest of line ignored.
+SQL> [A
+SP2-0042: unknown command "[A" - rest of line ignored.
+SQL> 
+SQL> exit

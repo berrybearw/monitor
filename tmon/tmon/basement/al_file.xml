@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding='utf-8'?>
+<Mail>
+<Protocol>smtp</Protocol>
+#<CheckAuth>Y</CheckAuth>
+<CheckAuth>N</CheckAuth>
+<MailServer>10.40.99.16</MailServer>
+<MailServerPort>25</MailServerPort>
+<MailServerUser>tester</MailServerUser>
+<MailServerUserPassword>tester</MailServerUserPassword>
+<Subject>!! tmon [TOP200][10.40.40.200] check red line !!</Subject>
+<MessageBody>/u1/etc/tmon/mon_log/al_file.html</MessageBody>
+<Attach>/ut/topprd/tmp/TOP200_infor.log;/u1/etc/tmon/mon_log/al_file.html;/ut/topprd/tmp/chk_sql_log.html;/u1/etc/tmon/script/basement/cpu_chk_oEM.html;/u1/etc/tmon/script/basement/chk_cpu_list.log;/u1/etc/tmon/script/basement/mem_chk_oEM.html;/u1/etc/tmon/script/basement/psmem_list.log/u1/etc/tmon/script/basement/du_chk_oEM.html;/u1/etc/tmon/script/basement/tbs_chk_oEM.html</Attach>
+<Recipient>berrybearw@digiwin.com</Recipient>
+<From>t100_digiwin_default@aliyun.com</From>
+</Mail>

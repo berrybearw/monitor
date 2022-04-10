@@ -1,0 +1,45 @@
+#/bin/ksh
+
+chk_apdbdir='/u1/etc/spec_dir/ap_db'
+
+sql=`sqlplus -S "du/du@$ZONE" << !
+ SELECT SYS_CONTEXT('USERENV','HOST') FROM dual;
+ exit
+!
+`
+
+ap5ip=`echo $sql | awk '{print $10}'`
+
+sql=`sqlplus -S "du/du@$ZONE" << !
+ SELECT SYS_CONTEXT('USERENV','SERVER_HOST') FROM dual;
+
+ exit
+!
+`
+
+db5ip=`echo $sql | awk '{print $10}'`
+
+check_ap=`$chk_apdbdir/a $ap5ip | grep "IP Address" | awk '{print $3}'`
+
+check_tnsping=`timeout 10 tnsping $check_ap | grep 'OK' | wc -l`
+
+if [ "$check_tnsping" == "0" ] ; then
+
+   check_db=`$chk_apdbdir/a $db5ip | grep "IP Address" | awk '{print $3}'`
+
+else
+
+   check_db=`timeout 10 tnsping $check_ap | grep HOST= | awk -F = '{print $7}' | awk -F \) '{print $1}'`
+
+fi
+
+if [ "$check_ap" == "$check_db" ] ; then 
+
+   echo "AP,DB 同一台 "
+else
+   echo "AP,DB 不同一台 "
+fi
+
+echo "AP" $check_ap > $chk_apdbdir/bak.log
+echo "DB" $check_db >> $chk_apdbdir/bak.log
+

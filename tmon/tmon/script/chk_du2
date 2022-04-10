@@ -1,0 +1,555 @@
+#!/bin/ksh
+
+#v1 check 順序 No.13
+#   check Warn
+
+#1.1  (s)
+#     設定執行頻率
+#     變數 : chk_du_time_go
+#1.1  (e)
+#1.2 2021/12/05 by 12731 緊急時刻需要在一開始就判斷是否超過 設定值
+#                        指令需要有超時設定 ( timeout 10 ps )
+
+#ls_version="1.0"
+#ls_version="1.1"
+ls_version="1.2"
+
+. /u1/etc/tmon/tmon.conf
+
+tmonname=$TMONNAME
+mode_test=$MODE_TEST
+
+unset SQLPATH
+
+time_red=`date +%Y/%m/%d-%H:%M:%S`
+
+check_log="/u1/etc/tmon/script/basement/du.log"
+check_log2="/u1/etc/tmon/script/basement/du2.log"
+check_dufile="/u1/etc/tmon/script/basement/du_file_${tmonname}.log"
+check_r_h="/u1/etc/tmon/script/basement/du_r_h.log"
+check_r="/u1/etc/tmon/script/basement/du_r.log"
+du_file='/u1/etc/tmon/mon_log/du.html'
+du_chk="/u1/etc/tmon/script/basement/du_chk_${tmonname}.log"        #判斷設定值檔案
+du_chk_inode="/u1/etc/tmon/script/basement/du_chk_inode_${tmonname}.log"        #判斷設定值檔案
+du_chk_inode2="/u1/etc/tmon/script/basement/du_chk_inode2_${tmonname}.log"        #判斷設定值檔案
+du_chk2="/u1/etc/tmon/script/basement/du_chk2_${tmonname}.log"        #判斷設定值檔案
+du_chk3="/u1/etc/tmon/script/basement/du_chk3_${tmonname}.log"        #判斷設定值檔案
+ut_chk_old="/u1/etc/tmon/script/basement/ut_chk_old_${tmonname}.log"
+du_chk_old="/u1/etc/tmon/script/basement/du_chk_old.log"
+inode_chk_old="/u1/etc/tmon/script/basement/inode_chk_old_${tmonname}.log"
+du_chk_html="/u1/etc/tmon/script/basement/du_chk_${tmonname}.html"  #寄信用
+chk_du="/u1/etc/tmon/mon_log/chk_mail.log"
+chk_du_warn="/u1/etc/tmon/mon_log/chk_mail_warn.log"
+
+lim=$du_lim_use
+lim_warn=$du_lim_warn
+lim_max=$du_lim_max  #剩餘大小是 MB
+
+function title_du {
+   echo '<table width=100% border=1>
+   <tr>
+   <th colspan=2 style=background-color:#00E3E3>項目 主機磁碟空間 </th>
+   </tr>
+   </table>
+   ' > $du_chk_html
+}
+
+function save_ut_chk {
+   chk_du_time_go="Y"
+   chk_mail="Y"
+   echo "chk_du : " $chk_mail >> $chk_du
+   echo "ut_use : " $ut_use >> $chk_du
+   echo $ut_use > $ut_chk_old
+   echo "ut_max : " $ut_max >> $chk_du
+   echo "T100 ut space over  " $ut_max >> $chk_du
+   chk_ut="Y"
+}
+
+if [ "$lim" == "" ] ; then
+
+   lim=50
+   lim_max=1024
+   mode_test="Y"
+
+fi
+
+if [ "$mode_test" == "Y" ] ;then
+   chk_du_time_go="Y"
+fi
+
+if [ "$CHKTIME" == "Y" ] ; then 
+   chk_du_time_go="Y"
+fi
+
+#ut check (s)
+timeout 10 df -lh|grep "/ut" > $du_chk
+ut_use=`cat $du_chk | awk '{print $5}'| awk -F % '{print $1}'`
+ut_max="$lim"
+
+if [ `echo "$ut_use >= $ut_max" |bc ` -eq 1 ];then
+   if [ -f "$du_chk_old" ] ; then
+      ut_history=`cat $ut_chk_old | sed -n '1,1p' `
+      if [ "$ut_history" != "" ]; then
+         if [ `echo "$ut_use > $ut_history" |bc ` -eq 1 ] ;then
+            save_ut_chk  #存放 du 檢查值
+         fi
+      else
+         save_ut_chk  #存放 du 檢查值
+      fi
+   else
+      save_ut_chk  #存放 du 檢查值
+   fi   
+fi
+#ut check (e)
+
+#disk space check (s)
+timeout 10 df -l | awk '{if(($3/$2)*100 >= '$lim')if($4 <= ('$lim_max'*1024)) {print $1","$2","$3","$4","$5","$6}}' >> $du_chk2
+
+num=`cat $du_chk2 | wc -l`
+i=1
+if [ "$num" -gt "0" ] ; then 
+   chk_du_time_go="Y"
+   chk_mail="Y"
+   echo "chk_du : " $chk_mail >> $chk_du
+   echo "du_lim : " $lim >> $chk_du
+   echo "du_lim_max : " $lim_max >> $chk_du
+else
+   timeout 10 df -l | awk '{if(($3/$2)*100 >= '$lim') {print $1","$2","$3","$4","$5","$6}}' >> $du_chk3
+   num=`cat $du_chk3 | wc -l`
+   cat $du_chk3
+   echo $du_chk_old
+   #exit
+   if [ -f "$du_chk_old" ]; then
+      numchk=`cat $du_chk_old | wc -l`
+      echo $du_chk_old
+      i=1
+      while [ "$i" -le "$numchk" ];
+        do
+           name=`cat $du_chk_old | awk -F : '{print $1}' | sed -n "${i},${i}p" `
+           space_use=`cat $du_chk_old | awk -F : '{print $2}' | sed -n "${i},${i}p" | awk -F % '{print $1}' `
+           #歷史數據中有同樣的值要檢查是否有持續成長
+           chk=`cat $du_chk3 | grep $name | sed -n '1,1p' | awk -F , '{print $5}' | awk -F % '{print $1}' `
+           if [ `echo "$chk > $space_use" |bc ` -eq 1 ];then
+                 chk_du_time_go="Y"
+                 chk_du="Y"
+                 echo "chk_du : " $chk_mail >> $chk_du_warn
+                 echo "du_lim : " $lim >> $chk_du_warn
+                 echo "du_lim_max : " $lim_max >> $chk_du_warn
+           fi
+           i=$(($i + 1))
+        done
+      while [ "$i" -le "$numchk" ];
+        do
+           name=`cat $du_chk_old | awk -F : '{print $1}' | sed -n "${i},${i}p" `
+           #歷史數據中有同樣的值要檢查是否有持續成長
+           chk=`cat $du_chk3 | grep "$name" | sed -n '1,1p' | awk -F , '{print $5}'`
+           #有減少需清理歷史數據
+           if [ `echo "$chk < $lim" |bc ` -eq 1 ] ;then
+              sed -i "${i}d" $du_chk_old
+           fi
+           i=$(($i + 1))
+        done
+   else
+      i=1
+      while [ "$i" -le "$num" ];
+        do
+           name=`cat $du_chk3 | awk -F , '{print $6}' | sed -n "${i},${i}p" `
+           space_use=`cat $du_chk3 | awk -F , '{print $5}' | sed -n "${i},${i}p"`
+           echo $name ":" $space_use >> $du_chk_old
+           i=$(($i + 1))
+        done
+   fi
+
+fi
+#disk space check (e)
+
+#disk inode check (s)
+timeout 10 df -i | sed -n '2,$p' | awk '{if(($3/$2)*100 >= '$lim') if($4 <= ('$lim_max'*1024)){print $1","$2","$3","$4","$5","$6}}' >> $du_chk_inode
+timeout 10 df -i | sed -n '2,$p' | awk '{if(($3/$2)*100 >= '$lim') {print $1","$2","$3","$4","$5","$6}}' >> $du_chk_inode2
+
+num_inode=`cat $du_chk_inode | wc -l`
+if [ "$num_inode" -gt "0" ] ; then 
+   chk_du_time_go="Y"
+   chk_mail="Y"
+   echo "chk_du : " $chk_mail >> $chk_du
+   echo "chk_du_inode"
+   echo "inode_lim : " $lim_inode >> $chk_du
+   echo "inode_lim_max : " $lim_inode_max >> $chk_du
+fi
+#disk inode check (e)
+
+if [ "$mode_test" == "Y" ] ; then
+   if [ "$APCHK" == "Y" ]; then
+      if [ ! -f "$TEMPDIR" ] || [ ! -f "$LOGDIR" ]; then
+         echo "TEMPDIR or LOGDIR not found please check"
+         echo "TEMPDIR : " /ut/$ZONE/tmp
+         echo "LOGDIR : " /ut/$ZONE/log
+
+      fi
+   fi
+   if [ "$chk_mail" == "Y" ] ; then
+      echo "chk_du     : " $chk_mail
+      echo "du_lim %   : " $lim
+      echo "du_lim_max : " $lim_max
+     while [ "$i" -le "$num" ];
+     do
+        name=`cat $du_chk2 | awk -F , '{print $6}' | sed -n "${i},${i}p" `
+        space_use=`cat $du_chk2 | awk -F , '{print $5}' | sed -n "${i},${i}p"`
+        space_avail=`cat $du_chk2 |awk -F , '{print $4}' | sed -n "${i},${i}p"`
+        echo "$name space over " $lim " % " " and lower than " $lim_max " MB "
+        echo "$name space_use % : " $space_use "%"
+        echo "$name space_avail : " $space_avail "kb"
+        i=$(($i + 1))
+     done      
+     i=1
+     while [ "$i" -le "$num_inode" ];
+     do
+        name=`cat $du_chk_inode | awk -F , '{print $6}' | sed -n "${i},${i}p" `
+        space_use=`cat $du_chk_inode | awk -F , '{print $5}' | sed -n "${i},${i}p"`
+        space_avail=`cat $du_chk_inode |awk -F , '{print $4}' | sed -n "${i},${i}p"`
+        echo "$name space over " $lim_inode " % " " and lower than " $lim_max " MB "
+        echo "$name space_use % : " $space_use "%"
+        echo "$name space_avail : " $space_avail 
+        i=$(($i + 1))
+     done      
+      echo "|----------|"
+      echo "磁碟使用空間 檢查 發現高於預警值 "
+      echo "請查看 磁碟內 高使用率檔案 "
+      echo "|----------|"
+      if [ "$num" -ge "1" ]; then
+         echo "請下載 : " $du_chk2
+      fi
+      if [ "$num_inode" -ge "1" ]; then
+	      echo "請下載 : " $du_chk_inode
+      fi
+      exit
+   else
+      echo "chk_du     : " $chk_mail
+      echo "du_lim %   : " $lim 
+      echo "du_lim_max : " $lim_max
+      echo ""
+      echo "no space over " $lim " % " " and lower than " $lim_max " MB "
+      echo "|----------|"
+      echo "磁碟使用空間 檢查 ok"
+      echo "|----------|"
+      title_du  # title function
+      echo "請下載 : " $du_chk_html
+      exit
+   fi
+fi
+
+if [ "$chk_du_time_go" == "Y" ] ;then
+
+
+   title_du  # title function
+
+   #ut 暫存檔空間 (s)
+   if [  "$chk_mail" == "Y" ];then
+         
+      chk_mail="Y"
+      if [ "$chk_ut" == "Y" ]; then 
+         echo "chk_du : " $chk_mail >> $chk_du
+         echo "<table width=100% border=1>" >> $du_chk_html 
+         echo "<tr><th colspan=7 style=background-color:#FFECC9>LOG磁碟空間 (/ut) </th></tr>" >> $du_chk_html
+         echo ""
+         ut_space_total=`timeout 10 cat $du_chk |awk '{print $2}'`
+         echo "ut_space_total : " $ut_space_total >> $chk_du
+         n=1
+         i=0
+         while [ "$i" -le "$n" ];
+         do
+            if [ "$i" == 0 ] ; then
+               chk_name='Filesystem'
+               tbs_allocat='Size' 
+               tbs_free='Used'
+               tbs_use='Avail'
+               tbs_free_per='Use%'
+               tbs_use_per='Mounted on'
+               echo '<tr><td>' $chk_name '</td>' >>$du_chk_html
+               echo '<td>' $tbs_allocat '</td>' >>$du_chk_html
+               echo '<td>' $tbs_free '</td>' >>$du_chk_html
+               echo '<td>' $tbs_use '</td>' >>$du_chk_html
+               echo '<td>' $tbs_free_per '</td>' >>$du_chk_html
+               echo '<td>' $tbs_use_per '</td>' >>$du_chk_html
+            else
+               chk_name=`cat $check_log |awk '{if($5 >= '$lim') {print $6}}' | sed -n "${i},${i}p" `
+               tbs_allocat=`cat $check_log | grep $chk_name | awk '{print $2}'`
+               tbs_free=`cat $check_log | grep $chk_name | awk '{print $3}'`
+               tbs_use=`cat $check_log | grep $chk_name | awk '{print $4}'`
+               tbs_free_per=`cat $check_log |grep $chk_name | awk '{print $5}'`
+               tbs_use_per=`cat $check_log |grep $chk_name | awk '{print $6}'`
+               echo '<tr><td>' $chk_name '</td>' >>$du_chk_html
+               echo '<td>' $tbs_allocat '</td>' >>$du_chk_html
+               echo '<td>' $tbs_free '</td>' >>$du_chk_html
+               echo '<td>' $tbs_use '</td>' >>$du_chk_html
+               echo '<td>' $tbs_free_per '</td>' >>$du_chk_html
+               echo '<td>' $tbs_use_per '</td>' >>$du_chk_html
+            fi
+            i=`expr $i + 1 `
+         done
+         echo "</table>" >> $du_chk_html
+         echo "<table width=100% border=1>" >> $du_chk_html
+         echo "<tr><th colspan=7 style=background-color:#FFECC9>=====THE TOP 3 Folder=====</th></tr>" >> $du_chk_html
+         echo "<tr><th colspan=7>=====Folder size =====</th></tr>" >> $du_chk_html
+         timeout 10 du -sh /ut/*|sort -h -r|head -n 3 > $check_dufile
+         n=`cat $check_dufile | wc -l`
+         i=0
+         while [ "$i" -le "$n" ];
+         do
+            if [ "$i" == 0 ] ; then
+               chk_name='Size'
+               tbs_allocat='Name' 
+               echo '<tr><td style=background-color:#FFECC9>' $chk_name '</td>' >>$du_chk_html
+               echo '<td style=background-color:#FFECC9>' $tbs_allocat '</td>' >>$du_chk_html
+            else
+               chk_name=`timeout 10 cat $check_dufile | awk '{print $1}' | sed -n "${i},${i}p" `
+               tbs_allocat=`timeout 10 cat $check_dufile | awk '{print $2}' | sed -n "${i},${i}p"`
+               echo '<tr><td>' $chk_name '</td>' >>$du_chk_html
+               echo '<td>' $tbs_allocat '</td>' >>$du_chk_html
+            fi
+            i=`expr $i + 1 `
+         done
+         echo "</table>" >> $du_chk_html
+         if [ "$APCHK" == "Y" ]; then
+	    TMEPDIR="/ut/$ZONE/tmp"     
+            if [ "$TEMPDIR" != "" ]; then
+               echo "<table width=100% border=1>" >> $du_chk_html
+               echo "<tr><th colspan=7 style=background-color:#FFECC9>check TEMPDIR : /ut/$ZONE/tmp </th></tr>" >> $du_chk_html
+               timeout 10 du -sh $TEMPDIR/*|sort -h -r|head -n 5 > $check_log
+               n=`cat $check_log | wc -l`
+               i=0
+               while [ "$i" -le "$n" ];
+               do
+                  if [ "$i" == 0 ] ; then
+                     chk_name='Name'
+                     tbs_allocat='SIZE' 
+                     echo '<tr><td style=background-color:#FFECC9>' $chk_name '</td>' >>$du_chk_html
+                     echo '<td style=background-color:#FFECC9>' $tbs_allocat '</td>' >>$du_chk_html
+                  else
+                     chk_name=`cat $check_log | awk '{print $2}' | sed -n "${i},${i}p" `
+                     tbs_allocat=`cat $check_log | awk '{print $1}' | sed -n "${i},${i}p"`
+                     echo '<tr><td>' $chk_name '</td>' >>$du_chk_html
+                     echo '<td>' $tbs_allocat '</td>' >>$du_chk_html
+                  fi
+                  i=`expr $i + 1 `
+               done
+               echo "</table>" >> $du_chk_html
+            else
+               chk_mail="Y"
+               echo "chk_du : " $chk_mail >> $chk_du
+               echo "TEMPDIR not found " >> $chk_du
+               echo "<table width=100% border=1>" >> $du_chk_html
+               echo "<tr><th colspan=7 style=background-color:red>check TEMPDIR : not found </th></tr>" >> $du_chk_html
+               echo "</table>" >> $du_chk_html
+            fi
+	    LOGDIR="/ut/$ZONE/log"
+            if [ "$LOGDIR" != "" ]; then
+               echo "<table width=100% border=1>" >> $du_chk_html
+               echo "<tr><th colspan=7 style=background-color:#FFECC9>check LOGDIR : /ut/$ZONE/log </th></tr>" >> $du_chk_html
+               timeout 10 du -sh $LOGDIR/*| sort -h -r | head -n 5 > $check_log
+               n=`cat $check_log | wc -l`
+               i=0
+               while [ "$i" -le "$n" ];
+               do
+                  if [ "$i" == 0 ] ; then
+                     chk_name='Name'
+                     tbs_allocat='SIZE' 
+                     echo '<tr><td style=background-color:#FFECC9>' $chk_name '</td>' >>$du_chk_html
+                     echo '<td style=background-color:#FFECC9>' $tbs_allocat '</td>' >>$du_chk_html
+                  else
+                     chk_name=`cat $check_log | awk '{print $2}' | sed -n "${i},${i}p" `
+                     tbs_allocat=`cat $check_log | awk '{print $1}' | sed -n "${i},${i}p"`
+                     echo '<tr><td>' $chk_name '</td>' >>$du_chk_html
+                     echo '<td>' $tbs_allocat '</td>' >>$du_chk_html
+                  fi
+                  i=`expr $i + 1 `
+               done
+               echo "</table>" >> $du_chk_html
+            else
+               chk_mail="Y"
+               echo "chk_du : " $chk_mail >> $chk_du
+               echo "LOGDIR not found " >> $chk_du
+               echo "<table width=100% border=1>" >> $du_chk_html
+               echo "<tr><th colspan=7 style=background-color:red>check LOGDIR : not found </th></tr>" >> $du_chk_html
+               echo "</table>" >> $du_chk_html
+   
+            fi
+         fi
+      fi
+      
+   fi
+   #ut 暫存檔空間 (e)
+
+   function chk_du_space {
+      
+      while [ "$i" -le "$n" ];
+      do
+         if [ "$i" == 0 ] ; then
+            chk_name='Filesystem'
+            tbs_allocat='Size' 
+            tbs_free='Used'
+            tbs_use='Avail'
+            tbs_free_per='Use%'
+            tbs_use_per='Mounted on'
+            echo '<tr><td>' $chk_name '</td>' >>$du_chk_html
+            echo '<td>' $tbs_allocat '</td>' >>$du_chk_html
+            echo '<td>' $tbs_free '</td>' >>$du_chk_html
+            echo '<td>' $tbs_use '</td>' >>$du_chk_html
+            echo '<td>' $tbs_free_per '</td>' >>$du_chk_html
+            echo '<td>' $tbs_use_per '</td>' >>$du_chk_html
+         else
+            chk_name=`cat $1 | awk -F , '{print $1}' | sed -n "${i},${i}p" `
+            tbs_allocat=`cat $1 | awk -F , '{print $2}' | sed -n "${i},${i}p" `
+            tbs_free=`cat $1 | awk -F , '{print $3}' | sed -n "${i},${i}p" `
+            tbs_use=`cat $1 | awk -F , '{print $4}' | sed -n "${i},${i}p" `
+            tbs_free_per=`cat $1 | awk -F , '{print $5}' | sed -n "${i},${i}p" `
+            tbs_use_per=`cat $1 | awk -F , '{print $6}' | sed -n "${i},${i}p" `
+            echo '<tr><td>' $chk_name '</td>' >>$du_chk_html
+            echo '<td>' $tbs_allocat '</td>' >>$du_chk_html
+            echo '<td>' $tbs_free '</td>' >>$du_chk_html
+            echo '<td>' $tbs_use '</td>' >>$du_chk_html
+            echo "<td $2>" $tbs_free_per '</td>' >>$du_chk_html
+            echo "<td $2>" $tbs_use_per '</td>' >>$du_chk_html
+         fi
+         i=`expr $i + 1 `
+      done
+      echo "</table>" >> $du_chk_html
+      
+      echo "<table width=100% border=1>" >> $du_chk_html 
+      i=1
+      while [ $i -le $n ]
+        do
+            cd_and_du=`cat $1 | awk -F , '{print $6}' | sed -n $i,${i}p`
+            timeout 10 du -h $cd_and_du 2>&1 | sort -h -r | sed -n '1,11p' > $check_dufile 
+            echo "<tr><th colspan=7 style=background-color:#FFECC9>=====$cd_and_du=====</th></tr>" >> $du_chk_html
+            echo "<tr><th colspan=7 >預估檔案大小前 10 名 ( 權限不足可能影響檢查 )</th></tr> " >> $du_chk_html
+            i2=1
+            n2=`cat $1 | wc -l`
+            while [ $i2 -le $n2 ]
+            do
+               dufile=`cat $check_dufile | awk '{print $1}' | sed -n "${i2},${i2}p"`
+               echo "<tr><td> $dufile </td>" >> $du_chk_html
+               dufile=`cat $check_dufile | awk '{print $2}' | sed -n "${i2},${i2}p"`
+               echo "<td> $dufile </td></tr>" >> $du_chk_html
+               i2=`expr $i2 + 1`
+            done
+            i=`expr $i + 1`
+        done
+      echo "</table>" >> $du_chk_html
+
+   }   
+
+   lim1=`echo "$lim"|awk -F 0 '{print $1}'`
+   df -lh|grep -e "[$lim1-9][0-9]%" > $du_chk
+   dufile=`timeout 10  du -lh | sort -h -r | sed -n 1,11p`
+   i=0
+   n=`cat $du_chk2 | wc -l `
+   if [ "$n" -gt 0 ];then
+   #to html
+      echo "chk_du : Y" >> $chk_du
+      echo ""
+      echo "<table width=100% border=1>" >> $du_chk_html 
+      echo "<tr><th colspan=7 style=background-color:#FFECC9>$time_red 主機磁碟空間</th></tr>" >> $du_chk_html
+      echo "<tr><th colspan=7 >磁碟空間大於<font color=red>$lim%</font></th></tr> " >> $du_chk_html 
+      echo "<tr><th colspan=7 >磁碟空間量小於<font color=red>$lim_max MB</font></th></tr> " >> $du_chk_html 
+      echo ""
+      chk_du_space $du_chk2 "style=background-color:red"
+
+   else
+
+      n=`cat $du_chk3 | wc -l `
+
+      if [ "$n" -gt 0 ] ; then
+         echo "chk_du : Y" >> $chk_du_warn
+	      echo ""
+	      echo "<table width=100% border=1>" >> $du_chk_html
+         echo "<tr><th colspan=7 style=background-color:#FFECC9>$time_red 主機磁碟空間</th></tr>" >> $du_chk_html
+         echo "<tr><th colspan=7 style=background-color:yellow>磁碟空間大於<font color=red>$lim%</font></th></tr> " >> $du_chk_html
+	      echo ""
+         chk_du_space $du_chk3 "style=background-color:yellow"
+      fi
+
+      n=`cat $du_chk_inode | wc -l `
+
+      if [ "$n" -gt 0 ] ; then
+         echo "chk_du : Y" >> $chk_du
+	      echo ""
+	      echo "<table width=100% border=1>" >> $du_chk_html
+         echo "<tr><th colspan=7 style=background-color:#FFECC9>$time_red 主機磁碟空間 inode </th></tr>" >> $du_chk_html
+         echo "<tr><th colspan=7 style=background-color:red>inode 磁碟空間使用大於<font color=red>$lim_inode%</font></th></tr> " >> $du_chk_html
+         echo "<tr><th colspan=7 >inode 磁碟空間量小於<font color=red>$lim_inode_max</font></th></tr> " >> $du_chk_html
+	      echo ""
+         chk_du_space $du_chk_inode "style=background-color:red"
+      else
+         n=`cat $du_chk_inode2 | wc -l `
+         if [ "$n" -gt 0 ] ; then
+            echo "chk_du : Y" >> $chk_du_warn
+	         echo ""
+	         echo "<table width=100% border=1>" >> $du_chk_html
+            echo "<tr><th colspan=7 style=background-color:#FFECC9>$time_red 主機磁碟空間</th></tr>" >> $du_chk_html
+            echo "<tr><th colspan=7 style=background-color:yellow>inode 磁碟空間使用大於<font color=red>$lim_inode%</font></th></tr> " >> $du_chk_html
+	         echo ""
+            chk_du_space $du_chk_inode2 "style=background-color:yellow"
+         fi   
+      fi
+
+      n=`cat $chk_du | grep 'chk_du' | wc -l `
+      
+      if [ "$n" -le 1 ] ; then
+         n=`cat $chk_du_warn | grep chk_du | wc -l `
+         if [ "$n" -le 1 ] ; then
+            echo "<table width=100% border=1>" >> $du_chk_html
+            echo "<tr><th colspan=7 style=background-color:#FFECC9>$time_red 主機磁碟空間</th></tr>" >> $du_chk_html
+            echo "<tr><th colspan=7 >磁碟空間沒有大於<font color=red>$lim%</font></th></tr> " >> $du_chk_html
+            echo "<tr><th colspan=7 >inode 磁碟空間沒有大於<font color=red>$lim_inode%</font></th></tr> " >> $du_chk_html
+	         echo "</table> " >> $du_chk_html
+         fi
+      fi
+
+   fi   
+   timeout 20 find /ut -type f -size +500000k -iname 'sqllog.*.*.log' > $check_r_h
+   timeout 20 find /ut -type f -iname 'sqllog.*.*.log' -amin +60 > $check_r
+   rh_500m_count=`cat $check_r_h | wc -l`
+   rh_1hr_count=`cat $check_r | wc -l`
+   if [ "$rh_500m_count" -gt "0" ] ; then
+      #v1 add (s)
+      chk_Warn="Y"
+      echo "Warn" >> $chk_du
+      echo "chk_Warn : " $chk_Warn
+      #v1 add (e)
+      echo "<table width=100% border=1>" >> $du_chk_html 
+      echo "<tr><th colspan=7 style=background-color:#FFECC9>===== r.h log 大於 500M 檔案 =====</th></tr>" >> $du_chk_html
+      i=1
+      while [ "$i" -le "$rh_500m_count" ] ; 
+         do
+           file_name=`cat $check_r_h | sed -n "${i},${i}p"`
+           echo "<tr><th>" $file_name "</th></tr>" >> $du_chk_html
+           i=`expr $i + 1 `
+         done
+      echo "</table>" >> $du_chk_html
+   elif [ "$rh_500m_count" -lt "1" ] ; then
+      if [ "$rh_1hr_count" -gt "0" ] ; then
+         #v1 add (s)
+         chk_Warn="Y"
+         echo "Warn" >> $chk_du
+         echo "chk_Warn : " $chk_Warn
+         #v1 add (e)
+         echo "<table width=100% border=1>" >> $du_chk_html 
+         echo "<tr><th colspan=7 style=background-color:#FFECC9>===== r.h log 大於 1hr 未持續使用檔案 =====</th></tr>" >> $du_chk_html
+         i=1
+         while [ "$i" -le "$rh_500m_count" ] ; 
+            do
+              file_name=`cat $check_r_h | sed -n "${i},${i}p"`
+              echo "<tr><th>" $file_name "</th></tr>" >> $du_chk_html
+              i=`expr $i + 1 `
+            done
+         echo "</table>" >> $du_chk_html
+      else
+         echo "<table width=100% border=1>" >> $du_chk_html 
+         echo "<tr><th colspan=7 style=background-color:#FFECC9>r.h log 還沒有大於 500M 或 1hr 未持續使用檔案</th></tr>" >> $du_chk_html
+         echo "</table>" >> $du_chk_html
+      fi
+   fi
+
+fi
+

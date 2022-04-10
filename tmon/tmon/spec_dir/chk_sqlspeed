@@ -1,0 +1,95 @@
+#!/bin/ksh
+
+umask 022
+unset SQLPATH
+unset ORACLE_PATH
+
+today=`date +%Y%m%d`
+Time=`date '+%T'`
+#echo $Time
+
+tdatag=`date|awk '{print $2"-"$3}'`
+#echo $tdatag
+
+logdir='/u1/etc/spec_dir/log'
+
+logfile="$logdir/chk_sql.log"
+chk_logfile="$logdir/$today/chk_sql.log"
+
+chk_logdir=/u3/bin/tmon/script/basement
+
+cd $logdir
+
+echo "" > $logdir/testsql.log
+echo "" > $logdir/testsql2.log
+
+i=""
+
+echo "please enter dsdata password"
+read i
+
+sql_count=5
+
+#if [ "sql_count" == "" ] ; then 
+#
+#   sql_count=5
+#
+#fi
+
+
+for (( x=1 ; x<="$sql_count" ; x=x+1 )) 
+do
+      sql=$(
+      echo "
+        set colsep _link_     -- separate columns with a comma
+        set pagesize 0   -- No header rows
+        set trimspool on -- remove trailing blanks
+        set timing on
+        set headsep off  -- this may or may not be useful...depends on your headings.
+        set linesize 180   -- X should be the sum of the column widths
+        
+        spool $logdir/testsql.log
+        --SQL(s)
+        create table test_xcck_0${x} as select * from xcck_t where 1=2;
+        --SQL(e)
+        SPOOL OFF
+        EXIT
+   
+        " | sqlplus -S "du/$i@$ZONE"
+        )
+      echo $sql > /dev/null
+      echo "" 
+      echo "table " table test_xcck_0${x}
+         echo $sql > /dev/null
+         sed -i -e 's/Elapsed/create Elapsed/i' testsql.log
+         check_column=`cat testsql.log`
+         sql_exec_start=`echo $check_column | grep "create Elapsed" `
+         echo $sql_exec_start >> testsql2.log
+      sql=$(
+      echo "
+        set colsep _link_     -- separate columns with a comma
+        set pagesize 0   -- No header rows
+        set trimspool on -- remove trailing blanks
+        set timing on
+        set headsep off  -- this may or may not be useful...depends on your headings.
+        set linesize 180   -- X should be the sum of the column widths
+        
+        spool $logdir/testsql.log
+        --SQL(s)
+        drop table test_xcck_0${x};
+        --SQL(e)
+        SPOOL OFF
+        EXIT
+   
+        " | sqlplus -S "du/$i@$ZONE"
+        )
+      echo $sql > /dev/null
+      echo ""
+      echo "drop" test_xcck_0${x}
+      sed -i -e 's/Elapsed/drop Elapsed/i' testsql.log
+         check_column=`cat testsql.log`
+         sql_exec_start=`echo $check_column | grep "drop Elapsed" `
+         echo $sql_exec_start >> testsql2.log
+
+done
+   

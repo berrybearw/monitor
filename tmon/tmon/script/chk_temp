@@ -1,0 +1,383 @@
+#!/bash/ksh
+
+#v1 check 順序 No.12
+
+. /u1/etc/tmon/tmon.conf
+
+ls_version="1.0"
+
+if [ "$mode_test" == "Y" ] ;then
+   chk_temp_time_go="Y"
+fi
+
+if [ "$chk_temp_time_go" == "Y" ] ;then
+
+   if [ -n "$1" ];then
+      unset SQLPATH
+      unset ORACLE_PATH
+      export ZONE=$1
+   if [ -z "$sqlpass" ];then
+   if [ -z "$2" ];then
+      export sqlpass=du
+   else
+      export sqlpass=$2    	
+   fi
+   fi
+   fi
+   temp_file="/u1/etc/tmon/mon_log/temp.html"
+   p_file="/u1/etc/tmon/mon_log/p.log"
+   
+   #ORACLE TEMP空間檢查
+   
+   #temp 表空間檢查
+   
+   
+   ttsp=`sqlplus -S "du/$sqlpass@$ZONE" << EOF
+   set feedback off
+   set linesize 160
+   col tablespace_name for a16
+   col autoext for a8
+   col USED% for a6
+   SELECT A.tablespace_name,
+          A."TOTAL_SIZE",
+          A."TOTAL_FREE_SIZE",
+          round((A."TOTAL_SIZE" - A."TOTAL_FREE_SIZE"), 2) AS "USED_SIZE",
+          to_char(100-(100*A."TOTAL_FREE_SIZE"/A."TOTAL_SIZE"), '999') AS "USED%",
+          B.AUTOEXTENSIBLE as autoext,
+          B."MAX SIZE" AS "MAX_SIZE"
+   from
+   (select tablespace_name,
+          sum(TABLESPACE_SIZE)/1024/1024 AS "TOTAL_SIZE",
+          sum(FREE_SPACE)/1024/1024 AS "TOTAL_FREE_SIZE"
+   from dba_temp_free_space
+   group by TABLESPACE_NAME) A,
+   (select TABLESPACE_NAME,
+          AUTOEXTENSIBLE,
+          sum(MAXBYTES)/1024/1024 AS "MAX SIZE"
+   from DBA_TEMP_FILES
+   group by TABLESPACE_NAME,AUTOEXTENSIBLE) B
+   where A.TABLESPACE_NAME = B.TABLESPACE_NAME;
+   exit
+EOF
+`
+   ttspov=`echo "$ttsp"|awk '{if($5 >= '$lim') {print $5}}'|grep -Eo "[0-9]+"`
+   
+   if [ -n "$ttspov" ];then
+   echo "<table width=1200 border=1>
+   <tr>
+   <th colspan=8 style="background-color:#FFECC9">ORACLE TEMP表空間檢查</th>
+   </tr>
+   <tr>
+   <td colspan=8 align="center" valign="middle">===TEMP表空間 over <font color=red>$lim%</font>===</td> 
+   </tr>" >> $temp_file
+   
+   ttsp_wc=`echo "$ttsp"|wc -l`
+   i=1
+   while [ "$i" -le "$ttsp_wc" ];
+   do
+      t=1
+      if [ "$i" -eq "1" ];then
+         i=`expr $i + 1`
+      elif [ "$i" -eq "3" ];then
+         i=`expr $i + 1`
+      else
+         echo "<tr>" >> $temp_file
+         ttsp_b=`echo "$ttsp"|sed -n ''$i','$i' p'`
+         while [ "$t" -le 8 ];
+         do
+            ttsp_a=`echo "$ttsp_b"|awk '{print $'$t'}'`
+   	 echo "<td>$ttsp_a</td>" >> $temp_file
+            t=`expr $t + 1`
+         done
+         echo "</tr>" >> $temp_file
+         i=`expr $i + 1`
+      fi
+   done
+   #temp佔用程式檢查
+   
+   o_temp=`sqlplus -S "du/$sqlpass@$ZONE" << EOF
+   set linesize 200 ;
+   set pagesize 5000;
+   col username for a8
+   col sid for 999999
+   col serial# for 999999
+   col process for a8
+   col tablespace for a11
+   set feedback off
+   select * from
+   (select distinct tu.username,se.sid,se.serial#,se.process,tablespace,blocks*16/1024 "USE(MB)",segtype,tu.sql_id
+   from
+   (select username,session_addr,sqladdr,sqlhash,sql_id,tablespace,sum(blocks) blocks,segtype,contents
+   from v\\$tempseg_usage group by username,sqladdr,sqlhash,sql_id,tablespace,segtype,contents,session_addr) tu,
+   (select sql_text,sql_id,address,hash_value from v\\$sql group by sql_text,sql_id,address,hash_value) sq,
+   (select username,machine,saddr,sid,serial#,process from v\\$session) se
+   where tu.sqladdr=sq.address and tu.sql_id=sq.sql_id and tu.sqlhash=sq.hash_value and tu.username=se.username and tu.session_addr=se.saddr
+   order by "USE(MB)" desc) a
+   where ROWNUM < 6;
+   exit
+EOF
+`
+   
+   
+   #echo $o_temp
+   if [ -n "$o_temp" ];then
+   echo "<tr> <td colspan=8 align="center" valign="middle">====TEMP 最大佔用====</td> 
+   </tr>" >> $temp_file
+   o_temp_wc=`echo "$o_temp"|wc -l`
+   i=1
+   while [ "$i" -le "$o_temp_wc" ];
+   do
+      t=1
+      if [ "$i" -eq "1" ];then
+         i=`expr $i + 1`
+      elif [ "$i" -eq "3" ];then
+         i=`expr $i + 1`
+      else
+         echo "<tr>" >> $temp_file
+         o_temp_b=`echo "$o_temp"|sed -n ''$i','$i' p'`
+         while [ "$t" -le 8 ];
+         do
+            o_temp_a=`echo "$o_temp_b"|awk '{print $'$t'}'`
+   	 echo "<td>$o_temp_a</td>" >> $temp_file
+   	 t=`expr $t + 1`
+         done
+         echo "</tr>" >> $temp_file
+         i=`expr $i + 1`
+      fi
+   done
+   fi
+   
+   
+   #TEMP sql語句
+   
+   o_temp_id=`echo "$o_temp"|awk '{print $8}'`
+   o_temp_idn=`echo "$o_temp_id"|wc -l`
+   let o_temp_idn=$o_temp_idn-3
+   
+   if [ -n "$o_temp_idn" ] && [ "$o_temp_idn" -gt "0" ];then
+   echo "<tr>
+   <td colspan=8 align="center" valign="middle">===TEMP TOP SQL===</td> 
+   </tr>
+   <tr><td>SQL_ID</td><td colspan=7>SQL_TEXT</td></tr>" >> $temp_file
+   
+   case $o_temp_idn in
+     1)
+      idn1=`echo $o_temp_id|awk '{print "\047"$3"\047"}'`
+      st1=`sqlplus -S "du/$sqlpass@$ZONE" << EOF
+         set heading off
+         set pagesize 100
+         col sql_text for a50
+         select '<tr><td>'||sql_id||'</td> <td colspan=7>'||sql_text||'</td></tr>'
+         from(
+         select distinct sql_id,sql_text from v\\$sql
+         where sql_id in($idn1));
+         exit
+EOF
+`
+      echo "$st1" >> $temp_file
+     ;;
+   
+     2)
+      idn2=`echo $o_temp_id|awk '{print "\047"$3"\047"",""\047"$4"\047"}'`
+      st2=`sqlplus -S "du/$sqlpass@$ZONE" << EOF
+         set heading off
+         set pagesize 100
+         col sql_text for a50
+         select '<tr><td>'||sql_id||'</td> <td colspan=7>'||sql_text||'</td></tr>'
+         from(
+         select distinct sql_id,sql_text from v\\$sql
+         where sql_id in($idn2));
+         exit
+EOF
+`
+      echo "$st2" >> $temp_file
+     ;;
+   
+     3)
+      idn3=`echo $o_temp_id|awk '{print "\047"$3"\047"",""\047"$4"\047"",""\047"$5"\047"}'`
+      st3=`sqlplus -S "du/$sqlpass@$ZONE" << EOF
+         set heading off
+         set pagesize 100
+         col sql_text for a50
+         select '<tr><td>'||sql_id||'</td> <td colspan=7>'||sql_text||'</td></tr>'
+         from(
+         select distinct sql_id,sql_text from v\\$sql
+         where sql_id in($idn3));
+         exit
+EOF
+`
+      echo "$st3" >> $temp_file
+     ;;
+   
+     4)
+      idn4=`echo $o_temp_id|awk '{print "\047"$3"\047"",""\047"$4"\047"",""\047"$5"\047"",""\047"$6"\047"}'`
+      st4=`sqlplus -S "du/$sqlpass@$ZONE" << EOF
+         set heading off
+         set pagesize 100
+         col sql_text for a50
+         select '<tr><td>'||sql_id||'</td> <td colspan=7>'||sql_text||'</td></tr>'
+         from(
+         select distinct sql_id,sql_text from v\\$sql
+         where sql_id in ($idn4));
+         exit
+EOF
+`
+      echo "$st4" >> $temp_file
+     ;;
+   		     
+     5)
+      idn5=`echo $o_temp_id|awk '{print "\047"$3"\047"",""\047"$4"\047"",""\047"$5"\047"",""\047"$6"\047"",""\047"$7"\047"}'`
+      st5=`sqlplus -S "du/$sqlpass@$ZONE" << EOF
+         set heading off
+         set pagesize 100
+         col sql_text for a50
+         select '<tr><td>'||sql_id||'</td> <td colspan=7>'||sql_text||'</td></tr>'
+         from(
+         select distinct sql_id,sql_text from v\\$sql
+         where sql_id in($idn5));
+         exit
+EOF
+`
+      echo "$st5" >> $temp_file
+   esac
+   fi
+   
+   o_temp_p=`echo "$o_temp"|awk '{print $4}'|grep -Eo "[0-9]+"`
+   
+   if [ -n "$o_temp_p" ];then
+   #echo "<b>=====TEMP 最大運行程式=====</b>"
+   o_temp_head=`ps -ef|head -n 1`
+   o_temp_n=`echo "$o_temp_p"|wc -l`
+   case $o_temp_n in
+    1) p1=`echo $o_temp_p|awk '{print $1}'`
+     p1a=`ps -ef|grep -v grep|grep -w $p1`
+     if [ -n "$p1a" ];then
+        echo "$p1a" >>$p_file
+     fi
+    ;;
+    2) p1=`echo $o_temp_p|awk '{print $1}'`
+     p1a=`ps -ef|grep -v grep|grep -w $p1`
+     p2=`echo $o_temp_p|awk '{print $2}'`
+     p2a=`ps -ef|grep -v grep|grep -w $p2`
+     if [ -n "$p1a" ];then
+        echo "$p1a" >> $p_file
+     fi
+     if [ -n "$p2a" ];then
+        echo "$p2a" >> $p_file
+     fi
+    ;;
+    3) p1=`echo $o_temp_p|awk '{print $1}'`
+     p1a=`ps -ef|grep -v grep|grep -w $p1`
+     p2=`echo $o_temp_p|awk '{print $2}'`
+     p2a=`ps -ef|grep -v grep|grep -w $p2`
+     p3=`echo $o_temp_p|awk '{print $3}'`
+     p3a=`ps -ef|grep -v grep|grep -w $p3`
+     if [ -n "$p1a" ];then
+        echo "$p1a" >> $p_file
+     fi
+     if [ -n "$p2a" ];then
+        echo "$p2a" >> $p_file
+     fi
+     if [ -n "$p3a" ];then
+        echo "$p3a" >> $p_file
+     fi
+    ;;
+    4) p1=`echo $o_temp_p|awk '{print $1}'`
+     p1a=`ps -ef|grep -v grep|grep -w $p1`
+     p2=`echo $o_temp_p|awk '{print $2}'`
+     p2a=`ps -ef|grep -v grep|grep -w $p2`
+     p3=`echo $o_temp_p|awk '{print $3}'`
+     p3a=`ps -ef|grep -v grep|grep -w $p3`
+     p4=`echo $o_temp_p|awk '{print $4}'`
+     p4a=`ps -ef|grep -v grep|grep -w $p4`
+     if [ -n "$p1a" ];then
+        echo "$p1a" >> $p_file
+     fi
+     if [ -n "$p2a" ];then
+        echo "$p2a" >> $p_file
+     fi
+     if [ -n "$p3a" ];then
+        echo "$p3a" >> $p_file
+     fi
+     if [ -n "$p4a" ];then
+        echo "$p4a" >> $p_file
+     fi
+    ;;
+    5) p1=`echo $o_temp_p|awk '{print $1}'`
+     p1a=`ps -ef|grep -v grep|grep -w $p1`
+     p2=`echo $o_temp_p|awk '{print $2}'`
+     p2a=`ps -ef|grep -v grep|grep -w $p2`
+     p3=`echo $o_temp_p|awk '{print $3}'`
+     p3a=`ps -ef|grep -v grep|grep -w $p3`
+     p4=`echo $o_temp_p|awk '{print $4}'`
+     p4a=`ps -ef|grep -v grep|grep -w $p4`
+     p5=`echo $o_temp_p|awk '{print $5}'`
+     p5a=`ps -ef|grep -v grep|grep -w $p5`
+     if [ -n "$p1a" ];then
+        echo "$p1a" >> $p_file
+     fi
+     if [ -n "$p2a" ];then
+        echo "$p2a" >> $p_file
+     fi
+     if [ -n "$p3a" ];then
+        echo "$p3a" >> $p_file
+     fi
+     if [ -n "$p4a" ];then
+        echo "$p4a" >> $p_file
+     fi
+     if [ -n "$p5a" ];then
+        echo "$p5a" >> $p_file
+     fi
+    ;;
+   esac
+   if [ -f "$p_file" ];then
+      p=`cat $p_file`
+      p_wc=`cat $p_file|wc -l`
+      p_head=`ps -ef|head -n 1`
+   fi
+   if [ -n "$p_wc" ];then
+      echo "<tr><td colspan=8 align="center" valign="middle">====TEMP 最大運行程式====</td></tr>" >> $temp_file
+      i=1
+      echo "<tr>" >> $temp_file
+      while [ "$i" -le 8 ];
+      do
+         p_head_b=`echo "$p_head"|awk '{print $'$i'}'`
+         echo "<td>$p_head_b</td>" >> $temp_file
+         i=`expr $i + 1`
+      done
+      echo "</tr>" >> $temp_file
+      i=1
+      while [ "$i" -le "$p_wc" ];
+      do
+        t=1
+        p_b=`echo "$p"|sed -n ''$i','$i' p'`
+        echo "<tr>" >> $temp_file
+        while [ "$t" -le 8 ];
+        do
+   	if [ "$t" -eq 8 ];then
+   	   p_b_b=`echo "$p_b"|awk '{$1=$2=$3=$4=$5=$6=$7="";print $0}'`
+   	   echo "<td>$p_b_b</td>" >> $temp_file
+   	else
+              p_b_b=`echo "$p_b"|awk '{print $'$t'}'`
+   	   echo "<td>$p_b_b</td>" >> $temp_file
+   	fi
+   	t=`expr $t + 1`
+        done
+        echo "</tr>" >> $temp_file
+        i=`expr $i + 1` 
+      done
+   fi
+   #
+   #echo ""
+   #echo ""
+   #echo "================================================================"
+   #  
+   fi
+   echo "</table>" >> $temp_file
+   cat $temp_file
+   fi
+   
+   rm -rf /u1/etc/tmon/mon_log/p.log
+   rm -rf /u1/etc/tmon/mon_log/temp.html
+
+fi

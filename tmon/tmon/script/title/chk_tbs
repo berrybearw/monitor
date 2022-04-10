@@ -1,0 +1,37 @@
+#!/bin/ksh
+
+#v1 check 順序 No.15
+#   check Warn
+
+. /u1/etc/tmon/tmon_title.conf
+
+dir_date=`date '+%Y%m%d'`
+#cpu_file_chk="/u3/log/mon_log/chk/$dir_date/pscpu.log"
+
+chk_tbs_Y=`cat $chk_tbs | grep "Y" | wc -l`
+
+chk_tbs_Warn=`cat $chk_tbs | grep "Warn" | wc -l`
+
+# Apache 存活
+echo " <tr> "
+if [ "$chk_tbs_Warn" -gt "0" ] ; then
+
+     echo " 
+          <th colspan=3 style="background-color:yellow">整體 表空間 </th>
+          "
+else
+     echo " 
+          <th colspan=3 style="background-color:#FFECC9">整體 表空間 </th>
+          "
+fi
+
+echo " 
+     <th colspan=5 style="background-color:#FFECC9">大約超過 80 % 需注意 ， 100 % 程式會異常 </th>
+     </tr>
+     "
+echo " <tr> "
+
+
+#old 2021/05/20 mark  (e)
+
+#rm -rf /u3/log/mon_log/chk_tbs.log
