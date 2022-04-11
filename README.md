@@ -47,3 +47,18 @@ Mem 用量前幾名程序 : ps , sed , awk
 ```
 ## 展示
 > ![image](https://user-images.githubusercontent.com/96226780/162616711-5977f1ae-1426-44c7-91a6-34887060ca93.png)
+* Disk 檢查 : use , free , available ， 符合條件值顯示占用空間大小前幾名檔案
+```
+Linux 使用到技術
+use                : df -l , awk
+inode              : df -i , awk
+Disk 用量前幾名檔案 : du , sed
+```
+* Process 檢查 : 長時間程序 
+```
+Linux 使用到技術 : ps , awk
+```
+* IO 檢查 : io 用量
+```
+Linux 使用到技術 : iowait
+```
