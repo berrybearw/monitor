@@ -62,3 +62,24 @@ Linux 使用到技術 : ps , awk
 ```
 Linux 使用到技術 : iowait
 ```
+* DB alive 檢查 : DB listener
+```
+DB 使用到技術
+login 檢查 error
+```
+* DB tablespace 檢查 : 表空間用量 , 檢查超過一天物件 , 檢查物件大小前 10 名 
+```
+DB 使用到技術
+```
+* DB SQL active 檢查 : 找到 SQL 執行時間有超出條件
+```
+DB 使用到技術
+```
+* DB lock 檢查 : 
+```
+DB 使用到技術
+```
+* DB redo 檢查
+```
+DB 使用到技術
+```
