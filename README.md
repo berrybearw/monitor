@@ -54,13 +54,18 @@ use                : df -l , awk
 inode              : df -i , awk
 Disk 用量前幾名檔案 : du , sed
 ```
+## 展示
+> ![image](https://user-images.githubusercontent.com/96226780/163405573-294050ea-9d0f-40fa-b3c5-b55696c10461.png)
+> ![image](https://user-images.githubusercontent.com/96226780/163405723-fbbca002-974c-4570-9f84-d3da82153b2c.png)
 * Process 檢查 : 長時間程序 
 ```
-Linux 使用到技術 : ps , awk
+Linux 使用到技術 
+Process 長時間程序 ps , awk
 ```
 * IO 檢查 : io 用量
 ```
-Linux 使用到技術 : iowait
+Linux 使用到技術 
+IO 檢查 iowait
 ```
 * DB alive 檢查 : DB listener
 ```
@@ -70,7 +75,11 @@ login 檢查 error
 * DB tablespace 檢查 : 表空間用量 , 檢查超過一天物件 , 檢查物件大小前 10 名 
 ```
 DB 使用到技術
+tablespace : with , union , dba_data_files , dba_free_space , DBA_RECYCLEBIN , sys.v_$TEMP_SPACE_HEADER
 ```
+## 展示
+> ![image](https://user-images.githubusercontent.com/96226780/163406754-4dc909c2-184e-4044-b905-c5efa43ffffe.png)
+> ![image](https://user-images.githubusercontent.com/96226780/163406798-19d4f455-4242-4e73-b7dd-7bbe95fc7b8a.png)
 * DB SQL active 檢查 : 找到 SQL 執行時間有超出條件
 ```
 DB 使用到技術
