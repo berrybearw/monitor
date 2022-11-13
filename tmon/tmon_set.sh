@@ -3,7 +3,7 @@
 echo " 不輸入請輸入 enter , 跳出請輸入 ctrl + c "
 echo " "
 section=""
-
+cd /u1/etc/tmon
 if [ "$section" == "" ] ; then
    echo "請選擇設定項目 "
    echo " 1. mail   : 1 "
@@ -13,55 +13,83 @@ fi
 
 if [ "$section" == 1 ] ; then
 
-   new=f
-   old=`cat tmon.conf | grep chk_sent | grep -v '#' | awk -F = '{print $2}'`
-   echo " "
-   echo " 請輸入 多久發一封警告信 : "
-   echo " 原 mail chk_sent : " $old
-   read new
-   #stty echo
+   name="send_mail"
+   num=3
+   i=1
+   while [ $i -le $num ];
+   do
+      if [ "$i" -le 10 ]; then
+         arr[$i]='chk_'$name'_0'$i
+      else
+         arr[$i]='chk_'$name'_'$i
+      fi
+      i=$(($i+1))
    
-   if [ "$new" == "" ] ; then 
-      new=$old
-   else
-      sed -i -e "s/chk_sent=\"$old\"/chk_sent=\"$new\"/" tmon.conf
-   fi
-   
-   new=`cat tmon.conf | grep chk_sent | grep -v '#' | awk -F = '{print $2}'`
-   echo " 新 mail chk_sent : " $new
+   done
 
-   new=f
-   old=`cat tmon.conf | grep mail_ser | grep -v '#' | awk -F \" '{print $2}'`
-   echo " "
-   echo "1. 請輸入 mail server : "
-   echo " 原 mail server : " $old
-   read new
-   #stty echo
+   arr_01=("chk_send_mail_time" "chk_sent" "chk_sent_warn" )
+
+   i=1
+   j=0
+   while [ $i -le ${#arr[@]} ] 
+   do
    
-   if [ "$new" == "" ] ; then 
-      new=$old
-   else
-      sed -i -e "s/mail_ser=\"$old\"/mail_ser=\"$new\"/" tmon.conf
-   fi
+      new=f
+      set=${arr_01[$j]}
+      set_01=${arr[$i]}
+      list=`cat tmon.conf | grep $set_01 `
+      old=`cat tmon.conf | grep -w $set | grep -v '#' | awk -F \" '{print $2}'`
+      echo " "
+      echo "$i." $list
+      echo " 原設定 : " $old
+      read new
+      
+      if [ "$new" == "" ] ; then 
+         new=$old
+      else
+         sed -i -e "s/$set=\"$old\"/$set=\"$new\"/" tmon.conf
+      fi
+      
+      new=`cat tmon.conf | grep -w $set | grep -v '#' | awk -F \" '{print $2}'`
+      echo " 新設定 : " $new
    
-   new=`cat tmon.conf | grep mail_ser | grep -v '#' | awk -F \" '{print $2}'`
-   echo " 新 mail server : " $new
+      i=$(($i+1))
+      j=$(($j+1))
    
-   new=f
-   old=`cat tmon.conf | grep ck_auth | grep -v '#' | awk -F \" '{print $2}'`
-   
-   echo '2. smtp寄件認證，預設為"Y"郵件主機不需認証請改"N" '
-   echo ' 原 設定 : ' $old
-   read new
-   
-   if [ "$new" == "" ] ; then 
-      new=$old
-   else
-      sed -i -e "s/ck_auth=\"$old\"/ck_auth=\"$new\"/" tmon.conf
-   fi
-   
-   new=`cat tmon.conf | grep ck_auth | grep -v '#' | awk -F \" '{print $2}'`
-   echo " 新 設定 : " $new
+   done
+
+   #new=f
+   #old=`cat tmon.conf | grep mail_ser | grep -v '#' | awk -F \" '{print $2}'`
+   #echo " "
+   #echo "1. 請輸入 mail server : "
+   #echo " 原 mail server : " $old
+   #read new
+   ##stty echo
+   #
+   #if [ "$new" == "" ] ; then 
+   #   new=$old
+   #else
+   #   sed -i -e "s/mail_ser=\"$old\"/mail_ser=\"$new\"/" tmon.conf
+   #fi
+   #
+   #new=`cat tmon.conf | grep mail_ser | grep -v '#' | awk -F \" '{print $2}'`
+   #echo " 新 mail server : " $new
+   #
+   #new=f
+   #old=`cat tmon.conf | grep ck_auth | grep -v '#' | awk -F \" '{print $2}'`
+   #
+   #echo '2. smtp寄件認證，預設為"Y"郵件主機不需認証請改"N" '
+   #echo ' 原 設定 : ' $old
+   #read new
+   #
+   #if [ "$new" == "" ] ; then 
+   #   new=$old
+   #else
+   #   sed -i -e "s/ck_auth=\"$old\"/ck_auth=\"$new\"/" tmon.conf
+   #fi
+   #
+   #new=`cat tmon.conf | grep ck_auth | grep -v '#' | awk -F \" '{print $2}'`
+   #echo " 新 設定 : " $new
    
    new=f
    old=`cat tmon.conf | grep mail_to | grep -v '#' | awk -F \" '{print $2}'`

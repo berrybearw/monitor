@@ -20,8 +20,6 @@ time_red=`date +%Y/%m/%d-%H:%M:%S`
 
 if [ "$mode_test" == "Y" ] ;then
    chk_tbs_time_go="Y"
-   tbs_lim="50"
-   tbs_lim_use="1024"
    DBCHK="Y"
 fi
 
@@ -40,7 +38,7 @@ function chk_tbs_ok {
       <th colspan=7 style="background-color:#FFECC9">'$time_red' 表空間使用率</th>
       </tr>
       <tr>
-      <td colspan=7 align="center" valign="middle" style="background-color:#FFECC9" >DB tablespace use not over '$tbs_lim' % </td>
+      <td colspan=7 align="center" valign="middle" >DB tablespace use not over '$tbs_lim' % </td>
       </tr>
       </table>
       ' >> $tbs_chk_html
@@ -84,10 +82,17 @@ function chk_tbs_space {
    	      echo '<td>' $tbs_free_per '</td>' >>$tbs_chk_html
    	      echo '<td>' $tbs_use_per '</td>' >>$tbs_chk_html
    	      echo '<td>' $tbs_max '</td></tr>' >>$tbs_chk_html
+            if [ "$mode_test" == "Y" ]; then
+               echo "tablespace name : " $chk_name
+               echo "use % : " $tbs_use_per
+               echo "free (MB) : " $tbs_free
+               echo "Max (MB) : " $tbs_max
+            fi
          fi
          i=`expr $i + 1 `
       done
       echo "</table>" >> $tbs_chk_html
+
 }
 
 if [ "$CHKTIME" == "Y" ] ; then
@@ -202,10 +207,35 @@ if [ "$DBCHK" == "Y" ] ; then
       <td colspan=7 align="center" valign="middle"> TABLESPACE </td>
       </tr>' >> $tbs_chk_html
       check_log="cat $chk_logdir/q_tbs_${tmonname}.log"
-      chk_tbs_space  # space function
+      if [ "$mode_test" == "Y" ]; then
+         echo "chk_tbs     : " $chk_mail
+         echo "tbs_lim %   : " $tbs_lim 
+         echo "tbs_lim_use : " $tbs_lim_use " MB"
+         echo ""
+         chk_tbs_space  # space function
+         echo "|----------|"
+         echo "資料庫使用空間 use over '$tbs_lim' %"
+         echo "free is lower than '$tbs_lim_use' MB"
+         echo "|----------|"
+         echo "請下載 : " $tbs_chk_html
+      else
+         chk_tbs_space  # space function
+      fi   
 
    else
-      chk_tbs_ok  # OK function
+      if [ "$mode_test" == "Y" ]; then
+         echo "chk_tbs     : " $chk_mail
+         echo "tbs_lim %   : " $tbs_lim 
+         echo "tbs_lim_use : " $tbs_lim_use
+         echo ""
+         echo "|----------|"
+         echo "資料庫使用空間 檢查 ok"
+         echo "|----------|"
+         chk_tbs_ok  # OK function
+         echo "請下載 : " $tbs_chk_html
+      else
+         chk_tbs_ok  # OK function
+      fi      
    fi
 
 fi

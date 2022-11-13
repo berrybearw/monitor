@@ -56,6 +56,7 @@ if [ "$chk_cron_time_go" == "Y" ] ;then
  
    if [ ! -d "/u1/etc/tmon/mon_log/chk/$dir_date" ] ; then
       mkdir /u1/etc/tmon/mon_log/chk/$dir_date
+      chmod 777 /u1/etc/tmon/mon_log/chk/$dir_date
    fi
 
    t100backup_log="/u1/etc/tmon/mon_log/chk/$dir_date/t100backup.log"

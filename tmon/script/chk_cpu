@@ -20,6 +20,7 @@ ls_version="1.2"
 
 if [ ! -d /u1/etc/tmon/mon_log/chk/$dir_date ] ; then
    mkdir /u1/etc/tmon/mon_log/chk/$dir_date
+   chmod 777 /u1/etc/tmon/mon_log/chk/$dir_date
 fi   
 
 tmonname=$TMONNAME
@@ -27,9 +28,10 @@ mode_test=$MODE_TEST
 
 dir_date=`date '+%Y%m%d'`
 file=`date '+%Y%m%d'`
+date_file=`date '+%H%M'`
 psmem_file_chk="/u1/etc/tmon/mon_log/chk/$dir_date/psmem.log"
-cpu_file_chk="/u1/etc/tmon/mon_log/chk/$dir_date/pscpu.log"
-cpu_file="/u1/etc/tmon/mon_log/cpu.log"
+cpu_file_chk="/u1/etc/tmon/mon_log/chk/$dir_date/pscpu_${date_file}.log"
+cpu_file="/u1/etc/tmon/mon_log/cpu_chk_${tmonname}.log"
 cpu_chk_dir="/u1/etc/tmon/script/basement"
 cpu_file2="$cpu_chk_dir/chk_cpu.log"
 cpu_chk_list="/u1/etc/tmon/script/basement/cpu_chk_list_${tmonname}.log"
@@ -99,31 +101,32 @@ if [ "$CHKTIME" == "Y" ] ; then
 fi
 
 #判斷 start (s)
-if [ $(echo "$cpu_lim_idle > $cpu_idle"|bc) -eq 1 ] ; then
+if [ $(echo "$cpu_lim_load < $cpu_load"|bc) -eq 1 ] ; then
    chk_cpu_time_go="Y"
-   chk_mail="Y"
+   chk_mail="warn"
    echo $time_red >> $chk_cpu
    echo "chk_cpu_cpu : " $chk_mail >> $chk_cpu
-   echo "cpu_idle : " $cpu_idle >> $chk_cpu
-   echo "cpu_lim_idle : " $cpu_lim_idle >> $chk_cpu
-   echo "檢查 CPU idle 低於 " $cpu_lim_idle >> $chk_cpu
-   timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu  > $cpu_chk_list
-else
-   if [ $(echo "$cpu_lim_load < $cpu_load"|bc) -eq 1 ] ; then
+   echo "cpu_load : " $cpu_load >> $chk_cpu
+   echo "cpu_lim_load : " $cpu_lim_load >> $chk_cpu
+   echo "檢查 CPU 5 min load average 高於 " $cpu_lim_load >> $chk_cpu
+   timeout 20 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu  > $cpu_chk_list
+else   
+   if [ $(echo "$cpu_lim_idle > $cpu_idle"|bc) -eq 1 ] ; then
       chk_cpu_time_go="Y"
       chk_mail="Y"
       echo $time_red >> $chk_cpu
       echo "chk_cpu_cpu : " $chk_mail >> $chk_cpu
-      echo "cpu_load : " $cpu_load >> $chk_cpu
-      echo "cpu_lim_load : " $cpu_lim_load >> $chk_cpu
-      echo "檢查 CPU 5 min load average 高於 " $cpu_lim_load >> $chk_cpu
-      timeout 10 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu  > $cpu_chk_list
+      echo "cpu_idle : " $cpu_idle >> $chk_cpu
+      echo "cpu_lim_idle : " $cpu_lim_idle >> $chk_cpu
+      echo "檢查 CPU idle 低於 " $cpu_lim_idle >> $chk_cpu
+      timeout 20 ps -eo %cpu,%mem,pid,tt,stime,time,cmd --sort=-%cpu  > $cpu_chk_list
    fi
+
 fi
 
 if [ "$mode_test" == "Y" ] ; then
 
-   if [ "$chk_mail" == "Y" ] ; then
+   if [ "$chk_mail" == "Y" ] || [ "$chk_mail" == "warn" ]; then
       echo "cpu_idle : " $cpu_idle
       echo "cpu idle 不可低於 " $cpu_lim_idle
       echo "cpu_load : " $cpu_load
@@ -187,6 +190,7 @@ if [ "$chk_cpu_time_go" == "Y" ] ;then
         #echo "@@@ "$i  #debug 檢查 pid
         #cat $cpu_chk_list | grep $i
         cat $cpu_chk_list | grep $i >> $cpu_file
+        sh /u1/etc/tmon/kill.sh $i  #@@
      fi
    done
    

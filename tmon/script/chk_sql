@@ -45,16 +45,20 @@ if [ "$DBCHK" == "Y" ] ; then
    SELECT
         sql.sql_id
    FROM
-        v\$session se,
-        v\$process pr,
-        v\$sqlarea sql     
+        v\$session se
+        --v\$process pr,
+        --v\$sqlarea sql     
    WHERE
+        TYPE <> 'BACKGROUND'
+        AND SQL_HASH_VALUE>0
+        AND
         LAST_CALL_ET > $lim_sec
-        AND se.program NOT LIKE 'oracle@\%'
-        AND pr.addr = se.paddr 
-        AND sql.hash_value = se.sql_hash_value
+        --AND se.program NOT LIKE 'oracle@\%'
+        --AND pr.addr = se.paddr 
+        --AND sql.hash_value = se.sql_hash_value
         --AND se.status = 'ACTIVE'
-   ORDER BY se.LAST_CALL_ET;
+   --ORDER BY se.LAST_CALL_ET;
+     ;
    SPOOL OFF ;
 %%
    cat ${chk_logdir}/q_run_sql_${tmonname}.out

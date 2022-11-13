@@ -8,19 +8,35 @@ ls_version="1.2"
 #1.2 2021/12/05 by 12731 send mail check by file
 #1.3 2021/12/13 by 12731 AP 主機辨識確認 , tmon 環境變數讀取確認
 
+name=`tr -dc A-Za-z0-9_ < /dev/urandom | head -c 3 | xargs`
+export TMONNAME=$name
+
+tmonname=$TMONNAME
+
+#確認是否為 AP 主機 (s)  #1.3 add
+ap_fgl=`timeout 10 ps -ef | grep -v grep | grep fglrun | wc -l`
+
+if [ `echo "$ap_fgl >= 1" |bc ` -eq 1 ] ; then 
+   export APCHK="Y"
+else
+   export APCHK="N"
+fi
+
+#確認是否為 AP 主機 (e)
+
 case "$1" in
 
-"-v" ) 
+"v" ) 
     echo "tmon version : "
     sed -n '/'${ls_version}' -s/,/'${ls_version}' -e/p' /u1/etc/tmon/readme.txt > output.test ; cat output.test
 exit ;;
 
-"-set" ) 
+"set" ) 
     echo "tmon set : "
     sh /u1/etc/tmon/tmon_set.sh
 exit ;;
 
-"-l" ) 
+"l" ) 
     echo "tmon 為幫忙檢查系統上是否有 CPU 滿 , Mem 滿 等"
     echo " "
     echo "查看版本內容 -v " 
@@ -46,10 +62,56 @@ exit ;;
      sh /u1/etc/tmon/script/chk_mem
 exit ;;
 
+"du" )
+     echo "檢查 磁碟空間使用"
+     mode_test="Y"
+     export MODE_TEST=$mode_test
+     sh /u1/etc/tmon/script/chk_du
+exit ;;  
+
+"tbs" )
+     echo "檢查 db table space "
+     mode_test="Y"
+     export MODE_TEST=$mode_test
+     sh /u1/etc/tmon/script/chk_tbs
+exit ;;
+
+"ps" )
+     echo "檢查 process 執行時間"
+     mode_test="Y"
+     export MODE_TEST=$mode_test
+     sh /u1/etc/tmon/script/chk_ps
+exit ;;
+
+"spec" )
+	echo "檢查 system spec (規格)"
+     mode_test="Y"
+     export MODE_TEST=$mode_test
+     sh /u1/etc/tmon/script/chk_spec
+exit ;;
+
+"redo" )
+   echo "檢查 DB redo"
+     mode_test="Y"
+     export MODE_TEST=$mode_test
+     sh /u1/etc/tmon/script/chk_redosd $ORACLE_SID
+     sh /u1/etc/tmon/script/chk_redosw $ORACLE_SID
+exit ;;
+
+"chk" )
+      echo "檢查資源夠不夠"
+      mode_test="Y"
+      export MODE_TEST=$mode_test
+      sh /u1/etc/tmon/script/chk_cpu
+      sh /u1/etc/tmon/script/chk_mem
+      sh /u1/etc/tmon/script/chk_du
+      sh /u1/etc/tmon/script/chk_tbs
+exit ;;
+
 *) 
-   echo "tmon -v : 可查看 tmon 版本"
-   echo "tmon manu : 日常檢查執行 "
-   echo "tmon -l : 查詢 tmon 檢查項目有哪些 "
+   echo "tmon2 -v : 可查看 tmon 版本"
+   echo "tmon2 manu : 日常檢查執行 "
+   echo "tmon2 -l : 查詢 tmon 檢查項目有哪些 "
 exit ;;
 
 esac
@@ -61,12 +123,12 @@ fi
 mode_test="N"
 
 #同一時間只能有一個 tmon 執行 (s)
-ps -ef | grep -Ev "(grep|tes)" | grep "tmon manu" > /u1/etc/tmon/mon_log/tmon.log
+ps -ef | grep -Ev "(grep|tes|bin|cd)" | grep "tmon manu" > /u1/etc/tmon/mon_log/tmon.log
 tmon_chk_num=`cat /u1/etc/tmon/mon_log/tmon.log | grep "tmon manu" | wc -l`
 echo " "
 #echo "DEBUG : " $tmon_chk_num
 
-if [ "$tmon_chk_num" -gt "3" ] ; then
+if [ "$tmon_chk_num" -gt "1" ] ; then
    echo " tmon is active , please wait "
    exit
 fi
@@ -78,23 +140,6 @@ if [ "$2" == "tes" ] ; then
    export MODE_TEST=$mode_test
    echo "@@ MODE_TEST " $MODE_TEST
 fi
-
-
-name=`tr -dc A-Za-z0-9_ < /dev/urandom | head -c 3 | xargs`
-export TMONNAME=$name
-
-tmonname=$TMONNAME
-
-#確認是否為 AP 主機 (s)  #1.3 add
-ap_fgl=`timeout 10 ps -ef | grep fglrun | wc -l`
-
-if [ "$ap_fgl" -gt "2" ] ; then 
-   export APCHK="Y"
-else
-   export APCHK="N"
-fi
-
-#確認是否為 AP 主機 (e)
 
 export TMONCHK="N" #1.3 add
 
@@ -111,6 +156,7 @@ log_dir="/u1/etc/tmon/mon_log"
 alert_dir="/u1/etc/tmon/mon_log/"
 tmon_chk_dir="/u1/etc/tmon/basement"
 tmon_chk_dir2="/u1/etc/tmon/script/basement"
+alert_bodyname="al_body.html"
 alert_filename="al_file.html"
 alert_filenamexml="al_file.xml"
 tes_alert_name="tes_al_file_${tmonname}.html"
@@ -130,12 +176,14 @@ week_of_month=`expr $week_of_month / 7`
 week_of_month=`expr $week_of_month + 1`
 #判斷目前時間
 file=`date '+%Y%m%d'`
+file2=`date '+%H%M'`
 on_week=`date +"%a%H%M"`
 on_day=`date +"%H%M"`
 on_hour=`date +"%M"`
 
 if [ ! -d "$log_dir/$file" ] ; then
    mkdir $log_dir/$file
+   chmod 777 $log_dir/$file
 fi
 
 echo "" >> $log_dir/$file/"$today".log
@@ -148,6 +196,7 @@ unset ORACLE_PATH
 
 if [ ! -d "$log_dir/$file" ]; then
    mkdir $log_dir/$file
+   chmod 777 $log_dir/$file
 fi
 
 #檢查 time 有在設定內 (s)
@@ -156,6 +205,8 @@ time_chk=`date '+%H'`        # hour
 chk_time_hr="N"              # time hour check
 chk_time="N"                 # time final check
 #檢查 time 有在設定內 (e)
+
+echo $time_chk ":" $time_chk_min
 
 chk_mail="N"                 #警急寄信 Y 
 chk_Warn="N"                 #警戒值 寄信 Y
@@ -169,6 +220,7 @@ lon_file="chk_sql_log.html"
 
 
 rm -f "$log_dir"/"$alert_filename"
+rm -f "$log_dir/$alert_bodyname"
 rm -f "$log_dir"/"$alert_filenamexml"
 rm -f /u1/etc/tmon/mon_log/title/*.log
 rm -f $TEMPDIR/${lon_file}
@@ -267,19 +319,22 @@ echo "$ck"
 
 if [ -n "$ck1" ];then
    chk_mail="Y"
-   echo "chk_mail : " $chk_mail >> $chk_mail_file
+   echo "chk_oracle : " $chk_mail >> $chk_mail_file  
+   echo "DB ERROR:The database is down" >> $chk_mail_file 
    oracle_chk="Y"
    echo "DB ERROR:The database is down" >> $log_dir/"$today".log
    echo "DB ERROR:The database is down" >> $alert_file
 elif [ -n "$ck2" ];then
    chk_mail="Y"
-   echo "chk_mail : " $chk_mail >> $chk_mail_file
+   echo "chk_oracle : " $chk_mail >> $chk_mail_file
+   echo "DB ERROR:no listener" >> $chk_mail_file
    oracle_chk="Y"
    echo "DB ERROR:no listener" >> $log_dir/"$today".log
    echo "DB ERROR:no listener" >> $alert_file
 elif [ -n "$ck3" ];then
    chk_mail="Y"
-   echo "chk_mail : " $chk_mail >> $chk_mail_file
+   echo "chk_oracle : " $chk_mail >> $chk_mail_file   
+   echo "DB ERROR:invalid username/password" >> $chk_mail_file
    oracle_chk="Y"
    echo "DB ERROR:invalid username/password" >> $log_dir/"$today".log
    echo "DB ERROR:invalid username/password" >> $alert_file
@@ -352,12 +407,12 @@ export tbs
 ##################################################################################################
 
 #檢查cpu 負載
-
+echo "MODE_TEST : " $mode_test
 echo "檢查cpu 負載 s"
 if [ "$cc" == 1 ];then
    if [ "$1" == "manu" ];then
       sh /u1/etc/tmon/script/chk_cpu >/dev/null
-      cat $tmon_chk_dir2/cpu_chk_${tmonname}.html >> $alert_file
+      cat $tmon_chk_dir2/cpu_chk_${tmonname}.html >> $log_dir/$alert_bodyname
       cat $tmon_chk_dir2/cpu_chk_${tmonname}.html >> $log_dir/"$today".log
    fi
 fi
@@ -371,7 +426,7 @@ if [ "$mem" == 1 ];then
    if [ "$CHK_MODE" == "manu" ];then
       sh /u1/etc/tmon/script/chk_mem
       echo "===記憶體使用率==== " >> $log_dir/"$today".log 
-      cat $tmon_chk_dir2/mem_chk_${tmonname}.html >> $alert_file
+      cat $tmon_chk_dir2/mem_chk_${tmonname}.html >> $log_dir/$alert_bodyname
       cat $tmon_chk_dir2/mem_chk_${tmonname}.html >> $log_dir/"$today".log
    fi 
 fi
@@ -384,7 +439,7 @@ if [ "$du" == 1 ];then
    export lim=$lim
    if [ "$CHK_MODE" == "manu" ];then
       sh /u1/etc/tmon/script/chk_du >/dev/null
-      cat $tmon_chk_dir2/du_chk_${tmonname}.html >> $alert_file
+      cat $tmon_chk_dir2/du_chk_${tmonname}.html >> $log_dir/$alert_bodyname
       cat $tmon_chk_dir2/du_chk_${tmonname}.html >> $log_dir/"$today".log
    fi 
    echo "磁碟空間使用檢查 e"
@@ -397,7 +452,7 @@ if [ "$tbk" == 1 ];then
    export sqlpass=$sqlpass
    if [ "$CHK_MODE" == "manu" ];then
       sh /u1/etc/tmon/script/chk_tbs >/dev/null
-      cat $tmon_chk_dir2/tbs_chk_${tmonname}.html >> $alert_file
+      cat $tmon_chk_dir2/tbs_chk_${tmonname}.html >> $log_dir/$alert_bodyname
       cat $tmon_chk_dir2/tbs_chk_${tmonname}.html >> $log_dir/"$today".log
    fi
 fi
@@ -431,7 +486,7 @@ if [ "$lk" == 1 ];then
          cat "$tmp_file" >> $log_dir/"$today".log
       else
          sh /u1/etc/tmon/script/chk_cron |tee $tmp_file > /dev/null
-         cat "$tmp_file" >> $alert_file
+         cat "$tmp_file" >> $log_dir/$alert_bodyname
          cat "$tmp_file" >> $log_dir/"$today".log
       fi
    fi
@@ -523,7 +578,7 @@ if [ "$err" == 1 ];then
       cat "$tmp_file" >> $log_dir/"$today".log
    elif [ "$1" == "manu" ];then
       sh /u1/etc/tmon/script/chk_err |tee $tmp_file > /dev/null
-      cat "$tmp_file" >> $alert_file
+      cat "$tmp_file" >> $log_dir/$alert_bodyname
       cat "$tmp_file" >> $log_dir/"$today".log
    fi
 fi
@@ -553,7 +608,7 @@ if [ "$rd" == 1 ];then
       cat "$tmp_file" >> $log_dir/"$today".log
    elif [ "$1" == "manu" ];then
       sh /u1/etc/tmon/script/chk_redosw $ZONE |tee $tmp_file > /dev/null
-      cat "$tmp_file" >> $alert_file
+      cat "$tmp_file" >> $log_dir/$alert_bodyname
       cat "$tmp_file" >> $log_dir/"$today".log
    fi
 fi
@@ -616,7 +671,7 @@ if [ "$undok" == 1 ];then
       cat "$tmp_file" >> $log_dir/"$today".log
    elif [ "$1" == "manu" ];then
       sh /u1/etc/tmon/script/chk_undo $ZONE |tee $tmp_file > /dev/null
-      cat "$tmp_file" >> $alert_file
+      cat "$tmp_file" >> $log_dir/$alert_bodyname
       cat "$tmp_file" >> $log_dir/"$today".log
    fi
 fi
@@ -646,7 +701,7 @@ if [ "$tempk" == 1 ];then
       cat "$tmp_file" >> $log_dir/"$today".log
    elif [ "$1" == "manu" ];then
       sh /u1/etc/tmon/script/chk_temp $ZONE |tee $tmp_file > /dev/null
-      cat "$tmp_file" >> $alert_file
+      cat "$tmp_file" >> $log_dir/$alert_bodyname
       cat "$tmp_file" >> $log_dir/"$today".log
    fi
 fi
@@ -672,7 +727,7 @@ if [ "$psk" == 1 ];then
       cat "$tmp_file" >> $log_dir/"$today".log
    elif [ "$1" == "manu" ];then
       sh /u1/etc/tmon/script/chk_ps >/dev/null
-      cat $tmon_chk_dir2/ps_chk_${tmonname}.html >> $alert_file
+      cat $tmon_chk_dir2/ps_chk_${tmonname}.html >> $log_dir/$alert_bodyname
       cat $tmon_chk_dir2/ps_chk_${tmonname}.html >> $log_dir/"$today".log
    fi
 fi
@@ -713,10 +768,18 @@ else
       #tar zcvf $TEMPDIR/cpu_mem_${check_file}.tar.gz $TEMPDIR/cpu_${check_file} $TEMPDIR/mem_${check_file} 2>/dev/null
    fi
 fi
-attach_file="$TEMPDIR/${mail_file};$alert_file;"
+attach_file="$TEMPDIR/${mail_file};$alert_file;$TEMPDIR/$lon_file;"
 attach_file=$attach_file"$tmon_chk_dir2/cpu_chk_${tmonname}.html;$tmon_chk_dir2/chk_cpu_list.log;"
 attach_file=$attach_file"$tmon_chk_dir2/mem_chk_${tmonname}.html;$tmon_chk_dir2/psmem_list.log"
 attach_file=$attach_file"$tmon_chk_dir2/du_chk_${tmonname}.html;$tmon_chk_dir2/tbs_chk_${tmonname}.html"
+if [ -f $log_dir/chk/$file/*$file2* ] ; then
+   bak_file="mkdir $log_dir/$file/$file2;cp -p $log_dir/mon_log/*_chk_*.log $log_dir/$file/$file2/. 2>/dev/null ;
+             cp -p $TEMPDIR/${mail_file} $log_dir/$file/$file2/${mail_file} 2>/dev/null;
+             cp -p $alert_file $log_dir/$file/$file2/${file2}_alert.html 2>/dev/null;
+             cp -p $TEMPDIR/$lon_file $log_dir/$file/$file2/$lon_file 2>/dev/null;
+             cp -p $tmon_chk_dir2/*_chk_${tmonname}.html $log_dir/$file/$file2/. 2>/dev/null;
+             "
+fi
 echo "attach_file : " $attach_file
 
 if [ "$chk_mail" == "N" ] ; then 
@@ -743,7 +806,10 @@ elif [ "$chk_Warn_num" -ge 1 ] ; then
 
    if [ "$time_chk_min" == "00" ] ; then
       chk_time="Y"
-      chk_Warn="Y"
+      if [ ! -d "$log_dir/$file/$file2" ] ; then
+         mkdir $log_dir/$file/$file2
+         chmod 777 $log_dir/$file/$file2
+      fi
    else
       chk_time="N"
    fi
@@ -754,35 +820,42 @@ echo "sent mail DEBUG chk_Warn " $chk_Warn
 
 if [ "$chk_mail" == "Y" ] ; then
    mail_sub="!! tmon [$HOSTNAME]$where_ip check red line !!"
+   if [ ! -d "$log_dir/$file/$file2" ] ; then
+      mkdir $log_dir/$file/$file2
+      chmod 777 $log_dir/$file/$file2
+   fi
 elif [ "$chk_mail" == "N" ] ; then
    if [ "$chk_Warn" == "Y" ] ; then
       mail_sub="Warn tmon [$HOSTNAME]$where_ip " 
+      if [ ! -d "$log_dir/$file/$file2" ] ; then
+         mkdir $log_dir/$file/$file2
+         chmod 777 $log_dir/$file/$file2
+      fi
    else
       mail_sub="tmon [$HOSTNAME]$where_ip " 
    fi   
-   echo $mail_sub
+
 fi
 
+echo $mail_sub
+
 xml="$log_dir"/al_file.xml
-n_mail=`cat "$alert_file"`
-
+n_mail=`cat "$log_dir/$alert_bodyname" | wc -l`
+echo "@@@ " $n_mail
 if [ "$n_mail" != "" ];then
-
-#check mail server
-if [ $usr_set == "yes" ];then
-   echo "使用自行設定mailserver"
-   if [ $smtp_port == "465" ];then
-      ptc="S"
+   if [ $usr_set == "yes" ];then
+      echo "使用自行設定mailserver"
+      if [ $smtp_port == "465" ];then
+         ptc="S"
+      
+      elif [ $smtp_port == "587" ];then
+         ptc="T"
+      
+      else
+         ptc="N"
+      fi
    
-   elif [ $smtp_port == "587" ];then
-      ptc="T"
-   
-   else
-      ptc="N"
-   fi
-
-
-   cat << EOF > $xml
+      cat << EOF > $xml
 <?xml version="1.0" encoding='utf-8'?>
 <Mail>
 <Protocol>smtp</Protocol>
@@ -799,26 +872,25 @@ if [ $usr_set == "yes" ];then
 </Mail>
 EOF
 
-
-else
-
-#Line 訊息通知用 (s)
-#curl -H "Authorization: Bearer G40UBr3aw4Bt2GUfeb1otbrEEjIIfd2fEGsltEZF9oI" -F "message=Hello World" https://notify-api.line.me/api/notify
-#Line 訊息通知用 (e)
-
-echo "使用預設郵箱寄出"
-#阿里雲 
-mail_ck=`nslookup <<eof
+   else
+   
+   #Line 訊息通知用 (s)
+   #curl -H "Authorization: Bearer G40UBr3aw4Bt2GUfeb1otbrEEjIIfd2fEGsltEZF9oI" -F "message=Hello World" https://notify-api.line.me/api/notify
+   #Line 訊息通知用 (e)
+   
+   echo "使用預設郵箱寄出"
+   #阿里雲 
+   mail_ck=`nslookup <<eof
 server 10.40.99.16
 exit
 eof
 `
-#smtp_add=`echo "$mail_ck"|grep Address|grep -v "#53"|awk '{print $2}'`
-smtp_add='10.40.99.16'
-echo "$smtp_add"
-
-#javamail
-cat << EOF > $xml
+   #smtp_add=`echo "$mail_ck"|grep Address|grep -v "#53"|awk '{print $2}'`
+   smtp_add='10.40.99.16'
+   echo "$smtp_add"
+   
+   #javamail
+   cat << EOF > $xml
 <?xml version="1.0" encoding='utf-8'?>
 <Mail>
 <Protocol>smtp</Protocol>
@@ -835,37 +907,39 @@ cat << EOF > $xml
 <From>t100_digiwin_default@aliyun.com</From>
 </Mail>
 EOF
+
+   fi
+
 fi
    
-n_mail=`cat "$alert_file"`
+n_mail=`cat "$log_dir/$alert_bodyname" | wc -l `
 
-if  [ -n "$n_mail" ]; then
-echo -n "<pre>" > $alert_file
-echo "*******************************" >> $alert_file
-#date >> $alert_file
-#日期信件最上方 (s)
-chk_date=`date`
-echo '<table width=100% border=1>
-<tr>
-<th colspan=2 style="background-color:#FFECC9"><font color=blue>'$chk_date'</font></th>
-</tr> </table> ' >> $alert_file
-#日期信件最上方 (e)
+if [ "$n_mail" != "" ] ; then
 
-echo "<table width=100% border=1> " >> $alert_file
-echo "<th>   mail can change from /u1/etc/tmon/tmon.conf   </th>" >> $alert_file
-echo "</table> "  >> $alert_file
-
-sh /u1/etc/tmon/script/title/chk_title 
-cat $tmon_chk_dir2/title_chk_${tmonname}.html >> $alert_file
-
-echo "$n_mail" >> $alert_file
-
-find /u1/etc/tmon/tmp/* -mmin +60 -print0 | xargs -0 -l1 -t rm -rf  #清理 tmon tmp 目錄 超過 1 hr 檔案
-
-cp $alert_file $TEMPDIR/  #@@ test
-
-
-#sh /u3/bin/javamail/UnixMailSender.bat $xml true  # v1 mark
+   echo -n "<pre>" > $alert_file
+   echo "*******************************" >> $alert_file
+   #date >> $alert_file
+   #日期信件最上方 (s)
+   chk_date=`date`
+   echo '<table width=100% border=1>
+   <tr>
+   <th colspan=2 style="background-color:#FFECC9"><font color=blue>'$chk_date'</font></th>
+   </tr> </table> ' >> $alert_file
+   #日期信件最上方 (e)
+   
+   echo "<table width=100% border=1> " >> $alert_file
+   echo "<th>   mail can change from /u1/etc/tmon/tmon.conf   </th>" >> $alert_file
+   echo "</table> "  >> $alert_file
+   
+   sh /u1/etc/tmon/script/title/chk_title 
+   cat $tmon_chk_dir2/title_chk_${tmonname}.html >> $alert_file
+   
+   cat "$log_dir/$alert_bodyname" >> $alert_file
+   
+   find /u1/etc/tmon/tmp/* -mmin +60 -print0 | xargs -0 -l1 -t rm -rf  #清理 tmon tmp 目錄 超過 1 hr 檔案
+   
+   
+   #sh /u3/bin/javamail/UnixMailSender.bat $xml true  # v1 mark
 
 # send mail check (s)
    if [ "$MODE_TEST" == "Y" ] ;then
@@ -878,6 +952,7 @@ cp $alert_file $TEMPDIR/  #@@ test
 
       if [ "$chk_mail" == "Y" ] ; then
          echo " Warning "
+         echo "chk_sent : " $chk_sent
          #有檔案需確認是不是 舊檔案 (s)
          find $tmon_chk_dir/al_file.xml -mmin +$chk_sent -print0 | xargs -0 -l1 -t rm -rf
          #有檔案需確認是不是 舊檔案 (e)
@@ -909,7 +984,9 @@ cp $alert_file $TEMPDIR/  #@@ test
             fi
          else
             cp -p "$log_dir"/al_file.xml $tmon_chk_dir/
+            echo "準備寄信通知 red"
             sh /u3/bin/javamail/UnixMailSender.bat $xml true
+            eval $bak_file
             rm -f "$log_dir"/al_file.html
             rm -f "$log_dir"/al_file.xml
             rm -f /u1/etc/tmon/mon_log/title/*.log
@@ -920,12 +997,12 @@ cp $alert_file $TEMPDIR/  #@@ test
             echo " start check "
             if [ "$chk_Warn" == "Y" ] ; then
                #有檔案需確認是不是 舊檔案 (s)
-               find $tmon_chk_dir/al_file_warn.xml -mmin +$chk_sent -print0 | xargs -0 -l1 -t rm -rf
+               find $tmon_chk_dir/al_file_warn.xml -mmin +$chk_sent_warn -print0 | xargs -0 -l1 -t rm -rf
                #有檔案需確認是不是 舊檔案 (e)
                if [ -f "$tmon_chk_dir/al_file_warn.xml" ]; then
                   sent_chk_hr=`ls -l $tmon_chk_dir/al_file_warn.xml | awk '{print $8}' | awk -F : '{print $1}'`
                   sent_chk_min=`ls -l $tmon_chk_dir/al_file_warn.xml | awk '{print $8}' | awk -F : '{print $2}'`
-                  sent_chk_min=`echo "${sent_chk_min}+ $chk_sent" |bc `
+                  sent_chk_min=`echo "${sent_chk_min}+ $chk_sent_warn" |bc `
                   if [ $(echo "$sent_chk_min > 60"|bc) -eq 1 ] ; then
                      sent_chk_hr=`echo "${sent_chk_hr}+ 1" |bc `
                      sent_chk_min=`echo "${sent_chk_min}- 60"|bc `
@@ -937,16 +1014,21 @@ cp $alert_file $TEMPDIR/  #@@ test
                         if [ "$sent_chk_min" == "$time_chk_min" ] ; then
                            sh /u3/bin/javamail/UnixMailSender.bat $xml true
                         else
-                           echo "有寄信通知， 預計 " $chk_sent "min 後還有 ERR 會再通知一次 "
+                           echo "有寄信通知， 預計 " $chk_sent_warn "min 後還有 ERR 會再通知一次 "
                         fi 
                      fi
+                  fi
                else
                   cp -p $tmon_chk_dir/al_file.xml  $tmon_chk_dir/al_file_warn.xml
+                  echo "準備寄信通知 warn"
                   sh /u3/bin/javamail/UnixMailSender.bat $xml true
+                  eval $bak_file
                fi
             else
                cp -p "$log_dir"/al_file.xml $log_dir/
+               echo "準備寄信通知"
                sh /u3/bin/javamail/UnixMailSender.bat $xml true
+               eval $bak_file
                rm -f "$log_dir"/al_file.html
                rm -f "$log_dir"/al_file.xml
                rm -f /u1/etc/tmon/mon_log/title/*.log
@@ -962,7 +1044,7 @@ cp $alert_file $TEMPDIR/  #@@ test
 # send mail check (e) 
 
 fi
-fi
+
 ##################################################################################################
 ##################################################################################################
 ##################################################################################################
@@ -970,6 +1052,12 @@ cat $log_dir/$alert_filename >> $log_dir/$file/${file}_$alert_filename
 rm -f "$log_dir"/al_file.html
 rm -f "$log_dir"/al_file.xml
 
-find $tmon_chk_dir/* -mmin +360 -print0 | xargs -0 -l1 -t rm -rf
-find $tmon_chk_dir/*_chk*.html -mmin +20 -print0 | xargs -0 -l1 -t rm -rf
-find $tmon_chk_dir/*_chk*.html -mmin +20 -print0 | xargs -0 -l1 -t rm -rf
+find $tmon_chk_dir/* -mmin +360 -print0 | xargs -0 -l1 rm -rf
+find $tmon_chk_dir/*_chk*.log -mmin +20 -print0 | xargs -0 -l1 rm -rf
+find $tmon_chk_dir/*_chk*.html -mmin +20 -print0 | xargs -0 -l1 rm -rf
+find $tmon_chk_dir/*_chk*.html -mmin +20 -print0 | xargs -0 -l1 rm -rf
+
+find $tmon_chk_dir2/* -mmin +360 -print0 | xargs -0 -l1 rm -rf
+find $tmon_chk_dir2/*_chk*.log -mmin +20 -print0 | xargs -0 -l1 rm -rf
+find $tmon_chk_dir2/*_chk*.html -mmin +20 -print0 | xargs -0 -l1 rm -rf
+find $tmon_chk_dir2/*_chk*.html -mmin +20 -print0 | xargs -0 -l1 rm -rf

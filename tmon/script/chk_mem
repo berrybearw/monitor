@@ -18,10 +18,11 @@ mode_test=$MODE_TEST
 
 dir_date=`date '+%Y%m%d'`
 file=`date '+%Y%m%d'`
-psmem_file="/u1/etc/tmon/script/basement/psmem.log"
+date_file=`date '+%H%M'`
+psmem_file="/u1/etc/tmon/script/basement/psmem_${tmonname}.log"
 psmem_file_list="/u1/etc/tmon/script/basement/psmem_list_${tmonname}.log"
-psmem_file_chk="/u1/etc/tmon/mon_log/chk/$dir_date/psmem.log"
-mem_file_stp="/u1/etc/tmon/mon_log/mem_stp.html"
+psmem_file_chk="/u1/etc/tmon/mon_log/chk/$dir_date/psmem_${date_file}.log"
+mem_file_stp="/u1/etc/tmon/mon_log/mem_${tmonname}.html"
 mem_chk_dir="/u1/etc/tmon/script/basement"
 mem_chk="/u1/etc/tmon/script/basement/mem_chk_${tmonname}.log"        #判斷設定值檔案
 mem_chk_html="/u1/etc/tmon/script/basement/mem_chk_${tmonname}.html"  #寄信用
@@ -29,9 +30,11 @@ chk_mem="/u1/etc/tmon/mon_log/chk_mail.log"
 
 if [ ! -d "/u1/etc/tmon/mon_log/chk" ]; then
    mkdir /u1/etc/tmon/mon_log/chk
+   chmod 777 /u1/etc/tmon/mon_log/chk
 fi
 if [ ! -d "/u1/etc/tmon/mon_log/chk/$dir_date" ]; then
    mkdir /u1/etc/tmon/mon_log/chk/$dir_date
+   chmod 777 /u1/etc/tmon/mon_log/chk/$dir_date
 fi
 
 time_red=`date +%Y/%m/%d-%H:%M:%S`
@@ -118,6 +121,7 @@ if [ "$mode_test" == "Y" ] ; then
       echo "mem_total : " $mem_total 
       echo "mem_use   : " $mem_use 
       echo "mem_lim % : " $mem_lim 
+      echo "mem_use % : " $mem_use_per
       echo "Memory use over " $mem_lim "%" 
       echo "|----------|"
       echo "Mem 檢查 發現高於預警值"
@@ -318,8 +322,10 @@ if [ "$chk_mem_time_go" == "Y" ] ; then
               echo "<b>超過 <font color=red>$lim_mem  % </font> 記憶體使用量 暫停 process</b>" >> $mem_file_stp
               echo "<b>START : kill -CONT $proc_pid </b>" >> $mem_file_stp
               #kill -STOP $proc_pid
+              sh /u1/etc/tmon/kill.sh $proc_pid
               echo "$proc_head" >> $psmem_file_chk
               cat "$psmem_file_list"|grep $i >> $psmem_file_chk
+              cp $psmem_file_chk /u1/etc/tmon/mon_log/psmem_chk_${tmonname}.log
               echo "<font color=red>" >> $mem_file_stp
               echo " $proc"|grep $i >> $mem_file_stp
               echo " </font> " >> $mem_file_stp

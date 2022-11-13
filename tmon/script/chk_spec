@@ -1,60 +1,426 @@
 #!/bin/ksh 
 
-chk_specdir="/u1/etc/tmon/basement"
+. /u1/etc/tmon/tmon.conf
+. /u1/etc/tmon/tmon_title.conf
+
+if [ ! -d "/u1/etc/tmon/spec_dir" ]; then
+   mkdir /u1/etc/spec_dir
+   chmod 777 /u1/etc/spec_dir
+   chk_specdir='/u1/etc/tmon/spec_dir'
+else
+   . /u3/bin/tmon/tmon.conf
+   chk_specdir='/u1/etc/tmon/spec_dir'
+fi
+
+tmonname=$TMONNAME
+mode_test=$MODE_TEST
+
+if [ -z "$chk_specdir" ] ; then 
+
+    echo " 請先填寫看 檢查 目錄 "
+    exit
+	
+fi
+
+section=""
+
+if [ "$section" == "" ] ; then
+   echo "This machine is  "
+   echo " 1. AP   : 1 "
+   echo " 2. DB   : 2 "
+   read section
+fi
+
+date_title=`date '+%Y/%m/%d %H:%M:%S'`
+
+file_path="$chk_specdir/spec_$tmonname.xls"
+
+echo '<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+xmlns:html="http://www.w3.org/TR/REC-html40">
+<Styles>
+ <Style ss:ID="s62">
+  <Borders>
+   <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+  </Borders>
+  <Font ss:FontName="宋体" ss:Size="11"/>
+ </Style>
+<Style ss:ID="s68">
+<NumberFormat ss:Format="###,##0.000000"/>
+  <Borders>
+   <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+  </Borders>
+  <Font ss:FontName="宋体" ss:Size="11"/>
+</Style>
+<Style ss:ID="s67">
+<NumberFormat ss:Format="###,##0.00000"/>
+  <Borders>
+   <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+  </Borders>
+  <Font ss:FontName="宋体" ss:Size="11"/>
+</Style>
+<Style ss:ID="s66">
+<NumberFormat ss:Format="###,##0.0000"/>
+  <Borders>
+   <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+  </Borders>
+  <Font ss:FontName="宋体" ss:Size="11"/>
+</Style>
+<Style ss:ID="s65">
+<NumberFormat ss:Format="###,##0.000"/>
+  <Borders>
+   <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+  </Borders>
+  <Font ss:FontName="宋体" ss:Size="11"/>
+</Style>
+<Style ss:ID="s64">
+<NumberFormat ss:Format="###,##0.00"/>
+  <Borders>
+   <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+  </Borders>
+  <Font ss:FontName="宋体" ss:Size="11"/>
+</Style>
+<Style ss:ID="s63">
+<NumberFormat ss:Format="###,##0.0"/>
+  <Borders>
+   <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+  </Borders>
+  <Font ss:FontName="宋体" ss:Size="11"/>
+</Style>
+<Style ss:ID="s69">
+<Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+  <Borders>
+   <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+  </Borders>
+</Style>
+<Style ss:ID="s61">
+<NumberFormat ss:Format="###,##0"/>
+  <Borders>
+   <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+  </Borders>
+  <Font ss:FontName="宋体" ss:Size="11"/>
+</Style>
+</Styles>
+' > $file_path
+
+echo '<Worksheet ss:Name="T100 規格資訊收集">
+  <Table>
+   <ss:Column ss:Width="150"/>
+   <ss:Column ss:Width="500"/>
+   <Row>
+    <Cell ss:MergeAcross="13" ss:StyleID="s69"><Data ss:Type="String">' >> $file_path 
+echo "$date_title" >> $file_path 
+echo 'T100 規格資訊收集 </Data></Cell>
+   </Row>' >> $file_path
+
 
 change_KG='1048576'
 
-t100_ver=`cat $TOP/t100_release`
-
-echo "T100     版本 : " $t100_ver
-
-user_genero=`fglWrt -a info Users | grep Users`
-
-echo "授權數 " $user_genero
-
 echo " "
 
-sh /u1/etc/tmon/ap_db/ap_db_with
+#版本 (s)
 
-ap_db_chk=`sh /u1/etc/tmon/ap_db/ap_db_with | grep "不同" | wc -l`
+t100_ver=`cat $TOP/t100_release`
+
+echo '
+<Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">T100 版本</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">
+' >> $file_path 
+echo "$t100_ver" >> $file_path
+echo '</Data></Cell>
+  </Row>
+' >> $file_path
+
+#版本 (e)
+
+user_genero=`fglWrt -a info user | grep Users | awk -F / '{print $2}' `
+
+#授權 (s) 
+
+echo '
+<Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">授權數</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">
+' >> $file_path 
+echo "$user_genero" >> $file_path
+echo '</Data></Cell>
+  </Row>
+' >> $file_path
+
+#授權 (e)
+
+#AP , DB 是否同一台 (s)
+
+ap_db_with=`sh $chk_specdir/ap_db/ap_db_with`
+
+ap_db_chk=`sh $chk_specdir/ap_db/ap_db_with | grep "不同" | wc -l`
+
+echo '
+<Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">AP , DB 是否同一台</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">
+' >> $file_path 
+echo "$ap_db_with" >> $file_path
+echo '</Data></Cell> ' >> $file_path
 
 if [ "$ap_db_chk" -gt 0 ] ; then 
 
-   echo "-- AP , DB 不同台 請記得檢查 DB 主機相關配置"
+   echo '<Cell ss:StyleID="s62"><Data ss:Type="String">AP , DB 不同台 請記得檢查 DB 主機相關配置</Data></Cell>' >> $file_path
 
 fi
 
-echo " "
+echo '
+  </Row>
+' >> $file_path
 
-echo "redhat   版本 : "  `cat /etc/redhat-release`
+#AP , DB 是否同一台 (e)
 
-echo " "
+#其他產品 (s)
 
-echo "實體還是虛擬  : " 
+echo '
+<Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">其他產品 </Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">
+' >> $file_path
+echo " " >> $file_path
+echo '</Data></Cell> ' >> $file_path
 
-cat /proc/scsi/scsi |grep -E 'Vendor|Type' |sed 's/^[ \t]*//g'
+echo '
+  </Row>
+' >> $file_path
 
-echo " "
+#其他產品 (e)
 
-echo "CPU    總數量 : " `lscpu |grep '^CPU(s):' |sed 's/^[ \t]*//g'|cut -d: -f 2` 
+#redhat 版本 (s)
+
+red_ver=`cat /etc/redhat-release`
+
+echo '
+<Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">redhat 版本</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">
+' >> $file_path 
+echo "$red_ver" >> $file_path
+echo '</Data></Cell>
+  </Row>
+' >> $file_path
+
+#redhat 版本 (e)
+
+#實體還是虛擬機 (s)
+
+#vm_chk=`cat /proc/scsi/scsi |grep -E 'Vendor|Type' |sed 's/^[ \t]*//g' | wc -l`
+
+echo '
+<Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">實體還是虛擬</Data></Cell>
+         <Cell ss:StyleID="s62"><Data ss:Type="String"> ' >> $file_path
+   echo " " >> $file_path
+   echo '</Data></Cell> ' >> $file_path
+echo '</Row>
+' >> $file_path 
+
+#i=1
+#while [ "$i" -le "$vm_chk" ] 
+#do
+#   vm_list=`cat /proc/scsi/scsi |grep -E 'Vendor|Type' |sed 's/^[ \t]*//g' | sed -n "$i,${i}p" `
+#   echo '<Row>
+#         <Cell ss:StyleID="s62"><Data ss:Type="String"> ' >> $file_path
+#   echo "$vm_list" >> $file_path
+#   echo '</Data></Cell>
+#     </Row>
+#   ' >> $file_path
+#   i=`expr $i + 1 `
+#done
+
+#實體還是虛擬機 (e)
+
+#伺服器 (s)
+
+echo '
+<Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">伺服器 </Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">
+' >> $file_path
+echo " " >> $file_path
+echo '</Data></Cell> ' >> $file_path
+
+echo '
+  </Row>
+' >> $file_path
+
+#伺服器 (e)
+
+#VCPU 數量 (s)
+
+cpu_chk=`lscpu |grep '^CPU(s):' |sed 's/^[ \t]*//g'|cut -d: -f 2 | sed 's/^[ \t]*//g' `
+
+echo '
+<Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">CPU 總數量</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">' >> $file_path 
+echo "$cpu_chk" >> $file_path
+echo '</Data></Cell>
+  </Row>
+' >> $file_path
+
+#VCPU 數量 (e)
+
+#RAM(GB) (s)
 
 mem=`free | grep Mem | awk '{print $2}'`
 
-mem_total=`awk -v x=$mem -v y=$change_KG 'BEGIN{printf "%.2f\n",x/y}'` 
+mem_total=`awk -v x=$mem -v y=$change_KG 'BEGIN{printf "%.2f\n",x/y}'`
 
-echo "Mem    總大小 : " $mem_total "G"
+#swap=`free | grep Swap | awk '{print $2}'`
 
-swap=`free | grep Swap | awk '{print $2}'`
+#swp_total=`awk -v x=$swap -v y=$change_KG 'BEGIN{printf "%.2f\n",x/y}'`
 
-swp_total=`awk -v x=$swap -v y=$change_KG 'BEGIN{printf "%.2f\n",x/y}'`
+echo '
+<Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Mem </Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">
+' >> $file_path 
+echo "$mem_total G " >> $file_path
+echo '</Data></Cell>
+  </Row>
+' >> $file_path
 
-echo "Swap   總大小 : " $swp_total "G"
+#RAM(GB) (e)
+
+#硬碟空間大小 (s)
 
 disk=`df | awk '{sum += $2} END {print sum}' | awk '{print $1}'`
 
 disk_total=`awk -v x=$disk -v y=$change_KG 'BEGIN{printf "%.2f\n",x/y}'`
 
-echo "DISK   總空間 : " $disk_total "G" 
+echo '
+<Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Disk 總空間</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">
+' >> $file_path 
+echo "$disk_total G" >> $file_path
+echo '</Data></Cell>
+  </Row>
+' >> $file_path
+
+#硬碟空間大小 (e)
+
+#IOPS (s)
+
+echo "稍等正在測試 IOPS "
+
+sh $chk_specdir/fiosts.sh 2>/dev/null
+
+#iopsdir=`sh /u3/bin/fio/fiotst.sh 2>/dev/null | grep "===>" | sed -n '1,1p'`
+iopsread_title=`cat $chk_specdir/fio/log/fio.log | grep "===>" | sed -n '2,2p' | awk -F '===>' '{print $1}'`
+iopsread=`cat $chk_specdir/fio/log/fio.log | grep "===>" | sed -n '2,2p' | awk -F IOPS= '{print $2}' | awk -F , '{print $1}'`
+iopswrite_title=`cat $chk_specdir/fio/log/fio.log | grep "===>" | sed -n '3,3p' | awk -F '===>' '{print $1}'`
+iopswrite=`cat $chk_specdir/fio/log/fio.log | grep "===>" | sed -n '3,3p' | awk -F IOPS= '{print $2}' | awk -F , '{print $1}'`
+iops_title=`cat $chk_specdir/fio/log/fio.log | grep "===>" | sed -n '4,4p' | awk -F '===>' '{print $1}'`
+iops_chk=`cat $chk_specdir/fio/log/fio.log | grep "===>" | sed -n '4,4p' | awk -F IOPS= '{print $2}' | awk -F , '{print $1}'`
+
+echo '
+<Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">IOPS (每秒的讀寫次數)</Data></Cell>
+      <Cell ss:StyleID="s62"><Data ss:Type="String"> ' >> $file_path
+echo "$iopsread_title : $iopsread" >> $file_path
+echo "$iopswrite_title : $iopswrite" >> $file_path
+echo "$iops_title : $iops_chk" >> $file_path
+echo '</Data></Cell>' >> $file_path
+echo '
+  </Row>
+' >> $file_path
+
+#IOPS (e)
+
+#Network (s)
+
+echo "稍等正在檢查 Network"
+
+ap5ip=`cat $chk_specdir/ap_db/bak.log | grep "AP" | awk '{print $2}'`
+db5ip=`cat $chk_specdir/ap_db/bak.log | grep "DB" | awk '{print $2}'`
+
+#timeout 10 ping -c $rpt5ip > $chk_specdir/log/ping_rpt.log
+
+if [ "$section" == "1" ] ; then 
+   timeout 20 ping -c 10 $db5ip > $chk_specdir/log/ping_db.log
+   ping_chk=`cat $chk_specdir/log/ping_db.log | grep rtt | awk -F \/ '{print $6}'`
+   ping_chk=`echo "AP ping DB :" $ping_chk "ms (avg)"`
+elif [ "$section" == "2" ] ; then
+   timeout 20 ping -c 10 $ap5ip > $chk_specdir/log/ping_ap.log
+   ping_chk=`cat $chk_specdir/log/ping_ap.log | grep rtt | awk -F \/ '{print $6}'`
+   ping_chk=`echo "DB ping AP :" $ping_chk "ms (avg)"`
+fi
+
+echo '
+<Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Network Latency (網路的延遲)</Data></Cell>
+      <Cell ss:StyleID="s62"><Data ss:Type="String"> ' >> $file_path
+echo $ping_chk >> $file_path
+echo '</Data></Cell>' >> $file_path
+echo '
+  </Row>
+' >> $file_path
+
+#Network (e)
+
+sql=$(
+echo "
+     SPOOL ${chk_specdir}/sql_spec.out;
+         set feedback off
+         set heading off
+         set linesize 200
+         set pagesize 0 
+	 col product format a50
+
+         Select 
+               product
+         FROM
+               Product_component_version   
+         Where 
+               SUBSTR(PRODUCT,1,6)='Oracle';
+ 
+         SPOOL OFF
+         EXIT
+      " | sqlplus -S "du/du@$ORACLE_SID" 
+     )
+
+echo $sql >> /dev/null
+
+db_chk_product=`cat ${chk_specdir}/sql_spec.out`
 
 sql=$(
 echo "
@@ -65,7 +431,6 @@ echo "
          set pagesize 0 
 
          Select 
-               product,
                version 
          FROM
                Product_component_version   
@@ -79,9 +444,17 @@ echo "
 
 echo $sql >> /dev/null
 
-db_chk=`cat ${chk_specdir}/sql_spec.out` 
+db_chk_version=`cat ${chk_specdir}/sql_spec.out`
 
-echo "DB       版本 : " $db_chk
+echo '
+<Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">DB 版本</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">' >> $file_path 
+
+echo $db_chk_product","$db_chk_version >> $file_path
+echo '</Data></Cell>
+  </Row>
+' >> $file_path
 
 sql=$(
 echo "
@@ -105,18 +478,30 @@ echo "
 
 echo $sql >> /dev/null
 
-rac_chk=`cat ${chk_specdir}/sql_spec.out` 
+rac_chk=`cat ${chk_specdir}/sql_spec.out`
 
-echo "DB 是不是 RAC : " $rac_chk
+
+echo '
+<Row>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">DB 是不是 RAC </Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">
+' >> $file_path 
+
+echo "$rac_chk " >> $file_path
+echo '</Data></Cell> ' >> $file_path
 
 if [ "$rac_chk" == "TRUE" ] ; then
-   echo "-- 請檢查 $ORACLE_HOME/network/admin/tnsnames.ora "
-   echo "-- 關鍵字 FAILOVER     設定是否為 on "
-   echo "-- 關鍵字 LOAD_BALANCE 設定是否為 no "
+   echo '<Cell ss:StyleID="s62"><Data ss:Type="String">請檢查 $ORACLE_HOME/network/admin/tnsnames.ora </Data></Cell>'
+   echo '<Cell ss:StyleID="s62"><Data ss:Type="String">關鍵字 FAILOVER     設定是否為 on </Data></Cell>'
+   echo '<Cell ss:StyleID="s62"><Data ss:Type="String">關鍵字 LOAD_BALANCE 設定是否為 no </Data></Cell>'
 fi
+echo '
+  </Row> ' >> $file_path
 
-echo " " 
 
-echo "IOPS (每秒的讀寫次數)"
+echo "</Table>
+</Worksheet>
+</Workbook>
+" >> $file_path
 
-sh /u3/bin/fio/fiotst.sh 2>/dev/null | grep "===>"
+echo "請下載 " $file_path
